@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1982/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>43rd Putnam 1982</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Let p<sub>n</sub> be the probability that two numbers selected independently and randomly from {1, 2, 3, ... , n} have a sum which is a square. Find lim<sub>n&rarr;&infin;</sub> p<sub>n</sub> &radic;n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 4(&radic;2 - 1)/3.
+
+<p>
+
+There are m<sup>2</sup> - 1 ordered pairs with sum m<sup>2</sup> for m<sup>2</sup> &lt;= n, and 2n - m<sup>2</sup> + 1 for m<sup>2</sup> &gt; n (and &le; 2n). Hence the total number of ordered pairs taken from {1, 2, ... , n} which sum to a square is &sum;<sub>1</sub><sup>[&radic;n]</sup> (m<sup>2</sup> - 1) + &sum;<sub>[&radic;n + 1]</sub><sup>[&radic;(2n)]</sup> (2n - m<sup>2</sup> + 1).
+
+<p>
+
+Now &sum;<sub>1</sub><sup>N</sup> m<sup>2</sup> = 1/3 N<sup>3</sup> + O(N<sup>2</sup>). Also removing the [ ] from the limits gives an error of O(n). So we get:
+
+<p>
+
+1/3 n<sup>3/2</sup> + 2(&radic;2 - 1)n<sup>3/2</sup> - 1/3 ( &radic;(2n)<sup>3</sup> - &radic;n<sup>3</sup>) + O(n).
+
+<p>
+
+p<sub>n</sub> = 1/n<sup>2</sup> x no. of pairs which sum to a square. So p<sub>n</sub> &radic;n = (1/3 + 2(&radic;2 - 1) - 1/3 ( 2&radic;2 - 1) ) + O(n)/n<sup>3/2</sup> which tends to the limit (1/3 + 2(&radic;2 - 1) - 1/3 ( 2&radic;2 - 1) ) = 4(&radic;2 - 1)/3.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn82.html">43rd Putnam 1982</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

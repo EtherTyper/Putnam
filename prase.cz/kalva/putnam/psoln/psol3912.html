@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 39/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>2nd Putnam 1939</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+<i>Do either (1) or (2):</i>
+
+<p>(1) &nbsp; Prove that &int;<sub>1</sub><sup>k</sup> [x] f '(x) dx = [k] f(k) - &sum;<sub>1</sub><sup>[k]</sup> f(n), where k &gt; 1, and [z] denotes the greatest integer &le; z. Find a similar expression for:
+
+&nbsp; &int;<sub>1</sub><sup>k</sup> [x<sup>2</sup>] f '(x) dx.
+
+<p>(2) &nbsp; A particle moves freely in a straight line except for a resistive force proportional to its speed. Its speed falls from 1,000 ft/s to 900 ft/s over 1,200 ft. Find the time taken to the nearest 0.01 s. [No calculators or log tables allowed!]
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(1) &nbsp; Easy.
+
+<p>
+[x] is constant over the interval [i, i+1) for i an integer, so we split the range of integration to get &nbsp; &int;<sub>1</sub><sup>k</sup> = &int;<sub>[k]</sub><sup>k</sup> + &int;<sub>1</sub><sup>2</sup> + &int;<sub>2</sub><sup>3</sup> + ... + &int;<sub>[k]-1</sub><sup>[k]</sup>. We can write down each of these integrals, collect terms and get the result.
+
+<p>
+The same idea works the second integral, except that we divide at &radic;2, &radic;3, &radic;4, ... , &radic;[k<sup>2</sup>], giving the result: [k<sup>2</sup>] f(k) - ( f(1) + f(&radic;2) + f(&radic;3) + ... + f(&radic;[k<sup>2</sup>]) ).
+
+<p>
+(2) &nbsp; Easy. 1.26 s.
+
+<p>
+The equation of motion is x'' = - k x'. Integrating: x' = k A e<sup>-kt</sup>. Integrating again, and putting x(0) = 0, x = A(1 - e<sup>-kt</sup>). Suppose T is the required time. Then from the speed &nbsp; e<sup>-kT</sup> = 0.9. x(T) = 1200, so A = 12000. The initial speed is 1000, so k = 1/12 and T = -12 ln 0.9. The only slight snag is that in the exam calculators did not exist and log tables were not allowed. So we have to use the expansion ln(1 + x) = x - x<sup>2</sup>/2 + x<sup>3</sup>/3 - ... , or more usefully: - ln(1 - x) = x + x<sup>2</sup>/2 + x<sup>3</sup>/3 + ... , giving T = 1.2 + 0.06 + 0.004 + 0.0003 + ... or 1.26 s.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn39.html">2nd Putnam 1939</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

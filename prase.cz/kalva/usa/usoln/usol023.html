@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 02/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>31st USAMO 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+p(x) is a polynomial of degree n with real coefficients and leading coefficient 1. Show that we can find two polynomials q(x) and r(x) which both have degree n, all roots real and leading coefficient 1, such that p(x) = q(x)/2 + r(x)/2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The easiest way to show that a polynomial has a root between a and b is to show that it changes sign. So the idea is to take some polynomial that obviously changes sign n times. Then if we take k s(x) and -k s(x) + 2p(x), for sufficiently large k the sign of  -k s(x) + 2p(x) should be dominated by s(x). That does not quite deal with the leading coefficient. But we know that ultimately the leading term dominates, so something like k s(x) + x<sup>n</sup> and -k s(x) - x<sup>n</sup> + 2p(x) ought to work. 
+
+<p>
+
+Specifically, put s(x) = (1 - x)(2 - x)(3 - x) ... (n-1 - x). It is zero at x = 1, 2, 3, ... , n-1. It is alternately positive and negative at x = 1/2, 1 1/2, ... , n - 1/2. Suppose n is even. Let M = n<sup>n</sup> so that x<sup>n</sup> &lt; M on the interval [0, n]. Clearly, if we take k sufficiently large (in relation to M),  then k s(x) + x<sup>n</sup> has the same sign as s(x) at x = 1/2, 1 1/2, ... , n - 1/2. In particular, it is negative at x = n - 1/2, but, whatever k, if x is sufficiently large k s(x) + x<sup>n</sup> is positive. So k s(x) + x<sup>n</sup> changes sign at least n times and hence has n real roots. 
+
+<p>
+
+Similarly, for k sufficiently large (in relation to M and the max value of 2p(x) over the interval [0, n] ), -k s(x) - x<sup>n</sup> + 2p(x) will have the opposite sign to s(x) at x = 1/2, 1 1/2, ... , n - 1/2 and in particular will be negative at x = 1/2. But the leading term in - k s(x) - x<sup>n</sup> + 2p(x) is x<sup>n</sup> and n is even, so for x sufficiently negative, the sign will be positive. Thus - k s(x) - x<sup>n</sup> + 2p(x) also changes sign at least n times and hence has n real roots.
+
+<p>
+
+Exactly similar arguments work for n odd. We get n-1 sign changes from the k s(x) term and one extra for x large and positive or large and negative (this time k s(x) has the same sign at x = 1/2 and x = n - 1/2, but x<sup>n</sup> has different signs for large positive and large negative).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa02.html">31st USAMO 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

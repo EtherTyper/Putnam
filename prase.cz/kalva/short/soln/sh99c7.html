@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>40th IMO shortlist 1999/C7 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>40th IMO 1999 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C7</b><br>
+<p>
+Let p &gt; 3 be a prime. Let h be the number of sequences a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>p-1</sub> such that a<sub>1</sub> + 2a<sub>2</sub> + 3a<sub>3</sub> + ... + (p-1)a<sub>p-1</sub> is divisible by p and each a<sub>i</sub> is 0, 1 or 2. Let k be defined similarly except that each a<sub>i</sub> is 0, 1 or 3. Show that h &lt;= k with equality iff p = 5.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Let f(x) = (1 + x + x<sup>2</sup>)(1 + x<sup>2</sup> + x<sup>4</sup>)(1 + x<sup>3</sup> + x<sup>6</sup>) ... (1 + x<sup>p-1</sup> + x<sup>2(p-1)</sup>). Let c<sub>n</sub> be the coefficient of x<sup>n</sup> when f(x) is expanded. Then c<sub>n</sub> is the number of solutions to a<sub>1</sub> + 2a<sub>2</sub> + 3a<sub>3</sub> + ... + (p-1)a<sub>p-1</sub> = n, where a<sub>i</sub> = 0, 1 or 2. So h = c<sub>p</sub> + c<sub>2p</sub> + c<sub>3p</sub> + ... .
+<p>
+Take z to be a complex pth root of 1. Then 1 + z + z<sup>2</sup> + ... + z<sup>p-1</sup> = 0 and hence 1 + z<sup>n</sup> + z<sup>2n</sup> + ... + z<sup>n(p-1)</sup> = p if p divides n and 0 otherwise. So f(1) + f(z) + f(z<sup>2</sup>) + ... + f(z<sup>p-1</sup>) = ph. But f(1) = 3<sup>p-1</sup>. 
+<p>
+f(z) = ( (z<sup>3</sup>-1)/(z-1) ) ( (z<sup>6</sup>-1)/(z <sup>2</sup>-1) ) ... (z<sup>3(p-1)</sup>-1)/(z<sup>p-1</sup>-1). But the numerators are just a permutation of the denominators, so f(z) = 1. Similarly for f(z<sup>n</sup>) for n &lt; p. Hence ph = 3<sup>p-1</sup> + (p-1), or h = (3<sup>p-1</sup> + p - 1)/p.
+<p>
+Similarly, we may define g(x) = (1 + x + x<sup>3</sup>)(1 + x<sup>2</sup> + x<sup>6</sup>)(1 + x<sup>3</sup> + x<sup>9</sup>) ... (1 + x<sup>p-1</sup> + x<sup>3(p-1)</sup>). Then if d<sub>n</sub> is the coefficient of x<sup>n</sup> we have that d<sub>n</sub> is the number of solutions to a<sub>1</sub> + 2a<sub>2</sub> + 3a<sub>3</sub> + ... + (p-1)a<sub>p-1</sub> = n, where a<sub>i</sub> = 0, 1 or 3. So k = d<sub>p</sub> + d<sub>2p</sub> + d<sub>3p</sub> + ... . Taking z as before we find that pk = 3<sup>p-1</sup> + (p-1) g(z) (*).
+<p>
+However, in this case, we do not in general have g(z) = 1. We gave to show that g(z) &ge; 1, with equality iff p = 5. The definition of g(z) shows that it is an integral sum a + bz + cz<sup>2</sup> + dz<sup>3</sup> + e z<sup>4</sup>. But (*) shows that g(z) is real, so we must have a' + bz + cz<sup>2</sup> + dz<sup>3</sup> + ez<sup>4</sup> = 0. But z cannot satisfy an equation of degree lower than 4, because it could be any of the 4 complex roots of 1. Hence b = c = d = e. So g(z) = a - b, which is integral. Obviously p does not divide 3<sup>p-1</sup> so g(z) cannot be zero. So if we can show that g(z) is non-negative, then it will follow that g(z) &ge; 1. But that is easy because the factors (1 + z<sup>m</sup> + z<sup>3m</sup>) and (1 + z<sup>p-m</sup> + z<sup>3(p-m)</sup>) = (1 + z<sup>-m</sup> + z<sup>-3m</sup>) are complex conjugates and hence their product is non-negative (for any complex number v, the product of v and its complex conjugate is |v|<sup>2</sup>).
+<p>
+So we have established that h &le; k. 
+<p>
+It is easy to verify directly that g(z) = 1 for p = 5: (1 + z + z<sup>3</sup>)(1 + z<sup>2</sup> + z<sup>6</sup>) = - z<sup>4</sup> (using z<sup>5</sup> = 1 and 1 + z + z<sup>2</sup> + z<sup>3</sup> + z<sup>4</sup> = 0), and (1 + z<sup>3</sup> + z<sup>9</sup>)(1 + z<sup>4</sup> + z<sup>12</sup>) = - z, and hence g(z) = 1. Proving that g(z) &gt; 1 for p &gt; 5 is significantly harder.
+<p>
+Let t, u, v be the roots of 1 + x + x<sup>3</sup> = 0, where t is real, and u, v are complex conjugates. We show by induction on n that for any non-negative integer n, t<sup>n</sup> + u<sup>n</sup> + v<sup>n</sup> is an integer. It is obvious for n = 0 and true for n = 1, because t + u + v = 0. Also tu + uv + vt = 1, so t<sup>2</sup> + u<sup>2</sup>+ v<sup>2</sup> = (t + u + v)<sup>2</sup> - 2(tu + uv + vt) = -2, so it is true for n = 2. But now we have t<sup>3</sup> + t + 1 = u<sup>3</sup> + u + 1 = v<sup>3</sup> + v + 1 = 0. Hence (t<sup>n+3</sup> + u<sup>n+3</sup> + v<sup>n+3</sup>) = - (t<sup>n+1</sup> + u<sup>n+1</sup> + v<sup>n+1</sup>) - (t<sup>n</sup> + u<sup>n</sup> + v<sup>n</sup>), so if it is true for n and n+1, then it is true for n+3. Hence it is true for all n.
+<p>
+We have g(z) = &prod; (1 + z<sup>m</sup> + z<sup>3m</sup>) = &prod; (z<sup>m</sup> - t)(z<sup>m</sup> - u)(z<sup>m</sup> - v). But <font face="symbol">P</font> (z<sup>m</sup> - t) = (t<sup>p</sup> - 1)/(t - 1). Similarly for u and v. Also (t - 1)(u - 1)(v - 1) = - (1 - t)(1 - u)(1 - v) = 1 + 1 + 1<sup>3</sup> = 3. Hence if g(z) = 1, then (t<sup>p</sup> - 1)(u<sup>p</sup> - 1)(v<sup>p</sup> - 1) = -3 (*). We will use this to obtain a contradiction.
+<p>
+We have that t<sup>p</sup> + u<sup>p</sup> + v<sup>p</sup> = N for some integer N. We also have that t<sup>p</sup>u<sup>p</sup>v<sup>p</sup> = (tuv)<sup>p</sup> = -1. Hence exanding (*) gives that t<sup>p</sup>u<sup>p</sup> + u<sup>p</sup>v<sup>p</sup> + v<sup>p</sup>t<sup>p</sup> = N+1. So t<sup>p</sup>, u<sup>p</sup>, v<sup>p</sup> are the roots of the cubic x<sup>3</sup> - Nx<sup>2</sup> + (N+1)x + 1 = 0. The real root t must lie between -&frac12; and -1, since -&frac12;<sup>3</sup> + (-&frac12;) + 1 = 3/8 and -1<sup>3</sup> + (-1) + 1 = -1. If N &lt; 0, then we have (N+1) &le; 0 and hence for x = t<sup>p</sup> we have (N+1)x &ge; 0 and x<sup>3</sup> - Nx<sup>2</sup> &gt; 0, so x<sup>3</sup> - Nx<sup>2</sup> + (N+1)x + 1 &gt; 1. Contradiction. If N = 0, then, t<sup>p</sup>, u<sup>p</sup>, v<sup>p</sup> are roots of x<sup>3</sup> + x + 1 = 0, so they must be a permutation of t, u, v. But since |t| &lt; 1 and |u| = |v|, we have |u|, |v| &gt; 1 and hence |t|<sup>p</sup> &lt; |t| &lt; 1 &lt; |u| &lt; |u|<sup>p</sup> (and similarly for v), so t<sup>p</sup> = t. Hence p = 1. Contradiction. So N &gt; 0 and hence N &ge; 1.
+<p>
+For x between -1 and 0, x<sup>3</sup> + x + 1 is strictly increasing and N(x<sup>2</sup> - x) is strictly decreasing and they intersect at x = t<sup>p</sup>. As p increases this point gets closer to 0, so N must strictly increase with p. We have (t<sup>3</sup> + t + 1) = 0 and hence t<sup>2</sup>(t<sup>3</sup> + t + 1) = 0, so t<sup>5</sup> = -t<sup>3</sup> - t<sup>2</sup> = -t<sup>2</sup> + t + 1 and similarly for u, v. So for p = 5, we have N = t<sup>5</sup> + u<sup>5</sup> + v<sup>5</sup> = -(t<sup>2</sup> + u<sup>2</sup> + v<sup>2</sup>) + (t + u + v) + 3 = -(t<sup>2</sup> + u<sup>2</sup> + v<sup>2</sup>) + 3 = -(t + u + v)<sup>2</sup> + 2(tu + uv + vt) + 3 = 5. So if p &gt; 5, then N &gt; 5. But it is easy to check that if N &ge; 6, then the polynomial x<sup>3</sup> - Nx<sup>2</sup> + (N+1)x + 1 has three distinct real roots. (Its value is negative at x = -1 and 2, and positive at x = 0 or sufficiently large). But two of its roots are u<sup>p</sup> and v<sup>p</sup>, which are complex conjugates, so if they are real, then they must be equal. Contradiction. Thus we cannot have p &gt; 5 and g(z) = 1. 
+<p>
+<i>Comment. This may seem unreasonably hard. That is true for anyone who is not familiar with (1) generating functions, and (2) complex nth roots z of 1 and the fact that 1 + z + z<sup>2</sup> + ... + z<sup>n-1</sup> = 0. Obviously (2) is a fairly elementary idea, which is easy to prove, but you need to be familiar with the fact that it is a standard trick for summing series. Given those prerequisites, the question is hard, but not unreasonably so.</i>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh99.html">40th IMO shortlist 1999</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+23 Dec 2002
+<br>Last corrected/updated 23 Dec 02
+</BODY>
+
+</HTML>
+

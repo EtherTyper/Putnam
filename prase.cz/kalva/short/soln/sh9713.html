@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1997/13 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>38th IMO 1997 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 13</b>
+<p>
+In town A there are n girls and n boys and every girl knows every boy. Let a(n,r) be the number of ways in which r girls can dance with r boys, so that each girl knows her partner. In town B there are n girls and 2n-1 boys such that girl i knows boys 1, 2, ... , 2i-1 (and no others). Let b(n,r) be the number of ways in which r girls from town B can dance with r boys from town B so that each girl knows her partner. Show that a(n,r) = b(n,r).
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Town A is easy. We can choose r girls in nCr ways, then we can choose r boys in nCr ways. Any girl can dance with any boy, so we can pair them in r! ways. Hence a(n,r) = (nCr)<sup>2</sup>r! = nCr n!/(n-r)!. It is easy to check that: 
+<br>a(n,1) = n<sup>2</sup>, a(2,2) = 2, 
+<br>for 1 &lt; r &lt; n, we have a(n-1,r) + (2n-r)a(n-1,r-1) = n-1!  n-1!/(n-r! n-r! r!) ( (n-r)<sup>2</sup> + (2n-r)r) = a(n,r)
+<br>a(n,n) = n! = n a(n-1,n-1).
+<p>
+Now consider town B. If r=1, then if we pick girl i there are 2i-1 possible choices of boy, so b(n,1) = 1 + 3 + ... + 2n-1 = n<sup>2</sup>. Suppose r &gt; 2. If r = n, then we must pick girl n. None of the other girls know boy n, so the other girls and their partners can be chosen in b(n-1,n-1) ways. Then girl n can choose any of the remaining 2n-n boys as her partner, giving b(n,n) = nb(n-1,n-1). 
+<p>
+If 2 &lt; r &lt; n, then as in the case r = n, there are (2n-r)b(n-1,r-1) possibilities if we choose girl n. It is also possible not to choose girl n, in which case there are b(n-1,r) possibilities. So b(n,r) = b(n-1,r) + (2n-r)b(n-1,r-1). It is also easy to check that b(2,2) = 2. 
+<p>
+So b(n,r) and a(n,r) satisfy the same recurrence relations and initial conditions. Hence they are identical.
+<p>&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh97.html">38th IMO shortlist 1997</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+2 Dec 2003
+<br>Last corrected/updated 2 Dec 2003
+</BODY>
+</HTML>
+

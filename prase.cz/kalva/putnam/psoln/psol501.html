@@ -1,0 +1,58 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 50/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>10th Putnam 1950</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+a and b are positive reals and a &gt; b. Let C be the plane curve r = a - b cos &theta;. For what values of b/a is C convex?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The curvature is (x'y'' - x''y')/(x'<sup>2</sup> + y'<sup>2</sup>)<sup>3/2</sup>. So for convexity we require x'y'' &ge; x''y'. Putting k = b/a, c = cos &theta;, s = sin &theta;, we have x/a = c - k c<sup>2</sup>, x'/a = - s + 2kcs, x''/a = - c - 2ks<sup>2</sup> + 2kc<sup>2</sup> and y/a = s - ksc, y'/a = c - kc<sup>2</sup> + k s<sup>2</sup>, y''/a = -s + 4ksc. Thus the condition becomes after a little cancellation, 1 + 2k<sup>2</sup> - 3kc &ge; 0. c takes values in the range -1 to 1, so for the condition to be true for all points of the curve we require 1 + 2k<sup>2</sup> - 3k &ge; 0. But 1 + 2k<sup>2</sup> - 3k = (2k - 1)(k - 1). We are given that k &lt; 1, so we must have k &lt; 1/2.
+
+<p>
+
+For small k, the curve is approximately a circle centred on the origin. As k increases it develops a flattening near x = a, y = 0. For k &gt; 1/2, this becomes a dimple in the surface, so that convexity is broken. For k = 1, the depression in the surface extends as far as the centre (the origin). For k &gt; 0, the curve intersects itself at the origin so that it comprises two ovals one inside the other.
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+&nbsp;<p>
+
+<a href="../putn50.html">10th Putnam 1950</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

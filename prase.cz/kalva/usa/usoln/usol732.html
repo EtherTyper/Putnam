@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 73/2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>2nd USAMO 1973</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 2</b><br>
+
+<p>
+
+The sequence a<sub>n</sub> is defined by a<sub>1</sub> = a<sub>2</sub> = 1, a<sub>n+2</sub> = a<sub>n+1</sub> + 2a<sub>n</sub>. The sequence b<sub>n</sub> is defined by b<sub>1</sub> = 1, b<sub>2</sub> = 7, b<sub>n+2</sub> = 2b<sub>n+1</sub> + 3b<sub>n</sub>. Show that the only integer in both sequences is 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We can solve the first recurrence relation to give a<sub>n</sub> = A (-1)<sup>n</sup> + B 2<sup>n</sup>. Using a<sub>1</sub> and a<sub>2</sub>, we get a<sub>n</sub> = (2<sup>n</sup> + (-1)<sup>n+1</sup>)/3. Similarly, for the second recurrence relation we get b<sub>n</sub> = 2.3<sup>n-1</sup> + (-1)<sup>n</sup>. So if a<sub>m</sub> = b<sub>n</sub> then 2.3<sup>n</sup> + 3 (-1)<sup>n</sup> = 2<sup>m</sup> + (-1)<sup>m+1</sup> or 2<sup>m</sup> = 2.3<sup>n</sup> + 3 (-1)<sup>n</sup> + (-1)<sup>m</sup>. 
+
+<p>
+
+If m = 1 or 2, then we find n = 1 is the only solution, corresponding to the fact that the term 1 is in both sequences. If m &gt; 2, then 2<sup>m</sup> = 0 mod 8. But 3<sup>n</sup> = (-1)<sup>n</sup> mod 4, so 2.3<sup>n</sup> + 3 (-1)<sup>n</sup> + (-1)<sup>m</sup> = 5 (-1)<sup>n</sup> + (-1)<sup>m</sup> mod 8 which cannot be 0 mod 8. So there are no solutions for m &gt; 2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa73.html">2nd USAMO 1973</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+19 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

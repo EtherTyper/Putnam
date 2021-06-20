@@ -1,0 +1,80 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1994/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1994</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+For any positive integer k, let f(k) be the number of elements in the set {k+1, k+2, ... , 2k} which have exactly three 1s when written in base 2. Prove that for each positive integer m, there is at least one k with f(k) = m, and determine all m for which there is exactly one k.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+2, 4, ... , n(n-1)/2 + 1, ... .
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+To get a feel, we calculate the first few values of f explicitly:
+
+<p>
+f(2) = 0, f(3) = 0
+<br>f(4) = f(5) = 1, [7 = 111]
+<br>f(6) = 2,  [7 = 111, 11 = 1011]
+<br>f(7) = f(8) = f(9) = 3 [11 = 1011, 13 = 1101, 14 = 1110]
+<br>f(10) = 4 [11, 13, 14, 19 = 10011]
+<br>f(11) = f(12) = 5 [13, 14, 19, 21 = 10101, 22 = 10110]
+<br>f(13) = 6 [14, 19, 21, 22, 25 = 11001, 26 = 11010]
+
+<p>
+We show that f(k+1) = f(k) or f(k) + 1. The set for k+1 has the additional elements 2k+1 and 2k+2 and it loses the element k+1. But the binary expression for 2k+2 is the same as that for k+1 with the addition of a zero at the end, so 2k+2 and k+1 have the same number of 1s. So if 2k+1 has three 1s, then f(k+1) = f(k) + 1, otherwise f(k+1) = f(k). Now clearly an infinite number of numbers 2k+1 have three 1s, (all numbers 2<sup>r</sup> + 2<sup>s</sup> + 1 for r &gt; s &gt; 0). So f(k) increases without limit, and since it only moves up in increments of 1, it never skips a number. In other words, given any positive integer m we can find k so that f(k) = m.
+
+<p>
+From the analysis in the last paragraph we can only have a single k with f(k) = m if both 2k-1 and 2k+1 have three 1s, or in other words if both k-1 and k have two 1s. Evidently this happens when k-1 has the form 2<sup>n</sup> + 1. This determines the k, namely 2<sup>n</sup> + 2, but we need to determine the corresponding m = f(k). It is the number of elements of {2<sup>n</sup>+3, 2<sup>n</sup>+4, ... , 2<sup>n+1</sup>+4} which have three 1s. Elements with three 1s are either 2<sup>n</sup>+2<sup>r</sup>+2<sup>s</sup> with 0 &le; r &lt; s &lt; n, or 2<sup>n+1</sup>+3. So there are m= n(n-1)/2 + 1 of them. As a check, for n = 2, we have k = 2<sup>2</sup>+2 = 6, m = 2, and for n = 3, we have k = 2<sup>3</sup>+2 = 10, m = 4, which agrees with the f(6) = 2, f(10) = 4 found earlier.
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo94.html">35th IMO 1994</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Oct 1998
+<br>Last corrected/updated 25 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

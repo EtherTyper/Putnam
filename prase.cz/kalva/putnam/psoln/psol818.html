@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1981/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>42nd Putnam 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+What is the minimum value of (a - 1)<sup>2</sup> + (b/a - 1)<sup>2</sup> + (c/b - 1)<sup>2</sup> + (4/c - 1)<sup>2</sup>, over all real numbers a, b, c satisfying 1 &le; a &le; b &le; c &le; 4.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 12 - 8&radic;2.
+
+<p>
+
+Let A = a, B = b/a, C = c/b, D = 4/c. Then we require the minimum of (A-1)<sup>2</sup> + (B-1)<sup>2</sup> + (C-1)<sup>2</sup> + (D-1)<sup>2</sup> subject to ABCD = 4 and A, B, C, D &gt;= 1.
+
+<p>
+
+We consider first the simpler case of minimising (A-1)<sup>2</sup> + (B-1)<sup>2</sup> subject to AB = k<sup>2</sup> and A, B &gt; 1. We show that it is achieved by taking A = B. This is routine. Set f(x) = (x - 1)<sup>2</sup> + (k<sup>2</sup>/x - 1)<sup>2</sup> and set f'(x) = 0, leading to a quartic (x - k)(x + k)(x<sup>2</sup> - x + k<sup>2</sup>) = 0 with real roots k, -k. Note that f'(x) &lt; 0 for x just less than k, and &gt; 0 for x just greater than k, so x = k is a minimum.
+
+<p>
+
+Now it follows that all four of A, B, C, D must be equal. For if any two were unequal, we could keep the others fixed and reduce the sum of squares by equalising the unequal pair whilst keeping their product fixed. Thus the minimum value is achieved with A = B = C = D = &radic;2, which gives value 12 - 8&radic;2.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn81.html">42nd Putnam 1981</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<TITLE>42nd IMO shortlist 2001/N2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>42nd IMO 2001 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N2</b><br>
+<p>
+Find the largest real k such that if a, b, c, d are positive integers such that a + b = c + d, 2ab = cd and a &ge; b, then a/b &ge; k.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: k = 3 + 2&radic;2.
+<p>
+A few examples of such a, b, c, d are:
+<pre>
+2 + 12 = 6 + 8, 2.2.12 = 6.8, so a/b = 6
+2 + 15 = 5 + 12, 2.2.15 = 5.12, so a/b = 7.5
+3 + 20 = 8 + 15, 2.3.20 = 8.15, so a/b = 6.67
+</pre>
+We have (a+b)<sup>2</sup> - 8ab = (c+d)<sup>2</sup> - 4cd, so (a/b)<sup>2</sup> - 6(a/b) + 1 = ((c-d)/b)<sup>2</sup> &ge; 0. The plot of x<sup>2</sup> - 6x + 1 is shown below. It has zeros at x = 3 - 2&radic;2 &lt; 1 and 3 + 2&radic;2 = 5.83. So since a/b &ge; 1, we must have a/b &gt; 3 + 2&radic;2.
+<p>
+<img src="diag01n2.bmp">
+<p>
+The harder part is showing that we can get as close as we like to 3 + 2&radic;2 and hence that k = 3 + 2&radic;2. The idea is to show that we can make (c-d)/b as small as we like.
+<p>
+Note first that (a+b)<sup>2</sup> - 4ab = (c+d)<sup>2</sup> - 2cd, so (a-b)<sup>2</sup> = c<sup>2</sup> + d<sup>2</sup>. In other words, a-b, c, d is a Pythagorean triple. It is well-known that r<sup>2</sup> + s<sup>2</sup>, r<sup>2</sup> - s<sup>2</sup>, 2rs are such triples for any integers r, s. Then we have a+b = c+d = r<sup>2</sup> + 2rs - s<sup>2</sup>. Hence a = r<sup>2</sup> + rs, b = rs - s<sup>2</sup>. It is now easy to check that a = r<sup>2</sup> + rs, b = rs - s<sup>2</sup>, c = r<sup>2</sup> - s<sup>2</sup>, d = 2rs satisfy a + b = c + d, 2ab = cd.
+<p>
+Suppose we specialise to c - d = 1 (then if we could get arbitrarily large b we would be home). That requires r<sup>2</sup> - s<sup>2</sup> - 2rs = 1, or (r - s)<sup>2</sup> - 2s<sup>2</sup> = 1. We recognise that as a Pell equation. It has a solution r - s = 3, s = 2. But if (R, S) is a solution to x<sup>2</sup> - 2y<sup>2</sup> = 1, so is (3R+4S, 2R+3S). So we can get arbitrarily large r - s and s such that c - d = 1. Then b = rs - s<sup>2</sup> = (r - s)s, which can therefore be made arbitrarily large as required. 
+<p>
+For example, r - s = 3, s = 2, gives r = 5, so a = 35, b = 6, c = 21, d = 20. Then a/b = 5.8333. The next solution is r - s = 17, s = 12, so r = 29, so a = 1189, b = 204, c = 697, d = 696 and a/b = 5.828431 (cf 3 + 2&radic;2 = 5.828427).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh01.html">42nd IMO shortlist 2001</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+14 Oct 2002
+</BODY>
+
+</HTML>
+

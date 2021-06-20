@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1997/15 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>38th IMO 1997 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 15</b>
+<p>
+If an infinite arithmetic progression of positive integers contains a square and a cube, show that it must contain a sixth power.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Let the progression be a, a+h, a+2h, ... . We use induction on h. If h=1 the result is obvious. So assume it is true for progressions with difference &lt; h.
+<p>
+Let d = gcd(a,h). Put h = de. Suppose first that gcd(d,e) &gt; 1. Let p be a prime dividing d and e. Let p<sup>&alpha;</sup> be the highest power of p dividing a, and p<sup>&beta;</sup> be the highest power of p dividing h. Then we have &beta; &gt; &alpha; &gt; 0. Hence the highest power of p dividing each term a+nh is p<sup>&alpha;</sup>. But the sequence includes a square and a cube, so &alpha; must be a multiple of 6. Hence the progression a/p<sup>6</sup>, (a+h)/p<sup>6</sup>, ... also has integer terms and includes a square and a cube. But it has a smaller difference, so by induction it has a sixth power. Then the corresponding term of the original sequence is also a sixth power.
+<p>
+Now suppose gcd(d,e) = 1. Then e is coprime to a, and hence to y, so for some t we have ty = x mod e. Hence t<sup>6</sup>y<sup>6</sup> = x<sup>6</sup> mod e. But y<sup>3</sup> = a mod h and hence y<sup>3</sup> = a mod e, so y<sup>6</sup> = a<sup>2</sup> mod e. Similarly, x<sup>6</sup> = a<sup>3</sup> mod e. So t<sup>6</sup>a<sup>2</sup> = a<sup>3</sup> mod e. But a is coprime to e, so we can divide by a<sup>2</sup> to get t<sup>6</sup> = a mod e. Hence by the binomial theorem, (t + ke)<sup>6</sup> = a mod e for any integer k.
+<p>
+But gcd(d,e) = 1, so t + ke = 0 mod d for some integer k. Hence (t + ke)<sup>6</sup> = 0 mod d. But a = 0 mod d, so (t + ke)<sup>6</sup> = a mod d. Since d and e are coprime and h = de, we conclude that (t + ke)<sup>6</sup> = a mod h. In other words, the progression includes a sixth power.
+<p>&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh97.html">38th IMO shortlist 1997</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+2 Dec 2003
+<br>Last corrected/updated 2 Dec 2003
+</BODY>
+</HTML>
+

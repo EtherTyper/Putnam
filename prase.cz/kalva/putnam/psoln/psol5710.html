@@ -1,0 +1,58 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>17th Putnam 1957/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>17th Putnam 1957</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+R<sup>+</sup> is the positive reals, f <b>:</b> [0, 1] &rarr; R<sup>+</sup> is monotonic decreasing. Show that &int;<sub>0</sub><sup>1</sup> f(x) dx &int;<sub>0</sub><sup>1</sup> x f(x)<sup>2</sup> dx &le; &int;<sub>0</sub><sup>1</sup> x f(x) dx &int;<sub>0</sub><sup>1</sup> f(x)<sup>2</sup> dx.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(f(x) - f(y) )(y - x) &ge; 0. Also f(x), f(y) &ge; 0, so &int; &int; f(x) f(y) (f(x) - f(y) )(y - x) dx dy &ge; 0. But f(x) f(y) (f(x) - f(y) )(y - x) = ( f(x)<sup>2</sup> y f(y) - f(x) y f(y)<sup>2</sup> ) + ( f(y)<sup>2</sup> x f(x) - f(y) x f(x)<sup>2</sup>). So if we take the same limits of integration, 0 and 1, for both integrals, then we have &int; &int; f(x) f(y) (f(x) - f(y) )(y - x) dx dy = 2 &int; f(x)<sup>2</sup> y f(y) - f(x) y f(y)<sup>2</sup> dx dy = 2 &int; f(x)<sup>2</sup> dx &int; y f(y) dy - 2 &int; f(x) dx &int; y f(y)<sup>2</sup> dy.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn57.html">17th Putnam 1957</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

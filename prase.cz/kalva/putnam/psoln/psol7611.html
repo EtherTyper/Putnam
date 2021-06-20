@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1976/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>37th Putnam 1976</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Find &sum;<sub>0</sub><sup>n</sup> (-1)<sup>i</sup> nCi ( x - i )<sup>n</sup>, where nCi is the binomial coefficient.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: n!
+
+<p>
+
+Given a polynomial p(x), define &Delta;p(x) = p(x) - p(x-1). If p(x) is of order n with leading coefficient a x<sup>n</sup>, then &Delta;p(x) is of order n-1 with leading coefficient a n x<sup>n-1</sup>. [Proof: let p(x) = a x<sup>n</sup> + b x<sup>n-1</sup> + terms in x<sup>n-2</sup> and below. Then &Delta;p(x) = a(x<sup>n</sup> - (x-1)<sup>n</sup>) + b(x<sup>n-1</sup> - (x-1)<sup>n-1</sup>) + terms in x<sup>n-2</sup> and below = a(x<sup>n</sup> - x<sup>n</sup> + n x<sup>n-1</sup>) + b(x<sup>n-1</sup> - x<sup>n-1</sup>) + terms in x<sup>n-2</sup> and below = a n x<sup>n-1</sup> + lower terms.]
+
+<p>
+
+Hence &Delta;<sup>n</sup> p(x) = a n! But the expression given is simply &Delta;<sup>n</sup>p(x) with p(x) = x<sup>n</sup>, so it evaluates to n!
+
+<p>
+
+That is the slick solution. The more plodding solution is to observe that the coefficient of x<sup>n-m</sup> is (-1)<sup>m</sup> nCm ( - nC1 1<sup>m</sup> + nC2 2<sup>m</sup> - nC3 3<sup>m</sup> + ... ). But the expression in parentheses is just the value at x = 1 of (x d/dx)<sup>m</sup> (1 - x)<sup>n</sup> (*). For m &lt; n, all terms in (*) will have a non-zero power of (1 - x) and hence will evaluate to zero. For m = n, the only term not evaluating to zero will be x<sup>n</sup> n! (-1)<sup>n</sup> which gives n! (-1)<sup>n</sup>. Hence the expression in the question has the coefficient of x<sup>r</sup> zero, except for the constant term, which is (-1)<sup>n</sup> nCn n! (-1)<sup>n</sup> = n! .
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn76.html">37th Putnam 1976</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+23 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

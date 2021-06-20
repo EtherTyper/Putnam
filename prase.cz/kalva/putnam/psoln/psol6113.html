@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1961/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>22nd Putnam 1961</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+Let y be the solution of the differential equation y'' = - (1 + &radic;x) y such that y(0) = 1, y'(0) = 0. Show that y has exactly one zero for x &isin; (0, &pi;/2) and find a positive lower bound for it.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let z be the solution of z'' = -z with z(0) = 1, z'(0) = 0. Suppose y &gt; 0 for 0 &lt;= x &lt;&pi;/2. Then since y''z - yz'' = -(1 + &radic;x) yz + yz = - &radic;x yz, we have &int;<sub>0</sub>&pi;/2</sup> - &radic;x yz dx = &int;<sub>0</sub><sup>&pi;/2</sup> (y''z - yz'') dx = (y'z - yz') |<sub>0</sub><sup>&pi;/2</sup> = y(&pi;/2) &ge; 0. But - &radic;x yz &lt; 0 throughout the range, so &int;<sub>0</sub><sup>&pi;/2</sup> - &radic;x yz dx &lt; 0. Contradiction. Hence y has at least one zero in (0, &pi;/2).
+
+<p>
+
+Let w be the solution of w'' = -3w with w(0) = 1, w'(0) = 0. Then w = cos (&radic;3)x. Suppose y had a zero in (0, &pi;/(2&radic;3)). Then the same argument would show that w had a root in (0, &pi;/(2&radic;3) which is false. So &pi;/(2&radic;3)is a positive lower bound for any zero of y.
+
+<p>
+
+Finally, suppose that y has more than one zero in (0, &pi;/2). Let the first be at x = h and the second at x = k. Take v(x) to be A cos( (&radic;3) x + B). We select A and B so that v(h) = 0 and v'(h) = y'(h). Now v cannot have another zero in (h, k), so we can establish a contradiction by a similar argument to the above. We have v'' = -3v. Hence y''v - yv'' = ( -(1 + &radic;x) + 3) yv which is strictly positive on (h, k). Hence &int;<sub>h</sub><sup>k</sup> (y''v - yv'') dx &gt; 0. But &int;<sub>h</sub><sup>k</sup> (y''v - yv'') dx = (y'v - yv') |<sub>h</sub><sup>k</sup> = y'(k)v(k) &lt; 0. [y' must be positive since y is zero and y(x) &lt; 0 for x just less than k, whilst we know that v(k) is negative). Contradiction. Hence y has exactly one zero.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn61.html">22nd Putnam 1961</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

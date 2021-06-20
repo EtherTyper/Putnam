@@ -1,0 +1,106 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 03/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>33rd USAMO 2003</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+A positive integer is written at each vertex of a hexagon. A move is to replace a number by the (non-negative) difference between the two numbers at the adjacent vertices. If the starting numbers sum to 2003<sup>2003</sup>, show that it is always possible to make a sequence of moves ending with zeros at every vertex.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+It is possible to get stuck, so the result is not trivial. For example:
+<pre>  1 1
+0     0
+  1 1
+</pre>
+
+We show that provided the sum of the numbers is odd, we can always find a sequence of moves which give either (1) a lower maximum number, and odd sum, or (2) all zeros. Since the starting sum is odd, that is sufficient.
+<p>
+Note that no move <i>increases</i> the maximum. The first step is to show that if the sum is odd, we can find moves which give just one number odd. For convenience we refer to the numbers as
+<pre>  A B
+F     C
+  E D
+</pre>
+
+We also use the letters to refer to moves. So, for example, B means the move replacing B. Since the sum is odd, either A+C+E is odd or B+D+F is odd. wlog A+C+E is odd. Suppose just one of A,B,C is odd. wlog it is A. Making the moves B, F, A, F, D and working mod 2 we get successively:
+<pre>
+  1 B       1 1       1 1       0 1       0 1       0 1
+F     0   F     0   1     0   1     0   0     0   0     0
+  0 D       0 D       0 D       0 D       0 D       0 0
+</pre>
+<p>
+Similarly, if all of A, B, C are odd, then B, F, D, E, C we get mod 2:
+<pre>
+  1 B       1 0       1 0       1 0       1 0       1 0
+F     1   F     1   0     1   0     1   0     1   0     0
+  1 D       1 D       1 D       1 0       0 0       0 0
+</pre>
+So wlog A is odd and all the other numbers are even. Suppose that the maximum is M. We show how to reduce M. There are two cases. Suppose first that M is even so that A &lt; M. Then we make the moves B, C, D, E, F giving (mod 2):
+<pre>
+  1 0       1 1       1 1       1 1       1 1       1 1
+0     0   0     0   0     1   0     1   0     1   0     1
+  0 0       0 0       0 0       0 1       1 1       1 1
+</pre>
+The first four moves do not change A, which is neither 1 nor M, so the last move must reduce F, so the new maximum must be an odd number. But it must be &le;M, which is even, so the new maximum is &lt;M and the sum is still odd.
+<p>
+The second case is M odd, so that A = M. If C &gt; 0 we make the moves B, F, A, F giving (mod 2):
+<pre>
+  1 0       1 1       1 1       0 1       0 1
+0     0   0     0   1     0   1     0   0     0
+  0 0       0 0       0 0       0 0       0 0
+</pre>
+Since C is not 0 or M, the new B must be &lt;M and the other new numbers are all even and hence &lt;M. So the new maximum is &lt;M and the sum is still odd. The same argument works if E &gt; 0 (just reflect about AD). So finally suppose C = E = 0. Then we get (no reduction mod 2):
+<pre>
+  A B       A A       A A       A A       A A       0 A       0 A       0 0
+F     0   F     0   A     0   A     0   A     0   A     0   0     0   0     0
+  0 D       0 D       0 D       0 D       0 0       0 0       0 0       0 0
+</pre>
+
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa03.html">33rd USAMO 2003</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+6 Aug 2003
+<br>Last corrected/updated 6 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

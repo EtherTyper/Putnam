@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1997/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b>
+
+<p>
+
+Find all pairs (a, b) of positive integers that satisfy a<sup>b<sup>2</sup></sup> = b<sup>a</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+(1,1), (16,2), (27,3).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+Notice first that if we have a<sup>m</sup> = b<sup>n</sup>, then we must have a = c<sup>e</sup>, b = c<sup>f</sup>, for some c, where m=fd, n=ed and d is the greatest common divisor of m and n. [Proof: express a and b as products of primes in the usual way.]
+
+<p>In this case let d be the greatest common divisor of a and b<sup>2</sup>, and put a = de, b<sup>2</sup> = df. Then for some c, a = c<sup>e</sup>, b = c<sup>f</sup>. Hence f c<sup>e</sup> = e c<sup>2f</sup>. We cannot have e = 2f, for then the c's cancel to give e = f. Contradiction. Suppose 2f &gt; e, then f = e c<sup>2f-e</sup>. Hence e = 1 and f = c<sup>2f-1</sup>. If c = 1, then f = 1 and we have the solution a = b = 1. If c &ge; 2, then c<sup>2f-1</sup> &ge; 2<sup>f</sup> &gt; f, so there are no solutions.
+
+<p>Finally, suppose 2f &lt; e. Then e = f c<sup>e-2f</sup>. Hence f = 1 and e = c<sup>e-2</sup>. c<sup>e-2</sup> &ge; 2<sup>e-2</sup> &ge; e for e &ge; 5, so we must have e = 3 or 4 (e &gt; 2f = 2). e = 3 gives the solution a = 27, b = 3. e = 4 gives the solution a = 16, b = 2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo97.html">38th IMO 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Oct 1998
+
+<br>Last corrected/updated 19 Oct 03
+</BODY>
+
+
+
+</HTML>
+

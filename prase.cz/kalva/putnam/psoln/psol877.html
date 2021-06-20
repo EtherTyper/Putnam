@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 87/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>48th Putnam 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+Evaluate &int;<sub>2</sub><sup>4</sup> ln<sup>1/2</sup>(9 - x)/( ln<sup>1/2</sup>(9 - x) + ln<sup>1/2</sup>(x + 3) ) dx.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 1.
+
+<p>
+
+<i>Offputting, but easy!</i>
+
+<p>
+
+The integrand looks horrible. A little playing around, differentiating things like ln<sup>1/2</sup>(9 - x), soon confirms this impression. But we know the first question in each Putnam session is always easy, so there must be some trick!
+
+<p>
+We might notice that as x goes from 2 to 4, 9 - x goes from 7 to 5, and x + 3 goes from 5 to 7. That might suggest substituting y such that 9 - y = x + 3 (and hence also y + 3 = 9 - x). dy = - dx, the limits interchange and we get &int;<sub>2</sub><sup>4</sup> ln<sup>1/2</sup>(y + 3)/( ln<sup>1/2</sup>(9 - y) + ln<sup>1/2</sup>(y + 3) ) dy. We are home, because we can add the two integrals to get &int;<sub>2</sub><sup>4</sup> 1 dx = 2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn87.html">48th Putnam 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Oct 1999
+
+</BODY>
+
+
+
+</HTML>
+

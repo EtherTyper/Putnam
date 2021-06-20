@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1975/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>36th Putnam 1975</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+For what region of the real (a, b) plane, do both (possibly complex) roots of the polynomial z<sup>2</sup> + az + b = 0 satisfy |z| &lt; 1?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: the interior of the triangle with vertices (&plusmn;2, 1), (0, -1).
+
+<p>
+
+Clearly we require |a| &le; 2, |b| &le; 1. But that is not sufficient. For example, if b = 0, then we require |a| &le; 1.
+
+<p>
+
+We consider first the region where a &ge; 0. If b &gt; a<sup>2</sup>/4, then the roots are z = a/2 &plusmn; i &radic;(b - a<sup>2</sup>/4), so these satisfy |z| &lt; 1 iff (a/2)<sup>2</sup> + (b - a<sup>2</sup>/4) &lt; 1 or b &lt; 1. This gives the quasi-triangular region bounded by the two lines a = 0 and b = 1 on two sides and the curve 4b = a<sup>2</sup> on the third side.
+
+<p>
+
+If b &lt; a<sup>2</sup>/4, then the roots are z = a/2 &plusmn; &radic;(a<sup>2</sup>/4 - b). These satisfy |z| &lt; 1 iff a/2 + &radic;(a<sup>2</sup>/4 - b) &lt; 1 which gives a - b &lt; 1. This gives the quasi-triangular region bounded by the lines a = 0 and a - b = 1 on two sides and the curve 4b = a<sup>2</sup> on the third. But since the line a - b = 1 touches the curve b = a<sup>2</sup>/4 at a = 2, the two regions fit together to give the interior of triangle with vertices (a, b) = (0, 1), (0, -1) and (2, 1).
+
+<p>
+
+The region for a &le; 0 is evidently the mirror image in the b-axis, so we get in total the (interior of the) triangular region with vertices (2, 1), (-2, 1) and (0, -1).
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn75.html">36th Putnam 1975</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

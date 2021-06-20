@@ -1,0 +1,60 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1985/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1985</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b>
+
+<p>
+
+Let n and k be relatively prime positive integers with k &lt; n. Each number in the set M = {1, 2, 3, ... , n-1} is colored either blue or white. For each i in M, both i and n-i have the same color. For each i in M not equal to k, both i and |i-k| have the same color. Prove that all numbers in M must have the same color.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+n and k are relatively prime, so 0, k, 2k, ... , (n-1)k form a complete set of residues mod n. So k, 2k, ... , (n-1)k are congruent to the numbers 1, 2, ... , n-1 in some order. Suppose ik is congruent to r and (i+1)k is congruent to s. Then either s = r + k, or s = r + k - n. If s = r + k, then we have immediately that r = s - k and s have the same color. If s = r + k - n, then r = n - (k - s), so r has the same color as k - s, and k - s has the same color as s. So in any case r and s have the same color. By giving i values from 1 to n-2 this establishes that all the numbers have the same color.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo85.html">26th IMO 1985</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

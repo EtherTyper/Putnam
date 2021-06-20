@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 84/5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>13th USAMO 1984</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 5</b><br>
+
+<p>
+
+A polynomial of degree 3n has the value 2 at 0, 3, 6, ... , 3n, the value 1 at 1, 4, 7, ... , 3n-2 and the value 0 at 2, 5, 8, ... , 3n-1. Its value at 3n+1 is 730. What is n?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: n = 4.
+
+<p>
+
+The (3n+1)th differences of the polynomial are zero. Call it p(x), so we have p(3n+1) - (3n+1)C1 p(3n) + (3n+1)C2 p(3n-1) - ... + (-1)<sup>3n+1</sup> p(0) = 0, where rCs is the binomial coefficient. Hence p(3n+1) = 2( (3n+1)C1 - (3n+1)C4 + ... ) + ( (3n+1)C3 - (3n+1)C6 + ... ). Putting n = 1, we get: p(4) = 2( 4C1 - 4C4) + 4C3 = 6 + 4 = 10. So n is not 1. Putting n = 2, we get: p(7) = 2( 7C1 - 7C4 + 7C7) + ( 7C3 - 7C6) = 2( 7 - 35 + 1) + (35 - 7) = -26. So n is not 2. Putting n = 3, we get: p(10) = 2( 10C1 - 10C4 + 10C7 - 10C10) + ( 10C3 - 10C6 + 10C9) = 2(10 - 210 + 120 - 1) + (120 - 210 + 10) = -162 -100 = -262. So n is not 3. Putting n = 4, we get: p(13) = 2( 13C1 - 13C4 + 13C7 - 13C10 + 13C13) + ( 13C3 - 13C6 + 13C9 - 13C12) = 2(13 - 715 + 1716 - 286 + 1) + (286 - 1716 + 715 - 13) = 1458 - 728 = 730. So n = 3 works.
+
+<p>
+
+<i>Comment. That looks kludgy and indeed it is. But it is also fast. Less than 5 minutes. Of course, the elegant approach is to find a general expression for those binomial sums. But there is no need, so why take time (unless of course one has finished all the other questions and has time to chase prizes for elegance!)</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa84.html">13th USAMO 1984</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

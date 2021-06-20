@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 99/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>60th Putnam 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+u<sub>1</sub> = 1, u<sub>2</sub> = 2, u<sub>3</sub> = 24, u<sub>n</sub> = (6 u<sub>n-1</sub><sup>2</sup>u<sub>n-3</sub> - 8 u<sub>n-1</sub>u<sub>n-2</sub><sup>2</sup>)/(u<sub>n-2</sub>u<sub>n-3</sub>). Show that u<sub>n</sub> is always a multiple of n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Put v<sub>n</sub> = u<sub>n</sub>/u<sub>n-1</sub>. Then the relation simplifies to: v<sub>n</sub> = 6v<sub>n-1</sub> - 8v<sub>n-2</sub>. This has general solution: v<sub>n</sub> = A 2<sup>n</sup> + B 4<sup>n</sup>. But v<sub>2</sub> = u<sub>2</sub>/u<sub>1</sub> = 2, v<sub>3</sub> = u<sub>3</sub>/u<sub>2</sub> = 12, so v<sub>n+1</sub> = 4<sup>n</sup> - 2<sup>n</sup>. Hence u<sub>n</sub> = (4<sup>n-1</sup> - 2<sup>n-1</sup>)(4<sup>n-2</sup> - 2<sup>n-2</sup>) ... (4 - 2).
+
+<p>
+
+For any prime p, we have 4<sup>p-1</sup> = 2<sup>p-1</sup> = 1 (mod p), so p divides 4<sup>p-1</sup> - 2<sup>p-1</sup> and also 4<sup>s</sup> - 2<sup>s</sup> for s a multiple of p - 1. But if p<sup>r</sup> divides n, then there are at least r multiples of (p - 1) less than n, so p<sup>r</sup> divides u<sub>n</sub>. Hence n divides u<sub>n</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+&nbsp;<p>
+
+<a href="../putn99.html">60th Putnam 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>13th Putnam 1953/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>13th Putnam 1953</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+k is real. Solve the differential equations y' = z(y + z)<sup>k</sup>, z' = y(y + z)<sup>k</sup> subject to y(0) = 1, z(0) = 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Adding, (y + z)' = (y + z)<sup>k+1</sup>. Integrating (y + z)<sup>k</sup> = 1/(1 - kx) (1).
+
+<p>
+
+Multiplying opposite sides of the two given equations together, we get yy'(y + z)<sup>k</sup> = zz' (y + z)<sup>k</sup>. Hence yy' = zz'. Integrating y<sup>2</sup> - z<sup>2</sup> = 1. Hence (y + z)<sup>k</sup>(y - z)<sup>k</sup> = 1, so (y - z)<sup>k</sup> = 1 - kx (2).
+
+<p>
+
+For k non-zero, we can immediately solve (1) and (2) to get y = 1/2 ( (1 - kx)<sup>1/k</sup> + 1/(1 - kx)<sup>1/k</sup> ), z = 1/2 ( (1 - kx)<sup>1/k</sup> - 1/(1 - kx)<sup>1/k</sup> ).
+
+<p>
+
+For k = 0, the original equations simplify to y' = z, z'= y. So y'' = y. So y = A cosh x + B sinh x, z = A cosh x + B sinh x. Applying the initial conditions, y = cosh x, z = sinh x.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn53.html">13th Putnam 1953</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

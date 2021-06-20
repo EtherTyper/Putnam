@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 46/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>6th Putnam 1946</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Define a<sub>n</sub> = 2(1 + 1/n)<sup>2n+1</sup>/( (1 + 1/n)<sup>n</sup> + (1 + 1/n)<sup>n+1</sup>). Prove that a<sub>n</sub> is strictly monotonic increasing.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+a<sub>n</sub> = 2 (n+1)<sup>n+1</sup>/(n<sup>n</sup> (2n+1) ). Let f(n) = ln a<sub>n</sub>/2 = (n + 1) ln(n + 1) - n ln n - ln(2n+1). Regard f as a function of a real variable and differentiate. f '(x) = ln(x + 1) - ln x - 2/(2x + 1). Differentiate again: f ''(x) = 1/(x + 1) - 1/x + 4/(2x + 1)<sup>2</sup> = -1/( x(x+1)(2x+1)<sup>2</sup>).
+
+<p>
+
+So f ''(x) &lt; 0 for all x &gt; 0. Hence f '(x) is decreasing. But we can write f '(x) = ln(1 + 1/x) - 2/(2x + 1) which tends to 0 as x tends to infinity. So f '(x) &gt; 0 for all x &gt; 0. Hence f(x) is strictly increasing for all positive x. Hence f(n+1) &gt; f(n) and so exp f(n+1) &gt; exp f(n), which is the result we want.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn46.html">6th Putnam 1946</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 78/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>39th Putnam 1978</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+A binary operation (represented by multiplication) on S has the property that (ab)(cd) = ad for all a, b, c, d. Show that: (1) if ab = c, then cc = c; (2) if ab = c, then ad = cd for all d. Find a set S, and such a binary operation, which also satisfies: (A) a a = a for all a; (B) ab = a &ne; b for some a, b; (C) ab &ne; a for some a, b.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(1): (ab)(ab) = ab, so cc = c. (2): (ab)d = ( (ab)(ab) ) (dd) = (ab)(dd) = ad. Note that an exactly similar argument gives a(bc) = ac. So the operation is in fact associative and a<sub>1</sub>a<sub>2</sub>... a<sub>n</sub> = a<sub>1</sub>a<sub>n</sub>.
+
+<p>
+
+In passing we note various possible special cases: (A) ab = k for all a, b (where k is fixed); (B) ab = a for all a, b; (C) ab = b for all a, b. The extra conditions are presumably designed to rule out these special cases.
+
+<p>
+
+So we need some operation which preserves something of the first element and something of the second. The easiest is to take S to consist of pairs (r, s) and to define the operation as: (r, s) (u, v) = (r, v). The simplest such example is S = { (0, 0), (0, 1), (1, 0), (1, 1) }. This obviously satisfies all the required conditions. Writing a = (0, 0), b = (0, 1), c = (1, 0), d = (1, 1), we have:
+
+<br><pre>   a  b  c  d
+
+<br>a  a  b  a  b
+
+<br>b  a  b  a  b
+
+<br>c  c  d  c  d
+
+<br>d  c  d  c  d
+
+</pre>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn78.html">39th Putnam 1978</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

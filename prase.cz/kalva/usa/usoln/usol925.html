@@ -1,0 +1,80 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 92/5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>21st USAMO 1992</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 5</b><br>
+
+<p>
+
+A complex polynomial has degree 1992 and distinct zeros. Show that we can find complex numbers z<sub>n</sub>, such that if p<sub>1</sub>(z) = z - z<sub>1</sub> and p<sub>n</sub>(z) = p<sub>n-1</sub>(z)<sup>2</sup> - z<sub>n</sub>, then the polynomial divides p<sub>1992</sub>(z).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let the polynomial of degree 1992 be q(z). Suppose its roots are w<sub>1</sub>, w<sub>2</sub>, ... , w<sub>1992</sub>. Let S<sub>1</sub> = {w<sub>1</sub>, ... , w<sub>1992</sub>}. We now define S<sub>2</sub> as follows. Let z<sub>1</sub> = (w<sub>1</sub> + w<sub>2</sub>)/2 and take S<sub>2</sub> to be the set of all numbers (w - z<sub>1</sub>)<sup>2</sup> with w in S<sub>1</sub>. Note that w = w<sub>1</sub> and w = w<sub>2</sub> give the same number. It is possible that other pairs may also give the same number. But certainly |S<sub>2</sub>| &lt;= |S<sub>1</sub>| - 1. We now repeat this process until we get a set with only one member. Thus if S<sub>i</sub> has more than one member, then we take we take z<sub>i</sub> to be an average of any two <i>distinct</i> members. Then we take S<sub>i+1</sub> to be the set of all (w - z<sub>i</sub>)<sup>2</sup> with w in S<sub>i</sub>. So after picking at most 1991 elements z<sub>i</sub> we have a set S<sub>N</sub> with only one member. Take z<sub>N</sub> to be that one member, so that S<sub>N+1</sub> = {0}. Now if N &lt; 1991, take the remaining z<sub>i</sub> to be 0 until we reach z<sub>1992</sub>.
+
+<p>
+
+Now as we allow z to take the values in S: 
+
+<p>	p<sub>1</sub>(z) = (z - z<sub>1</sub>) takes 1992 possible values; 
+
+<br>	p<sub>2</sub>(z) = (z - z<sub>1</sub>)<sup>2</sup> - z<sub>2</sub> takes at most 1991 possible values;
+
+<br>	p<sub>3</sub>(z) = ( (z - z<sub>1</sub><sup>2</sup> - z<sub>2</sub>)<sup>2</sup> - z<sub>3</sub> takes at most 1990 possible values;
+
+<br>	p<sub>4</sub>(z) = ( ( (z - z<sub>1</sub>)<sup>2</sup> - z<sub>2</sub>)<sup>2</sup> - z<sub>3</sub>)<sup>2</sup> - z<sub>4 </sub>takes at most 1989 possible values;
+
+<br> 	...
+
+<br>	p<sub>1992</sub>(z) takes only the value 0.
+
+<p>
+
+So every root of q(z) is also a root of p<sub>1992</sub>(z). Hence q(z) must divide p<sub>1992</sub>(z).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa92.html">21st USAMO 1992</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+21 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

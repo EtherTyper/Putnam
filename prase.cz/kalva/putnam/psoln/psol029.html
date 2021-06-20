@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 02/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>63rd Putnam 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Show that for any integer n &gt; 1, we have 1/e - 1/(ne) &lt; (1 - 1/n)<sup>n</sup> &lt; 1/e - 1/(2ne). 
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Take the left-hand inequality first. Multiplying through by e and taking logs, we want to show that 0 &lt; 1 + (n-1) ln(1 - 1/n). Putting x = 1/n, it is sufficient to show that ln(1 - x) &gt; x/(1-x) for 0 &lt; x &lt; 1. But we can use the expansions: ln(1 - x) = -(x + x<sup>2</sup>/2 + x<sup>3</sup>/3 + ... ), and x/(1-x) = x + x<sup>2</sup> + x<sup>3</sup> + ... and the result is immediate.
+
+<p>
+
+Similarly, for the right-hand inequality we need: 1 + n ln(1 - 1/n) &lt; ln(1 - 1/2n). Putting x = 1/n, it is sufficient to show that -(x/2 + x<sup>2</sup>/3 + x<sup>3</sup>/4 + ... ) &lt; -(x/2 + (x/2)<sup>2</sup>/2 + (x/2)<sup>3</sup>/3 + ... ) for 0 &lt; x &lt; 1. Again this holds term by term because n2<sup>n</sup> &gt; n+1 for n &gt; 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn02.html">63rd Putnam 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Dec 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1970/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>31st Putnam 1970</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+A perfect square has <i>length</i> n if its last n digits (in base 10) are the same and non-zero. What is the longest possible length? What is the smallest square achieving this length?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 3, 38<sup>2</sup> = 1444.
+
+<p>
+
+All squares end in the digit 0, 1, 4, 9, 6, or 5. A square ending in 11, 99, 66, 55 would be congruent to 3, 3, 2, 3 mod 4, but squares are congruent to 0 or 1 mod 4. So for length greater than 1 the square must end in 4. For example, 12<sup>2</sup> = 144.
+
+<p>
+
+A square ending in 4444 would be congruent to 12 mod 16, but squares are congruent to 0, 1, 4 or 9 mod 16. So the maximum length is 2 or 3.
+
+<p>
+
+If n<sup>2</sup> ends in 4, then n must end in 2 or 8. (100a + 10b + 2)<sup>2</sup> = 10000a<sup>2</sup> + 1000 (2ab) + 100 (4a + b<sup>2</sup>) + 10 (4b) + 4. So if this ends in 44, then b = 1 or 6. If b = 1, then 4a + b<sup>2</sup> is odd, so the square cannot end in 444. If b = 6, then the square is 1000k + (4a + 38) 100 + 44. This will end in 444 if we take a = 4 or 9. Thus the smallest numbers ending in 2 whose square ends in 444 are 462 (square 213444) and 962 (square 925444).
+
+<p>
+
+(100a + 10b + 8)<sup>2</sup> = 1000k + 100 (16a<sup>2</sup> + b<sup>2</sup>) + 10 (16b + 6) + 4. So if this ends in 44, then b = 3 or 8. (100a + 38)<sup>2</sup> = 1000k + 100 (76a) + 1444, so this ends in 444 if a = 0. This must be the smallest solution.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn70.html">31st Putnam 1970</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Feb 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,75 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1985/5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>26th IMO 1985 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 5</b><br>
+<p>
+T is the set of all lattice points in space. Two lattice points are <i>neighbors</i> if they have two coordinates the same and the third differs by 1. Show that there is a subset S of T such that if a lattice point x belongs to S then none of its neighbors belong to S, and if x does not belong to S, then exactly one of its neighbors belongs to S.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Let S be the set of points (x, y, z) with 2x + 4y + 6z = 0 mod 7. If 2x + 4y + 6z
+<pre>
+= 0 mod 7, then (x, y, z) is in S
+= 1 mod 7, then (x, y, z+1) is in S
+= 2 mod 7, then (x-1, y, z) is in S
+= 3 mod 7, then (x, y+1, z) is in S
+= 4 mod 7, then (x, y-1, z) is in S
+= 5 mod 7, then (x+1, y, z) is in S
+= 6 mod 7, then (x, y, z-1) is in S
+</pre>
+So if x is in T - S, then at least one of its neighbours belongs to S. Also if (x, y, z) is in S, then (x&plusmn;1, y, z), (x, y&plusmn;1, z), (x, y, z&plusmn;1) are not in S. In other words, if a point is in S, then none of its neighbours are in S. Finally, if (x, y, z) is in S, then none of (x&plusmn;2, y, z), (x, y&plusmn;2, z), (x, y, z&plusmn;2), (x&plusmn;1, y&plusmn;1, z), (x&plusmn;1, y, z&plusmn;1), (x, y&plusmn;1, z&plusmn;1) are in S, so no point has two of its neighbours in S. That establishes that S has the required properties.
+<p>
+<i>Comment</i>
+<p>
+2x + 4y + 6z may seem fairly obvious, but I got there by a tortuous route. I started, of course, by looking at 1D. That is obvious: ... 0 0 X 0 0 X 0 0 X 0 ... , where X denotes the members of S. 1 point in 3 belongs to S. 
+<p>
+2D is not quite so obvious. But with a little experimentation one can get:
+<pre>
+0  0  0  0  X  0
+0  0  X  0  0  0 
+X  0  0  0  0  X
+0  0  0  X  0  0
+0  X  0  0  0  0
+</pre>
+Obviously 1 point in 5 belongs to S and the pattern repeats with period 5 in both directions. At this point I started looking for a suitable pattern for 3D. I needed 1 point in 7. It did not take long to find:
+<pre>
+0  0  0  X  0  0  0
+X  0  0  0  0  0  0
+0  0  0  0  X  0  0
+0  X  0  0  0  0  0
+0  0  0  0  0  X  0
+0  0  X  0  0  0  0
+0  0  0  0  0  0  X
+0  0  0  X  0  0  0
+</pre>
+I then tried to think what the next plane up would look like. After some more fiddling around I hit on:
+<pre>
+2  6  3  0  4  1  5
+0  4  1  5  2  6  3
+5  2  6  3  0  4  1
+3  0  4  1  5  2  6
+1  5  2  6  3  0  4
+6  3  0  4  1  5  2
+4  1  5  2  6  3  0
+</pre>
+The number denotes the z-coordinate. So the pattern represents a 7 x 7 x 7 cube of lattice points which repeats. 
+<p>
+At this point it occurred to me that since the pattern in each line was the same, the points belonging to S satisified some equation like 4x + 2y - z = 0 (or some constant, but 0 if we take the origin in the right place) mod 7. I then junked all the scaffolding and wrote out the solution above.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh85.html">26th IMO shortlist 1985</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+14 Sep 2002
+</BODY>
+
+</HTML>
+

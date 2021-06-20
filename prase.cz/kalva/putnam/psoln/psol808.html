@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1980/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>41st Putnam 1980</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+S is the region of space defined by x, y, z &ge; 0, x + y + z &le; 11, 2x + 4y + 3z &le; 36, 2x + 3z &le; 24. Find the number of vertices and edges of S. For which a, b is ax + by + z &le; 2a + 5b + 4 for all points of S?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 7 vertices, 11 edges. Condn on a, b is 2/3 &le; a &le; 1 and b = 2 - a.
+
+<p>
+
+The face of S in the xy plane has vertices (0,0,0), (11,0,0), (4,7,0) and (0,9,0). The face of S in the yz plane has vertices (0,0,0), (0,9,0), (0,3,8) and (0,0,8). The face of S in the zx plane has vertices (0,0,0), (11,0,0), (0,0,8) and (9,0,2). There are no other vertices. So 7 vertices in total. Note that (11,0,0), (4,7,0), (0,3,8) and (9,0,2) lie on x + y + z = 11; (0,3,8), (0,9,0) and (4,7,0) lie on 2x + 4y + 3z = 36; and (0,0,8), (0,3,8) and (9,0,2) lie on 2x + 3z = 24.
+
+<p>
+
+There are 6 faces (the six planes x=0, y=0, z=0, x + y + z = 11, 2x + 4y + 3z = 36 and 2x + 3z = 24). Hence the number of edges is 6 + 7 - 2 = 11. [Explicitly: (0,0,0) to (11,0,0), (0,9,0) and (0,0,8); (0,3,8) to (0,0,8), (0,9,0), (4,7,0) and (9,0,2); (0,9,0) to (4,7,0) to (11,0,0) to (9,0,2) to (0,0,8).]
+
+<p>
+
+The point (2,5,4) is the midpoint of the edge (0,3,8) to (4,7,0). If we fix a, b then 2a + 4b + 5 has some value k. The condition ax + by + z &le; k is then the condition that (x,y,z) lies on or to one side of the plane ax + by + z = k. But the point (2, 5, 4) lies on the plane, so we require that the plane is a support plane of S. Since (2, 5, 4) lies on an edge of S, that edge must lie in the plane. The two extreme positions are evidently x + y + z = 11 and 2x + 4y + 3z = 36, or equivalently 2/3 x + 4/3 y + z = 12, each of which contain a face of S including the edge.
+
+<p>
+
+So the acceptable a, b are 2/3 &le; a &lt; 1, and b = 2 - a. [Check: this gives the condition ax + (2 - a)y + z &le; (14 - 3a). For the vertex (0,9,0) we have 18 - 9a &lt; 14 - 3a, which is equivalent to a &ge; 2/3. For the vertex (11,0,0) we have 11a &lt; 14 - 3a, which is equivalent to a &le; 1.]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn80.html">41st Putnam 1980</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+23 Jan 2001
+
+<br>Last corrected/updated 21 Nov 02
+
+</BODY>
+
+
+
+</HTML>
+

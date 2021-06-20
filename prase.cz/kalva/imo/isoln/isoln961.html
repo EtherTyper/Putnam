@@ -1,0 +1,98 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1996/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b>
+
+<p>
+
+We are given a positive integer r and a rectangular board divided into 20 x 12 unit squares. The following moves are permitted on the board: one can move from one square to another only if the distance between the centers of the two squares is &radic;r. The task is to find a sequence of moves leading between two adjacent corners of the board which lie on the long side. 
+
+<p>(a)&nbsp; Show that the task cannot be done if r is divisible by 2 or 3.
+
+<br>(b)&nbsp; Prove that the task is possible for r = 73.
+
+<br>(c)&nbsp; Can the task be done for r = 97?
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+<p>
+
+No.
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+(a)&nbsp; Suppose the move is a units in one direction and b in the orthogonal direction. So a<sup>2</sup> + b<sup>2</sup> = r. If r is divisible by 2, then a and b are both even or both odd. But that means that we can only access the black squares or the white squares (assuming the rectangle is colored like a chessboard). The two corners are of opposite color, so the task cannot be done. All squares are congruent to 0 or 1 mod 3, so if r is divisible by 3, then a and b must both be multiples of 3. That means that if the starting square has coordinates (0,0), we can only move to squares of the form (3m,3n). The required destination is (19,0) which is not of this form, so the task cannot be done.
+
+<p>
+(b)&nbsp; If r = 73, then we must have a = 8, b = 3 (or vice versa). There are 4 types of move:
+
+<p>&nbsp; &nbsp; &nbsp; A: (x,y) to (x+8,y+3)
+
+<br>&nbsp; &nbsp; &nbsp; B: (x,y) to (x+3,y+8)
+
+<br>&nbsp; &nbsp; &nbsp; C: (x,y) to (x+8,y-3)
+
+<br>&nbsp; &nbsp; &nbsp; D: (x,y) to (x+3,y-8)
+
+<p>
+We regard (x,y) to (x-8,y-3) as a negative move of type A, and so on. Then if we have a moves of type A, b of type B and so on, then we require:
+
+<p>&nbsp; &nbsp; 8(a + c) + 3(b + d) = 19; 3(a - c) + 8(b - d) = 0.
+
+<p>
+A simple solution is a = 5, b = -1, c = -3, d = 2, so we start by looking for solutions of this type. After some fiddling we find:
+
+<p>
+(0,0) to (8,3) to (16,6) to (8,9) to (11,1) to (19,4) to (11,7) to (19,10) to (16,2) to (8,5) to (16,8) to (19,0).
+
+<p>
+(c)&nbsp; If r = 97, then we must have a = 9, b = 4. As before, assume we start at (0,0). A good deal of fiddling around fails to find a solution, so we look for reasons why one is impossible. Call moves which change y by 4 "toggle" moves. Consider the central strip y = 4, 5, 6 or 7.  Toggle moves must toggle us in and out of the strip. Non-toggle moves cannot be made if we are in the strip and keep us out of it if we are out of it. Toggle moves also change the parity of the x-coordinate, whereas non-toggle moves do not. Now we start and finish out of the strip, so we need an even number of toggle moves. On the other hand, we start with even x and end with odd x, so we need an odd number of toggle moves. Hence the task is impossible.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo96.html">37th IMO 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Oct 1998
+<br>Last corrected/updated 21 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

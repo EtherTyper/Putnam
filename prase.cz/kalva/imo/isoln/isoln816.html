@@ -1,0 +1,68 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1981/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+The function f(x,y) satisfies: f(0,y) = y + 1, f(x+1,0) = f(x,1), f(x+1,y+1) = f(x,f(x+1,y)) for all non-negative integers x, y. Find f(4, 1981).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+f(1,n) = f(0,f(1,n-1)) = 1 + f(1,n-1). So f(1,n) = n + f(1,0) = n + f(0,1) = n + 2.
+
+<p>f(2,n) = f(1,f(2,n-1)) = f(2,n-1) + 2. So f(2,n) = 2n + f(2,0) = 2n + f(1,1) = 2n + 3.
+
+<p>
+f(3,n) = f(2,f(3,n-1)) = 2f(3,n-1) + 3. Let u<sub>n</sub> = f(3,n) + 3, then u<sub>n</sub> = 2u<sub>n-1</sub>. Also u<sub>0</sub> = f(3,0) + 3 = f(2,1) + 3 = 8. So u<sub>n</sub> = 2<sup>n+3</sup>, and f(3,n) = 2<sup>n+3</sup> - 3.
+
+<p>
+f(4,n) = f(3,f(4,n-1)) = 2<sup>f(4,n-1)+3</sup> - 3. f(4,0) = f(3,1) = 2<sup>4</sup> - 3 = 13. We calculate two more terms to see the pattern: f(4,1) = 2<sup>2<sup>4</sup></sup> - 3, f(4,2) = 2<sup>2<sup>2<sup>4</sup></sup></sup> - 3. In fact it looks neater if we replace 4 by 2<sup>2</sup>, so that f(4,n) is a tower of n+3 2s less 3.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo81.html">22nd IMO 1981</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

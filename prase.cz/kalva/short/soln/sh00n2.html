@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE>41st IMO shortlist 2000/N2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>41st IMO 2000 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N2</b><br>
+<p>
+Find all positive integers n such that the number of positive divisors of n is (4n)<sup>1/3</sup>.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 2, 128, 2000.
+<p>
+Let e(p) be the exponent of p in the prime factorisation of n (so n = 2<sup>e(2)</sup>3<sup>e(3)</sup>5<sup>e(5)</sup> ... ). Since 4n is a cube, we must have e(2) = 1 mod 3 and e(p) = 0 mod 3 for odd p. Let d(n) be the number of positive divisors of n. Then d(n) = (1 + e(2) )(1 + e(3) )(1 + e(5) ) ... . Now 1 + e(2) = 2 mod 3 and 1 + e(p) = 1 mod 3 for p &gt; 2, so d(n) is not a multiple of 3. But 4n = d(n)<sup>3</sup>, so n is not a multiple of 3, so e(3) = 0. 
+<p>
+Put e(2) = 3k + 1, and e(p) = 3 f(p) for odd primes p. Then d(n) = (4n)<sup>1/3</sup> gives (3k + 2) &prod;<sub>p&gt;3</sub> (1 + 3 f(p) ) = 2<sup>k+1</sup> &prod;<sub>p&gt;3</sub> p<sup>f(p)</sup>. So (3k + 2)/2<sup>k+1</sup> = &prod;<sub>p&gt;3</sub> p<sup>f(p)</sup>/(1 + 3 f(p) ) (*). 
+<p>
+Now for p &ge; 5, we have p<sup>f(p)</sup> &ge; (1 + 4)<sup>f(p)</sup> &ge; 1 + 4 f(p) &gt; 1 + 3 f(p), unless f(p) = 0. So the rhs of (*) is &gt; 1 if any odd prime &gt; 5 divides n and = 1 if not. But 2<sup>k+1</sup> &gt; 2 + 3k for k &gt; 2 (eg a trivial induction). So the lhs of (*) is &lt; 1 for k &gt; 2. So we must have k = 0, 1 or 2. 
+<p>
+If k = 0 or 2, then 2<sup>k+1</sup> = 2 + 3k, so the rhs of (*) is 1, so n has no prime factors except 2. That gives the solutions n = 2, 128. If k = 1, then (3k + 2)/2<sup>k+1</sup> = 5/4. Now if p &gt;= 7, then p<sup>h</sup> &ge; (1 + 6)<sup>h</sup> &ge; 1 + 6h. So if n has a prime factor greater than 5, then the rhs of (*) is at least (1 + 6h)/(1 + 3h) with h &ge; 1, and hence at least 3/2 ( h &ge; 1 implies 3/2h &gt; 1/2 implies 1 + 6h &gt; 3/2 (1 + 3h) ). So n cannot have a prime factor greater than 5. Suppose f(5) = h. Then (*) gives 5/4 = 5<sup>h</sup>/(1 + 3h), which implies h = 1 (5<sup>h</sup>/(1 + 3h) is a strictly increasing function of h, so h = 1 is the only solution). Thus we get n = 2<sup>4</sup>5<sup>3</sup> = 2000.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh00.html">41st IMO shortlist 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

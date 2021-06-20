@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1985/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>46th Putnam 1985</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+x is a real. Define a<sub>i 0</sub> = x/2<sup>i</sup>, a<sub>i j+1</sub> = a<sub>i j</sub><sup>2</sup> + 2 a<sub>i j</sub>. What is lim<sub>n&rarr;&infin;</sub> a<sub>n n</sub>?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: e<sup>x</sup> - 1.
+
+<p>
+
+a<sub>n+1 n</sub> for x is the same as a<sub>n n</sub> for x/2. So if we write a<sub>n n</sub> as p<sub>n</sub>(x) then evidently p<sub>n</sub> is a polynomial and we have the relation p<sub>n+1</sub>(x) = 2p<sub>n</sub>(x/2) + p<sub>n</sub>(x/2)<sup>2</sup> (*) and also p<sub>0</sub>(x) = x.
+
+<p>
+
+If we add 1 to both sides of (*), then it becomes 1 + p<sub>n+1</sub>(x) = (1 + p<sub>n</sub>(x/2) )<sup>2</sup>. Iterating: 1 + p<sub>n</sub>(x) = (1 + x/N)<sup>N</sup>, where N = 2<sup>n</sup>. But lim (1 + x/n)<sup>n</sup> = e<sup>x</sup> as n &rarr; &infin;, so p<sub>n</sub>(x) &rarr; e<sup>x</sup> - 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn85.html">46th Putnam 1985</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

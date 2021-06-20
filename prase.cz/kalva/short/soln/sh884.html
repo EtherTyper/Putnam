@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>29th IMO shortlist 1988/4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>29th IMO 1988 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 4</b>
+<p>
+The squares of an n x n chessboard are numbered in an arbitrary manner from 1 to n<sup>2</sup> (every square has a different number). Show that there are two squares with a common side whose numbers differ by at least n.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+For k = 1, 2, 3, ... , n<sup>2</sup> - n, we may partition {1, 2, 3, ... , n<sup>2</sup>} into the three non-empty sets A<sub>k</sub> = {1, 2, 3, ... , k}, B<sub>k</sub> = {k+1, k+2, ... , k+n-1}, C<sub>k</sub> = {k+n, k+n+1, ... , n<sup>2</sup>}.
+<p>
+Call two squares adjacent if they share a side. Suppose an arrangement is possible with the numbers in adjacent squares always differing by less than n. Since B<sub>k</sub> has less than n elements, we can choose a row and a column which do not contain an element of B<sub>k</sub>. Their union is the cross X<sub>k</sub>. If X<sub>k</sub> contains an element of A<sub>k</sub> and an element of C<sub>k</sub>, then it must contain two elements in adjacent squares, one in A<sub>k</sub> and one in C<sub>k</sub>. Contradiction (because these elements must differ by at least n). So X<sub>k</sub> is either a subset of A<sub>k</sub> or a subset of C<sub>k</sub>. 
+<p>
+Since A<sub>1</sub> only has one element, X<sub>1</sub> must be a subset of C<sub>1</sub>. Similarly, since C<sub>N</sub> only has one element, X<sub>N</sub> must be a subset of A<sub>N</sub> (where N = n<sup>2</sup> - n). Hence for some k, X<sub>k</sub> is a subset of C<sub>k</sub> and X<sub>k+1</sub> is a subset of A<sub>k+1</sub>. But any two crosses have at least two elements in common, whereas A<sub>k+1</sub> and C<sub>k</sub> are disjoint. Contradiction.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh88.html">29th IMO shortlist 1988</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+16 Dec 2002
+</BODY>
+
+</HTML>
+

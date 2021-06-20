@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 03/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>64th Putnam 2003</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b>
+
+<p>
+
+Show that &int;<sub>0</sub><sup>1</sup> &int;<sub>0</sub><sup>1</sup> |f(x) + f(y)| dx dy &ge; &int;<sub>0</sub><sup>1</sup> |f(x)| dx for any continuous real-valued function on [0,1].
+
+<p>
+
+&nbsp;<p>
+<b>Solution</b>
+
+<p>
+
+Let A be the set of values with f(x) &ge; 0, B the values with f(x) &lt; 0. Put I<sub>A</sub> = &int;<sub>A</sub> f(x) dx, I<sub>B</sub> = -&int;<sub>B</sub> f(x) dx, a = |A|, b = |B|. Then rhs = I<sub>A</sub> + I<sub>B</sub>. We have &int;<sub>A</sub> &int;<sub>A</sub> |f(x) + f(y)| dx dy = &int; (af(x) + &int; f(y) dy) dx = &int; (af(x) + I<sub>A</sub>) dx = 2aI<sub>A</sub>. Similarly &int;<sub>B</sub> &int;<sub>B</sub> = 2bI<sub>B</sub>.
+<p>
+wlog a &ge; b. If I<sub>A</sub> &ge; I<sub>B</sub>, then (a-b)(I<sub>A</sub>-I<sub>B</sub>) &ge; 0, so aI<sub>A</sub> + bI<sub>B</sub> &ge; bI<sub>A</sub> + aI<sub>B</sub> and hence 2aI<sub>A</sub> + 2bI<sub>B</sub> &ge; (a+b)(I<sub>A</sub>+I<sub>B</sub>) = I<sub>A</sub> + I<sub>B</sub> = rhs. So we are already done.
+<p>
+So assume I<sub>A</sub> &lt; I<sub>B</sub>. Then &int;<sub>x&isin;A</sub> &int;<sub>y&isin;B</sub> &ge; &int;<sub>x&isin;A</sub> &int;<sub>y&isin;B</sub> -f(x) - f(y) dy dx = &int;<sub>x&isin;A</sub>(-bf(x) + I<sub>B</sub>) dx = aI<sub>B</sub> - bI<sub>A</sub>. But 2bIB + (aI<sub>B</sub> - bI<sub>A</sub>) = (a+b)I<sub>B</sub> + b(I<sub>B</sub> - I<sub>A</sub>) &ge; I<sub>B</sub> and 2aI<sub>A</sub> &ge; (a+b)I<sub>A</sub> = I<sub>A</sub>. So we have lhs &ge; rhs.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn03.html">64th Putnam 2003</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+8 Dec 2003
+
+<br>Last corrected/updated 8 Dec 03
+
+</BODY>
+
+
+
+</HTML>
+

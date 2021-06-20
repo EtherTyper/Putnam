@@ -1,0 +1,71 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1997/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Let f(x) = (x - x<sup>3</sup>/2 + x<sup>5</sup>/(2.4) - x<sup>7</sup>/(2.4.6) + ... ), and g(x) = (1 + x<sup>2</sup>/2<sup>2</sup> + x<sup>4</sup>/(2<sup>2</sup>4<sup>2</sup>) + x<sup>6</sup>/(2<sup>2</sup>4<sup>2</sup>6<sup>2</sup>) + ... ). Find &int;<sub>0</sub><sup>&infin;</sup> f(x) g(x) dx.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: &radic;e.
+
+<p>
+<i>Fairly easy. A routine computation, once you have recognized a closed form for one of the series.</i>
+
+<p>
+We notice that the first series is x e<sup>-x<sup>2</sup>/2</sup>. The second series is clearly absolutely convergent and so we can multiply out and integrate each term separately. Thus we have to integrate x<sup>2n+1</sup>e<sup>-x<sup>2</sup>/2</sup>. This is easily seen to be:
+
+<br>&nbsp; &nbsp; -n! e<sup>-x<sup>2</sup>/2</sup>(x<sup>2n</sup>/n! + 2 x<sup>2n-2</sup>/(n-1)! + 2<sup>2</sup>x<sup>2n-4</sup>/(n-2)! + ... + 2<sup>n</sup>).
+
+<p>
+Integrating, only the last term contributes, and we get n! 2<sup>n</sup>. Thus the x<sup>2n+1</sup> term integrates to give n! 2<sup>n</sup>/(n! n! 2<sup>2n</sup>) = 1/(n! 2<sup>n</sup>). Hence the answer to the question is the sum from zero to infinity of 1/(n! 2<sup>n</sup>) which is &radic;e.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn97.html">Putnam 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

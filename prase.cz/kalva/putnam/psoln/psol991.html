@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 99/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>60th Putnam 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+Find polynomials a(x), b(x), c(x) such that |a(x)| - |b(x)| + c(x) = -1 for x &lt; -1, 3x + 2 for -1 &le; x &le; 0, -2x + 2 for x &gt; 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Note that we do not have to find <i>all</i> solutions, just a solution.
+
+<p>
+
+We look first for linear polynomials. The points of discontinuity in the derivative are evidently where a(x) and b(x) change sign. At -1 the function jumps by 3x + 3, so the function changing sign must be (3x + 3)/2. Moreover, it must be a(x) that changes sign, since the jump is +(3x + 3) not -(3x + 3). So a(x) = (3x + 3)/2. Similarly, at 0, the function jumps by -5x, so b(x) = 5x/2. Hence c(x) = -1 + |b(x)| - |a(x)| = -1 - 5x/2 + (3x + 3)/2 = -x + 1/2 (for x &lt; -1 and hence for all x).
+
+<p>
+
+Finally, notice that the sign of a(x) and b(x) is not determined uniquely.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+&nbsp;<p>
+
+<a href="../putn99.html">60th Putnam 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

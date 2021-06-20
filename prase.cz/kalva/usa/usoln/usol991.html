@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 99/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>28th USAMO 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+Certain squares of an n x n board are colored black and the rest white. Every white square shares a side with a black square. Every pair of black squares can be joined by chain of black squares, so that consecutive members of the chain share a side. Show that there are at least (n<sup>2</sup> - 2)/3 black squares.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Concentrate on the chain condition. We show by induction that if k squares are black and satisfy the chain condition, then at most 3k + 2 squares are black or share a side with a black square. This is obvious for k = 1. Suppose it is true for k and that we have k+1 black squares satisfying the chain condition. It must be possible to pick a black square so that the remaining k black squares still satisfy the chain condition. The remaining k black squares give at most 3k+2 black or sharing a side with a black square, and the picked square adds at most 3. That completes the induction. The result follows immediately, since we must have n<sup>2</sup> &le; 3k + 2, where k is the number of black squares.
+
+<p>
+
+Actually, it is not trivial to show that it must be possible to pick a black square so that the remaining k black squares still satisfy the chain condition. It is equivalent to showing that in any connected graph you can find a point such that if you remove the point the graph is still connected. The trick is to take two points A and B which are the maximum distance apart (distance is the minimum number of edges you must traverse to get from one to the other). The claim is that removal of either of these points leaves the graph connected. For suppose removing A left a disconnected graph, then there must be a point C such that B and C are not joined by a path when A is removed. Since they are joined when A is present, all paths joining them must pass through A and hence exceed the length of all paths from A to B. Contradiction. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa99.html">28th USAMO 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

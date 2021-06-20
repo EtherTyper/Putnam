@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 76/4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>5th USAMO 1976</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 4</b><br>
+
+<p>
+
+A tetrahedron ABCD has edges of total length 1. The angles at A (BAC etc) are all 90<sup>o</sup>. Find the maximum volume of the tetrahedron.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (5&radic;2 - 7)/162.
+
+<p>
+
+Let the edges at A have lengths x, y, z. Then the volume is xyz/6 and the perimeter is x + y + z + &radic;(x<sup>2</sup> + y<sup>2</sup>) + &radic;(y<sup>2</sup> + z<sup>2</sup>) + &radic;(z<sup>2</sup> + x<sup>2</sup>) = 1. By AM/GM we have x + y + z &ge; 3k, where k = (xyz)<sup>1/3</sup>. Also x<sup>2</sup> + y<sup>2</sup> &ge; 2xy, so &radic;(x<sup>2</sup> + y<sup>2</sup>) + &radic;(y<sup>2</sup> + z<sup>2</sup>) + &radic;(z<sup>2</sup> + x<sup>2</sup>) &ge; &radic;(2xy) + &radic;(2yx) + &radic;(2zx). By AM/GM that is &gt;= 3&radic;2 k. So we have 1 &ge; 3(1 + &radic;2) k. Hence k<sup>3</sup> &le; (5&radic;2 - 7)/27. Hence the volume is at most (5&radic;2 - 7)/162. This is achieved if x = y = z = (&radic;2 - 1)/3. Then the other three sides are (2 - &radic;2)/3 and the perimeter is 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa76.html">5th USAMO 1976</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Jul 2002
+
+</BODY>
+
+
+
+</HTML>
+

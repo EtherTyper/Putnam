@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>13th Putnam 1953/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>13th Putnam 1953</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+p(x) is a real polynomial of degree n such that p(m) is integral for all integers m. Show that if k is a coefficient of p(x), then n! k is an integer.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Note that n! is best possible, because 1/n! x(x + 1) ... (x + n - 1) is always integral for integral x (it is the binomial coefficient (x+n-1)Cn ).
+
+<p>
+
+We need a standard result from the calculus of differences. Let &Delta;f(x) = f(x + 1) - f(x). Then p(x) = p(0) + &Delta;<sub>1</sub>x + 1/2! &Delta;<sub>2</sub> x(x - 1) + 1/3! &Delta;<sub>3</sub> x(x - 1)(x - 2) + ... + 1/n! &Delta;<sub>n</sub> x(x - 1) ... (x - n + 1) (*), where &Delta;<sub>m</sub> = &Delta;<sup>m</sup>p(0) (thus &Delta;<sub>1</sub> = p(1) - p(0), &Delta;<sub>2</sub> = p(2) - 2p(1) + p(0) etc).
+
+<p>
+
+Assume this is true. Then if p(x) is integral for all integral x, all the &Delta;<sub>m</sub> must be integral. So the result above gives n! p(x) = an integral combination of integral polynomials. Hence all the coefficients of n! p(x) are integral.
+
+<p>
+
+To prove the result, notice first that if f(x) = x(x - 1)(x - 2) ... (x - m + 1), then &Delta;<sup>r</sup>f(0) = m! for r = m and 0 otherwise.  So if we call the rhs of (*) q(x) , then &Delta;<sup>m</sup>q(0) is a sum of terms which are all zero except for &Delta;<sup>m</sup>(1/m! &Delta;<sup>m</sup> x(x - 1) ... (x - m + 1) )(0) = &Delta;<sub>m</sub>. Hence &Delta;<sup>m</sup>p(0) = &Delta;<sup>m</sup>q(0) for m = 1, 2, ... , n. Also p(0) = q(0), so by a simple induction p(m) = q(m) for m = 0, 1, 2, ... , n. But q(x) is a polynomial of degree at most n. If polyomials of degree at most n agree at n+1 points, then they must be identical. Hence p(x) = q(x).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn53.html">13th Putnam 1953</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

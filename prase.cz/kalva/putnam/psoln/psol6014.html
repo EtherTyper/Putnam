@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1960/B7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>21st Putnam 1960</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B7</b><br>
+
+<p>
+
+Let R' be the non-negative reals. Let f, g <b>:</b> R' &rarr; R be continuous. Let a <b>:</b> R' &rarr; R be the solution of the differential equation: a' + f a = g, a(0) = c. Show that if b <b>:</b> R' &rarr; R satisfies b' + f b &ge; g for all x and b(0) = c, then b(x) &ge; a(x) for all x. Show that for sufficiently small x the solution of y' + f y = y<sup>2</sup>, y(0) = d, is y(x) = max ( d e<sup>-h(x)</sup> - &int;<sub>0</sub><sup>x</sup> e<sup>-(h(x)-h(t) )</sup> u(t)<sup>2</sup> dt ), where the maximum is taken over all continuous u(t), and h(t) = &int;<sub>0</sub><sup>t</sup> (f(s) - 2u(s)) ds. 
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Put F(x) = &int;<sub>0</sub><sup>x</sup> f(t) dt. Put A(x) = a(x) e<sup>F(x)</sup>, B(x) = b(x) e<sup>F(x)</sup>. Then A' = (a' + f a) e<sup>F</sup> = g e<sup>F</sup>, and B' = (b' + f b) e<sup>F</sup> &ge; g e<sup>F</sup>, since e<sup>F</sup> &gt; 0. Hence B' &ge; A' for all x. But B(0) = A(0), so B(x) &ge; A(x) for all x and hence b(x) &ge; a(x) for all x.
+
+<p>
+
+Let u be any continuous function on R'. Put U(x) = &int;<sub>0</sub><sup>x</sup> u(t) dt. Put h(x) = F(x) - 2 U(x) = &int;<sub>0</sub><sup>x</sup> f(t) - 2u(t) dt. Then h(0) = 0. We have (y - u)<sup>2</sup> &ge; 0, so y<sup>2</sup> - 2uy &ge; -u<sup>2</sup>. Now put z = y e<sup>h</sup>, so that z(0) = y(0) e<sup>h(0)</sup> = d.
+
+<p>
+
+z' = (y' + h'y) e<sup>h</sup> = (y' + (f - 2u)y) e<sup>h</sup> = (y<sup>2</sup> - 2uy) e<sup>h</sup> &ge; -u<sup>2</sup> e<sup>h</sup>. Hence z(x) = z(0) + &int;<sub>0</sub><sup>x</sup> z'(t) dt &ge; d - &int;<sub>0</sub><sup>x</sup> u(t)<sup>2</sup> e<sup>h(t)</sup> dt. Hence y(x) = z(x) e<sup>-h(x)</sup> &ge; d e<sup>-h(x)</sup> - &int;<sub>0</sub><sup>x</sup> e<sup>-(h(x) - h(t) )</sup> u(t)<sup>2</sup> dt. So z(x) &ge; the maximum over all u.
+
+<p>
+
+If we put u = y (the solution), then we get equality.
+
+<p>
+
+<i>Comment. Take f(x) = -2/x, g(x) = 0, c = 0. Then a(x) = x<sup>2</sup>, b(x) = -x<sup>2</sup> are both solutions of y' + f y = g, y(0) = c. But b(x) &lt; a(x) for all x &gt; 0. So why does the result fail in this case? Because f is undefined for x = 0.
+
+<p>
+
+Note also that the original question had a typo in it.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn60.html">21st Putnam 1960</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

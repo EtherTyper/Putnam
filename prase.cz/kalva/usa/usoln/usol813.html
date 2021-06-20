@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 81/3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>10th USAMO 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 3</b><br>
+
+<p>
+
+Show that for any triangle, 3(&radic;3)/2 &ge; sin 3A + sin 3B + sin 3C &ge; -2. When does equality hold?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 1st inequality, A = B = 20<sup>o</sup>, C = 140<sup>o</sup>. 2nd inequality, A = 0<sup>o</sup>, B = C = 90<sup>o</sup> (which is degenerate).
+
+<p>
+
+For x between 0 and 180<sup>o</sup>, sin 3x is negative iff 60<sup>o</sup> &lt; x &lt; 120<sup>o</sup>. So at most two angles x in a triangle can have sin 3x negative. Obviously sin 3x &ge; -1, so sin 3A + sin 3B + sin 3C &ge; -2. We can only get equality in the degenerate case A = 0<sup>o</sup>, B = C = 90<sup>o</sup> (or with the angles relabeled).
+
+<p>
+
+We can certainly achieve 3(&radic;3)/2 as shown above. But 3(&radic;3)/2 &gt; 2, so we must have all three sines positive. [If only two are positive, then their sum is at most 2.]. sin 3x is positive for x &lt; 60<sup>o</sup> and x &gt; 120<sup>o</sup>. So one angle must be &gt; 120<sup>o</sup>. Assume, for definiteness, that A &le; B &lt; 60<sup>o</sup>, C &gt; 120<sup>o</sup>. Put C' = C - 120<sup>o</sup>. Then 3A + 3B + 3C' = 180<sup>o</sup>. Now sin x is a concave function for 0 &le; x &le; 180<sup>o</sup>, or - sin x is a convex function. So by Jensen's inequality -sin x - sin y - sin z &ge; 3 -sin(x + y + z)/3. Hence sin 3A + sin 3B + sin 3C &le; 3 sin 60<sup>o</sup> = 3(&radic;3)/2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa81.html">10th USAMO 1981</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+21 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

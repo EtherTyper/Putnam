@@ -1,0 +1,84 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 00/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>29th USAMO 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub>, and y<sub>1</sub>, y<sub>2</sub>, ... , y<sub>n</sub> are non-negative reals. Show that &sum; min(x<sub>i</sub>x<sub>j</sub>, y<sub>i</sub>y<sub>j</sub>) &le; &sum; min(x<sub>i</sub>y<sub>j</sub>, x<sub>j</sub>y<sub>i</sub>), where each sum is taken over all n<sup>2</sup> pairs (i, j).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let f(x<sub>1</sub>, y<sub>1</sub>, x<sub>2</sub>, y<sub>2</sub>, ... , x<sub>n</sub>, y<sub>n</sub>) = <font face="symbol">S</font> ( min(x<sub>i</sub>y<sub>j</sub>, x<sub>j</sub>y<sub>i</sub>) - min(x<sub>i</sub>x<sub>j</sub>, y<sub>i</sub>y<sub>j</sub>) ). So we have to show that f(x<sub>1</sub>, y<sub>1</sub>, ... , x<sub>n</sub>, y<sub>n</sub>) &ge; 0. We use induction on n. There is nothing to prove for n = 1. Suppose the result is true for all positive integers &lt; n.
+
+<p>
+
+If any x<sub>i</sub> or y<sub>i</sub> is zero, or if any x<sub>i</sub> = y<sub>i</sub>, then the result follows immediately from that for n-1. Suppose x<sub>1</sub>/y<sub>1</sub> = x<sub>2</sub>/y<sub>2</sub>. We claim that f(x<sub>1</sub>, ... , y<sub>n</sub>) = f(x<sub>1</sub>+x<sub>2</sub>, y<sub>1</sub>+y<sub>2</sub>, x<sub>3</sub>, y<sub>3</sub>, ... , x<sub>n</sub>, y<sub>n</sub>). Note that the rhs has one less pair of terms. For convenience we write x<sub>1</sub> = k y<sub>1</sub>, so x<sub>2</sub> = k y<sub>2</sub>. The sum of the (1, i) and (2, i) terms on the lhs is min( x<sub>1</sub>y<sub>i</sub>, y<sub>1</sub>x<sub>i</sub>) + min( x<sub>2</sub>y<sub>i</sub>, y<sub>2</sub>x<sub>i</sub>) - min( x<sub>1</sub>x<sub>i</sub>, y<sub>1</sub>y<sub>i</sub>) - min( x<sub>2</sub>x<sub>i</sub>, y<sub>2</sub>y<sub>i</sub>) = (y<sub>1</sub> + y<sub>2</sub>) min(ky<sub>i</sub>, x<sub>i</sub>) - (y<sub>1</sub> + y<sub>2</sub>) min(kx<sub>i</sub>, y<sub>i</sub>). The corresponding (1+2, i) term on the rhs is min( (x<sub>1</sub>+x<sub>2</sub>)y<sub>i</sub>, (y<sub>1</sub>+y<sub>2</sub>)x<sub>i</sub>) - min( (x<sub>1</sub>+x<sub>2</sub>)x<sub>i</sub>, (y<sub>1</sub>+y<sub>2</sub>)y<sub>i</sub>) = (y<sub>1</sub>+y<sub>2</sub>) min(ky<sub>i</sub>, x<sub>i</sub>) - (y<sub>1</sub>+y<sub>2</sub>) min(kx<sub>i</sub>, y<sub>i</sub>), which is the same. Similarly for the (i, 1) + (i, 2) versus (i, 1+2) terms. The (i, j) terms (with i, j &gt; 2) are obviously unchanged. So we just have to consider the various 1, 2 terms. On the lhs there are four of them: the (1, 1), (1, 2) = (2, 1) and the (2, 2) terms. Their sum is x<sub>1</sub>y<sub>1</sub> - min(x<sub>1</sub><sup>2</sup>, y<sub>1</sub><sup>2</sup>) + x<sub>2</sub>y<sub>2</sub> - min(x<sub>2</sub><sup>2</sup>, y<sub>2</sub><sup>2</sup>) + 2min(x<sub>1</sub>y<sub>2</sub>, x<sub>2</sub>y<sub>1</sub>) - 2min(x<sub>1</sub>x<sub>2</sub>, y<sub>1</sub>y<sub>2</sub>) = ky<sub>1</sub><sup>2</sup> - y<sub>1</sub><sup>2</sup>min(k<sup>2</sup>, 1) + ky<sub>2</sub><sup>2</sup> - y<sub>2</sub><sup>2</sup>min(k<sup>2</sup>, 1) + 2ky<sub>1</sub>y<sub>2</sub> - 2y<sub>1</sub>y<sub>2</sub>min(1,k<sup>2</sup>) = (y<sub>1</sub>+y<sub>2</sub>)<sup>2</sup>(k - min(1,k<sup>2</sup>) ). On the rhs there is just the one term (x<sub>1</sub>+x<sub>2</sub>)(y<sub>1</sub>+y<sub>2</sub>) - min( (x<sub>1</sub>+x<sub>2</sub>)<sup>2</sup>, (y<sub>1</sub>+y<sub>2</sub>)<sup>2</sup>) = k(y<sub>1</sub>+y<sub>2</sub>)<sup>2</sup> - (y<sub>1</sub>+y<sub>2</sub>)<sup>2</sup>min(k<sup>2</sup>, 1), which is the same. So we have established the claim. Thus if we have any distinct i, j such that x<sub>i</sub>/y<sub>i</sub> = x<sub>j</sub>/y<sub>j</sub>, then the result for n follows from that for n-1.
+
+<p>
+
+We now show that the same is true if we have x<sub>i</sub>/y<sub>i</sub> = y<sub>j</sub>/x<sub>j</sub>. Assume for convenience that x<sub>1</sub>/y<sub>1</sub> = y<sub>2</sub>/x<sub>2</sub>. We can also assume without loss of generality that x<sub>1</sub> &le; y<sub>2</sub>. So we can take x<sub>2</sub> = ky<sub>1</sub>, y<sub>2</sub> = k x<sub>1</sub> with k &ge; 1. Then we claim that f(x<sub>1</sub>, ... , y<sub>n</sub>) = f(x<sub>2</sub> - y<sub>1</sub>, y<sub>2</sub> - x<sub>1</sub>, x<sub>3</sub>, y<sub>3</sub>, ... , x<sub>n</sub>, y<sub>n</sub>). Again, the rhs has one less pair of terms than the lhs. On the lhs the sum of the (1, i) and (2, i) terms on the lhs is min( x<sub>1</sub>y<sub>i</sub>, y<sub>1</sub>x<sub>i</sub>) + min( x<sub>2</sub>y<sub>i</sub>, y<sub>2</sub>x<sub>i</sub>) - min( x<sub>1</sub>x<sub>i</sub>, y<sub>1</sub>y<sub>i</sub>) - min( x<sub>2</sub>x<sub>i</sub>, y<sub>2</sub>y<sub>i</sub>) = (k-1) min(x<sub>1</sub>x<sub>i</sub>, y<sub>1</sub>y<sub>i</sub>) - (k-1) min(x<sub>1</sub>y<sub>i</sub>, y<sub>1</sub>x<sub>i</sub>) . The corresponding (1+2, i) term on the rhs is min( (x<sub>2</sub>-y<sub>1</sub>)y<sub>i</sub>, (y<sub>2</sub>-x<sub>1</sub>)x<sub>i</sub>) - min( (x<sub>2</sub>-y<sub>1</sub>)x<sub>i</sub>, (y<sub>2</sub>-x<sub>1</sub>)y<sub>i</sub>) = (k-1) min(y<sub>1</sub>y<sub>i</sub>, x<sub>1</sub>x<sub>i</sub>) - (k-1) min(y<sub>1</sub>x<sub>i</sub>, x<sub>1</sub>y<sub>i</sub>), which is the same. Similarly, the 1, 2 terms on the lhs are x<sub>1</sub>y<sub>1</sub> - min(x<sub>1</sub><sup>2</sup>, y<sub>1</sub><sup>2</sup>) + x<sub>2</sub>y<sub>2</sub> - min(x<sub>2</sub><sup>2</sup>, y<sub>2</sub><sup>2</sup>) + 2min(x<sub>1</sub>y<sub>2</sub>, x<sub>2</sub>y<sub>1</sub>) - 2min(x<sub>1</sub>x<sub>2</sub>, y<sub>1</sub>y<sub>2</sub>) = x<sub>1</sub>y<sub>1</sub> - min(x<sub>1</sub><sup>2</sup>, y<sub>1</sub><sup>2</sup>) + k<sup>2</sup>x<sub>1</sub>y<sub>1</sub> - k<sup>2</sup>min(x<sub>1</sub><sup>2</sup>, y<sub>1</sub><sup>2</sup>) + 2k min(x<sub>1</sub><sup>2</sup>, y<sub>1</sub><sup>2</sup>) - 2kx<sub>1</sub>y<sub>1</sub> = (1 - k)<sup>2</sup>x<sub>1</sub>y<sub>1</sub> - (1 - k)<sup>2</sup>min(x<sub>1</sub><sup>2</sup>, y<sub>1</sub><sup>2</sup>). On the rhs we have (x<sub>2</sub> - y<sub>1</sub>)(y<sub>2</sub> - x<sub>1</sub>) - min( (x<sub>2</sub> - y<sub>1</sub>)<sup>2</sup>, (y<sub>2</sub> - x<sub>1</sub>)<sup>2</sup>) = (k - 1)<sup>2</sup>x<sub>1</sub>y<sub>1</sub> - (k - 1)<sup>2</sup>min(y<sub>1</sub><sup>2</sup>, x<sub>1</sub><sup>2</sup>), which is the same. Again the terms not involving 1 or 2 are the same on both sides. So we have shown that if we have any distinct i, j such that x<sub>i</sub>/y<sub>i</sub> = y<sub>j</sub>/x<sub>j</sub> then the result for n follows from that for n-1.
+
+<p>
+
+Put r<sub>i</sub> = max(x<sub>i</sub>/y<sub>i</sub>, y<sub>i</sub>/x<sub>i</sub>). Reordering the pairs, if necessary, we can take 1 &le; r<sub>1</sub> &le; r<sub>2</sub> &le; ... &le; r<sub>n</sub>. Now let us consider all the x<sub>i</sub>, y<sub>i</sub> as fixed except y<sub>1</sub>. For convenience, let us write t = y<sub>1</sub>. We have 1 &le; r<sub>1</sub> &le; r<sub>2</sub>, so t can take any value in the interval [x<sub>1</sub>, x<sub>1</sub>r<sub>2</sub>] or any value in the interval [x<sub>1</sub>/r<sub>2</sub>, x<sub>1</sub>]. We examine f on each of these intervals. Since only t is varying, the only terms in f which vary are the (1, 1), (1, i) and (i, 1) terms. Writing their sum as g(t), we have g(t) = x<sub>1</sub>t - min(x<sub>1</sub><sup>2</sup>, t<sup>2</sup>) + 2 &sum; min(x<sub>1</sub>y<sub>i</sub>, t x<sub>i</sub>) - 2 &sum; min(x<sub>1</sub>x<sub>i</sub>, t y<sub>i</sub>). Now if x<sub>i</sub> &ge; y<sub>i</sub>, then x<sub>i</sub>/y<sub>i</sub> = r<sub>i</sub> &ge; r<sub>2</sub> &ge; t/x<sub>1</sub>, so x<sub>1</sub>x<sub>i</sub> &ge; t y<sub>i</sub>. Also t x<sub>i</sub> &ge; x<sub>1</sub>x<sub>i</sub> &ge; x<sub>1</sub>y<sub>i</sub>, so min(x<sub>1</sub>y<sub>i</sub>, t x<sub>i</sub>) = x<sub>1</sub>y<sub>i</sub>, and min(x<sub>1</sub>x<sub>i</sub>, t y<sub>i</sub>) = t y<sub>i</sub>. So if we put z<sub>i</sub> = - y<sub>i</sub>, then these two terms in g(t) give 2(t - x<sub>1</sub>) z<sub>i</sub>. Similarly, if x<sub>i</sub> &lt; y<sub>i</sub>, then x<sub>1</sub>y<sub>i</sub> &ge; t x<sub>i</sub> and t y<sub>i</sub> &ge; x<sub>1</sub>x<sub>i</sub>, so if we put z<sub>i</sub> = x<sub>i</sub>, then the two terms in g(t) still give 2(t - x<sub>1</sub>) z<sub>i</sub>. Thus g(t) = x<sub>1</sub>t - x<sub>1</sub><sup>2</sup> + 2(t - x<sub>1</sub>) &sum; z<sub>i</sub>, which is linear in t. But a linear function takes its minimum value in an interval at one of the endpoints, so the minimum value of g(t) (and hence of f as t varies) must occur at t = x<sub>1</sub> or x<sub>1</sub>r<sub>2</sub>. But then we have r<sub>1</sub> = 1 or r<sub>2</sub> and in both those cases we have established that the value of f equals the value of f for n-1 pairs and is therefore non-negative. 
+
+<p>
+
+Now suppose t is in the other interval [x<sub>1</sub>/r<sub>2</sub>, x<sub>1</sub>]. Again, we put g(t) equal to the sum of the variable terms. So g(t) = x<sub>1</sub>t - min(x<sub>1</sub><sup>2</sup>, t<sup>2</sup>) + 2 &sum; min(x<sub>1</sub>y<sub>i</sub>, t x<sub>i</sub>) - 2 &sum; min(x<sub>1</sub>x<sub>i</sub>, t y<sub>i</sub>). Again, we consider separately the case x<sub>i</sub> &ge; y<sub>i</sub> which gives a pair of terms with sum 2(x<sub>1</sub> - t)z<sub>i</sub> if we put z<sub>i</sub> = y<sub>i</sub>, whilst if x<sub>i</sub> &lt; y<sub>i</sub>, then the pair of terms has the sum 2(x<sub>1</sub> - t)z<sub>i</sub> if we put z<sub>i</sub> = -x<sub>i</sub>. So we get g(t) = x<sub>1</sub>t - t<sub>2</sub> + 2(x<sub>1</sub> - t) &sum; z<sub>i</sub>. This time we have a quadratic. But the leading term - t<sup>2</sup> has a negative coefficient, so g(t) has a single <i>maximum</i> as t varies over all real values. Thus it is again true that the <i>minimum</i> value over the interval [x<sub>1</sub>/r<sub>2</sub>, x<sub>1</sub>] must occur at one of the endpoints. So again the minimum value of f as t varies over the allowed range is at r<sub>1</sub> = r<sub>2</sub> or 1 and is hence non-negative by induction.
+
+<p>
+
+So the induction is complete and the result established.
+
+<p>
+
+<i>Comment. No one made any headway with this in the USAMO exam. As an olympiad problem, it is exceptionally (and unreasonably) difficult.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa00.html">29th USAMO 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

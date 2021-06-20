@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1984/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>45th Putnam 1984</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+A convex pentagon inscribed in a circle radius 1 has two perpendicular diagonals which intersect inside the pentagon. What is the maximum area the pentagon can have?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 1 + (3&radic;3)/4.
+
+<p>
+
+Let the pentagon be ABCDE with AC and BD the perpendicular diagonals. It is clear that E should be taken as the midpoint AD (since this maximises the area of ADE without affecting the area of ABCD). 
+
+<p>
+
+There are evidently two independent variables, so in principle all we have to do is to choose the variables, express the area as a function of the two variables and set its partial derivatives to zero. The difficult part is choosing the variables. If, for example, we take the two lengths AC, BD, then we get a simple expression for the area of ABCD, but a messy expression for the area of ADE.
+
+<p>
+
+The best choice seems to be the angles subtended by the sides at O, the center of the circle. Note that if AB subtends &alpha; and CD subtends &beta;, then angle ACB = &alpha;/2 and angle CBD = &beta;/2. But if AC and BD are perpendicular, then these two angles must sum to &pi;/2. So &alpha; and &beta; sum to &pi;. Thus we may take as our two independent variables &alpha; and &theta;, the angle AOE. Then 2 x area ABCDE = 2 area AOB + 2 area BOC + 2 area COD + 2 area DOE + 2 area EOA = sin &alpha; + sin(2&theta;) + sin &alpha; + sin &theta; cos &theta;.
+
+<p>
+
+We maximise sin &alpha; at 1 by taking &alpha; = &pi;/2, and we maximise sin &theta; + sin &theta; cos &theta; at (3&radic;3)/4 by taking &theta; = &pi;/3 (for example, write k = sin &theta;, so &radic;(1 - k<sup>2</sup>) = cos &theta; and differentiate).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn84.html">45th Putnam 1984</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

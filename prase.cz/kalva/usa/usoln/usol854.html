@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 85/4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>14th USAMO 1985</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 4</b><br>
+
+<p>
+
+A graph has n &gt; 2 points. Show that we can find two points A and B such that at least [n/2] - 1 of the remaining points are joined to either both or neither of A and B.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Consider the number of pairs (X, {Y, Z}), where X, Y, Z are distinct points such that X is joined to just one of Y, Z. If X is joined to just k points, then there are just k(n - 1 - k) &le; (n - 1)<sup>2</sup>/4 such pairs (X, {Y, Z}). Hence in total there are at most n(n - 1)<sup>2</sup>/4 such pairs. But there are n(n - 1)/2 possible {Y, Z}. So we must be able to find one of them {A, B} which belongs to at most [ (n - 1)/2 ] such pairs. Hence there are at least n - 2 - [ (n - 1)/2 ] = [n/2] - 1 points X which are joined to both of A and B or to neither of A and B. [If confused by the [ ], consider n = 2m and n = 2m+1 separately! ]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa85.html">14th USAMO 1985</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

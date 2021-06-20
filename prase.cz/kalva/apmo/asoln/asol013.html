@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 01/3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>13th APMO 2001</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 3</b><br>
+<p>
+Two equal-sized regular n-gons intersect to form a 2n-gon C. Prove that the sum of the sides of C which form part of one n-gon equals half the perimeter of C.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Let one regular n-gon have vertices P<sub>1</sub>, P<sub>2</sub>, ... , P<sub>n</sub> and the other have vertices Q<sub>1</sub>, Q<sub>2</sub>, ... , Q<sub>n</sub>. Each side of the 2n-gon forms a triangle with one of the P<sub>i</sub> or Q<sub>i</sub>. Note that P<sub>i</sub> and Q<sub>j</sub> must alternate as we go around the 2n-gon. For convenience assume that the order is P<sub>1</sub>, Q<sub>1</sub>, P<sub>2</sub>, Q<sub>2</sub>, ... , P<sub>n</sub>, Q<sub>n</sub>. Let the length of the side which forms a triangle with P<sub>i</sub> be p<sub>i</sub>, and the length of the side which forms a triangle with Q<sub>i</sub> be q<sub>i</sub>. Each of these triangles has one angle (180<sup>o</sup> - 360<sup>o</sup>/n). Adjacent triangles have one of their other angles equal (alternate angles), so all the triangles are similar. If the sides of the triangle vertex P<sub>i</sub> have lengths a<sub>i</sub>, b<sub>i</sub>, p<sub>i</sub>, then the side P<sub>i</sub>P<sub>i+1</sub> is b<sub>i</sub> + q<sub>i</sub> + a<sub>i+1</sub>, and a<sub>i</sub>/a<sub>i+1</sub> = b<sub>i</sub>/b<sub>i+1</sub> = p<sub>i</sub>/p<sub>i+1</sub>. Similarly, if the sides of the triangle vertex Q<sub>i</sub> have lengths c<sub>i</sub>, d<sub>i</sub>, q<sub>i</sub>, then the side Q<sub>i</sub>Q<sub>i+1</sub> is d<sub>i</sub> + p<sub>i+1</sub> + c<sub>i+1</sub> and c<sub>i</sub>/c<sub>i+1</sub> = d<sub>i</sub>/d<sub>i+1</sub> = q<sub>i</sub>/q<sub>i+1</sub>. But a<sub>i</sub>/b<sub>i</sub> = d<sub>i</sub>/c<sub>i</sub> (not c<sub>i</sub>/d<sub>i</sub>), because the triangles alternate in orientation. 
+<p>
+Put a<sub>i</sub>/p<sub>i</sub> = h, b<sub>i</sub>/p<sub>i</sub> = k. Note that a<sub>i</sub> + b<sub>i</sub> &gt; p<sub>i</sub>, so h + k - 1 &gt; 0. We have also c<sub>i</sub>/q<sub>i</sub> = k, d<sub>i</sub>/q<sub>i</sub> = h. Adding the expressions for P<sub>i</sub>P<sub>i+1</sub> we get perimeter P<sub>i</sub> = &sum;(b<sub>i</sub> + q<sub>i</sub> + a<sub>i+1</sub>) = k &sum; p<sub>i</sub> + &sum; q<sub>i</sub> + h &sum; p<sub>i</sub>. Similarly, perimeter Q<sub>i</sub> = (h + k) &sum; q<sub>i</sub> + &sum; p<sub>i</sub>. The two n-gons are equal, so (h + k - 1) &sum; p<sub>i</sub> = (h + k - 1) &sum; q<sub>i</sub>. Hence &sum; p<sub>i</sub> = &sum; q<sub>i</sub>, which is the required result.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo01.html">13th APMO 2001</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

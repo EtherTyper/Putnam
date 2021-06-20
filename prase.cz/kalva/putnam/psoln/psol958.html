@@ -1,0 +1,75 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1995/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+An ellipse with semi-axes a and b rolls without slipping on the curve y = c sin (x/a) and completes one revolution in one period of the sine curve. What conditions do a, b, c satisfy?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (1) b &gt; a; (2) c = &plusmn;&radic;(b<sup>2</sup> - a<sup>2</sup>); (3) c b<sup>2</sup> &lt; a<sup>3</sup>.
+
+<p>
+
+<i>Straightforward.</i>
+
+<p>
+
+The first point to consider is which semi-axis is longer. A complete period of the curve is from x = 0 to x = 2&pi;a, so the curve length is &ge; 2&pi;a. If the ellipse has a &gt; b, then its length &lt; 2&pi;a. Thus we can assume that b &ge; a.
+
+<p>
+The obvious necessary condition is that the arc-lengths should be the same. This is a routine calculation. We find that the length for the curve is &int;<sub>0</sub><sup>2&pi;</sup> (a<sup>2</sup> + c<sup>2</sup>cos<sup>2</sup>t)<sup>1/2</sup> dt and the length for the ellipse is &int; <sub>0</sub><sup>2&pi;</sup> (a<sup>2</sup> + (b<sup>2</sup> - a<sup>2</sup>)cos<sup>t</sup>)<sup>1/2</sup> dt. Since the curve length is strictly monotonic increasing with |c|, we must have c = &plusmn; &radic;(b<sup>2</sup> - a<sup>2</sup>).
+
+<p>
+However, there is another necessary condition. The ellipse must be able to roll, in other words its maximum radius of curvature must be less than the minimum radius of curvature for the curve.
+
+<p>
+This is another routine calculation, using the expression |(1 + y'<sup>2</sup>)<sup>3/2</sup>/y''| for the radius of curvature. For the curve we find that the minimum value is a<sup>2</sup>/c, and for the ellipse we find that the maximum value is b<sup>2</sup>/a. Hence we require c b<sup>2</sup> &lt; a<sup>3</sup>, or (b<sup>2</sup> - a<sup>2</sup>)b<sup>4</sup> &lt; a<sup>6</sup>, giving (b/a)<sup>6</sup> - (b/a)<sup>4</sup> &lt; 1, or b/a &lt; 1.211.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn95.html">Putnam 1995</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

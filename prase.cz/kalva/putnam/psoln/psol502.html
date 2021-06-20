@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 50/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>10th Putnam 1950</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+Does the series &sum;<sub>2</sub><sup>&infin;</sup> 1/ln n! converge? Does the series 1/3 + 1/(3 3<sup>1/2</sup>) + 1/(3 3<sup>1/2</sup> 3<sup>1/3</sup>) + ... + 1/(3 3<sup>1/2</sup> 3<sup>1/3</sup> ... 3<sup>1/n</sup>) + ... converge?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(1)  ln n! &lt; n ln n, so &sum;<sub>2</sub><sup>&infin;</sup> 1/ln n! &gt; &sum;<sub>2</sub><sup>&infin;</sup> 1/(n ln n), which diverges. For &int; 1/(x ln x) = ln ln x.
+
+<p>
+
+(2) We have 1 + 1/2 + 1/3 + ... + 1/n is approx ln n, and 1/3<sup>ln n</sup>is approx 1/n<sup>ln 3</sup>. But ln 3 &gt; 1, so we expect this to converge. In fact 1 +1/2 + 1/3 + ... + 1/n &gt; &int;<sub>1</sub><sup>n+1</sup> dx / x = ln(n + 1) &gt; ln n. So 1/3 + 1/(3 3<sup>1/2</sup>) + 1/(3 3<sup>1/2</sup> 3<sup>1/3</sup>) + ... + 1/(3 3<sup>1/2</sup> 3<sup>1/3</sup> ... 3<sup>1/n</sup>) + ...  &lt; 1/3<sup>ln 1</sup> + 1/3<sup>ln 2</sup> + 1/3<sup>ln 3</sup> + ... = 1/1 + 1/2<sup>k</sup> + 1/3<sup>k</sup> + ... , where k = ln 3, which converges.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn50.html">10th Putnam 1950</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1963/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>24th Putnam 1963</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Let D be the differential operator d/dx and E the differential operator xD(xD - 1)(xD - 2) ... (xD - n). Find an expression of the form y = &int;<sub>1</sub><sup>x</sup> g(t) dt for the solution of the differential equation Ey = f(x), with initial conditions y(1) = y'(1) = ... = y<sup>(n)</sup>(1) = 0, where f(x)is a continuous real-valued function on the reals.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The first step is to try to simplify Ey. Experimenting with small n, we soon suspect that Ey = x<sup>n+1</sup>y<sup>(n+1)</sup> and that is easily proved by induction.
+
+<p>
+
+So we seek a solution to x<sup>n+1</sup>y<sup>(n+1)</sup> = f(x), subject to y(1) = y'(1) = ... = y<sup>(n)</sup>(1) = 0. The trick is to use the Taylor expansion: y(x) = y(1) + (x-1)y'(1) + (x-1)<sup>2</sup>/2! y''(1) + ... + (x-1)<sup>n</sup>y<sup>(n)</sup>(1) + &int;<sub>1</sub><sup>x</sup> g(t) dt, where g(t) = (x - t)<sup>n</sup>y<sup>n+1</sup>(t)/n! = (x - t)<sup>n</sup>f(t)/(n! t<sup>n+1</sup>).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn63.html">24th Putnam 1963</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

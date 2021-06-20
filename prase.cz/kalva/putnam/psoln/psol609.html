@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1960/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>21st Putnam 1960</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Let f(m, n) = 3m+n+(m+n)<sup>2</sup>. Find &sum;<sub>0</sub><sup>&infin;</sup>&sum;<sub>0</sub><sup>&infin;</sup> 2<sup>-f(m, n)</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 4/3.
+
+<p>
+
+The obvious approach is to sum over n and then over m (or vice versa). But it is not obvious how to sum x<sup>N</sup> where N runs through the squares. So we wonder just what values f(m, n) can take. A little experimentation suggests that it takes each even value just once.
+
+<p>
+
+In fact, it is clear that r(r+1) is always even and that the difference between r(r+1) and the next number in the sequence, (r+1)(r+2) is 2r+2, so any positive even number can be uniquely expressed as r(r+1) + 2s with 0 &le; s &le; r. But taking m = s, n = r-s, this is equivalent to the statement that any positive even number can be uniquely expressed as 3m+n+(m+n)<sup>2</sup>.
+
+<p>
+
+Hence the sum is just 1 + 1/4 + 1/4<sup>2</sup> + ... = 4/3.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn60.html">21st Putnam 1960</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

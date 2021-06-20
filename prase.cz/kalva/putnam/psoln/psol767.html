@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1976/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>37th Putnam 1976</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+Show that lim<sub>n&rarr;&infin;</sub> 1/n &sum;<sub>1</sub><sup>n</sup> ( [2n/i] - 2[n/i] ) = ln a - b for some positive integers a and b.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: ln 4 - 1.
+
+<p>
+
+The expression inside the limit is a partial sum for &int;<sub>0</sub><sup>1</sup> [2/x] - [1/x] dx (taking the points x = 1/n, 2/n, ... , 1). So the limit is &int;<sub>0</sub><sup>1</sup> [2/x] - [1/x] dx.
+
+<p>
+
+Evidently the integrand is non-zero on the intervals (1/(n+1), 1/(n + 1/2) ], for if x belongs to such an interval then n + 1/2 &lt;= x &lt; n + 1, so [1/x] = n, whilst 2n + 1 &le; x &le; 2n + 2, so [2/x] = 2n+1. A similar argument shows it is zero on the complementary intervals (1/(n + 1/2), 1/n]. Thus the integral evaluates to (1/(1 + 1/2) - 1/2) + (1/(2 + 1/2) - 1/2 + ... = 2(1/3 - 1/4 + 1/5 - ... ) = 2(1 - 1/2 + 1/3 - 1/4 + ... ) - 1 = 2 ln 2 - 1 = ln 4 - 1.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn76.html">37th Putnam 1976</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+23 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

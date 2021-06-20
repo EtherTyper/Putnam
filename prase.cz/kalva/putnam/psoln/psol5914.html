@@ -1,0 +1,80 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1959/B7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>20th Putnam 1959</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B7</b><br>
+
+<p>
+
+Given any finite ordered tuple of real numbers X, define a real number [X], so that for all x<sub>i</sub>, &alpha;: 
+
+<pre>(1)  [X] is unchanged if we permute the order of the numbers in the tuple X;
+
+(2)  [(x<sub>1</sub> + &alpha;, x<sub>2</sub> + &alpha;, ... , x<sub>n</sub> + &alpha;)] = [(x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub>)] + &alpha;; 
+
+(3)  [(-x<sub>1</sub>, -x<sub>2</sub>, ... , -x<sub>n</sub>)] = - [(x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub>)]; 
+
+(4)  for y<sub>1</sub> = y<sub>2</sub> = ... = y<sub>n</sub> = [(x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub>)], we have [(y<sub>1</sub>, y<sub>2</sub>, ... , y<sub>n</sub>, x<sub>n+1</sub>)] = [(x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n+1</sub>)]. </pre>
+
+Show that [(x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub>)] = (x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>n</sub>)/n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+It is convenient to write [(x<sub>1</sub>, ... , x<sub>n</sub>)] simply as [x<sub>1</sub>, ... , x<sub>n</sub>]. We use induction on n. For n = 1, we have [0] = - [0], so [0] = 0. Then (3) gives that [x] = x, which establishes the result for n = 1.
+
+<p>
+
+[x, 0] = - [-x, 0] = - [0, -x] = - [x, 0] + x, so [x, 0] = x/2. Hence [x, y] = y + [x - y, 0] = y + (x - y)/2 = (x + y)/2, which establishes the result for n = 2.  Now suppose it is true for n.
+
+<p>
+
+We have that [x, -x, 0, 0, ... ,0] = - [-x, x, 0, 0, ... , 0] by (3), = - [x, -x, 0, 0, ... ,0] by (1), so [x, -x, 0, 0, ... ,0] = 0.  Now suppose x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>n+1</sub> = 0, then the n numbers x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub> and the n numbers 0, 0, ... , 0, -x<sub>n+1</sub> have the same sum, so by (4) we have for any z that [x<sub>1</sub>, ... , x<sub>n</sub>, z] = [0, 0, ... , 0, -x<sub>n+1</sub>, z]. Take z = x<sub>n+1</sub>, then [0, ... 0, -x<sub>n+1</sub>, x<sub>n+1</sub>] = 0, so [x<sub>1</sub>, ... , x<sub>n</sub>, x<sub>n+1</sub>] = 0. 
+
+<p>
+
+Finally, given arbitrary x<sub>1</sub>, ... , x<sub>n+1</sub>, let k be their mean, then x<sub>1</sub> - k, x<sub>2</sub> - k, ... , x<sub>n+1</sub> - k have zero sum, so [x<sub>1</sub> - k, x<sub>2</sub> - k, ... , x<sub>n+1</sub> - k] = 0. Hence [x<sub>1</sub>, ... , x<sub>n+1</sub>] = k, as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn59.html">20th Putnam 1959</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

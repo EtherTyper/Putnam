@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1967/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>28th Putnam 1967</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+a<sub>i</sub> and b<sub>i</sub> are reals such that a<sub>1</sub>b<sub>2</sub> &ne; a<sub>2</sub>b<sub>1</sub>. What is the maximum number of possible 4-tuples (sign x<sub>1</sub>, sign x<sub>2</sub>, sign x<sub>3</sub>, sign x<sub>4</sub>) for which all x<sub>i</sub> are non-zero and x<sub>i</sub> is a simultaneous solution of a<sub>1</sub>x<sub>1</sub> + a<sub>2</sub>x<sub>2</sub> + a<sub>3</sub>x<sub>3</sub> + a<sub>4</sub>x<sub>4</sub> = 0 and b<sub>1</sub>x<sub>1</sub> + b<sub>2</sub>x<sub>2</sub> + b<sub>3</sub>x<sub>3</sub> + b<sub>4</sub>x<sub>4</sub> = 0. Find necessary and sufficient conditions on a<sub>i</sub> and b<sub>i</sub> for this maximum to be achieved.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Solving in terms of x<sub>3</sub>, x<sub>4</sub> gives x<sub>1</sub> = s<sub>23</sub>/s<sub>12</sub> x<sub>3</sub> + s<sub>24</sub>/s<sub>12</sub> x<sub>4</sub>, x<sub>2</sub> = s<sub>31</sub>/s<sub>12</sub> x<sub>3 </sub>+ s<sub>41</sub>/s<sub>12</sub> x<sub>4</sub>, x<sub>3</sub> = x<sub>3</sub>, x<sub>4</sub> = x<sub>4</sub>, where s<sub>ij</sub> = (a<sub>i</sub>b<sub>j</sub> - a<sub>j</sub>b<sub>i</sub>). Plot the 4 lines s<sub>23</sub>/s<sub>12</sub> x<sub>3</sub> + s<sub>24</sub>/s<sub>12</sub> x<sub>4</sub> = 0, x<sub>2</sub> = s<sub>31</sub>/s<sub>12</sub> x<sub>3 </sub>+ s<sub>41</sub>/s<sub>12</sub> x<sub>4</sub> = 0, x<sub>3</sub> = 0, x<sub>4</sub> = 0 in the x<sub>3</sub>, x<sub>4</sub> plane. We get 4 lines through the origin. Evidently x<sub>1</sub> changes sign if we cross the first, x<sub>2</sub> changes sign if we cross the second, x<sub>3</sub> changes sign if we cross the third and x<sub>4</sub> changes sign if we cross the fourth. So we have a different combination of signs in each sector, but the same combination throughout any given sector.
+
+<p>
+
+Thus the maximum is achieved when the four lines are distinct, giving 8 sectors (and hence 8 combinations). This requires that s<sub>23</sub> and s<sub>24</sub> are non-zero (otherwise the first line coincides with one of the last two) and that s<sub>31</sub> and s<sub>41</sub> are non-zero (otherwise the second line coincides with one of the last two). Finally, the first two lines must not coincide with each other. That requires that s<sub>31</sub>/s<sub>41</sub> is not equal to s<sub>23</sub>/s<sub>24</sub>. After some slightly tiresome algebra that reduces to s<sub>34</sub> non-zero. So a necessary and sufficient condition to achieve 8 is that all s<sub>ij</sub> are non-zero.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn67.html">28th Putnam 1967</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

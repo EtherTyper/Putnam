@@ -1,0 +1,71 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1991/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b>
+
+<p>
+
+Suppose G is a connected graph with k edges. Prove that it is possible to label the edges 1, 2, ... , k in such a way that at each vertex which belongs to two or more edges, the greatest common divisor of the integers labeling those edges is 1.
+
+<p>
+[A graph is a set of points, called vertices, together with a set of edges joining certain pairs of distinct vertices. Each pair of edges belongs to at most one edge. The graph is connected if for each pair of distinct vertices x, y there is some sequence of vertices x = v<sub>0</sub>, v<sub>1</sub>, ... , v<sub>m</sub> = y, such that each pair v<sub>i</sub>, v<sub>i+1</sub> (0 &le; i &lt; m) is joined by an edge.]
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+The basic idea is that consecutive numbers are relatively prime.
+
+<p>
+We construct a labeling as follows. Pick any vertex A and take a path from A along unlabeled edges. Label the edges consecutively 1, 2, 3, ... as the path is constructed. Continue the path until it reaches a vertex with no unlabeled edges. Let B be the endpoint of the path. A is now guaranteed to have the gcd (= greatest common divisor) of its edges 1, because one of its edges is labeled 1. All the vertices between A and B are guaranteed to have gcd 1 because they have at least one pair of edges with consecutive numbers. Finally, either B has only one edge, in which case its gcd does not matter, or it is also one of the vertices between A and B, in which case its gcd is 1.
+
+<p>
+Now take any vertex C with an unlabeled edge and repeat the process. The same argument shows that all the new vertices on the new path have gcd 1. The endpoint is fine, because either it has only one edge (in which case its gcd does not matter) or it has already got gcd 1.
+
+<p>Repeat until all the edges are labeled.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo91.html">32nd IMO 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+19 Nov 1998
+
+</BODY>
+
+
+
+</HTML>
+

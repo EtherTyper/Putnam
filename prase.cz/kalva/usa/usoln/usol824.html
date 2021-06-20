@@ -1,0 +1,126 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 82/4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>11th USAMO 1982</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 4</b><br>
+
+<p>
+
+Show that there is a positive integer k such that, for every positive integer n, k 2<sup>n</sup> + 1 is composite.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: k = 542258 (for example).
+
+<p>
+
+Suppose p is a prime dividing 2<sup>b</sup> - 1, 0 &le; a &lt; b and k = -2<sup>b-a</sup> mod p. Then if n = a mod b, we have k 2<sup>n</sup> = -2<sup>b-a</sup>2<sup>a+hb</sup> = -2<sup>(h+1)b</sup> = -1 mod p, so k 2<sup>n</sup> + 1 is divisible by p. So we would like to find a collection of pairs (a, b), such that every positive integer n satisfies n = a mod b for at least one member of the collection. We need the corresponding p distinct so that we can be sure of finding k by the Chinese Remainder theorem which satisfies k = -2<sup>b-a</sup> mod p for all members of the collection. For the congruences n = a mod b to cover all the integers, we need the lcm of the b to be small relative to their size, so we look for an lcm with many factors.
+
+<p>
+
+6 = 2.3 does not work because 2<sup>2</sup> - 1 = 3, 2<sup>3</sup> - 1 = 7, 2<sup>6</sup> - 1 = 3<sup>2</sup>7, we cannot find distinct primes p. 10 = 2.5 does not work because there are not enough factors to cover all integers. The mod 2 residue covers 1/2, the mod 5 residue covers 1/5 and the mod 10 residue covers 1/10, but that adds up to less than 1. Similarly 12 does not work. We must drop one of 2, 3, 6. But then the rest cover at most 11 residue classes mod 12. So we try 24. Again we drop 6, but we have:
+
+<pre>
+
+2: 2<sup>2</sup> - 1 = 3
+
+3: 2<sup>3</sup> - 1 = 7
+
+4: 2<sup>5</sup> - 1 has factor 5
+
+8: 2<sup>8</sup> - 1 has factor 17
+
+12: 2<sup>12</sup> - 1 has factor 13
+
+24: 2<sup>24</sup> - 1 has factor 241
+
+</pre>
+
+We now find, for example, the following covering set:
+
+<pre>
+
+0 mod 2 covers the even residues
+
+1 mod 3 covers 1, 7, 13, 19
+
+3 mod 4 covers 3, 11, 15, 23
+
+5 mod 8 covers 5, 21
+
+5 mod 12 covers 17
+
+9 mod 24 covers 9
+
+</pre>
+
+So we now need k which is
+
+<pre>
+
+-4 mod 3
+
+-4 mod 7
+
+-2 mod 5
+
+-8 mod 17
+
+-128 mod 13
+
+-2<sup>15</sup> mod 241
+
+</pre>
+
+The Chinese Remainder Theorem gives 542258.
+
+<p>
+
+<i>Comment. This is one of the hardest problems ever set in the USAMO. You have almost no hope of solving it in a reasonable time if you have not seen it before. </i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa82.html">11th USAMO 1982</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+21 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

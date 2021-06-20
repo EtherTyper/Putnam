@@ -1,0 +1,67 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1987/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+Let n be an integer greater than or equal to 2. Prove that if k<sup>2</sup> + k + n is prime for all integers k such that 0 &le; k &le; &radic;(n/3), then k<sup>2</sup> + k + n is prime for all integers k such that 0 &le; k &le; n - 2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+First observe that if m is relatively prime to b + 1, b + 2, ... , 2b - 1, 2b, then it is not divisible by any number less than 2b. For if c &lt;= b, then take the largest j &ge; 0 such that 2<sup>j</sup>c &le; b. Then 2<sup>j+1</sup>c lies in the range b + 1, ... , 2b, so it is relatively prime to m. Hence c is also. If we also have that (2b + 1)<sup>2</sup> &gt; m, then we can conclude that m must be prime, since if it were composite it would have a factor &le; &radic;m.
+
+<p>
+Let n = 3r<sup>2</sup> + h, where 0 &le; h &lt; 6r + 3, so that r is the greatest integer less than or equal to &radic;(n/3). We also take r &ge; 1. That excludes the value n = 2, but for n = 2, the result is vacuous, so nothing is lost.
+
+<p>
+Assume that n + k(k+1) is prime for k = 0, 1, ... , r. We show by induction that N = n + (r + s)(r + s + 1) is prime for s = 1, 2, ... , n - r - 2. By the observation above, it is sufficient to show that (2r + 2s + 1)<sup>2</sup> &gt; N, and that N is relatively prime to all of r + s + 1, r + s + 2, ... , 2r + 2s. We have (2r + 2s + 1)<sup>2</sup> = 4r<sup>2</sup> + 8rs + 4s<sup>2</sup> + 4r + 4s + 1. Since r, s &ge; 1, we have 4s + 1 &gt; s + 2, 4s<sup>2</sup> &gt; s<sup>2</sup>, and 6rs &gt; 3r. Hence (2r + 2s + 1)<sup>2</sup> &gt; 4r<sup>2</sup> + 2rs + s<sup>2</sup> + 7r + s + 2 = 3r<sup>2</sup> + 6r + 2 + (r + s)(r + s + 1) &gt;= N.
+
+<p>
+Now if N has a factor which divides 2r - i with i in the range -2s to r - s - 1, then so does N - (i + 2s + 1)(2r - i) = n + (r - i - s - 1)(r - i - s) which has the form n + s'(s'+1) with s' in the range 0 to r + s - 1. But n  + s'(s' + 1) is prime by induction (or absolutely for s = 1), so the only way it can have a factor in common with 2r - i is if it divides 2r - i. But 2r - i &le; 2r + 2s &le; 2n - 4 &lt; 2n and n + s'(s' + 1) &ge; n, so if n + s'(s' + 1) has a factor in common with 2r - i, then it equals 2r - i = s + r + 1 + s'. Hence s'<sup>2</sup> = s - (n - r - 1) &lt; 0, which is not possible. So we can conclude that N is relatively prime to all of r + s + 1, ... , 2r + 2s and hence prime.
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo87.html">28th IMO 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+13 Nov 1998
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1960/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>21st Putnam 1960</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+A player throws a fair die (prob 1/6 for each of 1, 2, 3, 4, 5, 6 and each throw independent) repeatedly until his total score &ge; n. Let p(n) be the probability that his final score is n. Find lim p(n).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 2/7.
+
+<p>
+
+For i = 1, 2, 3, 4, 5, let p<sub>i</sub>(n) = prob that the final score is n+i if the player stops when his total score is at least n. We note that p(n) is also the probability that the player's total equals n on some throw if he throws repeatedly. Now we can see that p<sub>5</sub>(n) = 1/6 p(n-1), because the only way to achieve a final score of n+5 without passing through n, n+1, n+2, n+3, n+4 is to reach n-1 and then throw a 6. Similarly, p<sub>4</sub>(n) = 1/6 p(n-1) + 1/6 p(n-2), because to reach n+4 without passing through n, n+1, n+2, n+3 you must either to through n-1, which requires reaching n-1 and then throwing a 5, or not, in which case you must reach n-2 and then throw a 6. Similarly, p<sub>3</sub>(n) = 1/6 p(n-1) + 1/6 p(n-2) + 1/6 p(n-3), p<sub>2</sub> = 1/6 p(n-1) + 1/6 p(n-2) + 1/6 p(n-3) + 1/6 p(n-4), and p<sub>1</sub>(n) = 1/6 p(n-1) + 1/6 p(n-2) + 1/6 p(n-3) + 1/6 p(n-4) + 1/6 p(n-5). Adding, we get: 1 = p(n) + p<sub>1</sub>(n) + p<sub>2</sub>(n) + p<sub>3</sub>(n) + p<sub>4</sub>(n) + p<sub>5</sub>(n) = p(n) + 5/6 p(n-1) + 4/6 p(n-2) + 3/6 p(n-3) + 2/6 p(n-4) + 1/6 p(n-5).
+
+<p>
+
+In the limit, p(n-5) = p(n-4) = ... = p(n). Hence we get: p<sub>1</sub>(n) = 5/6 p(n), p<sub>2</sub>(n) = 4/6 p(n), p<sub>3</sub>(n) = 3/6 p(n), p<sub>4</sub>(n) = 2/6 p(n), p<sub>5</sub>(n) = 1/6 p(n). But they sum to 1, so p(n) = 2/7.
+
+<p>
+
+<i>The objection to the above is that it fails to establish that lim p(n) exists. So one should arguably add the following.</i>
+
+<p>
+
+We have (as above) p(n) = 1/6 p(n-1) + 1/6 p(n-2) + 1/6 p(n-3) + 1/6 p(n-4) + 1/6 p(n-5) + 1/6 p(n-6) (*). Let m(n) = min{ p(n-1), p(n-2), p(n-3), p(n-4), p(n-5), p(n-6) }. Then (*) establishes that p(n) &ge; m(n), and so m(n+1) &ge; m(n). Similarly, let M(n) = max{ p(n-1), p(n-2), p(n-3), p(n-4), p(n-5), p(n-6) }. Then (*) shows that p(n) &le; M(n), so M(n+1) &le; M(n). Thus m(n) is a monotonic increasing sequence and M(n) is a monotonic decreasing sequence. But m(n) is obviously bounded above by any M(m), and M(n) is bounded below by any m(m). So both sequences converge. Suppose they converged to different limits. So m(n) converges to m and M(n) converges to M with M - m &gt; 36k &gt; 0. Take n sufficiently large that m(n) &gt; m - 6k. At least one of the terms on the rhs of (*) must equal M(n) and the others are at least m(n), so p(n) &ge; 5/6 m(n) + 1/6 M(n) &gt; 5/6 (m - 6k) + 1/6 M &gt; 5/6 m - 5k + 1/6 (m + 36k) = m+ k. But that means that m(n) &gt; m+k for all sufficiently large n. Contradiction. Hence M and m are the same and p(n) must have the same limit.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn60.html">21st Putnam 1960</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

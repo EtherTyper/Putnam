@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 97/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>26th USAMO 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+Let p<sub>n</sub> be the nth prime. Let 0 &lt; a &lt; 1 be a real. Define the sequence x<sub>n</sub> by x<sub>0</sub> = a, x<sub>n</sub> = the fractional part of p<sub>n</sub>/x<sub>n-1</sub> if x<sub>n</sub> &ne; 0, or 0 if x<sub>n-1</sub> = 0. Find all a for which the sequence is eventually zero.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let {x} denote the fractional part of x. {x} = x minus some integer, so {x} is rational iff x is rational. Hence if x<sub>n</sub> is irrational, then p<sub>n+1</sub>/x<sub>n</sub> is irrational and hence x<sub>n+1</sub> is irrational. So if a is irrational, then the sequence is never zero.
+
+<p>
+
+Suppose x<sub>n</sub> = r/s with 0 &lt; r &lt; s relatively prime integers. Then x<sub>n+1</sub> = u/r, where u is the remainder on dividing sp<sub>n+1</sub> by r. So, when expressed as a fraction in lowest terms, the denominator of x<sub>n+1</sub> is less than that for x<sub>n</sub>. So if a is rational and has denominator b, then after at most b iterations we get zero.
+
+<p>
+
+<i>Comment: the fact that the p<sub>n</sub> are primes is a red herring.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa97.html">26th USAMO 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

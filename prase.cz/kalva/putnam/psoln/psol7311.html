@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1973/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>34th Putnam 1973</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+If x is a solution of the quadratic ax<sup>2</sup> + bx + c = 0, show that, for any n, we can find polynomials p and q with rational coefficients such that x = p(x<sup>n</sup>, a, b, c) / q(x<sup>n</sup>, a, b, c). Hence or otherwise find polynomials r, s with rational coefficients so that x = r (x<sup>3</sup>, x + 1/x) / s(x<sup>3</sup>, x + 1/x).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The first part of this is somewhat confusing. Clearly we can find particular values of a, b, c for which we do not have x = p(x<sup>n</sup>, a, b, c) / q(x<sup>n</sup>, a, b, c). For example, take a = 1, b = 0, c = -2. Then x is irrational, whereas any p and q would have rational values. 
+
+<p>
+
+One can carry out a careful analysis of what values of a, b, c are allowed, but that does not seem to be what the question is after. It seems to want something much simpler. 
+
+<p>
+
+An easy induction shows that x<sup>n</sup> = (x p<sub>1</sub>(a, b, c) + p<sub>2</sub>(a, b, c) )/ p<sub>3</sub>(a, b, c), where p<sub>1</sub>, p<sub>2</sub> and p<sub>3</sub> are polynomials with integer coefficients. Just start with x<sup>2</sup> = (- bx - c)/a and at each stage multiply through by x and substitute. Now p<sub>1</sub> cannot be identically zero because then both solutions to the original quadratic would have the same |x|, whereas it is easy to see that this is not true for most values of a, b, c. So we may divide by p<sub>1</sub> to get the required relation with p(x<sup>n</sup>, a, b, c) = x<sup>n</sup> p<sub>3</sub>(a, b, c) - p<sub>2</sub>(a, b, c) and q(x<sup>n</sup>, a, ,b c) = p<sub>1</sub>(a, b, c).
+
+<p>
+
+For the second part, it is simpler to start from scratch. (x + 1/x)<sup>2</sup> = x<sup>2</sup> + 1/x<sup>2</sup> + 2. So x (x + 1/x)<sup>2</sup> = x<sup>3</sup> + 1/x + 2x. Hence x (x + 1/x)<sup>2</sup> - x = x<sup>3</sup> + (x + 1/x). That is essentially the relation we want: x = (x<sup>3</sup> + y) / (y<sup>2</sup> - 1), where y = x + 1/x.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn73.html">34th Putnam 1973</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

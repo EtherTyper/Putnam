@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2001/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>62nd Putnam 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Let X be the set of rationals excluding 0, &plusmn;1. Let f: X &rarr; X be defined as f(x) = x - 1/x. Let f<sup>1</sup>(x) = f(x), f<sup>2</sup>(x) = f(f(x)), f<sup>3</sup>(x) = f(f<sup>2</sup>(x)) etc. Does there exist a value x in X such that for any positive integer n, we can find y in X with f<sup>n</sup>(y) = x?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: no.
+
+<p>
+
+The basic idea is to notice that m/n - n/m = (m<sup>2</sup> - n<sup>2</sup>)/(mn) and that mn is greater than n. So as we iterate f the denominators increase without limit.
+
+<p>
+
+There are a few details. Assume that m, n are relatively prime. Then so are (m<sup>2</sup> - n<sup>2</sup>) and mn, so the denominator of f(m/n) is mn. Clearly if m &gt; 1, then mn &ge; 2n. If m = 1, then we have f(1/n) = (1 - n<sup>2</sup>)/n, which has numerator &gt; 2 (since in this case n cannot be &plusmn;1). So for k &gt; 1, the denominator of f<sup>k+1</sup>(y)  is at least double that of f<sup>k</sup>(y). In particular, it is at least 2<sup>k</sup>. So given any rational x, take 2<sup>k-1</sup> larger than its denominator and we cannot have f<sup>k</sup>(y) = x for any y.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn01.html">62nd Putnam 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Dec 2001
+
+</BODY>
+
+
+
+</HTML>
+

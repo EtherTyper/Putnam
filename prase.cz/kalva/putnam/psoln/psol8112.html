@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1981/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>42nd Putnam 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+Let P be a convex polygon each of whose sides touches a circle C of radius 1. Let A be the set of points which are a distance 1 or less from P. If (x, y) is a point of A, let f(x, y) be the number of points in which a unit circle center (x, y) intersects P (so certainly f(x, y) &ge; 1). What is sup 1/|A| &int;<sub>A</sub> f(x, y) dx dy, where the sup is taken over all possible polygons P?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 8/3.
+
+<p>
+
+Construct a rectangle on each side of P, with the other dimension of each rectangle 1. Between each adjacent pair of rectangles construct a sector radius 1, center the common vertex. Then A comprises the interior of P, the rectangles and the sectors. By joining each  vertex of P to the center of C we divide the interior of P into triangles, each with area 1/2 x length of side. So the area of P = k/2, where k is the perimeter of P. Obviously, the area of the rectangles is k and since the sectors form a circle their area is &pi;. So |A| = &pi; + 3k/2.
+
+<p>
+
+The center of a unit circle which cuts a segment length &delta;x must lie in one of two crescents centered on &delta;x, which have total area 4&delta;x. We may now integrate around P to get the area 4k. In this integration points are counted multiple times if the unit circles centered on them intersect P multiple times. In fact, the integral is exactly &int;<sub>A</sub> f(x, y) dx dy. Note that most unit circles meeting P will meet it twice, but those with centres near a vertex may meet it 4 times.
+
+<p>
+
+Thus 1/|A| &int;<sub>A</sub> f(x, y) dx dy = 4k/(&pi; + 3k/2) = 8/(3 + 2&pi;/k). So clearly 8/3 is an upper bound. But we can make k arbitrarily large (by taking one vertex of P off to infinity), so 8/3 is also the least upper bound.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn81.html">42nd Putnam 1981</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

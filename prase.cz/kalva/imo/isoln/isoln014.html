@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 2001/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+Let n<sub>1</sub>, n<sub>2</sub>, ... , n<sub>m</sub> be integers, where m is odd. Let x = (x<sub>1</sub>, ... , x<sub>m</sub>) denote a permutation of the integers 1, 2, ... , m. Let f(x) = x<sub>1</sub>n<sub>1</sub> + x<sub>2</sub>n<sub>2</sub> + ... + x<sub>m</sub>n<sub>m</sub>. Show that for some distinct permutations a, b the difference f(a) - f(b) is a multiple of m!.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+This is a simple application of the pigeon hole principle.
+
+<p>
+
+The sum of all m! distinct residues mod m! is not divisible by m! because m! is even (since m &gt; 1). [The residues come in pairs a and m! - a, except for m!/2.].
+
+<p>
+
+However, the sum of all f(x) as x ranges over all m! permutations is 1/2 (m+1)! &sum; n<sub>i</sub>, which is divisible by m! (since m+1 is even). So at least one residue must occur more than once among the f(x).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo01.html">42nd IMO 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Aug 2001
+
+<br>Last corrected/updated 12 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

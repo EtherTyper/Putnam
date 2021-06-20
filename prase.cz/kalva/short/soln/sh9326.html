@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1993/26 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>34th IMO 1993 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 26</b>
+<p>
+a, b, c, d are non-negative reals with sum 1. Show that abc + bcd + cda + dab &le; 1/27 + 176abcd/27.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Put f(a,b,c,d) = abc + bcd + cda + dab - 176abcd/27. Note that the order of the arguments is unimportant. We can write f(a,b,c,d) = ab(c+d) + cd(a+b-176ab/27). Suppose the result is false. If a+b-176ab/27 &le; 0, then f(a,b,c,d) &le; ab(c+d) &le; 1/27 (using AM/GM for a,b,c+d). Contradiction. So we must have a+b-176ab/27 &gt; 0. Hence by AM/GM applied to c,d we get f(a,b,c,d) &le; ab(c+d) + &frac14;(c+d)<sup>2</sup>(a+b-176ab/27) = f(a,b,(c+d)/2,(c+d)/2). 
+<p>
+We now repeat the argument, getting successively f(a,b,c,d) &le; f(a,b,(c+d)/2,(c+d)/2) &le; f((a+b)/2,(a+b)/2,(c+d)/2,(c+d)/2) &le; f(&frac14;,&frac14;,(a+b)/2,(c+d)/2) &le; f(&frac14;&frac14;,&frac14;,&frac14;) = 1/27. Contradiction.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh93.html">34th IMO shortlist 1993</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+8 Nov 2003
+<br>Last corrected/updated 8 Nov 03
+</BODY>
+
+</HTML>
+

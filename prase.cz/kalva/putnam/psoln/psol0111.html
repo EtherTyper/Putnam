@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2001/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>62nd Putnam 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+f is a continuous real-valued function on the reals such that for some 0 &lt; a, b &lt; 1/2, we have f(f(x)) = a f(x) + b x for all x. Show that for some constant k, f(x) = k x for all x.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Notice first that if f(x) = kx, then f(f(x)) = k<sup>2</sup>x, so k<sup>2</sup>x = akx + bx and hence k is a root of the quadratic t<sup>2</sup> - at - b = 0.
+
+<p>
+
+If f(x) = f(y), then f(f(x)) = f(f(y)), so x = ( f(f(x)) - a f(x) )/b = ( f(f(y)) - a f(y) )/b = y. In other words, f is one-to-one. Since it is continuous, it must be strictly increasing or strictly decreasing. It cannot be bounded as x tends to plus infinity, otherwise f(f(x)) would be bounded, but a f(x) + b x would be unbounded. Similarly as x tends to minus infinity. So f must be onto and hence invertible.
+
+<p>
+
+Let h, k be the roots of t<sup>2</sup> = a t + b. Evidently one root, say h, is positive and the other negative. Moreover both must have absolute value less than 1. This is where we need 0 &lt; a, b &lt; 1/2. Write h = (a + &radic;(a<sup>2</sup> + 4b) )/2, k = (a - &radic;(a<sup>2</sup> + 4b) )/2, and it follows immediately that 0 &lt; h &lt; 1, 0 &gt; k &gt; -h.
+
+<p>
+
+Now given x, take p, q so that x = p + q, f(x) = ph + qk. It is easy to see that this can be done: p = (f(x) - kx)/(h - k), q = (hx - f(x) )/(h - k). It is also easy to see that denoting f<sup>2</sup>(x) = f(f(x)), f<sup>3</sup>(x) = f(f<sup>2</sup>(x)) etc, we have f<sup>n</sup>(x) = ph<sup>n</sup> + qk<sup>n</sup>. Indeed this must also be true for n negative, where f<sup>-1</sup> denotes the inverse of f.
+
+<p>
+
+Now suppose f is increasing. Suppose for some particular x we have q non-zero. Then for n sufficiently large, qk<sup>-n</sup> dominates ph<sup>-n</sup>, so f<sup> -n</sup>(x) alternate in sign but increases in absolute value as n increases. For suitable N we will have f<sup> -N-2</sup>(x) &gt; f<sup> -N</sup>(x) &gt; 0, but f<sup> -N-1</sup>(x) &lt; f<sup> -N+1</sup>(x) &lt; 0. In other words A &gt; B, but f(A) &lt; f(B), contradicting the fact that f is increasing. So we must have q zero for <i>all</i> x. Hence f(x) = hx for all x.
+
+<p>
+
+Similarly, suppose f is decreasing. Suppose for some particular x we have p non-zero. Then for sufficiently large n, ph<sup>n</sup> dominates qk<sup>n</sup>, so f<sup> n</sup>(x) has the same sign, but decreases in absolute value as n increases. So either we have N with f<sup> N-1</sup>(x) &gt; f<sup> N</sup>(x) &gt; f<sup> N+1</sup>(x) &gt; f<sup> N+2</sup>(x) &gt; 0, in which case A &gt; B but f(A) &gt; f(B) (with A = f<sup> N-1</sup>(x), B = f<sup> N+1</sup>(x) ), or we have N with f<sup> N-1</sup>(x) &lt; f<sup> N</sup>(x) &lt; f<sup> N+1</sup>(x) &lt; f<sup> N+2</sup>(x) &lt; 0, in which case A &lt; B but f(A) &lt; f(B) (with A = f<sup> N-1</sup>(x), B = f<sup> N+1</sup>(x) ). In either case we contradict f decreasing. So if f is decreasing we must have p zero for <i>all</i> x and hence f(x) = kx for all x.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn01.html">62nd Putnam 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Dec 2001
+
+</BODY>
+
+
+
+</HTML>
+

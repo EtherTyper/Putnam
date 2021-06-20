@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 52/B7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>12th Putnam 1952</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B7</b><br>
+
+<p>
+
+Let R be the reals. Define a<sub>n</sub> by a<sub>1</sub> = &alpha; &isin; R, a<sub>n+1</sub> = cos a<sub>n</sub>. Show that a<sub>n</sub> converges to a limit independent of &alpha;.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+|cos x| &le; 1, so -1 &le; a<sub>2</sub> &le; 1. Hence 0 &lt; a<sub>3</sub> &lt; 1 and so 0 &lt; a<sub>n</sub> &lt; 1 for n &ge; 3. 
+
+<p>
+
+cos x is strictly monotonic decreasing over the range 0 to 1, so if a<sub>n</sub> &lt; a<sub>n+1</sub> then a<sub>n+2</sub> &lt; a<sub>n+1</sub>. Now the gradient of cos x is greater than -1 throughout the interval (0, 1), so if a<sub>n</sub> &lt; a<sub>n+1</sub> then cos a<sub>n</sub> - cos a<sub>n+1</sub> &lt; a<sub>n+1</sub> - a<sub>n</sub>. Hence a<sub>n</sub> &lt; a<sub>n+2</sub> &lt; a<sub>n+1</sub>. Similarly, if a<sub>n</sub> &gt; a<sub>n+1</sub>, then a<sub>n</sub> &gt; a<sub>n+2</sub> &gt; a<sub>n+1</sub>. Thus either a<sub>2n</sub> is an increasing sequence bounded above and a<sub>2n+1</sub> is a decreasing sequence bounded below or vice versa. Hence both a<sub>2n</sub> and a<sub>2n+1</sub> converge.
+
+<p>
+
+By the mean value theorem |a<sub>n+1</sub> - a<sub>n+2</sub>| = |cos a<sub>n</sub> - cos a<sub>n+1</sub>| = sin k |a<sub>n</sub> - a<sub>n+1</sub>| for some k in (0, 1). But sin k &lt; sin 1 &lt; 0.9. So a<sub>2n</sub> and a<sub>2n+1</sub> must converge to the same limit. Suppose this limit is h. Then h = cos h. But cos x is strictly decreasing in (0, 1) and x is strictly increasing, so they have a single point of intersection in (0, 1). Thus h must be the unique point in (0, 1) at which h = cos h.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn52.html">12th Putnam 1952</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

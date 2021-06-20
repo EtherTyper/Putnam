@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1981/3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>22nd IMO 1981 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 3</b>
+<p>
+A sequence a<sub>n</sub> is defined as follows, a<sub>0</sub> = 1, a<sub>n+1</sub> = (1 + 4a<sub>n</sub> + &radic;(1 + 24a<sub>n</sub>))/16 for n &ge; 0. Find an explicit formula for a<sub>n</sub>.
+<p>
+&nbsp;<p>
+<b>Answer</b>
+<p>
+(1/3)(1 + 1/2<sup>n</sup>)(1 + 1/2<sup>n+1</sup>)
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Put b<sub>n</sub> = 2<sup>2n+1</sup>a<sub>n</sub>. Then the relation becomes b<sub>n+1</sub> = 2<sup>2n-1</sup> + b<sub>n</sub> + 2<sup>n</sup> &radic;(2<sup>2n-2</sup> + 3b<sub>n</sub>). Put c<sub>n</sub> = &radic;(2<sup>2n-2</sup> + 3b<sub>n</sub>) and this becomes c<sub>n+1</sub><sup>2</sup> = c<sub>n</sub><sup>2</sup> + 3&middot;2<sup>n</sup>c<sub>n</sub> + 9&middot;2<sup>2n-2</sup> = (c<sub>n</sub> + 3&middot;2<sup>n-1</sup>)<sup>2</sup>. Hence c<sub>n+1</sub> = c<sub>n</sub> + 3&middot;2<sup>n-1</sup>. Iterating, c<sub>n+1</sub> = 3&middot;2<sup>n-1</sup> + 3&middot;2<sup>n-2</sup> + ... + 3&middot;2<sup>0</sup> + c<sub>1</sub> = 3(2<sup>n</sup>-1) + c<sub>1</sub> = 3&middot;2<sup>n</sup> + 1 (we have a<sub>1</sub> = 5/8, so b<sub>1</sub> = 5, c<sub>1</sub> = 4). Hence b<sub>n</sub> = (2<sup>2n+1</sup> + 3&middot;2<sup>n</sup> + 1)/3, a<sub>n</sub> = 1/3 + 1/2<sup>n+1</sup> + 1/(3&middot;2<sup>2n+1</sup>) = (1/3)(1 + 1/2<sup>n</sup>)(1 + 1/2<sup>n+1</sup>).
+<p>
+<i>Thanks to Suat Namli</i>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh83.html">24th IMO shortlist 1983</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+12 February 2004
+<br>Last corrected/updated 12 Feb 04
+</BODY>
+
+</HTML>
+

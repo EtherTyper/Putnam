@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1983/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>44th Putnam 1983</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Does there exist a positive real number &alpha; such that [&alpha;<sup>n</sup>] - n is even for all integers n &gt; 0?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes.
+
+<p>
+
+The idea is that an interval length 1 is acceptable for &alpha;<sup>n</sup>. This corresponds to an interval length &alpha; for &alpha;<sup>n+1</sup>. So if &alpha; is sufficiently large (in fact &gt; 3), this will always contain an acceptable subinterval of length 1 for &alpha;<sup>n+1</sup>. Translated back to intervals for &alpha; itself this gives to a sequence of nested intervals, which must have non-zero intersection.
+
+<p>
+
+So, being slightly more precise, define I<sub>1</sub> = [5, 5.9]. Then any point of I<sub>1</sub> has integral part 5, which is odd. This corresponds to the interval I<sub>1</sub>' = [25, 34.8] for &alpha;<sup>2</sup>. This contains the interval [26, 26.9] every point of which has integral part 26, even. It corresponds to I<sub>2</sub> = [26<sup>1/2</sup>, 26.9<sup>1/2</sup>] which is a subinterval of I<sub>1</sub> (it is roughly [5.10, 5.19]. It corresponds to I<sub>2</sub>' = [26<sup>3/2</sup>, 26.9<sup>3/2</sup>], or roughly [132.6, 139.5] for &alpha;<sup>3</sup>. This has the subinterval [133, 133.9] every point of which has integral part 133, odd. It corresponds to I<sub>3</sub> = [133<sup>1/3</sup>, 133.9<sup>1/3</sup>] (roughly [5.10, 5.12] ), which is a subinterval of I<sub>2</sub>. This process can be continued indefinitely, because I<sub>n</sub>' always has length 0.9 &alpha; &gt; 4 and hence contains at least 3 consecutive integers. We pick one of the two smaller, so that it is even or odd as required. This gives us an acceptable subinterval [m, m+0.9] of I<sub>n</sub>'.
+
+<p>
+
+Note that we could have started with [3, 4) and used half-open intervals of length 1, but then the argument is slightly more complicated because an intersection of non-closed intervals is not guaranteed to be non-empty.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn83.html">44th Putnam 1983</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,84 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1982/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>43rd Putnam 1982</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Given x &gt; e<sup>e</sup>, define the sequence f(n) as follows: f(0) = e, f(n+1) = (ln x)/(ln f(n)). Prove that the sequence converges. Let the limit be g(x). Prove that g is continuous.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We establish that f(2n) is an increasing sequence, and f(2n-1) a decreasing sequence. Specifically we show that e &lt; f(2n) &lt; f(2n+2) &lt; f(2n+1) &lt; f(2n-1) (*). We need the preliminary result that if e &lt; x &lt; y, then x<sup>y</sup> &gt; y<sup>x</sup> (**). We also use repeatedly the obvious result that if 1 &lt; x &lt; y and x<sup>a</sup> = y<sup>b</sup>, then a &gt; b (***).
+
+<p>
+
+To prove (**), let k(x) = (ln x)/x, then k'(x) = (1 - ln x)/x<sup>2</sup> &lt; 0 for x &gt; e. Hence for e &le; x &lt; y, (ln x)/x &gt; (ln y)/y, and hence y ln x &gt; x ln y, and hence x<sup>y</sup> &gt; y<sup>x</sup>.
+
+<p>
+
+We establish (*) by induction. By definition, we have x = f(n)<sup>f(n+1)</sup>. In particular, x = e<sup>f(1)</sup>. We are given that x &gt; e<sup>e</sup>, so certainly f(1) &gt; e. Applying (**), e<sup>f(1)</sup> &gt; f(1)<sup>e</sup>. But x = e<sup>f(1)</sup> = f(1)<sup>f(2)</sup>, so f(2) &gt; e. Also since e &lt; f(1) and e<sup>f(1)</sup> = f(1)<sup>f(2)</sup> we have f(1) &gt; f(2). So we have established that e &lt; f(2) &lt; f(1).
+
+<p>
+
+Now assume that e &lt; f(2n) &lt; f(2n-1). By definition, x = f(2n-1)<sup>f(2n)</sup> = f(2n)<sup>f(2n+1)</sup>. But f(2n-1) &gt; f(2n), so by (***) f(2n) &lt; f(2n+1). Also, using (**), f(2n) &lt; f(2n-1) implies x = f(2n-1)<sup>f(2n)</sup> &lt; f(2n)<sup>f(2n-1)</sup>. Hence f(2n+1) &lt; f(2n-1). So we have established that f(2n) &lt; f(2n+1) &lt; f(2n-1).
+
+<p>
+
+We now use f(2n)<sup>f(2n+1)</sup> = f(2n+1)<sup>f(2n+2)</sup>. Since f(2n) &lt; f(2n+1), (***) gives f(2n+1) &gt; f(2n+2). Also, using (**), f(2n)<sup>f(2n+1)</sup> &gt; f(2n+1)<sup>f(2n)</sup>, so f(2n+2) &gt; f(2n). So we have established that f(2n) &lt; f(2n+2) &lt; f(2n+1) &lt; f(2n-1). That completes the induction.
+
+<p>
+
+Hence f(2n) is an increasing sequence which is bounded above. So it must converge to some limit h. Similarly, f(2n+1) is a decreasing sequence which is bounded below. So it must converge to some limit k. Also we have h, k &gt; e. But it follows that lim f(2n)<sup>f(2n+1)</sup> = h<sup>k</sup> and lim f(2n+1)<sup>f(2n+2)</sup> = k<sup>h</sup>. But both these sequences have the constant value x. Hence h<sup>k</sup> = k<sup>h</sup>. If h and k were unequal, then (**) would imply that h<sup>k</sup> and k<sup>h</sup> were unequal. Hence h = k.
+
+<p>
+
+So we have established that the sequence f(n) converges to some limit g(x). We have also shown that g(x)<sup>g(x)</sup> = x. But y<sup>y</sup> is continuous and strictly increasing, so its inverse g(x) is continuous.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn82.html">43rd Putnam 1982</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

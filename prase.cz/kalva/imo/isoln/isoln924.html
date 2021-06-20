@@ -1,0 +1,86 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1992/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1992</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b>
+
+<p>
+
+L is a tangent to the circle C and M is a point on L. Find the locus of all points P such that there exist points Q and R on L equidistant from M with C the incircle of the triangle PQR.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Answer: Let X be the point where C meets L, let O be the center of C, let XO cut C gain at Z, and take Y on QR so that M be the midpoint of XY. Let L' be the line YZ. The locus is the open ray from Z along L' on the opposite side to Y.
+
+<p>
+
+<i>mainly by Gerhard W&ouml;ginger, Technical University, Graz (I filled in a few details)</i>
+
+<p>
+Let C' be the circle on the other side of QR to C which also touches the segment QR and the lines PQ and QR. Let C' touch QR at Y'. If we take an expansion (technically, homothecy) center P, factor PY'/PZ, then C goes to C', the tangent to C at Z goes to the line QR, and hence Z goes to Y'. But it is easy to show that QX = RY'.
+
+<p>
+We focus on the QORO'. Evidently X,Y' are the feet of the perpendiculars from O, O' respectively to QR. Also, OQO' = ORO' = 90. So QY'O' and OXQ are similar, and hence QY'/Y'O' = OX/XQ. Also RXO and O'Y'R are similar, so RX/XO = O'Y'/Y'R. Hence QY'&middot;XQ = OX&middot;O'Y' = RX&middot;Y'R. Hence QX/RX = QX/(QR - QX) = RY'/(QR - RY') = RY'/QY'. Hence QX = RY'.
+
+<p>
+But QX = RY by construction (M is the midpoint of XY and QR), so Y = Y'. Hence P lies on the open ray as claimed. Conversely, if we take P on this ray, then by the same argument QX = RY. But M is the midpoint of XY, so M must also be the midpoint of QR, so the locus is the entire (open) ray.
+
+<p>
+<i>Gerhard only found this after Theo Koupelis, University of Wisconsin, Marathon had already supplied the following analytic solution.</i>
+
+<p>
+
+Take Cartesian coordinates with origin X, so that M is (a, 0) and O is (0, R). Let R be the point (b, 0) (we take a, b &gt;= 0). Then Q is the point (2a - b, 0), and Y is (2a, 0). Let angle XRO be &theta;. Then tan &theta; = R/b and angle PRX = 2&theta;, so tan PRX = 2 tan &theta;/( 1 - tan<sup>2</sup>&theta;) = 2Rb/(b<sup>2</sup> - R<sup>2</sup>). Similarly, tan PQX = 2R(b - 2a)/( (b - 2a)<sup>2</sup> - R<sup>2</sup>).
+
+<p>
+If P has coordinates (A, B), then B/(b - A) = tan PRX, and B/(b - 2a + x) = tan PQX. So we have two simultaneous equations for A and B. Solving, and simplifying slightly, we find A = -2aR<sup>2</sup>/(b<sup>2</sup> - 2ab - R<sup>2</sup>), B = 2b(b - 2a)R/(b<sup>2</sup> - 2ab - R<sup>2</sup>). (*)
+
+<p>
+We may now check that B/(2a - A) = R/a, so P lies on YZ as claimed. So we have shown that the locus is a subset of the line YZ. But since b<sup>2</sup> - 2ab - R<sup>2</sup> maps the open interval (a + &radic;(a<sup>2</sup> + R<sup>2</sup>), &infin;) onto the open interval (0, &infin;), (*) shows that we can obtain any value A in the open interval (-&infin;,0) by a suitable choice of b, and hence any point P on the ray (except its endpoint Z) by a suitable choice of R.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo92.html">33rd IMO 1992</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+8 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

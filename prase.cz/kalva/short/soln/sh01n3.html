@@ -1,0 +1,70 @@
+<HTML>
+<HEAD>
+<TITLE>42nd IMO shortlist 2001/N3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>42nd IMO 2001 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N3</b><br>
+<p>
+The sequence a<sub>n</sub> is defined by a<sub>1</sub>= 11<sup>11</sup>, a<sub>2</sub> = 12<sup>12</sup>, a<sub>3</sub> = 13<sup>13</sup>, and a<sub>n+3</sub> = |a<sub>n+2</sub> - a<sub>n+1</sub>| + |a<sub>n+1</sub> - a<sub>n</sub>|. Find a<sub>n</sub>, where n = 14<sup>14</sup>.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 1.
+<p>
+This looks so horrendous that appearances must be deceiving. Suppose we take smaller initial values to try to get a sense of what is going on.
+<pre>
+term	1  3  7  6  5  2  4  5  3  3  2  1  2  2  1  1  1  0  1  2  2  1
+diff	 2  4  1  1  3  2  1  2  0  1  1  1  0  1  0  0  1  1  1  0  1
+</pre>
+We now have a repetition of 1, 2, 2, so the sequence has period 7 and just repeats the cycle 1, 2, 2, 1, 1, 1, 0. Take another example, starting with 3, 21, 25. After a longer initial lead-in we again get a sequence with period 7:
+<pre>
+3  21  25  22   7  18  26  19  15  11   8   7   4   4   3   1   3   4   3   2   2   1
+ 18   4   3  15  11   8   7   4   4   3   1   3   0   1   2   2   1   1   1   0
+</pre>
+Finally, we try something less random. It is evidently periodic right from the start.
+<pre>
+k    k    k   0   k  2k  2k   k   k   k
+  0   0   k   k   k   0   k   0   0
+</pre>
+The last case shows that the terms do not necessarily become small, but we hope that they do unless the starting values are special. 
+<p>
+Note that 100, 0, 100 is followed by 200, so terms can go up. Studying the examples above, the differences look easier to deal with. The examples suggest that if three successive differences are a, b, c, then the next is |c - a|. If three successive differences are a, b, c, then the corresponding terms must be A, B, C, a + b. The next term will be b + c. So the next difference will be |b+c - (a+b)| = |c - a|. That is certainly less than max(a, c) and hence less than max(a, b, c). In particular, the differences are certainly bounded.
+<p>
+Suppose max(a, b, c) = M &gt; 1. The following differences are all &lt;= M, so moving forward one or two places in the sequence if necessary, we can assume that a = M. Thus the differences are M, b, c, d, e, f, g, ... . We claim that max(e, f, g) &lt; M unless b and c are both 0 or M. If not, then max(b, c, d) = max(c, d, e) = max(d, e, f) = max(e, f, g) = M (because once the max dips down it can never get back up). But d = |M - c| = M - c. So at least one of b, c, M-c must be M. 
+<p>
+Suppose b = M. Then e = |M - c - M| = c. But max(c, d, e) = max(c, M-c, c) = M, so c = 0 or M. Thus both b and c are 0 or M. Contradiction. 
+<p>
+Suppose c = M. Then d = 0, e = |0 - b| = b, f = |b - M| = M - b, so max(d, e, f) = max(b, M-b) = M, so b = 0 or M. Thus both b and c are 0 or M. Contradiction.
+<p>
+Finally, suppose c = 0. Then d = M, e = M-b, f = M-b, g = b, so max(e, f, g) = max(M-b, b) = M, so b = 0 or M. Contradiction.
+<p>
+Now suppose three successive differences are all 0 or M. Then two successive terms (not differences) are 0, M or 2M. Working <i>backwards</i> we find that <i>all</i> terms must be multiples of M:
+<pre>
+ ...  A   B   C
+... z   a   b 
+</pre>
+a and b are multiples of M, so C = a+b must be a multiple of M. But B = C&plusmn;b, so B must be a multiple of M. But B = a+z, so z must be a multiple of M. Also A = B&plusmn;a, so A must be a multiple of M, and so on. However, for the particular values we have been given, the greatest common divisor of the first two terms is 1, so M must be 1. Contradiction. 
+<p>
+Thus we have established that if three successive differences have maximum M &gt; 1, then we can find three successive terms starting at most 6 places further on which have a strictly smaller maximum. Continuing in this way, we find that the three successive differences starting at most 6M places further on have maximum 1 or less. In other words every difference is 0 or 1 once one gets sufficiently far. Hence all terms a<sub>n</sub> with n &gt; 6M are 0, 1 or 2. Since N = 14<sup>14</sup> is obviously much larger than M for the first few differences, we conclude that a<sub>N</sub> = 0, 1 or 2.
+<p>
+We now work mod 2. Note that a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub> = 1, 0, 1 mod 2. We can now calculate successively:
+<pre>
+n	1  2  3  4  5  6  7     8  9 10
+a<sub>n</sub>	1  0  1  0  0  1  1     1  0  1
+</pre>
+Since a<sub>8</sub>, a<sub>9</sub>, a<sub>10</sub> are the same as a<sub>1,</sub>, a<sub>2</sub>, a<sub>3</sub> the sequence must be periodic with period 7. But N = 14<sup>14</sup> = 0 mod 7, so a<sub>N</sub> = a<sub>7</sub> = 1 mod 2. Hence a<sub>N</sub> = 1.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh01.html">42nd IMO shortlist 2001</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+14 Oct 2002
+</BODY>
+</HTML>
+

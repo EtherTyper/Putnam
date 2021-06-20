@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 00/2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 2</b>
+
+<p>
+
+A chooses a positive integer X &le; 100. B has to find it. B is allowed to ask 7 questions of the form "What is the greatest common divisor of X + m and n?" for positive integers m, n &lt; 100. Show that he can find X.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+The idea is that X can be regarded as having 7 binary digits b<sub>6</sub>b<sub>5</sub>...b<sub>0</sub> and we can find each digit with one question. If there was no restriction on the numbers m, n, then the procedure would be trivial: having determined the last k binary digits which give a number m, we then ask for gcd(X - m, 2<sup>k+1</sup>). If it is 2<sup>k+1</sup>, then b<sub>k</sub> = 0, if it is 2<sub>k</sub>, then b<sub>k</sub> = 1. Given the restrictions, we have to use a slight variant on this procedure.
+<p>
+For b<sub>0</sub> we can ask for gcd(X+1,2). If it is 1, then b<sub>0</sub> = 0. If it is 2, then b<sub>0</sub> = 1. Now if we have found b<sub>0</sub>, b<sub>1</sub>, ... b<sub>k-1</sub> with k &le; 5, we want to subtract off b = b<sub>k-1</sub>...b<sub>1</sub>b<sub>0</sub>. So we add m = 2<sub>k+1</sub> - b. Then the last k+1 digits of X + 2<sup>k+1</sup> - b are b<sub>k</sub>0...0, so gcd(X+m,2<sup>k+1</sup>) is 2<sup>k+1</sup> if b<sub>k</sub> = 0, or 2<sup>k</sup> if b<sub>k</sub> = 1. That gives us b<sub>0</sub>, b<sub>1</sub>, ... , b<sup>5</sup> in the first 6 questions. If b = b<sub>5</sub>b<sub>4</sub>...b<sub>0</sub>, we know that X = b or b+64. These are different mod 3. So we take m = 1, 2 or 3 to give b + m a multiple of 3 and and take n = 3. Then gcd(X+m,n) distinguishes b and b+64.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus00.html">Russian 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+20 December 2003
+
+</BODY>
+
+
+
+</HTML>
+

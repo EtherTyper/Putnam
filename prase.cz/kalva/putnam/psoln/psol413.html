@@ -1,0 +1,71 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>4th Putnam 1941/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>4th Putnam 1941</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+A circle radius a rolls in the plane along the x-axis the envelope of a diameter is the curve C. Show that we can find a point on the circumference of a circle radius a/2, also rolling along the x-axis, which traces out the curve C.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Consider a circle radius a/2 with center initially at (0,a/2) rolling along the x-axis. After rolling through an angle &theta;, the point initially at (0,a) is at a/2 sin &theta;, a/2 cos &theta; relative to the center and hence at P (a&theta;/2 + (a/2) sin &theta;, a/2 + (a/2) cos &theta;). The tangent at P is (y - (a/2)(1 + cos &theta;)/(x - (a/2)(&theta; + sin &theta;) = (-sin &theta;)/(1 + cos &theta;), or x sin &theta; + y(1 - cos &theta;) = (a/2)(&theta; sin &theta; + 2 cos &theta; + 2). 
+<p>
+If we put &theta; = 2&phi;, then sin &theta; = 2 sin &phi; cos &phi;, 1 + cos &theta; = 2 cos<sup>2</sup>&phi;, so the tangent at P has equation, x sin &phi; + y cos &phi; = a(&phi; sin &phi; + cos &phi;).
+<p>
+Now consider the circle radius a with center initially at (0,a). When it has rolled through an angle &phi;, its center is at (a&phi;, a), so the diameter which is initially horizontal lies on the line (y-a)/(x-a&phi;) = -tan &phi;, or x sin &phi; + y cos &phi; = a(&phi; sin &phi; + cos &phi;). In other words, the diameter is tangent to the point P of the curve traced out by the point on the circumference of the circle radius a/2. Hence the envelope of the diameter is that curve.
+<p>
+<i>A rather more sophisticated solution by Dave Rusin is as follows</i>
+<p>
+Consider the large circle. When the center is at (a&phi;, a), a point initially at (u,a) has rotated to (u cos &phi;, -u sin &phi;) relative to the center and hence is at the point f(&phi;,u) = (a&phi; + u cos &phi;, a - u sin &phi;). The envelope can be computed as the singular points of f. In matrix form the derivative is
+<pre>a - u sin &phi;    cos &phi;
+  - u cos &phi;   - sin &phi;
+</pre>
+Its determinant is zero when u = a sin &phi;. The image of such a point is (x,y) = f(&phi;,u) = (a&phi; + a sin &phi; cos &phi;, a - a sin &phi; sin &phi;) = (a/2)(2&phi; + sin 2&phi;, 1 + cos 2&phi;). As noted above, this is also the position of a point on the circumference of a circle radius a/2 rolling along the x-axis.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn41.html">4th Putnam 1941</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+19 January 2004
+<br>Last corrected/updated 19 Jan 04
+
+</BODY>
+
+
+
+</HTML>
+

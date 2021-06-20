@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1976/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>37th Putnam 1976</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+Given two rays OA and OB and a point P between them. Which point X on the ray OA has the property that if XP is extended to meet  the ray OB at Y, then XP&middot;PY has the smallest possible value.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: take OX = OY.
+
+<p>
+
+Let M be the foot of the perpendicular from P to OA, and N be the foot of the perpendicular from P to OB. Obviously X must lie further from O than M - otherwise moving it closer to M would reduce both PX and PY. Similarly Y must lie further from O than N. Let &phi; be the angle MPX and let &theta; be the angle MON. Then the angle NPY is &theta;-&phi;. Hence PX&middot;PY = PM&middot;PN/(cos &phi; cos &theta;-&phi;). So we minimise PX.PY by maximising (cos &phi; cos &theta;-&phi;). But (cos &phi; cos &theta;-&phi;) = 1/2 (cos(&phi;+&theta;-&phi;) + cos(2&phi;-&theta;) ) = 1/2 cos &theta; + 1/2 cos(2&phi;-&theta;). This is obviously maximised by taking &phi; = &theta;-&phi;. But that corresponds to angle PXM = angle PYN and hence OX = OY.
+
+<p>
+
+Alternatively, PX&middot;PY may remind us of the elementary result that if XX'YY' is cyclic with diagonals XY, X'Y' meeting at P, then PX&middot;PY = PX'&middot;PY'. The problem is to find a suitable circle. With hindsight, it is fairly obvious. Take the circle which touches OA at X and OB at Y. Then any other line through P intersects the circle at X' and Y' before it intersects OA and OB (at X'' and Y'' say). Hence PX'' &gt; PX', PY'' &gt; PY' and PX'&middot;PY' = PX&middot;PY. However, I failed to find the right circle until after I had solved the problem trigonometrically.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn76.html">37th Putnam 1976</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+23 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

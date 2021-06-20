@@ -1,0 +1,70 @@
+
+
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 2003/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 2003</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Given n &gt; 2 and reals x<sub>1</sub> &lt;= x<sub>2</sub> &lt;= ... &lt;= x<sub>n</sub>, show that (&sum;<sub>i,j</sub> |x<sub>i</sub> - x<sub>j</sub>| )<sup>2</sup> &le; (2/3) (n<sup>2</sup> - 1) &sum;<sub>i,j</sub> (x<sub>i</sub> - x<sub>j</sub>)<sup>2</sup>. Show that we have equality iff the sequence is an arithmetic progression.
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Thanks to Li Yi</i>
+<p>
+Notice first that if we restrict the sums to i &lt; j, then they are halved. The lhs sum is squared and the rhs sum is not, so the the desired inequality with sums restricted to i &lt; j has (1/3) on the rhs instead of (2/3).
+<p>
+Consider the sum of all |x<sub>i</sub> - x<sub>j</sub>| with i &lt; j. x<sub>1</sub> occurs in (n-1) terms with a negative sign. x<sub>2</sub> occurs in one term with a positive sign and (n-2) terms with a negative sign, and so on. So we get -(n-1)x<sub>1</sub> - (n-3)x<sub>2</sub> - (n-5)x<sub>3</sub> - ... + (n-1)x<sub>n</sub> = &sum; (2i-1-n)x<sub>i</sub>.
+<p>
+We can now apply Cauchy-Schwartz. The square of this sum is just &sum; x<sub>i</sub><sup>2</sup> &sum; (2i-1-n)<sup>2</sup>.
+<p>
+Looking at the other side of the desired inequality, we see immediately that it is n &sum; x<sub>i</sub><sup>2</sup> - (&sum; x<sub>i</sub>)<sup>2</sup>. We would like to get rid of the second term, but that is easy because if we add h to every x<sub>i</sub> the sums in the desired inequality are unaffected (since they use only differences of x<sub>i</sub>), so we can choose h so that &sum; x<sub>i</sub> is zero. Thus we are home if we can show that &sum; (2i-1-n)<sup>2</sup> &le; n(n<sup>2</sup> - 1)/3. That is easy: lhs = 4 &sum; i<sup>2</sup> - 4(n+1) &sum; i + n(n+1)<sup>2</sup> = (2/3)n(n+1)(2n+1) - 2n(n+1) + n(n+1)<sup>2</sup> = (1/3)n(n+1)(2(2n+1) - 6 + 3(n+1) ) = (1/3)n(n<sup>2</sup> - 1) = rhs. That establishes the required inequality. 
+<p>
+We have equality iff we have equality at the Cauchy-Schwartz step and hence iff x<sub>i</sub> is proportional to (2i-1-n). That implies that x<sub>i+1</sub> - x<sub>i</sub> is constant. So equality implies that the sequence is an AP. But if the sequence is an AP with difference d (so x<sub>i+1</sub> = x<sub>i</sub> + d) and we take x<sub>1</sub> = -(d/2)(n-1), then we get x<sub>i</sub> = (d/2)(2i-1-n) and &sum; x<sub>i</sub> = 0, so we have equality. 
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo03.html">44th IMO 2003</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Jul 2003
+
+<br>Last corrected/updated 25 Jul 2003
+
+</BODY>
+
+
+
+</HTML>
+

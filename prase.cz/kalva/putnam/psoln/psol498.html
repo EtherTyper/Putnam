@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 49/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>9th Putnam 1949</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b>
+
+<p>
+
+<i>Do either (1) or (2)</i>
+
+<p>(1) &nbsp; Prove that &sum;<sub>2</sub><sup>&infin;</sup> cos(ln ln n) / ln n diverges.
+
+<p>(2) &nbsp; Let k, a, b, c be real numbers such that a, k &gt; 0 and b<sup>2</sup> &lt; ac. Show that &int;<sub>U</sub> (k + ax<sup>2</sup> + 2bxy + cy<sup>2</sup>)<sup>-2</sup> dx dy = &pi;/( k &radic;(ac - b<sup>2</sup>) ), where U is the entire plane.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+(1) We have ln n<sup>2</sup> = 2 ln n, so for any m in the range n, n+1, n+2, ... , n<sup>2</sup> we have 1/ln m &gt; 1/2 1/ln n. Also ln ln n<sup>2</sup> = ln ln n + ln 2 &lt; ln ln n + &pi;/3. So given any sufficiently large integer N, take x &gt; N so that ln ln x = a multiple of 2 &pi;, then we can find at least N<sup>2</sup>/2 consecutive integers n in the range x to x<sup>2</sup>such that (A) 1/ln n &gt; 1/(2 ln N) and (B) ln ln n lies between 2k &pi; and 2k &pi; + &pi;/3 (for some integer k) and hence so that cos ln ln n &gt; 1/2. Hence for each such integer (cos ln ln n)/ln n &gt; 1/(4 ln N). So &sum; (cos ln ln n)/ln n over all these terms is at least N<sup>2</sup>/(8 ln N) which can be made arbitrarily large. Hence the sequence does not converge.
+
+<p>
+
+(2) ax<sup>2</sup> + 2bxy + cy<sup>2</sup> = h is the equation of an ellipse. If we rotate the axes to line up with its axes we get new coordinates X, Y so that it becomes AX<sup>2</sup> + BY<sup>2</sup> = h with AB = ac - b<sup>2</sup>. Thus the integral is transformed to &int;<sub>U</sub> (k + AX<sup>2</sup> + BY<sup>2</sup>)<sup>-2</sup> dX dY. Take u = X&radic;A, v = Y&radic;B and the integral becomes 1/&radic;(ac - b<sup>2</sup>) &int;<sub>U</sub> (k + u<sup>2</sup> + v<sup>2</sup>)<sup>-2</sup> du dv. Now take u = r cos &theta;, v = r sin &theta; and we get 1/&radic;(ac - b<sup>2</sup>) &int;<sub>U</sub> (k + u<sup>2</sup> + v<sup>2</sup>)<sup>-2</sup> du dv = 1/&radic;(ac - b<sup>2</sup>) &int;<sub>U</sub> (k + r<sup>2</sup>)<sup>-2</sup> r dr d&theta; = 2 &pi; /&radic;(ac - b<sup>2</sup>) &int; (k + r<sup>2</sup>)<sup>-2</sup> r dr = 2 &pi; /(k &radic;(ac - b<sup>2</sup>) ) &int; (1 + s<sup>2</sup>)<sup>-2</sup> s ds = &pi; /(k &radic;(ac - b<sup>2</sup>) ) (-1/(1 + s<sup>2</sup>)|<sub>0</sub><sup>inf</sup> = 2 &pi; /(k &radic;(ac - b<sup>2</sup>) ).
+
+<p>
+<i>Thanks to Dave Rusin for a similar solution.</i>
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn49.html">9th Putnam 1949</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

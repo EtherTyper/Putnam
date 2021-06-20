@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>4th Putnam 1941/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>4th Putnam 1941</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Find: 
+
+<br>(1) lim<sub>n&rarr;&infin;</sub> &sum;<sub>1&le;i&le;n</sub> 1/&radic;(n<sup>2</sup> + i<sup>2</sup>);
+
+<br>(2) lim<sub>n&rarr;&infin;</sub> &sum;<sub>1&le;i&le;n</sub> 1/&radic;(n<sup>2</sup> + i);
+
+<br>(3) lim<sub>n&rarr;&infin;</sub> &sum;<sub>1&le;i&le;n<sup>2</sup></sub> 1/&radic;(n<sup>2</sup> + i);
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(1) 1/&radic;(n<sup>2</sup> + i<sup>2</sup>) = (1/n) / &radic;(1 + (i/n)<sup>2</sup>). So the sum is just a Riemann sum for the integral &int;<sub>0</sub><sup>1</sup> dx/&radic;(1 + x<sup>2</sup>) = sinh<sup>-1</sup>1 = ln(1 + &radic;2) = 0.8814.
+
+<p>
+
+(2) 1/&radic;(n<sup>2</sup> + i) = (1/n) / &radic;(1 + i/n<sup>2</sup>). Each term is less than 1/n, so the (finite) sum is less than 1. But each term is at least (1/n) / &radic;(1 + 1/n). So the sum is at least 1/&radic;(1 + 1/n), which tends to 1. Hence the limit of the sum is 1.
+
+<p>
+
+(3)  1/&radic;(n<sup>2</sup> + i) = n (1/n<sup>2</sup>) / &radic;(1 + i/n<sup>2</sup>). Now &sum; (1/n<sup>2</sup>) / &radic;(1 + i/n<sup>2</sup>) is just a Riemann sum for &int;<sub>0</sub><sup>1</sup> dx/&radic;(1 + x) = 2&radic;(1 + x) |<sub>0</sub><sup>1</sup> = 2(&radic;2 - 1). So the sum given tends to 2(&radic;2 - 1) n, which diverges to infinity. [Or simpler, there are n<sup>2</sup> terms, each at least 1/&radic;(2n<sup>2</sup>) = 1/(n &radic;2 ), so the sum is at least n/&radic;2 which diverges.]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn41.html">4th Putnam 1941</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

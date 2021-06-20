@@ -1,0 +1,82 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1995/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+Determine all integers n &gt; 3 for which there exist n points A<sub>1</sub>, ... , A<sub>n</sub> in the plane, no three collinear, and real numbers r<sub>1</sub>, ... , r<sub>n</sub> such that for any distinct i, j, k, the area of the triangle A<sub>i</sub>A<sub>j</sub>A<sub>k</sub> is r<sub>i</sub> + r<sub>j</sub> + r<sub>k</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+n = 4.
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+The first point to notice is that if no arrangement is possible for n, then no arrangement is possible for any higher integer. Clearly the four points of a square work for n = 4, so we focus on n = 5.
+
+<p>
+If the 5 points form a convex pentagon, then considering the quadrilateral A<sub>1</sub>A<sub>2</sub>A<sub>3</sub>A<sub>4</sub> as made up of two triangles in two ways, we have that r<sub>1</sub> + r<sub>3</sub> = r<sub>2</sub> + r<sub>4</sub>. Similarly, A<sub>5</sub>A<sub>1</sub>A<sub>2</sub>A<sub>3</sub> gives r<sub>1</sub> + r<sub>3</sub> = r<sub>2</sub> + r<sub>5</sub>, so r<sub>4</sub> = r<sub>5</sub>.
+
+<p>
+We show that we cannot have two r's equal (whether or not the 4 points form a convex pentagon). For suppose r<sub>4</sub> = r<sub>5</sub>. Then A<sub>1</sub>A<sub>2</sub>A<sub>4</sub> and A<sub>1</sub>A<sub>2</sub>A<sub>5</sub> have equal area. If A<sub>4</sub> and A<sub>5</sub> are on the same side of the line A<sub>1</sub>A<sub>2</sub>, then since they must be equal distances from it, A<sub>4</sub>A<sub>5</sub> is parallel to A<sub>1</sub>A<sub>2</sub>. If they are on opposite sides, then the midpoint of A<sub>4</sub>A<sub>5</sub> must lie on A<sub>1</sub>A<sub>2</sub>. The same argument can be applied to A<sub>1</sub> and A<sub>3</sub>, and to A<sub>2</sub> and A<sub>3</sub>. But we cannot have two of A<sub>1</sub>A<sub>2</sub>, A<sub>1</sub>A<sub>3</sub> and A<sub>2</sub>A<sub>3</sub> parallel to A<sub>4</sub>A<sub>5</sub>, because then A<sub>1</sub>, A<sub>2</sub> and A<sub>3</sub> would be collinear. We also cannot have the midpoint of A<sub>4</sub>A<sub>5</sub> lying on two of  A<sub>1</sub>A<sub>2</sub>, A<sub>1</sub>A<sub>3</sub> and A<sub>2</sub>A<sub>3</sub> for the same reason. So we have established a contradiction. hence no two of the r's can be equal. In particular, this shows that the 5 points cannot form a convex pentagon.
+
+<p>
+Suppose the convex hull is a quadrilateral. Without loss of generality, we may take it to be A<sub>1</sub>A<sub>2</sub>A<sub>3</sub>A<sub>4</sub>. A<sub>5</sub> must lie inside one of A<sub>1</sub>A<sub>2</sub>A<sub>4</sub> and A<sub>2</sub>A<sub>3</sub>A<sub>4</sub>. Again without loss of generality we may take it to be the latter, so that A<sub>1</sub>A<sub>2</sub>A<sub>5</sub>A<sub>4</sub> is also a convex quadrilateral. Then r<sub>2</sub> + r<sub>4</sub> = r<sub>1</sub> + r<sub>3</sub> and also = r<sub>1</sub> + r<sub>5</sub>. So r<sub>3</sub> = r<sub>5</sub>, giving a contradiction as before.
+
+<p>The final case is the convex hull a triangle, which we may suppose to be A<sub>1</sub>A<sub>2</sub>A<sub>3</sub>. Each of the other two points divides its area into three triangles, so we have: (r<sub>1</sub> + r<sub>2</sub> + r<sub>4</sub>) + (r<sub>2</sub> + r<sub>3</sub> + r<sub>4</sub>) + (r<sub>3</sub> + r<sub>1</sub> + r<sub>4</sub>) = (r<sub>1</sub> + r<sub>2</sub> + r<sub>5</sub>) + (r<sub>2</sub> + r<sub>3</sub> + r<sub>5</sub>) + (r<sub>3</sub> + r<sub>1</sub> + r<sub>5</sub>) and hence r<sub>4</sub> = r<sub>5</sub>, giving a contradiction. 
+
+<p>
+So the arrangement is not possible for 5 and hence not for any n &gt; 5.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo95.html">36th IMO 1995</a><br>
+
+<p>(C) John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+24 Oct 1998
+
+<br>Last corrected/updated 23 Aug 03
+</BODY>
+
+
+
+</HTML>
+

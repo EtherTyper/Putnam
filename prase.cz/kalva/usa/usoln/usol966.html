@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 96/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>25th USAMO 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Does there exist a subset S of the integers such that, given any integer n, the equation n = 2s + s' has exactly one solution in S? For example, if T = {-3, 0, 1, 4), then there are unique solutions -3 = 2&middot;0 - 3, -1 = 2&middot;1 - 3, 0 = 2&middot;0 + 0, 1 = 2&middot;0 + 1, 2 = 0 + 2&middot;1, 3 = 2&middot;1 + 1, 4 = 2&middot;0 + 4, 5 = 2&middot;-3 + 1, but not for 6 = 2&middot;1 + 4 = 2&middot;-3 + 0, so T cannot be a subset of S.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes.
+
+<p>
+
+We show how to choose S inductively. Suppose we have already chosen a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>n</sub>, but we do not yet have a solution for m &ge; 0. Take N so that all |a<sub>i</sub>| &lt; N. Now take a<sub>n+1</sub> = 5N + m, a<sub>n+2</sub> = -10N - m. This gives a solution for m: m = 2a<sub>n+1</sub> + a<sub>n+2</sub>, but it does not duplicate any existing solutions, since |2a<sub>n+2</sub> + a<sub>n+1</sub>|, |2a<sub>n+1</sub> + a<sub>i</sub>|, |2a<sub>n+2</sub> + a<sub>i</sub>|, |a<sub>n+1</sub> + 2a<sub>i</sub>|, |a<sub>n+2</sub> + 2a<sub>i</sub>| are all &ge; 3N, whereas all existing sums have absolute value &lt; 3N. Similarly for m &lt; 0, we may take a<sub>n+1</sub> = - 5N + m, a<sub>n+2</sub> = 10N - m.
+
+<p>
+
+<i>Comment. The problem (and the opportunity) is that since positive and negative numbers are allowed |s| and |s'| can be arbitrarily large and still give n = 2s + s'. Compare the similar problem where S must be a subset of the non-negative integers and we require a unique solution n = 2s + s' for all non-negative n. In this case we can give S explicitly as all numbers with just the digits 0 and 1 in base 4. In fact, the same idea works for the case of all the integers, but it requires a little more work to show that -4 works as a number base.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa96.html">25th USAMO 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

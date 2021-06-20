@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 96/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>25th USAMO 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+Let k = 1<sup>o</sup>. Show that 2 sin 2k + 4 sin 4k + 6 sin 6k + ... + 180 sin 180k = 90 cot k.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Multiply the expression by sin k. We have 2 sin 2nk sin k = cos(2n-1)k - cos(2n+1)k. So 2n sin 2nk sin k = n cos(2n-1)k - n cos(2n+1)k. Adding these equations for n = 1, 2, ... , 90 gives: 2 sin 2k + 4 sin 4k + 6 sin 6k + ... + 180 sin 180k = cos k + (2 - 1) cos 3k + (3 - 2) cos 5k + ... + (90 - 89) cos 179k - 90 cos 181k. Now cos 181k = - cos k, so the last term is + 90 cos k. The other terms sum to zero in pairs: cos k + cos 179k = 0, cos 3k + cos 177k = 0, ... , cos 89k + cos 91k = 0. Hence result.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa96.html">25th USAMO 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

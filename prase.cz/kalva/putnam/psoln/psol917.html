@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 91/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>52nd Putnam 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+For positive integers n define d(n) = n - m<sup>2</sup>, where m is the greatest integer with m<sup>2</sup> &le; n. Given a positive integer b<sub>0</sub>, define a sequence b<sub>i</sub> by taking b<sub>k+1</sub> = b<sub>k</sub> + d(b<sub>k</sub>). For what b<sub>0</sub> do we have b<sub>i</sub> constant for sufficiently large i?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Easy.
+
+<p>
+
+Answer: the squares.
+
+<p>
+
+If b<sub>k</sub> is a square, then d(b<sub>k</sub>) = 0, so b<sub>k+1</sub> = b<sub>k</sub> and the sequence is constant from that point on.
+
+<p>
+If b<sub>k</sub> is not a square, then for some m it lies between m<sup>2</sup> and (m + 1)<sup>2</sup>, so we can write it as m<sup>2</sup> + r, where 1 &le; r &le; 2m. So b<sub>k+1</sub> = m<sup>2</sup> + 2r. But m<sup>2</sup> &lt; b<sub>k+1</sub> &lt; (m + 2)<sup>2</sup> and b<sub>k+1</sub> &ne; (m + 1)<sup>2</sup>, so b<sub>k+1</sub> is not a square (and is &gt; b<sub>k</sub>).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn91.html">52nd Putnam 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+21 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

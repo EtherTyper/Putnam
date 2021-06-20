@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 98/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>27th USAMO 1998</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+What is the largest number of the quadrilaterals formed by four adjacent vertices of an convex n-gon that can have an inscribed circle? 
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: [n/2].
+
+<p>
+
+Take a regular n-gon and slice off alternate corners (until [n/2] corners have been cut). Specifically, if the vertices are A<sub>1</sub>, A<sub>2</sub>, ... , A<sub>n</sub>, then we slice off the corners at A<sub>1</sub>, A<sub>3</sub>, A<sub>5</sub>, ... A<sub>m</sub>, where m = n-1 if n is even, or n-2 if n is odd. At each corner A<sub>i</sub> which we slice, we take the inscribed circle to the triangle A<sub>i-1</sub>A<sub>i</sub>A<sub>i+1</sub>, draw a tangent to it parallel to A<sub>i-1</sub>A<sub>i+1</sub> and cut along the tangent. This procedure shows that [n/2] can be achieved.
+
+<p>
+
+To show that it is optimal it is sufficient to show that if A, B, C, D, E are adjacent vertices of any polygon and ABCD has an inscribed polygon, then BCDE does not. Since ABCD has an inscribed polygon, AD + BC = AB + CD (if the inscribed circle touches at X on AB and Y on AD, then AX = AY. That and the three similar equations give the result). So if BCDE also has an inscribed polygon, then BE + CD = BC + DE. Hence (adding) AD + BE = AB + DE. But the diagonals AD and BE must meet at some point X. Then AD + BE = AX + XD + BX + XE = (AX + XB) + (DX + XE) &gt; AB + DE. Contradiction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa98.html">27th USAMO 1998</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,62 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>Putnam 40/B7 solution</TITLE>
+
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>3rd Putnam 1940</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B7</b><br>
+
+<p>
+
+Given n &gt; 8, let a = &radic;n and b = &radic;(n+1). Which is greater a<sup>b</sup> or b<sup>a</sup>?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Straightforward
+
+<p>
+
+Answer: a<sup>b</sup> is greater.
+
+<p>
+
+a<sup>b</sup> = e<sup>b ln a</sup> and b<sup>a</sup> = e<sup>a ln b</sup>. So we have to decide which of b ln a and a ln b is greater, or, equivalently, which of (ln a)/a and (ln b)/b is greater. The latter is clearly more promising. So set f(x) = (ln x)/x. Then f '(x) = 1/x<sup>2</sup> - (ln x)/x<sup>2</sup> which is negative for x &gt; e. Obviously b &gt; a, so provided a &gt; e, (ln a)/a &gt; (ln b)/b and hence b ln a &gt; a ln b and a<sup>b</sup> &gt; b<sup>a</sup>. But e<sup>2</sup> &lt; 9, so the result is certainly true for n &ge; 9.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn40.html">3rd Putnam 1940</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

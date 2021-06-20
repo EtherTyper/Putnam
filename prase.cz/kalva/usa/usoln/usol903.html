@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 90/3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>19th USAMO 1990</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 3</b><br>
+
+<p>
+
+Show that for any odd positive integer we can always divide the set {n, n+1, n+2, ... , n+32} into two parts, one with 14 numbers and one with 19, so that the numbers in each part can be arranged in a circle, with each number relatively prime to its two neighbours. For example, for n = 1, arranging the numbers as 1, 2, 3, ... , 14 and 15, 16, 17, ... , 33, does not work, because 15 and 33 are not relatively prime.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Suppose we use n, n+1, ... , n+13 for the first circle. That certainly works for n not divisible by 13, since consecutive numbers are always relatively prime and any common divisor of n and n+13 must also divide their difference 13. We could then take the second circle to be n+15, n+14, n+16, n+17, ... , n+32 for n &ne; 2 mod 17 or n+14, n+15, ... , n+29, n+30, n+32, n+31 if n = 2 mod 17. Note that any common factor of n+14 and n+16 must divide their difference 2, but n is odd, so they are relatively prime. Similarly, n+30 and n+32.
+
+<p>
+
+If n is divisible by 13, then n+19 is not, so we can take n+19, n+20, ... , n+32 for the first circle. Then we can take the second circle to be n+1, n, n+2, n+3, ... , n+18 for n &ne; 16 mod 17 or n, n+1, ... , n+15, n+16, n+18, n+17 if n = 16 mod 17.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa90.html">19th USAMO 1990</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

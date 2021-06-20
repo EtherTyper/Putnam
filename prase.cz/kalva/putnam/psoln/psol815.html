@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1981/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>42nd Putnam 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+p(x) is a real polynomial with at least n distinct real roots greater than 1. [To be precise we can find at least n distinct values a<sub>i</sub> &gt; 1 such that p(a<sub>i</sub>) = 0. It is possible that one or more of the a<sub>i</sub> is a multiple root, and it is possible that there are other roots.] Put q(x) = (x<sup>2</sup> + 1) p(x) p'(x) + x p(x)<sup>2</sup> + x p'(x)<sup>2</sup>. Must q(x) have at least 2n - 1 distinct real roots?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes.
+
+<p>
+
+Notice that q(x) = (x p(x) + p'(x) )( p(x) + x p'(x) ). The second factor is (x p(x) )'. Now x p(x) has at least n + 1 distinct roots (those of p(x) plus the root x = 0), so its derivative has at least n distinct zeros. To be precise assume that p(x) has exactly m &ge; n values a<sub>i</sub>&gt; 1 at which it is zero: 1 &lt; a<sub>1</sub> &lt; a<sub>2</sub> &lt; ... &lt; a<sub>m</sub>. Then (x p(x) )' has at least m zeros, one in the interval (0, a<sub>1</sub>) and one in each of the intervals (a<sub>i</sub>, a<sub>i+1</sub>).
+
+<p>
+
+We would like to make a similar argument for x p(x) + p'(x). This needs a trick. p(x) exp(x<sup>2</sup>/2) also has zeros at a<sub>i</sub>. Hence its derivative, exp(x<sub>2</sub>/2) ( x p(x) + p'(x) ) has at least m-1 roots, one in each interval (a<sub>i</sub>, a<sub>i+1</sub>). But exp(x<sup>2</sup>/2) is positive for all real x, so (x p(x) + p'(x) ) has a root in each interval (a<sub>i</sub>, a<sub>i+1</sub>).
+
+<p>
+
+So we are done unless a root k of (x p(x) )' is also a root of (x p(x) + p'(x) ). But in this case k belongs to some open interval (a<sub>i</sub>, a<sub>i+1</sub>) and we have k p(k) + p'(k) = k p'(k) + p(k). Hence (k - 1)( p(k) - p'(k) ) = 0. But k &gt; 1, so p'(k) = p(k). Hence kp(k) + p(k) = 0, so p(k) = 0. But this contradicts the assumption that the a<sub>i</sub> are the only roots greater than 1. Hence there are at least 2m - 1 (which is &ge; 2n - 1) roots.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn81.html">42nd Putnam 1981</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

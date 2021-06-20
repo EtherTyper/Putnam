@@ -1,0 +1,66 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>Putnam 40/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>3rd Putnam 1940</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Find all rational triples (a, b, c) for which a, b, c are the roots of x<sup>3</sup> + ax<sup>2</sup> + bx + c = 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Straightforward.
+
+<p>
+Answer: (0, 0, 0); (1, -1, -1), (1, -2, 0).
+
+<p>
+We require (1) a + b + c = -a, (2) ab + bc + ca = b, and (3) abc = -c.
+
+<br>From (3), either c = 0, or ab = -1. If c = 0, then (1) becomes b = -2a, and (2) becomes b(a - 1) = 0. Hence either a = b = 0, or a = 1, b = -2.
+
+<br>So assume c &ne; 0, and ab = -1. (1) becomes c = - b - 2a. Substituting in (2), we get: -1 - (2a + b)(a + b) = b, so -a<sup>2</sup> -2a<sup>4</sup> + 3a<sup>2</sup> - 1 = -a, or 2a<sup>4</sup> - 2a<sup>2</sup> - a + 1 = 0. So a = 1, or 2a<sup>3</sup> + 2a<sup>2</sup> - 1 = 0 (*). The first possibility gives a = 1, b = -1, c = -1. Suppose a = m/n is a root of (*) with m, n relatively prime integers. Then 2m<sup>3</sup> + 2m<sup>2</sup>n - n<sup>3</sup> = 0. So any prime factor of n must divide 2 and any prime factor of m must divide 1. Hence the only possibilities are a = 1, -1, 1/2, -1/2, and we easily check that these are not solutions. So (*) has no rational roots.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn40.html">3rd Putnam 1940</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

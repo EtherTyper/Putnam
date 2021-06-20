@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 90/4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>2nd APMO 1990</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 4</b><br>
+<p>
+A graph with n points satisfies the following conditions: (1) no point has edges to all the other points, (2) there are no triangles, (3) given any two points A, B such that there is no edge AB, there is exactly one point C such that there are edges AC and BC. Prove that each point has the same number of edges. Find the smallest possible n.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 5.
+<p>
+We say A and B are joined if there is an edge AB. For any point X we write deg X for the number of points joined to X. Take any point A. Suppose deg A = m. So there are m points B<sub>1</sub>, B<sub>2</sub>, ... , B<sub>m</sub> joined to A. No B<sub>i</sub>, B<sub>j</sub> can be joined for i &ne; j, by (2), and a point C &ne; A cannot be joined to B<sub>i</sub> and B<sub>j</sub> for i &ne; j, by (3). Hence there are deg B<sub>i</sub> - 1 points C<sub>ij</sub> joined to B<sub>i</sub> and all the C<sub>ij</sub> are distinct.
+<p>
+Now the only points that can be joined to C<sub>ij</sub>, apart from B<sub>i</sub>, are other C<sub>hk</sub>, for by (3) any point of the graph is connected to A by a path of length 1 or 2. But C<sub>ij</sub> cannot be joined to C<sub>ik</sub>, by (2), and it cannot be joined to two distinct points C<sub>kh</sub> and C<sub>kh'</sub> by (3), so it is joined to at most one point C<sub>kh</sub> for each k &ne; i. But by (3) there must be a point X joined to both B<sub>k</sub> and C<sub>ij</sub> (for k &ne; i), and the only points joined to B<sub>k</sub> are A and C<sub>kh</sub>. Hence C<sub>ij</sub> must be joined to at least one point C<sub>kh</sub> for each k &ne; i. Hence deg C<sub>ij</sub> = m.
+<p>
+But now if we started with B<sub>i</sub> instead of A and repeated the whole argument we would establish that deg B<sub>i</sub> is the same as the deg C<sub>hk</sub>, where C<sub>hk</sub> is one of the points joined to C<sub>i1</sub>. Thus all the points have the same degree.
+<p>
+Suppose the degree of each point is m. Then with the notation above there is 1 point A, m points B<sub>i</sub> and m(m-1) points C<sub>jk</sub> or m<sup>2</sup> + 1 in all. So n = m<sup>2</sup> + 1. The smallest possible m is 1, but that does not yield a valid graph because if does not satisfy (1). The next smallest possibility is m = 2, giving 5 points. It is easy to check that the pentagon satisfies all the conditions.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo90.html">2nd APMO 1990</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

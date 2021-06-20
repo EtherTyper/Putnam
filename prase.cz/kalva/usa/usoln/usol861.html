@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 86/1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>15th USAMO 1986</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 1</b><br>
+
+<p>
+
+Do there exist 14 consecutive positive integers each divisible by a prime less than 13? What about 21 consecutive positive integers each divisible by a prime less than 17?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: no, yes.
+
+<p>
+
+There are 7 odd numbers. At most one can be a multiple of 7 and one a multiple of 11. It is only possible to have two of them multiples of 5 if either the largest or smallest is a multiple of 5. But it is only possible to have three of them multiples of 3 if both the largest and the smallest are multiples of 3. So at most four numbers are multiples of 3 or 5. That leaves one odd number unaccounted for.
+
+<p>
+
+A little juggling shows that we want the odd numbers to be divisible by: 3, 7, 5, 3, 11, 13, 3, 5, 7, 3 (or the 11 and 13 can be interchanged). We need the 6th odd to be 13 mod 143 to get the 11 and 13 correct, and hence the 1st in the sequence to be 2 mod 143. But the 1st must be even, so it must be 2 mod 286. The 2nd must be divisible by 3, so the 1st must be 2 mod 858. But we need the 4th to be divisible by 7, so the 1st must be 3434 mod 6006. Then the 6th must be divisible by 5, so the 1st must be 9440 mod 30030. Thus an example is 9440, 9441, ... , 9460.
+
+<p>
+
+<i>Comment. Essentially the same as ASU 81/19.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa86.html">15th USAMO 1986</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

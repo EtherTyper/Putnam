@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1960/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>21st Putnam 1960</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Let <font face="Symbol">a, b, g, d, e</font> be arbitary reals. Show that (1 - &alpha;) e<sup>&alpha;</sup> + (1 - &beta;) e<sup>&alpha;+&beta;</sup> + (1 - &gamma;) e<sup>&alpha;+&beta;+&gamma;</sup> + (1 - &delta;) e<sup>&alpha;+&beta;+&gamma;+&delta;</sup> + (1 - &epsilon;) e<sup>&alpha;+&beta;+&gamma;+&delta;+&epsilon;</sup> &le; k<sub>4</sub>, where k<sub>1</sub> = e, k<sub>2</sub> = k<sub>1</sub><sup>e</sup>, k<sub>3</sub> = k<sub>2</sub><sup>e</sup>, k<sub>4</sub> = k<sub>3</sub><sup>e</sup> (so k<sub>4</sub> is 10<sup>k</sup> with k approx 1.66 million).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Differentiating shows that the maximum of (1 - x)e<sup>x</sup> is 1 and occurs at x = 0. Now consider (1 - &alpha;) e<sup>&alpha;</sup> + (1 - &beta;) e<sup>&alpha; + &beta;</sup> = e<sup>&alpha;</sup> ( 1 - &alpha; + (1 - &beta;) e<sup>&beta;</sup>). For any given &alpha;, the maximum over &beta; is 1, so we have to maximise e<sup>&alpha;</sup>(2 - &alpha;). Differentiating shows that this has maximum k<sub>1</sub> = e at &alpha; = 1.
+
+<p>
+
+Now consider (1 - &alpha;) e<sup>&alpha;</sup> + (1 - &beta;) e<sup>&alpha; + &beta;</sup> + (1 - &gamma;) e<sup>&alpha; + &beta; + &gamma;</sup> = e<sup>&alpha;</sup> ( 1 - &alpha; + (1 - &beta;) e<sup>&beta;</sup> + (1 - &gamma;) e<sup>&beta; + &gamma;</sup>). We have just shown that the maximum of (1 - &beta;) e<sup>&beta;</sup> + (1 - &gamma;) e<sup>&beta; + &gamma;</sup> is k<sub>1</sub> at &beta; = 1, &gamma; = 0. So we have to maximise (1 - &alpha; + k<sub>1</sub>) e<sup>&alpha;</sup>. Differentiating shows that this is k<sub>2</sub> at &alpha; = k<sub>1</sub>.
+
+<p>
+
+Similarly, the maximum of (1 - &alpha;) e<sup>&alpha;</sup> + (1 - &beta;) e<sup>&alpha; + &beta;</sup> + (1 - &gamma;) e<sup>&alpha; + &beta; + &gamma;</sup> + (1 - &delta;) e<sup>&alpha; + &beta; + &gamma; + &delta;</sup> is k<sub>3</sub> at &alpha; = k<sub>2</sub>, &beta; = k<sub>1</sub>, &gamma; = 1, &delta; = 0. Finally, the maximum of the desired expression is k<sub>4</sub> at &alpha; = k<sub>3</sub>, &beta; = k<sub>2</sub>, &gamma; = k<sub>1</sub>, &delta; = 1, &epsilon; = 0.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn60.html">21st Putnam 1960</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,72 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1978/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1978</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+An international society has its members from six different countries. The list of members has 1978 names, numbered 1, 2, ... , 1978. Prove that there is at least one member whose number is the sum of the numbers of two members from his own country, or twice the number of a member from his own country.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+The trick is to use differences.
+
+<p>
+At least 6.329 = 1974, so at least 330 members come from the same country, call it C1. Let their numbers be a<sub>1</sub> &lt; a<sub>2</sub> &lt; ... &lt; a<sub>330</sub>. Now take the 329 differences a<sub>2</sub> - a<sub>1</sub>, a<sub>3</sub> - a<sub>1</sub>, ... , a<sub>330</sub> - a<sub>1</sub>. If any of them are in C1, then we are home, so suppose they are all in the other five countries. 
+
+<p>
+At least 66 must come from the same country, call it C2. Write the 66 as b<sub>1</sub> &lt; b<sub>2</sub> &lt; ... &lt; b<sub>66</sub>. Now form the 65 differences b<sub>2</sub> - b<sub>1</sub>, b<sub>3</sub> - b<sub>1</sub>, ... , b<sub>66</sub> - b<sub>1</sub>. If any of them are in C2, then we are home. But each difference equals the difference of two of the original a<sub>i</sub>s, so if it is in C1 we are also home. 
+
+<p>
+So suppose they are all in the other four countries. At least 17 must come from the same country, call it C3. Write the 17 as c<sub>1</sub> &lt; c<sub>2</sub> &lt; ... &lt; c<sub>17</sub>. Now form the 16 differences c<sub>2</sub> - c<sub>1</sub>, c<sub>3</sub> - c<sub>1</sub>, ... , c<sub>17</sub> - c<sub>1</sub>. If any of them are in C3, we are home. Each difference equals the difference of two b<sub>i</sub>s, so if any of them are in C2 we are home. [For example, consider c<sub>i</sub> - c<sub>1</sub>. Suppose c<sub>i</sub> = b<sub>n</sub> - b<sub>1</sub> and c<sub>1</sub> = b<sub>m</sub> - b<sub>1</sub>, then c<sub>i</sub> - c<sub>1</sub> = b<sub>n</sub> - b<sub>m</sub>, as claimed.]. Each difference also equals the difference of two a<sub>i</sub>s, so if any of them are in C1, we are also home. [For example, consider c<sub>i</sub> - c<sub>1</sub>, as before. Suppose b<sub>n</sub> = a<sub>j</sub> - a<sub>1</sub>, b<sub>m</sub> = a<sub>k</sub> - a<sub>1</sub>, then c<sub>i</sub> - c<sub>1</sub> = b<sub>n</sub> - b<sub>m</sub> = a<sub>j</sub> - a<sub>k</sub>, as claimed.]
+
+<p>
+So suppose they are all in the other three countries. At least 6 must come from the same country, call it C4. We look at the 5 differences and conclude in the same way that at least 3 must come from C5. Now the 2 differences must both be in C6 and their difference must be in one of the C1, ... , C6 giving us the required sum.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo78.html">20th IMO 1978</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

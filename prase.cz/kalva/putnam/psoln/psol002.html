@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2000/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>61st Putnam 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+Show that we can find infinitely many triples N, N + 1, N + 2 such that each member of the triple is a sum of one or two squares.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Take N = 2n<sup>2</sup>(n + 1)<sup>2</sup>. Let m = n(n + 1). So N = m<sup>2</sup> + m<sup>2</sup>, N + 2 = (m + 1)<sup>2</sup> + (m - 1)<sup>2</sup>. 
+
+<p>
+Slightly less obviously, N + 1 = (n<sup>2</sup> - 1)<sup>2</sup> + (n<sup>2</sup> + 2n)<sup>2</sup>.
+
+<p>
+That is clean, but a little unobvious. Fumbling our way to a solution, we note that n<sup>2</sup>, n<sup>2</sup> + 1 are easy. So we are home if we can do n<sup>2</sup> - 1. We need to remember that if A and B are the sum of two squares, then so is AB: (a<sup>2</sup> + b<sup>2</sup>)(c<sup>2</sup> + d<sup>2</sup>) = (ac + bd)<sup>2</sup> + (ad - bc)<sup>2</sup>. Thus if we can find a solution for n - 1, n, n + 1, then we can also find one for (n + 1)(n - 1) = n<sup>2</sup> - 1, n<sup>2</sup>, n<sup>2</sup> + 1. A starting solution is 8 = 2<sup>2</sup> + 2<sup>2</sup>, 9 = 3<sup>2</sup>, 10 = 3<sup>2</sup> + 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn00.html">61st Putnam 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

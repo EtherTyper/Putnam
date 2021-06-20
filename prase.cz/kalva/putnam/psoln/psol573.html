@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>17th Putnam 1957/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>17th Putnam 1957</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+A and B are real numbers such that cos A &ne; cos B. Show that for any integer n &gt; 1, |cos nA cos B - cos A cos nB| &lt; (n<sup>2</sup> - 1) |cos A - cos B|.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+It is not clear how to use induction, expanding cos (n+1)A = cos nA cos A - sin nA sin A gives a profusion of sines and it is not clear how to get rid of them. So some other approach is needed.
+
+<p>
+
+An ingenious manipulation puts the expression entirely in terms of sines. Put x = (A + B)/2, y = (A - B)/2. Then A = x + y, B = x - y. Now 2 cos nA cos B = cos(nA + B) + cos(nA - B). Similarly, 2 cos A cos nB = cos(nB + A) + cos(nB - A). Switch to x and y and then go back to products of cosines. We have cos(nA + B) - cos(nB + A) = cos( (n+1)x + (n-1)y) - cos( (n+1)x - (n-1)y ) = -2 sin(n+1)x sin(n-1)y. Similarly, cos(nA - B) - cos(nB - A) = - 2 sin(n-1)x sin(n+1)y. Hence |cos nA cos B - cos A cos nB| = |sin(n+1)x sin(n-1)y + sin(n-1)x sin(n+1)y|. Obviously |cos A - cos B| = |2 sin x sin y|, so we have to prove that |sin(n+1)x sin(n-1)y + sin(n-1)x sin(n+1)y| &lt; 2(n<sup>2</sup> - 1) |sin x sin y|.
+
+<p>
+
+If would evidently be sufficient to show that |sin mx| &lt; m |sin x|. Unfortunately, that is not true. We have equality if sin x = 0 or if m = 1. However, we can easily prove by induction that we have strict inequality in all other cases.
+
+<p>
+
+For m = 2, we have sin 2x = 2 sin x cos x, which establishes the result since |cos x| &lt; 1 for sin x non-zero. Suppose it is true for m. Then sin(m+1)x = sin mx cos x + sin x cos mx, so |sin(m+1)x| &lt;= |sin mx| |cos x| + |sin x| |cos mx| &lt;= |sin mx| + |sin x| &lt; (m+1) |sin x|, so it is true for m+1.
+
+<p>
+
+Now if sin x = 0, then A + B is a multiple of 2&pi;, so cos A = cos B. Similarly if sin y = 0, then A - B is a multiple of 2&pi;, so cos A = cos B. But we are told that cos A &ne; cos B, so sin x and sin y are both non-zero. Also we are given that n &gt; 1, so we have strict inequality on |sin(n+1)x| &gt; (n+1) |sin x| and |sin(n+1)y| &gt; (n+1) |sin y|, whilst |sin(n-1)x| &ge; (n-1) |sin x| and |sin(n-1)y| &ge; (n-1) |sin y|. Thus we get the required strict inequality.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn57.html">17th Putnam 1957</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

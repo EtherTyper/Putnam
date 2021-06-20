@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1996/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+The origin lies inside a convex polygon whose vertices have coordinates (a<sub>i</sub>, b<sub>i</sub>) for i = 1, 2, ... , n. Show that we can find x, y &gt; 0 such that a<sub>1</sub>x<sup>a<sub>1</sub></sup>y<sup>b<sub>1</sub></sup> + a<sub>2</sub>x<sup>a<sub>2</sub></sup>y<sup>b<sub>2</sub></sup> + ... + a<sub>n</sub>x<sup>a<sub>n</sub></sup>y<sup>b<sub>n</sub></sup> = 0 and b<sub>1</sub>x<sup>a<sub>1</sub></sup>y<sup>b<sub>1</sub></sup> + b<sub>2</sub>x<sup>a<sub>2</sub></sup>y<sup>b<sub>2</sub></sup> + ... + b<sub>n</sub>x<sup>a<sub>n</sub></sup>y<sup>b<sub>n</sub></sup> = 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>The basic idea is fairly obvious, but care is needed.</i>
+
+<p>
+Convex may trigger thoughts of &lambda;<sub>i</sub> such that &lambda;<sub>1</sub>(a<sub>1</sub>, b<sub>1</sub>) + ... + &lambda;<sub>n</sub>(a<sub>n</sub>, b<sub>n</sub>) = 0, but that is a dead-end. The problem is that there are n &lambda;s, whereas we only want 2 parameters x and y. But if we look at the requirement for the first coordinate a<sub>1</sub>x<sup>a<sub>1</sub></sup>y<sup>b<sub>1</sub></sup> + a<sub>2</sub>x<sup>a<sub>2</sub></sup>y<sup>b<sub>2</sub></sup> + ... + a<sub>n</sub>x<sup>a<sub>n</sub></sup>y<sup>b<sub>n</sub></sup> = 0, the a<sub>1</sub>x<sup>a<sub>1</sub></sup> is strongly reminiscent of k x<sup>k-1</sup>, and indeed we could make it more so by dividing through by x. In fact the requirement can be written as grad f(x,y) = 0, where f(x,y) = x<sup>a<sub>1</sub></sup>y<sup>b<sub>1</sub></sup> + x<sup>a<sub>2</sub></sup>y<sup>b<sub>2</sub></sup> + ... + x<sup>a<sub>n</sub></sup>y<sup>b<sub>n</sub></sup>. So it looks as though all we have to do is show that grad f = 0 in the first quadrant. 
+
+<p>
+That is true. But care is needed. For example, suppose we take the three points as (1, -1), (-1, 1), (-1, -1), which puts the origin on the boundary of the polygon, rather than in its interior. Then f(x, y) = x/y + y/x + 1/xy. This is clearly &gt; 2 for x, y &gt; 0, but it <i>decreases</i> monotonically to 2 as we go to infinity along the line y = x, so there is no minimum (and in fact no stationary point at all) in the first quadrant. So simple-minded arguments to the effect that the a<sub>i</sub> and b<sub>i</sub> include both positive and negative values and hence the function tends to infinity as x, y tend to 0 or infinity are not enough. The point of the problem is precisely to establish that grad f (or grad of something) really does vanish in the first quadrant.
+
+<p>
+A more instructive case is f(x, y) = x/y + y/x + xy (which again puts the origin on the boundary of the polygon). If we take a ray y = kx, then f(x, kx) = 1/k + k + k x<sup>2</sup> which clearly does tend to infinity as we go to infinity along the ray. Also as if we fix x or y non-zero and let the other tend to zero, we clearly get f tending to infinity. So f tends to infinity as we approach the boundary of the first quadrant in any direction except towards the origin, where the function is evidently discontinuous. Unfortunately, this is enough to invalidate the argument that grad f must be zero in the first quadrant (as we easily see by setting grad f to zero and solving - there are no solutions). This strongly suggests that f is the wrong function to use, since the problems with the discontinuity of f at the origin will still be there even if we take the origin in the interior of the polygon.
+
+<p>
+A better behaved variant is f(u, v) = e<sup>a<sub>1</sub>u+b<sub>1</sub>v</sup> + ... + e<sup>a<sub>n</sub>u+b<sub>n</sub>v</sup>, which is defined on the plane with no problems at the origin. Now if we take any ray through the origin it passes between two vertices. The two vertices must subtend an angle less than &pi; at the origin (since the origin is in the interior of the polygon), so the line to one of the two vertices makes an angle &theta; &lt; &pi;/2 with the ray. Take this vertex (a<sub>k</sub>, b<sub>k</sub>) [or in the degenerate case where the ray passes through a vertex, we simply take that vertex]. Now if (u, v) is a point on the ray, we have a<sub>k</sub>u + b<sub>k</sub>v = |(u, v)| h cos <font face="Symbol">q</font>, where |(u, v)| is the distance from the origin to the point (u, v) and h is the distance from the origin to the vertex. Hence a<sub>k</sub>u + b<sub>k</sub>v tends to infinity as we go to infinity along the ray and hence g(u, v) tends to infinity. Thus g tends to infinity in <i>all</i> directions. Hence grad g = 0 at some point in the plane. Putting x = e<sup>u</sup>, y = e<sup>v</sup> gives the result.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn96.html">Putnam 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

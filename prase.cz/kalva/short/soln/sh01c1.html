@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>42nd IMO shortlist 2001/C1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>42nd IMO 2001 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C1</b><br>
+<p>
+What is the largest number of subsequences of the form n, n+1, n+2 that a sequence of 2001 positive integers can have? For example, the sequence 1, 2, 2, 3, 3,  of 5 terms has 4 such subsequences.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 667<sup>3</sup>.
+<p>
+We show that 1, ... , 1, 2, ... , 2, 3, ... , 3 (with 667 1s, 667 2s and 667 3s) is maximal. There are several stages. Let the sequence be a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>2001</sub>. We show first that there is a maximal sequence with a<sub>1</sub> &le; a<sub>2</sub> &le; ... &le; a<sub>2001</sub>. For suppose there is a maximal sequence with a<sub>i</sub> &gt; a<sub>i+1</sub>. Swapping these two terms cannot decrease the number of subsequences n, n+1, n+2. By a series of such swaps we get another maximal sequence with a<sub>1</sub> &le; a<sub>2</sub> &le; ... &le; a<sub>2001</sub>.
+<p>
+Next we show that there is a maximal sequence with a<sub>i</sub> = a<sub>i+1</sub> or a<sub>i+1</sub> + 1 for each i. For suppose a maximal sequence has a<sub>i</sub> &ge; a<sub>i+1</sub> + d+1. Then by adding d to a<sub>i</sub> and all earlier terms we do not decrease the number of subsequences n, n+1, n+2. So by a series of such changes we can get another maximal sequence with a<sub>i</sub> = a<sub>i+1</sub> or a<sub>i+1</sub> + 1 for each i.
+<p>
+Thus there is a maximal sequence with b<sub>0</sub> terms k, followed by b<sub>1</sub> terms k+1, followed by b<sub>2</sub> terms k+2 and so on up to b<sub>h</sub> terms k+h. The number of sequences n, n+1, n+2 is evidently N = b<sub>0</sub>b<sub>1</sub>b<sub>2</sub> + b<sub>1</sub>b<sub>2</sub>b<sub>3</sub> + b<sub>2</sub>b<sub>3</sub>b<sub>4</sub> + ... + b<sub>n-2</sub>b<sub>n-1</sub>b<sub>n</sub>. But if n &ge; 2, then changing from b<sub>0</sub>, b<sub>1</sub>, ... , b<sub>n</sub> to b<sub>1</sub>, b<sub>2</sub>, (b<sub>0</sub> + b<sub>3</sub>, b<sub>4</sub>, ... b<sub>n</sub> increases N by b<sub>0</sub>b<sub>2</sub>b<sub>4</sub> + b<sub>0</sub>b<sub>4</sub>b<sub>5</sub> (or leaves it unchanged if n = 3). So we may take n = 2. (Obviously a maximal sequence cannot have n &lt; 2, because then it has <i>no</i> subsequences of the required form.) Only differences matter, so we may take the first term to be 1. Thus there is a maximal sequence 1, ... , 1, 2, ... , 2, 3, ... , 3 with a 1s b 2s and c 3s, where a + b + c = 2001.
+<p>
+Such a sequence obviously has abc subsequences of the required form. But by the arithmetic/geometric mean inequality, abc is maximised by taking a = b = c.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh01.html">42nd IMO shortlist 2001</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+14 Oct 2002
+<br>Last corrected/updated 14 Oct 02
+</BODY>
+</HTML>

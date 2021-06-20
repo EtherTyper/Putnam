@@ -1,0 +1,90 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1960/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1960</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b>
+
+<p>
+
+Determine all 3 digit numbers N which are divisible by 11 and where N/11 is equal to the sum of the squares of the digits of N.
+
+<p>
+
+&nbsp;<br>
+
+<b>Answer</b>
+
+<p>
+
+550, 803.
+
+<p>
+
+&nbsp;<br>
+
+<b>Solution</b>
+
+<p>
+
+So, put N/11 = 10a + b. If a + b &le; 9, we have 2a<sup>2</sup> + 2ab + 2b<sup>2</sup> = 10a + b (*), so b is even. Put b = 2B, then B = a(a-5) + 2aB + 4B<sup>2</sup>, which is even. So b must be a multiple of 4, so b = 0, 4 or 8. If b = 0, then (*) gives a = 5 and we get the solution 550. If b = 4, then (*) gives a<sup>2</sup> - a + 14 = 0, which has no integral solutions. If b = 8, then (since a + b &le; 9 and a &gt; 0) a must be 1, but that does not satisfy (*).
+
+<p>
+
+If a + b &gt; 9, we have (a+1)<sup>2</sup> + (a+b-10)<sup>2</sup> + b<sup>2</sup> = 10a + b, or 2a<sup>2</sup> + 2ab + 2b<sup>2</sup> - 28a - 21b + 101 = 0 (**), so b is odd. Put b = 2B+1. Then a<sup>2</sup> + 2aB + 4B<sup>2</sup> - 13a - 17B + 41 = 0. But a(a-13) is even, so B is odd. Hence b = 3 or 7. If b = 3, then (**) gives a<sup>2</sup> - 11a + 28 = 0, so a = 4 or 7. But a + b &gt; 9, so a = 7. That gives the solution 803. If b = 7, then (**) gives a<sup>2</sup> - 7a + 26 = 0, which has no integral solutions.
+
+<p>
+
+<i>Comment</i>
+
+<p>
+
+Personally, I hate this type of question. The fastest way to solve it is almost certainly to scan the 81 multiples of 11 from 110 to 990. 
+
+<p>
+
+&nbsp;<br>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2">
+
+<p>
+
+&nbsp;<br>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<br>
+
+<a href="../imo60.html">2nd IMO 1960</a><br>
+
+&nbsp;<br>
+
+&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+17 Sep 1998
+
+<br>Last corrected/updated 24 Sep 2003
+
+</BODY>
+
+
+
+</HTML>
+

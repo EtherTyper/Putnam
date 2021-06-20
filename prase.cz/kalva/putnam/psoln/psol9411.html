@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1994/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1994</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+For any real &alpha; define f<sub>&alpha;</sub>(x) = [&alpha;x]. Let n be a positive integer. Show that there exists an &alpha; such that for 1 &le; k &le; n, f<sub>&alpha;</sub><sup>k</sup>(n<sup>2</sup>) = n<sup>2</sup> - k = f<sub>&alpha;<sup>k</sup></sub>(n<sup>2</sup>), where f<sub>&alpha;</sub><sup>k</sup> denotes the k-fold composition of f<sub>&alpha;</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: &alpha; = e<sup>-1/n<sup>2</sup></sup>.
+
+<p>
+
+<i>Fairly easy.</i>
+
+<p>
+
+We require &alpha;(n<sup>2</sup> - k) &lt; n<sup>2</sup> - k, so &alpha; &lt; 1. We also require &alpha;(n<sup>2</sup> - k) &ge; n<sup>2</sup> - (k + 1), so &alpha; &ge; 1 - 1/(n<sup>2</sup> - k). This suggests trying a value near 1 - 1/n<sup>2</sup>. However, we also need [&alpha;<sup>k</sup>n<sup>2</sup>] = n<sup>2</sup> - k, so we would like an &alpha; such that &alpha;<sup>k</sup> is easy to work with. This suggests trying e<sup>-1/n<sup>2</sup></sup>. Certainly 1 &gt; e<sup>-1/n<sup>2</sup></sup> &gt; 1 - 1/n<sup>2</sup>, so it follows immediately that [&alpha;(n<sup>2</sup> - k)] = n<sup>2</sup> - (k+1) and hence that f<sub>&alpha;</sub><sup>k</sup>(n<sup>2</sup>) = n<sup>2</sup> - k for 1 &le; k &le; n.
+
+<p>
+For 0 &lt; x &lt; 1, the Taylor series for e<sup>-x</sup> has decreasing terms of alternating sign, so 1 - x &lt; e<sup>-x</sup> &lt; 1 - x + x<sup>2</sup>/2. Hence, in particular: 1 - k/n<sup>2</sup> &lt; &alpha;<sup>k</sup> &lt; 1 - k/n<sup>2</sup> + k<sup>2</sup>/(2n<sup>4</sup>). Hence &alpha;<sup>k</sup> lies between n<sup>2</sup> - k and n<sup>2</sup> - k + k<sup>2</sup>/(2n<sup>2</sup>), so [&alpha;<sup>k</sup>n<sup>2</sup>] = n<sup>2</sup> - k, as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn94.html">Putnam 1994</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

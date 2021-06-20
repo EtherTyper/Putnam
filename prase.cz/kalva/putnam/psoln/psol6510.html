@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1965/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>26th Putnam 1965</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Define f<sub>n</sub> <b>:</b>R &rarr; R by f<sub>n</sub>(x) = (nC0 + nC2 x + nC4 x<sup>2</sup> + ... ) / (nC1 + nC3 x + nC5 x<sup>2</sup> + ... ), where nCm is the binomial coefficient. Find a formula for f<sub>n+1</sub>(x) in terms of f<sub>n</sub>(x) and x, and determine lim<sub>n&rarr;&infin;</sub>f<sub>n</sub>(x) for all real x.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+It is almost obvious that f<sub>n+1</sub> = (f<sub>n</sub> + x)/(f<sub>n</sub> + 1) (*). So if f<sub>n</sub>(x) tends to a limit k(x), then k(x) = ( k(x) + x) /( k(x) + 1), and hence k(x) = &radic;x.
+
+<p>
+
+Obviously, f<sub>n</sub>(0) = 1/n, so k(0) = 0. We notice also that f<sub>n</sub>(x) = (&radic;x) N/D, where N = (1 + &radic;x)<sup>n</sup> + (1 - &radic;x)<sup>n</sup> and D = (1 + &radic;x)<sup>n</sup> - (1 - &radic;x)<sup>n</sup>. 
+
+<p>
+
+Suppose 0 &lt; x &le; 1. Then put y = (1 - &radic;x)/(1 + &radic;x). We have 0 &le; y &lt; 1 and N/D = (1 + y<sup>n</sup>)/(1 - y<sup>n</sup>) which tends to 1, so in this case also k(x) = &radic;x.
+
+<p>
+
+Similarly if x &gt; 1, put y = (&radic;x - 1)/(1 + &radic;x) and we again get k(x) = &radic;x.
+
+<p>
+
+It is clear from (*), that for x &lt; 0, f<sub>n</sub>(x) does not tend to a limit.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn65.html">26th Putnam 1965</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

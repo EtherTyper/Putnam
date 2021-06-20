@@ -1,0 +1,79 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1979/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1979</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+Let m and n be positive integers such that:
+
+<p>&nbsp; &nbsp; &nbsp; m/m = 1 - 1/2 + 1/3 - 1/4 + ... - 1/1318 + 1/1319.
+
+<p>Prove that m is divisible by 1979.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+This is difficult.
+
+<p>
+The obvious step of combining adjacent terms to give 1/(n(n+1) is unhelpful. The trick is to separate out the negative terms:
+
+<p>&nbsp; &nbsp; 1 - 1/2 + 1/3 - 1/4 + ... - 1/1318 + 1/1319 = 1 + 1/2 + 1/3 + ... + 1/1319 - 2(1/2 + 1/4 + ... + 1/1318) = 1/660 + 1/661 + ... + 1/1319.
+
+<p>
+and to notice that 660 + 1319 = 1979. Combine terms in pairs from the outside:
+
+<p>&nbsp; &nbsp; 1/660 + 1/1319 = 1979/(660.1319); 1/661 + 1/1318 = 1979/(661.1318) etc.
+
+<p>
+There are an even number of terms, so this gives us a sum of terms 1979/m with m not divisible by 1979 (since 1979 is prime and so does not divide any product of smaller numbers). Hence the sum of the 1/m gives a rational number with denominator not divisible by 1979 and we are done. 
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo79.html">21st IMO 1979</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,58 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1994/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1994</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+A is the 2 x 2 matrix (a<sub>ij</sub>) with a<sub>11</sub> = a<sub>22</sub> = 3, a<sub>12</sub> = 2, a<sub>21</sub> = 4 and I is the 2 x 2 unit matrix. Show that the greatest common divisor of the entries of A<sup>n</sup> - I tends to infinity.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+It is a trivial induction that A<sup>n</sup> has the form (c<sub>ij</sub>), where c<sub>11</sub> = r, c<sub>12</sub> = s, c<sub>21</sub> = 2s, c<sub>22</sub> = r, with r an odd integer which tends to infinity with n (for example, r &gt; 2<sup>n</sup>), and s an even integer. Hence the gcd of the entries of A<sup>n</sup> - I is the gcd of r - 1 and s. Also det A = 1, hence det(A<sup>n</sup>) = 1 and so r<sup>2</sup> - 2s<sup>2</sup> = 1, or (r - 1)(r + 1) = 2s<sup>2</sup>. It follows that the gcd of r - 1 and s is either &radic;(r - 1) or &radic;(2r - 2). [If p is an odd prime and h is the highest power of p that divides r - 1, then p does not divide r + 1, and so h must be even and h/2 the highest power of p dividing n. Both r - 1 and r + 1 are even, but one is not divisible by 4. If h is the highest power of 2 dividing the other, then h must be even and h/2 is the highest power of 2 dividing n.] But r - 1 tends to infinity with n, so the gcd does also.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn94.html">Putnam 1994</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

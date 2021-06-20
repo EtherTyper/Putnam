@@ -1,0 +1,87 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 2003/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 2003</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+A convex hexagon has the property that for any pair of opposite sides the distance between their midpoints is &frac12; &radic;3 times the sum of their lengths. Show that all the hexagon's angles are equal.
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Thanks to Li Yi</i>
+<p>
+We use bold to denote vectors, so <b>AB</b> means the vector from A to B. We take some arbitrary origin and write the vector <b>OA</b> as <b>A</b> for short. Note that the vector to the midpoint of AB is (<b>A</b> + <b>B</b>)/2, so the vector from the midpoint of DE to the midpoint of AB is (<b>A</b> + <b>B</b> - <b>D</b> - <b>E</b>)/2. So the starting point is |<b>A</b> + <b>B</b> - <b>D</b> - <b>E</b>| &ge; &radic;3 ( |<b>A</b> - <b>B</b>| + |<b>D</b> - <b>E</b>| ) and two similar equations. The key is to notice that by the triangle inequality we have |<b>A</b> - <b>B</b>| + |<b>D</b> - <b>E</b>| &ge; |<b>A</b> - <b>B</b> - <b>D</b> + <b>E</b>| with equality iff the opposite sides AB and DE are parallel. Thus we get |<b>DA</b> + <b>EB</b>| &ge; &radic;3 |<b>DA</b> - <b>EB</b>|. Note that DA and EB are diagonals. Squaring, we get <b>DA</b><sup>2</sup> + 2 <b>DA.EB</b> + <b>EB</b><sup>2</sup> &ge; 3(<b>DA</b><sup>2</sup> - 2 <b>DA.EB</b> + <b>EB</b><sup>2</sup>), or <b>DA</b><sup>2</sup> + <b>EB</b><sup>2</sup> &le; 4 <b>DA.EB</b>. Similarly, we get <b>EB</b><sup>2</sup> + <b>FC</b><sup>2</sup> &le; 4 <b>EB.FC</b> and <b>FC</b><sup>2</sup> + <b>AD</b><sup>2</sup> &le; 4 <b>FC.AD</b> = - 4 <b>FC.DA</b>. Adding the three equations gives 2(<b>DA</b> - <b>EB</b> + <b>FC</b>)<sup>2</sup> &le; 0. So it must be zero, and hence <b>DA</b> - <b>EB</b> + <b>FC</b> = 0 and opposite sides of the hexagon are parallel.
+<p>
+Note that <b>DA</b> - <b>EB</b> + <b>FC</b> = <b>A</b> - <b>D</b> - <b>B</b> + <b>E</b> + <b>C</b> - <b>F</b> = <b>BA</b> + <b>DC</b> + <b>FE</b>. So <b>BA</b> + <b>DC</b> + <b>FE</b> = 0. In other words, the three vectors can form a triangle.
+<p>
+<img src="diag033.jpg">
+<p>
+Since EF is parallel to BC, if we translate EF along the vector <b>ED</b> we get CG, an extension of BC. Similarly, if we translate AB along the vector <b>BC</b> we get an extension of ED. Since <b>BA</b>, <b>DC</b> and <b>FE</b> form a triangle, AB must translate to DG. Thus HAB and CDG are congruent. Similarly, if we take AF and DE to intersect at I, the triangle FIE is also congruent (and similarly oriented) to HAB and CDG. Take J, K as the midpoints of AB, ED. HIG and HAB are equiangular and hence similar. IE = DG and K is the midpoint of ED, so K is also the midpoint of IG. Hence HJ is parallel to HK, so H, J, K are collinear.
+<p>
+Hence HJ/AB = HK/IG = (HK - HJ)/(IG - AB) = JK/(AB + ED) = &frac12; &radic;3. Similarly, each of the medians of the triangle HAB is &frac12; &radic;3 times the corresponding side. We will show that this implies it is equilateral. The required result then follows immediately.
+<p>
+Suppose a triangle has side lengths a, b, c and the length of the median to the midpoint of side length c is m. Then applying the cosine rule twice we get m<sup>2</sup> = a<sup>2</sup>/2 + b<sup>2</sup>/2 - c<sup>2</sup>/4. So if m<sup>2</sup> = &frac34; c<sup>2</sup>, it follows that a<sup>2</sup> + b<sup>2</sup> = 2c<sup>2</sup>. Similarly, b<sup>2</sup> + c<sup>2</sup> = 2a<sup>2</sup>. Subtracting, a = c. Similarly for the other pairs of sides.
+<p>
+<i>An alternative (and rather more elegant) solution sent my some anonymous contestants at the IMO is as follows</i>
+<p>
+<img src="diag033a.jpg">
+<p>
+Let the diagonals AD and BE meet at P. We show that angle APB &lt;= 60<sup>o</sup>. Suppose angle APB &gt; 60<sup>o</sup>. Take X and Y inside the hexagon so that ABX and DEY are equilateral (as shown). Then since angle APB &gt; angle AXB, P lies inside the circumcircle of ABX (which we take to have center O, radius r). Similarly, it lies inside the circumcircle of DEY (which we take to have center O' radius r'), so these circles must meet and hence OO' &lt; r + r'. Now &radic;3 (AB + DE)/2 = MN (where M, N are the midpoints of AB, DE) &le; MO + OO' + O'N &lt; r/2 + (r + r') + r'/2 = (3/2)(r + r') = &radic;3 (AB + DE)/2. Contradiction. 
+<p>
+The same argument applies to any two long diagonals. Hence the angles must all be 60<sup>o</sup>. Also we must have MP &le; MX with equality iff P = X, and similarly NP &le; NY with equality iff P = Y. So MN &le; MP + PN &le; MX + NY = &radic;3 (AB + DE)/2 = MN. Hence we have equality and so P = X = Y.
+<p>
+<img src="diag033b.jpg">
+<p>
+Hence angle APB = 60<sup>o</sup>. Suppose AD and CF meet at Q. The same argument shows that angle AQF = 60<sup>o</sup>. So the hexagon angle at A is angle APB + angle AQF = 120<sup>o</sup>. Similarly for the other angles.
+<p>
+
+<i>Finally, note that the only possible configuration is:</i>
+<p>
+<img src="diag033c.jpg">
+<p>
+The ratio AB/BC is arbitrary, but the figure is symmetrical under rotations through 120<sup>o</sup>. That follows immediately from either of the two solutions above.
+<p>
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+&nbsp;<p>
+
+<a href="../imo03.html">44th IMO 2003</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+24 Jul 2003
+
+<br>Last corrected/updated 27 Jul 2003
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,90 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1971/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>32nd Putnam 1971</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+&alpha; is a real number such that 1<sup>&alpha;</sup>, 2<sup>&alpha;</sup>, 3<sup>&alpha;</sup>, ... are all integers. Show that &alpha; &ge; 0 and that &alpha; is an integer.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Note first that &alpha; is obviously not negative, because then n<sup>&alpha;</sup> would be between -1 and 0 for sufficiently large n.
+
+<p>
+
+It is also fairly obvious that &alpha; cannot be rational (and non-integral). For if 2<sup>m/n</sup> = A, then 2<sup>m</sup> = A<sup>n</sup>, so A must be a power of 2, but then m is a multiple of n. However, that line of approach gets us nowhere with irrational values.
+
+<p>
+
+The hint is to use some sort of mean value theorem. The idea is that this gives us another expression for the difference between the value of f(x) at two points. We might then hope to show that the expression was non-integral, but the difference integral.
+
+<p>
+
+In principle, we have two choices for f(x): x<sup>&alpha;</sup> or n<sup>x</sup>. The latter does not seem promising because the derivative is n<sup>x</sup> log n. If x is allowed to range over some interval (as in the MVT) then we cannot be sure whether it is integral or non-integral. It is certainly not small.
+
+<p>
+
+On the other hand, the former is not immediately promising either. The derivative is &alpha; x<sup>&alpha;-1</sup> (*). But suppose &alpha; &lt; 1. Then &alpha; - 1 &lt; 0, so for sufficiently large x the derivative will be less than 1. It will still be positive, so it will be between 0 and 1 and hence non-integral. The MVT tells us that f(n+1) - f(n) = f '(&xi;) for some &xi; between n and n+1, so if n is suffiently large f(n+1) - f(n) is an integer, but f '(&xi;) is not. Contradiction. So we can rule out 0 &lt; &alpha; &lt; 1.
+
+<p>
+
+In principle, we could get a contradiction for larger &alpha; if we could use a larger derivative. We have f<sup>(n)</sup>(x) = &alpha;(&alpha;-1) ... (&alpha;-k+1) x<sup>&alpha;-k</sup>, which will be between 0 and 1 provided that we choose k so that k-1 &lt; &alpha; &lt; k and take x sufficiently large.
+
+<p>
+
+So we need a MVT which involves f<sup>(n)</sup>(&xi;) plus terms which are all integral. The usual generalisation is the Taylor series with remainder. That does not help, because the other terms are mainly non-integral - they involve the lower derivatives which all have a factor &alpha;.
+
+<p>
+
+However, there is another generalisation. Define &Delta;f(x) = f(x+1) - f(x). We can iterate D, so that D<sup>2</sup>f(x) = &Delta;f(x+1) - &Delta;f(x) = f(x+2) - 2f(x+1) - f(x). We claim that &Delta;<sup>2</sup>f(x) = f<sup>(2)</sup>(&xi;) for some &xi; in [x, x+2]. The proof is almost immediate by applying the MVT to &Delta;f(x). [Let g(x) = &Delta;f(x). Then by the MVT &Delta;g(x) = g'(&zeta;) for some &zeta; in [x, x+1]. But g'(&zeta;) = f '(&zeta;+1) - f '(&zeta;). By the MVT this is f ''(&xi;) for some &xi; in [&zeta;, &zeta;+1] and hence in [x, x+2]. ] By a simple induction, we can also show that &Delta;<sup>n</sup>f(x) = f<sup>(n)</sup>(&xi;) for some &xi; in [x, x+n].
+
+<p>
+
+This is the generalisation we need because &Delta;<sup>k</sup>f(n) is an integral combination of values of f at integer points and hence integral. Whereas for suitable n and k we showed above that f<sup>(k)</sup>(n) is non-integral.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn71.html">32nd Putnam 1971</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Feb 2001
+
+</BODY>
+
+
+
+</HTML>
+

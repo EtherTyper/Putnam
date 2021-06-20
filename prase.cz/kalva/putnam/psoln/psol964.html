@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1996/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+A is a finite set. S is a set of ordered triples (a, b, c) of distinct elements of A, such that:
+
+<br> &nbsp; (a, b, c) &isin; S iff (b, c, a) &isin; S;
+
+<br> &nbsp; (a, b, c) &isin; S iff (c, b, a) &notin; S;
+
+<br> &nbsp; (a, b, c) and (c, d, a) &isin; S iff (b, c, d) and (d, a, b) &isin; S. 
+
+<br>Prove that there exists an injection g from A to the reals, such that g(a) &lt; g(b) &lt; g(c) implies (a, b, c) &isin; S.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Easy.</i>
+
+<p>
+Fix any element a in A. Now define &lt; on the other elements of A by b &lt; c iff (a, b, c) is in S. We check that &lt; is a total order on the other elements. If b &lt; c and c &lt; d, then (a, b, c) and (a, c, d) are in S, so (a, b, d) is in S and hence b &lt; d, so the relation is transitive. Also for distinct b, c just one of (a, b, c) and (a, c, b) is in S, so just one of b &lt; c, c &lt; b is true.
+
+<p>
+Now extend this ordering to A, by taking a &lt; b for all b &ne; a. Finally, arrange the elements of A in order a<sub>1</sub> &lt; a<sub>2</sub> &lt; a<sub>3</sub> &lt; ... &lt; a<sub>n</sub> and define g(a<sub>i</sub>) = i. Then g has the required property.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn96.html">Putnam 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

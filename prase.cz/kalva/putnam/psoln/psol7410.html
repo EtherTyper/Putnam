@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 74/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>35th Putnam 1974</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+R is the reals. f <b>:</b> R<sup>2</sup>&rarr;R is such that f<sub>x<sub>0</sub></sub> <b>:</b> R &rarr; R defined by f<sub>x<sub>0</sub></sub>(x) = f(x<sub>0</sub>, x) is continuous for every x<sub>0</sub> and g<sub>y<sub>0</sub></sub> <b>:</b> R &rarr; R defined by g<sub>y<sub>0</sub></sub>(x) = f(x, y<sub>0</sub>) is continuous for every y<sub>0</sub>. Show that there is a sequence of continuous functions h<sub>n</sub> <b>:</b> R<sup>2</sup> &rarr; R which tend to f pointwise.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let M<sub>n</sub> be the set of vertical lines at 1/2<sub>n</sub> spacing, including the y-axis, ie all lines y = m/2<sup>n</sup> for integral m. Define h<sub>n</sub> to agree with f on M<sub>n</sub> and to be horizontally interpolated elsewhere, so if x = m/2<sup>n</sup> + x' , where 0 &le; x' &lt; 1/2<sup>n</sup>, then h<sub>n</sub>(x, y) = h<sub>n</sub>(x, y) + (x'/2<sup>n</sup>)(h<sub>n</sub>(x + 1/2<sup>n</sup>, y) - h<sub>n</sub>(x, y) ).
+
+<p>
+
+We show first that h<sub>n</sub> tends to f pointwise. Take any point P in R<sup>2</sup>. f is continuous along the horizontal line L through P, so given any &epsilon; &gt; 0, we may take &delta; &gt; 0 so that points on L within &delta; of P are taken by f to points within &epsilon; of f(P). Take n sufficiently large so that the there are adjacent lines of M<sub>n</sub> flanking P and closer than &delta; to it. Let these lines cut L at Q and R. Then h<sub>n</sub>(P) lies between the values of f(Q) and f(R) and hence within &epsilon; of f(P). 
+
+<p>
+
+It remains to show that h<sub>n</sub> is continuous. This is slightly tricky to nail down rigorously.Take any point P = (x<sub>0</sub>, y<sub>0</sub>) and any &epsilon; &gt; 0. We need to show that h<sub>n</sub> takes poins close to P to values close to h<sub>n</sub>(P). Let L be the horizontal line through P. Assume that P does not lie on a line of M<sub>n</sub>, so take H to be the first line to the left of P, and K the first to the right of P. Let H meet L at Q, and K meet L at R. Note that the separation of Q and R is non-zero and fixed, so the values f(Q) and f(R) may differ by a large amount. But we may take &delta; &gt; 0 so that points on H within &delta; of Q are taken by f to values within &epsilon;/2 of f(Q) and points on K within &delta; of R are taken by f to values within &epsilon;/2 of f(R). We want to show that for sufficiently small &delta; ' &gt; 0, h<sub>n</sub> takes points inside the rectangle |x - x<sub>0</sub>| &lt; &delta; ' , |y - y<sub>0</sub>| &lt; &delta; to values within &epsilon; of h<sub>n</sub>(P).
+
+<p>
+
+It is now easiest to think geometrically. Let us retain the x-axis to represent values of x, but now use the y-axis to represent possible values of h<sub>n</sub>. So at Q we have a vertical bar height &epsilon; centred on f(Q) and at R we have another vertical bar height &epsilon; centred on f(R). Joining the tops of these bars and joining the bottoms gives a parallelogram. A vertical line through this parallelogram at x gives the possible values of h<sub>n</sub>(x, y), where |y - y<sub>0</sub>| &lt; &delta; (because to get that value we must interpolate linearly between some point on the left-hand edge of the parallelogram and some point on the right-hand edge). Now suppose the top and bottom edges of the parallelogram make an angle &theta; with the y-axis. Then a thin vertical slice of the parallelogram centred on y<sub>0</sub> width &delta; ' will project onto a segment length &epsilon; + &delta; ' cot &theta;. By taking &delta; ' sufficiently small we can make this less than 2&epsilon;. In other words the spread of values of h<sub>n</sub>(x, y) for |x - x<sub>0</sub>| &lt; &delta; ' and |y - y<sub>0</sub>| &lt; &delta; is less than 2&epsilon;, which is the statement that h<sub>n</sub> is continuous.
+
+<p>
+
+Finally, note that if P lies on a line of M<sub>n</sub>, then we can deal separately with points to the left and right of P, using the same argument. 
+
+<p>
+
+<i>Comments. (1) It is easy to botch the argument that h<sub>n</sub> is continuous. But having said that, my argument does seem rather complicated. Can anyone see a simpler argument? Or indeed a better choice of h<sub>n</sub> to make the whole argument simpler? (2) Note that for the particular h<sub>n</sub> we have chosen, tending to f pointwise needs f(x, y) continuous in x, whilst continuity needs f(x, y) continuous in y. </i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn74.html">35th Putnam 1974</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+18 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

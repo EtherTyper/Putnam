@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1989/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>50th Putnam 1989</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Let &alpha; = 1 + a<sub>1</sub>x + a<sub>2</sub>x<sup>2</sup> + ... where a<sub>n</sub> = 1 if every block of zeros in the binary expansion of n has even length, 0 otherwise. Prove that, if we calculate in the field of two elements, then &alpha;<sup>3</sup> + x&alpha; + 1 = 0. [For example, calculating in this field, (1 + x)<sup>2</sup> = 1 + x + x + x<sup>2</sup> = 1 + x<sup>2</sup>.]
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+&alpha;<sup>2</sup> = 1 + &sum; a<sub>n</sub><sup>2</sup>x<sup>2n</sup> because 2 = 0. Also a<sub>n</sub><sup>2</sup> = a<sub>n</sub>, so &alpha;<sup>2</sup> = 1 + &sum; a<sub>n</sub>x<sup>2n</sup>. The expression for &alpha;<sup>3</sup> is not so convenient, but we notice that if we multiply the relation in the question by &alpha; then we get the powers 1, 2, 4 and clearly &alpha;<sup>4</sup> = 1 + &sum; a<sub>n</sub>x<sup>4n</sup>.
+
+<p>
+
+So we now consider &alpha;<sup>4</sup> + x&alpha;<sup>2</sup> + &alpha;. It is convenient to consider separately the coefficients of x<sup>4n</sup>, x<sup>4n+2</sup> and x<sup>2n+1</sup>. 
+
+<p>
+
+Evidently the coefficient of x<sup>4n</sup> is a<sub>n</sub> + a<sub>4n</sub>. But a<sub>4n</sub> = a<sub>n</sub>, since the binary expansion of 4n is just that for n with two zeros added at the end. Hence a<sub>n</sub> + a<sub>4n</sub> = 0. [This does not deal with the coefficient of x<sup>0</sup>, but that is clearly 1 + 1 = 0 also.]
+
+<p>
+
+The coefficient of x<sup>4n+2</sup> is just a<sub>4n+2</sub>. But the binary expansion of 4n+2 ends ... 10, so a<sub>4n+2</sub> = 0.
+
+<p>
+
+Finally, the coefficient of x<sup>2n+1</sup> is a<sub>2n+1</sub> + a<sub>n</sub>. But the binary expansion of 2n+1 is the same as that for n with an extra 1 added at the end, so a<sub>2n+1</sub> = a<sub>n</sub> and a<sub>2n+1</sub> + a<sub>n</sub> = 0 also.
+
+<p>
+
+We have established that &alpha;<sup>4</sup> + x&alpha;<sup>2</sup> + &alpha; = 0, but &alpha; &ne; 0, so &alpha;<sup>3</sup> + x&alpha; + 1 = 0 as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn89.html">50th Putnam 1989</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

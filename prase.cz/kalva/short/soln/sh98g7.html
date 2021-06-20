@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1998/G7 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>39th IMO 1998 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem G7</b><br>
+<p>
+ABC is a triangle with angle C = 2 x angle B. D is a point on the side BC such that DC = 2 BD. E is a point on the line AD such that D is the midpoint of AE. Show that &ang;ECB + 180<sup>o</sup> = 2 &ang;EBC.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<img src="diag98g7.bmp">
+<p>
+As usual put BC = a, CA = b, AB = c. Let H be the midpoint of CD, so that BD = DH = HC = a/3. Let AH = x, AD = y. Since D is the midpoint of BH and AE, ABEH is a parallelogram, so EH = c, EB = x. Put EC = z. Extend BC to G so that CG = CA = b. &ang;ACB = &ang;CAG + &ang;CGA = 2 &ang;CGA. We are given that &ang;ACB = 2 &ang;ABC, so ABG is isosceles and similar to CGA. Hence AB/BG = CG/GA or c/(a+b) = b/c or c<sup>2</sup> = b(a + b).
+<p>
+Now consider triangle ACD. Applying the cosine formula to ADH and AHC we have y<sup>2</sup> = x<sup>2</sup> + (a/3)<sup>2</sup> - 2x(a/3) cos AHD, b<sup>2</sup> = x<sup>2</sup> + (a/3)<sup>2</sup> - 2x(a/3) cos AHC. Adding, b<sup>2</sup> + y<sup>2</sup> = 2x<sup>2</sup> + 2(a/3)<sup>2</sup> (1) (since cos AHD + cos AHC = 0). [This result for the length of a median is sometimes known as Apollonius' theorem.] Applying the same result to ABH and CDE we get: x<sup>2</sup> + c<sup>2</sup> = 2y<sup>2</sup> + 2a<sup>2</sup>/9 (2), z<sup>2</sup> + y<sup>2</sup> = 2c<sup>2</sup> + 2a<sup>2</sup>/9 (3).
+<p>
+(1) + 2 (2) + 3 (3) gives b<sup>2</sup> + 2c<sup>2</sup> +  3z<sup>2</sup> = 6c<sup>2</sup> + 4a<sup>2</sup>/3. Substituting c<sup>2</sup> = b(a+b) gives z<sup>2</sup> = b<sup>2</sup> + 4ab/3 + 4a<sup>2</sup>/9 = (b + 2a/3)<sup>2</sup>. So z = b + 2a/3.
+<p>
+2 (1) + (2) gives: 2b<sup>2</sup> + x<sup>2</sup> + c<sup>2</sup> = 4x<sup>2</sup> + 2a<sup>2</sup>/3. Substituting for c gives x<sup>2</sup> = (b + 2a/3)(b - a/3). Using the result for z, we may write this as x<sup>2</sup> = z(z - a).
+<p>
+Take P on EC so that PC = BC = a. Then EP = z - a, so BE/CE = EP/BE. Hence triangles BEP and CEB are similar. So &ang;ECB = &ang;EBP = &ang;EBC - &ang;PBC = &ang;EBC - 90<sup>o</sup> + &ang;ECB/2. Hence &ang;ECB = 2 &ang;EBC - 180<sup>o</sup>.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh98.html">39th IMO shortlist 1998</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Aug 2002
+</BODY>
+
+</HTML>
+

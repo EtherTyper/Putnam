@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1998/N4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>39th IMO 1998 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N4</b><br>
+<p>
+The sequence a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ... is defined as follows. a<sub>1</sub> = 1. a<sub>n</sub> is the smallest integer greater than a<sub>n-1</sub> such that we cannot find 1 &le; i, j, k &le; n (not necessarily distinct) such that a<sub>i</sub> + a<sub>j</sub> = 3a<sub>k</sub>. Find a<sub>1998</sub>.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 4494.
+<p>
+We show that a<sub>4n+1</sub> = 9n+1, a<sub>4n+2</sub> = 9n+3, a<sub>4n+3</sub> = 9n+4, a<sub>4n+4</sub> = 9n+7. Note that this sequence includes all positive integers which are 1 mod 3 and some of those which are 0 mod 3.
+<p>
+Note first that we cannot find a, b, c in the sequence ... 9n+1, 9n+3, 9n+4, 9n+7, ... such that a + b = 3c. No members of the sequence are 2 mod 3, so we cannot have a or b 1 mod 3 (because 3c is 0 mod 3). But if a and b are both 3 mod 9, then their sum is 6 mod 9, so c must be 2 mod 3, which is impossible. So it remains to show that a<sub>n</sub> satisfies the smallest criterion.
+<p>
+Consider first n = 1. We are given that a<sub>1</sub> = 1. a<sub>2</sub> cannot be 2, or we have 1 + 2 = 3.1. Similarly, a<sub>4</sub> cannot be 5 or we have 4 + 5 = 3.3. It cannot be 6 or we have 3 + 6 = 3.3. So n = 1 is established. 
+<p>
+Now suppose that n is given. We cannot have a<sub>4n+5</sub> = 9n+8 or (9n+8) + (9n+4) = 3(6n+4). We have 6n+4 = 1 mod 3, so 6n+4 is in the sequence. We cannot have a<sub>4n+5</sub> = 9n+9, because (9n+9) + (9n+3) = 3(6n+4). So a<sub>4n+5</sub> = 9(n+1)+1. We cannot have a<sub>4n+6</sub> = 9(n+1)+2, because (9n+11) + (9n+1) = 3(6n+4). So a<sub>4n+6</sub> = 9(n+1)+3. We cannot have a<sub>4n+8</sub> = 9(n+1)+5, because (9n+14) + 7 = 3(3n+7) and 3n+7 = 1 mod 3. We cannot have a<sub>4n+8</sub> = 9(n+1)+6, because (9n+15) + (9n+15) = 3(6n+10) and 6n+10 = 1 mod 3. So the result holds for n+1 and hence for all n.
+<p>
+Thus a<sub>1998</sub> = a<sub>4&middot;499+2</sub> = 9&middot;499+3 = 4494.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh98.html">39th IMO shortlist 1998</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Aug 2002
+</BODY>
+</HTML>
+

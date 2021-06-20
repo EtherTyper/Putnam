@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 91/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>52nd Putnam 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+p a prime &gt; 2. How many residues mod p are both squares and squares plus one? [For example, for p = 7, there are two such residues: 1 = 1<sup>2</sup> = 0<sup>2</sup> + 1 and 2 = 3<sup>2</sup> = 1<sup>2</sup> + 1.]
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: [p/4] + 1.
+
+<p>
+
+Straightforward (although I made a mess of it first time around).
+
+<p>
+
+We require (x + y)(x - y) = 1 (mod p). But this is just the statement that (x - y) is the inverse of (x + y). Any non-zero residue has a unique inverse mod p. So we may take k to be any of the p - 1 values 1, 2, ... , p - 1 and then (x + y) = k, (x - y) = 1/k (mod p). Thus there are p - 1 solutions pairs (x, y): ( (k + 1/k)/2, (k - 1/k)/2 ) k = 1, 2, ... , p - 1. 
+
+<p>
+We are not quite there yet, because we require the number of distinct h such that h = x<sup>2</sup> = y<sup>2</sup> + 1 (mod p), and some of the solution pairs for (x, y) give the same value h. In fact, z<sup>2</sup> = s (mod p) has either two or zero solutions unless s = 0, when it has just 1. Hence there are in general 4 solution pairs (&plusmn;x<sub>0</sub>, &plusmn;y<sub>0</sub>) corresponding to a given value of h. But there are always just two, namely (&plusmn;1, 0), corresponding to h = 1. If -1 is a quadratic residue of p, then there are two solutions (0, &plusmn;y<sub>0</sub>) corresponding to h = 0, otherwise none. But we show below that -1 is a quadratic residue iff p = 1 (mod 4). Hence if p = 1 (mod 4), then there are (p - 1 - 4)/4 + 2 =  (p + 3)/4 = [p/4] + 1 solutions. Similarly, if p = 3 (mod 4), then there are (p - 1 - 2)/4 + 1 = (p + 1)/4 = [p/4] + 1 solutions.
+
+<p>
+It remains to show when -1 is a quadratic residue, although this could probably be assumed in the exam. In any case, it is pure bookwork. If p = 3 (mod 4) and -1 is a quadratic residue, then we would have t<sup>2</sup> = -1 (mod p) and hence t<sup>p-1</sup> = (-1)<sup>(p-1)/2</sup> = -1 (mod p). But t<sup>p-1</sup> = 1 (mod p) [Fermat's theorem, proof: both t, 2t, 3t, ... , (p-1)t and 1, 2, 3, ... , p - 1 are complete sets of non-zero residues, so (p-1)! t<sup>p-1</sup> = (p-1)! (mod p) and hence t<sup>p-1</sup> = 1 (mod p)], and p does not divide 2. Contradiction. Conversely, if p = 1 (mod 4), then we show that (1&middot;2&middot;3. ... . (p-1)/2)<sup>2</sup> = -1 (mod p). But the square is just (p - 1)! so we have to prove Wilson's theorem. s is its own inverse mod p iff s = 1 or p - 1. So the other p - 3 residues divide into pairs with product 1 and hence (p - 1)! = p - 1 = - 1 (mod p).
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn91.html">52nd Putnam 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+24 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

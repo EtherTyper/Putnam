@@ -1,0 +1,46 @@
+<HTML>
+
+<HEAD>
+<TITLE>43rd IMO shortlist 2002/C4 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>43rd IMO 2002 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C4</b><br>
+<p>
+T is the set of all triples (x, y, z) with x, y, z non-negative integers &lt; 10. A chooses a member (X, Y, Z) of T. B seeks to identify it. He is allowed to name a triple (a, b, c) in T. A must then reply with |X + Y - a - b| + |Y + Z - b - c| + |Z + X - c - a|. How many triples does B need to name to be sure of determining A's triple?
+<p>
+&nbsp;<p>
+<b>Answer</b><br>
+<p>
+3
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+There are 1000 possible triples. Note that |x| has the same parity as x, so the reply has the same parity as (X + Y - a - b) + (Y + Z - b - c) + (Z + X - c - a) = 2(X + Y + Z) - 2(a + b + c), which is even. Thus the reply must be an even integer in the range 0 through 54, so there are 28 possibilities. Since 28<sup>2</sup> = 784 &lt; 1000, two replies are not always enough.
+<p>
+Let S = X + Y + Z. B's first triple is always (0, 0, 0). A replies with 2(X + Y + Z) = 2S, so B knows S. If S &lt;= 9, then B asks (9, 0, 0). A replies with (9 - X - Y) + (Y + Z) + (9 - Z - X) = 18 - 2X. Similarly B asks (0, 9, 0) and A replies 18 - 2Y.
+<p>
+Similarly, if S &gt;= 18, then B asks (0, 9, 9). The sum of any two of X, Y, Z must be at least 9 (and is obviously at most 18), so A replies with (X + Y - 9) + (18 - Y - Z) + (Z + X - 9) = 2X. Similarly, B asks (9, 0, 9) and A replies with 2Y.
+<p>
+Suppose 9 &lt; S &lt; 18. Then B asks (9, S - 9, 0). Then A replies (S - X - Y) + (Y + Z - S + 9) + |Z + X - 9| = Z + (9 - X) + |Z + X - 9|. If X + Z &gt;= 9, then this is 2Z, otherwise it is 18 - 2X. Take half the reply to be K. So if X + Z &gt;= 9, then K = Z. If X + Z &lt; 9, then K = 9 - X &gt; Z. So we certainly have Z &lt;= K. Note also that if K = Z, then certainly K &lt;= Y + Z, whilst if K = 9 - X, then K &lt; Y + Z, since S &gt; 9.
+<p>
+If S - K &lt;= 9, then B asks (S - K, 0, K) as his third triple. A replies |X + Y - S + K| + |Y + Z - K| + |Z + X - S| = (K - Z) + (Y + Z - K) + Y = 2Y. So B knows Y. Hence X + Z, so he can decide whether K was Z or 9 - X and gets X or Z. Since he knows S, he as all three.
+<p>
+If S - K &gt; 9, then B asks (9, S - K - 9, K). A replies |X + Y - S + K| + |Y + Z - S + 9| + |Z + X - 9 - K| = (K - Z) + (9 - X) + (K - Z + 9 - X) = 18 + 2K - 2X - 2Z. So B gets X + Z and hence Y. He also can decide if K was Z or 9 - X and so gets X or Z. He knows S, so he gets all three.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh02.html">43rd IMO shortlist 2002</a><br>
+<p>(C) John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+14 Aug 2003
+<br>Last corrected/updated 14 Aug 2003
+</BODY>
+
+</HTML>
+

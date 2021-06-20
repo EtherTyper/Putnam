@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>40th IMO shortlist 1999/C2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>40th IMO 1999 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C2</b><br>
+<p>
+A <i>tile</i> is made of 5 unit squares as shown. Show that if a 5 x n rectangle can be covered with n tiles, then n is even. [Tiles can be turned over and rotated.] Show that a 5 x 2n rectangle can be tiled in at least 3<sup>n-1</sup>2 ways.
+<img src="../diag99c2.jpg">
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Each tile includes a 2 x 2 square. But we can fit at most 2 x m such squares inside a 5 x (2m+1) rectangle. For at most 2 fit in each row and at most m in each column. [If we move each square as far to the left as possible and as far up as possible, then they will pack into a 4 x 2m rectangle and so there are at most 2m of them.] So we can fit at most 2m of the tiles into the 5 x (2m+1) rectangle and hence cannot cover it. So if a 5 x n rectangle can be tiled, then n must be even.
+<p>
+Consider the 5 x 2, 5 x 4 and 5 x 6 arrangements below. Call them A2, A4 and A6. A2 can be reflected to give 2 arrangements, A4 can be reflected to give 2 arrangements, and A6 can be reflected and rotated to give 4 arrangements. Let S<sub>n</sub> be the total number of arrangements for a 5 x 2n rectangle. Then we have S<sub>1</sub> &ge; 2. S<sub>2</sub> &ge; 6 (2<sup>2</sup> derived from using two A2s and 2 from an A4). S<sup>3</sup> &ge; 20 (2<sup>3</sup> by using three A2s, 2<sup>2</sup> by using an A2 above an  A4, 2<sup>2</sup> by using an A2 below an A4, and 4 from an A6). So S<sub>n</sub> &ge; 2.3<sup>n-1</sup> for n = 1, 2, 3. We now use induction on n to prove that this holds for all n.
+<p>
+Now suppose the inequality holds for n-2, n-1, and n. Then we have S<sub>n+1</sub> &gt;= 2 S<sub>n</sub> + 2 S<sub>n-1</sub> + 4 S<sub>n-2</sub> (an A2 above a 5 x 2n arrangement, an A4 above a 5 x 2(n-1) arrangement, and an A6 above a 5 x 2(n-2) arrangement). So S<sub>n+1</sub> &ge; 4.3<sup>n-1</sup> + 4.3<sup>n-2</sup> + 8.3<sup>n-3</sup> = 2.3<sup>n-3</sup>(18 + 6 + 4) = 2.3<sup>n-3</sup>28 &gt; 2.3<sup>n</sup>. So the inequality holds for n+1 and hence for all n.
+<p>
+<img src="diag99c2.bmp">
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh99.html">40th IMO shortlist 1999</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

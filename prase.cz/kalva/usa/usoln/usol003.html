@@ -1,0 +1,100 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 00/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>29th USAMO 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+A player starts with A blue cards, B red cards and C white cards. He scores points as he plays each card. If he plays a blue card, his score is the number of white cards remaining in his hand. If he plays a red card it is three times the number of blue cards remaining in his hand. If he plays a white card, it is twice the number of red cards remaining in his hand. What is the lowest possible score as a function of A, B and C and how many different ways can it be achieved?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: the lowest score is min(AC, 2BC, 3AB). If the maximum of B, A/2, C/3 is unique, then there is only one way to achieve the lowest score. If B = A/2 &gt; C/3, there are C+1 ways; if B = C/3 &gt; A/2, there are A+1 ways; if A/2 = C/3 &gt; B, there are B+1 ways. If B = A/2 = C/3, then there are A+B+C ways.
+
+<p>
+
+<i>Solution by Ralph Furmaniak, which is significantly simpler than my original solution</i>
+
+<p>
+
+If A = 0, then the unique solution is to play all the red cards followed by all the white cards (total score nil). Similarly, if B = 0, the unique solution is to play all the white cards followed by all the blue cards, and if C = 0, the unique solution is to play all the blue cards followed by all the red cards. So assume A, B, C are all non-zero.
+
+<p>
+
+It is never correct to play a red card immediately before a blue card, because the score would be reduced by 3 if the order was reversed. Similarly, it is never correct to play a white card immediately before a red card, or a blue card immediately before a white card. Hence the optimum play must be either (1) BRWBRWB ... or (2) RWBRWB ... or (3) WBRWB ... , where B denotes the play of one or more blue cards, R denotes the play of one or more red cards and W denotes the play of one or more white cards. 
+
+<p>
+
+Suppose the optimum involves two or more separate plays of blue cards, so we have ... b, r, w, b' , ... meaning that the sequence includes the plays b blue cards, followed by r red cards, followed by w white cards, followed by b' blue cards. Then the score for ... (b-1), r, w, (b'+1), ... is (w-3r) lower. That is independent of b. So if w is not equal to 3r, then the sequence cannot be optimal, because either ... (b+b'), r, w, ... or ... r, w, (b+b'), ... gives a lower score. If w = 3r, then both ... (b+b'), r, w, ... and ... r, w, (b+b'), ... are also optimal. But that implies that the original sequence cannot have had any more terms, it must have been simply b, r, w, b', otherwise one of ... (b+b'), r, w, ... or ... r, w, (b+b'), ... would involve playing a white card immediately before a red, which is never optimal.
+
+<p>
+
+A similar argument applies to two or more separate plays of red cards and to two or more separate plays of white cards. So one of BRW, RWB, WBR is always optimal. They give scores of AC, 3AB, 2BC respectively, so the minimum score is min(AC, 3AB, 2BC). 
+
+<p>
+
+The argument above also shows that if a play sequence is optimal, then it must be one of the three above or BRWB, RWBR or WBRW. Also BRWB can only be optimal if C = 3B. Similarly, RWBR can only be optimal if 3A = 2C and WBRW can only be optimal if 2B = A.
+
+<p>
+
+If BRW, RWB and WBR are all optimal, then A = B/2 = C/3. In this case, BRWB, RWBR and WBRW are also optimal. There are A possibilities for BRW or BRWB (start with 1, 2, 3, ... or A blue cards, then play all the red, then all the white, then any remaining blue). Similarly, there are B possibilities for RWB and RWBR and C for WBR and WBRW, so A+B+C possibilities in total. So assume BRW, RWB and WBR are not all optimal.
+
+<p>
+
+If BRWB is optimal, then BRW and RWB must also be optimal, so A/2 &lt; B = C/3. So there are A+1 possibilities (start with 0, 1, 2, ... or A blue cards, then all the red, then all the white, then any remaining blue).
+
+<p>
+
+Similarly, if RWBR is optimal, then B &lt; A/2 = C/3. There are B+1 possibilities (start with 0, 1, 2, ... or B red cards, then all the white, then all the blue, then any remaining red). Similarly, if WBRW is optimal, then C/3 &lt; B = A/2 and there are C+1 possibilities (start with 0, 1, 2, ... or C white cards, then all the blue, then all the red, then any remaining white).
+
+<p>
+
+If none of BRWB, RWBR, WBRW are optimal, then B, A/2 and C/3 are all unequal and the solution is unique.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa00.html">29th USAMO 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Sep 2002
+
+</BODY>
+
+
+
+</HTML>
+

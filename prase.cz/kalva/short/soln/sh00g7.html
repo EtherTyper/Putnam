@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<TITLE>41st IMO shortlist 2000/G7 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>41st IMO 2000 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem G7</b><br>
+<p>
+Ten gangsters are standing in a field. The distance between each pair of gangsters is different. When the clock strikes, each gangster shoots the nearest gangster dead. What is the largest number of gangsters that can survive?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 7.
+<p>
+Obviously at least two gangsters die: someone must get shot, but he must shoot someone else. It is easy to arrange for just four to die. Take four roughly in a circle around a fifth. All four shoot the gangster in the center, and he shoots one of those in the circle. So two out of the five die. Arrange the other five similarly, some distance away. However, with a little care, we can reduce that to three gangsters dying, by arranging that the two central gangsters both shoot the same gangster. Consider the situation below. The lh circle is slightly smaller than the rh circle. The angles 142, 243, 7 10 8, 9 10 8 are slightly greater than 60<sup>o</sup>. The distance 56 is the same as the radius of the larger circle. Thus 1, 2, 3 and 5 shoot 4; 4, 6 and 10 shoot 5; 7, 8 and 9 shoot 10. So 4, 5, 10 die and the others survive.
+<p>
+<img src="diag00g7.bmp">
+<p>
+So we have to show that we cannot have just two gangsters die. It is surprisingly difficult.
+<p>
+We cannot have six gangsters all shooting the same person. For suppose A, B, C, D, E, F all shoot O. Suppose &ang;AOB &le; 60<sup>o</sup>. Since OA and OB are assumed to be unequal, angles OAB and  OBA are unequal. Hence at least one of them &gt; 60<sup>o</sup>. Suppose it is &ang;OAB. Then &ang;OAB &gt; &ang;AOB, then OB &gt; BA, so B should shoot A not O. Contradiction. Similarly, if &ang;OBA &gt; 60<sup>o</sup>. So &ang;OAB &gt; 60<sup>o</sup>. Similarly, each of the other angles BOC, COD, DOE, EOF, FOA must be &gt; 60<sup>o</sup>. But the sum of the six angles is 360<sup>o</sup>. Contradiction. So at most 5 gangsters can shoot the same person.
+<p>
+So assume that it is possible to arrange 10 gangsters so that only two die. Let A and B be the two closest gangsters. Then they must shoot each other. So we have to show that every other gangster shoots A or B. Since at most 5 gangsters can shoot the same person, 4 of the others must shoot A and 4 must shoot B. Using the result in the previous paragraph if C is the next gangster anticlockwise from B who shoots A and C' the next gangster clockwise then, the &ang;CAC' &lt; 180<sup>o</sup>. Take the line through B parallel to AC (the dotted line in the diagram below). If D and D' are the two gangsters either side of A in the group who shoot B, then &ang;DBD' &lt; 180<sup>o</sup>, so either D or D' lies in the strip between the two parallel lines. Hence we may take &ang;CAB + &ang;ABD &lt; 180<sup>o</sup> (for if it is not, then &ang;C'AB + &ang;ABD' &lt; 180<sup>o</sup> and we just relabel).
+<p>
+<img src="dia00g7a.bmp">
+<p>
+D is closer to B than A (by assumption), so it lies on the same side of the perpendicular bisector of AB as B. Similarly, C lies on the same side as A. So the quadrilateral ABDC has its vertices in that order (with no sides intersecting except at vertices). Now CA &lt; CD (since C shoots A not D). So &ang;CDA &lt; &ang;CAD. Hence &ang;CDA &lt; 90<sup>o</sup>. BA is the shortest side of ABD, so &ang;ADB &lt; 90<sup>o</sup>. Hence &ang;CDB &lt; 180<sup>o</sup>. Similarly, &ang;ACD &lt; 180<sup>o</sup>. So ABDC is convex. Label the angles a, b, c, d as shown below.
+<p>
+<img src="dia00g7b.bmp">
+<p>
+We have &ang;HAB = b + &ang;ACB &lt; 2b (since AB &gt; AC). Similarly &ang;GBA = a + &ang;ADB &lt; 2a. So 2a + 2b &gt; &ang;HAB + &ang;GBA &gt; 180<sup>o</sup>. Similarly, &ang;ECD = d + &ang;CAD &gt; 2d (since CD &gt; CA) and &ang;FDC = c + &ang;DBC &gt; 2c, so 2c + 2d &lt; &ang;ECD + &ang;FDC &lt; 180<sup>o</sup>. Hence c + d &lt; a + b. Contradiction, since they are obviously equal.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh00.html">41st IMO shortlist 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

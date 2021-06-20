@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 81/4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>10th USAMO 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 4</b><br>
+
+<p>
+
+A convex polygon has n sides. Each vertex is joined to a point P not in the same plane. If A, B, C are adjacent vertices of the polygon take the angle between the planes PBA and PBC. The sum of the n such angles equals the sum of the n angles subtended at P by the sides of the polygon (such as the angle APB). Show that n = 3.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+n = 3 is certainly possible. For example, take &ang;APB = &ang;APC = &ang;BPC = 90<sup>o</sup> (so that the lines PA, PB, PC are mutually perpendicular). Then the three planes through P are also mutually perpendicular, so the two sums are both 270<sup>o</sup>.
+
+<p>
+
+We show that n &gt; 3 is not possible. 
+
+<p>
+
+The sum of the n angles APB etc at P is less than 360<sup>o</sup>. This is almost obvious. Take another plane which meets the lines PA, PB, PC etc at A', B', C', ... and so that the foot of the perpendicular from P to the plane lies <i>inside</i> the n-gon A'B'C' ... then as we move P down the perpendicular the angles A'PB' etc all increase. But when it reaches the plane their sum is 360<sup>o</sup>. However, I do not immediately see how to make that rigorous. Instead, take any point O inside the n-gon ABC... . We have &ang;PBA + &ang;PBC &gt; &ang;ABC. Adding the n such equations we get &sum;(180<sup>o</sup> - APB) &gt; &sum; ABC = (n - 2) 180<sup>o</sup>. So &sum; APB &lt; 360<sup>o</sup>.
+
+<p>
+
+The sum of the n angles between the planes is at least (n - 2) 180<sup>o</sup>. If we take a sphere center P. Then the lines PA, PB intersect it at A", B", ... which form a spherical polygon. The angles of this polygon are the angles between the planes. We can divide the polygon into n - 2 triangles. The angles in a spherical triangle sum to <i>at least</i> 180<sup>o</sup>. So the angles in the spherical polygon are at least (n - 2) 180<sup>o</sup>. So we have (n - 2) 180<sup>o</sup> &lt; 360<sup>o</sup> and hence n &lt; 4.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa81.html">10th USAMO 1981</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+21 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

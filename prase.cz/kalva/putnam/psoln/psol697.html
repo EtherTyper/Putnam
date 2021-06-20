@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1969/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>30th Putnam 1969</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+The positive integer n is divisible by 24. Show that the sum of all the positive divisors of n - 1 (including 1 and n - 1) is also divisible by 24.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let n = 24m. We show first that if d is a divisor of n - 1 = 24m - 1, then d<sup>2</sup> - 1 is divisible by 24. Clearly d is not a multiple of 3 (because n is), so 3 must divide d<sup>2</sup> - 1. Also d must be odd (like n - 1), so d - 1 and d + 1 are consecutive even numbers, so one must be a multiple of 4, and there product d<sup>2</sup> - 1 must be a multiple of 8.
+
+<p>
+
+Now 24m - 1 cannot be a square (because squares are congruent to 0 or 1 mod 4), so its divisors come in pairs d, (24m - 1)/d. But d + (24m - 1)/d is divisible by 24 (because d<sup>2</sup> - 1 and 24m are and no factor of 24 can divide d). Hence the sum of all the divisors of n - 1 is divisible by 24.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn69.html">30th Putnam 1969</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

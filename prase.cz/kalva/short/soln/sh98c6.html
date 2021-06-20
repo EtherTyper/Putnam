@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1998/C6 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>39th IMO 1998 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C6</b><br>
+<p>
+G is the complete graph on 10 points (so that there is an edge between each pair of points). Show that we can color each edge with one of 5 colors so that for any 5 points we can find 5 differently colored edges all of whose endpoints are amongst the 5 points. Show that we cannot color each edge with one of 4 colors so that for any 4 points we can find 4 differently colored edges with all endpoints amongst the 4 points.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+We give an explicit coloring for 5 colors. Let the points of G be 0, 1, ... , 9. We color the edges as follows:
+<p>all edges of 0, 2, 5, 9 are blue, 13, 48 and 67 are blue
+<br>all edges of 1, 2, 4, 7 are green, 06, 35, 89 are green
+<br>all edges of 3, 4, 6, 9 are red, 01, 28, 57 are red
+<br>all edges of 1, 5, 6, 8 are yellow, 04, 23, 79 are yellow
+<br>all edges of 0, 3, 7, 8 are white, 19, 26, 45 are white.
+<p>For each color c the edges are divided into four groups, with all edges between members of the same group colored c. For any 5 points, 2 must belong to the same group and hence be joined by an edge of color c. The more tiresome job is checking that we have covered all the edges just once.
+<p>
+Suppose there is a coloring with 4 colors such that every 4 points have 4 differently colored edges between them. We show that this leads to a contradiction.
+<p>
+Suppose a point has 4 edges of the same color. To be specific, suppose AB, AC, AD, AE are all blue. One of the edges between B, C, D, E must be blue. Suppose it is BC. Then A, B, C, D have 4 blue edges between them, leaving only 2 edges for the other 3 colors. Contradiction. So at most 3 edges at A have the same color. If there are less than 3 edges of each color at A, then there are at most 4 x 2 = 8 edges in all. But there are 9 (one to each of the other 9 points). So there must be exactly 3 edges at A for some color. So suppose AB, AC, AD are all blue.
+<p>
+There are 6 edges between A, B, C, D, so the other three must be one each of the other colors. In other words, none of BC, BD, CD are blue. 
+<p>
+Now consider the other 6 points (apart from A, B, C, D). The familiar Ramsey result R(3, 3) = 6 tells us that there must either be a blue triangle among them or a triangle with none of its sides blue. [To prove this, take X, any of the 6 points. Then either it is joined to 3 or more points by a blue edge, or it is joined to 3 or more points by a non-blue edge. If it is joined to 3 by a blue edge, then either those three points form a non-blue triangle or two of them are joined by a blue edge. But then they form a blue triangle with X. Similarly, if there are 3 points joined to X by a non-blue edge, then either they form a blue triangle, or two of them are joined by a non-blue edge. But then they form a non-blue triangle with X.] If there are three points E, F, G with none of EF, EG, FG blue, then the four points A, E, F, G do not have a blue edge. Contradiction. So suppose E, F, G have all of EF, EG, FG blue. Now B, C, D, E must have a blue edge. We already know that BC, BD, CD are not blue, so one of BE, CE, DE must be blue. Suppose it is BE. Then B, E, F, G have four blue edges. Contradiction (as before). So 4 does not work.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh98.html">39th IMO shortlist 1998</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Aug 2002
+</BODY>
+
+</HTML>
+

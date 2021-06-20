@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1984/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>45th Putnam 1984</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Find all real valued functions f(x) defined on [0, &infin;), such that (1) f is continuous on [0, &infin;), (2) f(x) &gt; 0 for x &gt; 0, (3) for all x<sub>0</sub> &gt; 0, the centroid of the region under the curve y = f(x) between 0 and x<sub>0</sub> has y-coordinate equal to the average value of f(x) on [0, x<sub>0</sub>].
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: f(x) = A x<sup>1 + &radic;2</sup>.
+
+<p>
+
+The condition is &int;<sub>0</sub><sup>x</sup> 1/2 f<sup>2</sup>(t) dt = 1/x (&int;<sub>0</sub><sup>x</sup> f(t) dt)<sup>2</sup>. Put y = &int;<sub>0</sub><sup>x</sup> f(t) dt and differentiate to get 1/2 (y')<sup>2</sup> = 2yy'/x - y<sup>2</sup>/x<sup>2</sup>, or x<sup>2</sup>(y')<sup>2</sup> - 4xyy' + 2y<sup>2</sup> = 0.
+
+<p>
+
+At this point it is easy to get stuck. The key is to factorize the equation: (x y' - (2 + &radic;2) y ) (x y' - (2 - &radic;2) y ) = 0. Hence y = Ax<sup>2+&radic;2</sup> or Ax<sup>2-&radic;2</sup>. Hence f(x) = Bx<sup>1+&radic;2</sup> or Bx<sup>1-&radic;2</sup>. But f(0) is defined, so f(x) = Bx<sup>1+&radic;2</sup> at least for small x. There remains the possibility that we might switch to Cx<sup>1-&radic;2</sup> at some x<sub>0</sub>. But it is easy to see that if we fix C so that B is continuous, then for x &gt; x<sub>0</sub>, &int;<sub>0</sub><sup>x</sup> f(t) dt will have a non-zero constant term as well as an x<sup>2 - &radic;2</sup> term and hence we will not satisfy the required equation. So the only possible solutions are those given.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn84.html">45th Putnam 1984</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1996/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b>
+
+<p>
+
+The positive integers a, b are such that 15a + 16b and 16a - 15b are both squares of positive integers. What is the least possible value that can be taken on by the smaller of these two squares?
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+481<sup>2</sup>.
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+Put 15a &plusmn; 16b = m<sup>2</sup>, 16a - 15b = n<sup>2</sup>. Then 15m<sup>2</sup> + 16n<sup>2</sup> = 481a = 13&middot;37a. The quadratic residues mod 13 are 0, &plusmn;1, &plusmn;3, &plusmn;4, so the residues of 15m<sup>2</sup> are 0, &plusmn;2, &plusmn;5, &plusmn;6, and the residues of 16n<sup>2</sup> are 0, &plusmn;1, &plusmn;3, &plusmn;4. Hence m and n must both be divisible by 13. Similarly, the quadratic residues of 37 are 0, &plusmn;1, &plusmn;3, &plusmn;4, &plusmn;7, &plusmn;9, &plusmn;10, &plusmn;11, &plusmn;12, &plusmn;16, so the residues of 15m<sup>2</sup> are 0, &plusmn;2, &plusmn;5, &plusmn;6, &plusmn;8, &plusmn;13, &plusmn;14, &plusmn;15, &plusmn;17, &plusmn;18, and the residues of 16n<sup>2</sup> are 0, &plusmn;1, &plusmn;3, &plusmn;4, &plusmn;7, &plusmn;9, &plusmn;10, &plusmn;11, &plusmn;12, &plusmn;16. Hence m and n must both be divisible by 37. Put m = 481m', n = 481n' and we get: a = 481(15m'<sup>2</sup> + 16n'<sup>2</sup>). We also have 481b = 16m<sup>2</sup> - 15n<sup>2</sup> and hence b = 481(16m'<sup>2</sup> - 15n'<sup>2</sup>). The smallest possible solution would come from putting m' = n' = 1 and indeed that gives a solution.
+
+<p>
+This solution is straightforward, but something of a slog - all the residues have to be calculated. A more elegant variant is to notice that m<sup>4</sup> + n<sup>4</sup> = 481(a<sup>2</sup> + b<sup>2</sup>). Now if m and n are not divisible by 13 we have m<sup>4</sup> + n<sup>4</sup> = 0 (mod 13). Take k so that km = 1 (mod 13), then (nk)<sup>4</sup> = -(mk)<sup>4</sup> = -1 (mod 13). But that is impossible because then (nk)<sup>12</sup> = -1 (mod 13), but x<sup>12</sup> = 1 (mod 13) for all non-zero residues. Hence m and n are both divisible by 13. The same argument shows that m and n are both divisible by 37.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo96.html">37th IMO 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Oct 1998
+<br>Last corrected/updated 21 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

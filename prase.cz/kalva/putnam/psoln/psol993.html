@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 99/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>60th Putnam 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Let 1/(1 - 2x - x<sup>2</sup>) = s<sub>0</sub> + s<sub>1</sub>x + s<sub>2</sub>x<sup>2</sup> + ... . Prove that for some f(n) we have s<sub>n</sub><sup>2</sup> + s<sub>n+1</sub><sup>2</sup> = s<sub>f(n)</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Multiplying across, we have 1 = (1 - 2x - x<sup>2</sup>)(s<sub>0</sub> + s<sub>1</sub>x + s<sub>2</sub>x<sup>2</sup> + ... ) = s<sub>0</sub> + (s<sub>1</sub> - 2s<sub>0</sub>)x + (s<sub>2</sub> - 2s<sub>1</sub> - s<sub>0</sub>)x<sup>2</sup> + ... + (s<sub>n</sub> - 2s<sub>n-1</sub> - s<sub>n-2</sub>)x<sup>n</sup> + ... . Hence, the first few terms are: s<sub>0</sub> = 1, s<sub>1</sub> = 2, s<sub>2</sub> = 5, s<sub>3</sub> = 12, s<sub>4</sub> = 29, s<sub>5</sub> = 70, s<sub>6</sub> = 169. Also we have the recurrence relation s<sub>n</sub> = 2s<sub>n-1</sub> + s<sub>n-2</sub> (*).
+
+<p>
+
+For the early terms, we find: s<sub>0</sub><sup>2</sup> + s<sub>1</sub><sup>2</sup> = s<sub>2</sub>, s<sub>1</sub><sup>2</sup> + s<sub>2</sub><sup>2</sup> = s<sub>4</sub>, s<sub>2</sub><sup>2</sup> + s<sub>3</sub><sup>2</sup> = s<sub>6</sub>. So it is natural to conjecture that s<sub>n</sub><sup>2</sup> + s<sub>n+1</sub><sup>2</sup> = s<sub>2n+2</sub>. It might seem that the obvious way to prove this is by induction using the recurrence relation (*), but after some fruitless fiddling around, I decided it would be easier to solve (*) and use the solution.
+
+<p>
+
+The associated quadratic has roots 1 &plusmn;&radic;2, so the general solution of the recurrence relation is A(1 + &radic;2)<sup>n</sup> + B(1 - &radic;2)<sup>n</sup>. Using the values for s<sub>0</sub> and s<sub>1</sub> gives s<sub>n</sub> = ( (1 + &radic;2)<sup>n+1</sup> - (1 - &radic;2)<sup>n+1</sup> )/(2&radic;2). Hence s<sub>n</sub><sup>2</sup> + s<sub>n+1</sub><sup>2</sup> = 1/8 ( (1 + &radic;2)<sup>2n+2</sup> - 2 (-1)<sup>n+1</sup> + (1 - &radic;2)<sup>2n+2</sup>) + 1/8 ( (1 + &radic;2)<sup>2n+4</sup> - 2 (-1)<sup>n+2</sup> + (1 - &radic;2)<sup>2n+4</sup>) = 1/8 (1 + &radic;2)<sup>2n+2</sup>(1 + 3 + 2&radic;2) + 1/8 (1 - &radic;2)<sup>2n+2</sup>(1 + 3 - 2&radic;2) = (1 + &radic;2)<sup>2n+3</sup>/(2&radic;2) - (1 - &radic;2)<sup>2n+3</sup>/(2&radic;2) = s<sub>2n+2</sub>.
+
+<p>
+
+<i>Omer Angel</i> sent me a much more elegant derivation. We get to (*) as before. Then we note that s<sub>n</sub> is the number of ways of tiling a 1 x n rectangle with a supply of 1 x 2 red tiles, 1 x 1 black tiles and 1 x 1 white tiles (the early values are the same and the recurrence relation is satisfied). Now consider a 1 x 2n rectangle. Either there is a centrally placed 1 x 2 tile or not. If so, then there are s<sub>n-1</sub><sup>2</sup> possibilities. If not, then there are s<sub>n</sub><sup>2</sup> possibilities. Hence s<sub>2n</sub> = s<sub>n</sub><sup>2</sup> + s<sub>n-1</sub><sup>2</sup>.
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+&nbsp;<p>
+
+<a href="../putn99.html">60th Putnam 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

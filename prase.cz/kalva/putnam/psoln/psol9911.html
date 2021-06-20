@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 99/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>60th Putnam 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+n is an integer greater than 2 and &phi; = 2&pi;/n. A is the n x n matrix (a<sub>ij</sub>), where a<sub>ij</sub> = cos(i + j)&phi; for i &ne; j, 1 + cos2j&phi; for i = j. Find det A.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+A direct approach does not work (at least, I could not get it to work). However, if we let B be the n x n matrix (b<sub>ij</sub>) with b<sub>ij</sub> = cos(i + j)&phi;. Then the eigenvalues &lambda;<sub>1</sub>, &lambda;<sub>2</sub>, ... , &lambda;<sub>n</sub> of B satisfy the characteristic polynomial det(B - &lambda; I) = 0. Hence det A = <font face="Symbol">P</font>(&lambda;<sub>i</sub> + 1).
+
+<p>
+
+For r = 1, 2, 3, ... , n, let v<sub>r</sub> be the column vector (e<sup>i&phi;r</sup>, e<sup>2i&phi;r</sup>, e<sup>3i&phi;r</sup>, ... , e<sup>ni&phi;r</sup>). Using cos s&phi; = (e<sup>is&phi;</sup> + e<sup>-is&phi;</sup>)/2, we have that 2Bv<sub>r</sub> is the column vector with jth element ( e<sup>i&phi;(j+1+r)</sup> + e<sup>i&phi;(j+2+2r)</sup> + e<sup>i&phi;(j+3+3r)</sup> + ... + e<sup>i&phi;(j+n+nr)</sup> ) + ( e<sup>i&phi;(-j-1+r)</sup> + e<sup>i&phi;(-j-2+2r)</sup> + e<sup>i&phi;(-j-3+3r)</sup> + ... + e<sup>i&phi;(-j-n+nr)</sup> ) = e<sup>i&phi;j</sup>(&alpha; + &alpha;<sup>2</sup> + ... + &alpha;<sup>n</sup>) + e<sup>-i&phi;j</sup>(&beta; + &beta;<sup>2</sup> + ... + &beta;<sup>n</sup>), where &alpha; = e<sup>i&phi;(r+1)</sup> and &beta; = e<sup>i&phi;(r-1)</sup>. If r is not 1 or n - 1, then &alpha; and &beta; are nth roots of 1 other than 1 and hence &alpha; + &alpha;<sup>2</sup> + ... + &alpha;<sup>n</sup> = &beta; + &beta;<sup>2</sup> + ... + &beta;<sup>n</sup> = 0, so 2Bv<sub>r</sub> = 0, and so v<sub>r</sub> is an eigenvector with eigenvalue 0. If r = 1, then &beta; = 1, and so &alpha; + &alpha;<sup>2</sup> + ... + &alpha;<sup>n</sup> = 0, &beta; + &beta;<sup>2</sup> + ... + &beta;<sup>n</sup> = n. Hence Bv<sub>1</sub> = n/2 v<sub>n-1</sub>. Similarly, if r = n - 1, then &alpha; = 1, and so &alpha; + &alpha;<sup>2</sup> + ... + &alpha;<sup>n</sup> = n, &beta; + &beta;<sup>2</sup> + ... + &beta;<sup>n</sup> = 0. Hence Bv<sub>n-1</sub> = n/2 v<sub>1</sub>. So (v<sub>1</sub> + v<sub>n-1</sub>)/2 [which is the column vector (cos &phi;, cos 2&phi;, cos 3&phi;, ... , cos n&phi;) ] is an eigenvector with eigenvalue n/2, and (v<sub>1</sub> - v<sub>n-1</sub>)/2i [which is the column vector (sin &phi;, sin 2&phi;, ... , sin n&phi;) ] is an eigenvector with eigenvalue -n/2.
+
+<p>
+
+Finally, notice that the determinant with columns v<sub>r</sub> is a Vandermonde determinant, whose value (using the well-known formula) is &prod;<sub>r&gt;s</sub>(e<sup>ir&phi;</sup> - e<sup>is&phi;</sup>) &ne; 0. So we have found n - 2 linearly independent eigenvectors for the eigenvalue 0, and hence 0 is an eigenvalue of multiplicity n - 2 (and there are no other eigenvalues).
+
+<p>
+
+Thus det A = &prod;(&lambda;<sub>i</sub> + 1) = (1 + n/2)(1 - n/2) = -n<sup>2</sup>/4 + 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+&nbsp;<p>
+
+<a href="../putn99.html">60th Putnam 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

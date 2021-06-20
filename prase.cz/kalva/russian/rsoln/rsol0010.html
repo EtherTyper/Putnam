@@ -1,0 +1,61 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 00/10 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 10</b>
+
+<p>
+
+Show that it is possible to partition the positive integers into 100 non-empty sets so that if a + 99b = c for integers a, b, c, then a, b, c are not all in different sets.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Let t(n) be the largest k such that 2<sup>k</sup> divides n. Put A<sub>i</sub> = {n : t(n) = i mod 100} for i = 0, 1, 2, ... , 99.
+<p>
+Suppose a + 99b = c and t(a) &lt; t(b). Then 99b is divisible by a higher power of 2, than a. Hence t(c) = t(a). Similarly if t(a) &gt; t(b), then t(c) = t(b). So at least two of t(a), t(b), t(c) must be the same.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus00.html">Russian 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+20 December 2003
+
+</BODY>
+
+
+
+</HTML>
+

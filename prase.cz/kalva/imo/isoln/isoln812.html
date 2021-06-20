@@ -1,0 +1,78 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1981/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b>
+
+<p>
+
+Take r such that 1 &le; r &le; n, and consider all subsets of r elements of the set {1, 2, ... , n}. Each subset has a smallest element. Let F(n,r) be the arithmetic mean of these smallest elements. Prove that:
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; F(n,r) = (n+1)/(r+1).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Denote the binomial coefficient n!/(r!(n-r)!) by nCr.
+
+<p>
+Evidently nCr F(n,r) = 1 (n-1)C(r-1) + 2 (n-2)C(r-1) + ... + (n-r+1) (r-1)C(r-1). [The first term denotes the contribution from subsets with smallest element 1, the second term smallest element 2 and so on.]
+
+<p>
+Let the rhs be g(n,r). Then, using the relation (n-i)C(r-1) - (n-i-1)C(r-2) = (n-i-1)C(r-1), we find that g(n,r) - g(n-1,r-1) = g(n-1,r), and we can extend this relation to r=1 by taking g(n,0) = n+1 = (n+1)C1. But g(n,1) = 1 + 2 + ... + n = n(n+1)/2 = (n+1)C2. So it now follows by an easy induction that g(n,r) = (n+1)C(r+1) = nCr (n+1)/(r+1). Hence F(n,r) = (n+1)/(r+1).
+
+<p>
+
+<i>A more elegant solution by Oliver Nash is as follows</i>
+
+<p>
+
+Let k be the smallest element. We want to evaluate g(n, r) = &sum;<sub>k=1 to n-r+1</sub> k &nbsp; (n-k)C(r-1). Consider the subsets with r+1 elements taken from 1, 2, 3, ... , n+1. Suppose k+1 is the second smallest element. Then there are k &nbsp; (n-k)C(r-1) possible subsets. So g(n, r) = (n+1)C(r+1). Hence F(n, r) = (n+1)C(r+1) / nCr = (n+1)/(r+1), as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo81.html">22nd IMO 1981</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Oct 1998
+
+<br>Last corrected/updated 1 Mar 2003
+
+</BODY>
+
+
+
+</HTML>
+

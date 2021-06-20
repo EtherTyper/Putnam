@@ -1,0 +1,86 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1990/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>51st Putnam 1990</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+How many ordered pairs (A, B) of subsets of {1, 2, ... , 10} can we find such that each element of A is larger than |B| and each element of B is larger than |A|.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 17711.
+
+<p>
+
+Evidently we are meant to solve the general case of subsets of {1, 2, ... , N}. But the choice of N = 10 is poor, because it is sufficiently small to be tractable and in an exam it is certainly safer to slog it out for the specific case, rather than to risk failing to find a more elegant solution in the limited time available. Thus if A has 0 elements, then B can be anything, so we have 1024 possibilities. If A has 1 element, then we have 10C1 9C0 + 9C1 9C1 + 8C1 9C2 + ... + 1C1 9C9 = 2816 possibilities. If A has 2 elements, then we have 10C2 8C0 + 9C2 8C1 + ... + 2C2 8C8 = 4096 possibilities and so on.
+
+<p>
+
+Let u<sub>N</sub> be the solution for the general case. Let v<sub>N</sub> be the solution with the restriction that B does not contain the element N. Let w<sub>N</sub> be the solution with the restriction that B does contain the element N. We seek recurrence relations.
+
+<p>
+
+First observe that w<sub>N</sub> = u<sub>N-1</sub> because we have the correspondence (A, B) &harr; (A', B - {N}), where A' is the set derived from A by reducing each element by 1. Obviously u<sub>N</sub> = v<sub>N</sub> + w<sub>N</sub>, so v<sub>N</sub> = u<sub>N</sub> - u<sub>N-1</sub>.
+
+<p>
+
+Now consider u<sub>N+1</sub>. There are four cases: (1) neither A nor B contains N+1, (2) A contains N+1, but B does not, (3) B contains N+1, but A does not, (4) both A and B contain N+1. Clearly, there are u<sub>N</sub> possibilities in case (1). In case (2) we have the correspondence (A, B) &harr; (A - {N+1}, B'), where B' is derived from B by reducing each element by 1. This shows that there are v<sub>N</sub> possibilities for case (2). Similarly for case (3). For case (4) we use the correspondence (A, B) &harr; (A', B') to show that there are u<sub>N-1</sub> possibilities. Thus we have finally: u<sub>N+1</sub> = u<sub>N</sub> + 2v<sub>N</sub> + u<sub>N-1</sub> = 3u<sub>N</sub> - u<sub>N-1</sub>.
+
+<p>
+
+Clearly, u<sub>0</sub> = 1, u<sub>1</sub> = 3, so we may now use the relation to calculate successively 8, 21, 55, 144, 377, 987, 2584, 6765, 17711 (= u<sub>10</sub>).
+
+<p>
+
+We may recognize these as alternate Fibonacci numbers and indeed a little thought shows that if a<sub>n+2</sub> = a<sub>n+1</sub> + a<sub>n</sub> then a<sub>n+2</sub> = 2a<sub>n</sub> + a<sub>n-1</sub> = 2a<sub>n</sub> + (a<sub>n</sub> - a<sub>n-2</sub>) = 3a<sub>n</sub> - a<sub>n-2</sub>.
+
+<p>
+
+Alternatively, we may notice that the relations above may be rewritten as u<sub>N</sub> = v<sub>N</sub> + u<sub>N-1</sub> and v<sub>N</sub> = u<sub>N-1</sub> + v<sub>N-1</sub>, which (together with the starting values), shows that v<sub>0</sub>, u<sub>0</sub>, v<sub>1</sub>, u<sub>1</sub>, ... is Fibonacci.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn90.html">51st Putnam 1990</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

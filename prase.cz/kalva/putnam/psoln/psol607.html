@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1960/A7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>21st Putnam 1960</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A7</b><br>
+
+<p>
+
+Let f(n) be the smallest integer such that any permutation on n elements, repeated f(n) times, gives the identity. Show that f(n) = p f(n - 1) if n is a power of p, and f(n) = f(n - 1) if n is not a prime power.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+A permutation on n elements can be written as a product of disjoint cycles of length &lt;= n. So f(n) is the smallest number divisible by 2, 3, ... , n.
+
+<p>
+
+If n is not a power of a prime, then we can write n = rs, with r and s relatively prime and each greater than 1. Then r, s &lt; n - 1, so r and s divide f(n-1) and hence n divides f(n-1). So f(n) = f(n-1). If n = p<sup>m+1</sup>, then p<sup>m</sup> divides f(n-1), but not p<sup>m+1</sup>, so f(n) = p f(n).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn60.html">21st Putnam 1960</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

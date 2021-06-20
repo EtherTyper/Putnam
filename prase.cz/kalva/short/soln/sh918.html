@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>32nd IMO shortlist 1991/8 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>32nd IMO 1991 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 8</b>
+<p>
+Given a set A of n points in the plane, no three collinear, show that we can find a set B of 2n - 5 points such that a point of B lies in the interior of every triangle whose vertices belong to A.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+<img src="diag918.bmp">
+<p>
+Take a suitable x-axis so that the points all have different x-coordinates. Label the points P<sub>1</sub>, P<sub>2</sub>, ... , P<sub>n</sub> in order of increasing x-coordinates. For each point except P<sub>1</sub> and P<sub>n</sub> take the two points whose y-coordinate differs by d, where d is less than the smallest distance from one of the n points to the line joining another two. That gives a set of 2n-4 points. 
+<p>
+Given any triangle P<sub>i</sub>P<sub>j</sub>P<sub>k</sub>, one of the three vertices is not 1 or n. Suppose it is P<sub>i</sub>. If the line P<sub>j</sub>P<sub>k</sub> lies above P<sub>i</sub>, then the triangle P<sub>i</sub>P<sub>j</sub>P<sub>k</sub> must contain the point whose y-coordinate is d greater than that of P<sub>i</sub>. Similarly, if the line lies below, the triangle must contain the point with y-coordinate d less. So the set of 2n-4 points certainly has the required property. But the convex hull of the P<sub>i</sub> must have at least one of the points P<sub>2</sub>, ... , P<sub>n-1</sub> as vertex. For that point one of the two flanking points lies outside the convex hull and so we can discard it, giving us a set of 2n-5 points.
+<p>
+<img src="diag918a.bmp">
+<p>
+We cannot do better than 2n-5. ABC has 1 triangle, so we need at least 1 point. Then if we add D inside ABC we get 3 disjoint triangles ABD, BCD, CAD and so we need at least 3 points. Then if we add E inside BCD, we get  5 disjoint triangles and need at least 5 points. And so on. Each point we add gives an extra 2 disjoint triangles and so increases the required number of points by 2.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh91.html">32nd IMO shortlist 1991</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+1 Jan 2003
+<br>Last corrected/updated 1 Jan 03
+</BODY>
+
+</HTML>
+

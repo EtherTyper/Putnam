@@ -1,0 +1,102 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1991/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b>
+
+<p>
+
+Let ABC be a triangle and X an interior point of ABC. Show that at least one of the angles XAB, XBC, XCA is less than or equal to 30<sup>o</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+<i>By Marcin Mazur, University of Illinois at Urbana-Champaign</i>
+
+<p>
+
+Let P, Q, R be the feet of the perpendiculars from X to BC, CA, AB respectively. Use A, B, C to denote the interior angles of the triangle (BAC, CBA, ACB). We have PX = BX sin XBC = CX sin(C - XCA), QX = CX sin XCA = AX sin(A - XAB), RX = AX sin XAB = BX sin(B - XBC). Multiplying: sin(A - XAB) sin(B - XBC) sin(C - XCA) = sin A sin B sin C.
+
+<p>
+Now observe that sin(A - x)/sin x = sin A cot x - cos A is a strictly decreasing function of x (over the range 0 to &pi;), so if XAB, XBC and XCA are all greater than 30, then sin(A - 30) sin(B - 30<sup>o</sup>) sin(C - 30<sup>o</sup>) &gt; sin<sup>3</sup>30<sup>o</sup> = 1/8.
+
+<p>
+But sin(A - 30<sup>o</sup>) sin(B - 30<sup>o</sup>) = (cos(A - B) - cos(A + B - 60<sup>o</sup>))/2 &le; (1 - cos(A + B - 60<sup>o</sup>))/2 = (1 - sin(C - 30<sup>o</sup>))/2, since (A - 30<sup>o</sup>) + (B - 30<sup>o</sup>) + (C - 30<sup>o</sup>) = 90<sup>o</sup>. Hence sin(A - 30<sup>o</sup>) sin(B - 30<sup>o</sup>) sin(C - 30<sup>o</sup>) &le; 1/2 (1 - sin(C - 30<sup>o</sup>)) sin(C - 30<sup>o</sup>) = 1/2 (1/4 - (sin(C - 30<sup>o</sup>) - 1/2)<sup>2</sup>) &le; 1/8. So XAB, XBC, XCA cannot all be greater than 30<sup>o</sup>.
+
+<p>&nbsp;<br>
+
+<i>By Jean-Pierre Ehrmann</i>
+
+<p>
+P, Q, R as above. Area ABX + area BCX + area CAX = area ABC, so AB&middot;XR + BC&middot;XP + CA&middot;XQ = 2 area ABC &le; BC&middot;AP &le; BC(AX + XP). Hence AB&middot;XR/AX + CA&middot;XQ/AX &le; BC. 
+
+<p>
+Squaring and using (&lambda; + &mu;)<sup>2</sup> &ge; 4 &lambda;&mu;, we have: BC<sup>2</sup> &ge; 4 AB&middot;CA. XR&middot;XQ/AX<sup>2</sup>. Similarly: CA<sup>2</sup> &ge; 4 BC&middot;AB&middot;XP&middot;XR/BX<sup>2</sup>, and AB<sup>2</sup> &ge; 4 AB&middot;BC&middot;XQ&middot;XP/CX<sup>2</sup>. 
+
+<p>
+Multiplying these three inequalities together gives: 1 &ge; 64 (XR/AX)<sup>2</sup>(XP/BX)<sup>2</sup>(XQ/CX)<sup>2</sup>, and hence: (XR/AX) (XP/BX) (XQ/CX) &le; 1/8, or sin XAB sin XBC sin XCA &le; 1/8. So not all XAB, XBC, XCA are greater than 30<sup>o</sup>.
+
+<p>
+&nbsp;<br>
+
+<i>Gerard Gjonej noted that the result follows almost immediately from the Erdos-Mordell inequality: XA + XB + XC &ge; 2(XP + XQ + XR). [For if all the angles are greater than 30, then XR/XA, XP/XB, XQ/XC are all greater than sin 30<sup>o</sup> = 1/2.]. This result was notoriously hard to prove - Erdos hawked it around a large number of mathematicians before Mordell found a proof - but the proof now appears fairly innocuous, at least if you do not have to rediscover it:</i>
+
+<p>
+Let R<sub>1</sub>, Q<sub>1</sub> be the feet of the perpendiculars from P to AB, CA respectively. Similarly, let P<sub>2</sub>, R<sub>2</sub> be the feet of the perpendiculars from Q to BC, AB, and Q<sub>3</sub>, P<sub>3</sub> the feet of the perpendiculars from R to CA, BC. Then P<sub>2</sub>P<sub>3</sub> is the projection of QR onto BC, so P<sub>2</sub>P<sub>3</sub>/QR &le; 1. Similarly, Q<sub>3</sub>Q<sub>1</sub>/RP &le; 1, and R<sub>1</sub>R<sub>2</sub>/PQ &le; 1. Hence XA + XB + XC &ge; XA.P<sub>2</sub>P<sub>3</sub>/QR + XB&middot;Q<sub>3</sub>Q<sub>1</sub>/RP + XC&middot;R<sub>1</sub>R<sub>2</sub>/PQ &nbsp;(*)
+
+<p>
+Now BPXR is cyclic, because BPX and XRB are both right angles. Hence angle BXR = angle BPR = angle RPP<sub>3</sub>, so triangles XBR and PRP<sub>3</sub> are similar. Hence PP<sub>3</sub> = PR.XR/XB.
+
+<p>
+Similarly, QQ<sub>1</sub> = QP&middot;XP/XC, RR<sub>2</sub> = RQ&middot;XQ/XA, and PP<sub>2</sub> = PQ&middot;XQ/XC, QQ<sub>3</sub> = QR&middot;XR/XA, RR<sub>1</sub> = RP&middot;XP/XB. Substituting into (*), we obtain:
+
+<br>XA + XB + XC &ge; XA( PQ/QR XQ/XC + PR/QR XR/XB ) + XB( QR/RP XR/XA + QP/RP XP/XC ) + XC( RP/PQ XP/XB + RQ/PQ XQ/XA ).
+
+<p>
+On the right hand side, the terms involving XP are: XP( QP/RP XB/XC + RP/PQ XC/XB ), which has the form XP (x + 1/x) and hence is at least 2 XP. Similarly for the terms involving XQ and XR.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo91.html">32nd IMO 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

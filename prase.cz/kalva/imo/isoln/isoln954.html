@@ -1,0 +1,73 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1995/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b>
+
+<p>
+
+Find the maximum value of x<sub>0</sub> for which there exists a sequence x<sub>0</sub>, x<sub>1</sub>, ... , x<sub>1995</sub> of positive reals with x<sub>0</sub> = x<sub>1995</sub> such that for i = 1, ... , 1995:
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; x<sub>i-1</sub> + 2/x<sub>i-1</sub> = 2x<sub>i</sub> + 1/x<sub>i</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+2<sup>997</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+The relation given is a quadratic in x<sub>i</sub>, so it has two solutions, and by inspection these are x<sub>i</sub> = 1/x<sub>i-1</sub> and x<sub>i-1</sub>/2. For an even number of moves we can start with an arbitrary x<sub>0</sub> and get back to it. Use n-1 halvings, then take the inverse, that gets to 2<sup>n-1</sup>/x<sub>0</sub> after n moves. Repeating brings you back to x<sub>0</sub> after 2n moves. However, 1995 is odd!
+
+<p>
+The sequence given above brings us back to x<sub>0</sub> after n moves, provided that x<sub>0</sub> = 2<sup>(n-1)/2</sup>. We show that this is the largest possible x<sub>0</sub>. Suppose we have a halvings followed by an inverse followed by b halvings followed by an inverse. Then if the number of inverses is odd we end up with 2<sup>a-b+c- ...</sup>/x<sub>0</sub>, and if it is even we end up with x<sub>0</sub>/2<sup>a-b+c- ...</sup>. In the first case, since the final number is x<sub>0</sub> we must have x<sub>0</sub> = 2<sup>(a-b+-...)/2</sup>. All the a, b, ... are non-negative and sum to the number of moves less the number of inverses, so we clearly maximise x<sub>0</sub> by taking a single inverse and a = n-1. In the second case, we must have 2<sup>a-b+c- ...</sup> = 1 and hence a - b + c - ... = 0. But that implies that a + b + c + ... is even and hence the total number of moves is even, which it is not. So we must have an odd number of inverses and the maximum value of x<sub>0</sub> is 2<sup>(n-1)/2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo95.html">36th IMO 1995</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+24 Oct 1998
+<br>Last corrected/updated 25 Nov 03
+
+</BODY>
+
+
+
+</HTML>
+

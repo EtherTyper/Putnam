@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1997/12 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>38th IMO 1997 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 12</b>
+<p>
+p is prime. q(x) is a polynomial with integer coefficients such that q(k) = 0 or 1 mod p for every positive integer k, and q(0) = 0, q(1) = 1. Show that the degree of q(x) is at least p-1.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+If p=2, then since q(0) &ne; q(1), q is not constant, so its degree is at least 2-1. So assume p is an odd prime. We show first that &sum;<sub>k=1</sub><sup>p-1</sup> k<sup>n</sup> = 0 mod p for n=1,2, ..., p-2. Note that 0, s, 2s, 3s, ... , (p-1)s is an complete set of residues for any s &ne; 0 mod p, so s<sup>k</sup>(1<sup>k</sup> + 2<sup>k</sup> + ... + (p-1)<sup>k</sup>) = s<sup>k</sup> + (2s)<sup>k</sup> + ... + ((p-1)s)<sup>k</sup> = (1<sup>k</sup> + 2<sup>k</sup> + ... + (p-1)<sup>k</sup>) mod k. The congruence x<sup>k</sup>=1 mod p is not satisfied by x=0 so it can have at most k &lt; p-1 solutions, so we can find s such that sk - 1 &ne; 0 mod p. Hence (1<sup>k</sup> + 2<sup>k</sup> + ... + (p-1)<sup>k</sup>) = 0 mod p as required.
+<p>
+But now if q(x) has degree &le; p-2, then grouping the terms in x<sup>k</sup> we get q(1) + q(2) + ... + q(p-2) = 0 mod p. Contradiction since 0 &lt; q(1) + ... + q(p-2) &lt; p-1.
+<p>
+<i>Thanks to Kamil Duszenko</i>
+<p>&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh97.html">38th IMO shortlist 1997</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+2 Dec 2003
+<br>Last corrected/updated 2 Dec 2003
+</BODY>
+
+
+
+</HTML>
+

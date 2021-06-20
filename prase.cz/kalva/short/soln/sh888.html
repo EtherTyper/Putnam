@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>29th IMO shortlist 1988/8 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>29th IMO 1988 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 8</b>
+<p>
+<b>u</b><sub>1</sub>, <b>u</b><sub>2</sub>, ... , <b>u</b><sub>n</sub> are vectors in the plane, each with length at most 1, and with sum zero. Show that one can rearrange them as <b>v</b><sub>1</sub>, <b>v</b><sub>2</sub>, ... , <b>v</b><sub>n</sub> so that all the partial sums <b>v</b><sub>1</sub>, <b>v</b><sub>1</sub> + <b>v</b><sub>2</sub>, <b>v</b><sub>1</sub> + <b>v</b><sub>2</sub> + <b>v</b><sub>3</sub>, ... , <b>v</b><sub>1</sub> + <b>v</b><sub>2</sub> + ... + <b>v</b><sub>n</sub> have length at most &radic;5.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Suppose first that all the vectors are multiples of the unit vector <b>e</b>, so <b>u</b><sub>i</sub> = x<sub>i</sub><b>e</b>. We show that a stronger result holds with 1 in place of &radic;5. List the positive x<sub>i</sub> and some or all of the zero x<sub>i</sub> in any order: s<sub>1</sub>, s<sub>2</sub>, s<sub>3</sub>, ... . List the negative x<sub>i</sub> and some or all of the zero x<sub>i</sub> in any order: t<sub>1</sub>, t<sub>2</sub>, t<sub>3</sub>, ... . Take s<sub>1</sub>, then take the smallest i such that s<sub>1</sub> + t<sub>1</sub> + t<sub>2</sub> + ...  t<sub>i</sub> &lt;= 0. Then take the smallest j such that s<sub>1</sub> + t<sub>1</sub> + t<sub>2</sub> + ... + t<sub>i</sub> + s<sub>2</sub> + s<sub>3</sub> + ... + s<sub>j</sub> &ge; 0 and so on. Clearly the partial sums all have absolute value at most max |x<sub>i</sub>| &le; 1.
+<p>
+Now take the subset of the vectors whose sum has the largest absolute value. Without loss of generality it is <b>s</b> = <b>u</b><sub>1</sub>, <b>u</b><sub>2</sub>, ... , <b>u</b><sub>m</sub>. Let the unit vector in the direction of <b>s</b>, and let the unit vector perpendicular to <b>s</b> be <b>f</b>. We may take the vectors <b>u</b><sub>i</sub> for i = 1, 2, ... , m to be x<sub>i</sub><b>e</b> + y<sub>i</sub><b>f</b> and the remaining vectors to be X<sub>j</sub><b>e</b> + Y<sub>j</sub><b>f</b> for j = 1, 2, ... , n-m. Since the vectors have zero sum we have y<sub>1</sub> + ... + y<sub>m</sub> + Y<sub>1</sub> + ... + Y<sub>n-m</sub> = 0. Also y<sub>1</sub> + ... + y<sub>m</sub> = 0 and hence Y<sub>1</sub> + ... + Y<sub>n-m</sub> = 0. By the maximality of <b>s</b> we have all x<sub>i</sub> &ge; 0 and all X<sub>i</sub> &le; 0.
+<p>
+Using the first result, we may assume that all the partial sums |y<sub>1</sub> + y<sub>2</sub> + ... + y<sub>i</sub>| &le; 1 and |Y<sub>1</sub> + Y<sub>2</sub> + ... + Y<sub>j</sub>| &le; 1. Using the same technique as in the first result we may take blocks of terms alternately from x<sub>i</sub> and X<sub>j</sub> so that all the partial sums |x<sub>1</sub> + X<sub>1</sub> + ... + X<sub>a</sub> + x<sub>2</sub> + ... + x<sub>b</sub> + X<sub>a+1</sub> + ... | &le; 1. The corresponding partial sums for the other coordinate are the sum of a partial sum of y<sub>i</sub> and a partial sum of Y<sub>j</sub>, so they each have absolute value at most 1 + 1 = 2. Hence the partial sums of the vectors all have absolute value at most &radic;(1<sup>2</sup> + 2<sup>2</sup>) = &radic;5.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh88.html">29th IMO shortlist 1988</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Dec 2002
+<br>Last corrected/updated 30 Dec 02
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,38 @@
+<HTML>
+
+<HEAD>
+<TITLE>APMO 04/1 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>16th APMO 2004</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 1</b>
+<p>
+Find all non-empty finite sets S of positive integers such that if m,n &isin; S, then (m+n)/gcd(m,n) &isin; S.
+<p>
+&nbsp;<p>
+<b>Answer</b>
+<p>
+{2}
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Let k &isin; S. Then (k+k)/gcd(k,k) = 2 &isin; S. Let M be the largest odd element of S. Then (M+2)/gcd(M,2) = M+2 &isin; S. Contradiction. So all elements of S are even.  
+<p>
+Let m = 2n be the smallest element of S greater than 2. Then (m+2)/2 = n+1 &isin; S. But n must be &gt; 1 (or m = 2), so 2n &gt; n+1. Hence 2n = 2 (by minimality of m), so n = 1. Contradiction. So S has no elements apart from 2.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../apmo04.html">16th APMO 2004</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+22 Mar 2004
+<br>Last corrected/updated 22 Mar 04
+</BODY>
+
+</HTML>
+

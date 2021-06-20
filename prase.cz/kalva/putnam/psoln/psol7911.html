@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 79/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>40th Putnam 1979</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+A convex set S in the plane contains (0, 0) but no other lattice points. The intersections of S with each of the four quadrants have the same area. Show that the area of S is at most 4.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let A, B, C, D be the points (1, 0), (0, 1), (-1, 0), (0, -1). These all lie outside S, so we may take support lines S<sub>A</sub>, S<sub>B</sub>, S<sub>C</sub>, S<sub>D</sub> through each of them. If S<sub>A</sub> meets the x-axis in the interval [-1, 1], then we are home, because the part of S in the first quadrant lies inside a triangle area &lt; 1. So assume each support line is either parallel to the other axis or meets it a distance more than 1 from the origin. Hence S<sub>A</sub> and S<sub>B</sub> meet at W in the first quadrant, S<sub>B</sub> and S<sub>C</sub> meet at X in the second quadrant, S<sub>C</sub> and S<sub>D</sub> meet at Y in the third quadrant, and S<sub>D</sub> and S<sub>A</sub> meet at Z in the fourth quadrant. S lies entirely inside WXYZ. At least one of the angles of this quadrilateral must be &le; 90<sup>o</sup>. Suppose it is W.
+
+<p>
+
+Now we show that the area of the quadrilateral OAWB (where O is the origin) is at most 1. The required result then follows immediately. Area OAWB = area OAB + area WAB, and area OAB = 1/2. So we need to show that area WAB &lt;= 1/2. But that is almost immediate. The locus of W given angle W is an arc through A, W, B. We maximise the area of the triangle by taking W the midpoint of the arc. But this triangle lies entirely inside the triangle AW'B with AW' = W'B and angle AW'B = 90<sup>o</sup>, which has area 1/2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn79.html">40th Putnam 1979</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

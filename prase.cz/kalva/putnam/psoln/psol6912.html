@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1969/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>30th Putnam 1969</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+M is a 3 x 2 matrix, N is a 2 x 3 matrix. MN = 
+
+<pre> 8  2 -2
+
+ 2  5  4 
+
+-2  4  5
+
+</pre> 
+
+Show that NM = 
+
+<pre> 9  0
+
+ 0  9
+
+</pre> 
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The key observation is that (MN)<sup>2</sup> = 9 MN. [Of course, we expect this to be true since NM = 9 I, and it is easy to verify.]
+
+<p>
+
+It is also easy to check that MN has rank 2. The rank of NM must be at least as big as M(NM)N = 9 MN, so NM is non-singular. Now (NM)<sup>3</sup> = N(MN)<sup>2</sup>M = N(9 MN)M = 9 (NM)<sup>2</sup>. Multiplying by the inverse of NM twice gives that NM = 9 I.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn69.html">30th Putnam 1969</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

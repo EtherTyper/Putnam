@@ -1,0 +1,65 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Vietnam 71/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>10th VMO 1971</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b>
+
+<p>
+
+m, n, r, s are positive integers such that: (1) m &lt; n and r &lt; s; (2) m and n are relatively prime, and r and s are relatively prime; and (3) tan<sup>-1</sup>m/n + tan<sup>-1</sup>r/s = &pi;/4. Given m and n, find r and s. Given n and s, find m and r. Given m and s, find n and r.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+Put k = tan<sup>-1</sup>m/n, h = tan<sup>-1</sup>r/s. Then h + k = &pi;/4, so 1 = tan(h+k) = (tan h + tan k)/(1 - tan h tan k) = (r/s + m/n)/(1 - mr/ns) = (nr + ms)/(ns - mr). Hence (m+n)(r+s) = 2ns.
+<p>
+Suppose we are given m and n. We have (m+n)r = (n-m)s. If m and n have opposite parity, then m+n and m-n are coprime, so r = n-m, s = m+n. If m and n have the same parity, then m+n and m-n are both even, so r = (n-m)/2, s = (m+n)/2.
+<p>
+Suppose we are given n and s. wlog n &ge; s. If d &gt; 1 divides n and d divides m+n, then d divides m and n. Contradiction. So n must divide r+s. But r &lt; s &le; n, so r+s &lt; 2n. Hence r+s = n, so m+n = 2s. Hence n and s must be relatively prime and n &lt; 2s.
+<p>
+Suppose we are given m and s. Then (m+n)(s-r) = 2ms. If d &gt; 1 divides m and m+n, then d divides m and n. Contradiction. So m must divide s-r. So if d &gt; 1 divides m and s, then d divides r, so r and s are not coprime. Contradiction. Hence m and s must be coprime. Also m must be &lt; s. But now we can take r = s-m, n = 2s-m.
+<p>
+<i>Thanks to Suat Namli</i> 
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../viet71.html">10th VMO 1971</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+6 March 2004
+<br>Last corrected/updated 6 Mar 04
+
+</BODY>
+
+
+
+</HTML>
+

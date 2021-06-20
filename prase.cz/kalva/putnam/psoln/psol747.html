@@ -1,0 +1,96 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 74/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>35th Putnam 1974</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+P, Q, R, S, T are points on a circle radius 1. How should they be placed to maximise the sum of the perimeter and the five diagonals?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: equally spaced (at the vertices of a regular pentagon).
+
+<p>
+
+We consider separately the questions of maximising the perimeter and the sum of the diagonals. We show first that if X lies on the arc AB, then we maximise AX + BX by taking X as the midpoint of the arc.
+
+<p>
+
+Let O be the centre of the circle and let the angle subtended at O by the arc by 2k. If the radius is R and angle AOX is x, then AX + BX = 2R sin(x/2) + 2R sin(k - x/2) = 2R ( (1 - cos k) sin(x/2) + sin k cos(x/2) ) = 2R( 2 sin<sup>2</sup>(k/2) sin(x/2) + 2 sin(k/2) cos(k/2) cos(x/2) ) = 4R sin(k/2) cos(k/2 - x/2), which is uniquely maximised by taking x = k.
+
+<p>
+
+It follows immediately that equal spacing maximises the perimeter, for if the points are not equally spaced, then some side (say QR) is not equal to its counter-clockwise neighbouring side (say PQ). But then by moving Q to the midpoint of the arc PR we increase the perimeter, so the arrangement was not maximal.
+
+<p>
+
+But a similar (albeit slightly more complicated) argument shows that equal spacing also maximises the sum of the diagonals. Notice first that the relation AX + BX = 4R sin(k/2) cos(k/2 - x/2) shows that the sum AX + BX is strictly decreasing as X moves away from the midpoint until it hits one of the points A, B. So if X is not at the midpoint then <i>any non-zero</i> move towards the midpoint increases the sum AX + BX. 
+
+<p>
+
+Label the points so that the diagonals are PQ, QR, RS, ST, TP (and the order of the points around the circle is P, R, T, Q, S, moving counter-clockwise, say). Then if PQ = QR and QR = RS and RS = ST and ST = TP and TP = PQ, it follows that all the diagonals are equal and the points equally spaced. So if the points are not equally spaced then, without loss of generality, PQ does not equal QR. Now if no two points are coincident, it follows immediately that the arrangement is not maximal, because we can move Q towards the midpoint (of the arc PR on which it lies) and increase the sum.
+
+<p>
+
+However, if we allow coincident points, this argument fails, because if Q coincides with T (say) then it may be blocked by T from moving closer to the midpoint - if we move it beyond T, then QR ceases to be a diagonal and becomes a side.
+
+<p>
+
+Let us examine this case more closely. Since Q is blocked by T, we have that arc RT &gt; arc PQ. Let QQ' be a diameter. Then P cannot coincide with Q' (since arc RT would then not exceed arc PQ). So if we move P closer to Q' we will increase QP + PT (= 2QP). If we move counter-clockwise around the circle from T we must reach P after Q' (otherwise arc PQ &gt; arc Q'Q &gt; arc RT, contradiction). So we can move P closer to Q' (and hence establish that the configuration is not maximal) unless it is blocked by R. 
+
+<p> Now consider RS + ST. S is certainly not blocked from moving closer to the midpoint, because the two possible blocking points P and Q coincide with R and T. So if the configuration is to be maximal, then S must already be at the midpoint. Finally, consider QR + RS. The arc RT is greater than a semicircle so the midpoint must lie on it. P does not block because it lies on the other side. T does not block because it coincides with Q. So by moving R we can increase the sum, contradicting maximality.
+
+<p>
+
+Thus equal spacing maximises the perimeter and diagonal sum separately. So, a fortiori, it maximises their sum.
+
+<p>
+
+<i>Comment. Is there an easier way of establishing that equal spacing is maximal for the diagonal sum? If not, this question is far harder than one expects for a B1 question - A1s and B1s are normally trivial. I suspect the setter of thinking (wrongly) that the argument for maximality for the perimeter also works for the sum of diagonals, overlooking that the midpoint might not lie between the other two points.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn74.html">35th Putnam 1974</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+18 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

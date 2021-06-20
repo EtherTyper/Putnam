@@ -1,0 +1,86 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1994/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1994</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+For a positive integer n, let f(n) be the number of perfect squares d such that |n - d| &le; 250. Find all n such that f(n) = 15. [The perfect squares are 0, 1, 4, 9, 16, ... .]
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 315 - 325 and 332 - 350.
+
+<p><i>Straightforward.</i>
+
+<p>
+
+We may readily compile the following table:
+
+<pre>
+
+0  -250	    &ge; 16      0<sup>2</sup> - 15<sup>2</sup>
+
+251-299     &ge; 16      7<sup>2</sup> - 22<sup>2</sup>
+
+300-314	      16       8<sup>2</sup> - 23<sup>2</sup>
+
+315-325       15       9<sup>2</sup> - 23<sup>2</sup>
+
+326-331       16       9<sup>2</sup> - 24<sup>2</sup>
+
+332-350       15      10<sup>2</sup> - 24<sup>2</sup>
+
+351-371       14      11<sup>2</sup> - 24<sup>2</sup>
+
+</pre>
+
+<br>
+
+25<sup>2</sup> - 11<sup>2</sup> = 504 &gt; 500 and hence the gap (n+15)<sup>2</sup> - (n+1)<sup>2</sup> &gt; 500 for all n &gt; 10. So no numbers n &gt; 11<sup>2</sup> + 250 = 371 have f(n) &gt; 14.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn94.html">Putnam 1994</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

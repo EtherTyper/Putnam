@@ -1,0 +1,86 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 74/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>35th Putnam 1974</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Let f(n) be the degree of the lowest order polynomial p(x) with integer coefficients and leading coefficient 1, such that n divides p(m) for all integral m. Describe f(n). Evaluate f(1000000).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: f(n) is smallest integer N such that n divides N! and f(1000000) = 25.
+
+<p>
+
+Put p<sub>N</sub>(x) = x(x + 1)(x + 2) ... (x + N - 1). Note first that p<sub>N</sub>(m) / N! = (m + N - 1)! / ( (m - 1)! N! ) which is a binomial coefficient and hence integral, so p<sub>N</sub>(m) is certainly divisible by N! for all positive integers m. If m = 0, -1, ... , -(N - 1), then p<sub>N</sub>(m) is zero, which can also be regarded as a multiple of N!. If m &lt; -(N - 1), then we may put m = -m' - (N - 1) where m' is positive. Then p<sub>N</sub>(m) = (-1)<sup>N</sup> p<sub>N</sub>(m') which is divisible by N!. So certainly if we take N to be the smallest integer such that n divides N!, then we can find a polynomial with leading coefficient 1 (namely p<sub>N</sub>(x) ) such that n divides p(m) for all integral m.
+
+<p>
+
+Now suppose p(x) is any polynomial with this property. We may write p(x) = p<sub>M</sub>(x) + a<sub>1</sub>p<sub>M-1</sub>(x) + ... + a<sub>M-1</sub>p<sub>1</sub>(x) + a<sub>M</sub>, where M is the degree of M and a<sub>i</sub> are integers (just choose successively, a<sub>1</sub> to match the coefficient of x<sup>M-1</sup>, then a<sub>2</sub> to match the coefficient of x<sup>M-2</sup> and so on).
+
+<p>
+
+Taking x = n, we conclude that n must divide a<sub>M</sub>, so there is another polynomial of the same degree, namely p(x) - a<sub>M</sub> with the same property. In other words, we may take a<sub>M</sub> = 0. Now take x = n - 1. Then p<sub>2</sub>(x), p<sub>3</sub>(x), ... are all divisible by n. So a<sub>M-1</sub>p<sub>1</sub>(n - 1) must also be divisible by n. But n and n - 1 are relatively prime, so a<sub>M-1</sub> must be divisible by n. Hence the polynomial p<sub>M</sub>(x) + a<sub>1</sub>p<sub>M-1</sub>(x) + ... + a<sub>M-2</sub>p<sub>2</sub>(x) has the same property.
+
+<p>
+
+This argument continues on until we conclude that p<sub>M</sub>(x) has the same property, but a little care is needed, because in general n and p<sub>i</sub>(n - i ) are not relatively prime. However, their greatest common divisor is also the gcd of n and i! (just multiply out p<sub>i</sub>(n - i) = (n - 1)(n - 2)...(n - i ) - all terms except the i! term have a factor n). But i! divides p<sub>i</sub>(m) for all m (proved above), so the fact than n divides a<sub>M-i</sub>p<sub>i</sub>(n - i ) allows us to conclude that n divides a<sub>M-i</sub>p<sub>i</sub>(m) for all m and hence that we can drop the term.
+
+<p>
+
+So we have finally that p<sub>M</sub>(x) also has the property. In particular, n must divide p<sub>M</sub>(1) = M! so M must be at least as big as N, the smallest number with this property. That establishes that f(n) is just the smallest N such that n divides N!.
+
+<p>
+
+Finally we want f(1000000) = f(2<sup>6</sup>5<sup>6</sup>). Evidently 25 is the smallest N such that 5<sup>6</sup> divides N! (25! includes 5 x 10 x 15 x 20 x 25 which is just the 6 powers of 5 needed). Certainly at least 2<sup>12</sup> divides 25! (which includes 12 even numbers in the product: 2, 4, 6, ... , 24), so f(1000000) = 25.
+
+<p>
+
+<i>Comment. The middle section of this argument, where we show that n must divide M! is rather clumsy. One could tidy it up as follows. For any polynomial q(x) of degree m, define &Delta;q(x) = q(x) - q(x-1). It has degree m - 1 and leading coefficient m times that of q. Hence if p(x) has degree M and leading coefficient 1, then &Delta;<sup>M</sup>p(x) is simply the constant polynomial M!. But it is also a linear combination of polynomials p(x - m) for various m. Hence n divides M! .</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn74.html">35th Putnam 1974</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+18 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

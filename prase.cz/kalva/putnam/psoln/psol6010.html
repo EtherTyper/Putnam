@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1960/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>21st Putnam 1960</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Fluid flowing in the plane has the velocity (y + 2x - 2x<sup>3</sup> - 2xy<sup>2</sup>, - x) at (x, y). Sketch the flow lines near the origin. What happens to an individual particle as t &rarr; &infin; ?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The key insight is that the unit circle centre the origin is one possible trajectory. [The velocity is (y + 2x - 2xr<sup>2</sup>, - x) = (y, -x) on r = 1.] Hence fluid starting inside this circle remains inside it and fluid starting outside it remains outside. Differentiating r<sup>2</sup> = x<sup>2</sup> + y<sup>2</sup> gives r dr/dt = 2x<sup>2</sup>(1 - r<sup>2</sup>). Hence if r &lt; 1, then dr/dt is positive, so points inside the unit circle move outwards towards it. Similarly, if r &gt; 1, then dr/dt is negative, so points outside the unit circle move inwards towards it.
+
+<p>
+
+To find the behaviour close to the origin, we drop the cubic terms. The equations are then linear and can be solved to get x = (at + b)e<sup>t</sup>, y = (-at + a - b)e<sup>t</sup>. This gives S shaped curves centred on the origin at a 45<sup>o</sup> angle touching the line y = -x.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn60.html">21st Putnam 1960</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

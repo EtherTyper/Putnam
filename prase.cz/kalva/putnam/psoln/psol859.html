@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1985/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>46th Putnam 1985</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+a<sub>i j</sub> is a positive integer for i, j = 1, 2, 3, ... and for each positive integer we can find exactly eight a<sub>i j</sub> equal to it. Prove that a<sub>i j</sub> &gt; ij for some i, j.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The idea is to show that for some N there are more than 8N pairs (i, j) with ij &le; N. For then if we always had a<sub>i j</sub> &le; ij we would have a<sub>i j</sub> &le; N for more than 8N pairs (i, j) and hence some value in {1, 2, ... , N} would be shared by more than 8 a<sub>i j</sub>, contradicting the premise.
+
+<p>
+
+The number of pairs (i, j) with ij &le; N is [N/1] + [N/2] + ... + [N/N] = N(1 + 1/2 + 1/3 + ... + 1/N) - N. But &sum; 1/n diverges, so it is certainly greater than 9 for N sufficiently large.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn85.html">46th Putnam 1985</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

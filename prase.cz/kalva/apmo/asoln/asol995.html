@@ -1,0 +1,92 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+
+
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>APMO 99/5 solution</TITLE>
+
+<META NAME="GENERATOR" CONTENT="Arachnophilia 3.6">
+
+<META NAME="FORMATTER" CONTENT="Arachnophilia 3.6">
+
+</HEAD>
+
+
+
+<BODY BACKGROUND="../../pap1.jpg" TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>11th APMO 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 5</b><br>
+
+<p>
+
+A set of 2n+1 points in the plane has no three collinear and no four concyclic. A circle is said to divide the set if it passes through 3 of the points and has exactly n - 1 points inside it. Show that the number of circles which divide the set is even iff n is even.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Take two of the points, A and B, and consider the 2n-1 circles through A and B. We will show that the number of these circles which divide the set is odd. The result then follows almost immediately, because the number of pairs A, B is (2n+1)2n/2 = N, say. The total number of circles which divide the set is a sum of N odd numbers divided by 3 (because each such circle will be counted three times). If n is even, then N is even, so a sum of N odd numbers is even. If n is odd, then N is odd, so a sum of N odd numbers is odd. Dividing by 3 does not change the parity.
+
+<p>
+
+Their centers all lie on the perpendicular bisector of AB. Label them C<sub>1</sub>, C<sub>2</sub>, ... , C<sub>2n-1</sub>, where the center of C<sub>i</sub> lies to the left of C<sub>j</sub> on the bisector iff i &lt; j. We call the two half-planes created by AB the left-hand half-plane L and the right-hand half-plane R correspondingly. Let the third point of the set on C<sub>i</sub> be X<sub>i</sub>. Suppose i &lt; j. Then C<sub>i</sub> contains all points of C<sub>j</sub> that lie in L and C<sub>j</sub> contains all points of C<sub>i</sub> that lie R. So X<sub>i</sub> lies inside C<sub>j</sub> iff X<sub>i</sub> lies in R and X<sub>j</sub> lies inside C<sub>i</sub> iff X<sub>j</sub> lies in L 
+
+<p>
+
+Now plot f(i), the number of points in the set that lie inside C<sub>i</sub>, as a function of i. If X<sub>i</sub> and X<sub>i+1</sub> are on opposite sides of AB, then f(i+1) = f(i). If they are both in L, then f(i+1) = f(i) - 1, and if they are both in R, then f(i+1) = f(i) + 1. Suppose m of the X<sub>i</sub> lie in L and 2n-1-m lie in R. Now suppose f(i) = n-2, f(i+1) = f(i+2) = ... = f(i+j) = n-1, f(i+j+1) = n. Then j must be odd. For X<sub>i</sub> and X<sub>i+1</sub> must lie in R. Then the points must alternate, so X<sub>i+2</sub> lies in L, X<sub>i+3</sub> lies in R etc. But X<sub>i+j</sub> and X<sub>i+j+1</sub> must lie in R. Hence j must be odd. On the other hand, if f(i+j+1) = n-2, then j must be even. So the parity of the number of C<sub>1</sub>, C<sub>2</sub>, ... , C<sub>i</sub> which divide the set only changes when f crosses the line n-1 from one side to the other. We now want to say that f starts on one side of the line n-1 and ends on the other, so the final parity must be odd. Suppose there are m points in L and hence 2n-1-m in R. Without loss of generality we may take m &lt;= n-1. The first circle C<sub>1</sub> contains all the points in L except X<sub>1</sub> if it is in L.  So f(1) = m or m-1. Similarly the last circle C<sub>2n-1</sub> contains all the points in R except X<sub>2n-1</sub> if it is in R. So f(2n-1) = 2n-1-m or 2n-2-m. Hence if m &lt; n-1, then f(1) = m or m-1, so f(1) &lt; n-1. But 2n-1-m &gt;= n+1, so f(2n-1) &gt; n-1. So in this case we are done.
+
+<p>
+
+However, there are complications if m = n-1. We have to consider 4 cases. Case (1): m = n-1, X<sub>1</sub> lies in R, X<sub>2n-1</sub> lies in L. Hence f(1) = n-1, f(2n-1) = n &gt; n-1. So f starts on the line n-1. If it first leaves it downwards, then for the previous point i, X<sub>i</sub> is in L and hence there were an even number of points up to i on the line. So the parity is the same as if f(1) was below the line. f(2n-1) is above the line, so we get an odd number of points on the line. If f first leaves the line upwards, then for the previous point i, X<sub>i</sub> is in R and hence there were an odd number of points up to i on the line. So again the parity is the same as if f(1) was below the line.
+
+<p>
+
+Case (2): m = n-1, X<sub>1</sub> lies in R, X<sub>2n-1</sub> lies in R. Hence f(1) = f(2n-1) = n-1. As in case (1) the parity is the same as if f(1) was below the line. If the last point j with f(j) not on the line has f(j) &lt; n-1, then (since X<sub>2n-1</sub> lies in R) there are an odd number of points above j, so the parity is the same as if f(2n-1) was above the line. Similarly if f(j) &gt; n-1, then there are an even number of points above j, so again the parity is the same as if f(2n-1) was above the line.
+
+<p>
+
+Case (3): m = n-1, X<sub>1</sub> lies in L, X<sub>2n-1</sub> lies in L. Hence f(1) = n-2, f(2n-1) = n. So case has already been covered.
+
+<p>
+
+Case (4): m=n-1, X<sub>1</sub> lies in L, X<sub>n-1</sub> lies in R. So f(1) = n-2, f(2n-1) = n-1. As in case (2), the parity is the same as if f(2n-1) was above the line.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../apmo99.html">11th APMO 1999</a><br>
+
+<p>(C) John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Apr 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,114 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1984/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>45th Putnam 1984</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Let A be the 2n x 2n matrix whose diagonal elements are all x and whose off-diagonal elements a<sub>ij</sub> = a for i + j even, and b for i + j odd. Find lim<sub>x&rarr;a</sub>det A/(x - a)<sup>2n-2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: n<sup>2</sup>(a<sup>2</sup> - b<sup>2</sup>)
+
+<p>
+
+Subract the first row from the third, fifth and other odd numbered rows. Subtract the second row from the fourth, sixth and other even numbered rows. This gives all rows from 3 onwards a factor (x - a). Having extracted these factors, we may set x = a, to get lim<sub>x&rarr;a</sub>det A/(x - a)<sup>2n-2</sup> = 
+
+<pre>
+
+ a   b   a   b  ...  a   b
+
+ b   a   b   a  ...  b   a
+
+-1   0   1   0  ...  0   0
+
+ 0  -1   0   1  ...  0   0
+
+...
+
+ 0  -1   0   0  ...  0   1
+
+</pre>
+
+Now add the first row to the second row. This gives a factor (a + b). Remove it and add cols 3, 5 , ... to col 1 and subtract cols 2, 4, 6, ... from col 1. This gives n(a - b) in position 1, 1 and zeros elsewhere in col 1, so we may take out a factor n(a - b). Now add cols 4, 6, ... to col 2. This gives nb in position 1, 2 and n in position 2, 2 with zeros elsewhere in col 2. So we may take out a factor n, leaving
+
+<pre>
+
+ 1   b   a   b  ...  a   b
+
+ 0   1   1   1  ...  1   1
+
+ 0   0   1   0  ...  0   0
+
+ 0   0   0   1  ...  0   0
+
+...
+
+ 0   0   0   0  ...  0   1
+
+</pre>
+
+Expanding by the first col gives
+
+<pre>
+
+ 1   1   1  ...  1   1
+
+ 0   1   0  ...  0   0
+
+ 0   0   1  ...  0   0
+
+...
+
+ 0   0   0  ...  0   1
+
+</pre>
+
+Expanding again by the first col gives 1. So lim<sub>x&rarr;a</sub>det A/(x - a)<sup>2n-2</sup> = n<sup>2</sup>(a<sup>2</sup> - b<sup>2</sup>).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn84.html">45th Putnam 1984</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

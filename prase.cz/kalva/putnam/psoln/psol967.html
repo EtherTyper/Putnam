@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1996/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+Let N be the set {1, 2, 3, ... , n}. X is <i>selfish</i> if |X| &isin; X. How many subsets of N are selfish and have no proper selfish subsets.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: Fibonacci sequence.
+
+<p>
+<i>Easy if you spot the pattern. A routine computation with binomial coefficients if not.</i>
+
+<p>
+Observe first that X is a minimal selfish set iff |X| is the smallest element of X. Let  be the collection of selfish subsets of {1, 2, ... , n} and let u<sub>n</sub> = |S<sub>n</sub>|. Clearly S<sub>n</sub> &sube; S<sub>n+1</sub>. Indeed if n+1 &notin; A &isin; S<sub>n+1</sub>, then A &isin; S<sub>n+1</sub>. Suppose now that n+1 &isin; A &isin; S<sub>n+1</sub>. Define f(A) as follows: remove n+1 and reduce the other elements by 1. No element of f(A) can exceed n-1, so f is a map to S<sub>n-1</sub>, and it is clearly (1, 1). We show that is also onto. Suppose B &isin; S<sub>n-1</sub>. Form A by increasing each element by 1 and adjoining n+1. A is a minimal selfish set because |B| is the smallest element of B, so |A| = |B|+1 is the smallest element of A. Hence A &isin; S<sub>n+1</sub> and f(A) = B, so f is onto. So S<sub>n+1</sub> = S<sub>n</sub> &cup; S<sub>n-1</sub>, and hence u<sub>n+1</sub> = u<sub>n</sub> + u<sub>n-1</sub>. Clearly u<sub>2</sub> = 1, u<sub>3</sub> = 2, so u<sub>n</sub> is the Fibonacci sequence.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn96.html">Putnam 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

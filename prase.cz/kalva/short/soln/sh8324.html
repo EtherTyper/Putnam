@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1983/24 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>24th IMO 1983 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 24</b>
+<p>
+d<sub>n</sub> is the last non-zero digit of n! . Show that there is no k such that d<sub>n</sub> = d<sub>n+k</sub> for all sufficiently large n.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Let L(n) be the last non-zero digit of n. The basic idea is that if L(N) and L(N') are both even and L(NN') = L(N), then L(N') must be 6. 
+<p>
+Note first that L(n!) is always even for n &gt; 1 because n! has more 2 factors than 5 factors. Suppose there is a period T. For k even, we always have L(k) &ne; L(2k), so T is not 1. But if n has last digit 1, then L(n!) = L(n-1!) so if the sequence had period 2, it would also have period 1, which is impossible. So T is not 2. If n has last digit 2, then n+1 has last digit 3 and n(n+1) has last digit 6. But L(k) = L(6k) for k even, so L(n+1!) = L(n-1!). However, L(k) &ne; L(4k) for k even, so L(n+2!) &ne; L(n-1!). Hence T is not 3. So T &gt; 3. Hence (T-1)! has last non-zero digit even.
+<p>
+Now take m sufficiently large that 10<sup>m</sup> &gt; (T-1)!. Put n = 10<sup>m</sup> - 1. Then N' = (n+1)(n+1) ... (n+T) = 10<sup>m</sup>(10<sup>m</sup>+1)...(10<sup>m</sup>+T-1) = 10<sup>m</sup>(T-1)! mod 10<sup>2m</sup>. So L(N') = L(T-1!) and is therefore even. By assumption L(n+T!) = L(n!) and is even. So L(N') = 6.
+<p>
+Now take n' = 2&middot;10<sup>m</sup> - 1. Again L(n'+T!) = L(n'!) and is even. We have (n'+T)!/n'! = 2&middot;10<sup>m</sup>(2&middot;10<sup>m</sup> + 1) ... (2&middot;10<sup>m</sup> + T-1) = 2(T-1)! mod 10<sup>2m</sup>. So L((n'+T)!/n'!) = 2L(T-1!) = 2. But that implies L(n'+T!) &ne; L(n'!). Contradiction.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh83.html">24th IMO shortlist 1983</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+26 Nov 2003
+<br>Last corrected/updated 26 Nov 03
+</BODY>
+
+</HTML>
+

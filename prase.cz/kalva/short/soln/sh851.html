@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1985/1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>26th IMO 1985 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 1</b><br>
+<p>
+Show that if n is a positive integer and a and b are integers, then n! divides a(a + b)(a + 2b) ... (a + (n-1)b) b<sup>n-1</sup>.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<i>Solution by Demetres Christofides</i>
+<p>
+If p<sup>k</sup> is the highest power of a prime p dividing n!, then k = [n/p] + [n/p<sup>2</sup>] + [n/p<sup>3</sup>] + ... . We have p &ge; 2, so [n/p] + [n/p<sup>2</sup>] + [n/p<sup>3</sup>] + ... &le; [n/2] + [n/4] + [n/8] + ... &lt; n/2 + n/4 + n/8 + ... = n. Note that the inequality is strict, because [n/2] + [n/4] + [n/8] + ... has only finitely many non-zero terms. But k is integral, so k &le; n-1.
+<p>
+If p divides b, then p<sup>n-1</sup> divides b<sup>n-1</sup> and hence p<sup>k</sup> divides b<sup>n-1</sup>. So suppose p does not divide b. 
+<p>
+The set S = {a, a+b, a+2b + ... + a+(n-1)b} contains [n/p<sup>r</sup>] complete sets of residues mod p<sup>r</sup>, so it contains at least [n/p<sup>r</sup>] numbers divisible by p<sup>r</sup>. Suppose it has exactly a<sub>r</sub> numbers divisible by p<sup>r</sup>. Then it has a<sub>r</sub> - a<sub>r+1</sub> numbers divisible by p<sup>r</sup> but not p<sup>r+1</sup>, so the product of its elements is divisible by (a<sub>1</sub> - a<sub>2</sub>) + 2(a<sub>2</sub> - a<sub>3</sub>) + 3(a<sub>3</sub> - a<sub>4</sub>) + ... = a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + ... powers of p. But a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + ... &ge; [n/p] + [n/p<sup>2</sup>] + [n/p<sup>3</sup>] + ... = k. So p<sup>k</sup> divides a(a+b)(a+2b) ... (a+(n-1)b).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh85.html">26th IMO shortlist 1985</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+14 Sep 2002
+</BODY>
+
+</HTML>
+

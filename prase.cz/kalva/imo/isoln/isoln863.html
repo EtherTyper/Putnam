@@ -1,0 +1,64 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1986/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1986</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+To each vertex of a regular pentagon an integer is assigned, so that the sum of all five numbers is positive. If three consecutive vertices are assigned the numbers x, y, z respectively, and y &lt; 0, then the following operation is allowed: x, y, z are replaced by x + y, -y, z + y respectively. Such an operation is performed repeatedly as long as at least one of the five numbers is negative. Determine whether this procedure necessarily comes to an end after a finite number of steps.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Let S be the sum of the absolute value of each set of adjacent vertices, so if the integers are a, b, c, d, e, then S = |a| + |b| + |c| + |d| + |e| + |a + b| + |b + c| + |c + d| + |d + e| + |e + a| + |a + b + c| + |b + c + d| + |c + d + e| + |d + e + a| + |e + a + b| + |a + b + c + d| + |b + c + d + e| + |c + d + e + a| + |d + e + a + b| + |e + a + b + c| + |a + b + c + d + e|. Then the operation reduces S, but S is a greater than zero, so the process must terminate in a finite number of steps. So see that S is reduced, we can simply write out all the terms. Suppose the integers are a, b, c, d, e before the operation, and a+b, -b, b+c, d, e after it. We find that we mostly get the same terms before and after (although not in the same order), so that the sum S' after the operation is S - |a + c + d + e| + |a + 2b + c + d + e|. Certainly a + c + d + e &gt; a + 2b + c + d + e since b is negative, and a + c + d + e &gt; -(a + 2b+ c + d + e) because a + b + c + d + e &gt; 0. 
+
+<p>
+
+<i>S is not the only expression we can use. If we take T = (a - c)<sup>2</sup> + (b - d)<sup>2</sup> + (c - e)<sup>2</sup> + (d - a)<sup>2</sup> +(e - b)<sup>2</sup>, then after replacing a, b, c by a+b, -b, b+c,  we get T' = T + 2b(a + b + c + d + e) &lt; T. Thanks to Demetres Chrisofides for T</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo86.html">27th IMO 1986</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Sep 2002
+
+</BODY>
+
+
+
+</HTML>
+

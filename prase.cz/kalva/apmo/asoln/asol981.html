@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 98/1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>10th APMO 1998</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 1</b><br>
+<p>
+S is the set of all possible n-tuples (X<sub>1</sub>, X<sub>2</sub>, ... , X<sub>n</sub>) where each X<sub>i</sub> is a subset of {1, 2, ... , 1998}. For each member k of S let f(k) be the number of elements in the union of its n elements. Find the sum of f(k) over all k in S.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 1998(2<sup>1998n</sup> - 2<sup>1997n</sup>).
+<p>
+Let s(n, m) be the sum where each X<sub>i</sub> is a subset of {1, 2, ... , m}. There are 2<sup>m</sup> possible X<sub>i</sub> and hence 2<sup>mn</sup> possible n-tuples. We have s(n, m) = 2<sup>n</sup>s(n, m-1) + (2<sup>n</sup> - 1)2<sup>n(m-1)</sup> (*). For given any n-tuple {X<sub>1</sub>, ... , X<sub>n</sub>} of subsets of {1, 2, ... , m-1} we can choose to add m or not (2 choices) to each X<sub>i</sub>. So we derive 2<sup>n</sup> n-tuples of subsets of {1, 2, ... , m}. All but 1 of these have f(k) incremented by 1. The first term in (*) gives the sum for m-1 over the increased number of terms and the second term gives the increments to the f(k) due to the additional element.
+<p>
+Evidently s(n, 1) = 2<sup>n</sup> - 1. It is now an easy induction to show that s(n, m) = m(2<sup>nm</sup> - 2<sup>n(m-1)</sup>).
+<p>
+Putting m = 1998 we get that the required sum is 1998(2<sup>1998n</sup> - 2<sup>1997n</sup>).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo98.html">10th APMO 1998</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

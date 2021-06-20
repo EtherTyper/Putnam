@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 99/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>28th USAMO 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+A set of n &gt; 3 real numbers has sum at least n and the sum of the squares of the numbers is at least n<sup>2</sup>. Show that the largest positive number is at least 2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let the numbers be x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub>. Notice first that x<sub>1</sub> = x<sub>2</sub> = ... = x<sub>n-1</sub> = 2, x<sub>n</sub> = 2 - n, gives &sum; x<sub>i</sub> = (n - 1)2 + (2 - n) = n, &sum; x<sub>i</sub><sup>2</sup> = (n - 1)4 + (4 - 4n + n<sup>2</sup>) = n<sup>2</sup>, so the inequality is best possible.
+
+<p>
+
+Suppose the result is false. So we have a set of numbers with <font face="symbol">S</font> x<sub>i</sub> &ge; n, &sum; x<sub>i</sub><sup>2</sup> &ge; n<sup>2</sup> and max x<sub>i</sub> &lt; 2. At least one of the numbers must be negative, since otherwise we have n &ge; 4, so n<sup>2</sup> &ge; 4n &gt; &sum; x<sub>i</sub><sup>2</sup>. Contradiction. This allows us to assume that &sum; x<sub>i</sub> = n, for if it is greater, we may just decrease a negative x<sub>i</sub> until it becomes true (&sum; x<sub>i</sub><sup>2</sup> will be increased, so it will remain at least n<sup>2</sup>).
+
+<p>
+
+Now suppose two of the x<sub>i</sub>, namely x and y, are less than 2. Then if we replace them by 2 and x + y - 2, the sum is unaffected and the sum of squares is  increased by 2(2 - x)(2 - y). Since we start with all the x<sub>i</sub> less than 2, we may do this repeatedly until we reach a set with all the numbers 2 except one. Since the sum is unchanged, the other number must be 2 - n, and, as shown above, that makes the sum of the squares n<sup>2</sup>. But we have increased the sum of the squares at each step. Contradiction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa99.html">28th USAMO 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

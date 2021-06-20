@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>17th Putnam 1957/A7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>17th Putnam 1957</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A7</b><br>
+
+<p>
+
+Show that we can find a set of disjoint circles such that given any rational point on the x-axis, there is a circle touching the x-axis at that point. Show that we cannot find such a set for the irrational points.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Two disjoint circles touching the x-axis at A and B and each with radius r cannot have AB &lt; 2r. Now suppose a circle radius R &ge; r touches at A and a disjoint circle radius r touches at B. The circle radius r touching at A does not extend outside the circle radius R, so the circle at B must also be disjoint from it. Hence we still have AB &ge; 2r. Hence there can only be countably many disjoint circles radius r or more touching the x-axis. But a countable set of countable sets is still countable, so there can only be countably many disjoint circles touching the x-axis (any such circle has radius &gt; 1/n for some n). There are uncountably many irrational points, so we cannot have disjoint circles touching at all the irrational points.
+
+<p>
+
+For the rational points take the circle touching at m/n (in lowest terms) to have radius 1/(3n<sup>2</sup>). Now suppose the circles at m/n and a/b have centres P and Q. We have PQ<sup>2</sup> = (m/n - a/b)<sup>2</sup> + (1/(3n<sup>2</sup>) - 1/(3b<sup>2</sup>) )<sup>2</sup>. If they intersect, then PQ &le; (1/(3n<sup>2</sup>) + 1/(3b<sup>2</sup>) ) and hence (m/n - a/b)<sup>2</sup> &le; (1/(3n<sup>2</sup>) + 1/(3b<sup>2</sup>) )<sup>2</sup> - (1/(3n<sup>2</sup>) - 1/(3b<sup>2</sup>) )<sup>2</sup> = 4/9 1/(n<sup>2</sup>b<sup>2</sup>), so (mb - an)<sup>2</sup> &lt; 4/9. But (mb - an) must be integral, so mb - an = 0 and hence m/n = a/b. So distinct circles do not intersect.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn57.html">17th Putnam 1957</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

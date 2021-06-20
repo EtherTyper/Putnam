@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 94/4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>23rd USAMO 1994</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 4</b><br>
+
+<p>
+
+x<sub>i</sub> is a infinite sequence of positive reals such that for all n, x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>n</sub> &ge; &radic;n. Show that x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> + ... + x<sub>n</sub><sup>2</sup> &gt; (1 + 1/2 + 1/3 + ... + 1/n) / 4 for all n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Note that this is rather a weak inequality. Taking n = 1, we get x<sub>1</sub> &gt;= 1, but (1 + 1/2 + 1/3 + ... + 1/30) &lt; 4, so it is only for n &gt; 30 that we need to consider x<sub>2</sub>! Of course, weak inequalities can be awkward to prove.
+
+<p>
+
+For a + b constant, we minimise a<sup>2</sup> + b<sup>2</sup> by taking |a - b| as small as possible. So we suspect that the minimum value of x<sub>1</sub><sup>2</sup> + ... + x<sub>n</sub><sup>2</sup> is when x<sub>1</sub> = 1, x<sub>2</sub> = &radic;2 - 1, x<sub>3</sub> = &radic;3 - &radic;2, x<sub>4</sub> = &radic;4 - &radic;3, ...  (*). Note that &radic;n - &radic;(n-1) = 1/(&radic;n + &radic;(n-1) &gt; 1/(2&radic;n). So for the values (*) we have x<sub>1</sub><sup>2</sup> + ... + x<sub>n</sub><sup>2</sup> &gt; (1 + 1/2 + 1/3 + ... + 1/n)/4. So it remains to show that the values (*) do indeed give the minimum.
+
+<p>
+
+We use Abel's partial summation formula (whose proof is trivial). Put y<sub>n</sub> = &radic;n - &radic;(n-1), s<sub>n</sub> = x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>n</sub>, t<sub>n</sub> = y<sub>1</sub> + ... + t<sub>n</sub>. So we assume s<sub>n</sub> &ge; t<sub>n</sub>. Note also that y<sub>1</sub> &gt; y<sub>2</sub> &gt; y<sub>3</sub> &gt; ... . Then the partial summation formula is: &sum; x<sub>i</sub>y<sub>i</sub> = &sum; s<sub>i</sub>(y<sub>i</sub> - y<sub>i+1</sub>) + s<sub>n</sub>y<sub>n+1</sub> (where the sum is taken from 1 to n). We also have &sum; y<sub>i</sub><sup>2</sup> = &sum; t<sub>i</sub>(y<sub>i</sub> - y<sub>i+1</sub>) + t<sub>n</sub>y<sub>n+1</sub>. But each term is not more than the corresponding term in the first equality, so &sum; y<sub>i</sub><sup>2</sup> &le; &sum; x<sub>i</sub>y<sub>i</sub>.
+
+<p>
+
+Now Cauchy-Schwartz gives (&sum; x<sub>i</sub>y<sub>i</sub>)<sup>2</sup> &le; &sum; x<sub>i</sub><sup>2</sup> &sum; y<sub>i</sub><sup>2</sup>. Hence &sum; y<sub>i</sub><sup>2</sup> &le; &sum; x<sub>i</sub><sup>2</sup>, as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa94.html">23rd USAMO 1994</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+23 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

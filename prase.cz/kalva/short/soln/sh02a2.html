@@ -1,0 +1,33 @@
+<HTML>
+
+<HEAD>
+<TITLE>43rd IMO shortlist 2002/A2 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>43rd IMO 2002 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A2</b><br>
+<p>
+The infinite real sequence x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, ... satisfies |x<sub>i</sub> - x<sub>j</sub>| &ge; 1/(i + j) for all unequal i, j. Show that if all x<sub>i</sub> lie in the interval [0, c], then c &ge; 1.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Suppose that we have 0 &le; x<sub>a(1)</sub> &lt; x<sub>a(2)</sub> &lt; ... &lt; x<sub>a(n)</sub> &le; c, for some permutation a(1), a(2), ... , a(n) of 1, 2, ... , n. Then c &ge; x<sub>a(n)</sub> - x<sub>a(1)</sub> = (x<sub>a(n)</sub> - x<sub>a(n-1)</sub>) + ... + (x<sub>a(2)</sub> - x<sub>a(1)</sub>) &ge; 1/(a(n) + a(n-1)) + ... 1/(a(3) + a(2)) + 1/(a(2) + a(1)).
+<p>
+The rest is straightforward. Using Cauchy-Schwartz, we have ( 1/(a(n) + a(n-1)) + ... + 1/(a2) + a(1)) )(a(n) + a(n-1) + a(n-1) + a(n-2) + ... a(3) + a(2) + a(2) + a(1) ) &ge; (1 + 1 + ... + 1)<sup>2</sup> = (n - 1)<sup>2</sup>. Hence c &ge; (n - 1)<sup>2</sup>/(2(1 + 2 + ... + n)- a(1) - a(n)) = (n - 1)<sup>2</sup>/(n<sup>2</sup> + n - a(1) - a(2) ) &ge; (n - 1)<sup>2</sup>/(n<sup>2</sup> + n - 3) = 1 - (3n - 4)/(n<sup>2</sup> + n - 3). That is true for all n, so c &ge; 1.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh02.html">43rd IMO shortlist 2002</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+8 Aug 2003
+<br>Last corrected/updated 8 Aug 2003
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Vietnam 85/2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>23rd VMO 1985</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b>
+
+<p>
+
+Find all real-valued functions f(n) on the integers such that f(1) = 5/2, f(0) is not 0, and f(m) f(n) = f(m+n) + f(m-n) for all m, n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+f(n) = 2<sup>n</sup> + 1/2<sup>n</sup>
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Putting m = n = 0, we get f(0)<sup>2</sup> = 2f(0), so f(0) = 2. Putting n = 1, we get f(m+1) = 5/2 f(m) + f(m-1). That is a standard linear recurrence relation. The associated quadratic has roots 2, 1/2, so the general solution is f(n) = A 2<sup>n</sup> + B/2<sup>n</sup>. f(0) = 1 gives A + B = 2, f(1) = 5/2 gives 2A + B/2 = 5/2, so A = B = 1. It is now easy to check that this solutions satisfies the conditions.
+<p>
+<i>Thanks to Suat Namli</i>
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../viet85.html">23rd VMO 1985</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 February 2004
+<br>Last corrected/updated 12 Feb 04
+
+</BODY>
+
+
+
+</HTML>
+

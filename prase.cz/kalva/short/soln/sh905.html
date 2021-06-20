@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<TITLE>31st IMO shortlist 1990/5 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>31st IMO 1990 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 5</b>
+<p>
+The triangle ABC has unequal sides, centroid G, incenter I and orthocenter H. Show that angle GIH &gt; 90<sup>o</sup>.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Let N be the midpoint of OH. Then <b>IN</b> = (<b>IO</b> + <b>IH</b>)/2, so <b>IH</b> = 2<b>IN</b> - <b>IO</b> (we use bold to represent vectors). G lies on the line OH with OG = OH/3 (the Euler line), so OG = 2GN and hence <b>IG</b> = (2<b>IN</b> + <b>IO</b>)/3. Hence <b>IH</b>.<b>IG</b> = (4<b>IN</b><sup>2</sup> - <b>IO</b><sup>2</sup>)/3. We have the well-known results OI<sup>2</sup> = R<sup>2</sup> - 2rR (<a href="../../imo/isoln/isoln626.html">Euler's formula</a> and IN = R/2 - r (Feuerbach's theorem - usually stated as "the incircle and the nine-point circle touch" - N is the center of the nine-point circle and R/2 is the radius of the nine-point circle).
+<p>
+Hence <b>IH</b>.<b>IG</b> = (R<sup>2</sup> - 4Rr + 4r<sup>2</sup> - R<sup>2</sup> + 2Rr)/3 = -2r(R - 2r)/3 &lt; 0.
+<p>
+<i>If you are fluent with vector formulae for the triangle, the following solution by Mehul Srivastav is straightforward</i>
+<p>
+Use vectors origin O the circumcenter. Take the vector OA to be <b>A</b> etc. Then G = (<b>A</b> + <b>B</b> + <b>C</b>)/3, H = <b>A</b> + <b>B</b> + <b>C</b> (Euler line), <b>I</b> = (a<b>A</b> + b<b>B</b> + c<b>C</b>)/(a+b+c). The last formula is not so well-known, but is easy to verify. Check, for example, that b <b>AI</b>.<b>AB</b> = c <b>AI</b>.<b>AC</b> (for that it is convenient to relocate the origin to A).
+<p>
+We have to show that (<b>G</b>-<b>I</b>).(<b>H</b>-<b>I</b>) &lt; 0, or <b>G</b>.<b>H</b> + <b>I</b><sup>2</sup> - <b>I</b>.(<b>G</b>+<b>H</b>) &lt; 0.
+<p>
+Note that  since the origin is the circumcenter we have <b>B</b>.<b>C</b> = R<sup>2</sup>cos2A = R<sup>2</sup>cos<sup>2</sup>A - R<sup>2</sup>sin<sup>2</sup>A = (R<sup>2</sup> - a<sup>2</sup>/4) - a<sup>2</sup>/4 = R<sup>2</sup> - a<sup>2</sup>/2. Similarly for <b>C</b>.<b>A</b> and <b>A</b>.<b>B</b>. Obviously <b>A</b><sup>2</sup> = <b>B</b><sup>2</sup> = <b>C</b><sup>2</sup> = R<sup>2</sup>. Hence 3<b>G</b>.<b>H</b> = <b>A</b><sup>2</sup> + <b>B</b><sup>2</sup> + <b>C</b><sup>2</sup> + 2<b>A</b>.<b>B</b> + 2<b>B</b>.<b>C</b> + 2<b>C</b>.<b>A</b> = 9R<sup>2</sup> - (a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>).
+<p>
+We have <b>I</b><sup>2</sup> = (a<b>A</b> + b<b>B</b> + c<b>C</b>)<sup>2</sup>/(a+b+c)<sup>2</sup> = ( (a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>)R<sup>2</sup> + 2ab(R<sup>2</sup> - c<sup>2</sup>/2) + 2ac(R<sup>2</sup> - b<sup>2</sup>/2) + 2bc(R<sup>2</sup> - a<sup>2</sup>/2) )/(a+b+c)<sup>2</sup> = R<sup>2</sup> - (abc<sup>2</sup> + ab<sup>2</sup>c + a<sup>2</sup>bc)/(a+b+c)<sup>2</sup> = R<sup>2</sup> - abc/(a+b+c).
+<p>
+(3/4)(a+b+c)<b>I</b>.(<b>G</b>+<b>H</b>) = (a<b>A</b> + b<b>B</b> + c<b>C</b>).(<b>A</b> + <b>B</b> + <b>C</b>) = (a+b+c)R<sup>2</sup> + (a+b)<b>A</b>.<b>B</b> + (b+c)<b>B</b>.<b>C</b> + (c+a)<b>C</b>.<b>A</b> = 3(a+b+c)R<sup>2</sup> - (c<sup>2</sup>(a+b) + a<sup>2</sup>(b+c) + b<sup>2</sup>(a+c))/2.
+<p>
+So we wish to show that 3R<sup>2</sup> - (a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>)/3 + R<sup>2</sup> -abc/(a+b+c) - 4R<sup>2</sup> + (2/3)(a<sup>2</sup>b + b<sup>2</sup>a + ... )/(a+b+c) &lt; 0, or (a+b+c)(a<sup>2</sup>+b<sup>2</sup>+c<sup>2</sup>) + 3abc &gt; 2(a<sup>2</sup>b + b<sup>2</sup>a + ... ) or a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> - (a<sup>2</sup>b + b<sup>2</sup>a + ... ) + 3abc &gt; 0 or a(a-b)(a-c) + b(b-a)(b-c) + c(c-a)(c-b) &gt; 0 (*).
+<p>
+wlog a &gt; b &gt; c. So a(a-c) - b(b-c) &gt; 0. Hence a(a-b)(a-c) + b(b-a)(b-c) &gt; 0. Obviously c(c-a)(c-b) &gt; 0. So (*) holds and hence the result.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh90.html">31st IMO shortlist 1990</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+12 January 2004
+<br>Last updated/corrected 12 Jan 04
+</BODY>
+
+</HTML>
+

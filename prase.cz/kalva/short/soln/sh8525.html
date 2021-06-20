@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1985/25 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>26th IMO 1985 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 25</b><br>
+<p>
+34 countries each sent a leader and a deputy leader to a meeting. Some of the participants shook hands before the meeting, but no leader shook hands with his deputy. Let S be the set of all 68 participants except the leader of country X. Every member of S shook hands with a different number of people (possibly zero). How many people shook hands with the leader or deputy leader of X?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<i>Solution by Demetres Christofides</i>
+<p>
+Answer: 33.
+<p>
+There are 68 delegates. Each shakes hands with at most 66 others, so we can label the 67 members of &nbsp; S as a<sub>0</sub>, a<sub>1</sub>, ... , a<sub>66</sub>, where a<sub>n</sub> shakes hands with n delegates. Let L be the leader of country X. We claim that: (1) a<sub>66</sub> shakes hands with a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>65</sub> and L, and is from the same country as a<sub>0</sub>; (2) for n = 1, 2, ... , 32, delegate a<sub>n</sub> shakes hands with a<sub>67-n</sub>, a<sub>68-n</sub>, ... , a<sub>66</sub> and is the partner of a<sub>66-n</sub> who shakes hands with , a<sub>n+1</sub>, a<sub>n+2</sub>, ... , a<sub>66</sub> (except himself) and L, (3) the deputy leader is a<sub>33</sub>, (4) L shakes hands with a<sub>34</sub>, a<sub>35</sub>, ... , a<sub>66</sub>.
+<p>
+Note that a<sub>66</sub> shakes hands with everyone except himself and the other delegate from his country. a<sub>0</sub> does not shake hands with anyone, and hence in particular does not shake hands with a<sub>66</sub>, so they must be from the same country. That establishes (1).
+<p>
+We prove (2) by induction. (1) is effectively the case n = 0. Suppose it is true for all m &lt; n &lt; 32. Then a<sub>66-m</sub> shakes hands with a<sub>n</sub> (by induction) for m = 0, 1, ... , n-1. That accounts for all n people who shake hands with a<sub>n</sub>. Similarly, a<sub>m</sub> does not shake hands with a<sub>66-n</sub>, which gives n people who do not shake hands with a<sub>66-n</sub>. We have just established that a<sub>n</sub> does not and a<sub>66-n</sub> himself does not, so we have n+2 people who do not, and hence at most 68-(n+2) = 66-n who do. So the n+2 people are the <i>only</i> people who do not. The only candidate for the partner of a<sub>66-n</sub> is a<sub>n</sub>. That establishes the case n. So by induction it is true for n = 1, 2, ... , 32. 
+<p>
+The only person unaccounted for, who could be L's partner is a<sub>33</sub>. That establishes (3). We establish (4) by inspection of (1) and (2). Finally, we note that a<sub>0</sub>, a<sub>1</sub>, ... , a<sub>32</sub> do not shake hands with L or a<sub>33</sub>, whereas a<sub>34</sub>, a<sub>35</sub>, ... , a<sub>66</sub> shake hands with both a<sub>33</sub> and L.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh85.html">26th IMO shortlist 1985</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Sep 2002
+</BODY>
+
+</HTML>
+

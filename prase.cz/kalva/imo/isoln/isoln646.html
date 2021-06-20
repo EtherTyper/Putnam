@@ -1,0 +1,84 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1964/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1964</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>
+
+<p>
+
+<b>Problem B3</b>
+
+<p>
+
+ABCD is a tetrahedron and D<sub>0</sub> is the centroid of ABC. Lines parallel to DD<sub>0</sub> are drawn through A, B and C and meet the planes BCD, CAD and ABD in A<sub>0</sub>, B<sub>0</sub>, and C<sub>0</sub> respectively. Prove that the volume of ABCD is one-third of the volume of A<sub>0</sub>B<sub>0</sub>C<sub>0</sub>D<sub>0</sub>. Is the result true if D<sub>0</sub> is an arbitrary point inside ABC?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Yes, indeed it is true for an arbitrary point in the plane of ABC not on any of the lines AB, BC, CA
+
+<p>Take D as the origin. Let A, B, C be the points <b>a</b>, <b>b</b>, <b>c</b> respectively. Then D<sub>0</sub> is p<b>a</b> + q<b>b</b> + r<b>c</b> with p + q + r = 1 and p, q, r &gt; 0. So a point on the line parallel to DD<sub>0</sub> through A is <b>a</b> + s(p<b>a</b> + q<b>b</b> + r<b>c</b>. It is also in the plane DBC if s = -1/p, so A<sub>0</sub> is the point - q/p <b>b</b> - r/p <b>c</b>. Similarly, B<sub>0</sub> is - p/q <b>a</b> - r/q <b>c</b>, and C<sub>0</sub> is - p/r <b>a</b> - q/r <b>b</b>.
+
+<p>The volume of ABCD is 1/6 |<b>a x b.c</b>| and the volume of A<sub>0</sub>B<sub>0</sub>C<sub>0</sub>D<sub>0</sub> is 1/6 |(p<b>a</b> + (q + q/p)<b>b</b> + (r + r/p)<b>c</b>) <b>x</b> ((p + p/q)<b>a</b> + q<b>b</b> + (r + r/q)<b>c</b>).((p + p/r)<b>a</b> + (q + q/r)<b>b</b> + r<b>c</b>)|
+
+<p>
+
+Thus vol A<sub>0</sub>B<sub>0</sub>C<sub>0</sub>D<sub>0</sub>/vol ABCD = abs value of the determinant:
+
+<pre>
+
+| p        q + q/p  r + r/p |
+
+| p + p/q  q        r + r/q |
+
+| p + p/r  q + q/r  r       |
+
+</pre>
+
+which is easily found to be 2 + p + q + r = 3.
+
+<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp; <p>
+
+<p><a href="../imo64.html">6th IMO 1964</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Sep 1998
+
+<br>Last updated/corrected 24 Sep 2003
+
+</BODY>
+
+
+
+</HTML>
+

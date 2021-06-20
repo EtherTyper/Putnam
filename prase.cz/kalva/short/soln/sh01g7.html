@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>42nd IMO shortlist 2001/G7 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>42nd IMO 2001 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem G7</b><br>
+<p>
+P is a point inside acute-angled the triangle ABC. The perpendiculars from P meet the sides BC, CA, AB at D, E, F, respectively. Show that P is the circumcenter iff each of the triangles AEF, BDF, CDE has perimeter not exceeding that of DEF.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+One way is obvious: if P is the circumcenter, then D, E, F are the midpoints of the sides and so AEF, BDF, CDE, DEF all have the same area. So assume area AEF &le; area DEF, area BDF &le; area DEF and area CDE &le; area DEF, but P is not the circumcenter. We will obtain a contradiction.
+<p>
+<img src="diag01g7.bmp">
+<p>
+Let the angles in the triangles be as shown in the diagram (there was not room to mark y" = angle DEC.) Take B' so that BDB'F is a parallelogram. Then area BDF = area B'DF,  so E cannot lie inside the triangle B'DF (except possibly at B' itself), because then we would have area DEF &lt; area BDF. Suppose E = B'. Then EF is parallel to BC, and DE is parallel to AB. Hence PD is perpendicular to EF, and PF is perpendicular to DE. Hence P is the orthocenter of DEF and so PE is perpendicular to DF, so DF is parallel to AC. Hence BDEF and AFDE are parallelograms, so BF = DE = AF, in other words F is the midpoint of AB. Similarly, D and E are also midpoints. Hence P is the circumcenter. Contradiction.
+<p>
+So we may assume that E is not <i>any</i> point of B'DF. Hence either x' &lt; y or z" &lt; y. Similarly, y' &lt; z or x" &lt; z, and z' &lt; x or y" &lt; x. Without loss of generality we may assume y' &lt; z (there is symmetry between y' and y"). So looking at triangle AEF, z" &gt; y. Hence x' &lt; y. So looking at CDE, y" &gt; x. Hence z' &lt; x. Looking at BDF, x" &gt; z. So x' &lt; y &lt; z", y' &lt; z &lt; x", and z' &lt; x &lt; y". 
+<p>
+Now AEPF is cyclic, so &ang;AEF = &ang;APF, so AP = PF/cos y'. Similarly, BDPF is cyclic, so &ang;BDF = &ang;BPF, so BP= PF/cos x" &gt; PF/cos y' = AP. Similarly, CP &gt; BP and AP &gt; CP. Contradiction.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh01.html">42nd IMO shortlist 2001</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+14 Oct 2002
+</BODY>
+</HTML>
+

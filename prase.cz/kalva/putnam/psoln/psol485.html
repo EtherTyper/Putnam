@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 48/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>8th Putnam 1948</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Let &alpha;<sub>1</sub>, &alpha;<sub>2</sub>, ... , &alpha;<sub>n</sub> be the nth roots of unity. Find &prod;<sub>i&lt;j</sub> (&alpha;<sub>i</sub> - &alpha;<sub>j</sub>)<sup>2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let &alpha;<sub>k</sub> = exp(2<font face="Symbol">p</font>i(k-1)/n). So &alpha;<sub>1</sub> = 1, and the other &alpha;<sub>k</sub> are roots of x<sup>n-1</sup> + x<sup>n-2</sup> + ... + x + 1 = 0. Hence (1 - &alpha;<sub>2</sub>), ... , (1 - &alpha;<sub>n</sub>) are roots of (1 - x)<sup>n-1</sup> + ... + (1 - x) + 1 = 0. The coefficient of x<sup>0</sup> is n and the coefficient of x<sup>n-1</sup> is (-1)<sup>n-1</sup>. Hence &prod;<sub>2</sub><sup>n</sup>(1 - &alpha;<sub>k</sub>) = n.
+
+<p>
+
+Hence n/&alpha;<sub>k</sub> = (&alpha;<sub>k</sub> - &alpha;<sub>1</sub>)(&alpha;<sub>k</sub> - &alpha;<sub>2</sub>) ... (&alpha;<sub>k</sub> - &alpha;<sub>n</sub>), where the product excludes (&alpha;<sub>k</sub> - &alpha;<sub>k</sub>). Hence n<sup>n</sup>/(&alpha;<sub>2</sub>...&alpha;<sub>n</sub>) = &prod;<sub>i not equ j</sub>(&alpha;<sub>i</sub> - &alpha;<sub>j</sub>) = (-1)<sup>n(n-1)/2</sup> &prod;<sub>i&lt;j</sub>(&alpha;<sub>i</sub> - &alpha;<sub>j</sub>)<sup>2</sup>. But (&alpha;<sub>2</sub>...&alpha;<sub>n</sub>) = (-1)<sup>n-1</sup>. Hence &prod;<sub>i&lt;j</sub>(&alpha;<sub>i</sub> - &alpha;<sub>j</sub>)<sup>2</sup> = (-1)<sup>(n-1)(n-2)/2</sup>n<sup>n</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn48.html">8th Putnam 1948</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

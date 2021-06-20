@@ -1,0 +1,101 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 2001/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b>
+
+<p>
+
+ABC is a triangle. X lies on BC and AX bisects angle A. Y lies on CA and BY bisects angle B. Angle A is 60<sup>o</sup>. AB + BX = AY + YB. Find all possible values for angle B.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+<p>
+
+Answer: 80<sup>o</sup>.
+
+<p>
+&nbsp;<p>
+<b>Solution</b>
+
+<p>
+
+<img src="diag015.jpg">
+
+<p>
+
+This is an inelegant solution, but I did get it fast! Without loss of generality we can take length AB = 1. Take angle ABY = x. Note that we can now solve the two triangles AXB and AYB. In particular, using the sine rule, BX = sin 30<sup>o</sup>/sin(150<sup>o</sup>-2x), AY = sin x/sin(120<sup>o</sup>-x), YB = sin 60<sup>o</sup>/sin(120<sup>o</sup>-x). So we have an equation for x.
+
+<p>
+
+Using the usual formula for sin(a + b) etc, and writing s = sin x, c = cos x, we get: 2&radic;3 s<sup>2</sup>c - 4sc - 2&radic;3 c<sup>3</sup> + 2&radic;3 c<sup>2</sup> + 6sc - 2s - &radic;3 = 0 or -&radic;3 (4c<sup>3</sup> - 2c<sup>2</sup> - 2c + 1) = 2s(2c<sup>2</sup> -3c + 1). This has a common factor 2c - 1. So c = 1/2 or -&radic;3 (2c<sup>2</sup> - 1) = 2s(c - 1) (*).
+
+<p>
+
+c = 1/2 means x = 60<sup>o</sup> or angle B = 120<sup>o</sup>. But in that case the sides opposite A and B are parallel and the triangle is degenerate (a case we assume is disallowed). So squaring (*) and using s<sup>2</sup> = 1 - c<sup>2</sup>, we get: 16c<sup>4</sup> - 8c<sup>3</sup> - 12c<sup>2</sup> + 8c - 1 = 0. This has another factor 2c - 1. Dividing that out we get: 8c<sup>3</sup> - 6c + 1 = 0. But we remember that 4c<sup>3</sup> - 3c = cos 3x, so we conclude that cos 3x = -1/2. That gives x = 40<sup>o</sup>, 80<sup>o</sup>, 160<sup>o</sup>, 200<sup>o</sup>, 280<sup>o</sup>, 320<sup>o</sup>. But we require that x &lt; 60<sup>o</sup> to avoid degeneracy. Hence the angle B = 2x = 80<sup>o</sup>.
+
+<p>
+
+<i>I subsequently found this geometric solution on the official Wolfram site (Wolfram was one of the sponsors of IMO 2001). I cannot say it is much easier, but at least it is geometric. </i>
+
+<p>
+
+<img src="diag015a.jpg">
+
+<p>
+
+Extend AB to X' with BX' = BX. Extend AY to Z with YZ = YB. Then AZ = AY + YZ = AY + YB = AB + BX = AB + BX' = AX'. Angle A = 60<sup>o</sup>, so AZX' is equilateral.
+
+<p>
+
+Use B also to denote the angle at B. Then angle YBX = B/2. Also angle BXX' + angle BX'X = B. The triangle is isosceles by construction, so angle BX'X = B/2. Hence angle XX'Z = 60<sup>o</sup> - B/2. X lies on the bisector of A and AZ = AX', so XZ = XX'. Hence XZX' = 60<sup>o</sup> - B/2 also. But angle Z = 60<sup>o</sup>, so angle YZX = B/2 = angle YBX.
+
+<p>
+
+Now YZ = YB, so angle YZB = angle YBZ. Hence angle XZB = angle XBX (they are the difference of pairs of equal angles). If X does not lie on BZ, then we can conclude that XB = XZ.
+
+<p>
+
+In that case, since XZ = XX', we have XB = XX'. But already XB = BX' (by construction), so BXX' is equilateral and hence B/2 = 60<sup>o</sup>. But then angle B + angle A = 180<sup>o</sup>, so the triangle ABC is degenerate (with C at infinity), which we assume is disallowed. Hence X must lie on BZ, which means Z = C and angle B = 2 angle C. Hence angle B = 80, angle C = 40.
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo01.html">42nd IMO 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+13 Aug 2001
+
+<br>Last corrected/updated 18 Oct 2002
+
+</BODY>
+
+
+
+</HTML>
+

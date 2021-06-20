@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 01/4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>13th APMO 2001</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 4</b><br>
+<p>
+Find all real polynomials p(x) such that x is rational iff p(x) is rational.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+It is necessary for all the coefficients of x to be rational. This is an easy induction on the number of coefficients. For p(0) must be rational, hence ( p(x) - p(0) )/x must be rational for all rational x and so on.
+<p>
+Clearly this condition is also sufficient for polynomials of degree 0 or 1.
+<p>
+There are obviously no quadratics, for if p(x) = ax<sup>2</sup> + bx + c, with a, b, c rational, then p(&radic;2 - b/2a) = 2a - b<sup>2</sup>/4a + c, which is rational.
+<p>
+We prove that if there are also no higher degree polynomials. The idea is to show that there is a rational value k which must be taken for some real x, but which cannot be taken by any rational x.
+<p>
+Suppose p(x) has degree n &gt; 1. Multiplying through by the lcm of the denominators of the coefficients, we get p(x) = (a x<sup>n</sup> + b x<sup>n-1</sup> + ... + u x + v)/w, where a, b, ... , w are all integers. Put x = r/s, where r and s are coprime integers, then p(r/s) = (a r<sup>n</sup> + b r<sup>n-1</sup>s + ... + u r s<sup>n-1</sup> + v s<sup>n</sup>)/( w s<sup>n</sup>). Let q be any prime which does not divide a or w. Consider first a &gt; 0. p(x) must assume all sufficiently large positive values. So it must in particular take the value k = m + 1/q, where m is a sufficiently large integer. So k = (mq + 1)/q. The denominator is divisible by q, but not q<sup>2</sup> and the numerator is not divisible by q. Suppose p(r/s) = k for some integers r, s. The denominator of p(r/s) is w s<sup>n</sup>. We know that w is not divisible by q, so q must divide s. But n &gt; 1, so q<sup>2</sup> divides w s<sup>n</sup>. The numerator of p(r/s) has the form a r<sup>n</sup> + h s. Neither a nor r is divisible by q, so the numerator is not divisible by q. Thus no cancellation is possible and we cannot have p(r/s) = k. Thus there must be some irrational x such that p(x) = k.
+<p>
+If a &lt; 0, then the same argument works except that we take k = m + 1/q, where m is a sufficiently large negative integer.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo01.html">13th APMO 2001</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

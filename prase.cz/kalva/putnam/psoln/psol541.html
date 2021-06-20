@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 54/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>14th Putnam 1954</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+Let N be the set {1, 2, ... , n}, where n is an odd integer. Let f <b>:</b> N x N &rarr; N satisfy: (1) f(r, s) = f(s, r) for all r, s; (2) {f(r, s) <b>:</b> s &isin; N} = N for each r. Show that {f(r, r) <b>:</b> r &isin; N} = N.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Easy.</i>
+
+<p>
+
+We have a square array of numbers a<sub>ij</sub> = f(i, j). Each member of N occurs just once in each row (by (2) ), so it occurs n times in all. But the array is symmetric (by (1) ), so each member occurs an even number of times off the main diagonal. Hence it must occur an odd number of times, and hence at least once, on the main diagonal. But the main diagonal only has n entries, so if each of n numbers occurs at least once, then each must occur exactly once.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn54.html">14th Putnam 1954</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

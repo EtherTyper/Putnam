@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1961/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>22nd Putnam 1961</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Let n be an integer greater than 2. Define the sequence a<sub>m</sub> by a<sub>1</sub> = n, a<sub>m+1</sub> = n to the power of a<sub>m</sub>. <i>Either</i> show that a<sub>m</sub> &lt; n!! ... ! (where the factorial is taken m times), <i>or</i> show that a<sub>m</sub> &gt; n!! ... ! (where the factorial is taken m-1 times).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If it was true that n<sup>k</sup> &lt; k!. then the upper limit on a<sub>m</sub> would be almost trivial. Unfortunately, n<sup>k</sup> &gt; k! for small k, which results in a few complications. Let n<sub>m</sub> = n! ... ! (m times). We will prove that a<sub>m</sub> &lt; n<sub>m</sub> by induction on m. For m = 1, the result just states that n &lt; n!, which is obviously true. Suppose now that n &ge; 5. Then n! &ge; n(n-1)3 &gt; 2n<sup>2</sup>. So, a fortiori, n<sub>m</sub> &gt; 2n<sup>2</sup> for m &ge; 1. It is easy to check that for n = 3, a<sub>2</sub> = 27 &lt; n<sub>2</sub> = 3!! = 720, so the result is true for m = 2. Also n<sub>2</sub> &gt; 2n<sup>2</sup> = 18. Similarly, for n = 4, a<sub>2</sub> = 256 &lt; n<sub>2</sub> = 4!! = 24! which establishes the result for m = 2. Also n<sub>2</sub> &gt; 2n<sup>2</sup> = 32. So for all n we have a starting case m for which also n<sub>m</sub> &gt; 2n<sup>2</sup>.
+
+<p>
+
+If k &ge; 2n<sup>2</sup>, then half the terms in k! are at least n<sup>2</sup>, so their product is at least n<sup>2 k/2</sup> = n<sup>k</sup>. In other words k! &gt; n<sup>k</sup>. So suppose that a<sub>m</sub> &lt; n<sub>m</sub>, (*). Then since n<sub>m</sub> &gt; 2n<sup>2</sup>, we may take (*) to the power of n to get a<sub>m+1</sub> = n<sup>lhs</sup> &lt; n<sup>rhs</sup> &lt; n<sub>m+1</sub>. Hence the result is true for all m.
+
+<p>
+
+The lower limit is harder because it is not true that n<sup>k</sup> &gt; k! , so the result for m+1 does not follow in an immediate way from that for m.
+
+<p>
+
+Let f<sub>0</sub>(n) = n, f<sub>1</sub>(n) = f<sub>0</sub>(n) n!, f<sub>2</sub>(n) = f<sub>1</sub>(n) n!! , f<sub>3</sub>(n) = f<sub>2</sub>(n) n!!!, ... . We show that f<sub>m+1</sub>(n) &lt; n to the power of f<sub>m</sub>(n). We use induction on m. For m = 0, this reads n n! &lt; n<sup>n</sup>, which is obviously true. Now assume it is true for m <i><b> and all n</b></i>. Then we have f<sub>m+1</sub>(n) = n f<sub>m</sub>(n!) &lt; n  (n! to the power of f<sub>m-1</sub>(n!) ) &lt; (n n!) to the power of f<sub>m-1</sub>(n!) &lt; n<sup>n</sup> to the power of f<sub>m-1</sub>(n!) = n to the power of f<sub>m</sub>(n). 
+
+<p>
+
+It is now an easy induction that f<sub>m</sub>(n) &lt; a<sub>m+1</sub>. For m = 1, this just states that n n! &lt; n<sup>n</sup>. Suppose it is true for m, then f<sub>m+1</sub>(n) &lt; n to the power of f<sub>m</sub>(n) &lt; n to the power of a<sub>m+1</sub> = a<sub>m+2</sub>. But obviously n! ... ! (! taken m times) &lt; f<sub>m</sub>(n) and hence &lt; a<sub>m+1</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn61.html">22nd Putnam 1961</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

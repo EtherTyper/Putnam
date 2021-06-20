@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>42nd IMO shortlist 2001/N6 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>42nd IMO 2001 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N6</b><br>
+<p>
+Do there exist 100 positive integers not exceeding 25000 such that the sum of every pair is distinct?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: yes.
+<p>
+We show how to find p integers &lt;= 2p<sup>2</sup> for any prime p. Since 2.101<sup>2</sup> &lt; 25000, that is sufficient.
+<p>
+Let <u>n</u> denote the residue of n<sup>2</sup> mod p. We claim that the integers 2p + <u>1</u>, 4p + <u>2</u>, 6p + <u>3</u>, ... , 2p p + <u>p</u> work. If (2ap + <u>a</u>) + (2bp + <u>b</u>) = (2cp + <u>c</u>) + (2dp + <u>d</u>), then 2(a + b)p + (<u>a</u> + <u>b</u>) = 2(c + d)p + (<u>c</u> + <u>d</u>) and hence a + b = c + d and <u>a</u> + <u>b</u> = <u>c</u> + <u>d</u> (since <u>n</u> &lt; p). Hence a + b = c + d mod p and a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> + d<sup>2</sup> mod p. So a = c + d - b mod p. Substituting in the next equation, (c + d - b)<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup> + d<sup>2</sup> mod p, so 2(b<sup>2</sup> - bc - bd - cd) = 0 mod p, or 2(b - c)(b - d) = 0 mod p. Hence b = c or d. So the sum of every pair is distinct.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh01.html">42nd IMO shortlist 2001</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+14 Oct 2002
+</BODY>
+
+</HTML>
+

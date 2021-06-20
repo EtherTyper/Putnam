@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 01/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>30th USAMO 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+ABC is a triangle and X is a point in the same plane. The three lengths XA, XB, XC can be used to form an obtuse-angled triangle. Show that if XA is the longest length, then angle BAC is acute.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Suppose first that &ang;BAC = 90<sup>o</sup>. We may choose coordinates so that A is (-a, -b), B is (-a, b) and C is (a, -b). Let X be (x, y). We have that XB<sup>2</sup> + XC<sup>2</sup> - XA<sup>2</sup> = (x + a)<sup>2</sup> + (y - b)<sup>2</sup> + (x - a)<sup>2</sup> + (y + b)<sup>2</sup> - (x + a)<sup>2</sup> - (y + b)<sup>2</sup> = (x - a)<sup>2</sup> + (y - b)<sup>2</sup> &ge; 0. So in this case the lengths XA, XB, XC cannot form an obtuse-angled triangle.
+
+<p>
+
+Now suppose BAC is obtuse. Let A' be the foot of the perpendicular from C to the line AB. We show that if X is situated so that XA is the longest length, then XA &lt; XA'. But since BA'C is right-angled, we have just shown that XB<sup>2</sup> + XC<sup>2</sup> &ge; XA<sup>2</sup> and hence XB<sup>2</sup> + XC<sup>2</sup> &ge; XA'<sup>2</sup>, showing that the lengths XA, XB, XC form an acute-angled triangle. 
+
+<p>
+
+This is almost obvious from a diagram. Let L, M, N be the midpoints of BC, CA, AB. Let N' be the midpoint of A'B. Let the perpendiculars through M, N meet at O. Take P on the line MO on the opposite side of O to M, and Q on the line NO on the opposite side of O to N. So for XA to be the longest length, X must lie on the same side of the line MP as C (for XA &ge; XC) and on the same side of the line NQ as B (for XA &ge; XB). So it must lie in the region bounded by the rays OP and OQ. 
+
+<p>
+
+We now find the similar region for A'BC. The perpendicular bisector of A'C is just the line ML. Take P' on this line on the opposite side of L to M. The perpendicular bisector of AB meets AB at a point N' (say) which must lie on the segment AN. It also passes through L. Take a point Q' on this line on the opposite side of L to N'. Then for XA' &ge; XB, XC we require X to lie in the sector bounded by the lines LP' and LQ'. But the sector bounded by OP and OQ lies entirely inside this sector. [This is obvious from a diagram, but LQ' is parallel to OQ and lies between it and C. OP and LP' both pass through M and OP cuts BC at a point between L and C.]
+
+<p>
+
+Also the region between LP' and LQ' lies on the same side of the perpendicular bisector of AA' (which is parallel to LQ') as A. So any point in the region is closer to A than A'. This gives us all we need. If XA &ge; XB and XC, then it lies in the region bounded by OP and OQ. Hence it also lies in the region bounded by LP' and LQ', so XA'<sup>2</sup> &le; XB<sup>2</sup> + XC<sup>2</sup>. Since also XA &lt; XA', we have XA<sup>2</sup> &lt; XB<sup>2</sup> + XC<sup>2</sup> and hence XA, XB, XC form an obtuse-angled triangle. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa01.html">30th USAMO 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

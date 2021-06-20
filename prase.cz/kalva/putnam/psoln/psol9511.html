@@ -1,0 +1,98 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1995/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+A game starts with four heaps, containing 3, 4, 5 and 6 items respectively. The two players move alternately. A player may take a complete heap of two or three items or take one item from a heap provided that leaves more than one item in that heap. The player who takes the last item wins. Give a winning strategy for the first or second player.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: first player wins.
+
+<p>
+<i>It is straightforward to carry out an exhaustive analysis. It is much harder to find the general solution, which works for any starting heaps.</i>
+
+<p>
+The first player leaves 2, 4, 5, 6. The second player now has a choice of 4 moves: (A) leave 4, 5, 6, (B) 2, 3, 5, 6, (C) 2, 4, 4, 6, (D) 2, 4, 5, 5.
+
+<p>
+In case (A), the first player leaves 4, 5, 5. The second player now has two choices (A1) 3, 5, 5, and (A2) 4, 4, 5. In case (A1), the first player leaves 5, 5. The first player now wins, because whatever his opponent does to one pile, he does to the other. In case (A2), the first player leaves 4, 4, 4, so the second player is forced to leave 3, 4, 4. The first player now leaves 4, 4 and wins because he copies his opponents moves on the other pile.
+
+<p>
+In case (B), the first player leaves 2, 5, 6. If the second player leaves 5, 6 or 2, 5, 5, then the first player leaves 5, 5 and wins as before. If the second player leaves 2, 4, 6, then the first player leaves 4, 6. If the second player leaves 4, 5, the first player leaves 4, 4 and wins as before; if the second player leaves 3, 6, then the first player leaves 6 and wins (after some forced moves the second player leaves 3 and the first player takes it to win).
+
+<p>
+In cases (C) and (D), the first player leaves 2, 4, 4, 5. The second player now has 3 moves (C1) leave 4, 4, 5, (C2) 2, 3, 4, 5, (C3) 2, 4, 4, 4. Case (C1) is just a repeat of (A2). In case (C2) the first player leaves 2, 4, 5. The second player has three choices: if he leaves 4, 5 or 2, 4, 4, then the first player leaves 4, 4 and wins as before; if he leaves 2, 3, 5, then the first player leaves 2, 5. This is a win for the first player, because after three moves (one by the first player, two by the second) the first player is left with 3, which he takes to win. Finally, in case (C3) the first player leaves 4, 4, 4 and wins as in case (A2) above.
+
+<p>
+<i>The general solution is as follows.</i>
+
+<p>
+
+Classify piles into three types: <i>3-piles</i> (piles with just 3 beans); <i>odd-piles</i> (piles with 2 beans or with an odd number of beans &ge; 5); <i>even-piles</i> (piles with an even number of beans &ge; 4).
+
+<p>
+The winning strategy is to leave an even number of 3-piles and an even number of odd-piles. We show that this strategy can always be followed unless you are facing an even number of 3-piles and an even number of odd-piles.
+
+<p>
+Let the number of piles of each type be T, O2 and E respectively. There are 4 cases to consider. 
+
+<p>
+(1) T odd, O2 odd. Then T &ge; 1, so remove a single bean from it, which reduces T by 1 and increases O2 by 1. 
+
+<p>
+(2) T odd, O2 even. Then T &ge;1, so remove a 3-pile, thus leaving T and O2 even. 
+
+<p>
+(3) T even, O2 odd. Then O2 &ge; 1. Remove a bean from an odd-pile (or remove the pile entirely if it has only 2 beans). This reduces O2 by 1 and hence leaves T and O2 even. 
+
+<p>
+(4) T even, O2 even. If there are no piles, then you have already lost! Removing a bean from an even-pile increases O2 or T by 1. Removing a bean from an O2 pile (or removing a pile of 2 beans entirely) reduces O2 by 1. Removing a bean from a T pile (or removing the whole pile), reduces T by 1. In any case at least one of T and O2 becomes odd.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn95.html">Putnam 1995</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

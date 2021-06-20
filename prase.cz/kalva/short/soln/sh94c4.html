@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1994/C4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>35th IMO 1994 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C4</b><br>
+<p>
+There are n+1 cells in a row labeled from 0 to n and n+1 cards labeled from 0 to n. The cards are arbitrarily placed in the cells, one per cell. The objective is to get card i into cell i for each i. The allowed move is to find  the smallest h such that cell h has a card with a label k &gt; h, pick up that card, slide the cards in cells h+1, h+2, ... , k one cell to the left and to place card k in cell k. Show that at most 2<sup>n</sup> - 1 moves are required to get every card into the correct cell and that there is a unique starting position which requires 2<sup>n</sup> - 1 moves. [For example, if n = 2 and the initial position is 210, then we get 102, then 012, a total of 2 moves.]
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Let b<sub>i</sub> = 0 if card i is in cell i, 1 if it is not. Let b be the binary number b<sub>n</sub>b<sub>n-1</sub> ... b<sub>1</sub>. Suppose we make an allowed move as indicated in the question. Then b<sub>k</sub> changes from 1 to 0 (for some k &gt; 0) and b<sub>k+1</sub>, ... , b<sub>n</sub> are unchanged. So b is decreased by at least 1. But the initial value of b is at most 2<sup>n</sup> - 1 and when b = 0 the objective is achieved. So there can be at most 2<sup>n</sup> - 1 moves. 
+<p>
+We prove next that the initial position 1 2 3 ... n 0 requires 2<sup>n</sup> - 1 moves. This uses a slightly tricky inductive hypothesis, namely that we need at least 2<sup>n</sup> - 1 moves to get card 0 to cell 0. For n = 1, the initial position is 1 0. So we obviously need at least 1 move. Suppose the hypothesis is true for n. Now start with 1 2 ... (n+1) 0. In order to get card 0 to cell 0, we must first get it to cell n. In order to do that, we must first get card n+1 to cell 0. Regarding card n+1 as card 0', the inductive hypothesis shows that we need 2<sup>n</sup> - 1 moves to get card n+1 to cell 0, during which card 0 does not move. But there are <i>at most</i> 2<sup>n</sup> - 1 (moves for n+1 cards), so after 2<sup>n</sup> - 1 moves we must have (n+1) 1 2 ... n 0. The next move gives 1 2 ... n 0 (n+1). But now, applying the inductive hypothesis again, we need at least another 2<sup>n</sup> - 1 moves to get card 0 to cell 0. So in total we needed at least (2<sup>n</sup> - 1) + 1 + (2<sup>n</sup> - 1) = 2<sup>n+1</sup> - 1, which establishes the result for n+1 and hence for all n.
+<p>
+Finally, we need to show that no other starting positions require 2<sup>n</sup> - 1 moves. Play the game in reverse. So a move is to take a card k which is in its correct position (cell k) and to move it at least one place to the left, sliding the intervening cards one place to the right. If we can make 2<sup>n</sup> - 1 such moves, then each move must increase b by just 1. We are starting from 0 1 ... n. To get a value of b = 1, the first move must change only b<sub>0</sub> and b<sub>1</sub>. So it must be moving card 1 to cell 0 to give 1 0 2 3 ... n. The next move must give b<sub>2</sub> = 1 and b<sub>1</sub> = 0, so it must be to move card 2 to cell 0 to give 2 1 0 3 4 ... n. 
+<p>
+Card 1 must be alternately in its correct position and not in its correct position. Moving any other card either leaves card 1 in the same place or moves it right. We can only move card 1 if it is in its correct place, so if card 1 ever gets to the right of its correct place we are stuck. Hence card 1 must oscillate between cell 0 and cell 1. Hence all moves must be to cell 1 (either by card 1 or another card). To increase a binary number by 1, we must increase the zero digit which is furthest to the right and not change any digit further to the left. So the move must be to move the lowest card (apart from card 0) which is not in its correct place to cell 0. Hence the move is uniquely determined. So the position we reach after 2<sup>n</sup> - 1 moves is uniquely determined. So there is at most one starting position which requires 2<sup>n</sup> - 1 moves.
+<p>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh94.html">35th IMO shortlist 1994</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+18 Sep 2002
+</BODY>
+</HTML>
+

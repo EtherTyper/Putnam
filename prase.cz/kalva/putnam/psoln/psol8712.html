@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1987/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>48th Putnam 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+F is a finite field with p<sup>2</sup> elements, where p is an odd prime. S is a set of (p<sup>2</sup> - 1)/2 distinct non-zero elements of F such that for each a &isin; F, just one of a and -a is in S. Prove that the number of elements in S &cap; {2a: a &isin; S} is even.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Put q=(p<sup>2</sup>-1)/2, so S has q elements. Since p is odd, q is even. 
+
+For each b there is just one c such that b = 2c. Just one of c, -c is in S. So for each b in S we can find a unique f(b) in S such that b = 2f(b)k(b) where k(b) = &plusmn;1. We cannot have f(a) = f(b) unless a = b, so as b runs through the elements of S, so does f(b). Hence &prod; a = 2<sup>q</sup>k &prod; a, where the product is taken over all elements of S and k is the number of negative k(a). So k = 2<sup>q</sup> (mod p). k(a) is positive iff a belongs to the required intersection. The number of elements in S is even, so the number of positive k(a) is even iff the number of negative k(a) is even. Hence we wish to show that k = 1. But q = (p-1) x (p+1)/2. We know that 2<sup>p-1</sup> = 1 (mod p), so 2<sup>q</sup> = 1 (mod p) as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn87.html">48th Putnam 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 92/1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>4th APMO 1992</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 1</b><br>
+<p>
+A triangle has sides a, b, c. Construct another triangle sides (-a + b + c)/2, (a - b + c)/2, (a + b - c)/2. For which triangles can this process be repeated arbitrarily many times?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: equilateral.
+<p>
+We may ignore the factor 1/2, since clearly a triangle with sides x, y, z can be constructed iff a triangle with sides 2x, 2y, 2z can be constructed.
+<p>
+The advantage of considering the process as generating (-a + b + c), (a - b + c), (a + b - c) from a, b, c is that the sum of the sides remains unchanged at a + b + c, so we can focus on just one of the three sides. Thus we are looking at the sequence a, (a + b + c) - 2a, a + b + c - 2(-a + b + c), ... . Let d = 2a - b - c. We show that the process generates the sequence a, a - d, a + d, a - 3d, a + 5d, a - 11d, a + 21d, ... . Let the nth term be a + (-1)<sup>n</sup>a<sub>n</sub>d. We claim that a<sub>n+1</sub> = 2a<sub>n</sub> + (-1)<sub>n</sub>. This is an easy induction, for we have a + (-1)<sup>n+1</sup>a<sub>n+1</sub>d = a + b + c - 2(a + (-1)<sup>n</sup>a<sub>n</sub>d) and hence (-1)<sup>n+1</sup>a<sub>n+1</sub>d = -d - 2(-1)<sup>n</sup>a<sub>n</sub>d, and hence a<sub>n+1</sub> = 2a<sub>n</sub> + (-1)<sup>n</sup>. But this shows that a<sub>n</sub> is unbounded. Hence if d is non-zero then the process ultimately generates a negative number. Thus a necessary condition for the process to generate triangles indefinitely is that 2a = b + c. Similarly, 2b = c + a is a necessary condition. But these two equations imply (subtracting) a = b and hence a = c. So a necessary condition is that the triangle is equilateral. But this is obviously also sufficient. 
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo92.html">4th APMO 1992</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

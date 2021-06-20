@@ -1,0 +1,61 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1992/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1992</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Let A<sub>n</sub> denote the n-1 x n-1 matrix (a<sub>ij</sub>) with a<sub>ij</sub> = i + 2 for i = j, and 1 otherwise. Is the sequence (det A<sub>n</sub>)/n! bounded?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: no.
+
+<p>
+Subtract col 1 from each of the others. This reduces each element along the diagonal after the first by 1 (so that the diagonal becomes 3, 3, 4, ... , n). The first row becomes -2 apart from the first element, the first column remains 1 apart from the first element and all other elements become 0. We now subtract 1/3 of col 2 from col 1, 1/4 of col 3 from col 1, 1/5 of col 4 from col 1 and so on. This zeros all elements of col 1 except the first which becomes 3 + 2(1/3 + 1/4 + ... + 1/n). We may now expand by the first column to get n!/2 times 3 + 2(1/3 + 1/4 + ... + 1/n). So (det A<sub>n</sub>)/n! = ( 3 + 2(1/3 + 1/4 + ... + 1/n) )/2. But this diverges as n tends to infinity.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn92.html">Putnam 1992</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+6 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

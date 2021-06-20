@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<TITLE>37th IMO shortlist 1996/22 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>37th IMO 1996 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 22</b><br>
+<p>
+Find all positive integers m and n such that [m<sup>2</sup>/n] + [n<sup>2</sup>/m] = [m/n + n/m] + mn.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: (m, n) = (k, k<sup>2</sup> + 1) or (k<sup>2</sup> + 1, k) for any positive integer k.
+<p>
+Put m = n<sup>2</sup> + 1. If n &gt; 1, then lhs = [n<sup>3</sup> + 2n + 1/n] + [n<sup>2</sup>/(n<sup>2</sup> + 1] = n<sup>3</sup> + 2n, and rhs = [n + 1/n + n/(n<sup>2</sup> + 1)] + n<sup>3</sup> + n = n<sup>3</sup> + 2n, so we have a solution. It is easy to check that n = 1 also gives a solution. Obviously there is symmetry between m and n, so n = m<sup>2</sup> + 1 is also a solution. We now show that there are no other solutions. Without loss of generality we may assume n &ge; m.
+<p>
+Now regard m as fixed and put f(n) = [m<sup>2</sup>/n] + [n<sup>2</sup>/m] - [m/n + n/m] - mn. Put g(n) = m<sup>2</sup>/n + n<sup>2</sup>/m - m/n - n/m - mn. So |g(n) - f(n)| &lt; 3.
+<p>
+g(n) = (1/m)(n - (m<sup>2</sup>+1)/2)<sup>2</sup> - (1/4m)( (m<sup>2</sup>+1)/2)<sup>2</sup> + (m<sup>2</sup>-m)/n. So if n &ge; m<sup>2</sup> + 2, then g(n) &ge; m + 2/m + (m<sup>2</sup>-m)/(m<sup>2</sup>+2) &gt; m. Hence f(n) &gt; m-3. So for m &gt; 2 there are no solutions for n &gt; m<sup>2</sup> + 1.  
+<p>
+Also if m &le; n &le; m<sup>2</sup> - 1, then (n - (m<sup>2</sup>+1)/2)<sup>2</sup> &le; (m<sup>2</sup> - 3)<sup>2</sup>/4 and (m<sup>2</sup>-m)/n &le; (m-1), so g(n) &le; -m + 2/m - 1 &lt; 0. Hence f(n) &lt; 0 for m &gt; 2. So for m &gt; 2 there are no solutions for n &lt; m<sup>2</sup> (and &ge; m). It is easy to check directly that f(m<sup>2</sup>) = -(m-1) &lt; 0.
+<p>
+So it remains to check m = 1 and m = 2. If m = 1, then f(1) = -1. If n &gt; 1, then f(n) = 0 + n<sup>2</sup> - n - n = n(n - 2). So for m = 1, the only solution is n = 2.
+<p>
+So finally take m = 2 and consider n &gt;= 2. It is easy to check that f(2) = -2, f(3) = -3, f(4) = -1. For n &ge; 6, we have f(n) = 0 + [n<sup>2</sup>/2] - [n/2] - 2n &ge; n<sup>2</sup>/2 - 1/2 - 5n/2 &gt; 0.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh96.html">37th IMO shortlist 1996</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+16 Dec 2002
+</BODY>
+
+</HTML>
+

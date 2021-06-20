@@ -1,0 +1,76 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1992/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1992</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b>
+
+<p>
+
+Let S be a finite set of points in three-dimensional space. Let S<sub>x</sub>, S<sub>y</sub>, S<sub>z</sub> be the sets consisting of the orthogonal projections of the points of S onto the yz-plane, zx-plane, xy-plane respectively. Prove that:
+
+<p>&nbsp; &nbsp; &nbsp; |S|<sup>2</sup> &lt;= |S<sub>x</sub>| |S<sub>y</sub>| |S<sub>z</sub>|, where |A| denotes the number of points in the set A.
+
+<p>[The orthogonal projection of a point onto a plane is the foot of the perpendicular from the point to the plane.]
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+<i>by Gerhard W&ouml;ginger</i>
+
+<p>
+
+Induction on the number of different z-coordinates in S. 
+
+<p>
+For 1, it is sufficient to note that S = S<sub>z</sub> and |S| &le; |S<sub>x</sub>| |S<sub>y</sub>| &nbsp;(at most |S<sub>x</sub>| points of S project onto each of the points of S<sub>y</sub>).
+
+<p>
+In the general case, take a horizontal (constant z) plane dividing S into two non-empty parts T and U. Clearly, |S| = |T| + |U|, |S<sub>x</sub>| = |T<sub>x</sub>| + |U<sub>x</sub>|, and |S<sub>y</sub>| = |T<sub>y</sub>| + |U<sub>y</sub>|. 
+
+<br>By induction, |S| = |T| + |U| &le; (|T<sub>x</sub>| |T<sub>y</sub>| |T<sub>z</sub>|)<sup>1/2</sup> + (|U<sub>x</sub>| |U<sub>y</sub>| |U<sub>z</sub>|)<sup>1/2</sup>. But |T<sub>z</sub>|, |U<sub>z</sub>| &le; |S<sub>z</sub>|, and for any positive a, b, c, d we have (a b)<sup>1/2</sup> + (c d)<sup>1/2</sup> &le; ( (a + c) (b + d) )<sup>1/2</sup> (square!). 
+
+<br>Hence |S| &le; |S<sub>z</sub>|<sup>1/2</sup>( ( |T<sub>x</sub>| + |U<sub>x</sub>| ) ( |T<sub>y</sub>| + |U<sub>y</sub>| ) )<sup>1/2</sup> = ( |S<sub>x</sub>| |S<sub>y</sub>| |S<sub>z</sub>| ) <sup>1/2</sup>.
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo92.html">33rd IMO 1992</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+2 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

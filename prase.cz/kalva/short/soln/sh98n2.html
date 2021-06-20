@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1998/N2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>39th IMO 1998 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N2</b><br>
+<p>
+Find all pairs of real numbers (x, y) such that x [ny] = y [nx] for all positive integers n.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: the only solutions are: (1) x = y, (2) one of x, y is 0, (3) x and y are both integers.
+<p>
+Obviously the (1), (2), (3) above are solutions. We show there are no others. So suppose x and y are non-zero and unequal. We show by induction that [2<sup>n</sup>x] = 2<sup>n</sup>[x] and [2<sup>n</sup>y] = 2<sup>n</sup>[y]. Take n = 1. We have 2 [x] &le; 2x &lt; 2 [x] + 2, so [2x] = 2 [x] or 2 [x] + 1. If [2x] = 2[x] + 1, then x [2y] = y [2x] = 2y [x] + y = 2x [y] + y. So [2y] = 2 [y] + y/x. Hence y = x. Contradiction. So [2x] = 2 [x]. Similarly, [2y] = 2 [y]. So the result is true for n = 1.
+<p>
+Suppose the result is true for n. We have x [2<sup>n+1</sup>y] = y [2<sup>n+1</sup>x]. As before, [2<sup>n+1</sup>x] must be 2 [2<sup>n</sup>x] or 2 [2<sup>n</sup>x] + 1. If it is 2 [2<sup>n</sup>x] + 1, then x [2<sup>n+1</sup>y] = 2y [2<sup>n</sup>x] + y = 2<sup>n+1</sup>y [x] + y = 2<sup>n+1</sup>x [y] + y, so [2<sup>n+1</sup>y] = 2<sup>n+1</sup> [y] + y/x. Hence y = x. Contradiction. So the result is established for n+1 and hence for all n. But that means that x and y must be integers. So there are no other solutions. 
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh98.html">39th IMO shortlist 1998</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Aug 2002
+</BODY>
+
+</HTML>
+

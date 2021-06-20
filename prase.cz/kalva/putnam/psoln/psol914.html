@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 91/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>52nd Putnam 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Can we find an (infinite) sequence of disks in the Euclidean plane such that: (1) their centers have no (finite) limit point in the plane; (2) the total area of the disks is finite; and (3) every line in the plane intersects at least one of the disks?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes.
+
+<p>Easy.
+
+<p>The fact that the centers have no limit point is a red herring - after all putting them close together would hardly help to ensure that the disks blocked all lines. The easiest strategy is evidently to find a continuous line of overlapping disks. That evidently requires that if their radii are r<sub>i</sub>, then &sum; r<sub>i</sub> diverges, but the sum of their areas is finite, so &sum; r<sub>i</sub><sup>2</sup> must converge. That is easy to achieve. For example, take r<sub>i</sub> = 1/i.
+
+<p>
+That leaves a little tidying up. We need the line to be infinite in both directions, and we need another line of disks to catch lines parallel to the first line of disks. But multiplying by four leaves convergence and divergence unaffected.
+
+<p>
+So, define C<sub>n</sub> = &sum;<sub>1</sub><sup>n</sup> 1/i, R<sub>n</sub> = 1/n. Define disk D<sub>4n</sub> to have center (C<sub>n</sub>, 0) and radius R<sub>n</sub>. That gives us a line of overlapping disks of finite total area, covering the positive x-axis. Similarly, define D<sub>4n+1</sub> to have center (-C<sub>n</sub>, 0) and radius R<sub>n</sub>; they cover the negative x-axis. Define D<sub>4n+2</sub> to have center (0, C<sub>n</sub>), radius R<sub>n</sub>, and D<sub>4n+3</sub> to have center (0, -C<sub>n</sub>), radius R<sub>n</sub>; they cover the y-axis. The complete set D<sub>1</sub>, D<sub>2</sub>, D<sub>3</sub>, ... have the required properties.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn91.html">52nd Putnam 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+21 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

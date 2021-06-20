@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 00/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>29th USAMO 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+The incircle of the triangle ABC touches BC, CA, AB at D, E, F respectively. We have AF &le; BD &le; CE, the inradius is r and we have 2/AF + 5/BD + 5/CE = 6/r. Show that ABC is isosceles and find the lengths of its sides if r = 4. 
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: sides 24, 15, 15. AF = 3, BD = CE = 12.
+
+<p>
+
+Let the incenter be I. The triangle AFI has &ang;AFI = 90<sup>o</sup>, &ang;FAI = A/2, and FI = r. So r/AF = tan A/2. Similarly, r/BD = tan B/2, r/CE = tan C/2. So the given relation is 2 tan A/2 + 5 tan B/2 + 5 tan C/2 = 6. We have A/2 = 90<sup>o</sup> - (B/2 + C/2), so we can eliminate A/2, using tan A/2 = cot(B/2 + C/2) = (1 - tan B/2 tan C/2)/(tan B/2 + tan C/2). Hence 5 tan<sup>2</sup>B/2 + 5 tan<sup>2</sup>C/2 + 8 tan B/2 tan C/2 - 6 tan B/2 - 6 tan C/2 + 2 = 0 (*).
+
+<p>
+
+It is not immediately clear where we go from here. But we are asked to prove that ABC is isosceles. Since the given relation is symmetrical in B and C, presumably AB = AC and angle B = angle C, in which case (*) reduces to (3 tan B/2 - 1)<sup>2</sup> = 0. So our goal must be to show that 3 tan B/2 - 1 = 3 tan C/2 - 1 = 0. If we use 3 tan B/2 - 1 and 3 tan C/2 - 1 as variables, we have (3 tan B/2 - 1)<sup>2</sup> = 9 tan<sup>2</sup>B/2 - 6 tan B/2 + 1, (3 tan C/2 - 1)<sup>2</sup> = 9 tan<sup>2</sup>C/2 - 6 tan C/2 + 1, (3 tan B/2 - 1)(3 tan C/2 - 1) = 9 tan B/2 tan C/2 - 3 tan B/2 - 3 tan C/2 + 1. Comparing to (*), we see that it can be written as 5 (3 tan B/2 - 1)<sup>2</sup> + 5 (3 tan C/2 - 1)<sup>2</sup> + 8(3 tan B/2 - 1)(3 tan C/2 - 1) = 0. But 8<sup>2</sup> &lt; 4&middot;5&middot;5, so this implies 3 tan B/2 - 1 = 3 tan C/2 - 1 = 0. So tan A/2 = 4/3 and we have found all the angles in the triangle. We have AF = r cot A/2 = 3, BD = CE = r cot B/2 = 12. So the triangle has sides 3 + 12 = 15, 3 + 12 = 15 and 12 + 12 = 24. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa00.html">29th USAMO 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

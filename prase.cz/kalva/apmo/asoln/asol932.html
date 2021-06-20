@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 93/2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>5th APMO 1993</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 2</b><br>
+<p>
+How many different values are taken by the expression [x] + [2x] + [5x/3] + [3x]+ [4x] for  real x in the range 0 &le; x &le; 100?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 734.
+<p>
+Let f(x) = [x] + [2x] + [3x] + [4x] and g(x) = f(x) + [5x/3]. Since [y+n] = n + [y] for any integer n and real y, we have that f(x+1) = f(x) + 10. So for f it is sufficient to look at the half-open interval [0, 1). f is obviously monotonic increasing and its value jumps at x = 0, 1/4, 1/3, 1/2, 2/3, 3/4. Thus f(x) takes 6 different values on [0, 1). 
+<p>
+g(x+3) = g(x), so for g we need to look at the half-open interval [0, 3). g jumps at the points at which f jumps plus 4 additional points: 3/5, 1 1/5, 1 4/5, 2 2/5. So on [0, 3), g(x) takes 3 x 6 + 4 = 22 different values. Hence on [0, 99), g(x) takes 33 x 22 = 726 different values. Then on [99, 100] it takes a further 6 + 1 + 1 (namely g(99), g(99 1/4), g(99 1/3), g(99 1/2), g(99 3/5), g(99 2/3), g(99 3/4), g(100) ). Thus in total g takes 726 + 8 = 734 different values.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo93.html">5th APMO 1993</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

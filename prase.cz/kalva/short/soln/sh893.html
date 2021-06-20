@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+<TITLE>30th IMO shortlist 1989/3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>30th IMO 1989 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 3</b><br>
+<p>
+The polynomial x<sup>n</sup> + n x<sup>n-1</sup> + a<sub>2</sub>x<sup>n-2</sup> + ... + a<sub>0</sub> has n roots whose 16th powers have sum n. Find the roots.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: all the roots are -1.
+<p>
+Suppose the roots are r<sub>1</sub>, r<sub>2</sub>, ... , r<sub>n</sub>. Note that &sum; r<sub>i</sub> = -n. Applying Cauchy to 1, r<sub>i</sub>, we have 
+<br>n<sup>2</sup> = |&sum; r<sub>i</sub>|<sup>2</sup> &le; (&sum; 1<sup>2</sup>) |&sum; r<sub>i</sub><sup>2</sup>|, so |&sum; r<sub>i</sub><sup>2</sup>| &ge; n.
+<p>
+Applying Cauchy to 1, r<sub>i</sub><sup>2</sup>, we have:
+<br>n<sup>2</sup> &le; |&sum; r<sub>i</sub><sup>2</sup>|<sup>2</sup> &le; &sum; 1<sup>2</sup> |&sum; r<sub>i</sub><sup>4</sup>|, so |&sum;r<sub>i</sub><sup>4</sup> &ge; n.
+<p>
+Similarly, applying Cauchy to 1, r<sub>i</sub><sup>4</sup>, we have:
+<br>n<sup>2</sup> &le; |&sum; r<sub>i</sub><sup>4</sup>|<sup>2</sup> &le; n |&sum; r<sub>i</sub><sup>8</sup>|, so |&sum; r<sub>i</sub><sup>8</sup>| &ge; n.
+<p>
+Finally, applying Cauchy to 1, r<sub>i</sub><sup>8</sup>, we have:
+<br>n<sup>2</sup> &le; |&sum; r<sub>i</sub><sup>8</sup>| &le; n |&sum; r<sub>i</sub><sup>16</sup>|, so |&sum; r<sub>i</sub><sup>16</sup>| &ge; n.
+<p>
+But |&sum; r<sub>i</sub><sup>16</sup>| = n. Hence all the above inequalities are equalities. So, particular, |&sum; r<sub>i</sub><sup>2</sup>| = n. We have equality in Cauchy iff the ratio of the corresponding terms is equal. Hence, considering the first inequality, we must have all r<sub>i</sub> equal. Hence all the roots are -1.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh89.html">30th IMO shortlist 1989</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+28 Dec 2002
+<br>Last corrected/updated 28 Dec 02
+</BODY>
+
+</HTML>
+

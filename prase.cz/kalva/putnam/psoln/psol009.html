@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2000/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>61st Putnam 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>N</sub> are real and a<sub>N</sub> is non-zero. f(x) = a<sub>1</sub> sin 2&pi;x + a<sub>2</sub> sin 4&pi;x + a<sub>3</sub> sin 6&pi;x + ... + a<sub>N</sub> sin 2N&pi;x. Show that the number of zeros of f<sup>(i)</sup>(x) = 0 in the interval [0, 1) is a non-decreasing function of i and tends to 2N (as i tends to infinity).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+By Rolle's theorem there is a root of f ' between two adjacent roots of f. Also the function is periodic with period 1, so there number of zeros is non-decreasing.
+
+<p>
+If we write z = e<sup>2&pi;ix</sup>, then the nth derivative is 1/z<sup>N</sup> times a polynomial degree 2N in z, so it has at most 2N complex roots. Hence there are at most 2N real roots for x in the interval [0, 1).
+
+<p>
+Finally, we need to show that for sufficiently high derivatives the term a<sub>N</sub> sin 2N&pi;x dominates and hence gives exactly 2N roots. We use Rolle's theorem again. At the values x = 0, 1/2N, 2/2N, ... , 2N/2N, cos 2N&pi;x is alternately &plusmn;1, so if we choose k sufficiently large, then the odd derivative f<sup>(k)</sup>(x) is alternately positive and negative at these values (because (2N)<sup>k</sup> |a<sub>N</sub>| &gt; 2<sup>k</sup> |a<sub>1</sub>| + 4<sup>k</sup> |a<sub>2</sub>| + ... + (2N-1)<sup>k</sup> |a<sub>N-1</sub>| and hence f<sup>(k)</sup>(x) has at least 2N zeros in the interval (0, 1).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn00.html">61st Putnam 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

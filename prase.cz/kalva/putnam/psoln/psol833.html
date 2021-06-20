@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1983/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>44th Putnam 1983</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Let f(n) = 1 + 2n + 3n<sup>2</sup> + ... + (p - 1)n<sup>p-2</sup>, where p is an odd prime. Prove that if f(m) = f(n) (mod p), then m = n (mod p).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Clearly if n = 0 (mod p), then f(n) = 1 (mod p). Similarly, if n = 1 (mod p), then f(n) = 1 + 2 + ... + (p - 1) = p(p - 1)/2 = 0 (mod p).
+
+<p>
+
+Otherwise we have (1 - n) f(n) = 1 + n + n<sup>2</sup> + ... + n<sup>p-2</sup> - (p-1)n<sup>p-1</sup>. Hence (1 - n)<sup>2</sup> f(n) = 1 - pn<sup>p-1</sup> + (p - 1)n<sup>p</sup> = 1 + (p-1)n<sup>p</sup> = 1 + (p-1)n = 1 - n (mod p). Since we are assuming n &ne; 1, 1 - n is invertible and we have f(n) = (1 - n)<sup>-1</sup>. Note that this cannot have the value 1 (because (1 - n)<sup>-1</sup> = 1 implies 1.(1 - n) = 1 implies n = 0) or 0 (because we cannot have 0.(1 - n) = 1).
+
+<p>
+
+So suppose f(n) = f(m) (mod p). If the common value is 0 or 1, then n and m are both 1 (mod p) or both 0 (mod p) and hence equal. If the common value is not 0 or 1, then (1 - n)<sup>-1</sup> = (1 - m)<sup>-1</sup> (mod p), hence (1 - n) = (1 - m) (mod p) and n = m (mod p).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn83.html">44th Putnam 1983</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

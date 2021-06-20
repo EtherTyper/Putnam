@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 02/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>31st USAMO 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+Let S be a set with 2002 elements and P the set of all its subsets. Prove that for any n (in the range from zero to |P|) we can color n elements of P white, and the rest black, so that the union of any two elements of P with the same color has the same color.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let S have m elements and P be the set of its subsets. We show by induction on m that a coloring is possible for any n &le; |P|. If m = 1, we color both subsets black for n = 0, the empty set white (and the other subset black) for n = 1, and both subsets white for n = 2. Suppose now that a coloring is possible for m (and any n). Consider a set S with m+1 elements. Let b be any element of S. For n &le; 2<sup>m</sup>, use induction to color just n subsets of S - {b} white and color black all subsets of S which include b. Then the union of two white subsets is still a subset of S - {b} and hence (by assumption) white. The union of two black subsets of S - {b} is black for the same reason. If one black subset includes b, then so does the union, which must therefore be black. For n &gt; 2<sup>m</sup>,  we have 2<sup>m+1</sup> - n &lt; 2<sup>m</sup>, so we can find a coloring for 2<sup>m+1</sup> - n and then swap the colors.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa02.html">31st USAMO 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

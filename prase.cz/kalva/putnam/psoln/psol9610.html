@@ -1,0 +1,71 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1996/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Let B be the 2 x 2 matrix (b<sub>ij</sub>) with b<sub>11</sub> = b<sub>22</sub> = 1, b<sub>12</sub> = 1996, b<sub>21</sub> = 0. Can we find a 2 x 2 matrix A such that sin A = B? [We define sin A by the usual power series: A - A<sup>3</sup>/3! + A<sup>5</sup>/5! - ... .]
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: no.
+
+<p><i>Easy.</i>
+
+<p>
+If sin A has the value given, then 1 - sin<sup>2</sup>A = (c<sub>ij</sub>) with c<sub>11</sub> = c<sub>21</sub> = c<sub>22</sub> = 0, c<sub>21</sub> &ne; 0. But we should have cos<sup>2</sup>A = (c<sub>ij</sub>). 
+<p>
+This is not possible. Suppose cos A = (d<sub>ij</sub>), then we need d<sub>11</sub>d<sub>12</sub> + d<sub>12</sub>d<sub>22</sub> &ne; 0, and hence (d<sub>11</sub> + d<sub>22</sub>) &ne; 0. But we also need 0 = c<sub>21</sub> = d<sub>21</sub>(d<sub>11</sub> + d<sub>22</sub>) and so d<sub>21</sub> = 0. Now 0 = c<sub>11</sub> = d<sub>11</sub><sup>2</sup> + d<sub>12</sub>d<sub>21</sub> = d<sub>11</sub><sup>2</sup>, so d<sub>11</sub> = 0. Similarly, 0 = c<sub>22</sub> = d<sub>22</sub><sup>2</sup> + d<sub>12</sub>d<sub>21</sub> = d<sub>22</sub><sup>2</sup>, so d<sub>22</sub> = 0. So d<sub>11</sub> + d<sub>22</sub> = 0. Contradiction.
+
+<p>
+Hence sin A cannot have the value given.
+
+<p>
+The only problem with this argument is that it is too easy! One worries about justifying the various steps. The relation sin<sup>2</sup>A + cos<sup>2</sup>A = 1 is an easy calculation directly from the power series definitions, once one has established absolute convergence. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn96.html">Putnam 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

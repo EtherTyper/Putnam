@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1963/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>24th Putnam 1963</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Show that for any sequence of positive reals, a<sub>n</sub>, we have lim sup<sub>n&rarr;&infin;</sub> n( (a<sub>n+1</sub> + 1)/a<sub>n</sub> - 1) &ge; 1. Show that we can find a sequence where equality holds.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Suppose lim sup &lt; 1. Then we cannot find an infinite subsequence with n( (a<sub>n+1</sub> + 1)/a<sub>n</sub> - 1) &ge; 1, so we must have n( (a<sub>n+1</sub> + 1)/a<sub>n</sub> - 1) &lt; 1 for all sufficiently large n. Suppose it is true for all n &ge; N. Then (a<sub>N+1</sub> + 1)/a<sub>N</sub> &lt; (N + 1)/N and hence a<sub>N</sub>/N &gt; (a<sub>N+1</sub> + 1)/(N + 1) = a<sub>N+1</sub>/(N+1) + 1/(N+1). But similarly, a<sub>N+1</sub>/(N+1) &gt; a<sub>N+2</sub>/(N+2) + 1/(N+2) and so on. Hence a<sub>N</sub> &ge; 1/(N+1) + 1/(N+2) + ... , which is impossible since the rhs diverges. So we have established that lim sup &ge; 1.
+
+<p>
+
+We can experiment with various series. a<sub>n</sub> = n gives 2. a<sub>n</sub> = n<sup>2</sup> also gives 2. Higher powers give higher values. So we try looking at exponents between 1 and 2. a<sub>n</sub> = n<sup>1+k</sup> gives 1+k. So by taking k arbitrarily small we can get close to 1, but we cannot reach it. It is often helpful to think of log n as n<sup>k</sup> with k infinitesimally small. So we try a<sub>n</sub> = n log n. That gives n( (a<sub>n+1</sub> + 1)/a<sub>n</sub> - 1) = (1 + n log (1 + 1/n) + log(n + 1) )/log n = (1 + n log (1 + 1/n) + (log(1 + 1/n) )/log n + 1. But 1 + n log(1 + 1/n) + log (1 + 1/n) is bounded  and so n( (a<sub>n+1</sub> + 1)/a<sub>n</sub> - 1) has limit 1 (and hence also lim sup = 1).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn63.html">24th Putnam 1963</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

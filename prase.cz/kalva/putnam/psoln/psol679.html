@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1967/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>28th Putnam 1967</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+R is the reals. f, g are continuous functions R &rarr; R with period 1. Show that lim<sub>n&rarr;&infin;</sub> &int;<sub>0</sub><sup>1</sup> f(x) g(nx) dx = (&int;<sub>0</sub><sup>1</sup> f(x) dx) (&int;<sub>0</sub><sup>1</sup> g(x) dx).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The idea is to split the integration range into n equal parts. Thus we get &int;<sub>0</sub><sup>1</sup> f(x) g(nx) dx = &sum; &int;<sub>r/n</sub><sup>r/n+1/n</sup> f(x) g(nx) dx. For large n, f is roughly constant over the range, so we get <font face="Symbol">S</font> f(r/n) &int;<sub>r/n</sub><sup>r/n+1/n</sup> g(nx) dx. Changing the integration variable to t = nx, gives &sum; f(r/n) 1/n &int;<sub>0</sub><sup>1</sup> g(t) dt since g is periodic. But lim &sum; f(r/n) 1/n is just &int;<sub>0</sub><sup>1</sup> f(x) dx, so we get the required (&int;<sub>0</sub><sup>1</sup> f(x) dx) (&int;<sub>0</sub><sup>1</sup> g(x) dx).
+
+<p>
+
+It remains to look at the error involved in approximating f. The function f is continuous and [0, 1] is compact, so it must be uniformly continuous on [0, 1]. Thus we given any &epsilon; &gt; 0, we can find N such that for n &gt; N, we have |f(x) - f(r/n)| &lt; &epsilon; on [r/n, r/n + 1/n] for each of r = 0, 1, 2, ... , n-1. So the error is at most &sum; &int;<sub>r/n</sub><sup>r/n+1/n</sup> |f(x) - f(r/n)| |g(nx)| dx &lt; &sum; &epsilon; 1/n &int;<sub>0</sub><sup>1</sup> |g(t)| dt = &epsilon; &int;<sub>0</sub><sup>1</sup> |g(t)| dt, which can be made arbitrarily small.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn67.html">28th Putnam 1967</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

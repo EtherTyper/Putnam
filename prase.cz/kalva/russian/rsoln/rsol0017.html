@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 00/17 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 17</b>
+
+<p>
+
+S is a finite set of numbers such that given any three there are two whose sum is in S. What is the largest number of elements that S can have?
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+7
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Consider S = {-3, -2, -1, 0, 1, 2, 3}. Suppose {a, b, c} &sube; S. If a = 0, then a+b &isin; S. If a and b have opposite sign, then |a+b| &lt; max(|a|,|b|), so a+b &isin; S. The only remaining possibilities are {1,2,3} and {-3,-2,-1} and 1+2, -1-2 &isin; S. So there is a set with 7 elements having the required property.
+<p>
+Now suppose S has 4 positive elements. Take the largest four: a &lt; b &lt; c &lt; d. Consider {b,c,d}. Clearly c+d, b+d &notin; S, so b+c &isin; S and hence b+c = d. But the same argument shows that a+c = d, so a = b. Contradiction. Hence S has at most 3 positive elements. Similarly, it has at most 3 negative elements, and hence at most 7 elements in all.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus00.html">Russian 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+20 December 2003
+
+</BODY>
+
+
+
+</HTML>
+

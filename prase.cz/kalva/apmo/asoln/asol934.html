@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 93/4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>5th APMO 1993</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 4</b><br>
+<p>
+Find all positive integers n for which x<sup>n</sup> + (x+2)<sup>n</sup> + (2-x)<sup>n</sup> = 0 has an integral solution.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: n = 1.
+<p>
+There are obviously no solutions for even n, because then all terms are non-negative and at least one is positive. x = -4 is a solution for n = 1. So suppose n is odd n and &gt; 3.
+<p>
+If x is positive, then x<sup>n</sup> + (x+2)<sup>n</sup> &gt; (x+2)<sup>n</sup> &gt; (x-2)<sup>n</sup>, so x<sup>n</sup> + (x+2)<sup>n</sup> + (2-x)<sup>n</sup> &gt; 0. Hence any solution x must be negative. Put x = -y. Clearly x = -1 is not a solution for any n, so if x = -y is a solution then (x+2) = -(y-2) &le; 0 we have (y+2)<sup>n</sup> = y<sup>n</sup> + (y-2)<sup>n</sup>. Now 4 = ( (y+2) - (y-2) ) divides (y+2)<sup>n</sup> - (y-2)<sup>n</sup>. Hence 2 divides y. Put y = 2z, then we have (z+1)<sup>n</sup> = z<sup>n</sup> + (z-1)<sup>n</sup>. Now 2 divides (z+1)<sup>n</sup> - (z-1)<sup>n</sup> so 2 divides z, so z+1 and z-1 are both odd. But a<sup>n</sup> - b<sup>n</sup> = (a - b)(a<sup>n-1</sup + a<sup>n-2</sup>b + a<sup>n-3</sup>b<sup>2</sup> + ... + b<sup>n-1</sup>). If a and b are both odd, then each term in (a<sup>n-1</sup + a<sup>n-2</sup>b + a<sup>n-3</sup>b<sup>2</sup> + ... + b<sup>n-1</sup>) is odd and since n is odd there are an odd number of terms, so (a<sup>n-1</sup + a<sup>n-2</sup>b + a<sup>n-3</sup>b<sup>2</sup> + ... + b<sup>n-1</sup>) is odd. Hence, putting a=z+1, b=z-1, we see that (z+1)<sup>n</sup> - (z-1)<sup>n</sup> = 2(a<sup>n-1</sup + a<sup>n-2</sup>b + a<sup>n-3</sup>b<sup>2</sup> + ... + b<sup>n-1</sup>) is not divisible by 4. But it equals z<sup>n</sup> with z even. Hence n must be 1.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo93.html">5th APMO 1993</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

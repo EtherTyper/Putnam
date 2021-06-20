@@ -1,0 +1,67 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Vietnam 74/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>12th VMO 1974</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b>
+
+<p>
+
+Find all positive integers n and b with 0 &lt; b &lt; 10 such that if a<sub>n</sub> is the positive integer with n digits, all of them 1, then a<sub>2n</sub> - b a<sub>n</sub> is a square.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+b = 2 works for any n
+<br>b = 7 works for n = 1
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+a<sub>n</sub> = (10<sup>n</sup>-1)/9, so we need 10<sup>2n</sup> - b10<sup>n</sup> + (b-1) to be a square. For b = 2, this is true for all n. Note that (10<sup>n</sup> - c)<sup>2</sup> = 10<sup>2n</sup> - 2c10<sup>n</sup> + c<sup>2</sup>, so if b = 2c, we need c<sup>2</sup> = b-1 = 2c - 1 and hence c = 1. So b = 4, 6, 8 do not work. Equally 10<sup>2n</sup> &gt; 10<sup>2n</sup> - 10<sup>n</sup> &gt; (10<sup>n</sup> - 1)<sup>2</sup> = 10<sup>2n</sup> - 2&middot;10<sup>n</sup> + 1, so it cannot be a square for b = 1. Similarly, (10<sup>n</sup> - 1)<sup>2</sup> = 10<sup>2n</sup> - 2&middot;10<sup>n</sup> + 1 &gt; 10<sup>2n</sup> - 3&middot;10<sup>n</sup> + 2 &gt; 10<sup>2n</sup> - 4&middot;10<sup>n</sup> + 4 = (10<sup>n</sup> - 2)<sup>2</sup>, so b = 3 does not work. Similarly, (10<sup>n</sup> - 2)<sup>2</sup> = 10<sup>2n</sup> - 4&middot;10<sup>n</sup> + 4 &gt; 10<sup>2n</sup> - 5&middot;10<sup>n</sup> + 4 &gt; 10<sup>2n</sup> - 6&middot;10<sup>n</sup> + 9 = (10<sup>n</sup> - 3)<sup>2</sup>, so b = 5 does not work. Similarly, (10<sup>n</sup> - 3)<sup>2</sup> = 10<sup>2n</sup> - 6&middot;10<sup>n</sup> + 9 &gt; 10<sup>2n</sup> - 7&middot;10<sup>n</sup> + 6 &gt; 10<sup>2n</sup> - 8&middot;10<sup>n</sup> + 16 = (10<sup>n</sup> - 4)<sup>2</sup> for n &gt; 1, so b = 7 does not work, except possibly for n = 1. Since 11 - 7 = 2<sup>2</sup>, b = 1 does work for n = 1. Finally, (10<sup>n</sup> - 4)<sup>2</sup> = 10<sup>2n</sup> - 8&middot;10<sup>n</sup> + 16 &gt; 10<sup>2n</sup> - 9&middot;10<sup>n</sup> + 8 &gt; 10<sup>2n</sup> - 10&middot;10<sup>n</sup> + 25 = (10<sup>n</sup> - 4)<sup>2</sup> for n &gt; 1, so b = 9 does not work, except possibly for n = 1. It is easy to check it does not work for n = 1.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../viet74.html">12th VMO 1974</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+6 March 2004
+<br>Last corrected/updated 6 Mar 04
+
+</BODY>
+
+
+
+</HTML>
+

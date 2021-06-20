@@ -1,0 +1,73 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 91/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>52nd Putnam 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+P(x) of is a polynomial of degree n &ge; 2 with real coefficients, such that (1) it has n unequal real roots, (2) for each pair of adjacent roots a, b the derivative P'(x) is zero halfway between the roots (at x = (a + b)/2 ). Find all possible P(x).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Moderately easy.
+
+<p>
+
+Answer: quadratics with two (distinct) real roots: A(x - &alpha;<sub>1</sub>)(x - &alpha;<sub>2</sub>).
+
+<p>
+
+The question is whether each maximum (and minimum) can be placed halfway between its two flanking zeros. Experience suggests that this is not, in general, possible. Clearly, it is possible for certain maxima. For example if we take the polynomial's graph to have a line of symmetry then the maximum (or minimum) on the line of symmetry will be centrally placed. But we expect the extreme stationary values to be closer to the extremes. 
+
+<p>
+
+Let the roots be &alpha;<sub>1</sub> &lt; &alpha;<sub>2</sub> &lt; ... &lt; &alpha;<sub>n</sub>. We show that for n &gt; 2 the stationary value between &alpha;<sub>n-1</sub> and &alpha;<sub>n</sub> is closer to &alpha;<sub>n</sub> than &alpha;<sub>n-1</sub>.
+
+<p>
+Let n &gt; 2, &beta; = (&alpha;<sub>n-1</sub> + &alpha;<sub>n</sub>)/2 and let P(x) = A(x - &alpha;<sub>1</sub>) ... (x - &alpha;<sub>n</sub>). Then P'(x) = A(x - &alpha;<sub>2</sub>)(x - &alpha;<sub>3</sub>) ... (x - &alpha;<sub>n</sub>) + A(x - &alpha;<sub>1</sub>)(x - &alpha;<sub>3</sub>) ... (x - &alpha;<sub>n</sub>) + ... + A(x - &alpha;<sub>1</sub>) ... (x - &alpha;<sub>n-2</sub>)(x - &alpha;<sub>n</sub>) + A(x - &alpha;<sub>1</sub>) ... (x - &alpha;<sub>n-1</sub>). For x = &beta;, the last two terms have equal magnitude and opposite sign, so they sum to zero, whilst the remaining terms are all -A ( (&alpha;<sub>n</sub> - &alpha;<sub>n-1</sub>)/2 )<sup>2</sup> times (n - 2) positive numbers. In other words, the remaining terms are all non-zero and all have the opposite sign to A. Thus p'(&beta;) &ne; 0. [Indeed, since it has the opposite sign as A, it must be smaller than the stationary value, as claimed.]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn91.html">52nd Putnam 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+21 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1969/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>30th Putnam 1969</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+The sequence a<sub>i</sub>, i = 1, 2, 3, ...  is strictly monotonic increasing and the sum of its inverses converges. Let f(x) = the largest i such that a<sub>i</sub> &lt; x. Prove that f(x)/x tends to 0 as x tends to infinity.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Suppose not. Then for some fixed k &gt; 0, we can find arbitrarily large x such that f(x) &gt; kx. So take a sequence x<sub>1</sub> &lt; x<sub>2</sub> &lt; x<sub>3</sub> &lt; ... such that (1) f(x<sub>i</sub>) &gt; kx<sub>i</sub>, (2) kx<sub>i</sub>/2 gt; f(x<sub>i-1</sub>). Then by (1) at least kx<sub>i</sub> members of the sequence a<sub>n</sub> are less than x<sub>i</sub>. By (2) at most kx<sub>i</sub>/2 are less than x<sub>i-1</sub>. So at least kx<sub>i</sub>/2 must lie between x<sub>i-1</sub> and x<sub>i</sub>. 
+
+<p>
+
+So &sum; 1/a<sub>n</sub> has at least kx<sub>i</sub>/2 terms between 1/x<sub>i</sub> and 1/x<sub>i-1</sub>. These terms sum to at least k/2. All terms are positive, so the series diverges. Contradiction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn69.html">30th Putnam 1969</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

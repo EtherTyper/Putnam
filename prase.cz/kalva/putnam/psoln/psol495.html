@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 49/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>9th Putnam 1949</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Let p(z) &equiv; z<sup>6</sup> + 6z + 10. How many roots lie in each quadrant of the complex plane?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+There are no real roots, since p(z) has a minimum (for real value of z) at z = -1 of 5. Similarly there are no purely imaginary roots, since p(i y) has imaginary part 6iy (and z = 0 is not a root). Also a + ib is a root iff a - ib is a root, so either there is one root in each of the 1st and 4th quadrants and two in each of the 2nd and 3rd, or vice versa.
+
+<p>
+
+The argument principle states that the change in arg p(z) as we move (anti-clockwise) round a closed contour which passes through no zeros and contains k zeros is 2 &pi; k. Take a contour in the first quadrant from z = 0 to z = X, then around the arc |z| = X to iX, then back along the imaginary axis to z = 0. Moving along the real axis, arg p(z) does not change. Moving along the arc the change will be the same as that in  arg z<sup>6</sup> for X sufficiently large and hence will be 3&pi;. As we move back down the imaginary axis, the imaginary part remains positive, so p(z) is confined to the upper half plane, and we end up at p(z) = 10, so the change must be -&pi;. Thus the change for a complete circuit is 2&pi;, and so there is just one root in the first quadrant.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn49.html">9th Putnam 1949</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

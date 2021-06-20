@@ -1,0 +1,58 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>17th Putnam 1957/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>17th Putnam 1957</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+p(z) is a polynomial of degree n with complex coefficients. Its roots (in the complex plane) can be covered by a disk radius r. Show that for any complex k, the roots of n p(z) - k p'(z) can be covered by a disk radius r + |k|.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let the roots of p(z) be a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>n</sub>. Suppose they all lie in the disk centre c, radius r. Then |c - a<sub>n</sub>| &le; r. Suppose that |c - w| &gt; r + |k|. We show that w is not a root of n p(z) - k p'(z). We have |w - a<sub>i</sub>| &ge; |w - c| - |c - a<sub>i</sub>| &gt; r + |k| - r = |k|. Now p'(z)/p(z) = &sum; 1/(z - a<sub>i</sub>) (note that this is still true if we have repeated roots), so |p'(w)/p(w)| &lt; n/|k| and hence |k p'(w)/p(w)| &lt; n. So |n - k p'(w)/p(w)| &gt; 0. But |p(w)| &gt; 0 (since w lies outside the disk containing all the roots of p(z) ), so |n p(w) - k p'(w)| = |p(w)| |n - k p'(w)/p(w)| &gt; 0.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn57.html">17th Putnam 1957</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

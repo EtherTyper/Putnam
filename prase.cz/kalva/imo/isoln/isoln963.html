@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1996/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+Let S be the set of non-negative integers. Find all functions f: S&rarr;S such that f(m + f(n)) = f(f(m)) + f(n) for all m, n.
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Setting m = n = 0, the given relation becomes: f(f(0)) = f(f(0)) + f(0). Hence f(0) = 0. Hence also f(f(0)) = 0. Setting m = 0, now gives f(f(n)) = f(n), so we may write the original relation as f(m + f(n)) = f(m) + f(n). 
+
+<p>
+So f(n) is a fixed point. Let k be the smallest non-zero fixed point. If k does not exist, then f(n) is zero for all n, which is a possible solution. If k does exist, then an easy induction shows that f(qk) = qk for all non-negative integers q. Now if n is another fixed point, write n = kq + r, with 0 &le; r &lt; k. Then f(n) = f(r + f(kq)) = f(r) + f(kq) = kq + f(r). Hence f(r) = r, so r must be zero. Hence the fixed points are precisely the multiples of k.
+
+<p>
+But f(n) is a fixed point for any n, so f(n) is a multiple of k for any n. Let us take n<sub>1</sub>, n<sub>2</sub>, ... , n<sub>k-1</sub> to be arbitrary non-negative integers and set n<sub>0</sub> = 0. Then the most general function satisfying the conditions we have established so far is:
+
+<p>&nbsp; &nbsp; &nbsp; f(qk + r) = qk + n<sub>r</sub>k for 0 &le; r &lt; k.
+
+<p>
+We can check that this satisfies the functional equation. Let m = ak + r, n = bk + s, with 0 &le; r, s &lt; k. Then f(f(m)) = f(m) = ak + n<sub>r</sub>k, and f(n) = bk + n<sub>s</sub>k, so f(m + f(n)) = ak + bk + n<sub>r</sub>k + n<sub>s</sub>k, and f(f(m)) + f(n) = ak + bk + n<sub>r</sub>k + n<sub>s</sub>k. So this is a solution and hence the most general solution. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo96.html">37th IMO 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Oct 1998
+<br>Last corrected/updated 21 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

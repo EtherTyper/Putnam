@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1998/C4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>39th IMO 1998 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C4</b><br>
+<p>
+If A is a permutation of 1, 2, 3, ... , n and B is a subset of {1, 2, ... , n}, then we say that A splits B if we can find three elements of A such that the middle element does not belong to B, but the outer two do. For example, the permutation 13542 of 12345 splits {1, 2, 3} (because, for example, 4 appears between 3 and 2) but it does not split {3, 4, 5}. Show that if we take any n-2 subsets of {1, 2, ... , n}, each with at least 2 and at most n-1 elements, then there is a permutation of 1, 2, ... , n which splits all of them.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Induction on n. For n = 3, we have to split just one subset of two elements {i, j}. That is achieved by i k j.
+<p>
+Suppose the result is true for n. Suppose that S is a collection of n-1 subsets of {1, 2, ... , n+1} each with at least 2 and at most n elements. We show first that we can find an element k which belongs to all the n-element members of S and at most one of the 2-element members of S. Suppose S contains m 2-element members and m' n-element members. Then n+1-m'  numbers belong to all the n-element members. At most m numbers can appear in more than one 2-element members, so at least n+1-m-m' &gt; 1 numbers appear in all the n-element members of S and at most one of the 2-element members. 
+<p>
+Relabeling if necessary we may assume that n+1 is such a number. If we remove it, then all the n-element members of S become (n-1)-element members and at most one member of S becomes a singleton. If there is a singleton, then we can find a permutation of 1, 2, ... , n which splits the other n-2 members of S. If we then put n+1 anywhere in the permutation except adjacent to the singleton element, then that 2-member element of S is also split, so the permutation splits all elements of S. If there is no singleton, then we can take a permutation of 1, 2, ... , n which splits n-2 of the members of S. If the last member L of S does not contain n+1, then we can place n+1 in the permutation between two members of S, that ensures that L is split. If L contains n+1, then there must be some number i which is not in L and another number j which is in L. Place n+1 in the permutation on the opposite side of i to j. Then i lies between n+1 and j. So the permutation splits L. That completes the induction.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh98.html">39th IMO shortlist 1998</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Aug 2002
+</BODY>
+
+</HTML>
+

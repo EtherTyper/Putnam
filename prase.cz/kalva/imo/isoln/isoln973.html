@@ -1,0 +1,61 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1997/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+Let x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub> be real numbers satisfying |x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>n</sub>| = 1 and |x<sub>i</sub>| &le; (n+1)/2 for all i. Show that there exists a permutation y<sub>i</sub> of x<sub>i</sub> such that |y<sub>1</sub> + 2y<sub>2</sub> + ... + ny<sub>n</sub>| &le; (n+1)/2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Without loss of generality we may assume x<sub>1</sub> + ... + x<sub>n</sub> = +1. [If not just reverse the sign of every x<sub>i</sub>.] For any given arrangement x<sub>i</sub> we use <i>sum</i> to mean x<sub>1</sub> + 2x<sub>2</sub> + 3x<sub>3</sub> + ... + nx<sub>n</sub>. Now if we add together the sums for x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub> and the <i>reverse</i> x<sub>n</sub>, x<sub>n-1</sub>, ... , x<sub>1</sub>, we get (n+1)(x<sub>1</sub> + ... + x<sub>n</sub>) = n+1. So either we are home with the original arrangement or its reverse, or they have sums of opposite sign, one greater than (n+1)/2 and one less than -(n+1)/2. 
+
+<p>A transposition changes the sum from ka + (k+1)b + other terms to kb + (k+1)a + other terms. Hence it changes the sum by |a - b| (where a, b are two of the x<sub>i</sub>) which does not exceed n+1. Now we can get from the original arrangement to its reverse by a sequence of transpositions. Hence at some point in this sequence the sum must fall in the interval [-(n+1)/2, (n+1)/2] (because to get from a point below it to a point above it in a single step requires a jump of more than n+1). That point gives us the required permutation.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo97.html">38th IMO 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Oct 1998
+
+<br>Last corrected/updated 21 Aug 03
+</BODY>
+
+
+
+</HTML>
+

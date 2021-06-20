@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 78/2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>7th USAMO 1978</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 2</b><br>
+
+<p>
+
+Two square maps cover exactly the same area of terrain on different scales. The smaller map is placed on top of the larger map and inside its borders. Show that there is a unique point on the top map which lies exactly above the corresponding point on the lower map. How can this point be constructed?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The point is obviously unique, because the two maps have different scales (but if P and Q where two fixed points the distance between them would be the same on both maps).
+
+<p>
+
+Let the small map square be A'B'C'D' and the large be ABCD, where X and X' are corresponding points. We deal first with the special case where A'B' is parallel to AB. In this case let AA' and BB' meet at O. Then triangles OAB and OA'B' are similar, so O must represent the same point. So assume A'B' is not parallel to AB.
+
+<p>
+
+Let the lines A'B' and AB meet at W, the lines B'C' and BC meet at X, the lines C'D' and CD meet at Y, and the lines D'A' and DA meet at Z. We claim that the segments WY and XZ meet at a point O inside the smaller square. W cannot lie between A' and B' (or one of the vertices A', B' of the smaller square would lie outside the larger square). If it lies on the opposite side of A' to B', then Y must lie on the opposite side of C' to D'. Thus the segment WY must cut the side A'D' at some point Z' and the side B'C' at some point X'. The same conclusion holds if W lies on the opposite side of B' to A', because then Y must lie on the opposite side of D' to C'. Similarly, the segment XZ must cut the side A'B' at some point W' and the side C'D' at some point Y'. But now the segments X'Z' and W'Y' join pairs of points on opposite sides of the small square and so they must meet at some point O inside the small square.
+
+<p>
+
+Now the triangles WOW' and YOY' are similar (WW' and YY' are parallel). Hence OW/OY = OW'/OY'. So if we set up coordinate systems with AB as the x-axis and AD as the y-axis (for the large square) and A'B' as the x'-axis and A'D' as the y'-axis (for the small square) so that corresponding points have the same coordinates, then the y coordinate of O equals the y' coordinate of O. Similarly, XOX' and ZOZ' are similar, so OX/OZ = OX'/OZ', so the x-coordinate of O equals its x'-coordinate. In other words, O represents the same point on both maps.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa78.html">7th USAMO 1978</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+20 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

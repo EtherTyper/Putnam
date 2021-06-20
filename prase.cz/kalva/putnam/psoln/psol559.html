@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 55/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>15th Putnam 1955</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Let R be the reals. f <b>:</b> R &rarr; R is twice differentiable, f '' is continuous and f(0) = 0. Define g <b>:</b> R &rarr; R by g(x) = f(x)/x for x &ne; 0, g(0) = f '(0). Show that g is differentiable and that g' is continuous.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>A routine application of the mean value theorem.</i>
+
+<p>
+
+The only issue is x = 0, because elsewhere we have simply g'(x) = f '(x)/x - f(x)/x<sup>2</sup>.
+
+<p>
+
+Given x, we can find &xi; such that f(x) = f(0) + x f '(0) + 1/2 x<sup>2</sup> f ''(&xi;) = x f '(0) + 1/2 x<sup>2</sup> f ''(&xi;). Hence lim<sub>x&rarr;0</sub> (g(x) - f '(0) )/x = lim<sub>x&rarr;0</sub> 1/2 f ''(&xi;) = 1/2 f ''(0). So g'(0) exists. 
+
+<p>
+
+Now lim<sub>x&rarr;0</sub> g'(x) = lim<sub>x&rarr;0</sub> (x f '(x) - f(x))/x<sup>2</sup>. But f '(x) = f '(0) + x f ''(&zeta;), and f(x) = x f '(0) + 1/2 x<sup>2</sup> f ''(&xi;) with &xi;, &zeta; &isin; (0, x). So lim<sub>x&rarr;0</sub> g'(x) = lim<sub>x&rarr;0</sub> f ''(&zeta;) - 1/2 f ''(&xi;) = 1/2 f ''(0) = g'(0). So g' is continuous at 0.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn55.html">15th Putnam 1955</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 51/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>11th Putnam 1951</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+T is a torus, center O. The plane P contains O and touches T. Prove that P &cup; T is two circles.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We may take the torus to be ( &radic;(x<sup>2</sup> + y<sup>2</sup>) - a )<sup>2</sup> + z<sup>2</sup> = b<sup>2</sup>, where a &gt; b. Viewed in the x-z plane the torus appears as two circles each radius b and centred at x = &plusmn;a, z = 0. The plane P appears as the line through the origin tangent to both circles and hence having equation c z = b x, where c = &radic;(a<sup>2</sup> - b<sup>2</sup>). P also contains the y-axis which is perpendicular to the line z = k x. Hence the equation of the plane P is z = k x.
+
+<p>
+
+It is far from obvious that P meets T in two circles. If we draw the plane P we see that T contains the four points on the y-axis,  y = &plusmn;a &plusmn; b, and also the points a distance c either side of the origin.  The obvious way to put these onto two circles is to take circles radius c, centred at (x, y, z) = (0, &plusmn;b, 0). These can be written as (x, y, z) = (c cos t, &plusmn;b + a sin t, b cos t). Hence &radic;(x<sup>2</sup> + y<sup>2</sup>) = a &plusmn; b sin t. So ( &radic;(x<sup>2</sup> + y<sup>2</sup>) - a )<sup>2</sup> = b<sup>2</sup>sin<sup>2</sup>t and ( &radic;(x<sup>2</sup> + y<sup>2</sup>) - a )<sup>2</sup> + z<sup>2</sup> = b<sup>2</sup>sin<sup>2</sup>t + b<sup>2</sup>cos<sup>2</sup>t = b<sup>2</sup>. Thus these circles do indeed lie on the torus.
+
+<p>
+
+We may write the equation of T as 2a &radic;(x<sup>2</sup> + y<sup>2</sup>) = x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>+ c<sup>2</sup>. Hence 4a<sup>2</sup>(x<sup>2</sup> + y<sup>2</sup>) = ( x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>+ c<sup>2</sup> )<sup>2</sup>. So (x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> - c<sup>2</sup>)<sup>2</sup> = 4a<sup>2</sup>x<sup>2</sup> + 4a<sup>2</sup>y<sup>2</sup> - 4c<sup>2</sup>(x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>) = 4b<sup>2</sup>x<sup>2</sup> + 4b<sup>2</sup>y<sup>2</sup> - 4c<sup>2</sup>z<sup>2</sup>. Hence (x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> - c<sup>2</sup>)<sup>2</sup> - (2by)<sup>2</sup> = 4b<sup>2</sup>x<sup>2</sup> - 4b<sup>2</sup>c<sup>2</sup>. So (x<sup>2</sup> + (y + b)<sup>2</sup> + z<sup>2</sup> - a<sup>2</sup>)(x<sup>2</sup> + (y - b)<sup>2</sup> + z<sup>2</sup> - a<sup>2</sup>) = 4(bx - cz)(bx + cz).
+
+<p>
+
+So if a point lies on the plane P, which has equation bx - cz = 0 and on the torus T, then it also lies on one of the two spheres (x<sup>2</sup> + (y + b)<sup>2</sup> + z<sup>2</sup> - a<sup>2</sup>) = 0 and (x<sup>2</sup> + (y - b)<sup>2</sup> + z<sup>2</sup> - a<sup>2</sup>) = 0. But a plane always intersects a sphere in a circle (or not at all) so the intersection of P and T is at most two circles. We have already established that it contains two circles, so it cannot contain any other points.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn51.html">11th Putnam 1951</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

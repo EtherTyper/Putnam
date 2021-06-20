@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 03/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>64th Putnam 2003</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+Show that &prod;<sub>i=1</sub><sup>n</sup> lcm(1, 2, 3, ... , [n/i]) = n!.
+
+<p>
+
+&nbsp;<p>
+<b>Solution</b>
+
+<p>
+
+The power of p dividing n! is [n/p] + [n/p<sup>2</sup>] + [n/p<sup>3</sup>] + ...  (the multiples of p each contribute one, then the multiples of p<sup>2</sup> each contribute another one and so on.
+<p>
+The power of p dividing lcm(1, 2, 3, ... , k) is m where p<sup>m</sup> &le; k &lt; p<sup>m+1</sup>. So the power of p dividing lcm(1, 2, ... , [n/i]) is m where p<sup>m</sup> &le; n/i &lt; p<sup>m+1</sup> or n/p<sup>m+1</sup> &lt; i &le; n/p<sup>m</sup>. There are [n/p<sup>m</sup>] - [n/p<sup>m+1</sup>] such i. So the total power of p is &sum; m([n/p<sup>m</sup>] - [n/p<sup>m+1</sup>]) = &sum; m[n/p<sup>m</sup>] - &sum;(m-1)[n/p<sup>m</sup>] = &sum; [n/p<sup>m</sup>], which is the same.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn03.html">64th Putnam 2003</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+8 Dec 2003
+
+<br>Last corrected/updated 8 Dec 03
+
+</BODY>
+
+
+
+</HTML>
+

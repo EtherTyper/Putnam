@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 80/5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>9th USAMO 1980</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 5</b><br>
+
+<p>
+
+If x, y, z are reals such that 0 &le; x, y, z &le; 1, show that x/(y + z + 1) + y/(z + x + 1) + z/(x + y + 1) &le; 1 - (1 - x)(1 - y)(1 - z).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Consider x/(y+z+1) + y/(z+x+1) + z/(x+y+1) + (1-x)(1-y)(1-z) as a function of x, with y and z fixed. Each term is convex, so the whole function is convex. Hence its maximum value occurs at its endpoints. The same is true for x and y, so we need only check the eight possible values x, y, z = 0 or 1. In fact, we easily find the expression has value 1 at all eight points. The result follows.
+
+<p>
+
+A function is convex if for any three points a &lt; b &lt; c, the point (b, f(b) ) lies on or below the chord joining the points (a, f(a) ) and (c, f(c) ). Analytically, this means that if b = ha + (1-h)c, where 0 &le; h &le; 1, then f(b) &le; h f(a) + (1-h) f(c). The linear nature of this relation implies immediately that a sum of convex functions is convex and that a positive multiple of a convex function is convex. Linear functions are obviously convex. It is obvious from the graph that the function a/(b+x) is convex. To prove it analytically we must show that a/(b+hx+(1-h)y)) &le; ha/(b+x) + (1-h)a/(b+y) or a(b<sup>2</sup> + bx + by + xy) &le; ha(b+y)(b+hx+(1-h)y) + (1-h)a(b+x)(b+hx+(1-h)y). After cancelling some terms, we have to show that xy &lt;= h(1-h)x<sup>2</sup>  + (1-h)<sup>2</sup>xy + h<sup>2</sup>xy + h(1-h)y<sup>2</sup>. This is obviously true for h = 1 or 0. Otherwise we may divide by 1-h, then h to get 2xy &le; x<sup>2</sup> + y<sup>2</sup>, which is true.
+
+<p>
+
+To see that the maximum value of a convex function must occur at its endpoints just draw a chord between the endpoints. All other points of the curve must lie below the chord.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa80.html">9th USAMO 1980</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+20 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

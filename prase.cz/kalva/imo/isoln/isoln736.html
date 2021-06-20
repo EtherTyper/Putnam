@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1973/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1973</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>n</sub> are positive reals, and q satisfies 0 &lt; q &lt; 1. Find b<sub>1</sub>, b<sub>2</sub>, ... , b<sub>n</sub> such that:
+
+<p>(a)&nbsp; a<sub>i</sub> &lt; b<sub>i</sub> for i = 1, 2, ... , n,
+
+<p>(b)&nbsp; q &lt; b<sub>i+1</sub>/b<sub>i</sub> &lt; 1/q for i = 1, 2, ... , n-1,
+
+<p>(c)&nbsp; b<sub>1</sub> + b<sub>2</sub> + ... + b<sub>n</sub> &lt; (a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>n</sub>)(1 + q)/(1 - q).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+We notice that the constraints are linear, in the sense that if b<sub>i</sub> is a solution for a<sub>i</sub>, q, and b<sub>i</sub>' is a solution for a<sub>i</sub>', q, then for any k, k' &gt; 0 a solution for ka<sub>i</sub> + k'a<sub>i</sub>', q is kb<sub>i</sub> + k'b<sub>i</sub>'. Also a "near" solution for a<sub>h</sub> = 1, other a<sub>i</sub> = 0 is b<sub>1</sub> = q<sup>h-1</sup>, b<sub>2</sub> = q<sup>h-2</sup>, ... , b<sub>h-1</sub> = q, b<sub>h</sub> = 1, b<sub>h+1</sub> = q, ... , b<sub>n</sub> = q<sup>n-h</sup>. "Near" because the inequalities in (a) and (b) are not strict.
+
+<p>However, we might reasonably hope that the inequalities would become strict in the linear combination, and indeed that is true. Define b<sub>r</sub> = q<sup>r-1</sup>a<sub>1</sub> + q<sup>r-2</sup>a<sub>2</sub> + ... + qa<sub>r-1</sub> + a<sub>r</sub> + qa<sub>r+1</sub> + ... + q<sup>n-r</sup>a<sub>n</sub>. Then we may easily verify that (a) - (c) hold.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo73.html">15th IMO 1973</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+10 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,73 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 97/5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 5</b>
+
+<p>
+
+Find all integral solutions to (m<sup>2</sup> - n<sup>2</sup>)<sup>2</sup> = 1 + 16n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+(m,n) = (&plusmn;1,0), (&plusmn;4,3), (&plusmn;4,5)
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Clearly n cannot be negative. On the other hand, if (m,n) is a solution, then so is (-m,n). If n = 0, then m = &plusmn;1. If m = 0, then n<sup>4</sup> = 1 + 16n, which has no solutions (because n must divide 1, but 1 is not a solution). So let us assume m and n are positive.
+<p>
+We have m<sup>2</sup> = n<sup>2</sup> + &radic;(1+16n) or m<sup>2</sup> = n<sup>2</sup> - &radic;(1+16n). In the first case, obviously m &gt; n. But (n+1)<sup>2</sup> = n<sup>2</sup> + 2n + 1 which is greater than n<sup>2</sup> + &radic;(1+16n) for (2n+1)<sup>2</sup> &gt; 1 + 16n or n &gt; 3. So if n &gt; 3, then m<sup>2</sup> lies strictly between n<sup>2</sup> and (n+1)<sup>2</sup>, which is impossible. It is easy to check that n = 1, 2 do not give solutions, but n = 3 gives the solution m = 4.
+<p>
+Similarly, in the second case we must have n &le; 5, and it is easy to check that n = 1, 2, 3, 4 do not give solutions, but n = 5 gives the solution m = 4.
+<p>
+<i>Thanks to Suat Namli</i>
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus97.html">Russian 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 February 2004
+<br>Last corrected/updatd 7 Feb 04
+
+</BODY>
+
+
+
+</HTML>
+

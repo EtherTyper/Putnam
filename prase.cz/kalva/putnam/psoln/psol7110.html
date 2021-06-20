@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1971/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>32nd Putnam 1971</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+A and B are two points on a sphere. S(A, B, k) is defined to be the set {P : AP + BP = k}, where XY denotes the great-circle distance between points X and Y on the sphere. Determine all sets S(A, B, k) which are circles.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: S(A, B, k) is a circle iff k = &pi; and A and B are not antipodal, in which case S(A, B, k) is the great circle perpendicular to the great circle through A and B and so that A and B are on the same side of and equidistant from the plane containing it.
+
+<p>
+
+Wlog we may take the sphere to have radius 1. Let the great-circle distance between A and B be d. So 0 &le; d &le; &pi;. If d = 0, then clearly any k (in the range 0 &lt; k &lt; &pi;) gives a circle. If d = &pi;, then any point P on the sphere has PA + PB = &pi;, so S is either empty or the whole sphere. So let us assume that 0 &lt; d &lt; &pi;.
+
+<p>
+
+Let C be the great circle through A and B. Let O be the centre. Let QR be the diameter with angle AOQ = angle BOR. Let B' be the reflection of B in QR. Then AB' is a diameter. Let C' be the great circle through Q and R perpendicular to C. For any point P on the sphere we have AP + PB' = &pi;. If P lies on C', then by symmetry BP = B'P, so AP + PB = &pi;. If P lies in the open hemisphere containing B, then BP &lt; B'P, so AP + BP &lt; &pi;. Similarly, if P lies in the open hemisphere containing B', then BP &gt; B'P, so AP + BP &gt; &pi;. Thus S(A, B, &pi;) is the circle C'.
+
+<p>
+
+Let us now assume 0 &lt; k &lt; &pi;. If k &lt; d, then S(A, B, k) is empty, since AP + BP cannot be less than AB. If k = d, then S(A, B, k) is the arc of C between A and B. So suppose d &lt; k &lt; &pi;. Then there are two points on C' in S(A, B, k): Q' on the arc AQ and R' on the arc BR, with AQ' = BR'. Now S(A, B, k) must be symmetrical about the plane containing C', so if it is a circle C'', then it must be the circle diameter Q'R' and perpendicular to C'. It suffices to find a single point X on this circle with AX + BX &gt; k. Let Y be the midpoint of the arc AB, and take X so that the great circle through X and Y is perpendicular to C'. Since we are assuming C'' is a circle we have YQ' = YX = YR'. Since the great circle through X and Y is perpendicular to C'', we must have AX &gt; YX and BX &gt; YX, so AX + BX &gt; 2 YX = 2 YQ' = AQ' + BQ' = k, so Y is not in S(A, B, k) after all.
+
+<p>
+
+Finally consider k &gt; &pi;. Let A' be the antipodal point to B. Now for any point P on the sphere, AP = &pi; - B'P and BP = &pi; - A'P, so S(A, B, k) = S(A', B', 2&pi;-k).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn71.html">32nd Putnam 1971</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Feb 2001
+
+</BODY>
+
+
+
+</HTML>
+

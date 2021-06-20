@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 99/1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>11th APMO 1999</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 1</b><br>
+<p>
+Find the smallest positive integer n such that no arithmetic progression of 1999 reals contains just n integers.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 70.
+<p>
+Using a difference of 1/n , where n does not divide 1999, we can get a progression of 1999 terms with m = [1998/n] or m = [1998/n] - 1 integers. Thus {0, 1/n, 2/n, ... , 1998/n} has m+1 integers, and {1/n, 2/n, ... , 1999/n} has m integers. So we are ok until n gets so large that the gap between [1998/n] and [1998/(n+1)] is 3 or more. This could happen for 1998/n - 1998/(n+1) just over 2 or n &gt; 31. So checking, we find [1998/31] = 64, [1998/30] = 66, [1998/29] = 68, [1998/28] = 71.
+<p>
+We can get 68 integers with {1/29, 2/29, ... , 1999/29} and 69 with {0, 1/29, 2/29, ... , 1998/29}. We can get 71 with {1/28, 2/28, ... , 1999/28}, but we cannot get 70. Note that a progression with irrational difference gives at most 1 integer. A progression with difference a/b, where a and b are coprime integers, gives the same number of integers as a progression with difference 1/b. So it does not help to widen the class of progressions we are looking at.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo99.html">11th APMO 1999</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 97/5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>9th APMO 1997</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 5</b><br>
+<p>
+n people are seated in a circle. A total of nk coins are distributed amongst the people, but not necessarily equally. A <i>move</i> is the transfer of a single coin between two adjacent people. Find an algorithm for making the minimum number of moves which result in everyone ending up with the same number of coins?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Label the people from 1 to n, with person i next to person i+1, and person n next to person 1. Let person i initially hold c<sub>i</sub> coins. Let d<sub>i</sub> = c<sub>i</sub> - k. 
+<p>
+It is not obvious how many moves are needed. Clearly <i>at least</i> 1/2 &sum; |d<sub>i</sub>| are needed. But one may need more. For example, suppose the starting values of d<sub>i</sub> are 0, 1, 0, -1, 0. Then one needs at least 2 moves, not 1.
+<p>
+
+Obviously &sum; d<sub>i</sub> = 0, so not all d<sub>i</sub> can be negative. Relabel if necessary so that d<sub>1</sub> &ge;= 0. Now consider X = |d<sub>1</sub>| + |d<sub>1</sub> + d<sub>2</sub>| + |d<sub>1</sub> + d<sub>2</sub> + d<sub>3</sub>| + ... + |d<sub>1</sub> + d<sub>2</sub> + ... + d<sub>n-1</sub>|. Note first that X is zero iff all d<sub>i</sub> are zero. Any move between i and i+1, <i>except</i> one between n and 1, changes X by 1, because only the term |d<sub>1</sub> + d<sub>2</sub> + ... + d<sub>i</sub>| is affected. Thus if we do not make any moves between n and 1, then we need at least X moves to reach the desired final position (with all d<sub>i</sub> zero). 
+<p>
+Assume X &gt; 1. We show how to find a move which reduces X by 1. This requires a little care to avoid specifying a move which might require a person with no coins to transfer one. We are assuming that d<sub>1</sub> &ge; 0. Take the first i for which d<sub>i+1</sub> &lt; 0. There must be such an i, otherwise all d<sub>i</sub> would be non-negative, but they sum to 0, so they would all have to be zero, contradicting X &gt; 0. If d<sub>1</sub>  + ... + d<sub>i</sub> &gt; 0, then we take the move to be a transfer from i to i+1. This will reduce |d<sub>1</sub>  + ... + d<sub>i</sub>| by 1 and leave the other terms in X unchanged, so it will reduce X by 1. If d<sub>1</sub>  + ... + d<sub>i</sub> is not strictly positive, then by the minimality of i we must have d<sub>1</sub> = d<sub>2</sub> = ... = d<sub>i</sub> = 0. We know that d<sub>i+1</sub> &lt; 0. Now find the first j &gt; i+1 such that d<sub>j</sub> &ge; 0. There must be such a j, otherwise we would have &sum; d<sub>m</sub> &lt; 0. We have d<sub>1</sub> + ... + d<sub>j-1</sub> &lt; 0, so a transfer from j to j-1 will reduce |d<sub>1</sub> + ... + d<sub>j-1</sub>| and hence reduce X. Finally note that the move we have chosen leaves d<sub>1</sub> &ge; 0. Thus we can repeat the process and reduce X to zero in X moves.
+<p>
+We have proved that this procedure minimises the number of moves if we accept the restriction that we do not make any transfers between 1 and n. Thus the full algorithm is: calculate the effect of the transfers from 1 to n and from n to 1 on X. If either of these transfers reduces X by more than 1, then take the move with the larger reduction; otherwise, find a move as above which reduces X by 1; repeat. 
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo97.html">9th APMO 1997</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

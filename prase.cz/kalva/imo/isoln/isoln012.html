@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 2001/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+a, b, c are positive reals. Let a' = &radic;(a<sup>2</sup> + 8bc), b' = &radic;(b<sup>2</sup> + 8ca), c' = &radic;(c<sup>2</sup> + 8ab). Prove that a/a' + b/b' + c/c' &gt;= 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+A not particularly elegant, but fairly easy, solution is to use Cauchy: (&sum; xy)<sup>2</sup> &le; &sum; x<sup>2</sup> &sum; y<sup>2</sup>.
+
+<p>
+
+To get the inequality the right way around we need to take x<sup>2</sup> = a/a' [to be precise, we are taking x<sub>1</sub><sup>2</sup> = a/a', x<sub>2</sub><sup>2</sup> = b/b', x<sub>3</sub><sup>2</sup> = c/c'.]. Take y<sup>2</sup> = a a', so that xy = a. Then we get &sum; a/a' &gt;= (&sum; a)<sup>2</sup>/&sum; a a'.
+
+<p>
+
+Evidently we need to apply Cauchy again to deal with &sum; a a'. This time we want &sum; a a' &le; something. The obvious X=a, Y=a' does not work, but if we put X=a<sup>1/2</sup>, Y=a<sup>1/2</sup>a', then we have &sum; a a' &le; (&sum; a)<sup>1/2</sup> (&sum; a a'<sup>2</sup>)<sup>1/2</sup>. So we get the required inequality provided that (&sum; a)<sup>3/2</sup> &ge; (&sum; a a'<sup>2</sup>)<sup>1/2</sup> or (&sum; a)<sup>3</sup> &ge; &sum; a a'<sup>2</sup>.
+
+<p>
+
+Multiplying out, this is equivalent to: 3(ab<sup>2</sup> + ac<sup>2</sup> + ba<sup>2</sup> + bc<sup>2</sup> + ca<sup>2</sup> + cb<sup>2</sup>) &ge; 18abc, or a(b - c)<sup>2</sup> + b(c - a)<sup>2</sup> + c(a - b)<sup>2</sup> &ge; 0, which is clearly true.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo01.html">42nd IMO 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Aug 2001
+
+<br>Last corrected/updated 12 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

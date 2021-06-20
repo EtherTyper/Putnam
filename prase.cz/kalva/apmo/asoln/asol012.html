@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 01/2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>13th APMO 2001</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 2</b><br>
+<p>
+Find the largest n so that the number of integers less than or equal to n and divisible by 3 equals the number divisible by 5 or 7 (or both).
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 65.
+<p>
+Let f(n) = [n/3] - [n/5] - [n/7] + [n/35]. We are looking for the largest n with f(n) = 0. Now [n/5] + [n/7} &lt;= [n/5 + n/7] = [12n/35] = [n/3 + n/105]. So for [n/5] + [n/7] to exceed [n/3] we certainly require n/105 &ge; 1/3 or n &ge; 35. Hence f(n) &ge; 0 for n &le; 35. But f(n+35) = [n/3 + 11 + 2/3] - [n/5 + 7] - [n/7 + 5] + [n/35 + 1] = [n/3 + 2/3] - [n/5] - [n/7] + [n/35] &ge; f(n) (*). Hence f(n) &ge; 0 for all n. But f(n+105) = [n/3 + 35] - [n/5 + 21] - [n/7 + 15] + [n/35 + 3] = f(n) + 2. Hence f(n) &ge; 2 for all n &ge; 105. 
+<p>
+Referring back to (*) we see that f(n+35) &gt; f(n), and hence f(n+35) &gt; 0, unless n is a multiple of 3. But if n is a multiple of 3, then n + 35 is not and hence f(n+70) &gt; f(n+35) &gt; 0. So f(n) &gt; 0 for all n &ge; 70.
+<p>
+f(70) = 1. So f(69) = 2 (we have lost 70, a multiple of 7). So f(68) = f(67) = f(66) = 1 (we have lost 69, a multiple of 3). Hence f(65) = 0 (we have lost 66, a multiple of 3).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo01.html">13th APMO 2001</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

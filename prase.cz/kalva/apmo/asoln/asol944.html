@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 94/4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>6th APMO 1994</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 4</b><br>
+<p>
+Can you find infinitely many points in the plane such that the distance between any two is rational and no three are collinear? 
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: yes.
+<p>
+Let &theta; = cos<sup>-1</sup>3/5. Take a circle center O radius 1 and a point X on the circle. Take P<sub>n</sub> on the circle such that angle XOP<sub>n</sub> = 2n&theta;. We establish (A) that the P<sub>n</sub> are all distinct and (B) that the distances P<sub>m</sub>P<sub>n</sub> are all rational.
+<p>
+We establish first that we can express 2 cos nx as a polynomial of degree n in (2 cos x) with integer coefficients and leading coefficient 1. For example, 2 cos 2x = (2 cos x)<sup>2</sup> - 1, 2 cos 3x = (2 cos x)<sup>3</sup> - 3 (2 cos x). We proceed by induction. Let the polynomial be p<sub>n</sub>(2 cos x). We have that p<sub>1</sub>(y) = y and p<sub>2</sub>(y) = y<sup>2</sup> - 1. Suppose we have found p<sub>m</sub> for m &le; n. Now cos(n+1)x = cos nx cos x - sin nx sin x, and cos(n-1)x = cos nx cos x + sin nx sin x, so cos(n+1)x = 2 cos x cos nx - cos(n-1)x. Hence p<sub>n+1</sub>(y) = y p<sub>n</sub>(y) - p<sub>n-1</sub>(y). Hence the result is also true for n+1.
+<p>
+It follows that (1) if cos x is rational, then so is cos nx, and (2) if cos x is rational, then x/&pi; is irrational. To see (2), suppose that x/&pi; = m/n, with m and n integers. Then nx is a multiple of &pi; and hence cos nx = 0, so p<sub>n</sub>(2 cos x) = 0. Now we may write p<sub>n</sub>(y) = y<sup>n</sup> + a<sup>n-1</sup>y<sup>n-1</sup> + ... + a<sub>0</sub>. Now if also cos x = r/s, with r and s relatively prime integers, then we have, p<sub>n</sub>(2 cos x) = r<sup>n</sup> + a<sub>n-1</sub>s r<sup>n-1</sup> + ... + a<sub>0</sub>s<sup>n</sup> = 0. But now s divides all terms except the first. Contradiction. 
+<p>
+Thus we cannot have cos m&theta; = cos n&theta; for any distinct integers m, n, for then &theta;/&pi; would be rational as well as cos &theta;. So we have established (A).
+<p>
+We have also established that all cos n&theta; are rational. But since sin(n+1)x = sin nx cos x + cos nx sin x and sin &theta; = 4/5, it is a trivial induction that all sin n&theta; are also rational. Now P<sub>m</sub>P<sub>n</sub> = 2 |sin(m - n)&theta;|, so all the distances P<sub>m</sub>P<sub>n</sub> are rational, thus establishing (B).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo94.html">6th APMO 1994</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

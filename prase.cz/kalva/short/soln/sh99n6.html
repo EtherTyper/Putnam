@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>40th IMO shortlist 1999/N6 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>40th IMO 1999 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N6</b><br>
+<p>
+Show that for any k &gt; 0 we can find an infinite arithmetic progression of positive integers each of which has sum of digits greater than k and where the common difference is not a multiple of 10. 
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+The AP is A, A+d, A+2d, A+3d, ... . In outline, the idea is to take the difference d large. Then we will show that there are only a small number of possibilities for the residue mod d of numbers with small digit sum. We take A to be different from these residues. Then since every term in the arithmetic progression has the same residue A mod d, it cannot have small digit sum.
+<p>
+So take d = 10<sup>m</sup> + 1, where m will be chosen later (so d is obviously not a multiple of 10). Put a<sub>n</sub> = A + nd and assume it has digits b<sub>s</sub>b<sub>s-1</sub> ... b<sub>0</sub>. If u and v differ by a multiple of 2m, then 10<sup>u</sup> = 10<sup>v</sup> mod (10<sup>m</sup> + 1) (because 10<sup>m</sup> + 1 divides 10<sup>2m</sup> - 1 which divides 10<sup>u</sup> - 10<sup>v</sup>). So take c<sub>i</sub> = b<sub>i</sub> + b<sub>i+2m</sub> + b<sub>i+4m</sub> + ... for i = 0, 1, 2, ... , 2m-1. Then a<sub>n</sub> = c<sub>2m-1</sub>10<sup>2m-1</sup> + ... + c<sub>0</sub> mod (10<sup>m</sup> + 1).
+<p>
+Now we claim that the number of 2m-tuples (c<sub>0</sub>, c<sub>1</sub>, ... , c<sub>2m-1</sub>) of non-negative integers with sum &le; k is (k+2m)Ck (the binomial coefficient (k+2m)!/(k! 2m!) ). To prove the claim, note that there are (k+2m)Ck ways or arranging k 0s and 2m 1s in a row. For each such arrangement take c<sub>j</sub> to be the number of 1s before the jth 0 (and after the j-1th 0 if there is one).
+<p>
+But (k+2m)Ck &lt; 10<sup>m</sup> for m sufficiently large. So we can find a number A in {1, 2, ... , 10<sup>m</sup>} which is different from all of the residues c<sub>2m-1</sub>10<sup>2m-1</sup> + ... + c<sub>0</sub> mod (10<sup>m</sup> + 1) for tuples (c<sub>0</sub>, ... , c<sub>2m-1</sub>) with sum &le; k.  Now if a<sub>n</sub> had digit sum &le; k, then the corresponding c<sub>i</sub> would have sum equal to this digit sum and hence &le; k so the corresponding residue c<sub>2m-1</sub>10<sup>2m-1</sup> + ... + c<sub>0</sub> mod (10<sup>m</sup> + 1) could not be A. But a<sub>n</sub> = A mod (10<sup>m</sup> + 1) and a<sub>n</sub> = c<sub>2m-1</sub>10<sup>2m-1</sup> + ... + c<sub>0</sub> mod (10<sup>m</sup> + 1). Contradiction. So the digit sum of a<sub>n</sub> must exceed k.
+<p>
+<i>Comment.</i>
+<p>
+If multiples of 10 are allowed the problem is trivial: let A = 11 ... 1 be the number with k+1 1s. Then let d be 10<sup>2k</sup>. Now the last k+1 digits of A + nd are always the same, so A + nd always has digit sum greater than k.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh99.html">40th IMO shortlist 1999</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

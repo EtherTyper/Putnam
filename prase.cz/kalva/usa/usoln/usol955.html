@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 95/5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>24th USAMO 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 5</b><br>
+
+<p>
+
+A graph with n points and k edges has no triangles. Show that it has a point P such that there are at most k(1 - 4k/n<sup>2</sup>) edges between points not joined to P (by an edge).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Given a point P, the edges of the graph can be divided into three categories: (1) edges PQ, (2) edges QQ', where Q is joined to P, and (3) edges Q'Q", where Q' and Q" are not joined to P. Note that if Q is joined to P and there is an edge QQ', then Q' cannot be joined to P, or PQQ' would be a triangle. So the total number of edges in categories (1) and (2) is &sum;' deg Q, where &sum;' indicates that the sum is taken over points Q which are joined to P (by an edge). Thus the total number of edges in category (3) is k - &sum;' deg Q. So we have to show that for some P, &sum;' deg Q &ge; 4k<sup>2</sup>/n<sup>2</sup>.
+
+<p>
+
+The total for all points P is &sum;<sub>P</sub>&sum;' deg Q. If we invert the order of the summations, this becomes  &sum; deg<sup>2</sup>Q, where the sum is over all points Q. Now by Cauchy, (&sum; deg Q)<sup>2</sup> &le; (&sum; 1<sup>2</sup>)(&sum; deg<sup>2</sup>Q) = n &sum; deg<sup>2</sup>Q. But &sum; deg Q = 2k, so &sum; deg<sup>2</sup>Q &ge; 4k<sup>2</sup>/n and hence &sum;<sub>P</sub>&sum;' deg Q &ge; 4k<sup>2</sup>/n. But if a sum of n terms is at least 4k<sup>2</sup>/n, then at least one for the terms must be at least 4k<sup>2</sup>/n<sup>2</sup>. In other words, there is a point P such that &sum;' deg Q &ge; 4k<sup>2</sup>/n<sup>2</sup>, as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa95.html">24th USAMO 1995</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

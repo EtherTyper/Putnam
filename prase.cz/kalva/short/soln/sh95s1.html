@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1995/S1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>36th IMO 1995 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem S1</b><br>
+<p>
+Find a sequence f(1), f(2), f(3), ... of non-negative integers such that 0 occurs in the sequence, all positive integers occur in the sequence infinitely often, and f( f(n<sup>163</sup>) ) = f( f(n) ) + f( f(361) ).
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Take f(1) = 0, f(361) = 1. For all other n, let f(n) = f(m) if n = m<sup>163</sup>, or the smallest number not in {f(0), f(1), ... , f(n-1)} otherwise. 
+<p>
+Now infinitely many numbers are not 163rd powers, so we certainly get every integer at least once. But if f(k) = n, then f(k<sup>163</sup>) = n also, so we get all positive integers infinitely often.
+<p>
+Finally, f( f(n<sup>163</sup>) ) = f( f(n) ) = f( f(n) ) + 0 = f( f(n) ) + f(1) = f( f(n) ) + f( f(361) ).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh95.html">36th IMO shortlist 1995</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+20 Sep 2002
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,63 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1984/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1984</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+Let a, b, c, d be odd integers such that 0 &lt; a &lt; b &lt; c &lt; d and ad = bc. Prove that if a + d = 2<sup>k</sup> and b + c = 2<sup>m</sup> for some integers k and m, then a = 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+a &lt; c, so a(d - c) &lt; c (d - c) and hence bc - ac &lt; c(d - c). So b - a &lt; d - c, or a + d &gt; b + c, so k &gt; m.
+
+<p>
+bc = ad, so b(2<sup>m</sup> - b) = a(2<sup>k</sup> - a). Hence b<sup>2</sup> - a<sup>2</sup> = 2<sup>m</sup>(b - 2<sup>k-m</sup>a). But b<sup>2</sup> - a<sup>2</sup> = (b + a)(b - a), and (b + a) and (b - a) cannot both be divisible by 4 (since a and b are odd), so 2<sup>m-1</sup> must divide b + a or b - a. But if it divides b - a, then b - a &ge; 2<sup>m-1</sup>, so b and c &gt; 2<sup>m-1</sup> and b + c &gt; 2<sup>m</sup>. Contradiction. Hence 2<sup>m-1</sup> divides b + a. If b + a &ge; 2<sup>m</sup> = b + c, then a &ge; c. Contradiction. Hence b + a = 2<sup>m-1</sup>. <p>So we have b = 2<sup>m-1</sup> - a, c = 2<sup>m-1</sup> + a, d = 2<sup>k</sup> - a. Now using bc = ad gives: 2<sup>k</sup>a = 2<sup>2m-2</sup>. But a is odd, so a = 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo84.html">25th IMO 1984</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+19 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

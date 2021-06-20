@@ -1,0 +1,98 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1996/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+We call a finite string of the symbols X and O <i>balanced</i> iff every substring of consecutive symbols has a difference of at most 2 between the number of Xs and the number of Os. For example, XOOXOOX is not balanced, because the substring OOXOO has a difference of 3. Find the number of balanced strings of length n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 3.2<sup>n/2</sup> - 2 for n even, 2<sup>[n/2]+2</sup> - 2 for n odd.
+
+<p>
+<i>Easy if you have the right insight. Moderately difficult otherwise (analyze cases, find a recurrence relation and solve it).</i>
+
+<p>
+The insight is to change focus from the identity of the symbol to the number of consecutive symbols of a given type. We cannot have XXX or OOO, so we have blocks of length 1 or 2, alternately X and O. If we code the string as 11122112... , then each such code corresponds to two possible strings depending on whether we start with X or O. 
+
+<p>The balance requirement translates to requiring an even number of 1s between each pair of adjacent 2s. This is clearly a necessary condition because if there are an odd number 2m+1 of 1s then the flanking 2s represent the same symbol and so the substring corresponding to 21...12 has |&Delta;| = 4 + m - (m+1) = 3, which is inadmissible. On the other hand, it is not hard to see that it is also a sufficient condition. We want |&Delta;| for a substring. In calculating this we can ignore any complete runs of 1s and their flanking 2s, because of the evenness property, so the only possibilities are:
+
+<pre>
+
+     some 1s                    |&Delta;| = 0 or 1;
+
+     some 1s, 2                 |&Delta;| = 1 or 2;
+
+     some 1s, 2, some 1s        |&Delta;| = 1 or 2;
+
+     2                          |&Delta;| = 2;
+
+     2, some 1s                 |&Delta;| = 1 or 2;
+
+</pre>
+
+<p>
+Now take n even = 2m. The balance requirement implies that each sequence of 1s and 2s can be obtained by starting with 22...2 or 122...21 and replacing zero or more 2s by a pair of 1s. Moreover this process generates each acceptable sequence just once, except for 11...1 which is generated twice. Thus there are 2<sup>m</sup> + 2<sup>m-1</sup> - 1 sequences and hence 2(2<sup>m</sup> + 2<sup>m-1</sup> - 1) = 3&middot;2<sup>m</sup> - 2 balanced strings. For n odd = 2m+1, we start with 122...2 or 22...21 and get 2(2<sup>m</sup> + 2<sup>m</sup> - 1) = 2<sup>m+2</sup> - 1 balanced strings.
+
+<p>
+For a less elegant solution, we try to get a recurrence relation. It quickly becomes clear that we need to distinguish strings which start with a repeated symbol from those which do not. The main task turns out to be showing that the number of balanced strings length n which begin with XX or OO is 2<sup>[n/2]</sup>. Let b be a balanced string length 2n+1 beginning with XX. Since 2n+1 is odd &Delta;(b) = 1 or -1. But if &Delta; = -1, then the substring formed by deleting the initial XX would have &Delta; = -3. Hence &Delta; = 1. Similarly, if a balanced string length 2n beginning with XX must have &Delta; = 0 or 2. 
+
+<p>
+Now we claim that if we add either X or O add the end of a balanced string length 2n+1 beginning with XX to get a new string b, then b is balanced. It is sufficient to show that |&Delta;(s)| &le; 2 for a substring ending with the final symbol. Note first that &Delta;(b) = 0 or 2, depending on whether we added a O or an X. Let t be the complementary string b \ s. Then &Delta;(s) = &Delta;(b) - &Delta;(t) = 0 or 2 less 0, 1, or 2 = something in the range -2 to 2. Thus the number of balanced strings beginning XX and length 2n is twice the number length 2n-1. 
+
+<p>
+On the other hand, if have a balanced string length 2n, the symbol we add must be chosen to fix &Delta; for the new string at 1, so at most one of X and O will work. In fact a similar argument shows that if we pick X or O to make &Delta; = 1, then the new string is balanced. Taking b, s and t as before we have &Delta;(s) = &Delta;(b) - &Delta;(t) = 1 less 0, 1 or 2 = 1, 0 or -1. Thus the number of balanced strings beginning XX and length 2n equals the number length 2n+1. A trivial induction now gives that the number length n is 2<sup>[n/2]-1</sup>. But the numbers of balanced strings beginning XX and OO are obviously the same, so we get the result stated at the start.
+
+<p>
+Now we claim that the number of balanced strings length n+1 beginning XO is the same as the number of balanced strings length n beginning O. For clearly if b is a balanced string length n+1 beginning XO, then the substring formed by deleting the initial X is balanced, so it is sufficient to show that if we add X at the start of a balanced string b beginning with O, then the new string b' is balanced. So suppose s is a substring of b' beginning with the first symbol X. s has the same &Delta; as the string formed by deleting its first two symbols, so we must have |&Delta;| &le; 2, since b is balanced.
+
+<p>
+So let u<sub>n</sub> be the number of balanced strings length n. Then we have established that u<sub>2n</sub> = u<sub>2n-1</sub> + 2<sup>n</sup>, u<sub>2n+1</sub> = u<sub>2n</sub> + 2<sup>n</sup>. So we get immediately that u<sub>2n</sub> = (2<sup>n</sup> + 2<sup>n-1</sup>) + u<sub>2n-2</sub> = ... = (<sup>n</sup> + 2<sup>n-1</sup>) + (2<sup>n-1</sup> + 2<sup>n-2</sup>) + ... + (2<sup>1</sup> + 2<sup>0</sup>) + 1 = 2<sup>n</sup> + (2<sup>n</sup> + 2<sup>n-1</sup> + ... + 2<sup>1</sup>) = 2<sup>n</sup> + 2<sup>n+1</sup> - 2 = 3&middot;2<sup>n</sup> - 2 (checking that u<sub>2</sub> = 4). Hence u<sub>2n+1</sub> = 4&middot;2<sup>n</sup> - 2 = 2<sup>n+2</sup> - 2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn96.html">Putnam 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

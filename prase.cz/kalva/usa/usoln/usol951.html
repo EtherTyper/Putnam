@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 95/1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>24th USAMO 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 1</b><br>
+
+<p>
+
+The sequence a<sub>0</sub>a<sub>1</sub>, a<sub>2</sub>, ... of non-negative integers is defined as follows. The first p-1 terms are 0, 1, 2, 3, ... , p-2. Then a<sub>n</sub> is the least positive integer so that there is no arithmetic progression of length p in the first n+1 terms. If p is an odd prime, show that a<sub>n</sub> is the number obtained by writing n in base p-1, then treating the result as a number in base p. For example, if p is 5, to get the 5th term one writes 5 as 11 in base 4, then treats this as a base 5 number to get 6. 
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let b<sub>n</sub> be the number obtained by writing n in base p-1 and then treating the result as a number in base p. The resulting sequence b<sub>n</sub> is all those non-negative integers whose base p representation does not have a digit p-1. We show that b<sub>n</sub> cannot contain an arithmetic progression of length p. For suppose there was such a progression with difference d. Suppose the last non-zero digit of d in base p is k. Suppose the first term of the progression has digit h in that position, then the terms of the progression have digit h, h+k, h+2k, ... h+(p-1)k mod p in that position. But these must be a complete set of residues mod p, so one of them must be p-1 mod p. So the corresponding term has a digit p-1 in this position. Contradiction.
+
+<p>
+
+Now to show that a<sub>n</sub> = b<sub>n</sub> we use induction on n. Evidently, it is true for n &lt; p-1. Suppose it is true for all m &lt; n. It is sufficient to show that if b<sub>n</sub> &lt; m &lt; b<sub>n+1</sub>, then {b<sub>1</sub>, b<sub>2</sub>, ... , b<sub>n</sub>, m} contains an arithmetic progression. m must contain a digit p-1, for otherwise  it would be b<sub>k</sub> for some k &gt; n. Let m<sub>1</sub> be the number obtained from m by reducing <i>every</i> digit p-1 in m by 1. Then m has no digit p-1s, so it must be some b<sub>k</sub> and hence one of b<sub>1</sub>, ... , b<sub>n</sub>. Now take m<sub>2</sub> to be the number obtained by reducing the same digits by another 1. Similarly, define m<sub>3</sub>, ... , m<sub>p-1</sub>. Then each m<sub>i</sub> is in {b<sub>1</sub>, ... , b<sub>n</sub>} and m<sub>p-1</sub>, ... , m<sub>1</sub>, m is a progression of length p.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa95.html">24th USAMO 1995</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

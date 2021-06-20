@@ -1,0 +1,82 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 54/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>14th Putnam 1954</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+If x is a positive rational, show that we can find distinct positive integers a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>n</sub> such that x = &sum; 1/a<sub>i</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Hard.</i>
+
+<p>
+
+Rather surprisingly, the simplest possible algorithm - the greedy algorithm - works: take a<sub>n</sub> to be the smallest integer not already chosen so that the sum does not exceed x. This terminates after a finite number of steps.
+
+<p>
+
+Note that the numbers involved can be quite large even in simple cases. For example: 4 = 1/1 + 1/2 + 1/3 + ... + 1/30 + 1/200 + 1/77706 + 1/16532869712 + 1/3230579689970657935732 + 1/36802906522516375115639735990520502954652700
+
+<p>
+
+The key idea is that the numerator of the difference gets smaller each time and hence the process must terminate.
+
+<p>
+
+First, we have to get the difference under 1. So take m such that 1 + 1/2 + ... + 1/m &le; x &lt; 1 + 1/2 + ... + 1/(m+1). This is possible since the harmonic series diverges. If we have equality, then we are home. If not then the difference x - (1 + 1/2 + ... + 1/m) &lt; 1/(m+1). 
+
+<p>
+
+Let the difference x - (1/a<sub>1</sub> + 1/a<sub>2</sub> + ... + 1/a<sub>n</sub>) be d<sub>n</sub> = r<sub>n</sub>/s<sub>n</sub> (where r<sub>n</sub> and s<sub>n</sub> are integers).
+
+<p>
+
+So we may assume that we have picked a<sub>1</sub>, ... , a<sub>n</sub> and that d<sub>n</sub> &lt; 1/(a<sub>n</sub> + 1). We now take a<sub>n+1</sub> so that 1/a<sub>n+1</sub> &le; d<sub>n</sub> &lt; 1/(a<sub>n+1</sub> - 1). Now d<sub>n+1</sub> = d<sub>n</sub> - 1/a<sub>n+1</sub> = (r<sub>n</sub>a<sub>n+1</sub> - s<sub>n</sub>)/(s<sub>n</sub>a<sub>n+1</sub>). This expression may not be in lowest terms, but it is certainly <i>sufficient</i> to show that (r<sub>n</sub>a<sub>n+1</sub> - s<sub>n</sub>) &lt; r<sub>n</sub> or d<sub>n</sub>a<sub>n+1</sub> - 1 &lt; d<sub>n</sub>. But that is true since d<sub>n</sub>(a<sub>n+1</sub> - 1) &lt; 1. Finally, we notice that d<sub>n+1</sub> &lt; 1/(a<sub>n+1</sub> + 1) is equivalent to d<sub>n</sub> - 1/a<sub>n+1</sub> &lt; 1/(a<sub>n+1</sub> + 1), which is true since 1/(a<sub>n+1</sub> - 1) - 1/a<sub>n+1</sub> &lt; 1/(a<sub>n+1</sub> + 1), since a<sub>n+1</sub> &gt; 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn54.html">14th Putnam 1954</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

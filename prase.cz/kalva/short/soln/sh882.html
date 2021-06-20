@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<TITLE>29th IMO shortlist 1988/2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>29th IMO 1988 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 2</b>
+<p>
+Find the number of odd coefficients of the polynomial (x<sup>2</sup> + x + 1)<sup>n</sup>.
+<p>
+&nbsp;<p>
+<b>Answer</b>
+In binary n is a block of a<sub>1</sub> 1s, followed by a block of 0s, followed by a block of a<sub>2</sub> 1s, followed by a block of 0s, ... , followed by a block of a<sub>k</sub> 1s, (followed by a block of 0s). Let f(x) = (2<sup>x+2</sup> + (-1)<sup>x+1</sup>)/3. Then the number of odd coefficients is &prod; f(a<sub>i</sub>).
+<p>
+<b>Solution</b>
+<p>
+Let c(n) be the number of odd coefficients. Obviously c(1) = 3. We have (x<sup>2</sup> + x + 1)<sup>2</sup> = x<sup>4</sup> + x<sup>2</sup> + 1 mod 2. Hence by a trivial induction c(2<sup>k</sup>) = 3. 
+<p>
+It is convenient to consider the expansion of (x + 1 + 1/x)<sup>n</sup> which obviously has the same number of odd coefficients. We guess that for n = 2<sup>k</sup> - 1 and k odd, we have (x + 1 + 1/x)<sup>n</sup> = (x<sup>n</sup> + x<sup>n-1</sup> + x<sup>n-3</sup> + x<sup>n-4</sup> + x<sup>n-6</sup> + ... + x + 1 + 1/x + ... + 1/x<sup>n</sup>) mod 2 (missing out every third term), and for k even we have (x + 1 + 1/x)<sup>n</sup> = (x<sup>n</sup> + x<sup>n-1</sup> + x<sup>n-3</sup> + x<sup>n-4</sup> + x<sup>n-6</sup> + ... + x<sup>2</sup> + 1 + 1/x<sup>2</sup> + ... + 1/x<sup>n</sup>) mod 2 (missing out every third term for the positive powers, but including x<sup>0</sup> and then matching negative powers).
+<p>
+We prove this by induction on k. It is true for k = 1 and 2. Suppose it is true for k-1 odd and k even. If n = 2<sup>k</sup> - 1, then 2<sup>k+1</sup> - 1 = 2n+1, and (x + 1 + 1/x)<sup>2n+1</sup> = (x + 1 + 1/x) (x + 1 + 1/x)<sup>2n</sup> = (x + 1 + 1/x) (x<sup>2</sup> + 1 + 1/x<sup>2</sup>)<sup>n</sup> mod 2 = x(x<sup>2</sup> + 1 + 1/x<sup>2</sup>)<sup>n</sup> + (x<sup>2</sup> + 1 + 1/x<sup>2</sup>)<sup>n</sup> + (1/x)(x<sup>2</sup> + 1 + 1/x<sup>2</sup>)<sup>n</sup>. By induction this is:
+<pre>
+x<sup>2n+1</sup> + x<sup>2n-1</sup> + x<sup>2n-5</sup> + x<sup>2n-7</sup> + ... + x<sup>7</sup> + x<sup>5</sup> + x + 1/x<sup>3</sup> + 1/x<sup>5</sup> + 1/x<sup>9</sup> + ... + 1/x<sup>2n-1</sup>
+    x<sup>2n</sup> + x<sup>2n-2</sup> + x<sup>2n-6</sup> + x<sup>2n-8</sup> + ... + x<sup>6</sup> + x<sup>4</sup> + 1 + 1/x<sup>4</sup> + 1/x<sup>6</sup> + 1/x<sup>10</sup> + ... + 1/x<sup>2n</sup>
+        x<sup>2n-1</sup> + x<sup>2n-3</sup> + x<sup>2n-7</sup> + x<sup>2n-9</sup> + ... + x<sup>5</sup> + x<sup>3</sup> + 1/x + 1/x<sup>5</sup> + 1/x<sup>7</sup> + 1/x<sup>11</sup> + ... + 1/x<sup>2n+1</sup>
+giving
+x<sup>2n+1</sup> + x<sup>2n</sup> + x<sup>2n-2</sup> + x<sup>2n-3</sup> + x<sup>2n-5</sup> + x<sup>2n-6</sup> + ... + x<sup>7</sup> + x<sup>6</sup> + x<sup>4</sup> + x<sup>3</sup> + x + 1 + 1/x + 1/x<sup>3</sup> + 1/x<sup>4</sup> + ... + 1/x<sup>2n</sup> + 1/x<sup>2n+1</sup>
+</pre>
+So the result is true for k+1. In an exactly similar way, we deduce that the result is true for k+2 and hence for all k. It follows immediately that c(2<sup>k</sup> - 1) = (2<sup>k+2</sup> + (-1)<sup>k+1</sup>)/3.
+<p>
+Now if n = 2<sup>k+1</sup>M + N with N &lt; 2<sup>k</sup>, then putting K = 2<sup>k+1</sup> to cope with the deficiencies of the browser (or maybe of my knowledge of HTML) we have (x<sup>2</sup> + x + 1)<sup>n</sup> = (x<sup>2</sup> + x + 1)<sup>KM</sup>(x<sup>2</sup> + x + 1)<sup>N</sup> = (x<sup>2K</sup> + x<sup>K</sup> + 1)<sup>M</sup>(x<sup>2</sup> + x + 1)<sup>N</sup>. But the highest power in (x<sup>2</sup> + x + 1)<sup>N</sup> is x<sup>2N</sup> and 2N &lt; K. So if A is the expansion of (x<sup>2K</sup> + x<sup>K</sup> + 1)<sup>M</sup> and B is the expansion of (x<sup>2</sup> + x + 1)<sup>N</sup>, then each power in the product A times B  occurs in only one way. Hence c(n) = c(M) c(N). Hence the answer given at the start of the solution.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh88.html">29th IMO shortlist 1988</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Dec 2002
+<br>Last corrected/updated 30 Dec 02
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+<HTML>
+
+<HEAD>
+<TITLE>IMO shortlist 1995/A6 solution</TITLE>
+<META NAME="GENERATOR" CONTENT="Arachnophilia 3.6">
+<META NAME="FORMATTER" CONTENT="Arachnophilia 3.6">
+</HEAD>
+
+<BODY BACKGROUND="../../pap1.jpg" TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>36th IMO 1995 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A6</b><br>
+<p>
+x<sub>1</sub> &lt; x<sub>2</sub> &lt; ... &lt; x<sub>n</sub> are real numbers, where n &gt; 2. Show that n(n-1)/2 <font face="symbol">S</font><sub>i&lt;j</sub> x<sub>i</sub>x<sub>j</sub> &gt; ( (n-1)x<sub>1</sub> + (n-2)x<sub>2</sub> + ... + 2x<sub>n-2</sub> + x<sub>n-1</sub>) (x<sub>2</sub> + 2x<sub>3</sub> + ... + (n-1)x<sub>n</sub>).
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Put y<sub>i</sub> = (x<sub>i+1</sub> + x<sub>i+2</sub> + ... + x<sub>n</sub>), y = (x<sub>2</sub> + 2x<sub>3</sub> + ... + (n-1)x<sub>n</sub>), c = n(n-1)/2, z<sub>i</sub> = cy<sub>i</sub> - (n-i)y. Then n(n-1)/2 <font face="symbol">S</font><sub>i&lt;j</sub> x<sub>i</sub>x<sub>j</sub> - ( (n-1)x<sub>1</sub> + (n-2)x<sub>2</sub> + ... + 2x<sub>n-2</sub> + x<sub>n-1</sub>) (x<sub>2</sub> + 2x<sub>3</sub> + ... + (n-1)x<sub>n</sub>) = c(x<sub>1</sub>y<sub>1</sub> + x<sub>2</sub>y<sub>2</sub> + ... + x<sub>n-1</sub>y<sub>n-1</sub>) - y( (n-1)x<sub>1</sub> + (n-2)x<sub>2</sub> + ... + x<sub>n-1</sub>) = (x<sub>1</sub>z<sub>1</sub> + x<sub>2</sub>z<sub>2</sub> + ... + x<sub>n-1</sub>z<sub>n-1</sub>) (*).
+<p>
+We have y<sub>1</sub> + y<sub>2</sub> + ... + y<sub>n-1</sub> = (x<sub>2</sub> + ... + x<sub>n</sub>) + (x<sub>3</sub> + ... + x<sub>n</sub>) + ... + x<sub>n</sub> = y. Also (n-1) + (n-2) + ... + 1 = c, so z<sub>1</sub> + ... + z<sub>n-1</sub> = 0. We have y = x<sub>2</sub> + 2x<sub>3</sub> + ... + (n-1)x<sub>n</sub> &lt; x<sub>n</sub> + 2x<sub>n</sub> + ... + (n-1)x<sub>n</sub> = cx<sub>n</sub>. So z<sub>n-1</sub> = cy<sub>n-1</sub> - y = cx<sub>n</sub> - y &gt; 0. So at least one z<sub>i</sub> is negative.
+<p>
+z<sub>i+1</sub>/( c(n-i-1) ) - z<sub>i</sub>/( c(n-i) ) = y<sub>i+1</sub>/(n-i-1) - y<sub>i</sub>/(n-i). But y<sub>i+1</sub>/(n-i-1) is the average of the terms x<sub>i+2</sub>, ... , x<sub>n</sub> and y<sub>i</sub>/(n-i) is the average of the terms x<sub>i+1</sub>, ... , x<sub>n</sub> and x<sub>i</sub> is a strictly increasing sequence. Hence z<sub>i+1</sub>/( c(n-i-1) ) &gt; z<sub>i</sub>/( c(n-i) ). So for some k we must have z<sub>i</sub> &lt;= 0 for i = 1, 2, ... , k and z<sub>i</sub> &gt; 0 for i = k+1, ... , n-1. Hence (x<sub>i</sub> - x<sub>k</sub>) z<sub>i</sub> &gt;= 0 for all i and it is strictly positive for i = n-1 (and possibly other i also). Hence (x<sub>1</sub>z<sub>1</sub> + x<sub>2</sub>z<sub>2</sub> + ... + x<sub>n-1</sub>z<sub>n-1</sub>) &gt; x<sub>k</sub>(z<sub>1</sub> + ... + z<sub>n-1</sub>) = 0. With (*) this gives the required inequality.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh95.html">36th IMO shortlist 1995</a><br>
+<p>(C) John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+4 Sep 2002
+</BODY>
+
+</HTML>

@@ -1,0 +1,86 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 99/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>28th USAMO 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+p is an odd prime. The integers a, b, c, d are not multiples of p and for any integer n not a multiple of p, we have {na/p} + {nb/p} + {nc/p} + {nd/p} = 2, where { } denotes the fractional part. Show that we can find two of a, b, c, d whose sum is divisible by p.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Solution by Michael J Dor&eacute;</i>
+
+<p>
+
+<u>n</u> denote the residue of n mod p, so <u>n</u> = 0, 1, 2, ... , or p-1. Thus {na/p} = <u>na</u>/p, and we have that <u>na</u> + <u>nb</u> + <u>nc</u> + <u>nd</u> = 2p for n not a multiple of p. 
+
+<p>
+
+Let &omega; be a complex pth root of 1. We show first that &omega; + 2&omega;<sup>2</sup> + 3&omega;<sup>3</sup> + ... + (p-1)&omega;<sup>p-1</sup> = p/(&omega; - 1). Suppose the sum is S. Then (1 - 2&omega; + &omega;<sup>2</sup>)S = &omega; - p&omega;<sup>p</sup> + (p-1)&omega;<sup>p+1</sup> (we need only look at the two lowest and two highest powers - the others all cancel because k - 2(k-1) + (k-2) = 0) = p(&omega; - 1). Hence S = p/(&omega; - 1).
+
+<p>
+
+Take residues a', b', c', d', so that aa' = bb' = cc' = dd' = 1 mod p. Then for any integers m, n we have mnaa'  = mn mod p. Hence -ma' <u>na</u> = -mn mod p. Hence &omega;<sup>-ma' <u>na</u></sup> = &omega;<sup>-mn</sup>. So <u>na</u> &omega;<sup>-ma' <u>na</u></sup> = <u>na</u> &omega;<sup>-mn</sup>. Similarly for b, c, d. Take n not a multiple of p and add the four equations to get: <u>na</u> &omega;<sup>-ma' <u>na</u></sup> + <u>nb</u> &omega;<sup>-mb' <u>nb</u></sup> + <u>nc</u> &omega;<sup>-mc' <u>nc</u></sup> + <u>nd</u> &omega;<sup>-md' <u>nd</u></sup> = 2p &omega;<sup>-mn</sup>.
+
+<p>
+
+As n runs through 1, 2, ... , p-1, each of <u>na</u>, <u>nb</u>, <u>nc</u>, <u>nd</u> runs through a complete set of non-zero residues. If we take m to be not a multiple of p, then so does -mn, so adding the equations for n = 1, 2, ... , p-1, we get <u>na</u> &sum; k&omega;<sup>-a'mk</sup> + &sum; k &omega;<sup>-b'mk</sup> + &sum; k&omega;<sup>-c'mk</sup> + &sum; k&omega;<sup>-d'mk</sup> = 2p(&omega; + &omega;<sup>2</sup> + ... + &omega;<sup>p-1</sup>) = -2p.
+
+<p>
+
+Since &omega;<sup>-a'm</sup> is also a complex pth root of 1, we have &sum; k&omega;<sup>-a'mk</sup> = p/(&omega;<sup>-a'm</sup> - 1) and similarly for the other terms. So the equation becomes: 1/(&omega;<sup>-a'm</sup> - 1) + 1/(&omega;<sup>-b'm</sup> - 1) + 1/(&omega;<sup>-c'm</sup> - 1) + 1/(&omega;<sup>-d'm</sup> - 1) = -2.
+
+<p>
+
+Multiplying through by (&omega;<sup>-a'm</sup> - 1)(&omega;<sup>-b'm</sup> - 1)(&omega;<sup>-c'm</sup> - 1)(&omega;<sup>-d'm</sup> - 1), expanding and simplifying, we get 2 + &omega;<sup>-a'm-b'm-c'm</sup> + &omega;<sup>-a'm-b'm-d'm</sup> + &omega;<sup>-a'm-c'm-d'm</sup> + &omega;<sup>-b'm-c'm-d'm</sup> = &omega;<sup>-a'm</sup> + &omega;<sup>-b'm</sup> + &omega;<sup>-c'm</sup> + &omega;<sup>-d'm</sup> + 2&omega;<sup>-a'm-b'm-c'm-d'm</sup> (*). Note that this equation is also true for m = 0 (when it is just 5 = 5). Now sum the equations for m = 0, 1, 2, ... , p-1. We have &sum; &omega;<sup>k</sup> = p if k is a multiple of p, and 0 otherwise. Obviously the first term &sum; 2 gives 2p and the other terms on the lhs give non-negative sums, so &sum; lhs is at least 2p. The first four terms on the rhs all have zero sum, so the last term must have sum 2p, so a' + b' + c' + d' must be a multiple of p. Thus (*) becomes &omega;<sup>a'm</sup> + &omega;<sup>b'm</sup> + &omega;<sup>c'm</sup> + &omega;<sup>d'm</sup> = &omega;<sup>-a'm</sup> + &omega;<sup>-b'm</sup> + &omega;<sup>-c'm</sup> + &omega;<sup>-d'm</sup>. Multiply through by &omega;<sup>-a'm</sup> and sum for m = 0, 1, 2, ... , p-1. The first term on the lhs has sum p and the others have non-negative sum. The first term on the rhs has zero sum, so one of the others must have positive sum. Hence p divides at least one of (a'+b'), (a'+c'), (a'+d'). Without loss of generality it divides a' + b'. In other words a' + b' = 0 mod p. Multiplying by ab, we get a + b = 0 mod p. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa99.html">28th USAMO 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+2 Jan 2003
+
+<br>Last corrected/updated 2 Jan 2003
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1994/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1994</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+a, b, c, d are integers in the range 0 - 99. Show that if 101a -100&middot;2<sup>a</sup> + 101b - 100&middot;2<sup>b</sup> = 101c - 100&middot;2<sup>c</sup> + 101d - 100&middot;2<sup>d</sup> (mod 10100) then {a, b} = {c, d}.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We have immediately that a + b = c + d (mod 100) and 2<sup>a</sup> + 2<sup>b</sup> = 2<sup>c</sup> + 2<sup>d</sup> (mod 101). But by Fermat's little theorem 2<sup>100</sup> = 1 (mod 101), so 2<sup>a+b</sup> = 2<sup>c+d</sup> (mod 101). 
+
+<p>
+Now (2<sup>c</sup> - 2<sup>a</sup>)(2<sup>c</sup> - 2<sup>b</sup>) = 2<sup>2c</sup> - (2<sup>a</sup> + 2<sup>b</sup>)2<sup>c</sup> + 2<sup>a+b</sup> = 2<sup>2c</sup> - (2<sup>c</sup> + 2<sup>d</sup>)2<sup>c</sup> + 2<sup>c+d</sup> = 0 (mod 101). But 101 is prime, so either 2<sup>c</sup> = 2<sup>a</sup> (mod 101), or 2<sup>c</sup> = 2<sup>b</sup> (mod 101). If 2<sup>c</sup> = 2<sup>a</sup>, then 2<sup>d</sup> = 2<sup>b</sup>, and so {2<sup>a</sup>, 2<sup>b</sup>} = {2<sup>c</sup>, 2<sup>d</sup>} (mod 101). Similarly if 2<sup>c</sup> = 2<sup>b</sup> (mod 101).
+
+<p>
+It remains to show that 2 is a primitive root of 101. 2<sup>10</sup> = 1024 = 14 (mod 101), so 2<sup>20</sup> = 196 = -6 (mod 101), and 2<sup>50</sup> = 36&middot;14 = 504 = -1 (mod 101). Hence 2 is a primitive root and so 2<sup>m</sup> = 2<sup>n</sup> (mod 101) implies m = n (mod 100). We are told that a, b, c, d all lie in the range 0 to 99, so {2<sup>a</sup>, 2<sup>b</sup>} = {2<sup>c</sup>, 2<sup>d</sup>} (mod 101} implies {a, b} = {c, d}.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+The solutions given on this site are not always complete, they are designed to be sufficient for anyone who has thought hard about the problem.<br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn94.html">Putnam 1994</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

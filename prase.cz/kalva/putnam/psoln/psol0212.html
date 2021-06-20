@@ -1,0 +1,94 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 02/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>63rd Putnam 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+Let p be prime and q = p<sup>2</sup>. Let D be the determinant:
+
+<pre>
+
+   x     y     z
+
+   x<sup>p</sup>    y<sup>p</sup>    z<sup>p</sup>
+
+   x<sup>q</sup>    y<sup>q</sup>    z<sup>q</sup>
+
+</pre>
+
+Show that we can find a set of linear polynomials ax + by + cz (with a, b, c integers) whose product Q equals D mod p. (In other words, after expansion the corresponding coefficients of Q and D are equal mod p.)
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Since p is prime, we have (X<sup>p</sup> + Y<sup>p</sup> + Z<sup>p</sup>) = (X + Y  + Z)<sup>p</sup> mod p. Also (X + Y + Z)<sup>q</sup> = (X<sup>p</sup> + Y<sup>p</sup> + Z<sup>p</sup>)<sup>p</sup> = X<sup>q</sup> + Y<sup>q</sup> + Z<sup>q</sup> mod p. Put X = ax, Y = bY, Z = cZ, for a, b, c integers. Then since a<sup>p</sup> = a mod p, b<sup>p</sup> = b mod p, c<sup>p</sup> = c mod p, we have a x<sup>p</sup> + b y<sup>p</sup> + c z<sup>p</sup> = (ax + by + cz)<sup>p</sup> and a x<sup>q</sup> + b y<sup>q</sup> + c z<sup>q</sup> = (ax + by + cz)<sup>q</sup>.
+
+<p>
+
+So if we take as the new first column of the determinant a x first col + b x second col + c x third col, then mod p the new first column is k, k<sup>p</sup>, k<sup>q</sup>, where k = ax + by + cz. So the determinant has a factor ax + by + cz. This is true for all a, b, c. Now consider the following p<sup>2</sup>+p+1 factors mod p:
+
+<pre>
+
+x
+
+y, y + x, y + 2x, y + 3x, ... , y + (p-1)x
+
+z, z + x, z + 2x, z + 3x, ... , z + (p-1)x
+
+z+y, z+y+x, z+y+2x, ... , z+y+(p-1)x
+
+z+2y, z+2y+x, z+2y+2x, ... , z+2y+(p-1)x
+
+...
+
+z+(p-1)y, z+(p-1)y+x, z+(p-1)y+2x, ... , z+(p-1)y+(p-1)x
+
+</pre>
+
+Evidently none is of these is a multiple of another, so their product Q must divide D. But D has total degree 1+p+q, which is the same as the total degree of Q. So D must be a multiple of Q. But the only term x y<sup>p</sup>z<sup>q</sup> in the expansion of Q comes from taking the first term of each factor, so the coefficient of x y<sup>p</sup>z<sup>q</sup> in Q is 1. That is also the coefficient in the expansion of D, so D = Q.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn02.html">63rd Putnam 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Dec 2002
+
+</BODY>
+
+
+
+</HTML>
+

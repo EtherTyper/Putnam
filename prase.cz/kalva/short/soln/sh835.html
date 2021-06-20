@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1983/5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>24th IMO 1983 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 5</b><br>
+<p>
+Let S<sub>n</sub> be the set of all strictly decreasing sequences of n positive integers such that no term divides any other term. Given two sequences A = (a<sub>i</sub>) and B = (b<sub>j</sub>) we say that A &lt; B if for some k, a<sub>k</sub>  &lt; b<sub>k</sub> and a<sub>i</sub> = b<sub>i</sub> for i &lt; k. For example, (7, 5, 3) &lt; (9, 7, 2) &lt; (9, 8, 7). Find the sequence A in S<sub>n</sub> such that A &lt; B for any other B in S<sub>n</sub>.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Note that any integer can be written (uniquely) as the product of an odd integer (the <i>odd part</i>) and a power of 2. Two members of a sequence in S<sub>n</sub> must have different odd part, otherwise one would divide the other. So we cannot do better than start the minimal sequence with 2n-1, 2n-3, ... . However, we cannot go further than 2k+1, where k = [(n+1)/3] in this way, or we would get one term 3x another. To check this we need to consider three cases: (1) n=3m, so k = m and 3(2k-1) = 2n-3; (2) n=3m+1, so k=m, and 3(2k-1) = 2n-5; (3) n=3m+2, so k=m+1 and 3(2k-1)=2n-1. So for the final k terms we need to stop them dividing any of the preceding terms. The way to do this whilst keeping them as small as possible is to take 2 x the terms in A<sub>k</sub>. (Note that we clearly need to multiply the odd terms in A<sub>k</sub> by 2, but could we get away without doubling the even terms? They already do not divide the early odd terms in A<sub>n</sub>, but if we fail to double them they will divide one of the newly doubled terms from A<sub>k</sub>.)
+<p>
+Thus we get:
+<br>A<sub>1</sub> = {1}
+<br>A<sub>2</sub> = {3,2}
+<br>A<sub>3</sub> = {5,3.2}
+<br>A<sub>4</sub> = {7,5,3,2}
+<br>A<sub>5</sub> = {9,7,6,5,4}
+<br>A<sub>6</sub> = {11,9,7,6,5,4} 
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh83.html">24th IMO shortlist 1983</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+26 Nov 2003
+<br>Last corrected/updated 26 Nov 03
+</BODY>
+
+</HTML>
+

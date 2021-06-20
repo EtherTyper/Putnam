@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>17th Putnam 1957/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>17th Putnam 1957</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+The sequence a<sub>n</sub> is defined by its initial value a<sub>1</sub>, and a<sub>n+1</sub> = a<sub>n</sub>(2 - k a<sub>n</sub>). For what real a<sub>1</sub> does the sequence converge to 1/k?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: For a<sub>1</sub> strictly between 0 and 2/k.
+
+<p>
+
+Suppose a<sub>n</sub> has the opposite sign to k. Then 2 - k a<sub>n</sub> is positive, and so a<sub>n+1</sub> also has the opposite sign to k, so we cannot get convergence. Similarly, if a<sub>n</sub> = 0, then a<sub>n+1</sub> = 0 and we cannot get convergence. So it is a necessary condition that a<sub>1</sub> should be non-zero and have the same sign as k.
+
+<p>
+
+If k is positive and a<sub>1</sub> &gt; 2/k, then a<sub>2</sub> is negative and so the sequence does not converge to 1/k (as above). Similarly, if k is negative and a<sub>1</sub> &lt; 2/k, then a<sub>2</sub> is positive and so we do not have convergence. Thus it is a necessary condition for a<sub>1</sub> to lie strictly between 0 and 2/k.
+
+<p>
+
+Suppose a<sub>n</sub> = 1/k + h. Then a<sub>n+1</sub> = (1/k + h)(2 - (1 + kh)) = 1/k - kh<sup>2</sup> (*). This is all we need. But to spell it out, consider first k positive. If a<sub>1</sub> lies strictly between 0 and 1/k, then h lies strictly between -1/k and 1/k. Now (*) shows that for n &ge; 2, a<sub>n</sub> &le; 1/k and is monotonic increasing. Hence it tends to a positive limit. If this limit is L, then referring to the original equation, L = L(2 - kL), so L = 1/k. Similarly for k negative.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn57.html">17th Putnam 1957</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

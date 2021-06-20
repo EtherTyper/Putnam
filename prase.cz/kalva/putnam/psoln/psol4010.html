@@ -1,0 +1,67 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>Putnam 40/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>3rd Putnam 1940</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+C<sub>1</sub>, C<sub>2</sub> are cylindrical surfaces with radii r<sub>1</sub>, r<sub>2</sub> respectively. The axes of the two surfaces intersect at right angles and r<sub>1</sub> &gt; r<sub>2</sub>. Let S be the area of C<sub>1</sub> which is enclosed within C<sub>2</sub>. Prove that S = 8r<sub>2</sub><sup>2</sup>A = 8r<sub>1</sub><sup>2</sup>C - 8(r<sub>1</sub><sup>2</sup> - r<sub>2</sub><sup>2</sup>)B, where A = &int;<sub>0</sub><sup>1</sup> (1 - x<sup>2</sup>)<sup>1/2</sup>(1 - k<sup>2</sup>x<sup>2</sup>)<sup>-1/2</sup> dx, B = &int;<sub>0</sub><sup>1</sup> (1 - x<sup>2</sup>)<sup>-1/2</sup>(1 - k<sup>2</sup>x<sup>2</sup>)<sup>-1/2</sup> dx, and C = &int;<sub>0</sub><sup>1</sup> (1 - x<sup>2</sup>)<sup>-1/2</sup>(1 - k<sup>2</sup>x<sup>2</sup>)<sup>1/2</sup> dx, and k = r<sub>2</sub>/r<sub>1</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Straightforward.
+
+<p>
+It is hard to see the point of the second half [ 8r<sub>2</sub><sup>2</sup>A = 8r<sub>1</sub><sup>2</sup>C - 8(r<sub>1</sub><sup>2</sup> - r<sub>2</sub><sup>2</sup>)B ], which is trivial. Multiply top and bottom of the integrand in A by (1 - x<sup>2</sup>)<sup>1/2</sup>, so that we get (1 - x<sup>2</sup>) on the top. Then note that k<sup>2</sup>(1 - x<sup>2</sup>) = 1 - k<sup>2</sup>x<sup>2</sup> + (k<sup>2</sup> - 1).
+
+<p>For the first half, the part of C<sub>1</sub> enclosed inside C<sub>2</sub> comprises two bent ovals, one at each end. It is tempting to think that when rolled flat, each piece is an ellipse. If that were true, then the problem would be trivial - the semi-axes are r<sub>2</sub> and r<sub>1</sub>sin<sup>-1</sup>k, so the total area would be 2&pi; r<sub>1</sub>r<sub>2</sub>sin<sup>-1</sup>k. But conics only remain conics when projected onto flat surfaces and here we are projecting onto a curved surface.
+
+<p>
+So we have to use integration. Take C<sub>1</sub> to be x<sup>2</sup> + y<sup>2</sup> = r<sub>1</sub><sup>2</sup>, and C<sub>2</sub> to be y<sup>2</sup> + z<sup>2</sup> = r<sub>2</sub><sup>2</sup>. We calculate the area of the quarter of the piece with x &gt; 0 having y, z &gt; 0. We may divide it into strips parallel to the z-axis. Take the angle &theta; to be the axial angle - the angle by which the strip has to be rotated about the z-axis from the y = 0 position (keeping in the surface C<sub>1</sub>). [Points on the strip have the same x and y coordinates, but varying z-coordinates.] The strip has y-coordinate r<sub>1</sub>sin &theta; and hence length (r<sub>2</sub><sup>2</sup> - r<sub>1</sub><sup>2</sup>sin<sup>2</sup>&theta;)<sup>1/2</sup> and width r<sub>1</sub>d&theta;. Thus the area of the quarter-oval is &int;<sub>0</sub><sup>sin<sup>-1</sup>k</sup> (r<sub>2</sub><sup>2</sup> - r<sub>1</sub><sup>2</sup>sin<sup>2</sup>&theta;)<sup>1/2</sup> r<sub>1</sub> d&theta;. Put t = 1/k sin &theta;, and the integral becomes r<sub>2</sub><sup>2</sup> &int;<sub>0</sub><sup>1</sup> (1 - t<sup>2</sup>)<sup>1/2</sup> (1 - k<sup>2</sup>t<sup>2</sup>)<sup>-1/2</sup> dt. Hence the complete oval is 4 times this, and the total area 8 times.
+
+<p>
+Comments. The original question was badly worded, because at first sight it appeared to be about volumes, not areas, which may have confused some. It is important to get a clear picture of the geometry - the easiest way to do this is to roll a piece of paper into a cylinder.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn40.html">3rd Putnam 1940</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

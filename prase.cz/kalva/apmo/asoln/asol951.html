@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 95/1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>7th APMO 1995</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 1</b><br>
+<p>
+Find all real sequences x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>1995</sub> which satisfy 2&radic;(x<sub>n</sub> - n + 1) &ge; x<sub>n+1</sub> - n + 1 for n = 1, 2, ... , 1994, and 2&radic;(x<sub>1995</sub> - 1994) &ge; x<sub>1</sub> + 1.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: the only such sequence is 1, 2, 3, ... , 1995.
+<p>
+Put x<sub>1995</sub> = 1995 + k. We show by induction (moving downwards from 1995) that x<sub>n</sub> &ge; n + k. For suppose x<sub>n+1</sub> &ge; n + k + 1, then 4(x<sub>n</sub> - n + 1) &ge; (x<sub>n+1</sub>- n + 1)<sup>2</sup> &ge; (k+2)<sup>2</sup> &ge; 4k + 4, so x<sub>n</sub> &ge; n + k. So the result is true for all n &ge; 1. In particular, x<sub>1</sub> &ge; 1 + k. Hence 4(x<sub>1995</sub> - 1994) = 4(1 + k) &ge; (2 + k)<sup>2</sup> = 4 + 4k + k<sup>2</sup>, so k<sup>2</sup> &le; 0, so k = 0. 
+<p>
+Hence also x<sub>n</sub> &ge; n for n = 1, 2, ... , 1994. But now if x<sub>n</sub> = n + k, with k &gt; 0, for some n &lt; 1995, then the same argument shows that x<sub>1</sub> &ge; 1 + k and hence 4 = 4(x<sub>1995</sub> - 1994) &ge; (x<sub>1</sub> + 1)<sup>2</sup> &ge; (2 + k)<sup>2</sup> = 4 + 4k + k<sup>2</sup> &gt; 4. Contradiction. Hence x<sub>n</sub> = n for all n &le; 1995.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo95.html">7th APMO 1995</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

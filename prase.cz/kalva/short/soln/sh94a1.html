@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1994/A1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>35th IMO 1994 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A1</b><br>
+<p>
+The sequence x<sub>0</sub>, x<sub>1</sub>, x<sub>2</sub>, ... is defined by x<sub>0</sub> = 1994, x<sub>n+1</sub> = x<sub>n</sub><sup>2</sup>/(x<sub>n</sub> + 1). Show that [x<sub>n</sub> ] = 1994 - n for 0 &le; n &le; 998.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+x<sub>n</sub> - x<sub>n+1</sub> = x<sub>n</sub>/(x<sub>n</sub> + 1) = 1 - 1/(x<sub>n</sub> + 1). Also x<sub>n</sub> &gt; 0 (by a trivial induction, for example), so x<sub>n</sub> &gt; x<sub>n+1</sub>.
+<p>
+Also x<sub>1</sub> = 1993 + 1/1995 &gt; 1993. Hence x<sub>2</sub> &gt; 1992 + 1/1995 + 1/1994 &gt; 1992, and by a simple induction x<sub>n</sub> &gt; (1994 - n) + (1/1995 + 1/1994 + ... + 1/(1996-n) ). So certainly [x<sub>n</sub>] &gt;= 1994 - n. Also for n &lt;= 997, x<sub>n</sub> &gt; 997.
+<p>
+We have x<sub>n</sub> = 1994 - n + (1/1995 + 1/(x<sub>1</sub> + 1) + ... + 1/(x<sub>n-1</sub> + 1) ). For n &le; 998, there are at most 998 terms in the parentheses, each term is at most 1/(x<sub>997</sub> + 1) &le; 1/998, and all except the last are less than 1/998. Hence for 0 &le; n &le; 998, we have x<sub>n</sub> &lt; 1994 - n + 1. So [x<sub>n</sub>] = 1994 - n.
+<p>
+<i>Comment. This is a weak result. [x<sub>n</sub>] = 1994 - n actually holds for n up to 1261.</i>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh94.html">35th IMO shortlist 1994</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+18 Sep 2002
+</BODY>
+
+</HTML>
+

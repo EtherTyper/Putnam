@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1973/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>34th Putnam 1973</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+ABC is a triangle. P, Q, R are points on the sides BC, CA, AB. Show that one of the triangles AQR, BRP, CPQ has area no greater than PQR. If BP &le; PC, CQ &le; QA, AR &le; RB, show that the area of PQR is at least 1/4 of the area of ABC.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+It is convenient to do the second part first. Let L be the midpoint of BC, M of AC and N of AB. Then LN is parallel to AC, so the ray PR meets the ray CA. Hence M is at least as close to PR as Q. So area PQR &ge; area PMR. Similarly, the ray MP meets the ray AB, so N is at least as close to PM as R. Hence area PMR &ge; area PMN. Finally MN is parallel to BC, so area PMN = area LMN. But area LMN = 1/4 area ABC, so area PQR &ge; 1/4 area ABC.
+
+<p>
+
+For the first part, there are two cases. Either each of AMN, BLN, CLM includes just one of P, Q, R, or one includes two of them. In the first case, we have the situation just considered (possibly with some relabeling of P, Q, R) , so area PQR &ge; 1/4 area ABC. If all three of AQR, BRP, CPQ had areas &gt; area PQR, then in total their area plus that of PQR would exceed the area of ABC. Contradiction. Hence one of AQR, BRP, CPQ has area not greater than PQR. 
+
+<p>
+
+In the second case, suppose AR &lt;= AN and AQ &lt;= AM. Let AP cut RM at X. Then AX &le; AP/2, since RM cuts AP closer to A than MN, which bisects it (or possibly at the same point if R=N, Q=M). Hence AX &le; PX. But area AQR/ area PQR = AX/PX, so area AQR &le; area PQR.
+
+<p>
+
+<i>Comment. Perhaps I am missing something, because the second part seems unusually hard for an A1 question (they are normally almost trivial).</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn73.html">34th Putnam 1973</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

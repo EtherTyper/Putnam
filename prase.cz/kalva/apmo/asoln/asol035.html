@@ -1,0 +1,53 @@
+<HTML>
+
+<HEAD>
+<TITLE>APMO 03/5 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>15th APMO 2003</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 5</b>
+<p>
+Find the smallest positive integer k such that among any k people, either there are 2m who can be divided into m pairs of people who know each other, or there are 2n who can be divided into n pairs of people who do not know each other.
+<p>
+&nbsp;<p>
+<b>Answer</b>
+<p>
+k = m + n + max(m, n) - 1 
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+We have to find the smallest k so that any graph with k points has either m disjoint edges or n disjoint pairs of points with each pair not joined by an edge. Let the smallest k be f(m, n). For any graph G, there is another graph G' with the same points and the complementary set of edges (so that A, B are joined by an edge in G' iff they are not joined in G). This shows that f(m, n) = f(n, m), so there is no loss of generality in assuming that m &le; n. 
+<p>
+Consider the graph G with m+2n-2 points defined as follows. Let A be a subset of m-1 points and B the remaining 2n-1 points. Every point of A is joined to every other point (in A or B) and there are no other edges. Now since all points in A are joined to every other point in G, if two points are not joined then they must both be in B. So there can be at most n-1 pairs of unjoined points. If two points are joined then at least one of them must be in A (since if both are in B they are unjoined). But A has less than m points, so if there are m pairs of joined points, then they must overlap. Thus G shows that f(m, n) &gt; m+2n-2.
+<p>
+We now prove by induction on m that any graph with m-1+2n points (and m &lt;= n) has either m joined pairs or n unjoined pairs. It is trivial for m = 1 (if the graph has an edge, then we have the pair of joined points, if not then we can divide the 2n points arbitrarily into n pairs of unjoined points). So suppose it is true for m-1. We now use induction on n. We suppose that a graph G with m-1+2n points does not have m pairs of joined points or n pairs of unjoined points. We seek a contradiction.
+<p>
+Ignore for a moment the case n = m. Suppose that n &gt; m and we have already established the result for n-1. Since m-1+2(n-1) &lt; m-1+2n, and G does not have m pairs of joined points it must have n-1 pairs of unjoined points. 
+<p>
+So let B be a set of n-1 pairs of unjoined points. Let A be the remaining m+1 points. Take any two points P and Q in A and any pair P', Q' in B. If P is not joined to P' and Q is not joined to Q', then we have a contradiction, because we could remove the pair P', Q' from B and replace it by the two pairs P, P' and Q, Q', thus getting n pairs of unjoined points. So we may assume that P is joined to P'. Now remove P from A, leaving m points and mark the pair P', Q' in B as used. We now repeat. Take any two points in the reduced A and any unmarked pair in B and conclude that one of the pair in A is joined to one of the pair in B. Remove the point from A and mark the pair in B. Since n-1 &gt;= m we can continue in this way until we obtain m pairs of joined points (one of each pair in A and the other in B). Contradiction. So the result is true for n also. 
+<p>
+It remains to consider the case n = m. 
+<p>
+To get the n-1 pairs we use the induction on m. G has m-1+2m = 3m-1 points and does not have either m pairs of joined points or m pairs of unjoined points. We know by induction that f(m-1, m) = m-1+2m-1 = 3m-2, so f(m, m-1) = 3m-2 also. Since m-1+2m &gt; 3m-2, G has either m pairs of joined points or m-1 points of unjoined points. It does not have the former (by assumption) so it must have the latter.
+<p>
+We now proceed as before. So B is a set of m-1 pairs of unjoined points and A the set of the remaining m+1 points. We get m-1 pairs of joined points (one of each pair in A and the other in B). But now we have run out of unmarked pairs in B. However, there are still two points in A. If they are not joined, then we would have a contradiction, because with the pairs in B they would give n pairs of unjoined points. So they are joined and hence give us an mth joined pair. Contradiction. 
+<p>
+<i>Comment. This all seems complicated, and certainly much harder work than questions 1-3. So maybe I am missing something. Does anyone have a simpler solution?</i>  
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo03.html">15th APMO 2003</a><br>
+<p>(C) John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+14 Aug 2003
+<br>Last corrected/updated 14 Aug 03
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 80/3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>9th USAMO 1980</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 3</b><br>
+
+<p>
+
+A + B + C is an integral multiple of &pi;. x, y, z are real numbers. If x sin A + y sin B + z sin C = x<sup>2</sup> sin 2A + y<sup>2</sup> sin 2B + z<sup>2</sup> sin 2C = 0, show that x<sup>n</sup> sin nA + y<sup>n</sup> sin nB + z<sup>n</sup> sin nC = 0 for any positive integer n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The juxtaposition of x<sup>2</sup> and sin 2A strongly suggests considering cos A + i sin A. So put u = x(cos A + i sin A), v = y(cos B + i sin B), w = z(cos C + i sin C). Put a<sub>n</sub> = u<sup>n</sup> + v<sup>n</sup> + w<sup>n</sup>. So a<sub>1</sub> and a<sub>2</sub> are real. Hence also uv + vw + wu = (a<sub>1</sub><sup>2</sup> - a<sub>2</sub>)/2 is real. Also uvw = xyz exp( i(A+B+C) ) = &plusmn; xyz, since A+B+C is an integral multiple of &pi;. Thus u, v, w are roots of some cubic p<sup>3</sup> + ap<sup>2</sup> + bp + c = 0 with real coefficients. Putting p = u, v, w and adding, we get a<sub>3</sub> + a a<sub>2</sub> + b a<sub>1</sub> + 3c = 0, so a<sub>3</sub> is real. Also multiplying through by p<sup>n</sup>, then putting p = u, v, w and adding, we get: a<sub>n+3</sub> + a a<sub>n+2</sub> + b a<sub>n+1</sub> + c a<sub>n</sub> = 0. So by a trivial induction a<sub>n</sub> is real for all positive n. Hence result.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa80.html">9th USAMO 1980</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+20 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

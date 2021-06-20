@@ -1,0 +1,66 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1978/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1978</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b>
+
+<p>
+
+m and n are positive integers with m &lt; n. The last three decimal digits of 1978<sup>m</sup> are the same as the last three decimal digits of 1978<sup>n</sup>. Find m and n such that m + n has the least possible value.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+We require 1978<sup>m</sup>(1978<sup>n-m</sup> - 1) to be a multiple of 1000=8&middot;125. So we must have 8 divides 1978<sup>m</sup>, and hence m &ge; 3, and 125 divides 1978<sup>n-m</sup> - 1.
+
+<p>
+By Euler's theorem, 1978<sup>&phi;(125)</sup> = 1 (mod 125). &phi;(125) = 125 - 25 = 100, so 1978<sup>100</sup> = 1 (mod 125). Hence the smallest r such that 1978<sup>r</sup> = 1 (mod 125) must be a divisor of 100 (because if it was not, then the remainder on dividing it into 100 would give a smaller r). That leaves 9 possibilities to check: 1, 2, 4, 5, 10, 20, 25, 50, 100. To reduce the work we quickly find that the smallest s such that 1978<sup>s</sup> = 1 (mod 5) is 4 and hence r must be a multiple of 4. That leaves 4, 20, 100 to examine.
+
+<p>
+We find 978<sup>2</sup> = 109 (mod 125), and hence 978<sup>4</sup> = 6 (mod 125). Hence 978<sup>20</sup> = 6<sup>5</sup> = 36&middot;91 = 26 (mod 125). So the smallest r is 100 and hence the solution to the problem is 3, 103.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo78.html">20th IMO 1978</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

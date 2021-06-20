@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 91/3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>20th USAMO 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 3</b><br>
+
+<p>
+
+Define the function f on the natural numbers by f(1) = 2, f(n) = 2<sup>f(n-1)</sup>. Show that f(n) has the same residue mod m for all sufficiently large n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+This is the so-called tower of exponents, but HTML is not up showing it! The trick is to use induction on m (which is not at all obvious). The result is trivial for m = 1.
+
+<p>
+
+If m is even, then we can write m = 2<sup>a</sup>b, where b is odd. Then f(n) is eventually constant mod b. Obviously f(n) is eventually 0 mod 2<sup>a</sup>, so the residue mod m is eventually constant. 
+
+<p>
+
+If m is odd, then 2<sup>&phi;(m)</sup> = 1 mod m, where &phi;(m) &lt; m. So by induction f(n) is eventually constant mod &phi;(m). Hence f(n+1) = 2<sup>f(n)</sup> is eventually constant mod m.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa91.html">20th USAMO 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

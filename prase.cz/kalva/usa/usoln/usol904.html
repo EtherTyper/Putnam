@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 90/4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>19th USAMO 1990</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 4</b><br>
+
+<p>
+
+How many positive integers can be written in base n so that (1) the integer has no two digits the same, and (2) each digit after the first differs by one from an earlier digit? For example, in base 3, the possible numbers are 1, 2, 10, 12, 21, 102, 120, 210.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 2<sup>n+1</sup> - 2n - 2. 
+
+<p>
+
+We use a more elaborate induction hypothesis. We claim that for base n+1, the following numbers of integers satisfy the two conditions: 2<sup>n+1</sup>- 2n - 2 not using the digit n; 2<sup>n</sup> - 1 with the digit n is the last position; 2<sup>n-1</sup> with the digit n in the last but 1 position; 2<sup>n-2</sup> with the digit n having 2 following digits; 2<sup>n-3</sup> with the digit n having 3 following digits; ... ; 1 with the digit n having n following digits.
+
+<p>
+
+Thus for n = 2, the claim is that there are 2 numbers only involving 0 and 1 (1, 10), 3 numbers with 2 as the last digit (2, 12, 102), 2 numbers with one digit after 2 (21, 120) and 1 number with two digits after 2 (210). Suppose this holds for base n+1.
+
+<p>
+
+If we add up the various possibilities we get 2<sup>n+1</sup> - 2n - 2 + (2<sup>n</sup>  - 1 + 2<sup>n-1</sup> + 2<sup>n-2</sup> + ... + 1) = 2<sup>n+1</sup> - 2n - 2 + 2<sup>n+1</sup> - 2 = 2<sup>n+2</sup> - 2(n+1) - 2. The number of base n+2 integers not involving the digit n+1 is the same as the number of base n+1 numbers, which is (by induction and the addition above) 2<sup>n+2</sup> - 2(n+1) - 2. If a base n+2 number has the digit n+1 in the last place, then either that is the only digit in the number or the earlier digits must form a base n+1 number with the digit n in it. There are (2<sup>n</sup> - 1 + 2<sup>n-1</sup> + ... + 1) = 2<sup>n+1</sup> - 2 such numbers, so in total we have 2<sup>n+1</sup> - 1 base n+2 numbers with n+1 in the last place. If a base n+2 number has the digit n+1 in the penultimate place, then either the number has n+1 as the first digit, in which case it must be n+1 n, or the other digits form a base n+1 number with the digit n in the penultimate place or earlier. There are 2<sup>n-1</sup> + ... + 1 = 2<sup>n</sup> - 1 such numbers. So 2<sup>n</sup> in total. Similarly for the other possibilities.
+
+<p>
+
+Finally, we need to check the answer for n = 2 (1, 10, so two numbers and 2<sup>2+1</sup> - 2&middot;2 - 2 = 8 - 4 - 2 = 2).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa90.html">19th USAMO 1990</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

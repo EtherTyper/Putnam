@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 47/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>7th Putnam 1947</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Take the x-axis as horizontal and the y-axis as vertical. A gun at the origin can fire at any angle into the first quadrant (x, y &ge; 0) with a fixed muzzle velocity v. Assuming the only force on the pellet after firing is gravity (acceleration g), which points in the first quadrant can the gun hit?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let the angle of the gun to the x-axis be &theta;. Then the equations of motion are: x = t v cos &theta;, y = t v sin &theta; - 1/2 g t<sup>2</sup>. So the pellet moves along the parabola y = x tan &theta; - x<sup>2</sup> g/2v<sup>2</sup> sec<sup>2</sup>&theta; (*).
+
+<p>
+
+We can view (*) as an equation for &theta; given x, y. Put k = tan &theta;, then the equation becomes g/2v<sup>2</sup> x<sup>2</sup> k<sup>2</sup> - x k + y + gx<sup>2</sup>/2v<sup>2</sup>. This has real roots iff x<sup>2</sup> &ge; 2g/v<sup>2</sup> x<sup>2</sup>y - g<sup>2</sup>/v<sup>4</sup> x<sup>4</sup> and hence iff y &le; 2g<sup>2</sup>/v<sup>2</sup> - x<sup>2</sup>/v<sup>4</sup> x<sup>2</sup> (**). Since x &ge; 0, we see directly from the quadratic that the sum and the product of the roots are both non-negative, so (**) is the condition for the equation to have at least one non-negative root in k and hence at least one root for &theta; in the range 0 to &pi;/2. Thus the gun can hit points in the first quadrant under (or on) the parabola given by (**).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn47.html">7th Putnam 1947</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,80 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 87/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>48th Putnam 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+Four planar curves are defined as follows: C<sub>1</sub> = {(x, y): x<sup>2</sup> - y<sup>2</sup> = x/(x<sup>2</sup> + y<sup>2</sup>) }, C<sub>2</sub> = {(x, y): 2xy + y/(x<sup>2</sup> + y<sup>2</sup>) = 3}, C<sub>3</sub> = {(x, y): x<sup>3</sup> - 3xy<sup>2</sup> + 3y = 1}, C<sub>4</sub> = {(x, y): 3yx<sup>2</sup> - 3x - y<sup>3</sup> = 0}. Prove that C<sub>1</sub> &cap; C<sub>2</sub> = C<sub>3</sub> &cap; C<sub>4</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Easy.</i>
+
+<p>
+
+The wrong way to go about this is to attempt to plot the curves or identify the intersections. The curves are obviously quite complicated, and we know that the first Putnam question is always easy!
+
+<p>
+
+So there must be some way of deriving one pair of equations from the other. A little playing soon shows that this is true. Write the equations as:
+
+<br>(1): &nbsp; x<sup>2</sup> - y<sup>2</sup> = x/(x<sup>2</sup> + y<sup>2</sup>)
+
+<br>(2): &nbsp; 2xy - 3 = - y/(x<sup>2</sup> + y<sup>2</sup>)
+
+<br>(3): &nbsp; x<sup>3</sup> - 3xy<sup>2</sup> + 3y = 1
+
+<br>(4): &nbsp; 3yx<sup>2</sup> - 3x - y<sup>3</sup> = 0
+
+<p>Then x (1) - y (2) gives (3), and y (1) + x (2) gives (4). So any point on the first two is certainly on the second two. Similarly, ( x (3) + y (4) )/(x<sup>2</sup> + y<sup>2</sup>) gives (1), and ( -y (3) + x (4) )/(x<sup>2</sup> + y<sup>2</sup>) gives (2), so any point on the second two is on the first two, except possibly the point (0, 0). But it is easy to check that that is not on (3) (and hence not in the intersection of the second two).
+
+<p>
+
+<i>Comment. The official solution notes that if we put z = x + iy, then the first two equations are z<sup>2</sup> = 3i + 1/z, and the second two are z<sup>3</sup> = 3iz + 1, and which shows more clearly what is going on, and provides a slightly shorter proof.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn87.html">48th Putnam 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Oct 1999
+
+</BODY>
+
+
+
+</HTML>
+

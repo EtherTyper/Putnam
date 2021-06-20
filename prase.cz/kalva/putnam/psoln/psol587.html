@@ -1,0 +1,82 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>18th Putnam 1958/A7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>18th Putnam 1958</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A7</b><br>
+
+<p>
+
+Show that we cannot place 10 unit squares in the plane so that no two have an interior point in common and one has a point in common with each of the others.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Note that we can place 9 squares - arrange them in a regular 3 x 3 array. Then the centre square touches 4 at the corners and the other 4 along the sides.
+
+<p>
+
+Consider first placing squares to touch a line. If neither square has a side in contact with the line, then it is easy to see that the two points of contact are more than 1 apart. If square U has a side in contact and square V does not, then together they occupy more than a length 1 of the line (from the far side of U to the point of contact of V). 
+
+<p>
+
+So the only way to get three squares in contact with AB, a side of a fixed square S = ABCD, is to place one square so that its side is AB. One can then place a second square with its corner touching A and a third with its corner touching B.
+
+<p>
+
+So to get more than 8 = 4 x 2 squares touching S, we must get three squares to touch one side as above. Call them T2 in contact with AB, T1 touching at A and T3 touching at B. Now consider the side BC. T3 has a side BD. The most favourable case is that angle CBD = 90<sup>o</sup> - T3 may be placed so that angle CBD is less than 90<sup>o</sup>. But certainly any square touching BC (apart from T3) cannot extend beyond the ray BD which is perpendicular to BC. But it is easy to see that this means we can get only one additional square to touch BC unless we place T4 with so that its side is BC and T5 touching C at a corner, which gives 2.
+
+<p>
+
+In particular, if 3 squares touch AB, then at most 2 (additional) squares touch each of BC and DA.
+
+<p>
+
+Hence at most 2 sides, which must be opposite, can have three squares touching. But in that case it is easy to see that the other two sides each have at most 1 additional square touching, so we get only 8 in total. Hence the only way to get 9 is to have 3 squares touching AB and 2 (additional) squares touching each of the other three sides. But those touching BC and DA must then be placed as indicated above and it is easy to see that we then get at most 1 (additional) square touching CD. 
+
+<p>
+
+<i>Comment. This is messy. The solution in A M Gleason et al shows that the centres of two squares touching S must subtend an angle greater than 2&pi;/9 at the centre of S - using calculus.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn58.html">18th Putnam 1958</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 77/2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>6th USAMO 1977</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 2</b><br>
+
+<p>
+
+The triangles ABC and DEF have AD, BE and CF parallel. Show that [AEF] + [DBF] + [DEC] + [DBC] + [AEC] + [ABF] = 3 [ABC] + 3 [DEF], where [XYZ] denotes the <i>signed</i> area of the triangle XYZ. Thus [XYZ] is + area XYZ if the order X, Y, Z is anti-clockwise and - area XYZ if the order X, Y, Z is clockwise. So, in particular, [XYZ] = [YZX] = -[YXZ].
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The starting point is that [ABC] = [XBC] + [AXC] + [ABX]  (*) for any point X. If X is inside the triangle, then all the rotations have the same sense. If X is outside, then they do not. But it is easy to check that (*) always holds.
+
+<p>
+
+So [ABC] = [DBC] + [ADC] + [ABD], [DEF] = [AEF] + [DAF] + [DEA]. Now, ignoring sign, the triangles ABD and DEA have equal area, because they have a common base AD and the same height (since AD is parallel to BE). But the sign is opposite, so [ABD] + [DEA] = 0. Similarly, [ADC] + [DAF] = 0, so [ABC] + [DEF] = [DBC] + [AEF]. Adding the two similar equations (obtained from E with [ABC] and B with [DEF], and from F with [ABC] and C with [DEF]) gives the required result.
+
+<p>
+
+<i>Alternative solution</i>
+
+<p>
+
+Use vectors. Take origin A. Put <b>b</b> = AB, <b>c</b> = AC, <b>d</b> = AD. Then AE = <b>b</b> + h <b>d</b>, AF = <b>c</b> + k <b>d</b>, for some real h, k. Then 2 [ABC] = <b>b x c</b> etc and the rest is purely mechanical. Start with the lhs, expand and use <b>d x d</b> = 0.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa77.html">6th USAMO 1977</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+20 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

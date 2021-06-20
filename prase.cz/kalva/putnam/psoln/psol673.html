@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1967/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>28th Putnam 1967</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Find the smallest positive integer n such that we can find a polynomial nx<sup>2</sup> + ax + b with integer coefficients and two distinct roots in the interval (0, 1).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: n = 5 with equation 5x<sup>2</sup> - 5x + 1 with roots (1 &plusmn; &radic;(1/5) )/2.
+
+<p>
+
+The product of the roots lies in the interval (0, 1), so b must be 1, 2, 3, ... or n-1 (1). The larger root is (-a + &radic;(a<sup>2</sup> - 4bn) )/(2n). This must be less than 1, so -a &lt; b + n (2). The roots are real and distinct, so a<sup>2</sup> &gt; 4bn (3).
+
+<p>
+
+Putting (2) and (3) together we get: (n + b - 1)<sup>2</sup> &ge; a<sup>2</sup> &ge; 4bn + 1. So if b = 1, then n &ge; 5. If b = 2, then n &ge; 6. If b = 3, then n &ge; 8.  If b = 4, then n &ge; 10. Thus there are no solutions for n &lt; 5 (which requires b &lt; 4 by (1) ). If n = 5, then the only possible solution is 5x<sup>2</sup> - 5x + 1, which is easily verified to be a solution.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn67.html">28th Putnam 1967</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

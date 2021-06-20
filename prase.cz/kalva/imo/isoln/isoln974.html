@@ -1,0 +1,67 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1997/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+An n x n matrix whose entries come from the set S = {1, 2, ... , 2n-1} is called silver matrix if, for each i = 1, 2, ... , n, the ith row and the ith column together contain all elements of S. Show that:
+
+<p>(a)&nbsp; there is no silver matrix for n = 1997;
+
+<br>(b)&nbsp; silver matrices exist for infinitely many values of n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(a)&nbsp; If we list all the elements in the rows followed by all the elements in the columns, then we have listed every element in the array twice, so each number in S must appear an even number of times. But considering the ith row with the ith column, we have also given n complete copies of S together with an additional copy of the numbers on the diagonal. If n is odd, then each of the 2n-1 numbers appears an odd number of times in the n complete copies, and at most n numbers can have this converted to an even number by an appearance on the diagonal. So there are no silver matrices for n odd. In particular, there is no silver matrix for n = 1997.
+
+<p>(b)&nbsp; Let A<sub>i,j</sub> be an n x n silver matrix with 1s down the main diagonal. Define the 2n x 2n matrix B<sub>i,j</sub> with 1s down the main diagonal as follows: B<sub>i,j</sub> = A<sub>i,j</sub>; B<sub>i+n,j+n</sub> = A<sub>i,j</sub>; B<sub>i,j+n</sub> = 2n + A<sub>i,j</sub>; B<sub>i+n,j</sub> = 2n + A<sub>i,j</sub> for i not equal j and B<sub>i+n,i</sub> = 2n. We show that B<sub>i,j</sub> is silver. Suppose i &le; n. Then the first half of the ith row is the ith row of A<sub>i,j</sub>, and the top half of the ith column is the ith column of A<sub>i,j</sub>, so between them those two parts comprise the numbers from 1 to 2n - 1. The second half of the ith row is the ith row of A<sub>i,j</sub> with each element increased by 2n, and the bottom half of the ith column is the ith column of A<sub>i,j</sub> with each element increased by 2n, so between them they give the numbers from 2n + 1 to 4n - 1. The only exception is that A<sub>i+n,i</sub> = 2n instead of 2n + A<sub>i,i</sub>. We still get 2n + A<sub>i,i</sub> because it was in the second half of the ith row (these two parts do not have an element in common). The 2n fills the gap so that in all we get all the numbers from 1 to 4n - 1.
+
+<p>An exactly similar argument works for i &gt; n. This time the second half of the row and the second half of the column (which overlap by one element) give us the numbers from 1 to 2n - 1, and the first halves (which do not overlap) give us 2n to 4n - 1. So B<sub>i,j</sub> is silver. Hence there are an infinite number of silver matrices.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo97.html">38th IMO 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Oct 1998
+<br>Last corrected/updated 21 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

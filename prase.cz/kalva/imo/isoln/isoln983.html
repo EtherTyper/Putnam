@@ -1,0 +1,61 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1998/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1998</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+For any positive integer n, let d(n) denote the number of positive divisors of n (including 1 and n). Determine all positive integers k such that d(n<sup>2</sup>) = k d(n) for some n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let n = p<sub>1</sub><sup>a<sub>1</sub></sup>...p<sub>r</sub><sup>a<sub>r</sub></sup>. Then d(n) = (a<sub>1</sub> + 1)(a<sub>2</sub> + 1) ... (a<sub>r</sub> + 1), and d(n<sup>2</sup>) = (2a<sub>1</sub> + 1)(2a<sub>2</sub> + 1) ... (2a<sub>r</sub> + 1). So the a<sub>i</sub> must be chosen so that (2a<sub>1</sub> + 1)(2a<sub>2</sub> + 1) ... (2a<sub>r</sub> + 1) = k (a<sub>1</sub> + 1)(a<sub>2</sub> + 1) ... (a<sub>r</sub> + 1). Since all (2a<sub>i</sub> + 1) are odd, this clearly implies that k must be odd. We show that conversely, given any odd k, we can find a<sub>i</sub>.
+
+<p>
+
+We use a form of induction on k. First, it is true for k = 1 (take n = 1). Second, we show that if it is true for k, then it is true for 2<sup>m</sup>k - 1. That is sufficient, since any odd number has the form 2<sup>m</sup>k - 1 for some smaller odd number k. Take a<sub>i</sub> = 2<sup>i</sup>((2<sup>m</sup> - 1)k - 1) for i = 0, 1, ... , m-1. Then 2a<sub>i</sub> + 1 = 2<sup>i+1</sup>(2<sup>m</sup> - 1)k - (2<sup>i+1</sup> - 1) and a<sub>i</sub> + 1 = 2<sup>i</sup>(2<sup>m</sup> - 1)k - (2<sup>i</sup> - 1). So the product of the (2a<sub>i</sub> + 1)'s divided by the product of the (a<sub>i</sub> + 1)'s is 2<sup>m</sup>(2<sup>m</sup> - 1)k - (2<sup>m</sup> - 1) divided by (2<sup>m</sup> - 1)k, or (2<sup>m</sup>k - 1)/k. Thus if we take these a<sub>i</sub>s together with those giving k, we get 2<sup>m</sup>k - 1, which completes the induction.
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo98.html">39th IMO 1998</a><br>
+
+<p>(C) John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Oct 1998
+
+<br>Last corrected/updated 20 Aug 03
+</BODY>
+
+
+
+</HTML>
+

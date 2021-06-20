@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1959/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>20th Putnam 1959</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+Join each of m points on the positive x-axis to each of n points on the positive y-axis. Assume that no three of the resulting segments are concurrent (except at an endpoint). How many points of intersection are there (excluding endpoints)?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: mn(m-1)(n-1)/4.
+
+<p>
+
+Let us call the points on the y-axis y<sub>1</sub> &lt; y<sub>2</sub> &lt; ... &lt; y<sub>n</sub> and the points on the x-axis x<sub>1</sub> &lt; x<sub>2</sub> &lt; ... &lt; x<sub>m</sub>. Let us join first y<sub>1</sub> to each x<sub>i</sub>, then y<sub>2</sub> and so on. Joining y<sub>1</sub> to each of the x<sub>i</sub> creates no intersections. Joining y<sub>2</sub> to x<sub>1</sub> creates m-1 intersections. Joining it to x<sub>2</sub> creates m-2 intersections and so on. So, in all, joining y<sub>2</sub> gives 1 + 2 + ... + m-1 = m(m-1)/2 intersections. 
+
+<p>
+
+Similarly joining y<sub>3</sub> to x<sub>1</sub> gives 2(m-1) intersections. Joining it to x<sub>2</sub> gives 2(m-2) and so on. So, in all, y<sub>3</sub> gives 2 x m(m-1)/2. Similarly, y<sub>r+1</sub> gives r x m(m-1)/2. So in total we get m(m-1)/2 (1 + 2 + ... + n-1) = mn(m-1)(n-1)/4.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn59.html">20th Putnam 1959</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

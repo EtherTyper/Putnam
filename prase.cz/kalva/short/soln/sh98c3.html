@@ -1,0 +1,67 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1998/C3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>39th IMO 1998 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C3</b><br>
+<p>
+The numbers from 1 to 9 are written in an arbitrary order. A <i>move</i> is to reverse the order of any block of consecutive increasing or decreasing numbers. For example, a move changes 91<b>653</b>2748 to 91<b>356</b>2748. Show that at most 12 moves are needed to arrange the numbers in increasing order.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Let f(n) be the worst-case number of moves needed for a permutation of 1, 2, ... , n. Then we certainly have f(n+2) &le; f(n) + 2, because if the permutation starts with k, then we need at most f(n) moves to get to k, 1, ... , k-1, k+1, ... , n. Then reversing the k-1 numbers starting with 1 gives k, k-1, ... , 1, k+1, ... , n. Then reversing the first k numbers gives 1, 2, ... , n. So it is sufficient to show that f(5) &le; 4.
+<p>
+Looking directly, we find that f(3) = 2:
+<pre>
+123 needs no moves
+213, 132, 321 need 1 move
+231, 312 need 2 moves 
+</pre>
+Similarly, we find f(4) = 3:
+<pre>
+1234 needs no moves
+1243, 1324, 1432, 2134, 3214, 4321 need 1 move
+1342, 1423, 2143, 2314, 2341, 2431, 3124, 3241, 3421, 4123, 4132, 4213, 4231, 4312 need 2 moves
+2413, 3142, 3412 need 3 moves
+</pre>
+Note that 3 moves are also sufficient to get the order 4321, because we can replace k by 5-k, get the new numbers in the order 1234. Then the same moves get the original numbers into the order 4321. So now consider n = 5. If the 5 is in last place, then 3 moves are sufficient to order the remaining numbers. Is 5 is in next to last place, then 1 move gets it to last place, so 4 moves are sufficient. Similarly if 5 is in first place, then 3 moves suffice to get to 54321 and 1 more to 12345. Similarly, if 1 is in 1st, 2nd or 5th place. So to show that f(5) &le; 4, we need only consider permutations of the form:
+<pre>
+x51xx	x5x1x	xx51x
+</pre>
+That gives 18 permutations to consider, and it is easy to show explicitly that none need more than 4 moves:
+<pre>
+25134	25431	21345	12345
+25143	25134 then as above
+35124	35421	31245	32145	12345
+35142	53142	13542	13245	12345
+45123	54123	54321	12345
+45132	45123 then as above
+25314	21354	12354	12345
+25413	25431	21345	12345
+35214	53214	12354	12345
+35412	35421	31245	13245	12345
+45213	54213	12453	12435	12345
+45312	54312	54321	12345
+23514	23541	23145	21345	12345
+24513	25413	25431	21345	12345
+32514	32541	32145	12345
+34512	54312	54321	12345
+42513	42531	42135	12435	12345
+43512	43521	45321	54321	12345
+</pre>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh98.html">39th IMO shortlist 1998</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Aug 2002
+</BODY>
+
+</HTML>
+

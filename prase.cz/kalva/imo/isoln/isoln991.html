@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1999/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b>
+
+<p>
+
+Find all finite sets S of at least three points in the plane such that for all distinct points A, B in S, the perpendicular bisector of AB is an axis of symmetry for S.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+<i>by Gerhard Woeginger</i>
+
+<p>
+
+<p>The possible sets are just the regular n-gons (n &gt; 2).
+
+<p>
+
+Let A<sub>1</sub>, A<sub>2</sub>, ... , A<sub>k</sub> denote the vertices of the convex hull of S (and take indices mod k as necessary). We show first that these form a regular k-gon. A<sub>i+1</sub> must lie on the perpendicular bisector of A<sub>i</sub> and A<sub>i+2</sub> (otherwise its reflection would lie outside the hull). Hence the sides are all equal. Similarly, A<sub>i+1</sub> and A<sub>i+2</sub> must be reflections in the perpendicular bisector of A<sub>i</sub> and A<sub>i+3</sub> (otherwise one of the reflections would lie outside the hull). Hence all the angles are equal. 
+
+<p>Any axis of symmetry for S must also be an axis of symmetry for the A<sub>i</sub>, and hence must pass through the center C of the regular k-gon. Suppose X is a point of S in the interior of k-gon. Then it must lie inside or on some triangle A<sub>i</sub>A<sub>i+1</sub>C. C must be the circumcenter of A<sub>i</sub>A<sub>i+1</sub>X (since it lies on the three perpendicular bisectors, which must all be axes of symmetry of S), so X must lie on the circle center C, through A<sub>i</sub> and A<sub>i+1</sub>. But all points of the triangle A<sub>i</sub>A<sub>i+1</sub>X lie strictly inside this circle, except A<sub>i</sub>and A<sub>i+1</sub>, so X cannot be in the interior of the k-gon.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo99.html">40th IMO 1999</a><br>
+
+<p>(C) John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Aug 1999
+<br>Last corrected/updated 19 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

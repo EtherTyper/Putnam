@@ -1,0 +1,58 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 00/21 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 21</b>
+
+<p>
+
+Show that sin<sup>n</sup>2x + (sin<sup>n</sup>x - cos<sup>n</sup>x)<sup>2</sup> &le; 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Put s = sin x, c = cos x, so s<sup>2</sup> + c<sup>2</sup> = 1. Then  lhs = 2<sup>n</sup>s<sup>2n</sup>c<sup>2n</sup> + (s<sup>n</sup> - c<sup>n</sup>)<sup>2</sup> = (2<sup>n</sup>-2)s<sup>n</sup>c<sup>n</sup> + s<sup>2n</sup> + c<sup>2n</sup> and rhs = 1 = (s<sup>2</sup> + c<sup>2</sup>)<sup>n</sup> = s<sup>2n</sup> + c<sup>2n</sup> + &sum;<sub>1</sub><sup>n-1</sup> nCi s<sup>2n-2i</sup>c<sup>2i</sup>. So we have to show that (2<sup>n</sup>-2)s<sup>n</sup>c<sup>n</sup> &le; &sum;<sub>1</sub><sup>n-1</sup> nCi s<sup>2n-2i</sup>c<sup>2i</sup>. But that is immediate from AM/GM applied to the 2<sup>n</sup>-2 terms s<sup>h</sup>c<sup>k</sup>. (Note that there are the same number of terms s<sup>2n-2i</sup>c<sup>2i</sup> and s<sup>2i</sup>c<sup>2n-2i</sup> and the product of each pair is s<sup>2n</sup>c<sup>2n</sup>. Hence the geometric mean is s<sup>n</sup>c<sup>n</sup>.)
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus00.html">Russian 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 March 2004
+<br>Last corrected/updated 4 Mar 04
+
+</BODY>
+
+
+
+</HTML>
+

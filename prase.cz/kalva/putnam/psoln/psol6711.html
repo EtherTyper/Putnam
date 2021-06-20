@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1967/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>28th Putnam 1967</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+The first n terms of the exansion of (2 - 1)<sup>-n</sup> are 2<sup>-n</sup> ( 1 + n/1! (1/2) + n(n + 1)/2! (1/2)<sup>2</sup> + ... + n(n + 1) ... (2n -2)/(n - 1)! (1/2)<sup>n-1</sup> ). Show that they sum to 1/2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Consider a random walk on a two dimensional lattice. The particle starts at (0, 0). At each step it moves up 1 step with probability 1/2 and right one step with probability 1/2. Suppose that we stop when the particle reaches x = n or y = n. 
+
+<p>
+
+Suppose the particle first reaches x = n at y = m (0 &le; m &lt; n). Then its final move must be from (n-1, m) to (n, m). In order to reach (n-1, m) it must make n+m-1 moves, m of which must be upwards. So the probability is (n+m-1Cm)(1/2)<sup>n+m</sup>. Thus the probability that it reaches x = n is (n-1)C0 (1/2)<sup>n</sup> + nC1 (1/2)<sup>n+1</sup> + ... + (2n-2)C(n-1) (1/2)<sup>2n-1</sup>. The probability that it reaches y = n is the same. Note that it cannot reach the point (n, n) (because it reaches (n, n-1) or (n-1, n) first and stops). So each series must total 1/2.
+
+<p>
+
+<i>Alternatively, a messy induction.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn67.html">28th Putnam 1967</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

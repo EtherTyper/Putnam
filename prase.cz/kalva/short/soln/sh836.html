@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1983/6 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>24th IMO 1983 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 6</b><br>
+<p>
+The n positive integers a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>n</sub> have sum 2n+2. Show that we can find an integer r such that:
+<br>a<sub>r+1</sub> &le; 3
+<br>a<sub>r+1</sub> + a<sub>r+2</sub> &le; 5
+<br>...
+<br>a<sub>r+1</sub> + a<sub>r+2</sub> + ... + a<sub>n</sub> + a<sub>1</sub> + ... + a<sub>r-1</sub> &le; 2n-1
+<br>Note that a<sub>r</sub> does not appear in the inequalities. Show that there are either one or two r for which the inequalities hold, and that if there is only one, then all the inequalities are strict. 
+<p>
+For example, suppose n = 3, a<sub>1</sub> = 1, a<sub>2</sub> = 6, a<sub>3</sub> = 1. Then r = 1 and r = 3 do not work, but r = 2 does work: a<sub>3</sub> = 1 &lt; 3, a<sub>3</sub> + a<sub>1</sub> = 2 &lt; 5. So r is unique and the inequalities are strict.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Let s<sub>i</sub> = a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>i</sub> - 2i. Let max s<sub>i</sub> be attained for the first time at i = r. Suppose first that r = n. Then since &sum;a<sub>i</sub> = 2n+2, the maximum is 2. We have s<sub>i</sub> &lt; 2 for i &lt; n, so a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>i</sub> &le; 2i+1 for i = 1, 2, ... , n-1, which are the required inequalities. So suppose r &lt; n. Then for k = r+1, ... , n we have a<sub>r+1</sub> + a<sub>r+2</sub> + ... + a<sub>k</sub> = (a<sub>1</sub> + ... + a<sub>k</sub>) - (a<sub>1</sub> + ... + a<sub>r</sub>) = s<sub>k</sub> - s<sub>r</sub> + 2(k-r) &le; 2(k-r) &lt; 2(k-r)+1, as required. We also have a<sub>r+1</sub> + ... + a<sub>n</sub> + s<sub>i</sub> &lt; a<sub>r+1</sub> + ... + a<sub>n</sub> + s<sub>r</sub> = 2n+2-2r, for i = 1, 2, ... , r-1. Hence a<sub>r+1</sub> + ... + a<sub>n</sub> + a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>i</sub> &lt; 2n+2-2r+2i. So a<sub>r+1</sub> + ... + a<sub>n</sub> + a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>i</sub> &le; 2n-2r+2i+1 = 2(n+i-r)+1, as required. That completes the proof that the inequalities hold.
+<p>
+Suppose that for some r the inequalities are all strict. wlog r = n, so that we have a<sub>1</sub> + ... + a<sub>i</sub> &le; 2i for i = 1, 2, ... , n-1. Then for any k &lt; n we have a<sub>1</sub> + ... + a<sub>k</sub> + a<sub>k+1</sub> + ... + a<sub>n</sub> &le; 2k + (a<sub>k+1</sub> + ... + a<sub>n</sub>), so (a<sub>k+1</sub> + ... + a<sub>n</sub>) &ge; 2n+2-2k &gt; 2(n-k)+1 and so the inequalities do not all hold for k. Thus there is only one r for which the inequalities hold. Conversely, if the inequalities hold for r=n and k, then we have a<sub>1</sub> + ... + a<sub>k</sub> = 2n+2 - (a<sub>k+1</sub> + ... + a<sub>n</sub>) &ge; 2n+2 - (2(n-k)+1) = 2k+1. Hence (at least) one of the inequalities is not strict for r. 
+<p>
+Suppose the inequalities hold for r &lt; s &lt; t. The same argument as above shows that a<sub>r+1</sub> + a<sub>r+2</sub> + ... + a<sub>s</sub> = 2(s-r)+1, a<sub>s+1</sub> + ... + a<sub>t</sub> = 2(t-s)+1 and a<sub>t+1</sub> + ... + a<sub>r</sub> = 2(n-t+r)+1, so the sum of all the terms is 2n+3, not 2n+2. Contradiction.
+<p>
+<i>Thanks to Lauri Ahlroth</i>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh83.html">24th IMO shortlist 1983</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+12 January 2004
+<br>Last corrected/updated 12 Jan 04
+</BODY>
+
+</HTML>
+

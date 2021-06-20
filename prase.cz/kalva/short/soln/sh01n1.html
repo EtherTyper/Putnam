@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<TITLE>42nd IMO shortlist 2001/N1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>42nd IMO 2001 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N1</b><br>
+<p>
+Prove that we cannot find consecutive factorials with first digits 1, 2, ... , 9. 
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+We can write any integer n in scientific notation as n = <u>n</u> x 10<sup>k</sup>, where 1 &le; <u>n</u> &lt; 10 is a real number and k is a positive integer. For example, 356 = 3.56 x 10<sup>2</sup>. Suppose that (N+i)! has first digit i for i = 1, 2, ... , 9. Then <u>(N+i)!</u> is a real number between i and i+1. So for i = 2, ... , 9, we have that <u>N+i</u> is a real number such that 1 &lt; <u>N+i</u> = <u>(N+i)!</u>/<u>(N+i-1)!</u> &lt; (i+1)/(i-1). So certainly <u>N+i</u> &lt; 3 and hence <u>N+i</u> &lt; <u>N+i+1</u>. Thus we must have 1 &lt; <u>N+2</u> &lt; <u>N+3</u> &lt; ... &lt; <u>N+9</u> &lt; 5/4.
+<p>
+But <u>ab</u> = <u>a</u> <u>b</u> unless <u>a</u> <u>b</u> &gt; 10, in which case <u>ab</u> = (<u>a</u> <u>b</u>)/10. So in any case <u>ab</u> &le; <u>a</u> <u>b</u>. Hence <u>(N+4)!</u> = <u>(N+1)!</u> <u>N+2</u> <u>N+3</u> <u>N+4</u> &lt; 2 (5/4) (5/4) (5/4) = 250/64 &lt; 4. Contradiction (because it is supposed to have first digit 4).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh01.html">42nd IMO shortlist 2001</a><br>
+<p>&ne; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+14 Oct 2002
+</BODY>
+</HTML>
+

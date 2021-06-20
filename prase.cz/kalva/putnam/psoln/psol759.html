@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1975/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>36th Putnam 1975</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Let n be a fixed positive integer. Let S be any finite collection of at least n positive reals (not necessarily all distinct). Let f(S) = (&sum;<sub>a&isin;S</sub> a)<sup>n</sup>, and let g(S) = the sum of all n-fold products of the elements of S (in other words, the nth symmetric function). Find sup<sub>S</sub> g(S)/f(S).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 1/n!
+
+<p>
+
+For any n elements a, b, ... , w of S, the coefficient of a<sup>1</sup>b<sup>1</sup>...w<sup>1</sup> in the multinomial expansion of f(s) is just n!/(1! 1! ... 1!) = n!. In other words, f(S) = n! g(S) + other terms. But the other terms are all positive, so f(S) &gt; n! g(S). Hence g(S)/f(S) &lt; 1/n! . This establishes that 1/n! is an upper bound.
+
+<p>
+
+Take S to be m elements all 1. Then f(S) = m<sup>n</sup> and g(S) = mCn. Hence g(S)/f(S) = (m/m) ( (m-1)/m) ( (m-2)/m) ... ( (m-n)/m) 1/n! . As m tends to infinity, each of the n terms (m-r)/m tends to 1 and hence g(S)/f(S) tends to 1/n! . Hence 1/n! is the least upper bound.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn75.html">36th Putnam 1975</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

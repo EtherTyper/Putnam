@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>1st Putnam 1938/A7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>1st Putnam 1938</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A7</b><br>
+
+<p>
+
+<i>Do either (1) or (2)</i>
+
+<p>(1) &nbsp; S is a thin spherical shell of constant thickness and density with total mass M and center O. P is a point outside S.  Prove that the gravitational attraction of S at P is the same as the gravitational attraction of a point mass M at O.
+
+<p>(2) &nbsp; K is the surface z = xy in Euclidean 3-space. Find all straight lines lying in S. Draw a diagram to illustrate them.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(1) Let Q be a point on S. The obvious coordinate is the angle &theta; = angle QOP. The density is &rho; = M/4&pi;r<sup>2</sup>. By symmetry the attraction on P is towards O. Let the distance PO be d and the radius of the sphere be r. Let the gravitational constant be G. The component of the attraction towards O (per unit mass at P) is G &int;<sub>0</sub><sup>&pi;</sup> r d&theta; 2 &pi; r sin &theta; &rho; (d - r cos &theta;) (d<sup>2</sup> + r<sup>2</sup> - 2dr cos &theta;)<sup>-3/2</sup>. Note that the factor (d - r cos &theta;) (d<sup>2</sup> + r<sup>2</sup> - 2dr cos &theta;)<sup>-1/2</sup> is needed to resolve the force in the direction PO. Writing x = cos &theta;, this becomes 2G &pi; r<sup>2</sup>&rho; &int;<sub>-1</sub><sup>1</sup> (d - r x)/(d<sup>2</sup> + r<sup>2</sup> - 2dr x)<sup>3/2</sup> dx.
+
+<p>
+
+This is not as bad as it looks. It is just the sum of a (1 - x)<sup>-1/2</sup> and a (1 - x)<sup>-3/2</sup> integral, both of which are straightforward. Moreover, when we come to substitute x = &plusmn;1, the factor (d<sup>2</sup> + r<sup>2</sup> - 2dr x)<sup>1/2</sup> becomes just d - r or d + r. So we get after a little simplification 4 &pi; r<sup>2</sup>&rho;/d<sup>2</sup> = MG/d<sup>2</sup>, which is the same result as if all the mass was concentrated at O.
+
+<p>
+
+(2) We can write a general line as x = at + b, y = ct + d, z = et + f, for some constants a, b, c, d, e, f and a parameter t which takes all real values. If this lies in z = xy, then et + f = ac t<sup>2</sup> + (bc + ad) t + bd for all t. Hence a or c must be zero. If a is 0, then z = by, so the line can be written as x = b, z = by. Similarly, if c = 0, then the line can be written as y = d, z = dx. Conversely, it is easy to see that these two families of lines lie in the surface.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn38.html">1st Putnam 1938</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

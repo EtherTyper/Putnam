@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>42nd IMO shortlist 2001/G3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>42nd IMO 2001 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem G3</b><br>
+<p>
+ABC is a triangle with centroid G and side lengths a = BC, b = CA, c = AB. Find the point P in the plane which minimises AP.AG + BP.BG + CP.CG and find the minimum in terms of a, b, c.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<img src="diag01g3.bmp">
+<p>
+Applying the sine rule to triangle BGL, we have BG/sin BLG = BL/sin BGK. Similarly applying the sine rule to triangle CGL, we have CG/sin CLG = CL/sin CGK. But L is the midpoint of BC and sin BLG = sin CLG, so BG/CG = sin CGK/sin BGK.
+<p>
+We have BK = 2 R sin BGK, where R is the radius of the circle (because if O is its center then &ang;BOK = 2 &ang;BGK). Similarly, CK = 2 R sin CGK, so CK/BK = BG/CG, and hence BG/CK = CG/BK.
+<p>
+Similarly, AG/BG = sin BGN/sin AGN = sin BGN/sin CGK (opposite angles). Also BC = 2 R sin BKC = 2 R sin BGN (since BGCK is cyclic, so angle BKC = angle BGN). Hence BC/CK = sin BGN/sin CGK = AG/BG, so BG/CK = AG/BC and hence BC : CK : BK = AG : BG : CG.
+<p>
+We now use Ptolemy's theorem on the quadrilateral PBKC: PK.BC &lt;= BP.CK + CP.BK. Hence PK.AG &lt;= BP.BG + CP.CG. Hence (AP + PK)AG &lt;= AP.AG + BP.BG + CP.CG and so finally AK.AG &lt;= AP.AG + BP.BG + CP.CG with equality iff (1) P lies on the circle between B and C (for equality in Ptolemy) and (2) P lies on AK (for equality in the triangle inequality). Thus the unique minimum is when P = G.
+<p>
+Using the cosine formula, we have AB<sup>2</sup> = AL<sup>2</sup> + BL<sup>2</sup> - 2 BL.AL cos ALB, AC<sup>2</sup> = AL<sup>2</sup> + CL<sup>2</sup> - 2 CL.AL cos ALC. Adding, AB<sup>2</sup> + AC<sup>2</sup> = 2 AL<sup>2</sup> + BC<sup>2</sup>/2, so AG<sup>2</sup> =(4/9) AL<sup>2</sup> = (2 AB<sup>2</sup> + 2 AC<sup>2</sup> - BC<sup>2</sup>)/9. Hence AG<sup>2</sup> + BG<sup>2</sup> + CG<sup>2</sup> = (AB<sup>2</sup> + BC<sup>2</sup> + CA<sup>2</sup>)/3.
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh01.html">42nd IMO shortlist 2001</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+14 Oct 2002
+</BODY>
+
+</HTML>
+

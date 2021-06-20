@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1995/A2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>36th IMO 1995 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A2</b><br>
+<p>
+a, b, c are integers such that a &ge; 0, b &ge; 0, ab &ge; c<sup>2</sup>. Show that for some n we can find integers x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub>, y<sub>1</sub>, y<sub>2</sub>, ... , y<sub>n</sub> such that x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> + ... + x<sub>n</sub><sup>2</sup> = a, y<sub>1</sub><sup>2</sup> + y<sub>2</sub><sup>2</sup> + ... + y<sub>n</sub><sup>2</sup> = b, x<sub>1</sub>y<sub>1</sub> + x<sub>2</sub>y<sub>2</sub> + ... + x<sub>n</sub>y<sub>n</sub> = c.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+If x<sub>i</sub>, y<sub>i</sub> is a solution for a, b, c, then -x<sub>i</sub>, y<sub>i</sub> is a solution of a, b, -c, so it is sufficient to consider non-negative c. Without loss of generality we may assume a &ge; b. If c &le; b, then it is easy to give an explicit solution: take x<sub>i</sub> = y<sub>i</sub> = 1 for c values of i; x<sub>i</sub> = 1, y<sub>i</sub> = 0 for a-c values of i; x<sub>i</sub> = 0, y<sub>i</sub> = 0 for b-c values of i. However, there is no obvious explicit solution for c &gt; b (and hence a &gt; b &gt; c). So we use induction on a+b. 
+<p>
+If a + b = 0, then a = b = c = 0, so we can take n = 1, x<sub>1</sub> = y<sub>1</sub> = 0. Suppose it is true for a + b &lt; m. Take a, b, c with a + b = m. As noted above, we may assume a &gt; c &gt; b. Hence a' = a+b-2c, b' = b, c' = c-b is a valid triple with a'+b' &lt; m. So there is a solution x<sub>i</sub>', y<sub>i</sub>' for a', b', c'. But now x<sub>i</sub> = x<sub>i</sub>' + y<sub>i</sub>', y<sub>i</sub> = y<sub>i</sub>' is a solution for a, b, c.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh95.html">36th IMO shortlist 1995</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+4 Sep 2002
+</BODY>
+
+</HTML>
+

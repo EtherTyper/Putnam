@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1983/1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>24th IMO 1983 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 2</b><br>
+<p>
+1983 cities are served by ten airlines. All services are both ways. There is a direct service between any two cities. Show that at least one of the airlines can offer a round trip with an odd number of landings.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<i>Solution by Demetres Christofides</i>
+<p>
+We show by induction that if n airlines serve more than 2<sup>n</sup> cities then at least one offers an odd round trip. For n = 1, this is trivial (there are at least 3 cities, all served by a single airline, so we have a round trip around 3 cities).
+<p>
+Suppose the result is true for n. For n+1, suppose airline X does not offer an odd round trip. We claim that we can divide the cities into two sets A and B, such that X does not fly between any two cities in A, and X does not fly between any two cities in B. For start by putting any city C into A, then put into B all the cities to which X flies direct from a city in A. Then put into A all the cities to which X flies direct from a city in B. Repeat until we stop adding cities. If this does not exhaust the cities, then put one of the remaining cities into A and repeat, and so on.
+<p>
+Now at least one of A, B must have &gt; 2<sup>n</sup> cities. Also it must be served entirely by the remaining n airlines. So the result follows by induction.
+<p>
+Since 1983 &gt; 2<sup>10</sup>, the required result follows.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh83.html">24th IMO shortlist 1983</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+26 Nov 2003
+<br>Last corrected/updated 26 Nov 03
+</BODY>
+
+</HTML>
+

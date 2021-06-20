@@ -1,0 +1,63 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1998/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1998</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Define the sequence of decimal integers a<sub>n</sub> as follows: a<sub>1</sub> = 0; a<sub>2</sub> = 1; a<sub>n+2</sub> is obtained by writing the digits of a<sub>n+1</sub> immediately followed by those of a<sub>n</sub>. When is a<sub>n</sub> a multiple of 11?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: n = 1 (mod 6).
+
+<p><i>Easy.</i>
+
+<p>
+Recall that if n = d<sub>m</sub>d<sub>m-1</sub>...d<sub>1</sub>d<sub>0</sub>, where the d<sub>i</sub> are decimal digits, then the residue of n mod 11 is f(n) = (d<sub>0</sub> + d<sub>2</sub> + ... ) - (d<sub>1</sub> + d<sub>3</sub> + ... ). A trivial induction shows that a<sub>n</sub> has an odd number of digits unless n is a multiple of 3. Hence f(a<sub>n</sub>) = -f(a<sub>n-1</sub>) + f(a<sub>n-2</sub>) unless n = 2 (mod 3) when f(a<sub>n</sub>) = f(a<sub>n-1</sub>) + f(a<sub>n-2</sub>). Another simple induction shows that f(a<sub>n</sub>) = 1 for n = 0, 2, 5 (mod 6), -1 for n = 3 (mod 6), 2 for n = 4 (mod 6), and 0 for n = 1 (mod 6).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn98.html">Putnam 1998</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

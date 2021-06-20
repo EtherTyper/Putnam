@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1997/23 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>38th IMO 1997 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 23</b>
+<p>
+ABCD is a convex quadrilateral and X is the point where its diagonals meet. XA sin A + XC sin C = XB sin B + XD sin D. Show that ABCD must be cyclic.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+<img src="diag9723.jpg">
+<p>
+Take perpendiculars from X to AB, BC, CD, DA with feet K, L, M, N respectively. Then the midpoint of AX is the center of the circle through A,K,X,N. Also KN subtends an angle 2&ang;A at the center, so KN = 2 x radius x sin(2A/2) = XA sin A. Thus the condition in the question gives KN + LM = MN + KL (**). But we also have KN = XK cos XKN + XN cos XNK = XK cos XAN + XN cos XAK (*)
+<p>
+Let us write &ang;XAD = &alpha;<sub>1</sub>, &ang;XAB = &alpha;<sub>2</sub>, &ang;XBA = &beta;<sub>1</sub>, &ang;XBC = &beta;<sub>2</sub>, &ang;XCB = &gamma;<sub>1</sub>, &ang;XCD = &gamma;<sub>2</sub>, &ang;XDC = &delta;<sub>1</sub>, &ang;XDA = &delta;<sub>2</sub>. Then (*) becomes KN = XK cos &alpha;<sub>1</sub> + XN cos &alpha;<sub>2</sub>. Similarly, KL = XL cos &beta;<sub>1</sub> + XK cos &beta;<sub>2</sub>, LM = XM cos &gamma;<sub>1</sub> + XL cos &gamma;<sub>2</sub>, MN = XN cos &delta;<sub>1</sub> + XM cos &delta;<sub>2</sub>. So (**) becomes, XK(cos &alpha;<sub>1</sub> - cos &beta;<sub>2</sub>) + XL(cos &gamma;<sub>2</sub> - cos &beta;<sub>1</sub>) + XM(cos &gamma;<sub>1</sub> - cos &delta;<sub>2</sub>) + XN(cos &alpha;<sub>2</sub> - cos &delta;<sub>1</sub>) = 0 (***).
+<p>
+There is no loss of generality in assuming that &alpha;<sub>1</sub> &le; &beta;<sub>2</sub>. That is equivalent to A lying outside the circumcircle of BCD and hence to &alpha;<sub>2</sub> &le; &delta;<sub>1</sub>. But &alpha;<sub>1</sub> + &delta;<sub>2</sub> = &beta;<sub>2</sub> + &gamma;<sub>1</sub>, so &gamma;<sub>1</sub> &le; &delta;<sub>2</sub>. Similarly, &alpha;<sub>2</sub> + &beta;<sub>1</sub> = &gamma;<sub>2</sub> + &delta;<sub>1</sub>, so &gamma;<sub>2</sub> &le; &beta;<sub>1</sub>. The cosine function is decreasing over the range 0<sup>o</sup> to 180<sup>o</sup>, so it follows that all the parentheses in (***) are non-negative. Hence they must all be zero, and all the pairs of angles equal. It follows that ABCD is cyclic.
+<p>&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh97.html">38th IMO shortlist 1997</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+2 Dec 2003
+<br>Last corrected/updated 2 Dec 2003
+</BODY>
+
+
+
+</HTML>
+

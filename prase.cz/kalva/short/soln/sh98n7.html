@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1998/N7 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>39th IMO 1998 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N7</b><br>
+<p>
+Show that for any n &gt; 1 there is an n digit number with all digits non-zero which is divisible by the sum of its digits.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Two building blocks are needed. The first is that the number a<sub>n</sub> with 3<sup>n</sup> digits, all 1, is divisible by 3<sup>n</sup>. This is an easy induction. It is true for n = 1 because 111 = 3&middot;37. But a<sub>n+1</sub> = a<sub>n</sub> x 10...010...01 and 10...010...01 has sum of digits 3 and hence is divisible by 3, so a<sub>n+1</sub> is divisible by one more power of 3 than a<sub>n</sub>.
+<p>
+The second is that if we multiply the number 9...9 made up of k 9s by <i>any</i> number with not more than k digits and last digit non-zero, then the result has digit sum 9k. For suppose we multiply by a<sub>1</sub> ... a<sub>j</sub> with j &lt;= k. Then the product is (10<sup>k</sup> - 1) a<sub>1</sub>...a<sub>j</sub> = a<sub>1</sub>...a<sub>j-1</sub>(a<sub>j</sub>-1)9...9(9-a<sub>1</sub>)(9-a<sub>2</sub>)...(9-a<sub>j-1</sub>)(10-a<sub>j</sub>), where there are k-j 9s in the middle. The product has k + j digits and digit sum 9k.
+<p>
+So given any n, take k so that 3<sup>k</sup> &le; n &lt; 3<sup>k+1</sup>. Then either 3<sup>k</sup> &le; n &le; 2.3<sup>k</sup> or 2.3<sup>k</sup> &lt; n &lt; 3<sup>k+1</sup>. In the first case, if n = 3<sup>k</sup>, then we are done (we can take the number with n 1s). So assume j = n - 3<sup>k</sup> &gt; 0. Take N = 9...9 x 1...12, where the first factor has 3<sup>k</sup>9s and the second factor has j-1 1s and one 2. We have just established that N has n digits and digit sum 3<sup>k+2</sup>. But 3<sup>k</sup> divides the number with 3<sup>k</sup> 1s and so 3<sup>k+2</sup> divides the number with 3<sup>k</sup> 9s and hence also N (which is a multiple of that number). Note that, to be explicit, N = 1...19...98...8, where we have n - 3<sup>k</sup> 1s, 2.3<sup>k</sup> - n, 9s and n - 3<sup>k</sup> 8s.
+<p>
+In the second case, let j = n - 2.3<sup>k</sup>. Take N = 9...9 x 2...2, where the first factor has 2.3<sup>k</sup> 9s and the second factor has j 2s. We have established that N has n digits and digit sum 2.3<sup>k+2</sup>. Clearly 2 divides 2...2. But 9...9 = 9 x 1...1 x (10<sup>m</sup> + 1), where the second factor has 3<sup>k</sup> + 1 1s, and so is divisible by 3<sup>k</sup>. Hence the product of the first two factors is divisible by 3<sup>k+2</sup>. Hence N is divisible by 2.3<sup>k+2</sup> as required. To be explicit, we have N = 2...219...97...78, where there are (j-1) 2s, (j-1) 7s, one 1, and (2.3<sup>k</sup> - j) 9s.
+<p>
+<i>Comment. Canada 84/3 was similar (but easier). It asked for infinitely many numbers divisible by the sum of their digits (all non-zero). So the obvious answer was the number made up of 3<sup>n</sup> 1s.</i>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh98.html">39th IMO shortlist 1998</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Aug 2002
+</BODY>
+
+</HTML>
+

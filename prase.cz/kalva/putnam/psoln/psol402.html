@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 40/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>3rd Putnam 1940</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+y = f(x) is continuous with continuous derivative. The arc PQ is concave to the chord PQ. X is a point on the arc PQ for which PX + XQ is a maximum. Prove that XP and XQ are equally inclined to the tangent at X.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Easy.
+
+<p>
+
+Take s to be the arc-length PX and z to be  PX + XQ. Suppose the tangent is WXY, so that angle WXP = &theta; and angle YXQ = &phi;. Then to first order if we vary X, the change &delta;z = &delta;s (cos &theta; - cos &phi;), which is can be made positive (by choosing the sign of &delta;s appropriately), thus contradicting the maximality of X, unless &theta; = &phi;.
+
+<p>
+
+The official solution (Gleason et al, see foot of <a href="../putn40.html">question paper</a>, points out that almost the entire hypothesis is unnecessary. Suppose S is an entirely arbitary set of points in the plane, and that A and B are any two points in the plane (not necessarily in S). If X is a point of S such that PX + XQ &ge; PY + YQ for all points Y of S, then we can easily show that S lies in the half-plane bounded by external angle bisector of PXQ. If X lies on PQ, then S must be a subset of the segment PQ and the result is trivial. So assume it does not. Now reflect Q in the bisector to get Q', with PXQ' a straight line. Then if Y is any point in the same half-plane as Q', we have YQ' &lt; YQ and hence PY + YQ &gt; PY + YQ' &ge; PQ' = PX + XQ' = PX + XQ, so Y is not in S.
+
+<p>
+This argument depends upon X achieving a global maximum. The original wording of the question, "a point ... for which ... is a maximum" (which on this point I quoted exactly), is somewhat ambiguous. Does it mean a local or a global maximum? If it means a local, then we have to take S to be a small arc for which the maximum is global. Then that arc lies on one side of the line. Since it also has a point in common (X) and is differentiable, the line must be the tangent to the arc at X.
+
+<p>
+This solution is somewhat harder and less obvious (unless you have seen it before), so I prefer the simpler solution.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn40.html">3rd Putnam 1940</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

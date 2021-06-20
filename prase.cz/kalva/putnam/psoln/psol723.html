@@ -1,0 +1,82 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1972/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>33rd Putnam 1972</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+A sequence { x<sub>i</sub> } is said to have a Cesaro limit iff lim<sub>n&rarr;&infin;</sub>(x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>n</sub>)/n exists. Find all (real-valued) functions f on the closed interval [0, 1] such that { f(x<sub>i</sub>) } has a Cesaro limit iff { x<sub>i</sub> } has a Cesaro limit.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: the linear functions f(x) = Ax + B where A is non-zero. [We need A non-zero, because otherwise <i>all</i> { f(x<sub>i</sub>) } would have a Cesaro limit.]
+
+<p>
+
+It is straightforward to show that these functions satisfy the condition. 
+
+<p>
+
+Suppose {x<sub>n</sub>} has a Cesaro limit. Then we can find a limit k so that for any &epsilon; &gt; 0 we have |(x<sub>1</sub> + ... + x<sub>n</sub>)/n - k| &lt; &epsilon;/A for all sufficiently large n. Let h = f(k), we wish to show that |(f(x<sub>1</sub>) + ... + f(x<sub>n</sub>) )/n - h| &lt; &epsilon; for all sufficiently large n. But |(f(x<sub>1</sub>) + ... + f(x<sub>n</sub>) )/n - h| = | A(x<sub>1</sub> + ... + x<sub>n</sub>)/n - Ak | &lt; <font face="Symbol">e</font>.
+
+<p>
+
+Similarly, suppose { f(x<sub>n</sub>) } has a Cesaro limit. Then we can find a limit h so that for any &epsilon; &gt; 0 we have |(f(x<sub>1</sub>) + ... + f(x<sub>n</sub>) )/n - h| &lt; A&epsilon; for all sufficiently large n. Take k so that f(k) = h. We wish to show that |(x<sub>1</sub> + ... + x<sub>n</sub>)/n - k| &lt; &epsilon; for all sufficiently large n. But again this is obvious since we have |(f(x<sub>1</sub>) + ... + f(x<sub>n</sub>) )/n - h| = | A(x<sub>1</sub> + ... + x<sub>n</sub>)/n - Ak |.
+
+<p>
+
+It is harder to show the converse - that any function satisfying the condition must be linear. Note first that it is not true for ordinary limits. If { x<sub>n</sub> } &rarr; k, then f(x<sub>n</sub>) &rarr; f(k) for any continuous f (and it is not hard to show the converse). So the functions satisfying the corresponding condition for ordinary limits are just the homeomorphisms. The ordinary limit condition is stronger than Cesaro-summability - it is easy to show that if x<sub>n</sub> &rarr; k, then (x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>n</sub>)/n &rarr; k also. But it is easy to find sequences which do not tend to a limit but do have a Cesaro limit. For example, x<sub>n</sub> = (-1)<sup>n</sup>. So we need to use members of this wider class of sequences in order to prove the result.
+
+<p>
+
+Given any k in the open interval (0, 1), take a sequence x<sub>n</sub> of 0s and 1s whose average s<sub>n</sub> = (x<sub>1</sub> + ... + x<sub>n</sub>)/n tends to k. Then the average F<sub>n</sub> = (f(x<sub>1</sub>) + ... + f(x<sub>n</sub>) )/n tends to (1 - k) f(0) + k f(1) = h, since a fraction (1 - k) of the n terms f(x<sub>i</sub>) are f(0) and a fraction k are f(1).
+
+<p>
+
+Now define a new sequence y<sub>n</sub> as follows. Take enough terms from the first sequence to bring G<sub>n</sub> = (g(y<sub>1</sub>) + ... + g(y<sub>n</sub>) )/n within 1/2 of h. Then take enough terms k to bring G<sub>n</sub> within 1/4 of f(k). Then (starting where we left off before) take enough terms from the first sequence to bring G<sub>n</sub> within 1/8 of h, then enough ks to bring it within 1/16 of f(k) and so on. Thus we have a subsequence of the G<sub>n</sub>s which tends to h and another which tends to f(k). But the average (y<sub>1</sub> + ... + y<sub>n</sub>)/n tends to k, so G<sub>n</sub> must tend to a single limit. Hence f(k) = h, or f(k) = a + bk, where a = f(0), b = f(1) - f(0).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn72.html">33rd Putnam 1972</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

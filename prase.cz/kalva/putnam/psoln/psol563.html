@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 56/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>16th Putnam 1956</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Find the trajectory of a particle which moves from rest in a vertical plane under (constant) gravity and a force k<i>v</i> perpendicular to its velocity <i>v</i>. 
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Take the x-axis horizontal and the y-axis vertically downwards. Then the equations of motion are: y'' = g - kx', x'' = ky'. If k = 0, then we have the usual constant acceleration downwards (x = 0, y = 1/2 gt<sup>2</sup>). So suppose k &ne; 0.
+
+<p>
+
+By inspection, x = A (cos kt - 1) + B (sin kt - kt) (we have chosen the terms - A and -kBt to give x(0) = x'(0) = 0). Hence (integrating x'' = ky') we have y = - A sin kt + B(cos kt - 1). But y'(0) = 0, so A = 0. Finally, to satisfy y'' = g - kx', we B = -g/k<sup>2</sup>. So x = gt/k - g/k<sup>2</sup> sin kt, y = g/k<sup>2</sup> (1 - cos kt). This is the equation of a cycloid. Note that the particle is never able to fall more than a finite distance, it keeps being returned to its starting level.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn56.html">16th Putnam 1956</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

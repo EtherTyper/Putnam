@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 91/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>52nd Putnam 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+p is a prime &gt; 2. Prove that &sum;<sub>0&le;n&le;p</sub> pCn (p+n)Cn = 2<sup>p</sup> + 1 (mod p<sup>2</sup>). [aCb is the binomial coefficient a!/(b! (a-b)!).]
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Straightforward.</i>
+
+<p>
+
+Let D<sub>n</sub> = pCn (p+n)Cn, so that the required sum is &sum; D<sub>n</sub>. We show that D<sub>0</sub> = pC0 (mod p<sup>2</sup>), D<sub>p</sub> = pCp + 1 (mod p<sup>2</sup>), and for the other terms D<sub>n</sub> = pCn (mod p<sup>2</sup>). The result then follows since &sum; pCn = 2<sup>p</sup>.
+
+<p>
+
+For n = 0, it is obvious that D<sub>0</sub> = 1 = pC0. 
+
+<p>
+
+n = p is slightly trickier. Notice that we can write (p-1)! (2p-1)C(p-1) as (1 + p)(2 + p)(3 + p) ... (p-1 + p). Expanding, we get (p-1)! + (1 + 2 + ... + p-1) p + O(p<sup>2</sup>) = (p-1)! (mod p<sup>2</sup>), since (1 + 2 + ... + p-1) = p (p-1)/2. Hence, (2p-1)C(p-1) = 1 (mod p<sup>2</sup>). Hence 2pCp = 2p/p (2p-1)C(p-1) = 2 = 1 + pCp (mod p<sup>2</sup>). 
+
+<p>
+
+For 0 &lt; n &lt; p, pCn = 0 (mod p) [because all the factors in n!(p - n)! are &lt; p and hence relatively prime to p, so the factor p in the denominator p! remains after dividing by n!(p - n)!]. Also p + i = i &ne; 0 (mod p), so (p + n) ... (p + 2)(p + 1) = n! (mod p) and hence (p+n)Cn = 1 (mod p) for 0 &lt; n &lt; p. In other words, (p+n)Cn = kp + 1 for some integer k. But kp pCn = 0 (mod p<sup>2</sup>), since p divides pCn, so D<sub>n</sub> = (p+n)Cn pCn = pCn (mod p<sup>2</sup>).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn91.html">52nd Putnam 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+24 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

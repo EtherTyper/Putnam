@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1996/N8 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>IMO shortlist 1996</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N8</b><br>
+<p>
+For each odd prime p, find positive integers m, n such that m &le; n and (2p)<sup>1/2</sup> - m<sup>1/2</sup> - n<sup>1/2</sup> is non-negative and as small as possible.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: (p-1)/2 and (p+1)/2.
+<p>
+We show first that we cannot get zero. 
+<p>
+Suppose (2p)<sup>1/2</sup> - m<sup>1/2</sup> - n<sup>1/2</sup> = 0. Then 2p = m + n - 2(mn)<sup>1/2</sup>, so 4p<sup>2</sup> + (m+n)<sup>2</sup> - 4p(m+n) = 4mn, so 4p<sup>2</sup> + (m-n)<sup>2</sup> -4p(m+n) = 0. Hence p divides (m-n)<sup>2</sup>. But p is prime, so p must divide (m-n) and hence p<sup>2</sup> divides (m-n)<sup>2</sup>. Hence p divides (m+n). Hence p divides 2m and 2n. But p is odd, so p divides m and n. If m &ge; 2p, then n &le; 0, but n is positive, so m &lt; 2p. But m is positive, so m = p. Similarly, n = p. But (2p)<sup>1/2</sup> - p<sup>1/2</sup> - p<sup>1/2</sup> is not zero. Contradiction. So we cannot get zero.
+<p>
+Put D = (2p)<sup>1/2</sup> - m<sup>1/2</sup> - n<sup>1/2</sup>. Multiplying and dividing by ( (2p)<sup>1/2</sup> + m<sup>1/2</sup> + n<sup>1/2</sup>) we get D = (2p - m - n - 2(mn)<sup>1/2</sup>)/( (2p)<sup>1/2</sup> + m<sup>1/2</sup> + n<sup>1/2</sup>). Multiplying and dividing by (2p - m - n + 2(mn)<sup>1/2</sup>) we get D = ( (2p - m - n)<sup>2</sup> - 4mn)/( ( (2p)<sup>1/2</sup> + m<sup>1/2</sup> + n<sup>1/2</sup>)(2p - m - n + 2(mn)<sup>1/2</sup>) ). 
+<p>
+Suppose the numerator is 1. Then (2p - m - n)<sup>2</sup> = 4mn + 1. So 2p - m - n = 2r + 1, where 4mn + 1 = (2r + 1)<sup>2</sup>. Hence mn = r(r+1). Let d be the greatest common divisor of m and r, so that m = Md, r = Rd, with M and R coprime. Then M must divide r+1. Put r+1 = Md'. Then Mdn = RdMd', so n = Rd'. Hence 2p = m + n + 2r + 1 = Md + Rd' + Md' + Rd = (M+R)(d+d'). But p is an odd prime, so either d = d' = 1 or M = R = 1. If d = d' = 1, then m = M = r+1 = R+1 = n+1. But m &lt;= n. So we must have M = R = 1. So m = d, r = d, d' = d+1, n = d+1, p = 2d+1. Hence D = 1/( ( (4d+2)<sup>1/2</sup> + d<sup>1/2</sup> + (d+1)<sup>1/2</sup>)(2d+1 + 2(d<sup>2</sup>+d)<sup>1/2</sup>) ) &lt; 1/( (4d)<sup>1/2</sup> + d<sup>1/2</sup> + d<sup>1/2</sup>)(2d + 2(d<sup>2</sup>)<sup>1/2</sup>) ) = 1/( 4d<sup>1/2</sup> 4d) = 1/(16d<sup>3/2</sup>).
+<p>
+Now suppose the numerator is greater than 1. Then it must be at least 2. Looking at the denominator, we have (2p)<sup>1/2</sup> - m<sup>1/2</sup> - n<sup>1/2</sup> &gt; 0 and hence (2p)<sup>1/2</sup> + m<sup>1/2</sup> + n<sup>1/2</sup> &lt; 2 (2p)<sup>1/2</sup>. Also (2p - m - n + 2(mn)<sup>1/2</sup>) = (2p - (m<sup>1/2</sup> - n<sup>1/2</sup>)<sup>2</sup>) &lt; 2p. So D &gt; 2/( 2 (2p)<sup>1/2</sup> 2p) = 1/(2p)<sup>3/2</sup>. So if we put p = 2d+1, then 2p = 4d+2 &lt;= 6d &lt; 16<sup>2/3</sup>d, so D &gt; 1/(16d<sup>3/2</sup>).
+<p>
+Thus we have D &gt; 1/16d<sup>3/2</sup> for all m, n except m = (p-1)/2, n = (p+1)/2 when we have D &lt; 1/16d<sup>3/2</sup>.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh99.html">37th IMO shortlist 1996</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+8 Oct 2002
+</BODY>
+
+</HTML>
+

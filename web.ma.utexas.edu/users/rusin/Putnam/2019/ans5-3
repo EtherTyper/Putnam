@@ -1,0 +1,48 @@
+I asked this question, which appeared on the 2012 Putnam exam: SUppose S is a set with a binary
+operation "*" on it, which is commutative and associative, and also has what I would call the Division Property:
+for every x and y in S there is a z in S with x*z=y. From this information we are asked to
+prove the "cancellation law": for all a,b,c in S if a*c=b*c then a=b.
+
+This conclusion would be immediate if S were a group (jus multiply both sides by the inverse of c).
+So our goal is to prove that the Division Property implies S is actually a group.
+
+First note that the Division Property implies that for every element x of S there is an element
+z(x) in S such that x*z(x) = x. It will turn out that z(x) is the same for every element x in S,
+so z=z(x) will actually be an identity element of the group.
+
+Well, let y be another element of S. Find an element w of S with x*w=y. Then we can compute
+y*z as (x*w)*z = w*( x*z ) = w*x = y. Since y in S was arbitrary, we now know
+y*z=y for every y in S, and so z is an identity element for S. Then we show
+that for every y has an inverse: simply use the Division Property to find a u with y*u=z; then
+u is an inverse to  y.
+
+So S really is a group and we can finish the proof as mentioned at the beginning. Given a,b,c in S with
+a*c=b*c, first solve the equation  c*u=z, then multiply through by a u: from a*c=b*c we get
+a=a*z=a*c*u=b*c*u=b*z=b, as desired.
+
+
+If you just want to be minimal and rather mysterious, do this: given a,b,c find x,y,z in turn by
+solving
+    ax=a
+    cy=x
+    az=b
+
+Then from ac=bc (and at (*) using commutativity) we get
+    a = ax = acy = bcy = bx = azx =(*) zax = za =(*) az = b . 
+
+
+Liam's solution is more symmetrical and only uses the Division
+Property twice: for any three elements a,b,c in the set he finds elements
+u, v with (ac)u=b and (bc)v=a .  Then thanks to the associative property
+we can compute
+ (ac)(ucv)=(acu)(cv)=bcv=a
+and similarly
+ (bc)(vcu)=(bcv)(cu)=acu=b
+so if we are told that ac=bc then with one application of the commutative
+property, we get
+ a = (ac)(ucv) = (bc)(vcu) = b
+
+Cool, eh?
+
+
+

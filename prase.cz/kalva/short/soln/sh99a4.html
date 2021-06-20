@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<TITLE>40th IMO shortlist 1999/A4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>40th IMO 1999 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A4</b><br>
+<p>
+Show that we cannot partition the positive integers into three non-empty parts, so that if a and b belong to different parts, then a<sup>2</sup> - ab + b<sup>2</sup> belongs to the third part.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+We assume that a partition is possible and derive a contradiction.
+<p>
+Take the parts as A, B, C. Put [a, b] = a<sup>2</sup> - ab + b<sup>2</sup>. Note that [a+b, a] = (a+b)<sup>2</sup> - a(a+b) + a<sup>2</sup> = b(a+b) + a<sup>2</sup> = a<sup>2</sup> + ab + b<sup>2</sup>. Similarly, [a+b, b] = a<sup>2</sup> + ab + b<sup>2</sup>, so [a+b, a] = [a+b, b]. Hence if a and b are in different parts, then a+b cannot be in the third part. For if a is in A, b in B and a+b in C, then [a, a+b] must be in B, but [b, a+b] must be in A. Contradiction. 
+<p>
+wlog 1 is in A. Let b be the smallest number not in A. wlog b is in B. We show that for some k we have kb in C. Let c be the smallest number in C. We have c = qb + r with 0 &lt;= r &lt; b. If r = 0, then we can take k = q. So suppose r &gt; 0. Note that r must be in A, because b is the smallest element not in A. Hence c-r cannot be in B (or we would have r in A, c-r in B and r + (c-r) in C). But c-r cannot be in C because c is the smallest element in C. Hence c-r must be in A. So [c-r, b] = [qb, b] = b(q<sup>2</sup> - q + 1)b is in C and we may take k = b(q<sup>2</sup> - q + 1). Take k to be the smallest integer such that kb is in C. Note that k &gt; 1, since b is in B.
+<p>
+If (k-1)b is in A, then we have b in B and (k-1)b + b in C. Contradiction. Also, we cannot have (k-1)b in C by the minimality of k. So (k-1)b must be in B.
+<p>
+Now we claim that for all n, nkb + 1 and (nk - 1)b + 1 are in A. We use induction on n. Consider first n = 1. We have 1 in A, (k-1)b in B, so (k-1)b + 1 cannot be in C. Also b-1 is in A (by the minimality of b), and kb is in C, so kb - (b-1) = (k-1)b + 1 cannot be in B. Hence it must be in A. b is in B, so (k-1)b + 1 + b = kb + 1 cannot be in C. But 1 is in A and kb is in C, so kb + 1 cannot be in B. So it must be in A. That establishes n = 1.
+<p>
+So suppose n is true. Since nkb + 1 is in A and (k-1)b is in B, the sum ( (n+1)k - 1)b + 1 cannot be in C. Also (nk - 1)b + 1 is in A and kb is in C, so ( (n+1)k - 1)b + 1 cannot be in B. So it must be in A. But b is in B, so the sum (n+1)kb + 1 cannot be in C. Finally, nkb + 1 is in A and kb is in C, so (n+1)kb + 1 cannot be in B. So it must be in A. So the result holds for n+1 and hence for all n. [All we need is that nkb + 1 is in A, we included (nk - 1)b + 1 to make the inductive proof work.]
+<p>
+So we have kb + 1 in A and kb in C. Hence [kb, kb+1] = (kb+1)kb + 1 is in B. But (kb+1)kb + 1 = n'kb + 1, so it must be in A. Contradiction.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh99.html">40th IMO shortlist 1999</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

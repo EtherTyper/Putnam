@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1995/N7 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>36th IMO 1995 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N7</b><br>
+<p>
+Does there exist n &gt; 1 such that the set of positive integers may be partitioned into n non-empty subsets so that if we take an arbitrary element from every set but one then their sum belongs to the remaining set?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: no.
+<p>
+Obviously no partition is possible for n = 2. So assume n &gt; 2. Let the partition be A<sub>1</sub> &cup; A<sub>2</sub> &cup; ... &cup; A<sub>n</sub>. We show first that if a, b, c (not necessarily distinct) belong to the same subset then a + b and a + c must belong to the same subset. 
+<p>
+So suppose a, b, c belong to A<sub>1</sub>, a+b belongs to A<sub>2</sub> and a+c belongs to A<sub>3</sub>. Take any elements a<sub>4</sub> in A<sub>4</sub>, a<sub>5</sub> in A<sub>5</sub>, ... , a<sub>n</sub> in A<sub>n</sub>. Then c + (a+b) + a<sub>4</sub> + ... + a<sub>n</sub> must be in A<sub>3</sub>. But it equals b + (a+c) + a<sub>4</sub> + ... + a<sub>n</sub> which must be in A<sub>2</sub>. Contradiction. 
+<p>
+Suppose a+b belongs to A<sub>1</sub> and a+c belongs to A<sub>3</sub>. As before take any a<sub>i</sub> in A<sub>i</sub>. Then b + a<sub>3</sub> + ... + a<sub>n</sub> must be in A<sub>2</sub>, so (b + a<sub>3</sub> + ... + a<sub>n</sub>) + (a+c) + a<sub>4</sub> + ... + a<sub>n</sub> = (a+b+c) + (a<sub>3</sub> + ... + a<sub>n</sub>) + (a<sub>4</sub> + ... + a<sub>n</sub>) must be in A<sub>1</sub>. But c + a<sub>3</sub> + ... + a<sub>n</sub> must be in A<sub>2</sub>, so (a+b) + (c + a<sub>3</sub> + ... + a<sub>n</sub>) + a<sub>4</sub> + ... + a<sub>n</sub> = (a+b+c) + (a<sub>3</sub> + ... + a<sub>n</sub>) + (a<sub>4</sub> + ... + a<sub>n</sub>) must be in A<sub>3</sub>. Contradiction. The only remaining possibility is that a+b and a+c belong to the same subset, as claimed.
+<p>
+Now take a<sub>i</sub> in A<sub>i</sub>. Put s = a<sub>1</sub> + ... + a<sub>n</sub>. Without loss of generality s is in A<sub>1</sub>. Put b<sub>i</sub> = s - a<sub>i</sub>. We can also write b<sub>i</sub> as a sum of an element from each subset except A<sub>i</sub>, so b<sub>i</sub> must be in A<sub>i</sub>. Now a<sub>i</sub> + b<sub>i</sub> = s, which is in A<sub>1</sub>. Hence a<sub>i</sub> + a<sub>i</sub> = 2a<sub>i</sub> is also in A<sub>1</sub> (by the preliminary result). 
+<p>
+Now suppose 2m in any even positive integer. We have m in some A<sub>i</sub>. Take the set b<sub>j</sub>, where b<sub>j</sub> = a<sub>j</sub> except for b<sub>i</sub> = m. The same argument shows that 2b<sub>1</sub>, 2b<sub>2</sub>, ... , 2b<sub>n</sub> are all in the same subset. But if we take any j not equal to i, we already know that 2b<sub>j</sub> = 2a<sub>j</sub> is in A<sub>1</sub>. So 2m must also be in A<sub>1</sub>. In other words, all the even numbers are in A<sub>1</sub>.
+<p>
+Consider a<sub>1</sub> + a<sub>3</sub> + ... + a<sub>n</sub>. It is in A<sub>2</sub>. Keep a<sub>3</sub>, a<sub>4</sub>, ... , a<sub>n</sub> fixed and let a<sub>1</sub> run through all the even numbers. Then we see that all odd numbers greater than a<sub>3</sub> + ... + a<sub>n</sub> must be in A<sub>2</sub>. Similarly, by considering a<sub>1</sub> + a<sub>2</sub> + a<sub>4</sub> + ... + a<sub>n</sub>, we see that all odd numbers greater than a<sub>2</sub> + a<sub>4</sub> + ... + a<sub>n</sub> must be in A<sub>3</sub>. Contradiction. 
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh95.html">36th IMO shortlist 1995</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+20 Sep 2002
+</BODY>
+
+</HTML>
+

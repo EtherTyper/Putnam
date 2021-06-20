@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 78/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>39th Putnam 1978</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Find the real polynomial p(x) of degree 4 with largest possible coefficient of x<sup>4</sup> such that p( [-1, 1] ) &isin; [0, 1].
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let p(x) = a<sub>4</sub>x<sup>4</sup> + a<sub>3</sub>x<sup>3</sup> + a<sub>2</sub>x<sup>2</sup> + a<sub>1</sub>x + a<sub>0</sub>. Then a<sub>4</sub>x<sup>4</sup> - a<sub>3</sub>x<sup>3</sup> + a<sub>2</sub>x<sup>2</sup> - a<sub>1</sub>x + a<sub>0</sub> also satisfies the conditions and hence also a<sub>4</sub>x<sup>4</sup> + a<sub>2</sub>x<sup>2</sup> + a<sub>0</sub>. So we may take a<sub>3</sub> = a<sub>1</sub> = 0. 
+
+<p>
+Now p(0), p(1/2), p(1) belong to [0, 1], so 0 &le; a<sub>0</sub> &le; 1, 0 &le; a<sub>4</sub>/4 + a<sub>2</sub>/2 + a<sub>0</sub> &le; 1, 0 &le; a<sub>4</sub> + a<sub>2</sub> + a<sub>0</sub> &le; 1. Hence: -2 &le; -2a<sub>0</sub> &le; 0, 0 &le; a<sub>4</sub> + 2a<sub>2</sub> + 4a<sub>0</sub> &le; 4, -2 &le; -2a<sub>4</sub> - 2a<sub>2</sub> - 2a<sub>0</sub> &le; 0. Adding: -4 &le; -a<sub>4</sub> &lt; 4. So the maximum value of a<sub>4</sub> is at most 4.
+
+<p>
+This can be achieved by 4(x<sup>2</sup> - 1/2)<sup>2</sup> = 4x<sup>4</sup> - 4x<sup>2</sup> + 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn78.html">39th Putnam 1978</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

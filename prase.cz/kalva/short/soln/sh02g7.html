@@ -1,0 +1,39 @@
+<HTML>
+
+<HEAD>
+<TITLE>43rd IMO shortlist 2002/G7 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>43rd IMO 2002 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem G7</b><br>
+<p>
+ABC is an acute-angled triangle. The incircle touches BC at K. The altitude AD has midpoint M. The line KM meets the incircle again at N. Show that the circumcircle of BCN touches the incircle of ABC at N.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<img src="diag02g7.jpg">
+<p>
+If AB = AC, then D = K = midpoint of BC and the result is trivial (the figure is symmetrical about AD). So assume AB and AC are unequal. Let X be the center of the circle BNC. Take P to be the intersection of the line KN and the perpendicular bisector of BC. Suppose that P lies on the circle. Then &ang;PNX = &ang;NPX (XP = XN) = &ang;NKI (IK parallel to XP) = &ang;KNI (IN = IK) = &ang;PNI (same angle), so N, I, X are collinear. But if two circles meet at a point on the line of centers, then they must touch there. So it remains to show that P lies on the circle.
+<p>
+Take BC = a, CA = b, AB = c, s = (a + b + c)/2 as usual. The usual argument shows that BK = s - b, CK = s - c. (If the incircle touches AC at K' and AB at K", then we have BK = BK" (equal tangents) and BK + KC = a etc, so we get three equations for three unknowns and can solve for BK = s - b, CK = s - c. Hence BK&middot;KC = (s - b)(s - c). It is sufficient to show that NK&middot;KP = (s - b)(s - c) also.
+<p>
+BD = c cos B = (c<sup>2</sup> + a<sup>2</sup> - b<sup>2</sup>)/2a. Hence DK = BK - BD = (s - b) - (c<sup>2</sup> + a<sup>2</sup> - b<sup>2</sup>)/2a = (-ab + ac - c<sup>2</sup> + b<sup>2</sup>)/2a = (s - a)(b - c)/a. We have MD = AD/2 = (area ABC)/a, so if x = &ang;MKD, then tan x = MD/DK = (area ABC)/( (s - a)(b - c) ). 
+<p>
+But NK = 2r sin x (where r is the inradius), and KP = KY sec x, where Y is the midpoint of BC. We have KY = BY - BK = a/2 - (s - b) = (b - c)/2. Hence NK&middot;KP = r(b - c) tan x. As usual, we have area ABC = rs (because area ABC = area AIB + area BIC + area CIA), so r = (area ABC)/s, and hence NK&middot;KP = (area ABC)<sup>2</sup>(b - c)/(s(s - a)(b - c)) = (s - b)(s - c), since (area ABC)<sup>2</sup> = s(s - a)(s - b)(s - c) (Heron's formula). 
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh02.html">43rd IMO shortlist 2002</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+8 Aug 2003
+<br>Last corrected/updated 8 Aug 2003
+</BODY>
+
+</HTML>
+

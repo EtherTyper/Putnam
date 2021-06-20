@@ -1,0 +1,126 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 52/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>12th Putnam 1952</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Let the roots of the cubic p(x) &equiv; x<sup>3</sup> + ax<sup>2</sup> + bx + c be &alpha;, &beta;, &gamma;. Find all (a, b, c) so that p(&alpha;<sup>2</sup>) = p(&beta;<sup>2</sup>) = p(&gamma;<sup>2</sup>) = 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (0, 0, 0) roots 0, 0, 0
+
+<br>(-1, 0, 0) roots 0, 0, 1
+
+<br>(-2, 1, 0) roots 0, 1, 1
+
+<br>(0, -1, 0) roots 0, 1, -1
+
+<br>(1, 1, 0) roots 0, &omega;, &omega;<sup>2</sup>, where &omega; = e<sup>2<font face="Symbol">p</font>i/3</sup>
+
+<br>(-3, 3, -1) roots 1, 1, 1
+
+<br>(-1, -1, 1) roots 1, 1, -1
+
+<br>(1, -1, -1) roots 1, -1, -1
+
+<br>(0, 0, -1), roots 1, &omega;, &omega;<sup>2</sup>
+
+<br>(i, 1, -i), roots 1, -1, -i
+
+<br>(-i, 1, i), roots 1, -1, i
+
+<br>(1-&omega;, 1-&omega;, -&omega;, roots &omega;, &omega;, &omega;<sup>2</sup>
+
+<br>(1-&omega;<sup>2</sup>, 1-&omega;<sup>2</sup>, -&omega;<sup>2</sup>), roots &omega;, &omega;<sup>2</sup>, &omega;<sup>2</sup>
+
+<br>(1+&omega;, 1+&omega;, &omega;), roots &omega;, -&omega;, &omega;<sup>2</sup>
+
+<br>(1+&omega;<sup>2</sup>, 1+&omega;<sup>2</sup>, &omega;<sup>2</sup>), roots &omega;, &omega;<sup>2</sup>, -&omega;<sup>2</sup>
+
+<br>((1-i&radic;7)/2, (-1-i&radic;7)/2, -1), roots k, k<sup>2</sup>, k<sup>4</sup>, where k = e<sup>2i&pi;/7</sup>
+
+<br>((1+i&radic;7)/2, (-1+i&radic;7)/2, -1), roots k<sup>3</sup>, k<sup>5</sup>, k<sup>6</sup>.
+
+<p>
+
+p(x) = 0 has only three roots, so the squares must all be found in { &alpha;, &beta;, &gamma; }. Let &alpha; be the root with the largest modulus, then |&alpha;|<sup>2</sup> &gt; |&alpha;| unless |&alpha;| &le; 1. Let &gamma; be the root with the smallest non-zero modulus, then |&gamma;|<sup>2</sup> &lt; |&beta;| unless |&gamma;| &ge; 1. Hence all non-zero roots have modulus 1.
+
+<p>
+
+All roots zero is possible and gives (a, b, c) = (0, 0, 0).
+
+<p>
+
+Suppose &beta; = &gamma; = 0 and &alpha; is non-zero. Then &alpha;<sup>2</sup> = &alpha;, so &alpha; = 1. This gives (a, b, c) = (-1, 0, 0).
+
+<p>
+
+Suppose &gamma; = 0, and &alpha;, b</font> are non-zero. If <sup>&alpha;</sup><sup>2</sup> = &alpha;, then &alpha; = 1. Then &beta;<sup>2</sup> = 1 or &beta;, so &beta; = 1 or -1. This gives (a, b, c) = (-2, 1, 0) or (0, -1, 0). If &alpha;<sup>2</sup> is not &alpha; (and &beta;<sup>2</sup> not &beta;), then we must have &alpha;<sup>4</sup> = &alpha;, so &alpha; and &beta; are &omega; and &omega;<sup>2</sup>, where &omega; = e<sup>2i&pi;/3</sup>. This gives (a, b, c) = (1, 1, 1).
+
+<p>
+
+The remaining possibility is that all roots are non-zero (and have modulus 1). There might be 3, 2, 1 or 0 roots equal to 1. The first case gives (-3, 3, -1). In the second case the third root must satisfy &gamma;<sup>2</sup> = 1 or &gamma; and hence must be -1, giving (a, b, c) = (-1, -1, 1).
+
+<p>
+
+We consider the third case (just one root equal to 1). If both the roots not equal to 1 have square 1, then they must both be -1 and (a, b, c)  = (1, -1, -1). If one has square 1 and one not. Then they must be -1 and &plusmn;i. This gives (a, b, c) = (i, 1, i) or (-i, 1, -i). If neither have square 1, then we must have &beta;<sup>2</sup> = &gamma;, &gamma;<sup>2</sup> = &beta;, hence &beta;<sup>3</sup> = 1 and &beta; and &gamma; are &omega; and &omega;<sup>2</sup>.
+
+<p>
+
+The final case is that no roots are 1. If we have &alpha;<sup>2</sup> = &beta; and &beta;<sup>2</sup> = &alpha;, then &alpha; and &beta; are &omega; and &omega;<sup>2</sup> and &gamma;<sup>2</sup> = &omega; or &omega;<sup>2</sup>, so &gamma; = &plusmn;&omega; or &plusmn;&omega;<sup>2</sup>. So the roots are &omega;, &omega;, &omega;<sup>2</sup> or &omega;, &omega;<sup>2</sup>, &omega;<sup>2</sup> or &omega;, -&omega;, &omega;<sup>2</sup> or &omega;, &omega;<sup>2</sup>, -&omega;<sup>2</sup>. This gives (a, b, c) = (1-&omega;, 1-&omega;, &omega;) or (1-&omega;<sup>2</sup>, 1-&omega;<sup>2</sup>, &omega;<sup>2</sup>) or (1+&omega;, 1+&omega;, &omega;) or (1+&omega;<sup>2</sup>, 1+&omega;<sup>2</sup>, &omega;<sup>2</sup>).
+
+<p>
+
+The final possibility is &alpha;<sup>2</sup> = &beta;, &beta;<sup>2</sup> = &gamma;, &gamma;<sup>2</sup> = &alpha;. Hence &alpha;<sup>7</sup> = 1. If we put k = e<sup>i2&pi;/7</sup>, then the roots could be k, k<sup>2</sup>, k<sup>4</sup> or k<sup>6</sup>, k<sup>5</sup>, k<sup>3</sup>. This corresponds to (a, b, c) = ((1-i&radic;7)/2, (-1-i&radic;7)/2, -1), ((1+i&radic;7)/2, (-1+i&radic;7)/2, -1).
+
+<p>
+
+<i>Comment. In some ways this is a nightmare question to meet in an exam. It is not particularly difficult, but it is almost impossible to do quickly and there is much scope for minor mistakes.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn52.html">12th Putnam 1952</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

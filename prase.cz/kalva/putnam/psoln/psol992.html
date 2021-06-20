@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 99/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>60th Putnam 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+Show that for some fixed positive n we can always express a polynomial with real coefficients which is nowhere negative as a sum of the squares of n polynomials.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We consider what polynomials are nowhere negative. If p(x) has a root of odd order, then it changes sign at the root. So any real roots of the polynomial must be of even order. If x = &alpha; + i &beta; is a complex root, then so is x = &alpha; - i &beta;, since the coefficients of the polynomial are real. 
+
+<p>
+
+Collecting all the real roots together gives us a square factor q(x)<sup>2</sup>. If the complex roots are &alpha;<sub>1</sub> &plusmn; i &beta;<sub>1</sub>, &alpha;<sub>2</sub> &plusmn; i &beta;<sub>2</sub>, &alpha;<sub>3</sub> &plusmn; i &beta;<sub>3</sub>, ... , &alpha;<sub>m</sub> &plusmn; i &beta;<sub>m</sub>, then let a(x) = &prod; (x - &alpha;<sub>i</sub> - i &beta;<sub>i</sub>) and b(x) = &prod; (x - &alpha;<sub>i</sub> + i &beta;<sub>i</sub>), so that p(x) = q(x)<sup>2</sup>a(x)b(x). Then we can find real polynomials, r(x) and s(x), such that a(x) = r(x) + i s(x). Substituting -i for i, we must have b(x) = r(x) - i s(x) and hence a(x) b(x) = r(x)<sup>2</sup> + s(x)<sup>2</sup>. So the original polynomial p(x) = q(x)<sup>2</sup>(r(x)<sup>2</sup> + s(x)<sup>2</sup>), which is the sum of two squares.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+&nbsp;<p>
+
+<a href="../putn99.html">60th Putnam 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

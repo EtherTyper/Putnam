@@ -1,0 +1,71 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1995/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+For each positive integer k with n<sup>2</sup> decimal digits (and leading digit non-zero), let d(k) be the determinant of the matrix formed by writing the digits in order across the rows (so if k has decimal form a<sub>1</sub>a<sub>2</sub> ... a<sub>n</sub>, then the matrix has elements b<sub>ij</sub> = a<sub>n(i-1)+j</sub>). Find f(n) = &sum;d(k), where the sum is taken over all 9&middot;10<sup>n<sup>2</sup>-1</sup> such integers.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: f(1) = 45; f(2) = 10.45<sup>2</sup>; for n &ge; 3, f(n) = 0.
+
+<p>
+
+<i>Straightforward.</i>
+
+<p>
+f(1) = 1 + 2 + ... + 9 = 45. 
+
+<p>
+f(2) = &sum; (a<sub>11</sub>a<sub>22</sub> - a<sub>12</sub>a<sub>21</sub>). Summing a<sub>11</sub>a<sub>22</sub> over a term that is present, such as a<sub>22</sub> gives a factor 45. Summing over a term that is not present gives a factor 10, unless the sum is over a<sub>11</sub> in which case it gives a factor 9. Hence the sum for a<sub>11</sub>a<sub>22</sub> is 45<sup>2</sup>10<sup>2</sup>. Similarly, the sum for - a<sub>12</sub>a<sub>21</sub> is  - 45<sup>2</sup>90. Hence the total is 10.45<sup>2</sup>.
+
+<p>
+The same approach gives zero for n &ge; 3, because there are an even number of terms involving a<sub>11</sub>, half with a plus sign and half with a minus sign. Thus the sum over these terms is zero. Similarly, there are an even number of terms not involving a<sub>11</sub>, half with a plus sign and half with a minus sign. Again, the sum over these terms is zero.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn95.html">Putnam 1995</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

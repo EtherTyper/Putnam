@@ -1,0 +1,87 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1998/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1998</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b>
+
+<p>
+
+Determine all pairs (a, b) of positive integers such that ab<sup>2</sup> + b + 7 divides a<sup>2</sup>b + a + b.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+(a, b) = (11, 1), (49, 1) or (7k<sup>2</sup>, 7k).
+
+<p>
+&nbsp;<p>
+<b>Solution</b>
+
+<p>
+If a &lt; b, then b &ge; a + 1, so ab<sup>2</sup> + b + 7 &gt; ab<sup>2</sup> + b &ge; (a + 1)(ab + 1) = a<sup>2</sup>b + a + ab &ge; a<sup>2</sup>b + a + b. So there can be no solutions with a &lt; b. Assume then that a &ge; b.
+
+<p>
+Let k = the integer (a<sup>2</sup>b + a + b)/(ab<sup>2</sup> + b + 7). We have (a/b + 1/b)(ab<sup>2</sup> + b + 7) = ab<sup>2</sup> + a + ab + 7a/b + 7/b + 1 &gt; ab<sup>2</sup> + a + b. So k &lt; a/b + 1/b. Now if b &ge; 3, then (b - 7/b) &gt; 0 and hence (a/b - 1/b)(ab<sup>2</sup> + b + 7) = ab<sup>2</sup> + a - a(b - 7/b) - 1 - 7/b &lt; ab<sup>2</sup> + a &lt; ab<sup>2</sup> + a + b. Hence either b = 1 or 2 or k &gt; a/b - 1/b.
+
+<p>
+If a/b - 1/b &lt; k &lt; a/b + 1/b, then a - 1 &lt; kb &lt; a + 1. Hence a = kb. This gives the solution (a, b) = (7k<sup>2</sup>, 7k).
+
+<p>
+It remains to consider b = 1 and 2. If b = 1, then a + 8 divides a<sup>2</sup> + a + 1 and hence also a(a + 8) - (a<sup>2</sup> + a + 1) = 7a - 1, and hence also 7(a + 8) - (7a - 1) = 57. The only factors bigger than 8 are 19 and 57, so a = 11 or 49. It is easy to check that (a, b) = (11, 1) and (49, 1) are indeed solutions.
+
+<p>
+If b = 2, then 4a + 9 divides 2a<sup>2</sup> + a + 2, and hence also a(4a + 9) - 2(2a<sup>2</sup> + a + 2) = 7a - 4, and hence also 7(4a + 9) - 4(7a - 4) = 79. The only factor greater than 9 is 79, but that gives a = 35/2 which is not integral. Hence there are no solutions for b = 2.
+
+<p>
+
+<i>A variant on this from Johannes Tang Lek Huo is as follows:</i>
+
+<p>
+
+We have ab<sup>2</sup> + b + 7 divides a(ab<sup>2</sup> + b + 7) - b(a<sup>2</sup>b + a + b) = 7a - b<sup>2</sup> . If 7a = b<sup>2</sup>, then b must be a multiple of 7, so b = 7k for some k. Then a = 7k<sup>2</sup>, and it is easy to check that this is a solution. We cannot have 7a &lt; b<sup>2</sup> for then 0 &lt; b<sup>2</sup> - 7a &lt; ab<sup>2</sup> &lt; ab<sup>2</sup> + b + 7. If 7a &gt; b, then we must have 7a - b &le; ab<sup>2</sup>  + b + 7 &gt; ab<sup>2</sup>, so 7 &gt; b<sup>2</sup>, so b = 1 or 2. 
+
+<p>
+
+We can then continue as above.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo98.html">39th IMO 1998</a><br>
+
+<p>(C) John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Oct 1998
+
+<br>Last corrected/updated 20 Aug 03
+</BODY>
+
+
+
+</HTML>
+

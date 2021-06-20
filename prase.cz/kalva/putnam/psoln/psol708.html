@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 70/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>31st Putnam 1970</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+A weather station measures the temperature T continuously. It is found that on any given day T = p(t), where p is a polynomial of degree &le; 3, and t is the time. Show that we can find times t<sub>1</sub> &lt; t<sub>2</sub>, which are independent of p, such that the average temperature over the period 9am to 3pm is ( p(t<sub>1</sub>) + p(t<sub>2</sub>) / 2. Show that t<sub>1</sub> = 10:16am, t<sub>2</sub> = 1:44pm.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let t be time after 9am and T be 6 hrs after 9am, so that t = 0 represents 9am and t = T represents 3pm. We may write the polynomial p(t) as at<sup>3</sup> + bt<sup>2</sup> + ct + d for some a, b, c, d. The average temperature is 1/T &int;<sub>0</sub><sup>T</sup>(at<sup>3</sup> + bt<sup>2</sup> + ct + d) dt = T<sup>3</sup> a/4 + T<sup>2</sup> b/3 + T c/2 + d. We wish to find t<sub>1</sub>, t<sub>2</sub> so that this equals (t<sub>1</sub><sup>3</sup> + t<sub>2</sub><sup>3</sup>) a/2 + (t<sub>1</sub><sup>2</sup> + t<sub>2</sub><sup>2</sup>) b/2 + (t<sub>1</sub> + t<sub>2</sub>) c/2 + d for all a, b, c, d.
+
+<p>
+
+The terms in d match. The term in c matches provided we take t<sub>1</sub> + t<sub>2</sub> = T. The term in b matches provided we take t<sub>1</sub><sup>2</sup> + t<sub>2</sub><sup>2</sup> = 2T<sup>2</sup>/3. These two equations already determine t<sub>1</sub> and t<sub>2</sub>. In fact, solving the quadratic, we get t<sub>1</sub> = T(1 - 1/&radic;3)/2 and t<sub>2</sub> = T(1 + 1/&radic;3)/2.
+
+<p>
+
+For the terms in a to match we need t<sub>1</sub><sup>3</sup> + t<sub>2</sub><sup>3</sup> = T<sub>3</sub>/2. But we can easily check that the values above satisfy this relation also.
+
+<p>
+
+Finally note t<sub>1</sub> = 6(1/2 - (&radic;3)/6 ) hrs = 3 - &radic;3 = 3 - 1.732 = 1.268 hrs = 1 hr 16 min (approx), so t<sub>1</sub> represents about 10:16am and t<sub>2</sub> about 1 hr 16 min before 3pm or 1:44pm.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn70.html">31st Putnam 1970</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

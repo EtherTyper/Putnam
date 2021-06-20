@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 92/1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>21st USAMO 1992</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 1</b><br>
+
+<p>
+
+Let a<sub>n</sub> be the number written with 2<sup>n</sup> nines. For example, a<sub>0</sub> = 9, a<sub>1</sub> = 99, a<sub>2</sub> = 9999. Let b<sub>n</sub> = <font face="symbol">P</font><sub>0</sub><sup>n</sup> a<sub>i</sub>. Find the sum of the digits of b<sub>n</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 9&middot;2<sup>n</sup>.
+
+<p>
+
+Induction on n. We have b<sub>0</sub> = 9, digit sum 9, and b<sub>1</sub> = 891, digit sum 18, so the result is true for n = 0 and 1. Assume it is true for n-1. Obviously a<sub>n</sub> &lt; 10 to the power of 2<sup>n</sup>, so b<sub>n-1</sub> &lt; 10 to the power of (1 + 2 + 2<sup>2</sup> + ... + 2<sup>n-1</sup>) &lt; 10 to the power of 2<sup>n</sup>. Now b<sub>n</sub> = b<sub>n-1</sub>10<sup>N</sup> - b<sub>n-1</sub>, where N = 2<sup>n</sup>. But b<sub>n-1</sub> &lt; 10<sup>N</sup>, so b<sub>n</sub> = (b<sub>n-1</sub> - 1)10<sup>N</sup> + (10<sup>N</sup> - b<sub>n-1</sub>) and the digit sum of b<sub>n</sub> is just the digit sum of (b<sub>n-1</sub> - 1)10<sup>N</sup> plus the digit sum of (10<sup>N</sup> - b<sub>n-1</sub>).
+
+<p>
+
+Now b<sub>n-1</sub> is odd and so its last digit is non-zero, so the digit sum of b<sub>n-1</sub> - 1 is one less than the digit sum of b<sub>n-1</sub>, and hence is 9&middot;2<sup>n-1</sup> - 1. Multiplying by 10<sup>N</sup> does not change the digit sum. (10<sup>N</sup> - 1) - b<sub>n-1</sub> has 2<sup>n</sup> digits, each 9 minus the corresponding digit of b<sub>n-1</sub>, so its digit sum is 9&middot;2<sup>n</sup> - 9&middot;2<sup>n-1</sup>. b<sub>n-1</sub> is odd, so its last digit is not 0 and hence the last digit of (10<sup>N</sup> - 1) - b<sub>n-1</sub> is not 9. So the digit sum of 10<sup>N</sup> - b<sub>n-1</sub> is 9&middot;2<sup>n</sup> - 9&middot;2<sup>n-1</sup> + 1. Hence b<sub>n</sub> has digit sum (9&middot;2<sup>n-1</sup> - 1) + (9&middot;2<sup>n</sup> - 9&middot;2<sup>n-1</sup> + 1) = 9&middot;2<sup>n</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa92.html">21st USAMO 1992</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

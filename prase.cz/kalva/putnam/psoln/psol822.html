@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1982/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>43rd Putnam 1982</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+Let B<sub>n</sub>(x) = 1<sup>x</sup> + 2<sup>x</sup> + ... + n<sup>x</sup> and let f(n) = B<sub>n</sub>(log<sub>n</sub>2) / (n log<sub>2</sub>n)<sup>2</sup>. Does f(2) + f(3) + f(4) + ... converge?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes.
+
+<p>
+
+This looks much worse than it is. A crude estimate for B<sub>n</sub>(log<sub>n</sub>2) is sufficient. We know that &sum; 1/n only just fails to converge. So it is likely that &sum; 1/n 1/log<sup>2</sup>n will converge. In that case we need only prove that B<sub>n</sub>(log<sub>n</sub>2) &le; O(n). But it has n terms, the biggest of which is 2. So certainly B<sub>n</sub>(log<sub>n</sub>2) &lt; 2n.
+
+<p>
+
+We can easily check that &sum; 1/n 1/log<sup>2</sup>n converges by the integral test (the indefinite integral is -1/log n).
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn82.html">43rd Putnam 1982</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1994/C7 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>35th IMO 1994 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C7</b><br>
+<p>
+n &gt; 2. Show that there is a set of 2<sup>n-1</sup> points in the plane, no three collinear such that no 2n form a convex 2n-gon.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Let S<sub>2</sub> be {(0,0), (1,1)}. Given S<sub>n</sub>, take T<sub>n</sub> = ((x+2<sup>n-1</sup>,y+M<sub>n</sub>)|(x,y) &isin; S<sub>n</sub>), where M<sub>n</sub> is chosen sufficiently large that the gradient of any segment joining a point of S<sub>n</sub> to a  point of T<sub>n</sub> is greater than that of any segment joining two points of S<sub>n</sub>. Then put S<sub>n+1</sub> = S<sub>n</sub> &cup; T<sub>n</sub>.
+<p>
+Clearly S<sub>n</sub> has 2<sup>n-1</sup> points. The next step is to show that no three are collinear. Suppose not. Then take k to be the smallest n such that S<sub>k</sub> has 3 collinear points. They cannot all be in S<sub>k-1</sub>. Nor can they all be in T<sub>k-1</sub>, because then the corresponding points in S<sub>k-1</sub> would also be collinear. So we may assume that P is in S<sub>k-1</sub> and Q in T<sub>k-1</sub>. But now if R is in S<sub>k-1</sub>, then the gradient of PQ exceeds that of PR. Contradiction. Similarly, if R is in T<sub>k-1</sub>, then the gradient of QR equals that of the two corresponding points in S<sub>k-1</sub> and is therefore less than that of PQ. Contradiction.
+<p>
+Finally, we have to show that S<sub>n</sub> does not contain a convex 2n-gon. Suppose it does. Let k be the smallest n such that S<sub>k</sub> contains a convex 2k-gon. Let P be the vertex of the 2k-gon with the smallest x-coordinate and Q be the vertex with the largest. We must have P &isin; S<sub>k-1</sub>, Q &isin T<sub>k-1</sub>, otherwise all vertices would be in S<sub>k-1</sub> or all vertices would be in T<sub>k-1</sub>, contradicting the minimality of k. Now there must be at least k-1 other vertices below the line PQ, or at least k-1 above it. Suppose there are at least k-1 below it. Take them to be P=P<sub>0</sub>, P<sub>1</sub>, ... , P<sub>k</sub>=Q, in order of increasing x-coordinate. These points must form a convex polygon, so grad P<sub>i-1</sub>P<sub>i</sub> &lt; grad P<sub>i</sub>P<sub>i+1</sub>. But the greatest gradient must occur as we move from S<sub>k-1</sub> to T<sub>k-1</sub>, so all but Q must belong to S<sub>k-1</sub>. Thus we have k vertices in S<sub>k-1</sub> with increasing x-coordinate and all lying below the line joining the first and the last. We can now repeat the argument. Eventually, we get 3 vertices in S<sub>2</sub>. Contradiction.
+<p>
+The case were we have k-1 vertices above the line PQ is similar. By convexity, all but P must lie in T<sub>k-1</sub>. We now take their translates in S<sub>k-1</sub> and repeat the argument, getting the same contradiction as before.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh94.html">35th IMO shortlist 1994</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+18 Sep 2002
+</BODY>
+</HTML>
+

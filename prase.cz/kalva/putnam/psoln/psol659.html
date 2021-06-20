@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1965/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>26th Putnam 1965</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Show that there are just three right angled triangles with integral side lengths a &lt; b &lt; c such that ab = 4(a + b + c).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 12, 16, 20; 10, 24, 26; 9, 40, 41.
+
+<p>
+
+We need the result that for some integral d, m, n we have c = d(m<sup>2</sup> + n<sup>2</sup>) and b = 2dmn, a = d(m<sup>2</sup> - n<sup>2</sup>) or b = d(m<sup>2</sup> - n<sup>2</sup>), a = 2dmn (*).
+
+<p>
+
+It follows that 4(a + b + c) =4d(2m<sup>2</sup> + 2mn), ab = 2d<sup>2</sup>mn(m<sup>2</sup> - n<sup>2</sup>). Hence, 4 = dn(m - n). So we must have n = 1, 2 or 4 and (d, m, n) = (1, 5, 1), (2, 3, 1), (4, 2, 1), (1, 4, 2), (2, 3, 2) or (1, 5, 4), giving the three answers above.
+
+<p>
+
+It remains to prove (*). Let d be the gcd of a and b. It follows that d also divides c. Put a = dA, b = dB, c = dC, so that A, B, C are relatively prime in pairs. C cannot be even, for then A and B would both be odd and hence A<sup>2</sup> + B<sup>2</sup> would be congruent to 2 mod 4, which is impossible, since C is a square. So C must be odd and just one of A, B must be even. Assume A is odd. Then A<sup>2</sup> = (C - B)(C + B). If an odd prime p divides A, then it must divide C - B or C + B. It cannot divide both, for then it would also divide B and C. So C - B and C + B must both be odd squares. Say C + B = h<sup>2</sup>, C - B = k<sup>2</sup>. Then A = hk, B = (h<sup>2</sup> - k<sup>2</sup>)/2, C = (h<sup>2</sup> + k<sup>2</sup>)/2, with h and k odd. Put m = (h + k)/2, n = (h - k)/2, then h = m + n, k = m - n and A = m<sup>2</sup> - n<sup>2</sup>, B = 2mn, C = m<sup>2</sup> + n<sup>2</sup>, so we have put a, b, c, in the form (*). On the other hand, it is obvious that if a, b, c have this form then they satisfy a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn65.html">26th Putnam 1965</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

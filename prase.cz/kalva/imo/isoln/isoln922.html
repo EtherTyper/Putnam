@@ -1,0 +1,66 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1992/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1992</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b>
+
+<p>
+
+Find all functions f defined on the set of all real numbers with real values, such that f(x<sup>2</sup> + f(y)) = y + f(x)<sup>2</sup> for all x, y.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+The first step is to establish that f(0) = 0. Putting x = y = 0, and f(0) = t, we get f(t) = t<sup>2</sup>. Also, f(x<sup>2</sup>+t) = f(x)<sup>2</sup>, and f(f(x)) = x + t<sup>2</sup>. We now evaluate f(t<sup>2</sup>+f(1)<sup>2</sup>) two ways. First, it is f(f(1)<sup>2</sup> + f(t)) = t + f(f(1))<sup>2</sup> = t + (1 + t<sup>2</sup>)<sup>2</sup> = 1 + t + 2t<sup>2</sup> + t<sup>4</sup>. Second, it is f(t<sup>2</sup> + f(1 + t)) = 1 + t + f(t)<sup>2</sup> = 1 + t + t<sup>4</sup>. So t = 0, as required.
+
+<p>
+It follows immediately that f(f(x)) = x, and f(x<sup>2</sup>) = f(x)<sup>2</sup>. Given any y, let z = f(y). Then y = f(z), so f(x<sup>2</sup> + y) = z + f(x)<sup>2</sup> = f(y) + f(x)<sup>2</sup>. Now given any positive x, take z so that x = z<sup>2</sup>. Then f(x + y) = f(z<sup>2</sup> + y) = f(y) + f(z)<sup>2</sup> = f(y) + f(z<sup>2</sup>) = f(x) + f(y). Putting y = -x, we get 0 = f(0) = f(x + -x) = f(x) + f(-x). Hence f(-x) = - f(x). It follows that f(x + y) = f(x) + f(y) and f(x - y) = f(x) - f(y) hold for all x, y. 
+
+<p>
+Take any x. Let f(x) = y. If y &gt; x, then let z = y - x. f(z) = f(y - x) = f(y) - f(x) = x - y = -z. If y &lt; x, then let z = x - y and f(z) = f(x - y) = f(x) - f(y) = y - x. In either case we get some z &gt; 0 with f(z) = -z &lt; 0. But now take w so that w<sup>2</sup> = z, then f(z) = f(w<sup>2</sup>) = f(w)<sup>2</sup> &gt;= 0. Contradiction. So we must have f(x) = x.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo92.html">33rd IMO 1992</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+13 Nov 1998
+
+</BODY>
+
+
+
+</HTML>
+

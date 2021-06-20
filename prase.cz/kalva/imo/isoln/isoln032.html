@@ -1,0 +1,75 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 2003/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 2003</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+Find all pairs (m, n) of positive integers such that m<sup>2</sup>/(2mn<sup>2</sup> - n<sup>3</sup> + 1) is a positive integer.
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b><br>
+
+<p>
+
+(m, n) = (2k, 1), (k, 2k) or (8k<sup>4</sup> - k, 2k)
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Thanks to Li Yi</i>
+<p>
+The denominator is 2mn<sup>2</sup> - n<sup>3</sup> + 1 = n<sup>2</sup>(2m - n) + 1, so 2m &gt;= n &gt; 0. If n = 1, then m must be even, in other words, we have the solution (m, n) = (2k, 1). 
+<p>
+So assume n &gt; 1. Put h = m<sup>2</sup>/(2mn<sup>2</sup> - n<sup>3</sup> + 1). Then we have a quadratic equation for m, namely m<sup>2</sup> - 2hn<sup>2</sup>m + (n<sup>3</sup> - 1)h = 0. This has solutions hn<sup>2</sup> +- N, where N is the positive square root of h<sup>2</sup>n<sup>4</sup> - hn<sup>3</sup> + h. Since n &gt; 1, h &ge; 1, N is certainly real. But the sum and product of the roots are both positive, so both roots must be positive. The sum is an integer, so if one root is a positive integer, then so is the other.
+<p>
+The larger root hn<sup>2</sup> + N is greater than hn<sup>2</sup>, so the smaller root &lt; h(n<sup>3</sup> - 1)/(hn<sup>2</sup>) &lt; n. But note that if 2m - n &gt; 0, then since h &gt; 0, we must have the denominator (2m - n)n<sup>2</sup> + 1 smaller than the numerator and hence m &gt; n. So for the smaller root we cannot have 2m - n &gt; 0. But 2m - n must be non-negative (since h is positive), so 2m - n = 0 for the smaller root. Hence hn<sup>2</sup> - N = n/2. Now N<sup>2</sup> = (hn<sup>2</sup> - n/2)<sup>2</sup> = h<sup>2</sup>n<sup>4</sup> - hn<sup>3</sup> + h, so h = n<sup>2</sup>/4. Thus n must be even. Put n = 2k and we get the solutions (m, n) = (k, 2k) and (8k<sup>4</sup> - k, 2k).
+<p>
+We have shown that any solution must be of one of the three forms given, but it is trivial to check that they are all indeed solutions.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo03.html">44th IMO 2003</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+24 Jul 2003
+
+<br>Last corrected/updated 24 Jul 2003
+
+</BODY>
+
+
+
+</HTML>
+

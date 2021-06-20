@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 56/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>16th Putnam 1956</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Show that a graph with 2n points and n<sup>2</sup> + 1 edges necessarily contains a 3-cycle, but that we can find a graph with 2n points and n<sup>2</sup> edges without a 3-cycle.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Induction. For n = 2, the result is obviously true, because there is only one graph with 4 points and 5 edges and it certainly contains a triangle. Suppose the result is true for n. Consider a graph G with 2n + 2 points and n<sup>2</sup> + 2n + 2 edges. Take any two points P and Q joined by an edge. We now consider two cases. If there are less than 2n + 1 other edges to P and Q, then if we remove P and Q, we get a graph with 2n points and at least n<sup>2</sup> + 1 edges, which must contain a triangle, so G does also. If there are at least 2n + 1 other edges then at least one point must be joined to both P and Q, but that gives a triangle.
+
+<p>
+
+Let G and H be disjoint sets each with n points. Join every point of G to every point of H by an edge. Then the resulting graph has n<sup>2</sup> edges, but it does not contain any triangles, because two points of any triangle must belong to G or to H and in either case there is no edge connecting them.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn56.html">16th Putnam 1956</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

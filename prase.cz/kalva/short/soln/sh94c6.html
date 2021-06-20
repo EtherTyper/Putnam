@@ -1,0 +1,47 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1994/C6 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>35th IMO 1994 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C6</b><br>
+<p>
+Two players play alternatively on an infinite square grid. The first player puts a X in an empty cell and the second player puts a O in an empty cell. The first player wins if he gets 11 adjacent Xs in a line, horizontally, vertically or diagonally. Show that the second player can always prevent the first player from winning.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Consider the following 10 x 10 square. There is one pair of numbered squares in every row, column and diagonal of length 5 or more. [Eg in the rows we have 6, 8, 12, 18, 24, 27, 30, 34, 41, 42.] Repeat this square indefinitely. Then any line of 11 adjacent squares must include a numbered pair. Whenever the first player plays on a numbered square, the second player plays on the other number of the pair.
+<pre>
+ x   1   2   3   4   5   6   6   7   x
+ 8   8   1   2   3   4   5   9   7  10
+11  12  12   x  13  14  15   9  10  16
+11  17  18  18  13  14  15   x  16  19
+17  20   x  21  22  23  24  24  19  25
+20  26   x  21  23  22  27  27  25  28
+26  29   x   x   x   x  30  30  28  31
+29  32  33   x   x   x   x  34  34  31
+32  35  33  36  37  38  39  40  41  41
+ x  35  42  42  36  37  38  39  40   x  
+</pre>
+[Note that to prove the result for 11 in this way the square can be at most 10 x 10 (not 11 x 11).]
+<p>
+<i>Comment</i>
+<p>
+This, of course, is the basis for a well-known game. It is usually played as "five in a row". The first player to get 5 of his symbols adjacent in a line wins. The first player clearly has an advantage, but a good player playing second will regularly win against a novice. 
+<p>
+The official solutions note that as proposed by Finland the problem simply required the second player to be able to stop the first player getting N in a line for N sufficiently large, and states that N = 11 was the best the problems committee could do. But the best result must be substantially lower. The first player can win easily with N = 5. The answer may be as low as N = 6.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh94.html">35th IMO shortlist 1994</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+18 Sep 2002
+</BODY>
+
+</HTML>
+

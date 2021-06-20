@@ -1,0 +1,65 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1996/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+Let p, q, n be three positive integers with p + q &lt; n. Let x<sub>0</sub>, x<sub>1</sub>, ... , x<sub>n</sub> be integers such that x<sub>0</sub> = x<sub>n</sub> = 0, and for each 1 &le; i &le; n, x<sub>i</sub> - x<sub>i-1</sub> = p or -q. Show that there exist indices i &lt; j with (i, j) not (0, n) such that x<sub>i</sub> = x<sub>j</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Let x<sub>i</sub> - x<sub>i-1</sub> = p occur r times and x<sub>i</sub> - x<sub>i-1</sub> = -q occur s times. Then r + s = n and pr = qs. If p and q have a common factor d, the y<sub>i</sub> = x<sub>i</sub>/d form a similar set with p/d and q/d. If the result is true for the y<sub>i</sub> then it must also be true for the x<sub>i</sub>. So we can assume that p and q are relatively prime. Hence p divides s. Let s = kp. If k = 1, then p = s and q = r, so p + q = r + s = n. But we are given p + q &lt; n. Hence k &gt; 1. Let p + q = n/k = h.
+
+<p>
+Up to this point everything is fairly obvious and the result looks as though it should be easy, but I did not find it so. Some fiddling around with examples suggested that we seem to get x<sub>i</sub> = x<sub>j</sub> for j = i + h. We observe first that x<sub>i+h</sub> - x<sub>i</sub> must be a multiple of h. For suppose e differences are p, and hence h-e are -q. Then x<sub>i+h</sub> - x<sub>i</sub> = ep - (h - e)q = (e - q)h.
+
+<p>
+The next step is not obvious. Let d<sub>i</sub> = x<sub>i+h</sub> - x<sub>i</sub>. We know that all d<sub>i</sub>s are multiples of h. We wish to show that at least one is zero. Now d<sub>i+1</sub> - d<sub>i</sub> = (x<sub>i+h+1</sub> - x<sub>i+h</sub>) - (x<sub>i+1</sub> - x<sub>i</sub>) = (p or -q) - (p or -q) = 0, h or -h. So if neither of d<sub>i</sub> nor d<sub>i+1</sub> are zero, then either both are positive or both are negative (a jump from positive to negative would require a difference of at least 2h). Hence if none of the d<sub>i</sub>s are zero, then all of them are positive, or all of them are negative. But d<sub>0</sub> + d<sub>h</sub> + ... + d<sub>kh</sub> is a concertina sum with value x<sub>n</sub> - x<sub>0</sub> = 0. So this subset of the d<sub>i</sub>s cannot all be positive or all negative. Hence at least one d<sub>i</sub> is zero.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo96.html">37th IMO 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Oct 1998
+<br>Last corrected/updated 21 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

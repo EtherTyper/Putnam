@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 80/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>41st Putnam 1980</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Let p(x) be a polynomial with real coefficients of degree 1 or more. Show that there are only finitely many values &alpha; such that &int;<sub>0</sub><sup>&alpha;</sup> p(x) sin x dx = 0 and &int;<sub>0</sub><sup>&alpha;</sup> p(x) cos x dx = 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Note that either equation alone has infinitely many zeros.
+
+<p>
+
+Let d(x) = p(x) - p''(x) + p<sup>(4)</sup>(x) - ... . Then we can easily check that &int; p(x) sin x dx = -d(x) cos x + d'(x) sin x, so the definite integral is -d(&alpha;) cos &alpha; + d'(&alpha;) + d(0). Similarly, the second definite integral is d(&alpha;) sin &alpha; + d'(&alpha;) cos &alpha; - d'(0). So any roots &alpha; of both equations also satisfy d(&alpha;) = d(0) cos &alpha; + d'(0) sin &alpha; (*). Let k = |d(0)| + |d'(0)|, then |rhs (*)| &le; k. But d(x) has the same degree as p(x), so |d(x)| &gt; k for all x &gt; some k'. In other words all the roots of (*) must satisfy |&alpha;| &le; k'. By Rolle's theorem, if f(x) has only finitely many zeros, then so does &int;<sub>0</sub><sup>x</sup> f(t) dt. Both p(x) and sin x have only finitely many zeros in any finite range |x| &le; k', so &int;<sub>0</sub><sup>&alpha;</sup> p(x) sin x dx has only finitely many zeros in the range |&alpha;| &le; k'. Hence result.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn80.html">41st Putnam 1980</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+10 Dec 1999
+
+<br>Last corrected/updated 21 Nov 02
+
+</BODY>
+
+
+
+</HTML>
+

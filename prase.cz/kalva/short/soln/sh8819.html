@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>29th IMO shortlist 1988/19 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>29th IMO 1988 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 19</b>
+<p>
+f has positive integer values and is defined on the positive integers. It satisfies f( f(m) + f(n) ) = m + n for all m, n. Find all possible values for f(1988).
+<p>
+&nbsp;<p>
+<b>Answer</b>
+<p>
+1988.
+<p>
+<b>Solution</b>
+<p>
+f is obviously surjective. If f(a) = f(b), then c + a = f( f(c) + f(a) ) = f( f(c) + f(b) ) = c + b, so a = b. Hence f is injective. So the inverse f<sup>-1</sup> exists. The functional equation gives immediately f(m + n) = f<sup>-1</sup>(m) + f<sup>-1</sup>(n) and f<sup>-1</sup>(m + n) = f(m) + f(n).
+<p>
+f(2n) = f<sup>-1</sup>(2n-1) + f<sup>-1</sup>(1) = f(2n-2) + f(1) + f<sup>-1</sup>(1). Iterating, f(2n) = n f(1) + n f<sup>-1</sup>(1). Similarly, f(2n+1) = n f(1) + (n+1) f<sup>-1</sup>(1).
+<p>
+So we putting f(1) = h, f<sup>-1</sup>(1) = k, we have f(1) = h, f(2) = h + k, f(3) = h + 2k, f(4) = 2h + 2k, f(5) = 2h + 3k, ... . But h, k &ge; 1 and f is surjective, so we must have h = k = 1. Hence f(n) = n for all n.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh88.html">29th IMO shortlist 1988</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Dec 2002
+<br>Last corrected/updated 30 Dec 02
+</BODY>
+
+</HTML>
+

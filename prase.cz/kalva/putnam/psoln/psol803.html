@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 80/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>41st Putnam 1980</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Find &int;<sub>0</sub><sup>&pi;/2</sup> f(x) dx, where f(x) = 1/(1 + tan<sup>&radic;2</sup>x).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: &pi;/4.
+
+<p>
+
+This involves a trick. f(&pi;/2 - x) = 1/(1 + cot<sup>&radic;2</sup>x) = tan<sup>&radic;2</sup>x/(1 + tan<sup>&radic;2</sup>x) = 1 - f(x). Hence &int;<sub>0</sub><sup>&pi;/2</sup> f(x) dx = &int;<sub>0</sub><sup>&pi;/4</sup> f(x) dx + &int;<sub>&pi;/4</sub><sup>&pi;/2</sup> f(x) dx = &int;<sub>0</sub><sup>&pi;/4</sup> f(x) dx + &int;<sub>0</sub><sup>&pi;/4</sup> f(&pi;/2 - x) dx = &int;<sub>0</sub><sup>&pi;/4</sup> f(x) dx + &int;<sub>0</sub><sup>&pi;/4</sup> (1 - f(x) ) dx = &int;<sub>0</sub><sup>&pi;/4</sup> dx = &pi;/4.
+
+<p>
+
+Note that the &radic;2 is irrelevant - the argument works for any exponent.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn80.html">41st Putnam 1980</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+10 Dec 1999
+
+<br>Last corrected/updated 21 Nov 02
+
+</BODY>
+
+
+
+</HTML>
+

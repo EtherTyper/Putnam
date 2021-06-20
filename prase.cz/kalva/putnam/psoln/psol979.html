@@ -1,0 +1,90 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1997/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Let (1 + 1/2 + 1/3 + ... + 1/n) = p<sub>n</sub>/q<sub>n</sub>, where p<sub>n</sub> and q<sub>n</sub> are relatively prime positive integers. For which n is q<sub>n</sub> not divisible by 5?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: n = 1 - 4, 20 - 24, 100 - 104, and 120 - 124.
+
+<p>
+<i>Hard. I found this the trickiest problem in the paper. The key is to show that p<sub>n</sub> is not divisible by 5 for n = 25, ... , 124. </i>
+
+<p>
+Let S(n) = 1 + 1/2 + 1/3 + ... + 1/n, and let S'(n) be the same sum excluding terms 1/m with m a multiple of 5. For x non-integral it is convenient to use S(x) to mean S([x]). We find that S(1) = 1/1, S(2) = 3/2, S(3) = 11/6, S(4) = 25/12.
+
+<p>
+Let N, N' etc denote fractions p/q where 5 does not divide q, let F, F' etc denote fractions p/q where 5 divides q, but not p, and let X, X' etc denote fractions p/q where 5 does not divide p or q. For example, we obviously have S'(n) = N. Notice that 1/(5r+1) + 1/(5r+2) + 1/(5r+3) + 1/(5r+4) = (1/(5r+1) + 1/(5r+4) ) + (1/(5r+2) + 1/(5r+3) ) = (10r+5)(1/(5r'+4) + 1/(5r''+6) ) = 25 N. So for n = 4 or 5 (mod 5) we have 1/5 S'(n) = 5N.
+
+<p>
+For n = 5, ... , 19, S(n) = S'(n) + 1/5 S(n/5) = N + 1/5 X = F.
+
+<br>For n = 20, ... ,24, S(n) = S'(n) + 1/5 25/12 = N + N' = N''.
+
+<br>We need also that S(21) = S'(20) + 1/21 + 5/12 = 5N + 1/21 + 5N' = X, and similarly that S(22) = 5N + 1/21 + 1/22 = X, S(23) = 5N + 1/21 + 1/22 + 1/23 = X.
+
+<br>For n = 25, ... , 99, S(n) = S'(n) + 1/5 S'(n/5) + 1/25 S(n/25) = N + 1/5 N' + 1/25 X = F.
+
+<br>For n = 100, ... , 104, S(n) = S'(n) + 1/5 S'(20) + 1/25 25/12 = N + 5N' + 1/12 = N.
+
+<br>But S'(100) = 5N, so we have the stronger result that S(100) = 5N'' + 1/12 = X. Similarly for S'(104). S(101) = S(100) + 1/101 = 5N'' + 1/12 + 1/101 = X (just check that the numerator of 1/12 + 1/101 is not a multiple of 5) and, similarly, S(102) = X, S(103) = X.
+
+<br>For n = 105, ... , 119, S(n) = S'(n) + 1/5 S'(n/5) + 1/12 = N + 1/5 X + 1/12 = F (since S'(n/5) = S'(21) or S'(22) or S'(23) = X).
+
+<br>For n = 120, ... , 124, S(n) = S'(n) + 1/5 S'(24) + 1/12 = N + 5N' + 1/12 = N.
+
+<br>Exactly as for 100-104, we also have the stronger result that S(n) = X.
+
+<p>
+We have established that S(n) has the denominator divisible by 5 for n = 1-4, 20-24, 100-104 and 120-124. It remains to show that the denominator is not divisible by 5 for n &ge; 125. 
+
+<p>
+But we have also established that the numerator is not divisible by 5 for 25 &le; n &le; 124. So let n &ge; 125, and let h be the highest power of 5 not exceeding n, so h &ge; 3. We now divide S(n) into A, the sum of terms which are multiples of 5<sup>h-2</sup> and B, the sum of the remaining terms. Clearly B = N/5<sup>h-3</sup>. But A = S(r)/5<sup>h-2</sup>, where 25 &le; r &le; 124. But the numerator of S(r) is not divisible by 5, so the denominator of A is divisible by at least 5<sup>h-2</sup> and hence S(n) = A + B has denominator (in lowest terms) divisible by at least 5<sup>h-2</sup> and hence by 5.
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn97.html">Putnam 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

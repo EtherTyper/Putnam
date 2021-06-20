@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 02/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>63rd Putnam 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+b &gt; 1 is an integer. For any positive integer n, let d(n) be the number of digits in n when it is written in base b. Define the sequence f(n) by f(1) = 1, f(2) = 2, f(n) = n f( d(n) ). For which values of b does 1/f(1) + 1/f(2) + 1/f(3) + ... converge?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: only for b = 2.
+
+<p>
+
+We have &sum; 1/f(n) = &sum; ( 1/f(d) &sum;<sub>d digits</sub>1/n ). But &sum;<sub>d digits</sub> 1/n &gt; &int; dx/x, where the integral is taken between b<sup>d-1</sup> and b<sup>d</sup>, = ln b. Hence &sum; 1/f(n) &gt; ln b &sum; 1/f(d). If b &gt;= 3, then ln b &gt; 1, so if &sum; 1/f(n) converges to k, then we have k &gt; k. Contradiction. So for b &ge; 3, the sum does not converge.
+
+<p>
+
+For b = 2, we have f(1) = 1, f(2) = 2, f(3) = 6, f(4) = 24, f(5) = 30, f(6) = 36, f(7) = 42. So 1/f(1) + 1/f(2) + ... + 1/f(2<sup>n</sup>-1) = 1 + 1/2 + 1/6 + &sum;<sub>3</sub><sup>n</sup>(1/f(d) &sum;<sub>d digits</sub> 1/m ).
+
+<p>
+
+Now ln 2 = &int; dx/x &gt; 1/(2<sup>d-1</sup> + 1) + ... + 1/2<sup>d</sup>, where the integral is from 2<sup>d-1</sup> to 2<sup>d</sup>. Hence ln 2 + 1/2<sup>d-1</sup> - 1/2<sup>d</sup> &ge; &sum;<sub>d digits</sub> 1/m. But ln 2 + 1/2<sup>d-1</sup> - 1/2<sup>d</sup> = ln 2 + 1/2<sup>d</sup> &lt; ln 2 + 1/8 &lt; 0.9 for d &ge; 3. Hence 1/f(1) + 1/f(2) + ... + 1/f(2<sup>n</sup>-1) &lt; 1 + 1/2 + 1/6 + 0.9 &sum;<sub>3</sub><sup>n</sup> 1/f(d) (*). 
+
+<p>
+
+We claim that &sum; 1/f(n) &lt; 4. We use induction on the finite sum. Clearly it is true for  3 terms. Now by (*) if it is true for n terms, then the sum of 2<sup>n</sup> -1 terms is less than 1 + 1/2 + 1/6 + 0.9 2.5 &lt; 4, so it is true for 2<sup>n</sup> - 1 terms.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn02.html">63rd Putnam 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Dec 2002
+
+</BODY>
+
+
+
+</HTML>
+

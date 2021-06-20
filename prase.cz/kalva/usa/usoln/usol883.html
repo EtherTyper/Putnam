@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 88/3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>17th USAMO 1988</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 3</b><br>
+
+<p>
+
+Let X be the set {1, 2, ... , 20} and let P be the set of all 9-element subsets of X. Show that for any map f: P &rarr; X we can find a 10-element subset Y of X, such that f(Y - {k}) &ne; k for any k in Y.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Consider pairs (S, k) with S in P and k in X such that f(S) = k. There are evidently 20C9 such pairs, since we can choose any S and k is then fixed. Now consider the pairs (Y, k) such that Y is a 10-element subset of X containing k and f(Y - {k}) = k. The map (Y, k) to (Y - {k}, k) is an injection because if (Y - {k}, k) = (Y' - {k'}, k'), then k = k' and hence Y = Y'. It is not necessarily a bijection because if there are any pairs (S, k) with k in S then they do not correspond to any (Y, k). But certainly the number of pairs (Y, k) is at most the number of pairs (S, k). So there are at most 20C9 pairs (Y, k). But there are 20C10 subsets Y with 10 elements, so at least 20C10 - 20C9 of them (more than 16000) do not belong to <i>any</i> pairs (Y, k), in other words they are such that f(Y - {k}) is not k for any k in Y. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa88.html">17th USAMO 1988</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+21 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

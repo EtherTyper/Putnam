@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1968/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>29th Putnam 1968</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Find the smallest possible &alpha; such that if p(x) &equiv; ax<sup>2</sup> + bx + c satisfies |p(x)| &le; 1 on [0, 1], then |p'(0)| &le; &alpha;.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 8. Extreme case is &plusmn;(8x<sup>2</sup> - 8x + 1).
+
+<p>
+
+Note that |p'(0)| = |b|. So the question is how large we can make |b| and still be able to find a and c such that p(x) lies between -1 and 1 on [0 ,1]. 
+
+<p>
+
+wlog a &gt; 0. Write p(x) = a(x + b/2a)<sup>2</sup> + c. If -b/2a &le; 0, then p(x) has its minimum on [0, 1] at 0 and its maximum at 1, so we require p(1) - p(0) &le; 2 (we can then adjust c to get |p(x)| &le; 1 on the entire interval). But p(1) - p(0) = a + b, so b &le; 2 (and the extreme case is p(x) = 2x - 1).
+
+<p>
+
+If -b/2a &ge; 1, then p(x) has its maximum at 0 and its minimum at 1 (on the interval). So we require p(0) - p(1) &lt; 2 and hence a + b &ge; -2. But -b &ge; 2a, so a &le; 2 and b &ge; -4 (and the extreme case is 2x<sup>2</sup> - 4x + 1).
+
+<p>
+
+If 0 &lt; -b/2a &le; 1/2, then p(x) has its minimum at -b/2a and its maximum at 1. So we require a + b + b<sup>2</sup>/4a &le; 2 or (b + 2a)<sup>2</sup>/4a &le; 2. But 0 &lt; -b &le; a, so (b + 2a)<sup>2</sup> &ge; a<sup>2</sup> and hence a<sup>2</sup>/4a &le; 2 or a &le; 8 and 0 &lt; -b &le; 8. 
+
+<p>
+
+Finally, if 1/2 &le; -b/2a &lt; 1, the p(x) has its minimum at -b/2a and its maximum at 0. So we require b<sup>2</sup> /4a &le; 2. So again a<sup>2</sup> &le; b<sup>2</sup>/4a &le; 2. Hence a &le; 8. But b<sup>2</sup> &le; 8a, so -b &lt; 8. Hence -8 &le; b &lt; 0.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn68.html">29th Putnam 1968</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

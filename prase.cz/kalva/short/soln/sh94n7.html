@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1994/N7 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>35th IMO 1994 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N7</b><br>
+<p>
+A <i>wobbly</i> number is a positive integer whose digits are alternately zero and non-zero with the last digit non-zero (for example, 201). Find all positive integers which do not divide any wobbly numbers.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: multiples of 25 and multiples of 10. 
+<p>
+A multiple of 10 ends in 0, so can never be wobbly. A multiple of 25 ends in 25, 75, 50 or 00, so cannot be wobbly. So these numbers certainly satisfy the condition. We have to prove that no other numbers satisfy it.
+<p>
+If m is not divisible by 2 or 5, then it is coprime to 10. 10<sup>k</sup> - 1 is also coprime to 10 for any k &gt; 0, so we can find a positive integer h such that 10<sup>h</sup> = 1 mod m(10<sup>k</sup> - 1). Hence also 10<sup>kh</sup> = 1 mod m(10<sup>k</sup> - 1). But (10<sup>kh</sup> - 1) = (10<sup>k</sup> - 1)(10<sup>k(h-1)</sup> + 10<sup>k(h-2)</sup> + ... + 10<sup>k</sup> + 1), so 10<sup>k(h-1)</sup> + 10<sup>k(h-2)</sup> + ... + 10<sup>k</sup> + 1 is a multiple of m (*). 
+<p>
+We show by induction that we can find a wobbly number with t non-zero digits which is a multiple of 2<sup>2t+1</sup>. For t = 1, we may take 8. Suppose M has t non-zero digits and is a multiple of 2<sup>2t+1</sup>. Consider the numbers 2.10<sup>2t</sup> + M, 4.10<sup>2t</sup> + M, 6.10<sup>2t</sup> + M, 8.10<sup>2t</sup> + M. All are wobbly with t+1 non-zero digits and divisible by 2<sup>2t+1</sup>. Since 2.10<sup>2t</sup> = 2<sup>2t+1</sup> mod 2<sup>2t+3</sup>, one of them will be divisible by 2<sup>2t+3</sup>. So we can obtain wobbly numbers which are divisible by arbitrarily large powers of 2.
+<p>
+Now any number which is not a multiple of 10 or 25 is either (1) odd and not divisible by 5, or (2) odd and divisible by 5, but not 25, or (3) even and not divisible by 5. For (1) we may take (*) with k = 2. For (2) take (*) with k = 2 for m/5 and multiply it by 5. For (3), suppose m = 2<sup>s</sup>M, where M is odd and not divisible by 5. Take a wobbly number of t non-zero digits divisible by at least 2<sup>s</sup>. Then multiply it by (*) with k = 2t.
+<p>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh94.html">35th IMO shortlist 1994</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+18 Sep 2002
+</BODY>
+
+</HTML>
+

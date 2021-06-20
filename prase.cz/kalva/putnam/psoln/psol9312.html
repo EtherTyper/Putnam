@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1993/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1993</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+Given a triple of positive integers x &le; y &le; z, derive a new triple as follows. Replace x and y by 2x and y - x (and reorder), or replace x and z by 2x and z - x (and reorder), or replace y and z by 2y and z - y (and reorder). Show that by finitely many tranformations of this type we can always derive a triple with smallest element zero.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Fairly easy.</i>
+
+<p>
+Let the three integers in S be 0 &lt; <i>a</i> &le; <i>b</i> &le; <i>c</i>. We show that we can make a finite series of transformations which give a set S' with an element <i>a'</i> satisfying 0 &le; <i>a'</i> &lt; <i>a</i>. A finite number of applications of such a series must yield a set with zero.
+
+<p>
+
+Let [b/a] = b<sub>n</sub>b<sub>n-1</sub> ... b<sub>0</sub> in base 2. Let c<sub>i</sub> = 1 - b<sub>i</sub> and k = the binary number c<sub>n</sub>c<sub>n-1</sub> ... c<sub>0</sub>. Then since [b/a] &ge; 2<sup>n</sup> and [b/a] + k = 2<sup>n+1</sup> - 1, k &lt; [b/a]. 
+
+<p>
+
+We now carry out n+1 transformations, for i = 0, 1, ... , n. Step i gives 2<sup>i+1</sup>a, b - (b<sub>i</sub>b<sub>i-1</sub>...b<sub>0</sub>) a, c - (c<sub>i</sub>c<sub>i-1</sub>...c<sub>0</sub>) a. So we always double the first element and we subtract it from the second or third according as b<sub>i</sub> = 1 or 0. Note that this works because after step n, the second element is b - [b/a] a &ge; 0, and the third element is c - k a &ge; b - k a &gt; b - [b/a] a &ge; 0. After the final step the second element is b - [b/a] a &lt; a, as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn93.html">Putnam 1993</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

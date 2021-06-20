@@ -1,0 +1,42 @@
+<HTML>
+
+<HEAD>
+<TITLE>43rd IMO shortlist 2002/C2 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>43rd IMO 2002 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C2</b><br>
+<p>
+n is an odd integer. The squares of an n x n chessboard are colored alternately black and white, with the four corner squares black. A tromino is an L shape formed from three squares. For which n can the black squares all be covered by non-overlapping trominoes. What is the minimum number required?
+<p>
+&nbsp;<p>
+<b>Answer</b><br>
+<p>
+Possible for n &gt; 5. Need (n+1)<sup>2</sup>/4 trominos
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Put n = 2m+1. There are (m + 1)<sup>2</sup> black squares an even height above the bottom row (take the black squares in alternate rows, starting with an outside row). Any tromino can cover at most one, so at least (m + 1)<sup>2</sup> trominos are needed. But for n = 3, 5 we have 3&middot;(m + 1)<sup>2</sup> &gt; n<sup>2</sup>, so they must overlap.
+<p>
+<img src="diag02c2.jpg">
+<p>
+For n = 7 we have the arrangement above using the minimum number of 4<sup>2</sup> trominos. The white square colored yellow above is uncovered. Every other square is covered by a tromino. Each 2 x 3 rectangle is covered with two trominos in the obvious way.
+<p>
+Now suppose we have tiled an n x n board with (n+1)<sup>2</sup>/4 trominos. We place a border two squares wide round two sides to convert it to an (n+2) x (n+2) board. The border can be regarded as an (n+2) x 2 rectangle and a 2 x n rectangle. Each of these rectangles can be divided into 2 x 2 squares and one 3 x 2 rectangle. The two black squares in each 2 x 2 rectangle can be covered with a single tromino, and the 3 x 2 rectangles can each be covered with two trominos. So we have a total of (n+1)<sup>2</sup>/4 + (n-1)/2 + 2 + (n-3)/2 + 2 = (n<sup>2</sup> + 2n + 1 + 2n - 2 + 8 + 2n - 6 + 8)/4 = (n<sup>2</sup> + 6n + 9)/4 = (n+3)<sup>2</sup>/4 trominos.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh02.html">43rd IMO shortlist 2002</a><br>
+<p>(C) John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+8 Aug 2003
+<br>Last corrected/updated 8 Aug 2003
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,68 @@
+
+
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2000/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>61st Putnam 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+S<sub>0</sub> is an arbitrary finite set of positive integers. Define S<sub>n+1</sub> as the set of integers k such that just one of k - 1, k is in S<sub>n</sub>. Show that for infinitely many n, S<sub>n</sub> is the union of S<sub>0</sub> and a translate of S<sub>0</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We show that S<sub>n</sub> has the required form for all sufficiently large powers of 2.
+
+<p>
+
+We need to establish first that if n = 2<sup>k</sup>, then all the binomial coefficients in the expansion of (a + b)<sup>n</sup> except the first and last are even. This is a simple induction on k - the result for k = 1 also allows us to deduce the result for k+1 from that for k.
+
+<p>
+
+Define the polynomial p<sub>0</sub>(x) as &equiv; a<sub>i</sub>x<sup>i</sup>, where a<sub>i</sub> = 1 if i belongs to S<sub>0</sub> and 0 otherwise. We may consider p<sub>0</sub>(x) as a polynomial over F<sub>2</sub>, the finite field with 2 elements. Similarly, we may define p<sub>m</sub>(x) by reference to S<sub>m</sub>. Evidently, p<sub>m+1</sub>(x) = (1 + x) p<sub>m</sub>(x). Hence p<sub>m</sub>(x) = (1 + x)<sup>m</sup> p<sub>0</sub>(x). But since we are in F<sub>2</sub> we have (1 + x)<sup>n</sup> = 1 + x<sup>n</sup> for n = 2<sup>k</sup>. So S<sub>n</sub> has the required form if k is sufficiently large that all elements of S<sub>0</sub> are less than 2<sup>k</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn00.html">61st Putnam 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

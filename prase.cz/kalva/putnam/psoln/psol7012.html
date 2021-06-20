@@ -1,0 +1,82 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 70/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>31st Putnam 1970</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+The quadrilateral Q contains a circle which touches each side. It has side lengths a, b, c, d and area &radic;(abcd). Prove it is cyclic.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+It helps a lot to know the following result about the area of quadrilaterals: the area of a quadrilateral side a, b, c, d is maximised by making it cyclic, in which case its area is &radic;( (s - a)(s - b)(s - c)(s - d) ) (*), where 2s = a + b + c + d.
+
+<p>
+
+If we assume this result, then the problem is fairly easy. Assume that the sides are in the order a, b, c, d, so that the side length a is opposite that length c. If Q contains a circle C which touches each side, then a + c = b + d. [The distances from a vertex or the quadrilateral to the two points of contact of its two sides are equal. So for some w, x, y, z we have a = w + x, b = x + y, c = y + z, d = z + w and hence a + c = b + d.]
+
+<p>
+
+But this means that s - a = (- a + c + b + d)/2 = (-a + c + a + c)/2 = c. Similarly, s - b = d, s - c = a and s - d = b, so the maximum possible area of the quadrilateral is &radic;(abcd), with equality iff it is cyclic. But we are given that the area is &radic;(abcd), so it must be cyclic.
+
+<p>
+
+To establish the result about quadrilaterals, drop the assumption that a + c = b + d, and let the angle between a and b be &theta; and the opposite angle be &phi;. Let the area be A. Then 2A = ab sin &theta; + cd sin &phi;, so 16A<sup>2</sup> = 4(a<sup>2</sup>b<sup>2</sup> sin<sup>2</sup>&theta; + c<sup>2</sup>d<sup>2</sup> sin<sup>2</sup>&phi; ) + 8abcd sin &theta; sin &phi; (*). 
+
+<p>
+
+By the cosine rule we have a<sup>2</sup> + b<sup>2</sup> - 2ab cos &theta; = c<sup>2</sup> + d<sup>2</sup> - 2cd cos &phi;, so (a<sup>2</sup> + b<sup>2</sup> - c<sup>2</sup> - d<sup>2</sup>)<sup>2</sup> = 4(a<sup>2</sup>b<sup>2</sup> cos<sup>2</sup>&theta; + c<sup>2</sup>d<sup>2</sup> cos<sup>2</sup>&phi; ) - 8abcd cos &theta; cos &phi;. Adding to (*) gives 16A<sup>2</sup> = 4(a<sup>2</sup>b<sup>2</sup> + c<sup>2</sup>d<sup>2</sup>) - (a<sup>2</sup> + b<sup>2</sup> - c<sup>2</sup> - d<sup>2</sup>)<sup>2</sup> - 8abcd cos(&theta; + &phi;) &le; 4(a<sup>2</sup>b<sup>2</sup> + c<sup>2</sup>d<sup>2</sup>) - (a<sup>2</sup> + b<sup>2</sup> - c<sup>2</sup> - d<sup>2</sup>)<sup>2</sup> + 8abcd &nbsp; (**), with equality iff cos(&theta; + &phi;) = -1, in other words, iff the quadrilateral is cyclic.
+
+<p>
+
+But we can easily check that (-a + b + c + d)(a - b + c + d)(a + b - c + d)(a + b + c - d) = 4(a<sup>2</sup>b<sup>2</sup> + c<sup>2</sup>d<sup>2</sup>) - (a<sup>2</sup> + b<sup>2</sup> - c<sup>2</sup> - d<sup>2</sup>)<sup>2</sup> + 8abcd.
+
+<p>
+
+<i>Comment. I am not sure whether one is expected to prove the generalised Heron's formula. I suspect it was considered to be fairly well-known bookwork in 1970, so maybe not. On the other hand, I do not think I knew it when I was an undergraduate (Cambridge 1968-71). However, the problem is not so much proving it - it is fairly easy to prove - but seeing how to do the question if one is not familar with it. Unless I am missing something, it looks relatively hard to do any other way.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn70.html">31st Putnam 1970</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

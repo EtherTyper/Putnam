@@ -1,0 +1,84 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1987/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b>
+
+<p>
+
+Prove that there is no function f from the set of non-negative integers into itself such that f(f(n)) = n + 1987 for all n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+We prove that if f(f(n)) = n + k for all n, where k is a fixed positive integer, then k must be even. If k = 2h, then we may take f(n) = n + h.
+
+<p>
+Suppose f(m) = n with m = n (mod k). Then by an easy induction on r we find f(m + kr) = n + kr, f(n + kr) = m + k(r+1). We show this leads to a contradiction. Suppose m &lt; n, so n = m + ks for some s &gt; 0. Then f(n) = f(m + ks) = n + ks. But f(n) = m + k, so m = n + k(s - 1) &ge; n. Contradiction. So we must have m &ge; n, so m = n + ks for some s &ge; 0. But now f(m + k) = f(n + k(s+1)) = m + k(s + 2). But f(m + k) = n + k, so n = m + k(s + 1) &gt; n. Contradiction.
+
+<p>
+So if f(m) = n, then m and n have different residues mod k. Suppose they have r<sub>1</sub> and r<sub>2</sub> respectively. Then the same induction shows that all sufficiently large s = r<sub>1</sub> (mod k) have f(s) = r<sub>2</sub> (mod k), and that all sufficiently large s = r<sub>2</sub> (mod k) have f(s) = r<sub>1</sub> (mod k). Hence if m has a different residue r mod k, then f(m) cannot have residue r<sub>1</sub> or r<sub>2</sub>. For if f(m) had residue r<sub>1</sub>, then the same argument would show that all sufficiently large numbers with residue r<sub>1</sub> had f(m) = r (mod k). Thus the residues form pairs, so that if a number is congruent to a particular residue, then f of the number is congruent to the pair of the residue. But this is impossible for k odd.
+
+<p>
+
+<i>A better solution by Sawa Pavlov is as follows</i>
+
+<p>
+
+Let N be the set of non-negative integers. Put A = N - f(N) (the set of all n such that we cannot find m with f(m) = n). Put B = f(A).
+
+<p>
+
+Note that f is injective because if f(n) = f(m), then f(f(n)) = f(f(m)) so m = n. We claim that B = f(N) - f( f(N) ). Obviously B is a subset of f(N) and if k belongs to B, then it does not belong to f( f(N) ) since f is injective. Similarly, a member of f( f(N) ) cannot belong to B. 
+
+<p>
+
+Clearly A and B are disjoint. They have union N - f( f(N) ) which is {0, 1, 2, ... , 1986}. But since f is injective they have the same number of elements, which is impossible since {0, 1, ... , 1986} has an odd number of elements.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo87.html">28th IMO 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

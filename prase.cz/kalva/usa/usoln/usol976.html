@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 97/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>26th USAMO 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+The sequence of non-negative integers c<sub>1</sub>, c<sub>2</sub>, ... , c<sub>1997</sub> satisfies c<sub>1</sub> &ge; 0 and c<sub>m</sub> + c<sub>n</sub> &le; c<sub>m+n</sub> &le; c<sub>m</sub> + c<sub>n</sub> + 1 for all m, n &gt; 0 with m + n &lt; 1998. Show that there is a real k such that c<sub>n</sub> = [nk] for 1 &le; n &le; 1997.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Any such k must satisfy c<sub>n</sub>/n &le; k &lt; c<sub>n</sub>/n + 1/n for all n. Hence we must have c<sub>m</sub>/m &lt; c<sub>n</sub>/n + 1/n or n c<sub>m</sub> &lt; m c<sub>n</sub> + m for all m, n. Conversely, if this inequality holds, then such k exist. For example, we could take k = max c<sub>n</sub>/n.
+
+<p>
+
+It is tempting to argue that n c<sub>m</sub> &lt; (n-1) c<sub>m</sub> + c<sub>2m</sub> &lt; (n-2) c<sub>m</sub> + c<sub>3m</sub> &lt; ... &lt; c<sub>mn</sub> &le; c<sub>mn-n</sub> + c<sub>n</sub> + 1 &le; ... &le; m c<sub>n</sub> + m. But this does only works for small m, n, because otherwise mn may be out of range. Instead we use induction on m+n. It is obviously true for m = n = 1 and indeed any m = n. Now suppose m &lt; n (and it is true for smaller m + n). Then by induction (n - m) c<sub>m</sub> &lt; m c<sub>n-m</sub> + m. But c<sub>m</sub> &le; c<sub>n</sub> - c<sub>n-m</sub>, so m c<sub>m</sub> &le; m c<sub>n</sub> - m c<sub>n-m</sub>. Adding, we get n c<sub>m</sub> &lt; m c<sub>n</sub> + m as required. Similarly, if m &gt; n (and the result is true for smaller m + n), then by induction, n c<sub>m-n</sub> &lt; (m - n) c<sub>n</sub> + (m - n). But n c<sub>m</sub> &lt;= n c<sub>n</sub> + n c<sub>m-n</sub> + n, so adding n c<sub>m</sub> &lt; m c<sub>n</sub> + m, as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa97.html">26th USAMO 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

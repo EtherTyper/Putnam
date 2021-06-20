@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 74/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>35th Putnam 1974</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Prove that  (cos<sup>-1</sup>(1/3) )/&pi; is irrational.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let x = cos<sup>-1</sup>(1/3). If x = m/n &pi; for some integers m, n, then cos nx = cos m&pi; = &plusmn;1. But we show that cos nx cannot be &plusmn;1. It follows that x/&pi; must be irrational as required.
+
+<p>
+
+As usual, we have cos nx = nC0 c<sup>n</sup> - nC2 c<sup>n-2</sup>s<sup>2</sup> + nC4 c<sup>n-4</sup>s<sup>4</sup> - ... , where c = cos x, s = sin x. We may put s<sup>2</sup> = 1 - c<sup>2</sup> to get cos nx = a polynomial of degree n in c with integer coefficients. The coefficient of c<sup>n</sup> = nC0 + nC2 + nC4 + ... = 2<sup>n-1</sup>. But c = 1/3, so cos nx = 2<sup>n-1</sup>/3<sup>n</sup> + k/3<sup>n-1</sup> = (2<sup>n-1</sup> + 3k)/3<sup>n</sup> for some integer k. This must be in its lowest terms since 2<sup>n-1</sup> is not divisible by 3. In particular, it cannot be &plusmn;1.
+
+<p>
+
+[A variant on this is to consider cos(2<sup>n</sup>x). By a simple induction using cos 2y = 2 cos<sup>2</sup>y - 1, we show that cos(2<sup>n</sup>x) = a<sub>n</sub>/b<sub>n</sub>, where a<sub>n</sub> is not a multiple of 3 and b<sub>n</sub>is 3 to the power of 2<sup>n</sup>. It follows that as n runs through the natural numbers, all the values cos(2<sup>n</sup>x) are distinct. But if x/&pi; was rational, there would only be finitely many distinct values.]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn74.html">35th Putnam 1974</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+18 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

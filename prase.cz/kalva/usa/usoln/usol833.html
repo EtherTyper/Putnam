@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 83/3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>12th USAMO 1983</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 3</b><br>
+
+<p>
+
+S<sub>1</sub>, S<sub>2</sub>, ... , S<sub>n</sub> are subsets of the real line. Each S<sub>i</sub> is the union of two closed intervals. Any three S<sub>i</sub> have a point in common. Show that there is a point which belongs to at least half the S<sub>i</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We can write S<sub>i</sub> = [a<sub>i</sub>, b<sub>i</sub>] &cup; [c<sub>i</sub>, d<sub>i</sub>], where a<sub>i</sub> &le; b<sub>i</sub> &le; c<sub>i</sub> &lt;= d<sub>i</sub>. Put a = max a<sub>i</sub>, d = min d<sub>i</sub>. Then a belongs to some S<sub>h</sub>, and d belongs to some S<sub>k</sub>. Suppose there is some S<sub>i</sub> which does not contain a or d. Then b<sub>i</sub> &lt; a, so any point in S<sub>i</sub> and S<sub>h</sub> does not belong to [a<sub>i</sub>, b<sub>i</sub>]. Similarly c<sub>i</sub> &gt; b, so that any point in S<sub>i</sub> and S<sub>k</sub> does not belong to [c<sub>i</sub>, d<sub>i</sub>]. But that means that S<sub>i</sub>, S<sub>h</sub> and S<sub>k</sub> cannot have a point in common. Contradiction. So every S<sub>i</sub> must contain a or d. Hence either a or d belongs to at least half of them.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa83.html">12th USAMO 1983</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+24 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

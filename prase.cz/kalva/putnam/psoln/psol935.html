@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1993/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1993</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Let U be the set formed as the union of three open intervals, U = (-100, -10) &cup; (1/101, 1/11) &cup; (101/100, 11/10). Show that &int;<sub>U</sub> (x<sup>2</sup> - x)<sup>2</sup>/(x<sup>3</sup> - 3x + 1)<sup>2</sup> dx is rational.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (not required) 11131110/107634259.
+
+<p><i>Moderately hard.</i>
+
+<p>
+It is not obvious how to integrate the integrand in closed form. So If we sketch the integrand we find that it is positive and close to zero except for poles near -2, 1/2 and 1 1/2. So poles fall between the three ranges of integration. However, it still seems odd that we are given a sum of three ranges. So we look for a substitution that might bring the ranges into coincidence or something like it. A little tinkering suggests y = 1/(1-x). This takes (1/101, 1/11) to (101/100, 11/10), and (101/100, 11/10) to (-100, -10). We also find that it takes (x<sup>2</sup> - x)/(x<sup>3</sup> - 3x + 1) to (y<sup>2</sup> - y)/(y<sup>3</sup> - 3y + 1).
+
+<p>
+Let I(a, b) = &int;<sub>a</sub><sup>b</sup> (x<sup>2</sup> - x)<sup>2</sup>/(x<sup>3</sup> - 3x + 1)<sup>2</sup> dx. Then we get I(1/101, 1/11) = &int;<sub>101/100</sub><sup>11/10</sup> (y<sup>2</sup> - y)<sup>2</sup>/(y<sup>3</sup>- 3y + 1)<sup>2</sup> dy/y<sup>2</sup>. Applying the transformation again gives that I(-100, -10) + I(1/101, 1/11) + I(101/100, 11/10) = &int;<sub>-100</sub><sup>-10</sup> (z<sup>2</sup> - z)<sup>2</sup>/(z<sup>3</sup>- 3z + 1)<sup>2</sup> (1 + (2z<sup>2</sup> - 2z + 1)/( (z - 1)<sup>2</sup>z<sup>2</sup>) ) dz = &int;<sub>-10</sub><sup>-100</sup> (z<sup>2</sup> - z + 1)<sup>2</sup>/(z<sup>3</sup> - 3z + 1)<sup>2</sup> dz.
+
+<p>
+At this point we are in a difficulty. It is still not obvious how to evaluate the integral explicitly. But at the same time, there is no other obvious approach. If it does have a closed form, then (az<sup>2</sup> + bz + c)/(z<sup>3</sup> - 3z + 1) looks a good candidate. Differentiating this, we find that it does in fact work for a = -1, b = 1, c = 0. So the value is K(-10) - K(-100), where K(z) = (z<sup>2</sup> - z)/(z<sup>3</sup> - 3z + 1). This is obviously rational. [In fact it evaluates to the answer given above with a little more effort.]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn93.html">Putnam 1993</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

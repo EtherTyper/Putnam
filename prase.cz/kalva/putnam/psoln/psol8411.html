@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1984/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>45th Putnam 1984</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Let f(n) be the number of 1s in the binary expression for n. Let g(m) = &plusmn;0<sup>m</sup> &plusmn;1<sup>m</sup> &plusmn;2<sup>m</sup> ... &plusmn;(2<sup>m</sup> - 1)<sup>m</sup>, where we take the + sign for k<sup>m</sup> iff f(k) is even. Show that g(m) can be written in the form (-1)<sup>m</sup> a<sup>p(m)</sup> (q(m))! where a is an integer and p(x) and q(x) are polynomials.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: a = 2, p(m) = m(m-1)/2, q(m) = m.
+
+<p>
+
+Put h(n) = (-1)<sup>f(n)</sup>. We show that h(0) 0<sup>m</sup> + h(1) 1<sup>m</sup> + h(2) 2<sup>m</sup> + ... + h(2<sup>n</sup> - 1) (2<sup>n</sup> - 1)<sup>m</sup> = 0 for n &gt; m and (-1)<sup>m</sup> m! 2<sup>m(m-1)/2</sup> for n = m. We use induction on m. This answers the question since the case n = m is just g(m).
+
+<p>
+
+For m=0 in the case n = m the sum is just h(0) = 1 which is (-1)<sup>0</sup> 0! 2<sup>0</sup>, as required. For the case n &gt; m the sum is just h(0) + h(1) + ... + h(2<sup>n</sup> - 1). But we always have f(2r+1) = f(2r) + 1 and hence h(2r) + h(2r+1) = 0, so the sum is zero as required.
+
+<p>
+
+Now assume the result is true for values &le; m. Put N(r) = 2<sup>r</sup> - 1. Since h(2<sup>m</sup> + k) = - h(k) for k &lt; 2<sup>m</sup>, we have that &sum;<sub>0</sub><sup>N(m+1)</sup> h(k) k<sup>m+1</sup> =  - &sum;<sub>0</sub><sup>N(m)</sup> h(k) ( (k + 2<sup>m</sup>)<sup>m+1</sup> - k<sup>m+1</sup>) = - (m+1) 2<sup>m</sup> &sum;<sub>0</sub><sup>N(m)</sup> h(k) k<sup>m</sup> + other terms which are zero by the induction hypothesis = -(m+1) 2<sup>m</sup> (-1)<sup>m</sup> m! 2<sup>m(m-1)/2</sup> by induction = (-1)<sup>m+1</sup> (m+1)! 2<sup>m(m+1)/2</sup> as required.
+
+<p>
+
+Similarly, for the sum to N(n), where n &gt; m+1, the binomial expansion of the summand ( (k + 2<sup>m</sup>)<sup>m+1</sup> - k<sup>m+1</sup>) gives a series of terms all of which sum to zero. So the case m+1 is established.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn84.html">45th Putnam 1984</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

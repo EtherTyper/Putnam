@@ -1,0 +1,63 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 00/4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 4</b>
+
+<p>
+
+Some pairs of towns are connected by a road. At least 3 roads leave each town. Show that there is a cycle containing a number of towns which is not a multiple of 3.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Take any town T<sub>1</sub>. Now having found T<sub>1</sub>, T<sub>2</sub>, ... , T<sub>i</sub> take T<sub>i+1</sub> distinct from T<sub>1</sub>, T<sub>2</sub>, ... , T<sub>i</sub> such that there is a road from T<sub>i</sub> to T<sub>i+1</sub>. Since there are only finitely many towns, this process must terminate at some T<sub>n</sub>. Since T<sub>n</sub> has at least 3 roads and the chain cannot be extended there must be at least two towns T<sub>a</sub> and T<sub>b</sub> with roads to T<sub>n</sub> in the chain (apart from T<sub>n-1</sub>). wlog a &lt; b. Now consider the cycles:
+<br>T<sub>a</sub>, T<sub>a+1</sub>, ... , T<sub>n</sub> length n-a+1
+<br>T<sub>b</sub>, T<sub>b+1</sub>, ... , T<sub>n</sub> length n-b+1
+<br>T<sub>a</sub>, T<sub>a+1</sub>, ... , T<sub>b</sub>, T<sub>n</sub> length b-a+2
+<br>
+Now (n-a+1) - (n-b+1) - (b-a+2) = -2, which is not divisible by 3, so at least one of the cycles must have length not divisible by 3.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus00.html">Russian 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 March 2004
+<br>Last corrected/updated 4 Mar 04
+
+</BODY>
+
+
+
+</HTML>
+

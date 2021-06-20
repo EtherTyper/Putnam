@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 87/3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>16th USAMO 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 3</b><br>
+
+<p>
+
+X is the smallest set of polynomials p(x) such that: (1) p(x) = x belongs to X;  and (2) if r(x) belongs to X, then x r(x) and (x + (1 - x) r(x) ) both belong to X. Show that if r(x) and s(x) are distinct elements of X, then r(x) &ne; s(x) for any 0 &lt; x &lt; 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If they are never equal, then we must be able to order them, so that r(x) &gt; s(x) for all x in (0, 1) or s(x) &gt; r(x) for all x in (0, 1). Let us use the notation [+ - - + ... ]. The operation r(x) to x r(x) is denoted as - , and the operation r(x) to x + (1 - x) r(x) is denoted as + . Then the operations are listed in reverse order with the last carried out put first. So for example [ + - ] means we first apply - to get x<sup>2</sup>, then + to get x + (1 - x)x<sup>2</sup> = x + x<sup>2</sup> - x<sup>3</sup>. We claim that we have the ordering + &gt; nothing &gt; - , which we apply starting with the first term. So looking at the first few polynomials we have: [ + + ] &gt; [ + ], because we compare the first terms which are equal, then we compare the second terms. We regard [ + ] as having nothing for the second term, so + &gt; nothing. Then [ + ] &gt; [ + - ], because they have equal first terms, but unequal second terms (nothing &gt; - ). The starting polynomial is represented as [ ]. So we have [ + - ] &gt; [ ] because + &gt; nothing. Then [ ] &gt; [ - + ] &gt; [ - ] &gt; [ - - ]. Clearly this ordering, which is a type of lexicographic ordering is a total order, that is, for any two distinct polynomials in X we will find that one is larger than the other.
+
+<p>
+
+So suppose r(x) belongs to the set X. We have to establish that + &gt; nothing &gt; - . In other words, that x + (1 - x) r(x) &gt; x and that x &gt; x r(x). But that is obvious, because by a trivial induction we have 0 &lt; r(x) &lt; 1 for all r(x) in X and x in (0, 1). So, if follows that if r(x) and s(x) are in X then x + (1 - x) r(x) &gt; x s(x). It is also obvious that if [ a ] &gt; [ b ], where a and b are some strings of + and - , then [ + a ] &gt; [ + b ] and [ - a ] &gt; [ - b ]. But that is sufficient to establish the ordering. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa87.html">16th USAMO 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

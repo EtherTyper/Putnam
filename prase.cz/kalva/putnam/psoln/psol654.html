@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1965/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>26th Putnam 1965</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+S and T and finite sets. U is a collection of ordered pairs (s, t) with s &isin; S and t &isin; T. There is no element s &isin; S such that all possible pairs (s, t) &isin; U. Every element t &isin; T appears in at least one element of U. Prove that we can find distinct s<sub>1</sub>, s<sub>2</sub> &isin; S and distinct t<sub>1</sub>, t<sub>2</sub> &isin; T such that (s<sub>1</sub>, t<sub>1</sub>), (s<sub>2</sub>, t<sub>2</sub>) &isin; U, but (s<sub>1</sub>, t<sub>2</sub>), (s<sub>2</sub>, t<sub>1</sub>) &notin; U.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Suppose that we cannot find such s<sub>i</sub>, t<sub>i</sub>. We will establish a contradiction. 
+
+<p>
+
+Take t in T. Suppose that there are n distinct s in S such that (s, t) is in U. Suppose n &gt; 0. Then take a specific s' such that (s', t) is in U. There must be some t' such that (s', t') is not in U. Now consider whether we have (s, t') in U. If (s, t) is not in U, then (s, t') cannot be in U (or we would have found s<sub>i</sub>, t<sub>i</sub>). But there are at most n-1 distinct s such that (s, t') is in U (the only candidates are the cases for which (s, t) is in U, and one of those, namely s', does not work). 
+
+<p>
+
+Iterating, we must eventually get some x in T for which there is no s in S with (s, x) in U. Contradiction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn65.html">26th Putnam 1965</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

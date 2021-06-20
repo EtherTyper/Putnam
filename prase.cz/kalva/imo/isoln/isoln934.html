@@ -1,0 +1,75 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1993/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1993</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b>
+
+<p>
+
+For three points P, Q, R in the plane define m(PQR) as the minimum length of the three altitudes of the triangle PQR (or zero if the points are collinear). Prove that for any points A, B, C, X:
+
+<p>&nbsp; &nbsp; m(ABC) &le; m(ABX) + m(AXC) + m(XBC).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The length of an altitude is twice the area divided by the length of the corresponding side. Suppose that BC is the longest side of the triangle ABC. Then m(ABC) = area ABC/BC. [If A = B = C, so that BC = 0, then the result is trivially true.]
+
+<p>
+Consider first the case of X inside ABC. Then area ABC = area ABX + area AXC + area XBC, so m(ABC)/2 = area ABX/BC + area AXC/BC + area XBC/BC. We now claim that the longest side of ABX is at most BC, and similarly for AXC and XBC. It then follows at once that area ABX/BC &le; area ABX/longest side of ABX = m(ABX)/2 and the result follows (for points X inside ABC).
+
+<p>
+The claim follows from the following lemma. If Y lies between D and E, then FY is less than the greater than FD and FE. Proof: let H be the foot of the perpendicular from F to DE. One of D and E must lie on the opposite side of Y to H. Suppose it is D. Then FD = FH/cos HFD &gt; FH/cos HFY = FY. Returning to ABCX, let CX meet AB at Y. Consider the three sides of ABX. By definition AB &le; BC. By the lemma AX is smaller than the larger of AC and AY, both of which do not exceed BC. Hence AX &le; BC. Similarly BX &le; BC.
+
+<p>
+It remains to consider X outside ABC. Let AX meet AC at O. We show that the sum of the smallest altitudes of ABY and BCY is at least the sum of the smallest altitudes of ABO and ACO. The result then follows, since we already have the result for X = O. The altitude from A in ABX is the same as the altitude from A in ABO. The altitude from X in ABX is clearly longer than the altitude from O in ABO (let the altitudes meet the line AB at Q and R respectively, then triangles BOR and BXQ are similar, so XQ = OR&middot;BX/BO &gt; OR). Finally, let k be the line through A parallel to BX, then the altitude from B in ABX either crosses k before it meets AX, or crosses AC before it crosses AX. If the former, then it is longer than the perpendicular from B to k, which equals the altitude from A to BO. If the latter, then it is longer than the altitude from B to AO. Thus each of the altitudes in ABX is longer than an altitude in ABO, so m(ABX) &gt; m(ABO).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo98.html">39th IMO 1998</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Oct 1998
+<br>Last corrected/updated 25 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

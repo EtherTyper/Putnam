@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>5th Putnam 1942/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>5th Putnam 1942</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b>
+
+<p>
+
+Let f(x) = x/(1 + x<sup>6</sup>sin<sup>2</sup>x). Sketch the curve y = f(x) and show that &int;<sub>0</sub><sup>&infin;</sup> f(x) dx exists.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+<img src="diag4211.jpg">
+
+<p>
+Obviously f(x) is positive for positive x. But it has an infinite number of spikes at x = n&pi;. The spike at n&pi; is height n&pi;, so we have to show that the integral is bounded above.
+<p>
+We have sin x &gt; &frac12;x near x = 0 (certainly for x &lt; &pi;/3). So |sin x| &gt; 1/(n&pi;)<sup>k</sup> except possibly for |x| &lt; 2/(n&pi;)<sup>k</sup>. Let I<sub>n</sub> be the interval centered on n&pi; width 4/(n&pi;)<sup>k</sup>. For x &isin; I<sub>n</sub> we have f(x) &lt; 2n&pi;, so the integral of f(x) over the interval is less than 8/(n&pi;)<sup>k-1</sup>. The total integral over all such intervals is bounded provided that k &gt; 2. Outside such intervals, x<sup>6</sup> sin<sup>2</sup>x &gt; &frac12; x<sup>6</sup>/x<sup>2k</sup>, so f(x) &lt; 2/x<sup>2k-5</sup>. Hence the interval of f(x) over 0 to &infin; excluding the intervals I<sub>n</sub> is bounded provided k &gt; 5/2. By taking k = 2 1/4, for example, we get that the whole integral is bounded.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn42.html">5th Putnam 1942</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

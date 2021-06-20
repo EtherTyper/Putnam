@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1973/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>34th Putnam 1973</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+The prime p has the property that n<sup>2</sup> - n + p is prime for all positive integers less than p. Show that there is exactly one integer triple (a, b, c) such that b<sup>2</sup> - 4ac = 1 - 4p, 0 &lt; a &le; c, -a &le; b &lt; a.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (1, -1, p) is the only solution.
+
+<p>
+
+b<sup>2</sup> = 4ac + 1 - 4p, so b<sup>2</sup> is odd and hence b is odd (but not necessarily positive). Put b = 2n - 1. Then 4n<sup>2</sup> - 4n + 1 = 4ac + 1 - 4p, so n<sup>2</sup> - n + p = ac. That is promising, because if n was in the required range we could conclude that a or c = 1 and, since 0 &lt a &le; c, that a = 1.
+
+<p>
+
+We are given that n<sup>2</sup> - n + p is prime for n = 1, 2, ... , p-1. But it is obviously also prime for n = 0 and for n = -1, -2, ... , -(p-2) since (-m)<sup>2</sup> - (-m) = m<sup>2</sup> + m = (m+1)<sup>2</sup> - (m+1) (so truth for m+1 implies truth for -m). So the required range is -(p-2) &le; n &le; (p-1) or (-2p+3) &le; b &le; (2p - 3).
+
+<p>
+
+ac &ge; a<sup>2</sup> &ge; b<sup>2</sup>, so b<sup>2</sup> - 4ac &le; -3b<sup>2</sup>. If |b| &ge; p, then -3b<sup>2</sup> &le; -3p<sup>2</sup> &lt; 1 - 4p (since (3p-1)(p-1) &gt; 0). But we know that b<sup>2</sup> - 4ac = 1 - 4p, so certainly |b| &lt; p. But we know b is odd, so |b| &lt;= p - 2. That is sufficient to guarantee that b is in the required range since (p - 2) &lt; (2p - 3).
+
+<p>
+
+So we can conclude that a = 1. But now b is odd and satisfies -1 &le; b &lt; 1, so b must be -1. Finally b<sup>2</sup> - 4ac = 1 - 4p gives c = p.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn73.html">34th Putnam 1973</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

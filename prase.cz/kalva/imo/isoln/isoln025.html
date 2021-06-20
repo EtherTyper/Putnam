@@ -1,0 +1,80 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 2002/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Find all real-valued functions f on the reals such that (f(x) + f(y)) (f(u) + f(v)) = f(xu - yv) + f(xv + yu) for all x, y, u, v.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: there are three possible functions: (1) f(x) = 0 for all x; (2) f(x) = 1/2 for all x; or (3) f(x) = x<sup>2</sup>.
+
+<p>
+
+Put x = y = 0, u = v, then 4 f(0) f(u) = 2 f(0). So either f(u) = 1/2 for all u, or f(0) = 0. f(u) = 1/2 for all u is certainly a solution. So assume f(0) = 0. 
+
+<p>
+
+Putting y = v = 0, f(x) f(u) = f(xu) (*). In particular, taking x = u = 1, f(1)<sup>2</sup> = f(1). So f(1) = 0 or 1. Suppose f(1) = 0. Putting x = y = 1, v = 0, we get 0 = 2f(u), so f(x) = 0 or all x. That is certainly a solution. So assume f(1) = 1.
+
+<p>
+
+Putting x = 0, u = v = 1 we get 2 f(y) = f(y) + f(-y), so f(-y) = f(y). So we need only consider f(x) for x positive. We show next that f(r) = r<sup>2</sup> for r rational. The first step is to show that f(n) = n<sup>2</sup> for n an integer. We use induction on n. It is true for n = 0 and 1. Suppose it is true for n-1 and n. Then putting x = n, y = u = v = 1, we get 2f(n) + 2 = f(n-1) + f(n+1), so f(n+1) = 2n<sup>2</sup> + 2 - (n-1)<sup>2</sup> = (n+1)<sup>2</sup> and it is true for n+1. Now (*) implies that f(n) f(m/n) = f(m), so f(m/n) = m<sup>2</sup>/n<sup>2</sup> for integers m, n. So we have established f(r) = r<sup>2</sup> for all rational r.
+
+<p>
+
+From (*) above, we have f(x<sup>2</sup>) = f(x)<sup>2</sup> &ge; 0, so f(x) is always non-negative for positive x and hence for all x. Putting u = y, v = x, we get ( f(x) + f(y) )<sup>2</sup> = f(x<sup>2</sup> + y<sup>2</sup>), so f(x<sup>2</sup> + y<sup>2</sup>) = f(x)<sup>2</sup> + 2f(x)f(y) + f(y)<sup>2</sup> &ge; f(x)<sup>2</sup> = f(x<sup>2</sup>). For any u &gt; v &gt; 0, we may put u = x<sup>2</sup> + y<sup>2</sup>, v = x<sup>2</sup> and hence f(u) &ge; f(v). In other words, f is an increasing function.
+
+<p>
+
+So for any x we may take a sequence of rationals r<sub>n</sub> all less than x we converge to x and another sequence of rationals s<sub>n</sub> all greater than x which converge to x. Then r<sub>n</sub><sup>2</sup> = f(r<sub>n</sub>) &le; f(x) &le; f(s<sub>n</sub>) = s<sub>n</sub><sup>2</sup> for all x and hence f(x) = x<sup>2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo02.html">43rd IMO 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+28 Jul 2002
+
+<br>Last corrected/updated 28 Jul 2002
+
+</BODY>
+
+
+
+</HTML>
+

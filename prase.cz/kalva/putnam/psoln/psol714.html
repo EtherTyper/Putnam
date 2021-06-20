@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1971/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>32nd Putnam 1971</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+k lies in the open interval (1, 2). Show that the polynomial formed by expanding (x + y)<sup>n</sup>(x<sup>2</sup> - k xy + y<sup>2</sup>) has positive coefficients for sufficiently large n. Find the smallest such n for k = 1.998.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 1999.
+
+<p>
+
+The coefficient of x<sup>n-r</sup>y<sup>r+2</sup> is ( nCr - k nCr+1 + nCr+2 ). We show that the worst case is r near n/2 and that even this is positive for sufficiently large n.
+
+<p>
+
+( nCr - k nCr+1 + nCr+2 ) = n!/(r+2! n-r!) ( (r+1)(r+2) - k(r+2)(n-r) + (n-r-1)(n-r) ). Let f(r) = ( (r+1)(r+2) - k(r+2)(n-r) + (n-r-1)(n-r) ). Then f '(r) = 2r+3 - kn +2kr + 2k - 2n + 2r + 1. So f '(r) = 0 iff (2k+4)r = (k+2)n - (2k+4) or r = n/2 - 1. Also it is clear that f '(r) is negative for smaller values and positive for larger values, so this represents a minimum. So if n = 2m the minimum occurs at r = m - 1 and is 2mCm-1 - k 2mCm + 2mCm+1. Now 2mCm-1 = 2mCm+1 = m/(m+1) 2mCm, so the minimum value is positive iff 2m/(m+1) &gt; k which is certainly true for all sufficiently large m since k &lt; 2. 
+
+<p>
+
+Similarly if n = 2m+1, then the minimum occurs at r = m-1 or m. In either case, the minimum value is 2m+1Cm-1 - k 2m+1Cm + 2m+1Cm+1. But 2m+1Cm = 2m+1Cm+1 and 2m+1Cm-1 = m/(m+2) 2m+1Cm, so the minimum value is (m/(m+2) - (k-1) ) 2m+1Cm, which is certainly positive for all sufficiently large m since k-1 &lt; 1.
+
+<p>
+
+We have 2m/(m+1) &gt; 1.998 for m &gt; 999, so the smallest even n with all coefficients positive is 2000. On the other hand, m/(m+2) &gt; 0.998 for m &gt; 998, so the smallest odd n with all coefficients positive is 1999. Thus the smallest n is 1999.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn71.html">32nd Putnam 1971</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Feb 2001
+
+</BODY>
+
+
+
+</HTML>
+

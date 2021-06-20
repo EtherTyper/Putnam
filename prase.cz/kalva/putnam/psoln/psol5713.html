@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>17th Putnam 1957/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>17th Putnam 1957</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+y is the solution of the differential equation (x<sup>2</sup> + 9) y'' + (x<sup>2</sup> + 4)y = 0, y(0) = 0, y'(0) = 1. Show that y(x) = 0 for some x &isin; [&radic;(63/53) &pi;, 3&pi;/2].
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We compare the equation given with (1) z'' = -4/9 z, z(0) = 0, z'(0) = 1, and (2) w'' = -53/63 w, w(0) = 0, w'(0) = 1.
+
+<p>
+
+For all x &gt; 0 we have (x<sup>2</sup> + 4)/(x<sup>2</sup> + 9) &gt; 4/9, so y''z - yz'' = (4/9 - (x<sup>2</sup> + 4)/(x<sup>2</sup> + 9) ) yz. Integrating gives y'z - yz'|<sub>0</sub><sup>3&pi;/2</sup> = &int; (4/9 - (x<sup>2</sup> + 4)/(x<sup>2</sup> + 9) ) yz dx (*). Now y(0) = z(0) = 0, z = sin 2x/3, so z(3&pi;/2) = 0, z'(3&pi;/2) = -2/3, hence y'z - yz'|<sub>0</sub><sup>3&pi;/2</sup> = 2/3 y(3&pi;/2). Now if y has no zeros on the open interval (0, 3&pi;/2), then y(3&pi;/2) &ge; 0 and the integrand (4/9 - (x<sup>2</sup> + 4)/(x<sup>2</sup> + 9) ) yz is negative for the entire interval. Hence lhs (*) &ge; 0 and rhs (*) &lt; 0. Contradiction. So y has at least on zero on (0, 3&pi;/2).
+
+<p>
+
+Turning to (2), we note that &pi;<sup>2</sup> &lt; 10, so (3&pi;/2)<sup>2</sup> &lt; 22.5. Hence on the interval [0, 3&pi;/2] we have (x<sup>2</sup> + 4)/(x<sup>2</sup> + 9) &lt; 26.5/31.5 = 53/63. Now w = sin (&radic;(53/63) x), so w(x) &gt; 0 on the interval (0, k), where k = &radic;(63/53) &pi;.
+
+<p>
+
+Now suppose that y has a root in (0, k]. Let h be the smallest such root, so that y(x) is positive on (0, h) and y(h) = 0, y'(h) &le; 0. Integrate w''y - w y'' = ( (x<sup>2</sup> + 4)/(x<sup>2</sup> + 9) - 53/63). The lhs is w'y - w y' |<sub>0</sub><sup>h</sup> = w(h) y'(h) &ge; 0. The rhs is &int;<sub>0</sub><sup>h</sup> ( (x<sup>2</sup> + 4)/(x<sup>2</sup> + 9) - 53/63) y w dx. But the integrand is negative on (0, h), so the rhs &lt; 0. Contradiction. Hence y has no roots on (0, k]. So it must have a root on (k, 3&pi;/2). 
+
+<p>
+
+<i>Comment. This is essentially the same question as 61/B6.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn57.html">17th Putnam 1957</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

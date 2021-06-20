@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE>41st IMO shortlist 2000/C2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>41st IMO 2000 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C2</b><br>
+<p>
+A piece is made of 12 unit cubes. It looks like a staircase of 3 steps, each of width 2. Thus the bottom layer is 2 x 3, the second layer is 2 x 2 and the top layer is 1 x 2. For which n can we make an n x n x n cube with such pieces?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: n a multiple of 12.
+<p>
+Obviously a necessary condition is that 12 divides n<sup>3</sup> and hence that n is a multiple of 6. Two pieces can be fitted together to form a 2 x 3 x 4 brick. It is easy to use such bricks to form a 12 x 12 x 12 cube and hence an n x n x n cube for n a multiple of 12. So the only case of interest is n = 6 mod 12. 
+<p>
+Suppose an n x n x n cube can be made up of the pieces. Label the small cubes with x, y, z coordinates. Color the small cubes with 8 colors according to the parity of the coordinates. Then each small cube in any 2 x 2 x 2 cube will be colored differently, so each cube in the central 2 x 2 x 2 cube of a piece is colored differently. The three small cubes marked x in the diagram below will be colored the same, and similarly the three small cubes behind them. Thus each color appears either one or three times in a piece.
+<p>
+<img src="diag00c2.bmp">
+<p>
+Take one of the colors. Suppose that s pieces have just one cube of that color, and t pieces have three cubes of that color. Then in total there are s + 3t small cubes with the color.  But n is even, so the n x n x n cube can be divided into 2 x 2 x 2 cubes and hence there are n<sup>3</sup>/8 small cubes of each color. There are s + t pieces in total, so n<sup>3</sup> = 12(s + t). Hence s + 3t = 12(s + t)/8, so 4s = 12t, and s = 3t. So the total number of pieces is s + t = 4t. Hence the total number of small cubes is 48t = n<sup>3</sup>. So 16 divides n<sup>3</sup> and hence 4 divides n. So we cannot have n = 6 mod 12.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh00.html">41st IMO shortlist 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

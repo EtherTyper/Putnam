@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 41/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>4th Putnam 1941</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+Define f(x) = &int;<sub>0</sub><sup>x</sup> &sum;<sub>i=0</sub><sup>n-1</sup> (x - t)<sup>i</sup> / i! dt. Find the nth derivative f<sup> (n)</sup>(x).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Straightforward.
+
+<p>
+
+Note that x appears both in the integrand and in the limits, so a little care is needed. Write g<sub>r</sub>(x, t) = &sum;<sub>i=0</sub><sup>r-1</sup> (x - t)<sup>i</sup> / i! so that f(x) = &int;<sub>0</sub><sup>x</sup> g<sub>n</sub>(x, t) e<sup>nt</sup> dt. By definition f '(x) = lim<sub>&delta;x -&gt; 0</sub> (&int;<sub>0</sub><sup>x+&delta;x</sup> g<sub>n</sub>(x+&delta;x, t) e<sup>nt</sup> dt - &int;<sub>0</sub><sup>x</sup> g<sub>n</sub>(x, t) e<sup>nt</sup> dt) / &delta;x = e<sup>nx </sup>g<sub>n</sub>(x, x) + &int;<sub>0</sub><sup>x</sup> g<sub>n</sub>'(x,t) e<sup>nt</sup> dt, where the ' denotes the partial derivative wrt the first variable. But g<sub>n</sub>(x, x) = 1, and g<sub>r</sub>'(x, t) = g<sub>r-1</sub>(x, t), so f '(x) = e<sup>nx</sup> + &int;<sub>0</sub><sup>x</sup> g<sub>n-1</sub>(x, t) e<sup>nt</sup> dt. Hence by an easy induction f<sup> (n)</sup>(x) = e<sup>nx</sup>( 1 + n + n<sup>2</sup> + ... + n<sup>n-1</sup> ).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn41.html">4th Putnam 1941</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

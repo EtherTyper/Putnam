@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<TITLE>42nd IMO shortlist 2001/C5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>42nd IMO 2001 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C5</b><br>
+<p>
+Find all finite sequences a<sub>0</sub>, a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>n</sub> such that a<sub>m</sub> equals the number of times that m appears in the sequence.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: (1) 1, 2, 1, 0; (2) 2, 0, 2, 0; (3) 2, 1, 2, 0, 0; (4) N, 2, 1, 0, ... , 0 with N+4 terms, except that a<sub>N</sub> = 1.
+<p>
+Note that we cannot have a<sub>0</sub> = 0. Suppose there are k other non-zero terms. The number of 1s is a<sub>1</sub>, the number of 2s is a<sub>2</sub> etc, so the number of non-zero terms is a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>n</sub>.  Hence a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>n</sub> = k+1. But if there are k+1 non-zero terms, then k of a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>n</sub> are at least 1. So k-1 of them must be 1, one of them 2 and the rest 0. In particular, none of them are 3 or more (*). 
+<p>
+If a<sub>0</sub> is 1 or 2, then <i>no</i> member of the sequence is 3 or more, so a<sub>3</sub> = ... = a<sub>n</sub> = 0. 
+<p>
+Suppose a<sub>0</sub> = 1. Then a<sub>1</sub> cannot be 1 (or there would be two 1s). It cannot exceed 2, so it must be 2. But the only other term that can be 1 is a<sub>2</sub>, so a<sub>2</sub> = 1. We need a 0, so a<sub>3</sub> = 0. There cannot be any further terms, because they would have to be 0s and we have enough already. Thus we have the solution 1, 2, 1, 0.
+<p>
+Suppose a<sub>0</sub> = 2. We know that a<sub>1</sub> cannot exceed 2. Suppose it is 2. Then a<sub>2</sub>  is at least 2. Like all the terms, it is at most 2. But if it is 2, then there are three 2s. Contradiction. So a<sub>1</sub> must be 0 or 1. Suppose it is 0. Then a<sub>2</sub> is at least 1 because a<sub>0</sub> is 2. But it cannot be 1, because there are no 1s. So it must be 2. So all remaining terms must be 0. Now there are two 0s, so there must be just one more term, and we have the solution 2, 0, 2, 0.
+<p>
+So suppose a<sub>1</sub> = 1 (and a<sub>0</sub> = 2). Again there are no more 1s. So a<sub>2</sub> must be 2. Hence all remaining terms must be 0. We need two more 0s (to get a<sub>0</sub> correct), so we have the solution 2, 1, 2, 0, 0.
+<p>
+That exhausts the possibilities for a<sub>0</sub> = 1 or 2. So suppose a<sub>0</sub> = N &gt; 2. Hence a<sub>N</sub> = 1. So a<sub>1</sub> is at least 1. It cannot be 1 (or there would be two 1s). But by (*) it cannot exceed 2, so it must be 2. Hence, by (*), a<sub>2</sub> must be 1. Since the only term exceeding 2 is a<sub>0</sub> (by (*) ), all of a<sub>3</sub>, a<sub>4</sub>, ... , a<sub>n</sub> except a<sub>N</sub> must be 0. We need N zeros, so n = N+3. It is easy to check that a<sub>0</sub> = N (&gt; 2), a<sub>1</sub> = 2, a<sub>2</sub> = 1, a<sub>N</sub> = 1 and the rest of a<sub>3</sub>, a<sub>4</sub>, ... , a<sub>N+3</sub> is indeed a solution.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh01.html">42nd IMO shortlist 2001</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+14 Oct 2002
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 40/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>3rd Putnam 1940</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+The n x n matrix (m<sub>ij</sub>) is defined as m<sub>ij</sub> = a<sub>i</sub>a<sub>j</sub> for i &ne; j, and a<sub>i</sub><sup>2</sup> + k for i = j. Show that det(m<sub>ij</sub>) is divisible by k<sup>n-1</sup> and find its other factor.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Straightforward.
+
+<p>
+
+Answer: det(m<sub>ij</sub>) = k<sup>n-1</sup>(k + <font face="Symbol">S</font>a<sub>i</sub><sup>2</sup>).
+
+<p>
+
+Induction on n. Clearly true for n = 1. 
+
+<br>Expanding by the first row we get k. k<sup>n-2</sup>(k + <font face="Symbol">S</font><sub>i&gt;1</sub>a<sub>i</sub><sup>2</sup>) + det(m'<sub>ij</sub>), where m'<sub>ij</sub> is the same as m<sub>ij</sub> except that m'<sub>11</sub> = a<sub>1</sub><sup>2</sup>. Subtracting appropriate multiples of the first row from the others we zero all the elements outside the first row except those on the diagonal, which become k. Hence det(m'<sub>ij</sub>) = k<sup>n-2</sup>a<sub>1</sub><sup>2</sup>. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn40.html">3rd Putnam 1940</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 86/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>47th Putnam 1986</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+<b>f:</b>R<sup>n</sup>&rarr;R<sup>n</sup> is defined by <b>f</b>(<b>x</b>) =(f<sub>1</sub>(<b>x</b>), f<sub>2</sub>(<b>x</b>), ... , f<sub>n</sub>(<b>x</b>)), where <b>x</b> = (x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub>) and the n functions f<sub>i</sub><b>:</b>R<sup>n</sup>&rarr;R have continuous 2nd order partial derivatives and satisfy &part;f<sub>i</sub>/&part;x<sub>j</sub> - &part;f<sub>j</sub>/&part;x<sub>i</sub> = c<sub>ij</sub> (for all 1 &le; i, j &le; n) for some constants c<sub>ij</sub>. Prove that there is a function g<b>:</b>R<sup>n</sup>&rarr;R such that f<sub>i</sub> + &part;g/&part;x<sub>i</sub> is linear (for all 1 &le; i &le; n).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Easy.</i>
+
+<p>
+
+Well, it <i>is</i> easy, provided one can assume the standard result of the vector calculus that if &part;f<sub>i</sub>/&part;x<sub>j</sub> = &part;f<sub>j</sub>/&part;x<sub>i</sub> for all i, j, then there is a function g<b>:</b>R<sup>n</sup>&rarr;R such that <b>f</b> = <b>&nabla;</b>g.
+
+<p>
+
+But can one assume this result? Well, it is pure bookwork, and relatively time-consuming to prove, so presumably yes. Of course, it is a <i>bad</i> question, because it is unclear that you can assume it. The question does not <i>tell</i> you that you can assume it, because that would make it trivial - the only difficulty of the question is that it is slightly inverted, apparently asking about some linear expression rather than about g.
+
+<p>
+
+Let h<sub>i</sub>(<b>x</b>) = (c<sub>i1</sub>x<sub>1</sub> + c<sub>i2</sub>x<sub>2</sub> + ... + c<sub>in</sub>x<sub>n</sub>)/2 - <b>f</b>(<b>x</b>). Then &part;h<sub>i</sub>/&part;x<sub>j</sub> - &part;h<sub>j</sub>/&part;x<sub>i</sub> = c<sub>ij</sub>/2 - c<sub>ji</sub>/2 - c<sub>ij</sub> = 0, since it follows directly from the definition that c<sub>ij</sub> = - c<sub>ji</sub>.
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn86.html">47th Putnam 1986</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,61 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1997/ solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Define the sequence a<sub>n</sub> by a<sub>1</sub> = 2, a<sub>n+1</sub> = 2<sup>a<sub>n</sub></sup>. Prove that a<sub>n</sub> = a<sub>n-1</sub> (mod n) for n &ge; 2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>This is easy once you realize that you have to prove a stronger result: a<sub>n</sub> = a<sub>n-1</sub> (mod m) for all m &le; n.</i>
+
+<p>
+We use induction. The result is obviously true for n = 2. Assume it is true for &lt; n, then we must prove that 2<sup>a<sub>n-1</sub></sup> = 2<sup>a<sub>n-2</sub></sup> (mod m), where m &le; n. If let m = 2<sup>r</sup>(2s+1). Then 2<sup>&phi;(2r+1)</sup> = 1 (mod 2r+1), and since &phi;(2r+1) &lt; 2r+1 &le; m &le; n, we have by induction that a<sub>n-1</sub> = a<sub>n-2</sub> (mod &phi;(2r+1)), and hence 2<sup>a<sub>n-1</sub></sup> = 2<sup>a<sub>n-2</sub></sup> (mod 2r+1). Obviously 2<sup>s</sup>divides both 2<sup>a<sub>n-1</sub></sup> and 2<sup>a<sub>n-2</sub></sup>, so 2<sup>a<sub>n-1</sub></sup> = 2<sup>a<sub>n-2</sub></sup> (mod 2<sup>s</sup>). But (2r+1) and 2<sup>s</sup> are coprime, so 2<sup>a<sub>n-1</sub></sup> = 2<sup>a<sub>n-2</sub></sup> (mod m), as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn97.html">Putnam 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

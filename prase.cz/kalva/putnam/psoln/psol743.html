@@ -1,0 +1,82 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 74/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>35th Putnam 1974</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Which odd primes p can be written in the form m<sup>2</sup> + 16n<sup>2</sup>? In the form 4m<sup>2</sup> + 4mn + 5n<sup>2</sup> ,where m and n may be negative? [You may assume that p can be written in the form m<sup>2</sup> + n<sup>2</sup> iff p = 1 (mod 4).]
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: p = 1 (mod 8); p = 5 (mod 8).
+
+<p>
+
+(A) m<sup>2</sup> + 16n<sup>2</sup>.
+
+<p>
+
+We show first that m<sup>2</sup> + 16n<sup>2</sup> = 1 (mod 8). Clearly m is odd, otherwise m<sup>2</sup> + 16n<sup>2</sup> would be even. But odd squares are = 1 (mod 8) (because (2N+1)<sup>2</sup> = 4N(N+1) + 1 and N(N+1) is even). Hence m<sup>2</sup> + 16n<sup>2</sup> = 1 (mod 8).
+
+<p>
+
+Conversely, suppose p = 1 (mod 8). Take, p = M<sup>2</sup> + N<sup>2</sup>. Without loss of generality, M is odd and N even. Hence N<sup>2</sup> = 0 (mod 8), so N is a multiple of 4.
+
+<p>
+
+(B) 4m<sup>2</sup> + 4mn + 5n<sup>2</sup>. 
+
+<p>
+
+n must be odd (otherwise p would be even). But 4m<sup>2</sup> + 4mn + 5n<sup>2</sup> = (2m + n)<sup>2</sup> + (2n)<sup>2</sup>. The first term is congruent to 1 and the second to 4 mod 8. Hence p = 5 (mod 8).
+
+<p>
+
+Conversely, if p = M<sup>2</sup> + N<sup>2</sup> = 5 (mod 8), then wlog M is odd and N even. Take N = 2n. Since M<sup>2</sup> = 1 (mod 8), N<sup>2</sup> = 4 (mod 8) and hence n is odd. So M + n is even and we may set m = (M - n)/2. Now M = 2m + n, so M<sup>2</sup> = 4m<sup>2</sup> + 4mn + n<sup>2</sup> and p = 4m<sup>2</sup> + 4mn + 5n<sup>2</sup>, as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn74.html">35th Putnam 1974</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+18 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

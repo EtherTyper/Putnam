@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 97/2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>9th APMO 1997</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 2</b><br>
+<p>
+Find an n in the range 100, 101, ... , 1997 such that n divides 2<sup>n</sup> + 2.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: the only such number is 946.
+<p>
+We have 2<sup>p-1</sup> = 1 mod p for any prime p, so if we can find h in {1, 2, ... , p-2} for which 2<sup>h</sup> = -2 mod p, then 2<sup>k</sup>= -2 mod p for any h = k mod p. Thus we find that 2<sup>k</sup> = -2 mod 5 for k = 3 mod 4, and 2<sup>k</sup> = -2 mod 11 for k = 6 mod 10. So we might then hope that 5&middot;11 = 3 mod 4 and = 6 mod 10. Unfortunately, it does not! But we try searching for more examples. 
+<p>
+The simplest would be to look at pq. Suppose first that p and q are both odd, so that pq is odd. If k = h mod p-1, then we need h to be odd (otherwise pq would have to be even). So the first step is to get a list of primes p with 2<sup>h</sup> = -2 mod p for some odd h &lt; p. We always have 2<sup>p-1</sup> = 1 mod p, so we <i>sometimes</i> have 2<sup>(p-1)/2</sup> = -1 mod p and hence 2<sup>(p+1)/2</sup> = -2 mod p. If (p+1)/2 is to be odd then p =1 mod 4. So searching such primes we find 3 mod 5, 7 mod 13, 15 mod 29, 19 mod 37, 27 mod 53, 31 mod 61. We require pq to lie in the range 100-1997, so we check 5&middot;29 (not = 3 mod 4), 5&middot;37 (not = 3 mod 4), 5&middot;53 (not = 3 mod 4), 5&middot;61 (not = 3 mod 4), 13&middot;29 (not = 7 mod 12), 13&middot;37 (not = 7 mod 12), 13.53 (not = 7 mod 12), 13&middot;61 (not = 7 mod 12), 29&middot;37 (not = 15 mod 28), 29&middot;53 (not = 15 mod 28), 29&middot;61 (not = 15 mod 28), 37&middot;53 (not = 19 mod 36). So that does not advance matters much!
+<p>
+2p will not work (at least with h = (p+1)/2) because we cannot have 2p = (p+1)/2 mod p-1. So we try looking at 2pq. This requires that p and q = 3 mod 4. So searching for suitable p we find 6 mod 11, 10 mod 19, 22 mod 43, 30 mod 59, 34 mod 67, 42 mod 83.  So we look at 2&middot;11&middot;43 = 946, which works.
+<p>
+Proving that it is unique is harder. The easiest way is to use a computer to search (approx 5 min to write a Maple program or similar and a few seconds to run it).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo97.html">9th APMO 1997</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

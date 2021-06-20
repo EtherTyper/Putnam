@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1997/26 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>38th IMO 1997 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 26</b>
+<p>
+Find the minimum value of x<sub>0</sub> + x<sub>1</sub> + ... + x<sub>n</sub> for non-negative real numbers x<sub>i</sub> such that x<sub>0</sub> = 1 and x<sub>i</sub> &le; x<sub>i+1</sub> + x<sub>i+2</sub>.
+<p>
+&nbsp;<p>
+<b>Answer</b>
+<p>
+(F<sub>n+2</sub> - 1)/F<sub>n</sub>
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Define the Fibonacci numbers as usual by F<sub>0</sub> = 0, F<sub>1</sub> = 1, F<sub>n+2</sub> = F<sub>n+1</sub> + F<sub>n</sub>. We show first that F<sub>1</sub> + F<sub>2</sub> + ... + F<sub>n</sub> = F<sub>n+2</sub> - 1. This is true for n = 1, since F<sub>3</sub> = 2. Suppose it is true for n, then F<sub>1</sub> + ... + F<sub>n+1</sub> = F<sub>n+1</sub> + F<sub>n+2</sub> - 1 = F<sub>n+3</sub> - 1, so it is true for n+1.
+<p>
+Now put y<sub>i</sub> = x<sub>i</sub> - F<sub>n-i</sub>/F<sub>n</sub>. That gives y<sub>0</sub> = 0, y<sub>n</sub> = x<sub>n</sub> &ge; 0 (and we do not care about y<sub>n+1</sub>, y<sub>n+2</sub> etc). Also y<sub>i+1</sub> + y<sub>i+2</sub> = x<sub>i+1</sub> + x<sub>i+2</sub> - (F<sub>n-i-1</sub> + F<sub>n-i-2</sub>)/F<sub>n</sub> &ge; x<sub>i</sub> - F<sub>n-i</sub>/F<sub>n</sub> = y<sub>i</sub>. We claim that y<sub>0</sub> = 0, y<sub>n</sub> &ge 0, y<sub>i+1</sub> + y<sub>i+2</sub> &ge; y<sub>i</sub> implies y<sub>0</sub> + y<sub>1</sub> + ... + y<sub>n</sub> &ge; 0. We use induction on n. It is obvious for n=1. Suppose it is true for &lt;n. If y<sub>n-1</sub> and y<sub>n-2</sub> are both negative, then y<sub>n-3</sub> &le; y<sub>n-2</sub> + y<sub>n-1</sub> must also be negative, so continuing, y<sub>0</sub> is negative. Contradiction. So at least one of y<sub>n-1</sub>, y<sub>n-2</sub> must be non-negative. If y<sub>n-1</sub> &ge; 0, then by induction y<sub>0</sub> + ... + y<sub>n-1</sub> &ge; 0. But y<sub>n</sub> &ge; 0, so y<sub>0</sub> + ... + y<sub>n</sub> &ge; 0. So suppose y<sub>n-1</sub> &lt; 0. Then y<sub>n-2</sub> &ge; 0. Hence by induction y<sub>0</sub> + y<sub>2</sub> + ... + y<sub>n-2</sub> &ge; 0. But also y<sub>n-1</sub> + y<sub>n</sub> &ge; y<sub>n-2</sub> &ge; 0, so adding y<sub>0</sub> + ... + y<sub>n</sub> &ge; 0. So the result is true for all n.
+<p>
+But x<sub>0</sub> + x<sub>2</sub> + ... + x<sub>n</sub> = y<sub>0</sub> + ... + y<sub>n</sub> + (F<sub>0</sub> + ... + F<sub>n</sub>)/F<sub>n</sub> &ge; (F<sub>0</sub> + ... + F<sub>n</sub>)/F<sub>n</sub> = (F<sub>n+2</sub> - 1)/F<sub>n</sub>.
+<p>
+<i>Thanks to Kamil Duszenko</i>
+<p>&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh97.html">38th IMO shortlist 1997</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+2 Dec 2003
+<br>Last corrected/updated 2 Dec 2003
+</BODY>
+
+
+
+</HTML>
+

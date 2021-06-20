@@ -1,0 +1,51 @@
+<HTML>
+<HEAD>
+<TITLE>30th IMO shortlist 1989/1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>30th IMO 1989 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 1</b><br>
+<p>
+Ali Baba has a rectangular piece of carpet. He finds that if he lays if flat on the floor of either of his storerooms then each corner of the carpet touches a different wall of the room. He knows that the storerooms have widths 38 and 50 feet and the same (unknown but integral) length. What are the dimensions of the carpet?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<img src="diag891.bmp">
+<p>
+Answer: 25 x 50.
+<p>
+Take the carpet to be EFGH and a storeroom to be ABCD, with E on AB, F on BC etc. Take HE = x, EF = y, AE = a, AH = b, DH = ka. Triangles AEH and CGF are congruent, and triangles BEF and DGH are congruent, and triangles AEH and BEF are similar. k is the similarity factor, so BE = DG = kb, BF = DH = ka. Also y = kx. AD is the unknown width q, AB = 38 or 50. Note that a, b take different values in the two cases, but x and y are the same. Hence k = y/x is also the same in the two cases.
+<p>
+Take AB = 50. Then a + kb = 50, ka + b = q. Hence kq - 50 = (k<sup>2</sup> - 1)a, 50k - q = (k<sup>2</sup> - 1)b. Similarly, if AB = 38, then kq - 38 = (k<sup>2</sup> - 1)a, 38k - q = (k<sup>2</sup> - 1)b. But x<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup>. So (kq - 50)<sup>2</sup> + (50k - q)<sup>2</sup> = (kq - 38)<sup>2</sup> + (38k - q)<sup>2</sup>. So -100kq + 2500 + 2500k<sup>2</sup> - 100kq = -76kq + 1444 + 1444k<sup>2</sup> - 76kq. So 1056k<sup>2</sup> - 48kq + 1056 = 0, or 22k<sup>2</sup> - kq + 22 = 0, or kq = 22(1 + k<sup>2</sup>) (*)
+<p>
+We also have x<sup>2</sup>(k<sup>2</sup> - 1)<sup>2</sup> = (kq - 50)<sup>2</sup> + (50k - q)<sup>2</sup> = (k<sup>2</sup> + 1)(q<sup>2</sup> + 2500) - 200kq = (k<sup>2</sup> + 1)(q<sup>2</sup> - 1900), using (*).
+<p>
+So x<sup>2</sup>(k<sup>2</sup> - 1)k<sup>2</sup> = (k<sup>2</sup> + 1)( (22k<sup>2</sup> + 22)<sup>2</sup> - 1900k<sup>2</sup>), using (*), = (k<sup>2</sup> + 1)(484k<sup>4</sup> - 932k<sup>2</sup> + 484). If we divide by k<sup>8</sup> and put k' = 1/k, we get the same equation for k'. So if k is a solution, then 1/k is also a solution. 
+<p>
+k = y/x, which is rational. Put k = c/d, where c and d are coprime integers. Then we get x<sup>2</sup>c<sup>2</sup>(c<sup>2</sup> - d<sup>2</sup>)<sup>2</sup> = c<sup>2</sup>(484c<sup>4</sup> - 448c<sup>2</sup>d<sup>2</sup> - 448d<sup>4</sup>) + 484d<sup>6</sup>. Hence c<sup>2</sup> divides 484d<sup>6</sup>. But c and d are coprime, so c must divide 22. Since k' is also a solution of the equation, d must also divide 22. So each of c, d is one of 1, 2, 11, 22. That implies k must be 1, 2, 1/2, 11, 1/11, 22, 1/22, 2/11 or 11/2. But k and 1/k give the same solution (with x and y interchanged), so we need only consider k =  1, 2, 11, 22, 11/2.
+<p>
+k = 1 does not work (substituting into the equation for x, we get 0 = 1).
+<p>
+k = 2 gives (from 22k<sup>2</sup> - kq + 22 = 0), q = 55, then x = 25 (from the equation for x) and then y = 50.
+<p>
+k = 11 gives q = 244 = 4.61. But consider x<sup>2</sup>(k<sup>2</sup> - 1)<sup>2</sup> = (k<sup>2</sup> + 1)(q<sup>2</sup> - 1900). It is easy to check that 61 divides rhs, but not 61<sup>2</sup>, so the rhs is not a square. Contradiction (since the lhs is a square). So k = 11 does not give a solution.
+<p>
+k = 22 gives q = k<sup>2</sup> + 1 = 485 = 5.97. So we have the same argument with 97 instead of 61, and k = 22 does not give a solution.
+<p>
+k = 11/2 gives q = 125, k<sup>2</sup> + 1 = 125/4, k<sup>2</sup> - 1 = 117/4. So we get x<sup>2</sup>117<sup>2</sup> = 4.5<sup>5</sup>(25<sup>2</sup> - 76). But 5 divides the rhs to an odd power, so k = 11/2 does not give a solution.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh89.html">30th IMO shortlist 1989</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+28 Dec 2002
+<br>Last corrected/updated 28 Dec 02
+</BODY>
+
+</HTML>
+

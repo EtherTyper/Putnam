@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 50/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>10th Putnam 1950</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+ <i>Do either (1) or (2)</i>
+
+<p>(1) &nbsp; P is a prism with triangular base. A is a vertex. The total area of the three faces containing A is 3k. Show that if the volume of P is maximized, then each of the three faces has area k and the two lateral faces are perpendicular to each other.
+
+<p>(2) &nbsp; Let f(x) = x + x<sup>3</sup>/(1&middot;3) + x<sup>5</sup>/(1&middot;3&middot;5) + x<sup>7</sup>/(1&middot;3&middot;5&middot;7) + ... , and g(x) = 1 + x<sup>2</sup>/2 + x<sup>4</sup>/(2&middot;4) + x<sup>6</sup>/(2&middot;4&middot;6) + ... . Show that &int;<sub>0</sub><sup>x</sup> exp( - t<sup>2</sup>/2) dt = f(x)/g(x).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(1) Let the sides of the base at A be a, b with angle between them &theta;. Let the height be h. Then the volume is V = 1/2 abh sin &theta; and 3k = ah + bh + 1/2 ab sin &theta;. Now V<sup>2</sup> = (1/2 ab sin &theta;) (ah) (bh) 1/2 sin &theta;. By the arithmetic geometric mean theorem we have that (1/2 ab sin &theta;) (ah) (bh) &le; k<sup>3</sup>, with equality iff ah = bh = 1/2 ab sin &theta;. So V<sup>2</sup> &le; k<sup>3</sup>/2 sin &theta;. Hence V &le; &radic;(k<sup>3</sup>/2) with equality iff &theta; = &pi;/2 and ah = bh = 1/2 ab.
+
+<p>
+
+(2) exp(- t<sup>2</sup>/2) = 1 - t<sup>2</sup>/2 + t<sup>4</sup>/2&middot;4 - t<sup>6</sup>2&middot;4&middot;6 + ... . We notice that this is similar to g(t). In fact g(t) = exp( t<sup>2</sup>/2). So the required relation is f(x) = exp( x<sup>2</sup>/2) &int;<sub>0</sub><sup>x</sup> exp( -t<sup>2</sup>/2) dt. Differentiating gives f '(x) = x f(x) + 1. All that is just motivation. 
+
+<p>
+
+We start from the series for f(x). By the ratio test it is absolutely convergent, so we may differentiate term by term to get f '(x) = 1 + x<sup>2</sup>/1 + x<sup>4</sup>/1&middot;3 + x<sup>6</sup>/1&middot;3&middot;5 + ... = x f(x) + 1. Multiplying this by exp(-x<sup>2</sup>/2) we get exp(-x<sup>2</sup>/2) f '(x) - x exp(-x<sup>2</sup>/2) f(x) = exp(-x<sup>2</sup>/2). Integrating and using f(0) = 0, we get exp(-x<sup>2</sup>/2) f(x) = &int;<sub>0</sub><sup>x</sup> exp( -t<sup>2</sup>/2) dt or f(x)/g(x) = &int;<sub>0</sub><sup>x</sup> exp( -t<sup>2</sup>/2) dt.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn50.html">10th Putnam 1950</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

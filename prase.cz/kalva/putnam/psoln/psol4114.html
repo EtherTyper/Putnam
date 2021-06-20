@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>4th Putnam 1941/B7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>4th Putnam 1941</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B7</b><br>
+
+<p>
+
+<i>Do either (1) or (2):</i>
+
+<p>(1) &nbsp; f is a real-valued function defined on the reals with a continuous second derivative and satisfies f(x + y) f(x - y) = f(x)<sup>2</sup> + f(y)<sup>2</sup> - 1 for all x, y. Show that for some constant k we have f ''(x) = &plusmn; k<sup>2</sup> f(x). Deduce that f(x) is one of &plusmn;cos kx, &plusmn;cosh kx.
+
+<p>(2) &nbsp; a<sub>i</sub> and b<sub>i</sub> are constants. Let A be the (n+1) x (n+1) matrix A<sub>ij</sub>, defined as follows: A<sub>i1</sub> = 1; A<sub>1j</sub> = x<sup>j-1</sup> for j &le; n; A<sub>1 (n+1)</sub> = p(x); A<sub>ij</sub> = a<sub>i-1</sub><sup>j-1</sup> for i &gt; 1, j &le; n; A<sub>i (n+1)</sub> = b<sub>i-1</sub> for i &gt 1. We use the identity det A = 0 to define the polynomial p(x). Now given any polynomial f(x), replace b<sub>i</sub> by f(b<sub>i</sub>) and p(x) by q(x), so that det A = 0 now defines a polynomial q(x). Prove that f( p(x) ) is a multiple of &prodc; (x - a<sub>i</sub>) plus q(x).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(1) Putting y = 0 gives f(0)<sup>2</sup> = 1, so f(0) = &plusmn;1. Differentiating wrt y gives f '(x+y) f(x-y) - f(x+y) f '(x-y) = 2 f(y) f '(y). Putting y = 0 gives f '(0) = 0. Differentiating wrt x gives f ''(x+y) f(x-y) = f(x+y) f ''(x-y). Putting x = y = z/2 gives f ''(z) = h f(z), where h = &plusmn; f ''(0). If h is positive, we may put h = k<sup>2</sup> and integrate, using f(0) = &plusmn;1, f '(0) = 0 to get f(x) = &plusmn; cos kx. If h is negative, we may put h = - k<sup>2</sup> and integrate to get f(x) = &plusmn; cosh kx.
+
+<p>
+
+(2)
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn41.html">4th Putnam 1941</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<TITLE>41st IMO shortlist 2000/C5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>41st IMO 2000 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C5</b><br>
+<p>
+n rectangles are drawn in the plane. Each rectangle has parallel sides and the sides of distinct rectangles lie on distinct lines. The rectangles divide the plane into a number of regions. For each region R let v(R) be the number of vertices. Take the sum &sum; v(R) over the regions which have one or more vertices of the rectangles in their boundary. Show that this sum is less than 40n. 
+<p>
+<img src="../diag00c5.bmp">
+<p>
+For example, for the two rectangles illustrated the sum is 28 &lt; 80. Note that the unbounded outer region has 12 vertices, and we do not count the central region because it does not contain any vertices of the two rectangles.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+We can classify vertices as <i>convex</i> if the angle inside the region at the vertex is 90<sup>o</sup> and <i>concave</i> if it is 270<sup>o</sup>. Note that a concave vertex must be a vertex of one of the rectangles. A region has a unique <i>outer boundary</i> and possibly one or more <i>inner boundaries</i>, meaning closed loops which form part of the boundary of the region but whose inside does not form part of the region. For example, the shaded region below has two inner boundaries. 
+<p>
+<img src="dia00c5b.bmp">
+<p> 
+Let a <i>pair</i> (R, P) be a region R and one of its boundaries P. The vertices of the pair are the vertices on P. The number of convex vertices of a pair less the number of concave vertices of the pair is 4 for an outer boundary and -4 for an inner boundary. To see that, lay an arrow along a side of an outer boundary pointing in the anticlockwise direction and move it anticlockwise in a complete circuit of the boundary. It rotates 90<sup>o</sup> anticlockwise at a convex vertex and 90<sup>o</sup> clockwise at a concave vertex, but it must rotate a total of 360<sup>o</sup> anticlockwise in a complete circuit. Similarly for an inner boundary (but the convex and concave vertices are interchanged). 
+<p>
+Let N<sub>0</sub> be the number of pairs (R, P) with P an outer boundary which contains at least one of the vertices of the rectangles, and let N<sub>1</sub> be the number of pairs (R, P) with P an inner boundary which contains at least one of the vertices of the rectangles. The rectangles have a total of 4n vertices and each vertex is in at most two outer boundaries. So N<sub>0</sub> &lt;= 8n. On the other hand the unbounded region has an inner boundary which contains at least one of the vertices of the rectangles. So N<sub>1</sub> &ge; 1.
+<p>
+Let B be the set of boundary pairs (R, P) where P contains at least one of the vertices of the rectangles. If b &isin; B, let x<sub>b</sub> be the number of convex vertices in P and v<sub>b</sub> be the number of concave vertices in P. Then, using the results above, the total number of vertices of regions which have at least one of the rectangles' vertices in their boundaries is &sum;<sub>B</sub> (x<sub>b</sub> + v<sub>b</sub>) = &isin;<sub>B</sub> 2v<sub>b</sub> + &isin; (x<sub>b</sub> - v<sub>b</sub>) = 8n + 4N<sub>0</sub> - 4N<sub>1</sub> &le; 8n + 4.8n - 4 &lt; 40n.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh00.html">41st IMO shortlist 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

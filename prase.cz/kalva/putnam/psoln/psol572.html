@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>17th Putnam 1957/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>17th Putnam 1957</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+k is a real number greater than 1. A uniform wire consists of the curve y = e<sup>x</sup> between x = 0 and x = k, and the horizontal line y = e<sup>k</sup> between x = k - 1 and x = k. The wire is suspended from (k - 1, e<sup>k</sup>) and a horizontal force applied at the other end, (0, 1) to keep it in equilibrium. Show that the force is directed towards increasing x.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If d is the density per unit length, then the total mass of wire is d(1 + &int;<sub>0</sub><sup>k</sup> &radic;(1 + e<sup>2x</sup>) dx ). The moment about the y-axis is d(k - 1/2) + d &int;<sub>0</sub><sup>k</sup> x &radic;(1 + e<sup>2x</sup>) dx. We require that the x-coordinate of the centre of mass exceeds k - 1. In other words, k - 1/2 + &int;<sub>0</sub><sup>k</sup> x &radic;(1 + e<sup>2x</sup>) dx  &gt; (k - 1) ( 1 + &int;<sub>0</sub><sup>k</sup> &radic;(1 + e<sup>2x</sup>) dx ).
+
+<p>
+
+Set f(k) = &int;<sub>0</sub><sup>k</sup> x &radic;(1 + e<sup>2x</sup>) dx - (k - 1) &int;<sub>0</sub><sup>k</sup> &radic;(1 + e<sup>2x</sup>) dx. Then we require f(k) &gt; -1/2 for all k &gt; 1. Clearly f(0) = 0. We try differentiating, and get f '(k) = &radic;(1 + e<sup>2k</sup>) - &int;<sub>0</sub><sup>k</sup> &radic;(1 + e<sup>2x</sup>)dx.
+
+<p>
+
+One possibility is to evaluate the integral explicitly (substitute y = e<sup>2x</sup>, then z<sup>2</sup> = 1 + y, we end up with a messy but doable integral). But it is maybe easier to approximate. We have 1 + e<sup>2x</sup> &lt; 1 + e<sup>2x</sup> + e<sup>-2x</sup>/4 = (e<sup>x</sup> + e<sup>-x</sup>/2)<sup>2</sup>. So &int;<sub>0</sub><sup>k</sup> &radic;(1 + e<sup>2x</sup>)dx &lt; &int;<sub>0</sub><sup>k</sup> (e<sup>x</sup> + e<sup>-x</sup>/2) dx = (e<sup>x</sup> - e<sup>-x</sup>/2) |<sub>0</sub><sup>k</sup> = e<sup>k</sup> - e<sup>-k</sup>/2 - 1/2 &lt; e<sup>k</sup> &lt; &radic;(1 + e<sup>2k</sup>). So f '(k) &gt; 0. Hence f(k) &gt; f(0) &gt; 0 &gt; -1/2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn57.html">17th Putnam 1957</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

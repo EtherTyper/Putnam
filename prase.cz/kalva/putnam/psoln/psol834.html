@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1983/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>44th Putnam 1983</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Prove that for m = 5 (mod 6), mC2 - mC5 + mC8 - mC11 + ... - mC(m-6) + mC(m-3) &ne; 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (-3)<sup>(m-1)/2</sup> + 1.
+
+<p>
+
+Let m = 6n+5. We have x(1 - x)<sup>m</sup> = mC0 x - mC1 x<sup>2</sup> + mC3 x<sup>3</sup> - ... - mCm x<sup>m+1</sup> (*). Let &omega; be a complex cube root of 1. Substitute x = 1, &omega; and &omega;<sup>2</sup> in (*) and add. The terms in x<sup>3r+1</sup> and x<sup>3r+2</sup> give zero since 1 + &omega; + &omega;<sup>2</sup> = 0. So we get mC2 - mC5 + ... - mCm = ( &omega;(1 - &omega;)<sup>m</sup> + &omega;<sup>2</sup>(1 - &omega;<sup>2</sup>)<sup>m</sup> )/3.
+
+<p>
+
+Now (1 - &omega;<sup>2</sup>)<sup>m</sup> = (1 - &omega;)<sup>m</sup>(1 + &omega;)<sup>m</sup> = (1 - &omega;)<sup>m</sup>(-&omega;<sup>2</sup>)<sup>m</sup> = - &omega;(1 - &omega;)<sup>m</sup> (since m = 5 mod 6). So mC2 - mC5 + ... - mCm = ( &omega;(1 - &omega;)<sup>m</sup> - (1 - &omega;)<sup>m</sup>)/3 = - 1/3 (1 - &omega;)<sup>m+1</sup>. But (1 - &omega;)<sup>2</sup> = 1 - 2&omega; + &omega;<sup>2</sup> = - 3&omega;. So - 1/3 (1 - &omega;)<sup>m+1</sup> = (-3)<sup>(m-1)/2</sup>.
+
+<p>
+
+The series in the question is missing the final term - mCm, so it sums to 1 + (-3)<sup>(m-1)/2</sup>, which is clearly never zero for m &ge; 5.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn83.html">44th Putnam 1983</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

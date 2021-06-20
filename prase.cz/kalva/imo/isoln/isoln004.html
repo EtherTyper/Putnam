@@ -1,0 +1,97 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 2000/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b>
+
+<p>100 cards are numbered 1 to 100 (each card different) and placed in 3 boxes (at least one card in each box). How many ways can this be done so that if two boxes are selected and a card is taken from each, then the knowledge of their sum alone is always sufficient to identify the third box?
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>12. Place 1, 2, 3 in different boxes (6 possibilities) and then place n in the same box as its residue mod 3. Or place 1 and 100 in different boxes and 2 - 99 in the third box (6 possibilities).
+
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p><i>An elegant solution communicated (in outline) by both Mohd Suhaimi Ramly and Fokko J van de Bult is as follows:</i>
+
+<p>
+
+Let H<sub>n</sub> be the corresponding result that for cards numbered 1 to n the only solutions are by residue mod 3, or 1 and n in separate boxes and 2 to n - 1 in the third box. It is easy to check that they <i>are</i> solutions. H<sub>n</sub> is the assertion that there are no others. H<sub>3</sub> is obviously true (although the two cases coincide). We now use induction on n. So suppose that the result is true for n and consider the case n + 1.
+
+<p>
+
+Suppose n + 1 is alone in its box. If 1 is not also alone, then let N be the sum of the largest cards in each of the boxes not containing n + 1. Since n + 2 &le; N &le; n + (n - 1) = 2n - 1, we can achieve the same sum N as from a different pair of boxes as (n + 1) + (N - n - 1). Contradiction. So 1 must be alone and we have one of the solutions envisaged in H<sub>n+1</sub>.
+
+<p>
+
+If n + 1 is not alone, then if we remove it, we must have a solution for n. But that solution cannot be the n, 1, 2 to n - 1 solution. For we can easily check that none of the three boxes will then accomodate n + 1. So it must be the mod 3 solution. We can easily check that in this case n + 1 must go in the box with matching residue, which makes the (n + 1) solution the other solution envisaged by H<sub>n+1</sub>. That completes the induction.
+
+<p>
+
+<i>My much more plodding solution (which I was quite pleased with until I saw the more elegant solution above) follows. It took about half-an-hour and shows the kind of kludge one is likely to come up with under time pressure in an exam!</i>
+
+<p>
+
+With a suitable labeling of the boxes as A, B, C, there are 4 cases to consider:
+
+<p>Case 1: A contains 1; B contains 2; C contains 3
+
+<br>Case 2: A contains 1,2
+
+<br>Case 3: A contains 1, 3; B contains 2
+
+<br>Case 4: A contains 1; B contains 2, 3.
+
+<p>We show that Cases 1 and 4 each yield just one possible arrangement and Cases 2 and 3 none.
+
+<p>In Case 1, it is an easy induction that n must be placed in the same box as its residue (in other words numbers with residue 1 mod 3 go into A, numbers with residue 2 go into B, and numbers with residue 0 go into C). For (n + 1) + (n - 2) = n + (n - 1). Hence n + 1 must go in the same box as n - 2 (if they were in different boxes, then we would have two pairs from different pairs of boxes with the same sum). It is also clear that this is a possible arrangement. Given the sum of two numbers from different boxes, take its residue mod 3. A residue of 0 indicates that the third (unused) box was C, a residue of 1 indicates that the third box was A, and a residue of 2 indicates that the third box was B. Note that this unique arrangement gives 6 ways for the question, because there are 6 ways of arranging 1, 2 and 3 in the given boxes.
+
+<p>In Case 2, let n be the smallest number not in box A. Suppose it is in box B. Let m be the smallest number in the third box, C. m - 1 cannot be in C. If it is in A, then m + (n - 1) = (m - 1) + n. Contradiction (m is in C, n - 1 is in A, so that pair identifies B as the third box, but m - 1 is in  A and n is in B, identifying C). So m - 1 must be in B. But (m - 1) + 2 = m + 1. Contradiction. So Case 2 is not possible.
+
+<p>In Case 3, let n be the smallest number in box C, so n - 1 must be in A or B. If n - 1 is in A, then (n - 1) + 2 = n + 2. Contradiction (a sum of numbers in A and B equals a sum from C and A). If n - 1 is in B, then (n - 1) + 3 = n + 2. Contradiction ( a sum from B and A equals a sum from C and B). So Case 3 is not possible.
+
+<p>In Case 4, let n be the smallest number in box C. n - 1 cannot be in A, or (n - 1) + 2 = 3 + n (pair from A, B with same sum as pair from B, C), so n - 1 must be in B. Now n + 1 cannot be in A (or (n + 1) + 2 = 3 + n), or in B or C (or 1 + (n + 1) = 2 + n). So n + 1 cannot exist and hence n = 100. It is now an easy induction that all of 4, 5, ... 98 must be in B. For given that m is in B, if m + 1 were in A, we would have 100 + m = 99 + (m + 1). But this arrangement (1 in A, 2 - 99 in B, 100 in C) is certainly possible: sums 3 - 100 identify C as the third box, sum 101 identifies B as the third box, and sums 102-199 identify A as the third box. Finally, as in Case 1, this unique arrangement corresponds to 6 ways of arranging the cards in the given boxes.
+
+<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo00.html">41st IMO 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Aug 2000
+
+<br>Last corrected/updated 30 Aug 2000
+
+</BODY>
+
+
+
+</HTML>
+

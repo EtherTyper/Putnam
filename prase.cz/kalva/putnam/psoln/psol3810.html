@@ -1,0 +1,74 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>1st Putnam 1938/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>1st Putnam 1938</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+A horizontal disk diameter 3 inches rotates once every 15 seconds. An insect starts at the southernmost point of the disk facing due north. Always facing due north, it crawls over the disk at 1 inch per second. Where does it again reach the edge of the disk?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Answer: at the northernmost point of the disk.
+
+<p>
+
+Take polar coordinates with r = 3/2, &theta; = 0 at the start. The equations of motion are dr/dt = - cos &theta;, r d&theta;/dt = 2r&pi;/15 + sin &theta;. 
+
+<p>
+
+Differentiating the second equation: (dr/dt) (d&theta;/dt) + r d<sup>2</sup>&theta;/dt<sup>2</sup> = (2&pi;/15) dr/dt + (d&theta;/dt) cos &theta;. Substituting from the first equation, 2 (dr/dt) (d&theta;/dt) + r d<sup>2</sup>&theta;/dt<sup>2</sup> = (2&pi;/15) dr/dt. Multiplying through by r and integrating wrt t, we get r<sup>2</sup> d&theta;/dt = (&pi;/15) r<sup>2</sup> + C, for some constant C. At t = 0, r = 3/2 and d&theta;/dt = 2&pi;/15, so C = 3&pi;/20. Thus r<sup>2</sup> d&theta;/dt = (&pi;/15) r<sup>2</sup> + 3&pi;/20. But the original equation gives r<sup>2</sup> d&theta;/dt = 2r<sup>2</sup>&pi;/15 + r sin &theta;. Hence &pi; r<sup>2</sup>/15 + r sin &theta; = 3&pi;/20 (**). Hence if r = &plusmn;3/2, we have sin &theta; = 0 and hence &theta; = 0 or &pi;.
+
+<p>
+
+That is not quite enough to show that the insect reaches the edge again at &theta; = &pi;. But we can treat (**) as a quadratic in r and solve to get r<sup>2</sup> = (sin<sup>2</sup>&theta; + (&pi;/5)<sup>2</sup>)<sup>1/2</sup> - sin &theta;. This shows that r first decreases, but then increases again to &plusmn;1 at &theta; = &pi;. We can rule out -1 because r<sup>2</sup> is always positive, and r starts positive. So by continuity it must always remain positive. Thus the insect next reaches the edge at the northenmost point of the disk.
+
+<p>
+
+<i>Many thanks to Melih Ozlem for pointing out an error in the original solution.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn38.html">1st Putnam 1938</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+<br>Last corrected/updated 9 July 03
+
+</BODY>
+
+
+
+</HTML>
+

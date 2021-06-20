@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1985/14 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>26th IMO 1985 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 14</b><br>
+<p>
+At time t = 0 a point starts to move clockwise around a regular n-gon from each vertex. Each of the n points moves at constant speed. At time T all the points reach vertex A simultaneously. Show that they will never all be simultaneously at any other vertex. Can they be together again at vertex A?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<i>Solution by Demetres Christofides</i>
+<p>
+Assume the sides of the n-gon are length 1. So in time T each point moves an integral distance. So in time nT each point returns to its original position. Suppose that T' is the first time (after the start) at which all points are at vertices. If all the points are at vertices at time T", then we may put T" = kT' + t, for some positive integer k and some 0 &le; t &lt; T'. But then each point travels an integral distance in time t &lt; T', so we must have t = 0. Hence, in particular, T = mT' for some positive integer m. Clearly m &le; n.
+<p>
+Label the points P<sub>0</sub> = A, P<sub>1</sub>, P<sub>2</sub>, ... , P<sub>n-1</sub> moving anticlockwise around the n-gon. Suppose that at time T', point P<sub>i</sub> has moved a distance a<sub>i</sub> mod n. Then we have m a<sub>i</sub> = i mod n. In particular, m a<sub>1</sub> = 1 mod n, so m must be coprime to n. But m a<sub>0</sub> = 0 mod n, so a<sub>0</sub> = 0 mod n. Hence at any time T" at which all the points are at vertices, P<sub>0</sub> is at vertex A, so they can never be together at some vertex distinct from A.
+<p>
+The motion is periodic with period nT, so they are regularly together at vertex A.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh85.html">26th IMO shortlist 1985</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Sep 2002
+</BODY>
+
+</HTML>
+

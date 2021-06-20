@@ -1,0 +1,70 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1992/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1992</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+Consider 9 points in space, no 4 coplanar. Each pair of points is joined by a line segment which is colored either blue or red or left uncolored. Find the smallest value of n such that whenever exactly n edges are colored, the set of colored edges necessarily contains a triangle all of whose edges have the same color.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+<i>by Gerhard W&ouml;ginger</i>
+
+<p>
+
+We show that for n = 32 we can find a coloring without a monochrome triangle. Take two squares R<sub>1</sub>R<sub>2</sub>R<sub>3</sub>R<sub>4</sub> and B<sub>1</sub>B<sub>2</sub>B<sub>3</sub>B<sub>4</sub>. Leave the diagonals of each square uncolored, color the remaining edges of R red and the remaining edges of B blue. Color blue all the edges from the ninth point X to the red square, and red all the edges from X to the blue square. Color R<sub>i</sub>B<sub>j</sub> red if i and j have the same parity and blue otherwise.
+
+<p>
+Clearly X is not the vertex of a monochrome square, because if XY and XZ are the same color then, YZ is either uncolored or the opposite color. There is no triangle within the red square or the blue square, and hence no monochrome triangle. It remains to consider triangles of the form R<sub>i</sub>R<sub>j</sub>B<sub>k</sub> and B<sub>i</sub>B<sub>j</sub>R<sub>k</sub>. But if i and j have the same parity, then R<sub>i</sub>R<sub>j</sub> is uncolored (and similarly B<sub>i</sub>B<sub>j</sub>), whereas if they have opposite parity, then R<sub>i</sub>B<sub>k</sub> and R<sub>j</sub>B<sub>k</sub> have opposite colors (and similarly B<sub>i</sub>R<sub>k</sub> and B<sub>j</sub>R<sub>k</sub>).
+
+<p>
+It remains to show that for n = 33 we can always find a monochrome triangle. There are three uncolored edges. Take a point on each of the uncolored edges. The edges between the remaining 6 points must all be colored. Take one of these, X. At least 3 of the 5 edges to X, say XA, XB, XC must be the same color (say red). If AB is also red, then XAB is monochrome. Similarly, for BC and CA. But if AB, BC and CA are all blue, then ABC is monochrome.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo92.html">33th IMO 1992</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+2 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,87 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1985/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>46th Putnam 1985</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b>
+
+<p>
+
+Let f<sub>n</sub>(x) = cos x cos 2x ... cos nx. For which n in the range 1, 2, ... , 10 is the integral from 0 to 2&pi; of f<sub>n</sub>(x) non-zero?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Answer: 3, 4, 7, 8.
+
+<p>
+
+Note first that since cos x = cos(2&pi; - x), the integral is twice the integral over 0 to &pi;, so it is sufficient to consider the smaller range.
+
+<p>
+
+cos(n&pi;/2 - x) = (-1)<sup>n</sup> cos(n&pi;/2 + x). So cos(n&pi;/2 - x)) = cos(n&pi;/2 + x) for n even, and - cos(n&pi;/2 + x) for n odd. Hence for n = 1, 2, 5, 6, 9, 10, f<sub>n</sub>(&pi;/2 - x) = - f<sub>n</sub>(&pi;/2 + x) and so the integral over 0 to &pi; is zero. It remains to consider the cases n = 3, 4, 7, 8.
+
+<p>
+
+I cannot see a neat way of proving them non-zero. What follows is an inelegant  proof using cos a cos b = (cos(a+b) + cos(a-b) )/2 repeatedly. So cos x cos 3x = 1/2 cos 4x + 1/2 cos 2x. So f<sub>3</sub>(x) = 1/2 cos<sup>2</sup>2x + 1/2 cos 2x cos 4x = 1/2 cos<sup>2</sup>2x + 1/4 cos 2x + 1/4 cos 6x. The integral of the first term is positive and the integrals of the second and third terms are zero. So f<sub>3</sub> has non-zero integral.
+
+<p>
+
+Similarly, f<sub>4</sub>(x) = (cos x cos 2x) (cos 3x cos 4x) = 1/4 (cos x + cos 3x)(cos x + cos 7x) = 1/4 cos<sup>2</sup>x + 1/8 (cos 2x + cos 4x + cos 6x + cos 8x + cos 4x + cos 10x). All terms except the first integrate to zero and the first has a non-zero integral. Hence f<sub>4</sub> has non-zero integral.
+
+<p>
+
+Similarly, f<sub>7</sub>(x) = cos x (cos 2x cos 3x) (cos 4x cos 5x) (cos 6x cos 7x) = 1/8 cos x (cos x + cos 5x)(cos x + cos 9x)(cos x + cos 13x) = 1/8 cos x( cos<sup>2</sup>x + cos x cos 5x + cos x cos 9x + cos 5x cos 9x)(cos x + cos 13x) = 1/16 cos x (1 + cos 2x + cos 4x + cos 6x + cos 8x + cos 10x + cos 4x + cos 14x)(cos x + cos 13x) = 1/32 cos x (cos x + cos x + cos 3x + 2cos 3x + 2cos 5x + cos 5x + cos 7x + cos 7x + cos 9x + cos 9x + cos 11x + cos 13x + cos 15x + cos 11x + cos 15x + 2 cos 9x + 2 cos 17x + cos 7x + cos 19x + cos 5x + cos 21x + cos 3x + cos 23x + cos x + cos 27x) = 1/32 ( 3cos<sup>2</sup>x + other terms), where the other terms all have the form cos ax cox bx with a and b unequal and hence integrate to zero. So f<sub>7</sub> has non-zero integral.
+
+<p>
+
+Finally, f<sub>8</sub>(x) = 1/16 (cos x + cos 3x)(cos x + cos 7x)(cos x + cos 11x)(cos x + cos 15x) = 1/32 (1 + 2 cos2x + 2cos 4x + cos 6x + cos 8x + cos 10x)(cos x + cos 11x)(cos x + cos 15x) = (4 cos x + 5 cos 3x + 4 cos 5x + 4 cos 7x + 4 cos 9x + 2 cos 11x + 2 cos 13x + 2 cos 15x + cos 17x + cos 19x + cos 21x)(cos x + cos 15x) = 1/64 (6 + other terms). So f<sub>8</sub> has non-zero integral.
+<p>
+<i>A neater approach is due to Xiannan Li</i>
+<p>
+First establish by induction that the sum over all 2<sup>n</sup> terms cos(+-A+-B+-C + ... ), where we take every possible sign combination, is just 2<sup>n</sup> cos A cos B ... .Now observe that the integral of cos mx is zero if m is non-zero and 2&pi; if m is zero. Thus the integral given is non-zero iff there is some sign combination for which 1 +- 2 +- 3 +- ... +- n = 0. If n = 4k, we have (1 + 4k) - (2 + 4k-1) + ... - (2k + 2k+1) = 0. If n = 4k+3, we have (1 - 2 + 3) + (4 + 4k+3) - (5 + 4k+2) + ... - (2k+1 + 2k+2) = 0. If n = 1 or 2 mod 4, then 1 + 2 + ... + n = n(n+1)/2 is odd, so there cannot be a sign combination. Thus the integral is non-zero iff n = 0 or 3 mod 4.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn85.html">46th Putnam 1985</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+<br>Last updated 4 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

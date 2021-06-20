@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1962/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>23rd Putnam 1962</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Show that for n &gt; 1, (3n + 1)/(2n + 2) &lt; &sum;<sub>1</sub><sup>n</sup> r<sup>n</sup>/n<sup>n</sup> &lt; 2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Suppose m &lt;= n, then expanding by the binomial theorem, m<sup>n</sup> = ( (m-1) + 1)<sup>n</sup> = (m-1)<sup>n</sup> + n (m-1)<sup>n-1</sup> + further positive terms &gt; (m-1)<sup>n</sup> + n (m-1)<sup>n-1</sup> &gt; 2 (m-1)<sup>n</sup>. Hence n<sup>n</sup> &gt; (n-1)<sup>n</sup> + (n-1)<sup>n</sup> &gt; (n-1)<sup>n</sup> + (n-2)<sup>n</sup> + (n-2)<sup>n</sup> &gt; ... &gt; (n-1)<sup>n</sup> + (n-2)<sup>n</sup> + ... + 1<sup>n</sup>. So 2 n<sup>n</sup> &gt; &sum;<sub>1</sub><sup>n</sup> r<sup>n</sup>, which is one of the two required inequalities.
+
+<p>
+
+The other is slightly harder. We approximate the integral of f(x) = x<sup>n</sup> between 0 and 1. We have to do slightly better than the usual Riemann sums. We also take into account the small triangles. The curve has increasing gradient, so the area under the curve between (r-1)/n and r/n is less than the area under the chord joining ( (r-1)/n, f( (r-1)/n ) ) and (r/n, f(r/n) ). Summing those areas gives: (1/n) &sum;<sub>1</sub><sup>n</sup> (r/n)<sup>n</sup> - (1/2n) &sum;<sub>1</sub><sup>n</sup> ( (r/n)<sup>n</sup> - ( (r-1)/n )<sup>n</sup> = (1/n) K - (1/2n) (n/n)<sup>n</sup>, where K = &sum;<sub>1</sub><sup>n</sup> (r/n)<sup>n</sup>. The integral is just 1/(n+1), so we have: 1/(n+1) &lt; K/n - 1/(2n), or K &gt; n/(n+1) + 1/2 = (3n+1)/(2n+2).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn62.html">23rd Putnam 1962</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

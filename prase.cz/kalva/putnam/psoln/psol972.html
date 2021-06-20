@@ -1,0 +1,81 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1997/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+Players 1, 2, ... , n are seated in a circle. Each has one penny. Starting with player 1 passing one penny to player 2, players alternately pass one or two pennies to the next player still seated. A player leaves as soon as he runs out of pennies. So player 1 leaves after move 1, and player 2 leaves after move 2. Find an infinite set of numbers n for which some player ends up with all n pennies.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: for 2<sup>n</sup> + 1 or 2<sup>n</sup> + 2 players (where n &ge; 0) one player ends up with all the coins. In all other cases the game does not terminate.
+
+<p><i>Tough.</i>
+
+<p>
+We give a complete solution for the game, although to solve the problem one need only consider one of the cases 2<sup>n</sup> + 1 or 2<sup>n</sup> + 2.
+
+<p>
+It is convenient to deal separately with odd and even numbers of players. Suppose first that the number is even, so we may write it as 2<sup>m</sup>(2r + 1) + 2, where m &ge; 1 and r &ge; 0.
+
+<p>
+Call a <i>round</i> a set of moves in which each remaining player plays once, starting with the lowest numbered remaining player (the <i>low player</i>). Thus the first round always leaves the (new) low player with 3 or 4 coins and the other remaining players with 2 each. Call an <i>eliminating round</i> a round in which one or more players drop out.
+
+<p>
+The kth eliminating round, for k &le; m, leaves 2<sup>m-k</sup>(2r + 1) players, the low player with 2<sup>k</sup> + 2 coins, and the others with 2<sup>k</sup> each, and the low player about to pass 1 coin. This is an easy induction. It is easily verified for k = 1. Assume it is true for k-1. The number of players is even, so until the next elimination any given player always passes and receives the same number of coins each round. The players in even positions receive 1 coin and pass 2, so they lose 1 coin in each round. They are thus all eliminated together after 2<sup>k</sup> rounds. Similarly, the players in odd positions (including the low player) gain a coin each round, a total gain of 2<sup>k</sup>. This establishes the result for k.
+
+<p>
+So after m eliminating rounds there are (2r + 1) players, the low player with 2<sup>m</sup> + 2 coins, the others with 2<sup>m</sup> each, and the low player about to pass 1 coin. Of course, if r = 0, then a single player has all the coins. If not, then we show that play continues indefinitely. After the next round the sequence of coins is 2<sup>m </sup> + 2, 2<sup>m</sup> - 1, 2<sup>m</sup> + 1, 2<sup>m</sup> - 1, ... , 2<sup>m</sup> + 1, and the low player is about to pass 1. After the next round the situation is just as it was after the mth eliminating round, so the game now cycles indefinitely.
+
+<p>
+For an odd number of players, it is more convenient to regard the round as ending one play earlier with the highest numbered remaining player (the <i>high player</i>) about to play. Thus in the first round the high player does not play. In subsequent rounds each player plays once. We can write the initial number of players as 2<sup>m</sup>(2r + 1) + 1, with m &ge; 1 and r &ge; 0. 
+
+<p>
+Arguing as before, the kth eliminating round for k &le; m leaves 2<sup>m-k</sup>(2r + 1) players, the high player with 2<sup>k</sup> + 1 coins and about to pass 1, and the others with 2<sup>k</sup> each. So after the mth eliminating round, there are (2r + 1) players, the high player with 2<sup>m</sup> + 1, the others with 2<sup>m</sup> each. Again if r = 0, then one player has all the coins and the game terminates. If not, then after the next round the sequence of coins is 2<sup>m</sup> - 1, 2<sup>m</sup> + 1, 2<sup>m</sup> - 1, ... , 2<sup>m</sup> + 1, 2<sup>m</sup> + 1, with the high player about to pass 2. After the next round the situtation is just as it was after the mth eliminating round, so the game now cycles indefinitely.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn97.html">Putnam 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

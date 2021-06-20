@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1972/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>33rd Putnam 1972</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+Show that we cannot have 4 binomial coefficients nCm, nC(m+1), nC(m+2), nC(m+3) with n, m &gt; 0 (and m + 3 &le; n) in arithmetic progression.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Note that we can have three, for example: 7C1 = 7, 7C2 = 21, 7C3 = 35.
+
+<p>
+
+a, b, c are in arithmetic progression iff 2b = a + c. We have nCm = (m+1)/(n - m) nC(m+1), so 2 nCm+1 = nCm + nC(m+2) iff 2 = (n - m - 1)/(m + 2) + (m + 1)/(n - m). Simplifying, this becomes: m<sup>2</sup> - (n - 2)m + (n<sup>2</sup> - 5n + 2)/4 = 0. For any given n, this is a quadratic in m, so it has at most two solutions. If we have 4 consecutive coefficients in arithmetic progression, then the two solutions must differ by 1. If they are m<sub>1</sub> and m<sub>2</sub>, then (m<sub>1</sub> - m<sub>2</sub>) = 1 implies (m<sub>1</sub> - m<sub>2</sub>)<sup>2</sup> = 1 and hence (m<sub>1</sub> + m<sub>2</sub>)<sup>2</sup> - 4m<sub>1</sub>m<sub>2</sub> = 1. So (n - 2)<sup>2</sup> - (n<sup>2</sup> - 5n + 2) = 1, and hence n = -1. Hence for n &gt; 0 we cannot have four coefficients in arithmetic progression.
+
+<p>
+
+Alternatively, because nCm = nC(n-m), m and m+1 must be centrally placed (in other words n = 2m+1). Otherwise we would have four distinct solutions to the quadratic, which is impossible. But (2m+1)C(m-1), (2m+1)Cm, (2m+1)C(m+1), (2m+1)C(m+2) cannot be a solution because both (2m+1)C(m-1) and (2m+1)C(m+2) are less than (2m+1)Cm.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn72.html">33rd Putnam 1972</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,47 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1995/N5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>36th IMO 1995 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N5</b><br>
+<p>
+A graph has 12k points. Each point has 3k+6 edges. For any two points the number of points joined to both is the same. Find k.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: k = 3.
+<p>
+Let n be the number of points joined to two given points. [We are given that n is independent of the points chosen.] Take any point A of the graph. We count the number N of pairs (B, C), where the point B is joined to A, the point C is not joined to A, and the points B and C are joined.
+<p>
+For any point C not joined to A, there are just n points joined to C and A. There are 3k+6 points joined to A and hence (12k - 1 - (3k+6) ) = 9k-7 points not joined to A. So N = (9k-7)n.
+<p>
+Now given a point B joined to A, it is joined to 3k+5 other points, n of which are also joined to A, so it is joined to (3k+5-n) points which are not joined to A. So N = (3k+6)(3k+5-n).
+<p>
+Thus we have: 9k<sup>2</sup>  + 33k - 12kn + 30 + n = 0. Hence n = 3m for some integer m and m = (3k<sup>2</sup> + 11k + 10)/(12k - 1), so 4m = k + 3 + (9k+43)/(12k-1). If k &ge; 15, then 0 &lt; (9k+43)/(12k-1) &lt; 1, which would make m non-integral. It is now easy to check that (9k+43)/(12k-1) = 52/11, 61/23, 2, 79/47, 88/59, 97/71, 106/83, 23/19, 124/107, 19/17, 142/131, 151/143, 32/31, 169/167 for k = 1, 2, ... , 14. So the only solution in k = 3.
+<p>
+We now have to demonstrate explicitly that there is such a graph for k = 3. Consider:
+<pre>
+1  2  3  4  5  6
+6  1  2  3  4  5  
+5  6  1  2  3  4
+4  5  6  1  2  3
+3  4  5  6  1  2
+2  3  4  5  6  1
+</pre>
+Each digit represents a point of the graph. Join each point to those in the same row or column and to those with the same digit. Each point is joined to 5 points in the same row, 5 in the same column and to 5 others, a total of 15 = 3k+6. It remains to show that given any two points P and Q, there are just 6 points joined to both. If P and Q are in the same row, then they are both joined to: the 4 other points in the row, the point in the same column as P with the same digit as Q, and the point in the same column as Q with the same digit as P - a total of 6. Similarly, if P and Q are in the same column. If P and Q have the same digit, then they are both joined to: the 4 other points with the same digit, the point in the same row as P and the same column as Q, and the point in the same column as P and the same row as Q. Finally, suppose P and Q are in different rows and columns and have different digits. Then the points joined to both are: (1) same row as P and same column as Q, (2) same row as P and same digit as Q, (3) same column as P and same row as Q, (4) same column as P and same digit as Q, (5) same digit as P and same row as Q, (6) same digit as P and same column as Q.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh95.html">36th IMO shortlist 1995</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+8 Oct 2002
+</BODY>
+
+</HTML>
+

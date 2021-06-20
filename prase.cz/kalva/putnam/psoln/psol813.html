@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1981/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>42nd Putnam 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Evaluate: lim<sub>k&rarr;&infin;</sub> e<sup>-k</sup> &int;<sub>R</sub> (e<sup>x</sup> - e<sup>y</sup>) / (x - y) dx dy, where R is the rectangle 0 &le; x, y, &le; k.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: It diverges to plus infinity.
+
+<p>
+
+We use L'H&ocirc;pital's rule. Let f(k) = &int;<sub>R</sub> (e<sup>x</sup> - e<sup>y</sup>) / (x - y) dx dy, then the limit is the same as the limit of f'(k)/e<sup>k</sup>. To work out f'(k), note that f(k + &delta;k) - f(k) = &int;<sub>&delta;R</sub> (e<sup>x</sup> - e<sup>y</sup>) / (x - y) dx dy, where &delta;R is the strip from x = 0 to x = k at y = k, width &delta;k and the strip from y = 0 to k at x = k width &delta;k. The integral over the two strips is obviously the same, so we get f'(k) = 2 &int;<sub>0</sub><sup>k</sup> (e<sup>k</sup> - e<sup>x</sup>) / (k - x) dx. Hence f'(k)/e<sup>k</sup> = 2 &int;<sub>0</sub><sup>k</sup> (1 - e<sup>-(k-x)</sup>) / (k - x) dx. Changing the integration variable to z = k - x, we get 2 &int;<sub>0</sub><sup>k</sup> (1 - e<sup>-z</sup>) / z dz. The integrand is always positive and for z &gt;= 1 is at least 1 - 1/e &gt; 1/2. So the integral is at least &int;<sub>1</sub><sup>k</sup> 1/z dz = ln k. This tends to infinity with k.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn81.html">42nd Putnam 1981</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

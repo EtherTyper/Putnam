@@ -1,0 +1,120 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1990/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1990</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b>
+
+<p>
+
+Given an initial integer n<sub>0</sub> &gt; 1, two players A and B choose integers n<sub>1</sub>, n<sub>2</sub>, n<sub>3</sub>, ... alternately according to the following rules:
+
+<br>Knowing n<sub>2k</sub>, A chooses any integer n<sub>2k+1</sub> such that n<sub>2k</sub> &le; n<sub>2k+1</sub> &le; n<sub>2k</sub><sup>2</sup>.
+
+<br>Knowing n<sub>2k+1</sub>, B chooses any integer n<sub>2k+2</sub> such that n<sub>2k+1</sub>/n<sub>2k+2</sub> = p<sup>r</sup> for some prime p and integer r &ge; 1.
+
+<p>Player A wins the game by choosing the number 1990; player B wins by choosing the number 1. For which n<sub>0</sub> does
+
+<br>(a)&nbsp; A have a winning strategy?
+
+<br>(b)&nbsp; B have a winning strategy?
+
+<br>(c)&nbsp; Neither player have a winning strategy?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Answer: if n<sub>0</sub> = 2, 3, 4 or 5 then A loses; if n<sub>0</sub> &ge; 8, then A wins; if n<sub>0</sub> = 6 or 7 , then it is a draw.
+
+<p>
+
+A's strategy given a number n is as follows:
+
+<br>(1) if n &isin; [8, 11], pick 60
+
+<br>(2) if n &isin; [12, 16], pick 140
+
+<br>(3) if n &isin; [17, 22], pick 280
+
+<br>(4) if n &isin; [23, 44], pick 504
+
+<br>(5) if n &isin; [45, 1990], pick 1990
+
+<br>(6) if n = 1991 = 11.181 (181 is prime), pick 1991
+
+<br>(7) if n &isin; [11<sup>r</sup>181 + 1, 11<sup>r+1</sup>181] for some r &gt; 0, pick 11<sup>r+1</sup>181.
+
+<p>
+
+Clearly (5) wins immediately for A. After (4) B has 7.8.9 so must pick 56, 63, 72 or 168, which gives A an immediate win by (5). After (3) B must pick 35, 40, 56, 70 or 140, so A wins by (4) and (5). After (2) B must pick 20, 28, 35 or 70, so A wins by (3) - (5). After (1) B must pick 12, 15, 20 or 30, so A wins by (2) - (5).
+
+<p>
+
+If B is given 11<sup>r+1</sup>181, then B must pick 181, 11.181, ... , 11<sup>r</sup>.181 or 11<sup>r+1</sup>, all of which are &le; 11<sup>r</sup>.181. So if A is given a number n in (6) or (7) then after a turn each A is given a number &lt; n (and &gt;= 11), so after a finite number of turns A wins.
+
+<p>
+
+If B gets a number less than 6, then he can pick 1 and win. Hence if A is given 2, he loses, because he must pick a number less than 5. Now if B gets a number of 11 or less, he wins by picking 1 or 2. Hence if A is given 3, he loses, because he must pick a number less than 10. Now if B gets a number of 19 or less, he can win by picking 1, 2 or 3. So if A is given 4 he loses. Now if B is given 29 or less, he can pick 1, 2, 3 or 4 and win. So if A is given 5 he loses. 
+
+<p>
+
+We now have to consider what happens if A gets 6 or 7. He must pick 30 or more, or B wins. If he picks 31, 32, 33, 34, 35 or 36, then B wins by picking (for example) 1, 1, 3, 2, 5, 4 respectively. So his only hope given 6 is to pick 30. B also wins given any of 37, 38, 39, 40, 41, 43, 44, 45, 46, 47, 48, 49 (winning moves, for example, 37, 1; 38, 2; 39, 3; 40, 5; 41, 1; 43, 1; 44, 4; 45, 5; 46, 3; 47, 1; 48, 3]. So A's only hope given 7 is to pick 30 or 42.
+
+<p>
+
+If B is faced with 30=2&middot;3&middot;5, then he has a choice of 6, 10, 15. We have already established that 10 and 15 will lose, so he must pick 6. Thus 6 is a draw: A must pick 30 or lose, and then B must pick 6 or lose.
+
+<p>
+
+If B is faced with 42=2&middot;3&middot;7, then he has a choice of 6, 14 or 21. We have already established that 14 and 21 lose, so he must pick 6. Thus 7 is also a draw: A must pick 30 or 42, and then B must pick 6.
+
+<p>
+
+&nbsp;<p>
+
+<i>Comment</i>
+
+<p>I am grateful to Gerhard W&ouml;ginger and Jean-Pierre Ehrmann for finding errors in my original solution.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>&nbsp;<p>
+
+<a href="../imo90.html">31st IMO 1990</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

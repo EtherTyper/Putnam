@@ -1,0 +1,66 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1985/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1985</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b>
+
+<p>
+
+Given a set M of 1985 distinct positive integers, none of which has a prime divisor greater than 23, prove that M contains a subset of 4 elements whose product is the 4th power of an integer.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Suppose we have a set of at least 3.2<sup>n</sup>+1 numbers whose prime divisors are all taken from a set of n. So each number can be written as p<sub>1</sub><sup>r<sub>1</sub></sup>...p<sub>n</sub><sup>r<sub>n</sub></sup> for some non-negative integers r<sub>i</sub>, where p<sub>i</sub> is the set of prime factors common to all the numbers. We classify each r<sub>i</sub> as even or odd. That gives 2<sup>n</sup> possibilities. But there are more than 2<sup>n</sup> + 1 numbers, so two numbers have the same classification and hence their product is a square. Remove those two and look at the remaining numbers. There are still more than 2<sup>n</sup> + 1, so we can find another pair. We may repeat to find 2<sup>n</sup> + 1 pairs with a square product. [After removing 2<sup>n</sup> pairs, there are still 2<sup>n</sup> + 1 numbers left, which is just enough to find the final pair.] But we may now classify these pairs according to whether each exponent in the square root of their product is odd or even. We must find two pairs with the same classification. The product of these four numbers is now a fourth power.
+
+<p>
+Applying this to the case given, there are 9 primes less than or equal to 23 (2, 3, 5, 7, 11, 13, 17, 19, 23), so we need at least 3.512 + 1 = 1537 numbers for the argument to work (and we have 1985).
+
+<p>
+The key is to find the 4th power in two stages, by first finding lots of squares. If we try to go directly to a 4th power, this type of argument does not work (we certainly need more than 5 numbers to be sure of finding four which sum to 0 mod 4, and 5<sup>9</sup> is far too big).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo85.html">26th IMO 1985</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 46/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>6th Putnam 1946</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+R is the reals. For functions f, g <b>:</b> R &rarr; R and x &isin; R define I(fg) = &int;<sub>1</sub><sup>x</sup> f(t) g(t) dt. If a(x), b(x), c(x), d(x) are real polynomials, show that I(ac) I(bd) - I(ad) I(bc) is divisible by (x - 1)<sup>4</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let F(x) = I(ac) I(bd) - I(ad) I(bc). Then clearly F(1) = 0 (since all the integrals are over an empty range). Differentiating, we get, F' = acI(bd) + bdI(ac) - adI(bc) - bcI(ad). So F'(1) = 0. Differentiating again: F'' = a'cI(bd) + ac'I(bd) + abcd + b'dI(ac) + bd'I(ac) + abcd - a'dI(bc) - ad'I(bc) - abcd - b'cI(ad) - bc'I(ad) - abcd = a'cI(bd) + ac'I(bd) + b'dI(ac) + bd'I(ac) - a'dI(bc) - ad'I(bc) - b'cI(ad) - bc'I(ad). So F''(1) = 1.
+
+<p>
+
+Differentiating again: F''' = a''cI(bd) + 2a'c'I(bd) + ac''I(bd) + a'bcd + abc'd + b''dI(ac) + 2b'd'I(ac) + bd''I(ac) + ab'cd + abcd' - a''dI(bc) - 2a'd'I(bc) - ad''I(bc) - a'bcd - abcd' - b''cI(ad) - 2b'c'I(ad) - bc''I(ad) - ab'cd - abc'd = a''cI(bd) + 2a'c'I(bd) + ac''I(bd) + b''dI(ac) + 2b'd'I(ac) + bd''I(ac) - a''dI(bc) - 2a'd'I(bc) - ad''I(bc) - b''cI(ad) - 2b'c'I(ad) - bc''I(ad). So F'''(1) = 1.
+
+<p>
+
+That is sufficient to prove the result. But notice that if we differentiate again, then just collecting the terms that do not involve I(fg) we get (after some cancellation) 2a'bc'd + 2ab'cd' - 2a'bcd' - 2ab'c'd, which is not, in general, zero for x = 1. So in general we do not have F(x) divisible by (x - 1)<sup>5</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn46.html">6th Putnam 1946</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1959/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>20th Putnam 1959</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+&alpha; and &beta; are positive irrational numbers satisfying 1/&alpha; + 1/&beta; = 1. Let a<sub>n</sub> = [n &alpha;] and b<sub>n</sub> = [n &beta;], for n = 1, 2, 3, ... . Show that the sequences a<sub>n</sub> and b<sub>n</sub> are disjoint and that every positive integer belongs to one or the other.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+&beta; positive implies &alpha; &gt; 1, so [&alpha; (n+1)] &gt; [&alpha; n] and the sequence does not contain any integers twice. Similarly for [&beta;n].
+
+<p>
+
+If k appears in both sequences, then for some m, n we have: k &lt; n &alpha; &lt; k + 1, k &lt; m &beta; &lt; k + 1. Hence k/&alpha; &lt; n &lt; (k+1)/&alpha;, k/&beta; &lt; m &lt; (k+1)/&beta;. Adding gives k &lt; m+n &lt; k + 1. Contradiction. So an integer appears in at most one sequence.
+
+<p>
+
+Suppose k does not appear in the sequence [n &alpha;]. Then for some n we have n &alpha; &lt; k, and k + 1 &lt; (n + 1) &alpha;. The first inequality implies that n &lt; k/&alpha; = k - k/&beta;. Hence (k - n) &beta; &gt; k. The second inequality implies that n + 1 &gt; (k + 1)/&alpha; = k + 1 - (k + 1)/&beta;. Hence (k - n) &beta; &lt; k + 1. So [(k - n) &beta; ] = k.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn59.html">20th Putnam 1959</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

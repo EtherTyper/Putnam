@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>13th Putnam 1953/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>13th Putnam 1953</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+The coefficients of the complex polynomial z<sup>4</sup> + az<sup>3</sup> + bz<sup>2</sup> + cz + d satisfy a<sup>2</sup>d = c<sup>2</sup> &ne; 0. Show that the ratio of two of the roots equals the ratio of the other two.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We start with a straight slog. Let the roots be p, q, r, s. We have a<sup>2</sup>d - c<sup>2</sup> = (p + q + r + s)<sup>2</sup>pqrs - (pqr + pqs + prs + qrs)<sup>2</sup>. The terms like 2p<sup>2</sup>q<sup>2</sup>rs all cancel, leaving p<sup>3</sup>qrs + pq<sup>3</sup>rs + pqr<sup>3</sup>s + pqrs<sup>3</sup> - p<sup>2</sup>q<sup>2</sup>r<sup>2</sup> - p<sup>2</sup>q<sup>2</sup>s<sup>2</sup> - p<sup>2</sup>r<sup>2</sup>s<sup>2</sup> - q<sup>2</sup>r<sup>2</sup>s<sup>2</sup>.
+
+<p>
+
+The trick now is to factorise this. We might suspect that pq - rs is a factor. But in that case pr - qs and ps - qr would presumably also be factors. (pq - rs)(pr - qs)(ps - qr) has degree 6, as required. It also has the correct number of terms (8). So we try multiplying it out and find that it is the same.
+
+<p>
+
+So (pq - rs)(pr - qs)(ps - qr) = 0. But that means that at least one factor must be zero, which gives the result. Note that the only reason for giving us that a<sup>2</sup>d is non-zero, is because that implies that none of the roots are zero (their product d is non-zero) and so having got pq = rs, we can divide to get p/r = s/q.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn53.html">13th Putnam 1953</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

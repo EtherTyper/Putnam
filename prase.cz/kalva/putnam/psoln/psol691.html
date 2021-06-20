@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1969/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>30th Putnam 1969</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+R<sup>2</sup> represents the usual plane (x, y) with -&infin; &lt; x, y &lt; &infin;. p: R<sup>2</sup> &rarr; R is a polynomial with real coefficients. What are the possibilities for the image p(R<sup>2</sup>)?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: [k, k], [k, inf), (-inf, k], (-inf, inf), (k, inf), (-inf, k) for all real k.
+
+<p>
+
+The first four possibilities given in the answer are easily realised: p(x, y) = k gives [k, k]; p(x, y) = x<sup>2</sup> + k gives [k, inf); p(x, y) = k - x<sup>2</sup> gives (-inf, k]; p(x, y) = x gives (-inf, inf).
+
+<p>
+
+If p is not constant, then wlog there is a positive power of x. Let n be the highest such power. Fix y so that the p becomes a polynomial in x with a non-zero term in x<sup>n</sup> (this must be possible since only finitely many values of y can give a zero term). As x tends to inf, this term will dominate and tend to +inf or -inf. The domain R<sup>2</sup> is connected and p is continuous, so the image must be connected also. So certainly there are no other possibilities apart from those given in the Answer.
+
+<p>
+
+It is tempting to think that we cannot get (k, inf), but attempts to prove it fail. The trick is to use two square terms which cannot be zero simultaneously. For example, (xy - 1)<sup>2</sup> + x<sup>2</sup> + k. We can make x arbitrarily small and choose y to make the first term zero, but if we make x zero, then the first term is 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn69.html">30th Putnam 1969</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

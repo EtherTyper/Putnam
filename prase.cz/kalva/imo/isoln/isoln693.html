@@ -1,0 +1,84 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1969/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1969</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+For each of k = 1, 2, 3, 4, 5 find necessary and sufficient conditions on a &gt; 0 such that there exists a tetrahedron with k edges length a and the remainder length 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+A plodding question. Take the tetrahedron to be ABCD. 
+
+<p>
+
+Take k = 1 and AB to have length a, the other edges length 1. Then we can hinge triangles ACD and BCD about CD to vary AB. The extreme values evidently occur with A, B, C, D coplanar. The least value, 0, when A coincides with B, and the greatest value &radic;3, when A and B are on opposite sides of CD. We rule out the extreme values on the grounds that the tetrahedron is degenerate, thus obtaining 0 &lt; a &lt; &radic;3.
+
+<p>
+
+For k = 5, the same argument shows that 0 &lt; 1 &lt; &radic;3 a, and hence a &gt; 1/&radic;3.
+
+<p>
+
+For k = 2, there are two possible configurations: the sides length a adjacent, or not. Consider first the adjacent case. Take the sides length a to be AC and AD. As before, the two extreme cases gave A, B, C, D coplanar. If A and B are on opposite sides of CD, then a = &radic;(2 - &radic;3). If they are on the same side, then a = &radic;(2 + &radic;3). So this configuration allows any a satisfying &radic;(2 - &radic;3) &lt; a &lt; &radic;(2 + &radic;3).
+
+<p>
+
+The other configuration has AB = CD = a. One extreme case has a = 0. We can increase a until we reach the other extreme case with ADBC a square side 1, giving a = &radic;2. So this configuration allows any a satisfying 0 &lt; a &lt; &radic;2. Together, the two configurations allow any a satisfying: 0 &lt; a &lt; &radic;(2 + &radic;3).
+
+<p>
+
+This also solves the case k = 4, and allows any a satisfying: a &gt; 1/&radic;(2 + &radic;3) = &radic;(2 - &radic;3).
+
+<p>For k = 3, any value of a &gt; 0 is allowed. For a &lt;= 1, we may take the edges length a to form a triangle. For a &ge; 1 we may take a triangle with unit edges and the edges joining the vertices to the fourth vertex to have length a.
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo69.html">11th IMO 1969</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Oct 1998
+
+<br>Last corrected/updated 5 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

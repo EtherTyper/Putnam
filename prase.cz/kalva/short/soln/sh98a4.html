@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1998/A4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>39th IMO 1998 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A4</b><br>
+<p>
+Define the numbers c(n, k) for k = 0, 1, 2, ... , n by c(n, 0) = c(n, n) = 1, c(n+1, k) = 2<sup>k</sup>c(n, k) + c(n, k-1). Show that c(n, k) = c(n-k, k).
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+The first few numbers are:
+<pre>
+n=0	               1
+n=1	            1     1
+n=2	         1     3     1
+n=3	      1     7     7     1
+n=4	   1    15    35    15     1
+n=5	1    31   155   155    31     1
+</pre>
+Let f(n) = (2 - 1)(2<sup>2</sup> - 1)(2<sup>3</sup> - 1) ... (2<sup>n</sup> - 1) for n &gt; 0 and f(0) = 1. We show that c(n, k) = f(n)/( f(k) f(n-k) ). Put b(n, k) = f(n)/( f(k) f(n-k) ). Then b(n, 0) = b(n, n) = 1. Also 2<sup>k</sup>b(n, k ) + b(n, k-1) = f(n)/( f(k) f(n+1-k) ) x (2<sup>k</sup>(2<sup>n+1-k</sup> - 1) + (2<sup>k</sup> - 1) ) = f(n)/( f(k) f(n+1-k) ) x (2<sup>n+1</sup> - 1) = f(n+1)/( f(k) f(n+1-k) ) = b(n+1, k). So b(n, k) satisfies the same recurrence relation and initial conditions as c(n, k). So a simple induction shows that they are the same.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh98.html">39th IMO shortlist 1998</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Aug 2002
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1972/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>33rd Putnam 1972</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+Let S be a set with a binary operation * such that (1) a * (a * b) = b for all a, b &isin; S, (2) (a * b) * b = a for all a, b &isin; S. Show that * is commutative. Give an example for which S is not associative.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Consider (a*b)*( (a*b)*b). One can view it as c * (c * b), so that it is b by (1). Or one can consider first (a*b)*b, which is a by (2), so that the expression is (a*b)*a. Hence b = (a*b)*a. Multiplying on the right by a, we get b*a = ((a*b)*a)*a, which is (a*b) by (2). That proves * is commutative.
+
+<p>
+
+Take S to have three elements a, b, c. Let a*a = a, b*b = b, c*c = c, a*b = c, b*c = a, c*a = b and assume * is commutative. Then we easily check that the required conditions are met. But c = a*b = (a*a)*b, whereas a*(a*b) = a*c = b. So * is not always associative.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn72.html">33rd Putnam 1972</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

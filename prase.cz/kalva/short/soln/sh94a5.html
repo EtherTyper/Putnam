@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1994/A5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>35th IMO 1994 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A5</b><br>
+<p>
+Let f(x) = (x<sup>2</sup> + 1)/(2x) for x non-zero. Define f<sub>0</sub>(x) = x and f<sub>n+1</sub>(x) = f( f<sub>n</sub>(x) ). Show that for x not -1, 0 or 1 we have f<sub>n</sub>(x)/f<sub>n+1</sub>(x) = 1 + 1/f(y), where y = (x+1)<sup>N</sup>/(x-1)<sup>N</sup> and N = 2<sup>n</sup>.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Define p<sub>0</sub>(x) = x, q<sub>0</sub>(x) = 1, p<sub>n</sub>(x) = p<sub>n-1</sub>(x)<sup>2</sup> + q<sub>n-1</sub>(x)<sup>2</sup>, q<sub>n</sub>(x) = 2p<sub>n-1</sub>(x) q<sub>n-1</sub>(x). We show by induction on n that f<sub>n</sub>(x) = p<sub>n</sub>(x)/q<sub>n</sub>(x). It is obviously true for n = 0. So suppose it is true for n.
+<p>
+Then f<sub>n+1</sub>(x) = (f<sub>n</sub>(x)<sup>2</sup> + 1)/2f<sub>n</sub>(x) = (p<sub>n</sub>(x)<sup>2</sup> + q<sub>n</sub>(x)<sup>2</sup>)/(2 p<sub>n</sub>(x) q<sub>n</sub>(x) ) = p<sub>n+1</sub>(x)/q<sub>n+1</sub>(x), so the result is also true for n+1 and hence for all n.
+<p>
+Next we show that p<sub>n</sub>(x) &plusmn; q<sub>n</sub>(x) = (x &plusmn; 1)<sup>N</sup>, where N = 2<sup>n</sup>. Again we use induction on n. For n = 0 it is immediate. Suppose it is true for n. Then p<sub>n+1</sub>(x) &plusmn; q<sub>n+1</sub>(x) = p<sub>n</sub>(x)<sup>2</sup> + q<sub>n</sub>(x)<sup>2</sup> &plusmn; 2 p<sub>n</sub>(x) q<sub>n</sub>(x) = (p<sub>n</sub>(x) &plusmn; q<sub>n</sub>(x) )<sup>2N</sup>, so it is true for n+1.
+<p>
+Finally, 1 + 1/f(y) (with y defined as in the question) = 1 + 2y/(y<sup>2</sup> + 1) = (y + 1)<sup>2</sup>/(y<sup>2</sup> + 1) = ( (x+1)<sup>N </sup> + (x-1)<sup>N</sup>)<sup>2</sup>/( (x+1)<sup>2N</sup> + (x-1)<sup>2N</sup>) = (p<sub>n</sub>(x) + q<sub>n</sub>(x) + p<sub>n</sub>(x) - q<sub>n</sub>(x) )<sup>2</sup>/(p<sub>n+1</sub>(x) + q<sub>n+1</sub>(x) + p<sub>n+1</sub>(x) - q<sub>n+1</sub>(x) ) = 2p<sub>n</sub>(x)<sup>2</sup>/p<sub>n+1</sub>(x). But f<sub>n</sub>(x)/f<sub>n+1</sub>(x) = p<sub>n</sub>(x) q<sub>n+1</sub>(x)/( p<sub>n+1</sub>(x) q<sub>n</sub>(x) ). Substituting for q<sub>n+1</sub>(x) gives f<sub>n</sub>(x)/f<sub>n+1</sub>(x) = 2p<sub>n</sub>(x)<sup>2</sup>/p<sub>n+1</sub>(x) = 1 + 1/f(y).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh94.html">35th IMO shortlist 1994</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+18 Sep 2002
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1975/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>36th Putnam 1975</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Let I be an interval and f(x) a continuous real-valued function on I. Let y<sub>1</sub> and y<sub>2</sub> be linearly independent solutions of y'' = f(x) y, which take positive values on I. Show that from some positive constant k,  k &radic;(y<sub>1</sub> y<sub>2</sub>) is a solution of y'' + 1/y<sup>3</sup> = f(x) y.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: k = &radic;(2/d) where d is the Wronksian.
+
+<p>
+
+The key is to show that y<sub>1</sub>y<sub>2</sub>' - y<sub>1</sub>'y<sub>2</sub> is a constant. This expression is known as the Wronskian and it is well-known that it is non-zero iff y<sub>1</sub> and y<sub>2</sub> are linearly independent.
+
+<p>
+
+The derivative is y<sub>1</sub>y<sub>2</sub>'' - y<sub>1</sub>y<sub>2</sub>'' = f y<sub>1</sub>y<sub>2</sub> - f y<sub>1</sub>y<sub>2</sub> = 0, which shows that the expression is constant. Let its value be d.
+
+<p>
+
+Let us write z = k &radic;(y<sub>1</sub>y<sub>2</sub>), where k is a constant to be determined later. It is also convenient to put c = k<sup>2</sup>/2, so that z<sup>2</sup> = 2c y<sub>1</sub>y<sub>2</sub>. Differentiating we get: z z' = c(y<sub>1</sub>y<sub>2</sub>' + y<sub>1</sub>'y<sub>2</sub>) (*). Differentiating again: z z'' + (z')<sup>2</sup> = c y<sub>1</sub>y<sub>2</sub>'' + c y<sub>1</sub>''y<sub>2</sub> + 2c y<sub>1</sub>'y<sub>2</sub>' = 2c f y<sub>1</sub>y<sub>2</sub> + 2c y<sub>1</sub>'y<sub>2</sub>' = f z<sup>2</sup> + 2c y<sub>1</sub>'y<sub>2</sub>'.
+
+<p>
+
+Multiplying by z<sup>2</sup>: z<sup>3</sup>z'' + (z z')<sup>2</sup> = f z<sup>4</sup> + 2z<sup>2</sup> c y<sub>1</sub>'y<sub>2</sub>' = f z<sup>4</sup> + 4 c<sup>2</sup> y<sub>1</sub>y<sub>2</sub>y<sub>1</sub>'y<sub>2</sub>'. Using (*), z<sup>3</sup> z'' + c<sup>2</sup>(y<sub>1</sub>y<sub>2</sub>' + y<sub>1</sub>'y<sub>2</sub>)<sup>2</sup> = f z<sup>4</sup> + 4c<sup>2</sup> y<sub>1</sub>y<sub>2</sub>y<sub>1</sub>'y<sub>2</sub>'. Hence z<sup>3</sup>z'' + c<sup>2</sup>(y<sub>1</sub>y<sub>2</sub>' - y<sub>1</sub>'y<sub>2</sub>)<sup>2</sup> = f z<sup>4</sup>, or z<sup>3</sup> z'' + c<sup>2</sup>d<sup>2</sup> = f z<sup>4</sup>. So if we set c = 1/d, then z'' + 1/z<sup>3</sup> = f z.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn75.html">36th Putnam 1975</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

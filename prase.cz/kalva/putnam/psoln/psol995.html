@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 99/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>60th Putnam 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Find a constant k such that for any polynomial f(x) of degree 1999, we have |f(0)| &le; k &int;<sub>-1</sub><sup>1</sup> |f(x)| dx.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The basic idea is simple. Divide the interval [-1, 1] into 2000 subintervals of length 1/1000, then there must be at least one subinterval K such that there is no root of f(x) whose real part falls in K. Take K' to be the central 1/3 of K. Then every point of K' is a distance at least 1/3000 from any root of f(x). Now |f(x)| = &prod;|x - &alpha;| &ge; (1/3000)<sup>1999</sup>. Hence the integral is at least (1/3000)<sup>2000</sup>.
+
+<p>
+
+That would work if we were looking for a lower bound for the ratio of the integral to the leading coefficient. But we were asked for the ratio of the integral to the modulus of constant term (which is &prod; |&alpha;| ), so we need to estimate &prod;|x - &alpha;|/|&alpha;|. If f(0) = 0, then any constant k works, so we can assume that all the roots &alpha; &ne; 0.
+
+<p>
+
+If |&alpha;| &ge; 1, then |x| &lt; 1 - 1/3000 (K' is the central third of a subinterval length 1/1000 of [-1, 1], so its endpoint is at least 1/3000 from &plusmn;1). Hence |x - &alpha;| &ge; |&alpha;| - |x| &ge; |&alpha;| - 1 + 1/3000, and |x - &alpha;|/|&alpha;| &gt; 1/3000. If |&alpha;| &lt; 1, then |x - &alpha;|/|&alpha;| &gt; |x - &alpha;| &gt; 1/3000. 
+
+<p>
+
+So we have established that |f(x)|/|f(0)| &gt; (1/3000)<sup>1999</sup> on the interval K'. Hence the integral is at least (1/3000)<sup>2000</sup> |f(0)| and we have established the result with k = (1/3000)<sup>2000</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+&nbsp;<p>
+
+<a href="../putn99.html">60th Putnam 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

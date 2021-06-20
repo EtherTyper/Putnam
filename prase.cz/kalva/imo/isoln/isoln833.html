@@ -1,0 +1,66 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1983/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1983</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+Let a , b and c be positive integers, no two of which have a common divisor greater than 1. Show that 2abc - ab - bc - ca is the largest integer which cannot be  expressed in the form xbc + yca + zab, where x, y, z are non-negative integers.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+We start with the lemma that bc - b - c is the largest number which cannot be written as mb + nc with m and n non-negative. [Proof: 0, c, 2c, ... , (b-1)c is a complete set of residues mod b. If r &gt; (b-1)c - b, then r = nc (mod b) for some 0 &le; n &le; b-1. But r &gt; nc - b, so r = nc + mb for some m &ge; 0. That proves that every number larger than bc - b - c can be written as mb + nc with m and n non-negative. Now consider bc - b - c. It is (b-1)c (mod b), and not congruent to any nc with 0 &le; n &lt; b-1. So if bc - b - c = mb + nc, then n &ge; b-1. Hence mb + nc &ge; nc &ge; (b-1)c &gt; bc - b - c. Contradiction.]
+
+<p>
+0, bc, 2bc, ... , (a-1)bc is a complete set of residues mod a. So given N &gt; 2abc - ab - bc - ca we may take xbc = N (mod a) with 0 &lt;= x &lt; a. But N - xbc &gt; 2abc - ab - bc - ca - (a-1)bc = abc - ab - ca = a(bc - b - c). So N - xbc = ka, with k &gt; bc - b - c. Hence we can find non-negative y, z so that k = zb + yc. Hence N = xbc + yca + zab.
+
+<p
+>Finally, we show that for N = 2abc - ab - bc - ca we cannot find non-negative x, y, z so that N = xbc + yca + zab. N = -bc (mod a), so we must have x = -1 (mod a) and hence x &ge; a-1. Similarly, y &ge; b-1, and z &ge; c-1. Hence xbc + yca + zab &ge; 3abc - ab - bc - ca &gt; N. Contradiction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo83.html">24th IMO 1983</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

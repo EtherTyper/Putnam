@@ -1,0 +1,66 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>Putnam 40/A8 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>3rd Putnam 1940</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A8</b><br>
+
+<p>
+
+Show that the area of the triangle bounded by the lines a<sub>i</sub>x + b<sub>i</sub>y  + c<sub>i</sub> = 0 (i = 1, 2, 3) is &Delta;<sup>2</sup>/|2(a<sub>2</sub>b<sub>3</sub> - a<sub>3</sub>b<sub>2</sub>)(a<sub>3</sub>b<sub>1</sub> - a<sub>1</sub>b<sub>3</sub>)(a<sub>1</sub>b<sub>2</sub> - a<sub>2</sub>b<sub>1</sub>)|, where <font face="Symbol">D</font> is the 3 x 3 determinant with columns a<sub>i</sub>, b<sub>i</sub>, c<sub>i</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Fairly easy if you remember some formulae for determinants (which people did in those days). Of course, you can just slog through the expression (*) below in terms of a<sub>i</sub>, b<sub>i</sub>, c<sub>i</sub>. That is doable, but completely mindless, the only required skill is doing elementary algebra fast without mistakes. I suppose I am fairly out of sympathy with the rather common Putnam style of problem where the basic idea is obvious, but you have to be skilful at evaluating integrals, determinants etc, often using tricks.
+
+<p>
+
+Take A<sub>i</sub> be the cofactor of a<sub>i</sub> in &Delta;. Similarly, B<sub>i</sub> and C<sub>i</sub>. [So, for example, A<sub>1</sub> = b<sub>2</sub>c<sub>3</sub> - b<sub>3</sub>c<sub>2</sub>, A<sub>2</sub> = b<sub>3</sub>c<sub>1</sub> - b<sub>1</sub>c<sub>3</sub>, A<sub>3</sub> = b<sub>1</sub>c<sub>2</sub> - b<sub>2</sub>c<sub>1</sub>.]
+
+<p>
+
+The lines a<sub>2</sub>x + b<sub>2</sub>y + c<sub>2</sub> = 0 and a<sub>3</sub>x + b<sub>3</sub>y + c<sub>3</sub> = 0 intersect at (A<sub>1</sub>/C<sub>1</sub>, B<sub>1</sub>/C<sub>1</sub>). Similarly, the other two points of intersection are (A<sub>2</sub>/C<sub>2</sub>, B<sub>2</sub>/C<sub>2</sub>) and (A<sub>3</sub>/C<sub>3</sub>, B<sub>3</sub>/C<sub>3</sub>). 
+
+<p>The area of the triangle is therefore (the absolute value of) the determinant K with rows A<sub>1</sub>/C<sub>1</sub>, B<sub>1</sub>/C<sub>1</sub>, 1; A<sub>2</sub>/C<sub>2</sub>, B<sub>2</sub>/C<sub>2</sub>, 1; A<sub>3</sub>/C<sub>3</sub>, B<sub>3</sub>/C<sub>3</sub>, 1. (*) [For example, take a z-coordinate perpendicular to the plane, and take the cross product of the vectors along two sides.] But K |C<sub>1</sub>C<sub>2</sub>C<sub>3</sub>| is the determinant whose elements are the cofactors of the original determinant. This has value equal to &Delta;<sup>2</sup>. For example, on multiplying it by &Delta;, we get &Delta; down the diagonal and zeros elsewhere, and hence &Delta;<sup>3</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn40.html">3rd Putnam 1940</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

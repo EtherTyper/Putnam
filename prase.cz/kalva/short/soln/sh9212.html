@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>33rd IMO shortlist 1992/12 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>33rd IMO 1992 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 12</b>
+<p>
+The polynomials f(x), g(x) and a(x, y) have real coefficients. They satisfy f(x) - f(y) = a(x, y) ( g(x) - g(y) ) for all x, y. Show that there is a polynomial h(x) such that f(x) = h( g(x) ) for all x.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+We use induction on deg f. Suppose deg f &lt; deg g. Then f(x) - f(y) can be regarded as a polynomial in x, which has smaller degree than g(x) - g(y), another polynomial in x which is a factor. Hence f(x) - f(y) = 0, so f(x) = constant and we can take h(x) to be the same constant. So the result is true.
+<p>
+Now suppose the result is true for degree &lt; deg f. Put F(x) = f(x) - f(0), G(x) = g(x) - g(0), so that F(0) = G(0) = 0 and deg F = deg f. Also F(x) = a(x,0) G(x). Put h(x) = a(x,0), so that F(x) = h(x) G(x).
+<p>
+Hence F(x) - F(y) = h(x)G(x) - h(y)G(y) = (h(x) - h(y))G(x) +h(y)(G(x) - G(y)). Hence G(x) - G(y) divides (h(x) - h(y))G(x). But G(x) - G(y) is relatively prime to G(x), so it must divide h(x) - h(y). In other words, h(x) - h(y) = b(x,y)(G(x) - G(y)). But deg h &lt; deg f, so we have h(x) = H(G(x)) for some H. Then f(x) = G(x)H(G(x)) which is a function of G(x) as required.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh92.html">33rd IMO shortlist 1992</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+25 Nov 2003
+<br>Last updated/corrected 25 Nov 2003
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>17th Putnam 1957/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>17th Putnam 1957</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Let S be a set of n points in the plane such that the greatest distance between two points of S is 1. Show that at most n pairs of points of S are a distance 1 apart.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Induction on n. Obviously true for n &le; 3. Suppose it is true for n. Take n+1 points. If no point is a distance 1 from more than 2 points, then we are done. So assume that A, B and C are all a distance 1 from P. wlog the largest of the three angles APB, APC, BPC is APB. It must be at most 60<sup>o</sup>, since AB &le; 1. So the ray PC lies between the rays PA and PB.
+
+<p>
+
+Now suppose there is another point D (apart from P) such that CD = 1. Then CD must intersect PA, because otherwise one of CP, CA, DP and DA would exceed 1. Similarly, it must intersect PB. But that is impossible. So there is no such point D. Hence if we remove C we lose only one realisation of the distance 1. But the remaining n points have at most n realisations, so the result is established.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn57.html">17th Putnam 1957</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

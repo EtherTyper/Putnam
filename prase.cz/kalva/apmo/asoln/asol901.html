@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 90/1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>2nd APMO 1990</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 1</b><br>
+<p>
+Given &theta; in the range (0,  &pi;) how many (incongruent) triangles ABC have angle A = &theta;, BC = 1, and the following four points concyclic: A, the centroid, the midpoint of AB and the midpoint of AC?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 1 for &theta; &le; 60 deg. Otherwise none. 
+<p>
+Let O be the circumcenter of ABC and R the circumradius, let M be the midpoint of BC, and let G be the centroid. We may regard A as free to move on the circumcircle, whilst O, B and C remain fixed. Let X be the point on MO such that MX/MO = 1/3. An expansion by a factor 3, center M, takes G to A and X to O, so G must lie on the circle center X radius R/3.
+<p>
+The circle on diameter OA contains the midpoints of AB and AC (since if Z is one of the midpoints OZ is perpendicular to the corresponding side). So if G also lies on this circle then angle OGA = 90 deg and hence angle MGO = 90 deg, so G must also lie on the circle diameter OM. Clearly the two circles for G either do not intersect in which case no triangle is possible which satisfies the condition or they intersect in one or two points. But if they intersect in two points, then corresponding triangles are obviously congruent (they just interchange B and C). So we have to find when the two circle intersect. 
+<p>
+Let the circle center X meet the line OXM at P and Q with P on the same side of X as M. Now OM = R cos &theta;, so XM = 1/3 R cos &theta; &lt; 1/3 R = XP, so M always lies inside PQ. Now XO = 2/3 OM = 1/3 R (2 cos &theta;), so XQ = 1/3 R &gt; XO iff 2 cos &theta; &lt; 1 or &theta; &gt; &pi;/3. Thus if &theta; &gt; &pi;/3, then XQ &gt; XO and so the circle diameter OM lies entirely inside the circle center X radius R/3 and so they cannot intersect. If &theta; = &pi;/3, then the circles touch at O, giving the equilateral triangle as a solution. If &theta; &lt; &pi;/3, then the circles intersect giving one incongruent triangle satisfying the condition.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo90.html">2nd APMO 1990</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

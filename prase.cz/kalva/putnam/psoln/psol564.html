@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 56/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>16th Putnam 1956</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Let p(x) be a real polynomial of degree n with leading coefficient 1 and all roots real. Let R be the reals and f <b>:</b> [a, b] &rarr; R be an n times differentiable function with at least n + 1 distinct zeros. Show that p(D) f(x) has at least one zero on [a, b], where D denotes d/dx.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The basic tool is Rolle's theorem which tells us that there is a zero of f '(x) between any two zeros of f(x). But we would like a zero of (D - &alpha;)f between any two zeros of f. For that, notice that the zeros of f(x) are also zeros of e<sup>-&alpha; x</sup> f(x). So if f(x) has n + 1 zeros, then the derivative of e<sup>-&alpha; x</sup> f(x) has at least n zeros. But the dervative of e<sup>-&alpha; x</sup> f(x) is e<sup>-&alpha; x</sup> times (D - &alpha;) f(x). e<sup>-&alpha; x</sup> is never zero, so (D - &alpha;) f(x) has at least n zeros.
+
+<p>
+
+That (more than) proves the result for p(x) of degree 1. We now use induction on n, the degree of p(x). Suppose it is true for n.  Let p(x) be a real polynomial with real roots and degree n + 1. Then p(x) = q(x) (x - &alpha;) for some &alpha; and q(x) of degree n. Let f be an n+1 times differentiable real function on [a, b] with at least n + 2 distinct zeros. Then we proved above that (D - &alpha;) f(x) has at least n + 1 distinct zeros. It is also at least n times differentiable. So, by the inductive hypothesis, q(D) (D - &alpha;) f(x) has at least one zero, which proves the result is true for n + 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn56.html">16th Putnam 1956</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

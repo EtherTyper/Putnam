@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2001/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>62nd Putnam 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+For what integers n is the polynomial x<sup>4</sup> - (2n + 4) x<sup>2</sup> + (n - 2)<sup>2</sup> the product of two non-trivial polynomials with integer coefficients?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: n = square or twice a square.
+
+<p>
+
+We can write the polynomial as (x<sup>2</sup> - (n - 2))<sup>2</sup> - 8x<sup>2</sup>. This cannot have any integral solutions because then we would have A<sup>2</sup> = 8 B<sup>2</sup>, and the lhs has an even number of powers of 2 and the rhs an odd number.
+
+<p>
+
+So if the polynomial factorises, it must do so as (x<sup>2</sup> + ax + b)(x<sup>2</sup> + Ax + B). Comparing terms in x<sup>3</sup>, A = -a. There are now two cases: (1) a is non-zero, (2) a is zero. 
+
+<p>
+
+In case (1), comparing terms in x, we deduce B = b. Comparing constant terms, gives b = n - 2 or 2 - n. Comparing terms in x<sup>2</sup> gives a<sup>2</sup> = 2n + 4 + 2b. We cannot have b = 2 - n, for then a<sup>2</sup> = 8, contradicting a integral. Hence, b = n - 2 and a<sup>2</sup> = 4n. So n must be a perfect square. Put n = k<sup>2</sup>, then we can easily check that the polynomial factorises: x<sup>4</sup> - (2k<sup>2</sup>+4)x<sup>2</sup> + (k<sup>2</sup> - 2)<sup>2</sup> = (x<sup>2</sup> +2kx + k<sup>2</sup> - 2)(x<sup>2</sup> -2kx + k<sup>2</sup> - 2).
+
+<p>
+
+In case (2), we have b + B = -(2n + 4), bB = (n - 2)<sup>2</sup>. Hence b(-b - 2n - 4) = (n - 2)<sup>2</sup>, so b<sup>2</sup> + b(2n + 4) + (n - 2)<sup>2</sup> = 0. Hence (b + n + 2)<sup>2</sup> = 8n. So n must be 2k<sup>2</sup> for some integer k. It is easy to check that in that case the polynomial factorises: x<sup>4</sup> - (4k<sup>2</sup>+4)x<sup>2</sup> + (2k<sup>2</sup> - 2)<sup>2</sup> = (x<sup>2</sup> - 2k<sup>2</sup> - 4k - 2)(x<sup>2</sup> - 2k<sup>2</sup> + 4k - 2).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn01.html">62nd Putnam 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Dec 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>13th Putnam 1953/A7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>13th Putnam 1953</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A7</b><br>
+
+<p>
+
+p(x) &equiv; x<sup>3</sup> + ax<sup>2</sup> + bx + c has three positive real roots. Find a necessary and sufficient condition on a, b, c for the roots to be cos A, cos B, cos C for some triangle ABC.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If A + B + C = 180<sup>o</sup>, then cos A = - cos(B + C) = sin B sin C - cos B cos C. Squaring, we get cos<sup>2</sup>A + cos<sup>2</sup>B + cos<sup>2</sup>C + 2 cos A cos B cos C = 1. So a necessary condition is a<sup>2</sup> - 2b - 2c = 1.
+
+<p>
+
+Conversely, suppose that this condition holds. Then if the roots are p, q, r, we have p<sup>2</sup> + q<sup>2</sup> + r<sup>2</sup> + 2pqr = 1 (*). We are given that the roots are all positive, so 2pqr &gt; 0, hence p<sup>2</sup> &lt; 1 and so p &lt; 1. Similarly for q and r. So we can find angles A, B, C greater than 0 and less than 90<sup>o</sup> such that p = cos A, q = cos B, r = cos C. Now we can rewrite (*) as (1 - cos<sup>2</sup>B)(1 - cos<sup>2</sup>C) = cos<sup>2</sup>A + 2 cos A cos B cos C + cos<sup>2</sup>B cos<sup>2</sup>C = (cos A + cos B cos C)<sup>2</sup>. But (1 - cos<sup>2</sup>B) = sin<sup>2</sup>B, (1 - cos<sup></sup>C) = sin<sup>2</sup>C, so we have sin B sin C = &plusmn;(cos A + cos B cos C). But we know that A, B, C are between 0 and 90<sup>o</sup>, so cos A, cos B, cos C, sin B, sin C are all positive. Hence we must use the + sign and we have cos A = sin B sin C - cos B cos C, so A + B + C = 180<sup>o</sup>. Hence the condition is also sufficient.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn53.html">13th Putnam 1953</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

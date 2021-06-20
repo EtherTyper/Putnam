@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>13th Putnam 1953/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>13th Putnam 1953</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+S is a parabola with focus F and axis L. Three distinct normals to S pass through P. Show that the sum of the angles which these make with L less the angle which PF makes with L is a multiple of &pi;.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We start by finding a formula for tan(A+B+C+D). Applying tan(A+B) = (tan A + tan B)/(1 - tan A tan B) twice and writing a = tan A, b = tan B, c = tan C, d = tand D, we get tan(A+B+C+D) = (&sum;a - &sum;abc)/(1 - &sum;ab + abcd).
+
+<p>
+
+Take the parabola as y = x<sup>2</sup>. The gradient at (k, k<sup>2</sup>) is 2k, so the normal has slope -1/2k. The normal has equation 2k<sup>3</sup> + (1 - 2y)k - x = 0. For given x, y this is a cubic in k, so has 1 or real 3 roots. Their slopes satisfy the cubic 4x h<sup>3</sup> + 2(1 - 2y) h<sup>2</sup> + 1 = 0 (*).
+
+<p>
+
+The focus is at (0, 1/4), so the line joining (x, y) has slope (y - 1/4)/x and negative is (1/4 - y)/x. The quartic with this root and the 3 roots of (*) is (h + (y - 1/4)/x )(4x h<sup>3</sup> + 2(1 - 2y) h<sup>2</sup> + 1) (**). So the angles the normals make with L less the angle which PF makes with L is a multiple of &pi; iff (&sum;a = &sum;abc), where a, b, c, d are the slopes of the four lines and hence iff the coefficients of h<sup>3</sup> and h in (**) are the same. But the coefficient of h<sup>3</sup> is 2(1 - 2y) + 4x (y - 1/4)/x = 1 and the coefficient of h is 1. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn53.html">13th Putnam 1953</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

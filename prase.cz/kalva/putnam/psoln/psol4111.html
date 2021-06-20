@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>4th Putnam 1941/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>4th Putnam 1941</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Given an ellipse center O, take two perpendicular diameters AOB and COD. Take the diameter A'OB' parallel to the tangents to the ellipse at A and B (this is said to be <i>conjugate</i> to the diameter AOB). Similarly, take C'OD' conjugate to COD. Prove that the rectangular hyperbola through A'B'C'D' passes through the foci of the ellipse.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Take the ellipse as x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> = 1 and the point A as (a cos t, b sin t). Then AB has slope b/a tan t, so CD has slope -a/b cot t. The tangent at A has slope -b/a cot t. Suppose C is (a cos u, b sin u), then b/a tan u = -a/b cot t and the tangent at C has slope -b/a cot u = b<sup>3</sup>/a<sup>3</sup> tan t. Hence the line pair A'B', C'D' has equation (y + x b/a cot t)(y - x b<sup>3</sup>/a<sup>3</sup> tan t). Now we have the equations for two distinct conics through A'B'C'D': the original ellipse and the line pair A'B',C'D'. The equation of any other conic through these four points must be a linear combination of the equations of these two, in other words, (x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>/b<sup>2</sup> - 1) + k(y + x b/a cot t)(y - x b<sup>3</sup>/a<sup>3</sup> tan t) = 0 for some k. 
+
+<p>
+
+The criterion for a rectangular hyperbola is that the coefficients of x<sup>2</sup> and y<sup>2</sup> should have sum zero, or that 1/a<sup>2</sup> + 1/b<sup>2</sup> + k - k b<sup>4</sup>/a<sup>4</sup> = 0. Hence k = a<sup>2</sup>/(b<sup>4</sup>-b<sup>2</sup>a<sup>2</sup>) and the equation of the rectangular hyperbola is x<sup>2</sup> - y<sup>2</sup> + (b/a tan t - a/b cot t) xy = a<sup>2</sup> - b<sup>2</sup>. But the foci are at (&plusmn;(a<sup>2</sup> - b<sup>2</sup>)<sup>1/2</sup>, 0), so they lie on the rectangular hyperbola.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn41.html">4th Putnam 1941</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

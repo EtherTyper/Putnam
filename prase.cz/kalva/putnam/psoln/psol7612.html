@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1976/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>37th Putnam 1976</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+Let &sigma;(n) be the sum of all positive divisors of n, including 1 and n. Show that if &sigma;(n) = 2n + 1, then n is the square of an odd integer.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If n is odd and non-square, then the divisors can be arranged in pairs d, n/d. The components of each pair are odd, so their sum is even and hence &sigma;(n) is even and cannot equal 2n+1. It is more difficult to show that n cannot be even.
+
+<p>
+
+We have &sigma;(n) = &prod;(1 + p + p<sup>2</sup> + ... + p<sup>k</sup>), where the product is taken over all primes p dividing n and k is the highest power of p dividing n. If p and k are odd, then the factor (1 + p + ... + p<sup>k</sup>) is even, and hence &sigma;(n) is even. So if &sigma;(n) = 2n+1, all k corresponding to odd primes must be even. In other words, we have n = 2<sup>a</sup>N<sup>2</sup>, for some odd integer N. Hence &sigma;(n) = (2<sup>a+1</sup>-1)&sigma;(N<sup>2</sup>) = 2<sup>a+1</sup>N<sup>2</sup> + 1. So N<sup>2</sup> = (2<sup>a+1</sup>-1)(&sigma;(N<sup>2</sup>) - N<sup>2</sup>) - 1. Hence if q is any odd prime dividing 2<sup>a+1</sup>-1, then N<sup>2</sup> = - 1 (mod q). But -1 is a quadratic non-residue of primes of the form 4r+3. So every prime factor of 2<sup>a+1</sup> - 1 must be of the form 4r+1. But that is not possible if a &ge; 1 (a product of numbers congruent to 1 mod 4 is congruent to 1, not -1). Hence a = 0 and n is an odd square.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn76.html">37th Putnam 1976</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+23 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

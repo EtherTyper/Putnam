@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 03/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>64th Putnam 2003</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b>
+
+<p>
+
+ABC is an equilateral triangle with circumcenter O. P is a point inside the circumcircle. Show that there is a triangle with side lengths |PA|, |PB|, |PC| and that its area depends only on |PO|.
+
+<p>
+
+&nbsp;<p>
+<b>Solution</b>
+
+<p>
+
+<img src="diag03b5.jpg">
+<p>
+Take PAD equilateral as shown. Then ADB and APC are congruent, so AD = PA and BD = PC. So BDP is the required triangle. Note that if D lies on BP (so that the triangle is degenerate) then &ang;APB = &ang;ACB, so P lies on the circumcircle. But we are told that P is not on the circumcircle, so the triangle is not degenerate.
+<p>
+I cannot see a geometric proof of the second part (or rather the only proof I can see degenerates into considering a large number of cases).
+<p>
+We can take represent A, B, C, P by the points 1, &omega;, &omega;<sup>2</sup>, z in the Argand diagram. The a, b, c are |1-z|, |&omega;-z|, |&omega;2-z|, so we can take the triangle with sides a, b, c to have vertices 0, &omega;z-&omega;<sup>2</sup>, &omega;-&omega;<sup>2</sup>z (remembering that |&omega;| = 1 and 1 + &omega; + &omega;<sup>2</sup> = 0). But using the r, &theta; representation it is clear that the area of the triangle with vertices 1, h, k is |Im(&frac12;h'k)|, where h' is the complex conjugate of h. So in this case we get &frac12;(-&omega; - &omega;<sup>2</sup>|z|<sup>2</sup> + z + z')  - where z' is the complex conjugate of z. But z+z' is real, &omega; has imaginary part -(&radic;3)/2 and &omega;<sup>2</sup> has imaginary part (&radic;3)/2, so the imaginary part is ((&radic;3)/4)(1 - |z|<sup>2</sup>), which depends only on OP<sup>2</sup> = |z|<sup>2</sup> as claimed.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn03.html">64th Putnam 2003</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+8 Dec 2003
+
+<br>Last corrected/updated 8 Dec 03
+
+</BODY>
+
+
+
+</HTML>
+

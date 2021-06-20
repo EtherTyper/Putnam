@@ -1,0 +1,68 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1984/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1984</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b>
+
+<p>
+
+Find one pair of positive integers a, b such that ab(a+b) is not divisible by 7, but (a+b)<sup>7</sup> - a<sup>7</sup> - b<sup>7</sup> is divisible by 7<sup>7</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+We find that (a + b)<sup>7</sup> - a<sup>7</sup> - b<sup>7</sup> = 7ab(a + b)(a<sup>2</sup> + ab + b<sup>2</sup>)<sup>2</sup>. So we must find a, b such that a<sup>2</sup> + ab + b<sup>2</sup> is divisible by 7<sup>3</sup>.
+
+<p>
+At this point I found a = 18, b = 1 by trial and error.
+
+<p>
+A more systematic argument turns on noticing that a<sup>2</sup> + ab + b<sup>2</sup> = (a<sup>3</sup> - b<sup>3</sup>)/(a - b), so we are looking for a, b with a<sup>3</sup> = b<sup>3</sup> (mod 7<sup>3</sup>). We now remember that a<sup>&phi;(m)</sup> = 1 (mod m). But &phi;(7<sup>3</sup>) = 2&middot;3&middot;49, so a<sup>3</sup> = 1 (mod 343) if a = n<sup>98</sup>. We find 2<sup>98</sup> = 18 (343), which gives the solution 18, 1. 
+
+<p>This approach does not give a flood of solutions. n<sup>98</sup> = 0, 1, 18, or 324. So the only solutions we get are 1, 18; 18, 324; 1, 324.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo84.html">25th IMO 1984</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+19 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

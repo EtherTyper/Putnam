@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1968/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>29th Putnam 1968</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Let S<sub>2</sub> be the 2-sphere { (x, y, z) <b>:</b> x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> = 1}. Show that for any n points on S<sub>2</sub>, the sum of the squares of the n(n - 1)/2 distances between them (measured in space, not in S<sub>2</sub>) is at most n<sup>2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let the points be (x<sub>i</sub>, y<sub>i</sub>, z<sub>i</sub>) for i = 1, 2, ... n. The square of the distance between the pair i, j is (x<sub>i</sub> - x<sub>j</sub>)<sup>2</sup> + (y<sub>i</sub> - y<sub>j</sub>)<sup>2</sup> + (z<sub>i</sub> - z<sub>j</sub>)<sup>2</sup> = (x<sub>i</sub><sup>2</sup> + y<sub>i</sub><sup>2</sup> + z<sub>i</sub><sup>2</sup>) + (x<sub>j</sub><sup>2</sup> + y<sub>j</sub><sup>2</sup> + z<sub>j</sub><sup>2</sup>) - 2(x<sub>i</sub>x<sub>j</sub> + y<sub>i</sub>y<sub>j</sub> + z<sub>i</sub>z<sub>j</sub>) = 2 - 2 (x<sub>i</sub>x<sub>j</sub> + y<sub>i</sub>y<sub>j</sub> + z<sub>i</sub>z<sub>j</sub>). Hence the sum of the squares of the distances is n(n-1) - 2 &sum; (x<sub>i</sub>x<sub>j</sub> + y<sub>i</sub>y<sub>j</sub> + z<sub>i</sub>z<sub>j</sub>).
+
+<p>
+
+Now (x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>n</sub>)<sup>2</sup> = &sum; x<sub>i</sub><sup>2</sup> + 2 &sum; x<sub>i</sub>x<sub>j</sub>. So 2 &sum; (x<sub>i</sub>x<sub>j</sub> + y<sub>i</sub>y<sub>j</sub> + z<sub>i</sub>z<sub>j</sub>) = X<sup>2</sup> + Y<sup>2</sup> + Z<sup>2</sup> - &sum; (x<sub>i</sub><sup>2</sup> + y<sub>i</sub><sup>2</sup> + z<sub>i</sub><sup>2</sup>) = X<sup>2</sup> + Y<sup>2</sup> + Z<sup>2</sup> - n, where X = &sum; x<sub>i</sub>, Y = <font face="symbol">S</font> y<sub>i</sub>, Z = &sum; z<sub>i</sub>. Hence the sum of the squares is n<sup>2</sup> - (X<sup>2</sup> + Y<sup>2</sup> + Z<sup>2</sup>), which is at most n<sup>2</sup>.
+
+<p>
+
+[Playing with small examples it is tempting to think that the maximum is only achieved when the points are symmetrically distributed, eg at the vertices of a triangle or tetrahedron, but the result shows that this is not true. For n even, for example, we can take the points in diametrically opposite pairs, but otherwise random.]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn68.html">29th Putnam 1968</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

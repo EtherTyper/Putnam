@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1964/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>25th Putnam 1964</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+S is a finite set of collinear points. Let k be the maximum distance between any two points of S. Given a pair of points of S a distance d &lt; k apart, we can find another pair of points of S also a distance d apart. Prove that if two pairs of points of S are distances a and b apart, then a/b is rational.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Hard.</i>
+
+<p>
+
+Since we are only interested in ratios, we may take k = 1 and the points to have coordinates x<sub>1</sub> = 0, x<sub>2</sub> ... , x<sub>n-1</sub>, x<sub>n</sub> = 1. Let these points generate a vector space V of dimension m over Q. 
+
+<p>
+
+If m = 1, then every x<sub>i</sub> is a rational multiple of x<sub>n</sub> and hence rational, so the ratio of any two distances is rational.
+
+<p>
+
+Suppose that m &gt; 1. Take a basis b<sub>1</sub>, b<sub>2</sub>, ... , b<sub>m</sub> for V as follows. Take b<sub>1</sub> = 1. Let b<sub>2</sub> = x<sub>t</sub>, for some irrational x<sub>t</sub>, then extend {b<sub>1</sub>, b<sub>2</sub>} to a basis. Then each x<sub>i</sub> is a unique rational linear combination of the b<sub>j</sub>. In particular, x<sub>1</sub> = 0, x<sub>t</sub> = b<sub>2</sub> and x<sub>n</sub>= b<sub>1</sub>. Now define a linear map f from V to Q as follows. Let f(b<sub>2</sub>) = r b<sub>2</sub>, where r is rational and sufficiently large that f(b<sub>2</sub>) &gt; 1, and f(b<sub>i</sub>) = b<sub>i</sub>/2 for all other i.
+
+<p>
+
+Now suppose we take two distinct points in S, we can write them as &sum; r<sub>i</sub>b<sub>i</sub> and &sum;s<sub>i</sub>b<sub>i</sub>, where all r<sub>i</sub> and s<sub>i</sub> are rational. Hence their images under f are r r<sub>2</sub>b<sub>2</sub> + &sum; r<sub>i</sub>b<sub>i</sub>/2 and r s<sub>2</sub>b<sub>2</sub> + &sum; s<sub>i</sub>b<sub>i</sub>/2, where the summations exclude i = 2. These must be unequal, otherwise we would have a linear combination of b<sub>i</sub> with rational coefficients which was zero.
+
+<p>
+
+So there is a unique point x in S with f(x) maximum and a unique point y in S with f(y) minimum. Then f(x - y) is greater than f(d) where d is any other difference x<sub>i</sub> - x<sub>j</sub>. But every difference except x<sub>n</sub> - x<sub>1</sub> and x<sub>1</sub> - x<sub>n</sub> occurs at least twice, so x and y must be the endpoints. Now f(x<sub>1</sub>) = 0 and f(x<sub>n</sub>) = 1/2, so f(x - y) = 1/2. But f(x<sub>t</sub> - x<sub>1</sub>) = f(x<sub>t</sub>) = f(b<sub>2</sub>) &gt; 1. Contradiction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn64.html">25th Putnam 1964</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

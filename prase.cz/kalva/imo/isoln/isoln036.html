@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 2003/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 2003</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Show that for each prime p, there exists a prime q such that n<sup>p</sup> - p is not divisible by q for any positive integer n.
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Thanks to Li Yi</i>
+<p>
+If p = 2, then we can take q = 3, since squares cannot be 2 mod 3. So suppose p is odd.
+<p>
+Consider N = 1 + p + p<sup>2</sup> + ... + p<sup>p-1</sup>. There are p terms. Since p is odd, that means an odd number of odd terms, so N is odd. Also N = p + 1 mod p<sup>2</sup>, which is not 1 mod p<sup>2</sup>, so N must have a prime factor q which is not 1 mod p<sup>2</sup>. We will show that q has the required property. 
+<p>
+Since N = 1 mod p, p does not divide N, so q cannot be p. If p = 1 mod q, then N = 1 + 1 + ... + 1 = p mod q. Since N = 0 mod q, that implies q divides p. Contradiction. So q does not divide p - 1. 
+<p>
+Now suppose n<sup>p</sup> = p mod q (*). We have just shown that n cannot be 1 mod q. We have also shown that q is not p, so n cannot be a multiple of q. So assume n is not 0 or 1 mod q. Take the pth power of both sides of (*). Since (p - 1)N = p<sup>p</sup> - 1, we have p<sup>p</sup> = 1 mod q. So n to the power of p<sup>2</sup> is 1 mod q. But n<sup>q-1</sup> = 1 mod q (the well-known Fermat little theorem). So if d = gcd(q-1, p<sup>2</sup>), then n<sup>d</sup> = 1 mod q. We chose q so that q-1 is not divisible by p<sup>2</sup>, so d must be 1 or p. But we are assuming n is not 1 mod q, so d cannot be 1. So it must be p. In other words, n<sup>p</sup> = 1 mod q. But n<sup>p</sup> = p mod q, so p = 1 mod q. Contradiction (we showed above that q does not divide p - 1).  
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo03.html">44th IMO 2003</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Jul 2003
+
+<br>Last corrected/updated 25 Jul 2003
+
+</BODY>
+
+
+
+</HTML>
+

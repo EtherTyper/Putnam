@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1972/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>33rd Putnam 1972</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+A, B, C and D are non-coplanar points. &ang;ABC = &ang;ADC and &ang;BAD = &ang;BCD. Show that AB = CD and BC = AD.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+It is worth looking first at the coplanar case. If ABCD is convex, then opposite angles are equal, so it is a parallelogram and opposite sides are equal. In this case the result is true. But if ABDC is convex, then &ang;ABC = &ang;ADC implies that A, B, D, C lie on a circle and hence that &ang;BAD = &ang;BCD. In this case it is certainly not true that AB = CD or that BC = AD.
+
+<p>
+
+Applying the cosine formula to angles ABC and ADC gives: (AB<sup>2</sup> + BC<sup>2</sup> - AC<sup>2</sup>)/(2 AB BC) = (AD<sup>2</sup> + CD<sup>2</sup> - AC<sup>2</sup>)/(2 AD CD). Hence (AB&middot;CD - AD&middot;BC)(AB&middot;AD - BC&middot;CD) + AC<sup>2</sup>(AB.BC - AD.CD) = 0 (*). Similarly, applying it to the other two angles gives: (BC<sup>2</sup> + CD<sup>2</sup> - BD<sup>2</sup>)/(2 BC CD) = (AB<sup>2</sup> + AD<sup>2</sup> - BD<sup>2</sup>)/(2 AB&middot;AD) and hence (AD&middot;BC - AB&middot;CD)(AB&middot;BC - CD&middot;AD) + BD<sup>2</sup>(BC&middot;CD - AB&middot;AD) = 0 (**).
+
+<p>
+
+Put x = (AB&middot;CD - AD&middot;BC), y = (AB&middot;AD - BC&middot;CD), z = (AB&middot;BC - AD&middot;CD). Then (*) and (**) become xy + AC<sup>2</sup>z = 0, xz + BD<sup>2</sup>y = 0. So if either of y or z is 0, then the other is also. But if y and z are 0, then AB/CD = BC/AD = AD/BC, so BC = AD and hence also AB = CD. On the other hand, if neither y nor z is 0, then we can deduce that AC<sup>2</sup>BD<sup>2</sup> = x<sup>2</sup>, and hence AC&middot;BD = &plusmn;x = &plusmn;(AB&middot;CD - AD&middot;BC). Thus either AC&middot;BD + AD&middot;BC = AB&middot;CD or AC&middot;BD + AB&middot;CD = AD&middot;BC.
+
+<p>
+
+In either case we can use Ptolemy's theorem which tells us that A, B, C, D must be (1) coplanar, and (2) concyclic (or collinear). But we are told that they are not coplanar. Hence BC = AD and AB = CD as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn72.html">33rd Putnam 1972</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

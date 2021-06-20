@@ -1,0 +1,42 @@
+<HTML>
+
+<HEAD>
+<TITLE>APMO 03/3 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>15th APMO 2003</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 3</b>
+<p>
+k &gt; 14 is an integer and p is the largest prime smaller than k. k is chosen so that p &ge; 3k/4. Prove that 2p does not divide (2p - k)!, but that n does divide (n - k)! for composite n &gt; 2p.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Since k &gt; p, we have p &gt; 2p-k and hence p does not divide any of 1, 2, 3, ... , 2p-k. But p is prime, so it does not divide (2p - k)! So 2p does not either.
+<p>
+Now consider composite n &gt; 2p. Note that k &gt; 14, so p &ge; 13, so n &gt; 26. Take q to be the largest prime divisor of n and put n = qr. We now have three cases.
+<p>
+(1) q &gt; r &ge; 3. Then n &gt; 2p &ge; 3k/2, so 2n/3 &gt; k. Hence n-k &gt; n-2n/3 = n/3 &ge; n/r = q &gt; r. So q and r are distinct integers &lt; n-k. Hence n = qr divides (n-k)!.
+<p>
+(2) r = 2. Then n = 2q &gt; 2p. But p is the largest prime &lt; k. Hence q &ge; k, so n-k &ge; n-q = q. Obviously q &gt; 2 (since n &gt; 26), so q and 2 are distinct integers &lt; n-k. Hence n = 2q divides (n-k)! .
+<p>
+(3) The final case is n = q<sup>2</sup>. We show that 2q &le; n-k. Suppose not. Then 2q &ge; n-k+1 &ge; (2p+1)-k+1 &ge; 3k/2 + 1 - k + 1 = k/2 + 2. So q &ge; k/4 + 1. Also since 2q &ge; n-k+1, we have k &ge; n-2q+1 = (q-1)<sup>2</sup> &ge; k<sup>2</sup>/16. If k &gt; 16, this is a contradiction. If k = 15 or 16, then p = 13 and k &ge; (q-1)<sup>2</sup> gives q &le; 5, so n = q<sup>2</sup> &le; 25. But n &gt; 2p = 26. Contradiction. So we have established that 2q &le; n-k. But that means that q and 2q are distinct integers &le; n-k and so their product 2n divides (n-k)!.
+<p>
+<i>Thanks to Gerhard Woeginger for this.</i>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo03.html">15th APMO 2003</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+27 Oct 2003
+<br>Last corrected/updated 27 Oct 03
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 03/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>33rd USAMO 2003</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Given a sequence S<sub>1</sub> of n+1 non-negative integers, a<sub>0</sub>, a<sub>1</sub>, ... , a<sub>n</sub> we derive another sequence S<sub>2</sub> with terms b<sub>0</sub>, b<sub>1</sub>, ... , b<sub>n</sub>, where b<sub>i</sub> is the number of terms preceding a<sub>i</sub> in S<sub>1</sub> which are different from a<sub>i</sub> (so b<sub>0</sub> = 0). Similarly, we derive S<sub>2</sub> from S<sub>1</sub> and so on. Show that if a<sub>i</sub> &le; i for each i, then S<sub>n</sub> = S<sub>n+1</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Note that the derived sequence b<sub>i</sub> also satisfies b<sub>i</sub> &le; i (since there are only i terms preceding b<sub>i</sub>). We show that b<sub>i</sub> &ge; a<sub>i</sub> for each i. That is obvious if a<sub>i</sub> = 0. If a<sub>i</sub> = k &gt; 0, then since each of the first k terms (a<sub>0</sub>, a<sub>1</sub>, ... , a<sub>k-1</sub>) must be &lt; k, we certainly have b<sub>i</sub> &ge; k.
+<p>
+Next we show that if b<sub>i</sub> = a<sub>i</sub>, then further iterations do not change term i. If b<sub>i</sub> = a<sub>i</sub> = 0, then none of the terms before a<sub>i</sub> differ from 0, so all the terms before b<sub>i</sub> are also 0. But that means the corresponding terms of the next iteration must also all be 0. If b<sub>i</sub> = a<sub>i</sub> = k &gt; 0, then since a<sub>0</sub>, a<sub>1</sub>, ... , a<sub>k-1</sub> all differ from a<sub>i</sub>, the remaining terms (if any) a<sub>k</sub>, a<sub>k+1</sub>, ... , a<sub>i-1</sub> must all be the same as a<sub>i</sub>. But that implies that each of b<sub>k</sub>, b<sub>k+1</sub>, ... , b<sub>i-1</sub> must also be k. Hence if the next iteration is c<sub>0</sub>, c<sub>1</sub>, ... then c<sub>i</sub> = k also.  
+<p>
+Now we use induction on k. Clearly term 0 is always 0. Considering the two cases, we see that term 1 does not change at iteration 1. So suppose that term i does not change at iteration i. If term i+1 does change at iteration i+1, then it must have changed at all previous iterations. So it must have started at 0 and increased by 1 at each iteration.  
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa03.html">33rd USAMO 2003</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+6 Aug 2003
+<br>Last corrected/updated 6 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

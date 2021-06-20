@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 01/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>30th USAMO 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Every point in the plane is assigned a real number, so that for any three points which are not collinear, the number assigned to the incenter is the mean of the numbers assigned to the three points. Show that the same number is assigned to every point.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let f(P) be the number assigned to any point P. Let P, Q be any points. Take R on the segment PQ. Its position will be determined later. Take AA' perpendicular to PQ with R its midpoint. Take a rectangle ACFA' on the opposite side of AA' to P and AA'/AC = 3/2. Let B be the midpoint of AC and B' the midpoint of A'F. Take equally spaced points D, E on CF, so that AB = BC = CD = DE = EF = FB' = B'A'. Finally take X on the ray RP. We will choose the lengths XP and RA so that P is the incenter of XAA' and Q is the incenter of XBB'.
+
+<p>
+
+The incircles of ACD and BCE coincide, so f(A) + f(D) = f(B) + f(E). Hence f(D) - f(E) = f(B) - f(A). Similarly, the incircles of A'EF and B'DF coincide, so f(D) - f(E) = f(A') - f(B'). Hence f(A) + f(A') = f(B) + f(B'). Hence f(P) = ( f(A) + f(A') + f(X) )/3 = ( f(B) + f(B') + f(X) )/3 = f(Q). That is all we need, since it shows that the same number is assigned to two arbitrary points.
+
+<p>
+
+So it remains to show that XP and RA can be chosen as claimed. The incenter of an isosceles triangle base 2a and height h is ah/(a + &radic;(a<sup>2</sup>+h<sup>2</sup>) above the base (if the distance is x, then by similar triangles x/(h-x) = a/&radic;(a<sup>2</sup>+h<sup>2</sup>) ). So if we take XR/RA = 3/2 and RA/PR = (1 + &radic;5)/2 then P is the incenter of XAA'. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa01.html">30th USAMO 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

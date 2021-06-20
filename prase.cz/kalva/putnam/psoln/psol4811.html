@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 48/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>8th Putnam 1948</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Find the area of the region { (x, y) <b>:</b> |x + yt + t<sup>2</sup>| &le; 1 for all t &isin; [0, 1] }.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We cannot have |x| &gt; 1, for then the inequality is not satisfied at t = 0. We cannot have y &gt; 1 for then yt + t<sup>2</sup> &gt; 2 at t = 1 and hence x + yt + t<sup>2</sup> &gt; 1. Similarly, we cannot have y &lt; -3 for then yt + t<sup>2</sup> &lt; -2 at t = 1 and hence x + yt + t<sup>2</sup> &lt; -1.
+
+<p>
+
+We can write x + yt + t<sup>2</sup> = x - y<sup>2</sup>/4 + (t + y/2)<sup>2</sup>. So for -3 &le; y &le; -2, the maximum of (t + y/2)<sup>2</sup> occurs at t = 0 with value y<sup>2</sup>/4, and its minimum is (1 + y/2)<sup>2</sup> at t = 1. Hence the minimum of x + yt + t<sup>2</sup> is 1 + x + y and the maximum is x. So the region is bounded by x &le; 1 and x + y &ge; -2.
+
+<p>
+
+For -2 &le; y &le; -1, the maximum of (t + y/2)<sup>2</sup> is y<sup>2</sup>/4 at t = 0, but the minimum is 0 at t = -y/2. Hence the maximum of x + yt + t<sup>2</sup> is x and the minimum is x - y<sup>2</sup>/4. So the region is bounded by x &le; 1 and x - y<sup>2</sup>/4 &ge; -1.
+
+<p>
+
+For -1 &le; y &le; 0, the maximum of (t + y/2)<sup>2</sup> is (1 + y/2)<sup>2</sup> and the minimum is 0 at t = -y/2. Hence the maximum of x + yt + t<sup>2</sup> is 1 + x + y and the minimum is x - y<sup>2</sup>/4. So the region is bounded by x + y &le; 0 and x - y<sup>2</sup>/4 &ge; -1.
+
+<p>
+
+For 0 &le; y &le; 1, the maximum of (t + y/2)<sup>2</sup> is (1 + y/2)<sup>2</sup> and the minimum is y<sup>2</sup>/4. Hence the maximum of x + yt + t<sup>2</sup> is 1 + x + y and the minimum is x. So the region is bounded by x + y &le; 0 and x &ge; -1.
+
+<p>
+
+Thus the region is the rhombus with vertices at (1, -1), (1, -3), (-1, -1), (-1, 1), except that the vertex (-1, -1) is cut off by the curve x = y<sup>2</sup>/4 - 1, which forms the boundary between (0, -2) and (-1, 0). The rhombus has area 4 (base 2 and height 2). The area between the parabola and the lines x = -1 and y = -2 is &int;<sub>0</sub><sup>2</sup> y<sup>2</sup>/4 dy = 8/12. The area between the line y = -2 -x and the lines x = -1 and y = -2 is 1/2, so the area cut off the rhombus by the parabola is 2/3 - 1/2 = 1/6. Hence the area required is 4 - 1/6 = 3 5/6.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn48.html">8th Putnam 1948</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

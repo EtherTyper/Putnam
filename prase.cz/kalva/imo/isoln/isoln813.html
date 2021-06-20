@@ -1,0 +1,65 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1981/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+Determine the maximum value of m<sup>2</sup> + n<sup>2</sup>, where m and n are integers in the range 1, 2, ... , 1981 satisfying (n<sup>2</sup> - mn - m<sup>2</sup>)<sup>2</sup> = 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Experimenting with small values suggests that the solutions of  n<sup>2</sup> - mn - m<sup>2</sup> = 1 or -1 are successive Fibonacci numbers. So suppose n &gt; m is a solution. This suggests trying m+n, n: (m+n)<sup>2</sup> - (m+n)n - n<sup>2</sup> = m<sup>2</sup> + mn - n<sup>2</sup> = -(n<sup>2</sup> - mn - m<sup>2</sup>) = 1 or -1. So if n &gt; m is a solution, then m+n, n is another solution. Running this forward from 2,1 gives 3,2; 5,3; 8,5; 13,8; 21,13; 34,21; 55,34; 89,55; 144,89; 233,144; 377,233; 610,377; 987,610; 1597,987; 2584,1597.
+
+<p>
+But how do we know that there are no other solutions? The trick is to run the recurrence the other way. For suppose n &gt; m is a solution, then try m, n-m: m<sup>2</sup> - m(n-m) - (n-m)<sup>2</sup> = m<sup>2</sup> + mn - n<sup>2</sup> = -(n<sup>2</sup> - mn - m<sup>2</sup>) = 1 or -1, so that also satisfies the equation. Also if m &gt; 1, then m &gt; n-m (for if not, then n &gt;= 2m, so n(n - m) &gt;= 2m<sup>2</sup>, so n<sup>2</sup> - nm - m<sup>2</sup> &gt;= m<sup>2</sup> &gt; 1). So given a solution n &gt; m with m &gt; 1, we have a smaller solution m &gt; n-m. This process must eventually terminate, so it must finish at a solution n, 1 with n &gt; 1. But the only such solution is 2, 1. Hence the starting solution must have been in the forward sequence from 2, 1.
+
+<p>Hence the solution to the problem stated is 1597<sup>2</sup> + 987<sup>2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo81.html">22nd IMO 1981</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

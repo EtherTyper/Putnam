@@ -1,0 +1,79 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1995/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Each of the n triples (r<sub>i</sub>, s<sub>i</sub>, t<sub>i</sub>) is a randomly chosen permutation of (1, 2, 3) and each triple is chosen independently. Let p be the probability that each of the three sums &sum; r<sub>i</sub>,  &sum; s<sub>i</sub>, &sum; t<sub>i</sub> equals 2n, and let q be the probability that they are 2n - 1, 2n, 2n + 1 in some order. Show that for some n &ge; 1995, 4p &le; q.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Fairly hard. Note the typically misleading suggestion that we need n large.</i>
+
+<p>
+
+Let a<sub>n</sub> be the probability that the sums are 2n, 2n, 2n (type 1); b<sub>n</sub> that they are 2n - 1, 2n, 2n + 1 in some order (type 2); c<sub>n</sub> that they are 2n - 2, 2n + 1, 2n + 1 or 2n - 1, 2n - 1, 2n + 2 in some order (type 3). We show that for any n, either a<sub>n</sub> &lt; b<sub>n</sub>/4 or a<sub>n+1</sub> &lt; b<sub>n+1</sub>/4. It is easy to verify that:
+
+<p>
+&nbsp; &nbsp; a<sub>n+1</sub> = b<sub>n</sub>/6; 
+
+<br>&nbsp; &nbsp; b<sub>n+1</sub> &gt;= a<sub>n</sub> + b<sub>n</sub>/3 + c<sub>n</sub>/3;
+
+<br>&nbsp; &nbsp; c<sub>n+1</sub> &gt;= b<sub>n</sub>/3
+
+<p>
+Suppose that a<sub>n</sub> &gt; b<sub>n</sub>/4. Then b<sub>n+1</sub> &ge; b<sub>n</sub>/4 + b<sub>n</sub>/3 + b<sub>n-1</sub>/9 = 7b<sub>n</sub>/12 + 2a<sub>n</sub>/3 &gt; 7b<sub>n</sub>/12 + b<sub>n</sub>/6 = 9b<sub>n</sub>/12 = 9a<sub>n+1</sub>/2 &gt; 4 a<sub>n+1</sub>.
+
+<p>
+Thus we have the required a<sub>n</sub> &lt; b<sub>n</sub>/4 for either n = 1995 or n = 1996.
+
+<p>
+
+[This looks deceptively easy. But how did we know that the inequality is alternately true and false? How do we know how many types of patterns to look at? The second question is easier. We might start with just type 1 and type 2. Then we get a<sub>n+1</sub> = b<sub>n</sub>/6, and b<sub>n+1</sub> &ge; a<sub>n</sub> + b<sub>n</sub>/3. But that is not enough, because a<sub>n</sub> &gt; b<sub>n</sub>/4 only implies a<sub>n+1</sub> &lt; b<sub>n+1</sub>/(3 1/2). So we need at least one more type.]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn95.html">Putnam 1995</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

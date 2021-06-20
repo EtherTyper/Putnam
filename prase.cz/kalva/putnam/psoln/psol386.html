@@ -1,0 +1,72 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>1st Putnam 1938/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>1st Putnam 1938</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+A swimmer is standing at a corner of a square swimming pool. She swims at a fixed speed and runs at a fixed speed (possibly different). No time is taken entering or leaving the pool. What path should she follow to reach the opposite corner of the pool in the shortest possible time?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: let k be the running speed divided by the swimming speed. For k &gt; &radic;2, the unique solution is to run round the outside. For k &lt; &radic;2, the unique solution is to swim direct. For k = &radic;2 there is no unique solution. Run along a side to X, swim to Y equidistant from the corner between X and Y, then run from Y. The time taken is independent of X.
+
+<p>
+
+We may take the side of the square to be 1, the swimming speed to be 1 and the running speed to be k. Let the square be ABCD. Suppose the start is at A and the finish at C. Possible routes are (1) run to X on AB, swim to Y on BC, run to C, (2) run to X on AD, swim to Y on CD, run to C, (3) run to X on AB, swim to Y on CD, run to C. We start by considering case (1). Take BX to be x, BY to be y. Then the time taken is (2 - x - y)/k + &radic;(x<sup>2</sup> + y<sup>2</sup>). Note that this includes the extreme cases of running all the way (x = y = 0) and swimming all the way (x = y = 1).
+
+<p>
+
+Now (x - y)<sup>2</sup> &gt;= 0, with equality iff x = y, so (x + y)<sup>2</sup> &lt;= 2(x<sup>2</sup> + y<sup>2</sup>) and hence (x + y) &le; &radic;2 &radic;(x<sup>2</sup> + y<sup>2</sup>), with equality iff x = y. So if k &gt; &radic;2, then (x + y) &lt; k &radic;(x<sup>2</sup> + y<sup>2</sup>) and hence 2/k &lt; (2 - x - y)/k + &radic;(x<sup>2</sup> + y<sup>2</sup>) unless x = y = 0 (when we have equality). Hence for k &gt; &radic;2, the unique solution is to run all the way.
+
+<p>
+
+If k &lt; &radic;2, then (x + y) &le; &radic;2 &radic;(x<sup>2</sup> + y<sup>2</sup>) implies &radic;2 (&radic;2 - &radic;(x<sup>2</sup>  + y<sup>2</sup>) &le; 2 - x - y and hence k (&radic;2 - &radic;(x<sup>2</sup>  + y<sup>2</sup>) &lt; 2 - x - y unless x = y = 1 (when we have equality). So &radic;2 &lt; (2 - x - y)/k + &radic;(x<sup>2</sup> + y<sup>2</sup>) unless x = y = 1. In other words, for k &lt; &radic;2 the unique solution is to swim all the way.
+
+<p>
+
+For k = &radic;2 we have equality (in both the previous paragraphs) iff x = y. So any solution with x = y is optimal in this case.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn38.html">1st Putnam 1938</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 51/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>11th Putnam 1951</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Show that a line in the plane with rational slope contains either no lattice points or an infinite number. Show that given any line L of rational slope we can find &delta; &gt; 0, such that no lattice point is a distance k from L where 0 &lt; k &lt; &delta;.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The first part is obvious. If the line passes through (m, n) and has slope a/b (where m, n, a, b are all integers), then it also passes through (m + kb, n + ka) for any integer a. Although not required, we note that there are lines with rational slope passing through no lattice points, for example, y = 1/2 and y = x + 1/2.
+
+<p>
+
+Suppose L is bx - ay + c = 0. The distance of L from (x, y) is |bx - ay + c|/&radic;(a<sup>2</sup> + b<sup>2</sup>). If (x, y) is a lattice point then bx - ay is an integer. Hence |bx - ay + c| is either zero or at least 1 if c is an integer, or at least the distance of c from the nearest integer if c is not an integer. So we can find k &gt; 0, so that |bx - ay + c| &gt; k for all lattice points not on L. Hence the distance |bx - ay + c|//&radic;(a<sup>2</sup> + b<sup>2</sup>) is at least k/&radic;(a<sup>2</sup> + b<sup>2</sup>) for all lattice points not on L. So we can take &delta; to be k/&radic;(a<sup>2</sup> + b<sup>2</sup>).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn51.html">11th Putnam 1951</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

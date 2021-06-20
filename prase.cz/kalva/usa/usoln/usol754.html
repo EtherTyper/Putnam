@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 75/4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>4th USAMO 1975</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 4</b><br>
+
+<p>
+
+Two circles intersect at two points, one of them X. Find Y on one circle and Z on the other, so that X, Y and Z are collinear and XY.XZ is as large as possible.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let the circle through XY have center O and the other circle have center O'. XY = 2 OX sin XOY, XZ = 2 O'X sin XOZ, so we wish to maximise 2 sin XOY sin XO'Z. But 1/2 &ang;XOY = 90<sup>o</sup> - &ang;OXY, 1/2 &ang;XO'Z = 90<sup>o</sup> - &ang;OXZ, so 1/2 &ang;XOY + 1/2 &ang;XO'Z = &ang;OXO', which is fixed. Thus &ang;XOY + &ang;XO'Z is fixed. But 2 sin XOY sin XO'Z = cos(XOY-XO'Z) - cos(XOY+XO'Z), so we maximise by taking XOY = XO'Z.
+
+<p>
+
+Note that in this case &ang;OYZ = &ang;O'ZY, so if we extend YO and ZO' to meet at C, then CY = CZ and hence C is the center of a circle containing the two circles and touching them at Y and Z. Also &ang;CZY = &ang;OXY, so O'Z is parallel to OX. Similarly OY is parallel to O'X, which shows how to construct Y and Z.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa75.html">4th USAMO 1975</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

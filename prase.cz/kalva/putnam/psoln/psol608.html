@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1960/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>21st Putnam 1960</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+Find all pairs of unequal integers m, n such that m<sup>n</sup> = n<sup>m</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (2, 4), (4, 2), (-2, -4), (-4, -2).
+
+<p>
+
+Suppose first that m and n are both positive. Assume m &gt; n. Then we can put m = n + k with k &gt; 0. Hence (1 + k/n)<sup>n</sup> = n<sup>k</sup>. But for x &gt; 1 we have 1 + x &lt; e<sup>x</sup> (the derivative of f(x) = e<sup>x</sup> - x - 1 is positive and f(0) = 0) and hence (1 + k/n)<sup>n</sup> &lt; e<sup>k</sup>. So there are no solutions for n &gt; 2. If n = 1, then n<sup>m</sup> = 1 and hence m = 1, contradicting the fact that m and n are unequal. If n = 2, then m must be a power of 2. Suppose m = 2<sup>h</sup>. Then we find h = 1 or 2. h = 1 is invalid (because m and n are unequal), so m = 4. There is also the corresponding solution with m &lt; n.
+
+<p>
+
+If n &lt; 0 and m &gt; 0, then n<sup>m</sup> = 1/m<sup>-n</sup>. So m divides 1 and hence m = 1. But m must be even for to make n<sup>m</sup>  positive. Contradiction. So there are no solutions of this type. If m and n are both negative, then -m, -n is a solution, so the only possibilities are (-2, -4) and (-4, -2) and it is readily checked that these are indeed solutions.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn60.html">21st Putnam 1960</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,71 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1999/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 6</b>
+
+<p>
+
+Determine all functions f: R -&gt; R such that f(x - f(y) ) = f( f(y) ) + x f(y) + f(x) - 1 for all x, y in R. [R is the reals.]
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+<i>Solution communicated by Ong Shien Jin</i>
+
+<p>
+Let c = f(0) and A be the image f(R). If a is in A, then it is straightforward to find f(a): putting a = f(y) and x = a, we get f(a - a) = f(a) + a<sup>2</sup> + f(a) - 1, so f(a) = (1 + c)/2 - a<sup>2</sup>/2 (*).
+
+<p>
+The next step is to show that A - A = R. Note first that c cannot be zero, for if it were, then putting y = 0, we get: f(x - c) = f(c) + xc + f(x) - 1 (**) and hence f(0) = f(c) = 1. Contradiction. But (**) also shows that f(x - c) - f(x) = xc + (f(c) - 1). Here x is free to vary over R, so xc + (f(c) - 1) can take any value in R.
+
+<p>
+Thus given any x in R, we may find a, b in A such that x = a - b. Hence f(x) = f(a - b) = f(b) + ab + f(a) - 1. So, using (*): &nbsp; f(x) = c - b<sup>2</sup>/2 + ab - a<sup>2</sup>/2 = c - x<sup>2</sup>/2.
+
+<p>
+In particular, this is true for x in A. Comparing with (*) we deduce that c = 1. So for all x in R we must have &nbsp; f(x) = 1 - x<sup>2</sup>/2. Finally, it is easy to check that this satisfies the original relation and hence is the unique solution.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo99.html">40th IMO 1999</a><br>
+
+<p>(C) John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Sep 1999
+
+<br>Last corrected/updated 19 Aug 03
+</BODY>
+
+
+
+</HTML>
+

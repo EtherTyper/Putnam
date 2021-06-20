@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1963/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>24th Putnam 1963</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+R is the reals. Find all f <b>:</b> R &rarr; R which are twice differentiable and satisfy: f(x)<sup>2</sup> - f(y)<sup>2</sup> = f(x + y) f(x - y). 
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Differentiate wrt x: 2 f(x) f '(x) = f '(x + y) f(x - y) + f(x + y) f '(x - y). Differentiate the result wrt y: 0 = f ''(x + y) f(x - y) - f '(x + y) f '(x - y) + f '(x + y) f '(x - y) - f(x + y) f ''(x - y). Put X = x + y, Y = x - y. Then we have f ''(X) f(Y) = f(X) f ''(Y).
+
+<p>
+
+If f(X) = 0 for all X, then we have a solution. So suppose for some X<sub>0</sub>, f(X<sub>0</sub>) is non-zero and put k = f ''(X<sub>0</sub>)/f(X<sub>0</sub>), then f ''(Y) = k f(Y). Now we consider separately k = 0, k &le; 0 and k &gt; 0. If k = 0, then integrating gives f(Y) = AY + B. But putting y = 0 in the original relation gives immediately that f(y) = 0, so B = 0 and we have the solution f(Y) = AY. This includes the solution f(Y) = 0 noticed earlier.
+
+<p>
+
+If k &lt; 0, put k = - a<sub>2</sub>. Then f(Y) = A sin aY + B cos aY. But f(0) = 0, so B = 0 and we have the solution f(Y) = A sin aY. If k &gt; 0, put k = a<sub>2</sub>. Then f(Y) = A sinh aY + B cosh aY. Again B = 0 and we have the solution f(Y) = A sinh aY.
+
+<p>
+
+It remains to check that these are solutions. It is obvious that f(Y) = AY is a solution. If f(Y) = A sin aY, then f(x + y)f(x - y) = A<sup>2</sup>(sin ax cos ay + cos ax sin ay)(sin ax cos ay - cos ax sin ay) = A<sup>2</sup>(sin<sup>2</sup>ax cos<sup>2</sup>ay - cos<sup>2</sup>ax sin<sup>2</sup>ay) = A<sup>2</sup>(sin<sup>2</sup>ax - sin<sup>2</sup>ay) = f(x)<sup>2</sup> - f(y)<sup>2</sup>, as required. Similarly for the sinh expression.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn63.html">24th Putnam 1963</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1959/A7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>20th Putnam 1959</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A7</b><br>
+
+<p>
+
+Let R be the reals. Let f <b>:</b> [a, b] &rarr; R have a continuous derivative, and suppose that if f(x) = 0, then f '(x) &ne; 0. Show that we can find g <b>:</b> [a, b] &rarr; R with a continuous derivative, such that f(x)g'(x) &gt; f '(x)g(x) for all x &isin; [a, b].
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We note that the derivative of f/g is - (fg' - f 'g)/g<sup>2</sup> so if we take g so that f/g is decreasing, then we are almost home. Not quite, because of the difficulty that f may be zero. For example, if we take g(x) = x f(x), then fg' - f 'g is zero whenever f(x) = 0.
+
+<p>
+
+f has only finitely many zeros, for otherwise the zeros would have a limit point c and then by continuity we would have f(c) = f '(c) = 0. So we may take a polynomial p(x) such that p(x) f '(x) = -1 at each zero of f. Now consider g(x) = x f(x) + k p(x). We have f(x) g'(x) - f '(x) g(x) = f(x)<sup>2</sup> + k(f(x) p'(x) - f '(x) p(x) ). Now f(x) p'(x) - f '(x) p(x) = 1 at each zero of f, so we can find an open set K containing all these zeros such that f(x) p'(x) - f '(x) p(x) &gt; 1/2 on K. Now [a, b] - K is compact and contains no zeros of f(x)<sup>2</sup>, which is continuous, so we can find &epsilon; &gt; 0, so that f(x)<sup>2</sup> &gt; &epsilon; on [a, b] - K. But [a, b] is compact, so |f(x) p'(x) - f '(x) p(x)| &lt; some M on [a, b]. Take k &lt; &epsilon;/M. Then on [a, b] - K, f(x)<sup>2</sup> &gt; &epsilon; and k|f(x) p'(x) - f '(x) p(x)| &lt; &epsilon;, so f(x) g'(x) - f '(x) g(x) &gt; 0. On K, f(x)<sup>2</sup> is non-negative and k( f(x) p'(x) - f '(x) p(x) ) is positive, so f(x) g'(x) - f '(x) g(x) &gt; 0.
+
+<p>
+
+<i>The motivation for the problem is probably that if f and g are linearly independent solutions of y'' + a(x)y' + b(x)y = 0, then the Wronskian fg' - f 'g is non-zero. But this requires f to have a continuous second derivative, which is not necessarily the case.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn59.html">20th Putnam 1959</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

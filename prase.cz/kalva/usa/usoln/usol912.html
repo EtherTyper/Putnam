@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 91/2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>20th USAMO 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 2</b><br>
+
+<p>
+
+For each non-empty subset of {1, 2, ... , n} take the sum of the elements divided by the product. Show that the sum of the resulting quantities is n<sup>2</sup> + 2n - (n + 1)s<sub>n</sub>, where s<sub>n</sub> = 1 + 1/2 + 1/3 + ... + 1/n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+This is a straightforward induction. For n = 1 the only term in the sum is 1/1 with sum 1. The formula gives 1<sup>2</sup> + 2.1 - 2.1 = 1. So it is true for n = 1.
+
+<p>
+
+Note first that for n the sum of the inverses of the products, including 1 for the empty set, is (1 + 1/1)(1 + 1/2)(1 + 1/3) ... (1 + 1/n) = n+1 (it telescopes). Now the sum for n+1 is the sum for n plus the sum of terms involving n+1. But if a term involves n+1, then the sum is increased by n+1 and the product is increased by a factor n+1. So the sum of all the terms involving n+1 is (1/n+1 x sum for n) + (sum of inverse products for n) = (n<sup>2</sup> + 2n - (n+1)s<sub>n</sub>)/(n+1) + (n+1) = n+1 - 1/(n+1) - s<sub>n</sub> + (n+1) = 2(n+1) - s<sub>n+1</sub>. Hence the sum for n+1 is (n<sup>2</sup> + 2n) - (n+1)s<sub>n</sub> + 2(n+1) - s<sub>n+1</sub> = (n+1)<sup>2</sup> + 2(n+1) - 1 - (n+1)s<sub>n</sub> - s<sub>n+1</sub> = (n+1)<sup>2</sup> + 2(n+1) - (n+1)/(n+1) - (n+1)s<sub>n</sub> - s<sub>n+1</sub> = (n+1)<sup>2</sup> + 2(n+1) - (n+2)s<sub>n+1.</sub>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa91.html">20th USAMO 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

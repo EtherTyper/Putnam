@@ -1,0 +1,61 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1994/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1994</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Let Z be the integers. Let f<sub>1</sub>, f<sub>2</sub>, ... , f<sub>10</sub> <b>:</b> Z &rarr; Z be bijections. Given any n &isin; Z we can find some composition of the f<sub>i</sub> (allowing repetitions) which maps 0 to n. Consider the set of 1024 functions S = { g<sub>1</sub>g<sub>2</sub>... g<sub>10</sub>}, where g<sub>i</sub> = the identity or f<sub>i</sub>. Show that at most half the functions in S map a finite (non-empty) subset of Z onto itself. 
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let A be a finite subset of Z. Suppose all f<sub>i</sub> map A to itself. Then, since all the f<sub>i</sub> are bijections, all compositions of the f<sub>i</sub> also map A to itself. If 0 &isin; A, then since A is finite we can find n &notin; A, and hence no composition of the f<sub>i</sub> could take 0 to n, contradicting the hypothesis. If 0 &notin; A, then take any n &isin; A. In this case no composition of the f<sub>i</sub> could take 0 to n, contradicting the hypothesis. Thus some f<sub>k</sub> does not map A to itself.
+
+<p>
+Let g be any composition g<sub>1</sub>...g<sub>k-1</sub> and g' any composition g<sub>k+1</sub>...g<sub>10</sub>, where g<sub>i</sub> = the identity or f<sub>i</sub>. [If k = 1, then we take g to be the identity, and if k = 10, then we take g' to be the identity.]. Now if both gg' and gf<sub>k</sub>g' map A to itself, then f<sub>k</sub> must map A to itself (since all the functions are bijections), contradiction. Hence at least one of the maps gg' and gf<sub>k</sub>g' does not map A to itself. But the 1024 maps in S form 512 disjoint pairs gg', gf<sub>k</sub>g', so at least 512 maps in S (one from each pair) do not map A to itself.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn94.html">Putnam 1994</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1969/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>30th Putnam 1969</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+The sequence a<sub>1</sub> + 2a<sub>2</sub>, a<sub>2</sub> + 2a<sub>3</sub>, a<sub>3</sub> + 2a<sub>4</sub>, ... converges. Prove that the sequence a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>,  ... also converges.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Note that the result is not true for a<sub>i</sub> + a<sub>2</sub>, a<sub>2</sub> + a<sub>3</sub>, ... or for 2a<sub>1</sub> + a<sub>2</sub>, 2a<sub>2</sub> + a<sub>3</sub>, ... . In the first case, we could have 1, -1, 1, -1, 1, ... . In the second case, we could have 1, -2, 4, -8, 16, -32, ... .
+
+<p>
+
+Suppose a<sub>n</sub> + 2a<sub>n+1</sub> converges to 3k. We show that a<sub>n</sub>converges to k.
+
+<p>
+
+Given any &epsilon; &gt; 0, take N so that a<sub>n</sub> + 2a<sub>n+1</sub> is within &epsilon; of 3k for all n &gt;= N. Take a positive integer M such that a<sub>N</sub> is within (2<sup>M</sup> + 1)&epsilon; of k.
+
+<p>
+
+Then a<sub>N+1</sub> is within ( (2<sup>M</sup> + 1)&epsilon; + &epsilon;)/2 = (2<sup>M-1</sup> + 1)&epsilon; of (3k - k)/2 = k. By a trivial induction a<sup>N+M</sup> is within 2&epsilon; of k. Then a<sup>N+M+1</sup> is within (2&epsilon; + &epsilon;)/2, and hence within 2&epsilon;, of k. So by a trivial induction, a<sub>n</sub> is within 2&epsilon; of k for all n &gt; N + M.
+
+<p>
+
+<i>Comment. This is identical to 1950/B5 (1).</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn69.html">30th Putnam 1969</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

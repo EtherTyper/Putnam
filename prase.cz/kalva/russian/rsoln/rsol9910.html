@@ -1,0 +1,73 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 99/10 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 10</b>
+
+<p>
+
+The sequence a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ... of positive integers is determined by its first two members and the rule a<sub>n+2</sub> = (a<sub>n+1</sub> + a<sub>n</sub>)/gcd(a<sub>n</sub>, a<sub>n+1</sub>). For which values of a<sub>1</sub> and a<sub>2</sub> is it bounded?
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+a<sub>1</sub> = a<sub>2</sub> = 2
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Put d<sub>n</sub> = gcd(a<sub>n</sub>, a<sub>n+1</sub>). Note that d<sub>n+1</sub> divides a<sub>n+1</sub> and a<sub>n+1</sub> and hence also d<sub>n</sub>a<sub>n+2</sub> - a<sub>n+1</sub> = a<sub>n</sub>. So it also divides d<sub>n</sub>. Hence, in particular, d<sub>n</sub> &ge; d<sub>n+1</sub>. Since all d<sub>n</sub> are positive integers, we must have d<sub>n</sub> = d for all n &ge; some N.
+<p>
+If d = 1, then a<sub>n+2</sub> = a<sub>n+1</sub> + a<sub>n</sub> &gt; a<sub>n+1</sub> for any n &gt; N. So a<sub>n</sub> cannot be bounded.
+<p>
+If d &ge; 3, then a<sub>n+2</sub> &lt; (a<sub>n+1</sub> + a<sub>n</sub>)/2 for all n &gt; N. Hence a<sub>n+2</sub> &lt; max(a<sub>n+1</sub>, a<sub>n</sub>). Now a<sub>n+3</sub> &lt; max(a<sub>n+2</sub>, a<sub>n+1</sub>) &le; max(a<sub>n+1</sub>, a<sub>n</sub>). Hence max(a<sub>n+3</sub>, a<sub>n+2</sub>) &lt; max(a<sub>n+1</sub>, a<sub>n</sub>). So we get an infinite strictly decreasing sequence of positive integers. Contradiction.
+<p>
+So we must have d = 2. Hence a<sub>n+2</sub> = (a<sub>n+1</sub> + a<sub>n</sub>)/2 for all n &gt; N. Hence a<sub>n+2</sub> - a<sub>n+1</sub> = (a<sub>n</sub> - a<sub>n+1</sub>)/2. So if a<sub>N</sub> &ne; a<sub>N+1</sub>, then for sufficiently large n we get an non-integral. Contradiction. So a<sub>N</sub> = a<sub>N+1</sub>. But gcd(a<sub>N</sub>,a<sub>N+1</sub>) = 2, so a<sub>N</sub> = a<sub>N+1</sub> = 2. So 2 = (2 + aN-1)/gcd(2,a<sub>N-1</sub>). If gcd(2,a<sub>N-1</sub>) = 1, then a<sub>N-1</sub> = 0. Contradiction. So gcd(2,a<sub>N-1</sub>) = 2. Hence a<sub>N-1</sub> = 2 gcd(2,a<sub>N-1</sub>) - 2 = 2. Now by a trivial induction all terms are 2. In particular a<sub>1</sub> and a<sub>2</sub> are 2.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus99.html">Russian 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 March 2004
+<br>Last corrected/updated 4 Mar 04
+
+</BODY>
+
+
+
+</HTML>
+

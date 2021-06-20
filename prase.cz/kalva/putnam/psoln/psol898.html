@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1989/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>50th Putnam 1989</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Let S be a non-empty set with a binary operation (written like multiplication) such that: (1) it is associative; (2) ab = ac implies b = c; (3) ba = ca implies b = c; (4) for each element, the set of its powers is finite. Is S necessarily a group?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes.
+
+<p>
+
+Let a be any element. We show that for some n &gt; 1 we have a<sup>n</sup> = a. The set of its powers is finite, so for some r &gt; s we have a<sup>r</sup> = a<sup>s</sup>. If s = 1, we are done. If not, put b = a<sup>s-1</sup>, then b a<sup>r-s+1</sup> = b a, so we may cancel to get a<sup>n</sup> = a with n = r - s + 1 &gt; 1. Now put e = a<sup>n-1</sup>. Then we have ea = ae = a.
+
+<p>
+
+Now take any b. We have a(eb) = (ae)b = ab, and cancelling gives eb = b. Similarly, (be)a = b(ea) = ba, so be = b. Hence e is an identity.
+
+<p>
+
+Also a has an inverse. If n - 1 = 1, then a = e, so a is its own inverse. If n - 1 &gt; 1, then a<sup>n-2</sup> is its inverse. 
+
+<p>
+
+Now if b is any other element, we may use the same argument to find another identity f and an element c such that cb = bc = f. But we have e = ef = f, so the identity is unique and c is an inverse for b.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn89.html">50th Putnam 1989</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

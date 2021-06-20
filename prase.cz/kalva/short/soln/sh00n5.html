@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>41st IMO shortlist 2000/N5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>41st IMO 2000 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N5</b><br>
+<p>
+Show that for infinitely many positive integers n, we can find a triangle with integral sides whose semiperimeter divided by its inradius is n. 
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Let the sides be a, b, c the semiperimeter s = (a + b + c)/2, the inradius r, and the area A. We have A = sr, A<sup>2</sup> = s(s - a)(s - b)(s - c) (Heron's formula) and s = nr (given). So nA = nsr = s<sup>2</sup>. So s<sup>4</sup> = n<sup>2</sup>s(s - a)(s - b)(s - c). Hence (2s)<sup>3</sup> = n<sup>2</sup>(2s - 2a)(2s - 2b)(2s - 2c). Putting x = -a + b + c, y = a - b + c, z = a + b - c, this becomes (x + y + z)<sup>3</sup> = n<sup>2</sup>xyz (*).
+<p>
+Conversely, if we can find positive integers x, y, z satisfying (*), then 2x, 2y, 2z also satisfy (*) so we may assume x, y, z are even. Then we can find a, b, c such that x = -a + b + c etc by taking c = (x+y)/2, b = (x+z)/2, a = (y+z)/2. So s<sup>4</sup> = n<sup>2</sup>A<sup>2</sup> and hence s<sup>2</sup> = nA = nsr. Hence s = nr. Thus it is sufficient to show that we can find a positive integer solution (in x, y, z) to (*) for infinitely many n.
+<p>
+We look for solutions with z = k(x + y), n = 3(k + 1). We require (x + y)<sup>3</sup>(k + 1)<sup>3</sup> = 9(k + 1)<sup>2</sup>xyk(x + y), or (x + y)<sup>2</sup>(k + 1) = 9kxy. Put w = x/y. Then (1 + w)<sup>2</sup>(k + 1) = 9kw or w<sup>2</sup>(k + 1) - (7k - 2)w + (k + 1) = 0. We require w to be rational, so it is sufficient if (7k - 2)<sup>2</sup> - 4(k + 1)<sup>2</sup> = 9k(5k - 4) is a square. So it is sufficient if k = u<sup>2</sup> and 5u<sup>2</sup> - 4 = v<sup>2</sup>. 
+<p>
+This equation has infinitely many solutions, for (u, v) = (1, 1) is a solution and if (u, v) is a solution, then u' = (3u + v)/2, v' = (5u + 3v)/2 is also a solution. To establish this we show that (1) 5u'<sup>2</sup> - 4 = v'<sup>2</sup>, (2) u &gt; u' and v &gt; v', (3) u' and v' are both integers. For (1), we have 5(3u + v)<sup>2</sup> - (5u + 3v)<sup>2</sup> = 45u<sup>2</sup> + 30uv + 5v<sup>2</sup> - 25u<sup>2</sup> - 30uv - 9v<sup>2</sup> = 20u<sup>2</sup> - 4v<sup>2</sup> = 4(5u<sup>2</sup> - v<sup>2</sup>) = 16, as required. For (2), we note that u' and v' are certainly positive, so u' &gt; 3u/2 &gt; u, and v' &gt; 3v/2 &gt; v. For (3) we claim that u and v are integral and have the same parity. Hence 3u + v and 5u + 3v are both even and so u' and v' are integral. Also u' + v' = (8u + 4v)/2 = 4u + 2v, which is even, so u' and v' have the same parity.
+<p>
+Thus we can find an infinite sequence of integral pairs (u, v) with u and v strictly increasing. That gives an infinite strictly increasing sequence of values of k which yield rational w. Then if w = r/s, we may take x = r, y = s, z = k(x + y) as a solution for n = 3(k + 1). So we get solutions for infinitely many n.
+<p>
+For example, the second member of the sequence (u, v) is (2, 4). That gives k = 4, and w satisfies 5w<sup>2</sup> - 26w + 5 = 0, so w = (26 &plusmn; 24)/10 = 5 or 1/5. So n = 15 and we may take x = 1, y = 5, z = 24. Then (x + y + z)<sup>3</sup> = 30<sup>3</sup>, and n<sup>2</sup>xyz = 15<sup>2</sup>5.3.8 = 30<sup>3</sup>. So x = 2, y = 10, z = 48 is also a solution. So a = 29, b = 25, c = 6. Hence s = 30. So A<sup>2</sup> = s(s - a)(s - b)(s - c) = 30.1.5.24 = 60<sup>2</sup>. So r = A/s = 2 and s = nr, as required.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh00.html">41st IMO shortlist 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

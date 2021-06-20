@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1994/C5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>35th IMO 1994 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C5</b><br>
+<p>
+1994 girls are seated at a round table. Initially one girl holds n tokens. Each turn a girl who is holding more than one token passes one token to each of her neighbours. Show that if n &lt; 1994, the game must terminate. Show that if n = 1994 it cannot terminate. As a variant, take 1991 girls and show that the game cannot terminate for n &lt;= 1991.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Suppose that the first time a card is passed from girl A to her neighbor girl B or from girl B to girl A, it is marked AB. Suppose further that whenever girl A passes cards she never passes the marked card to anyone except girl B. Similarly whenever girl B passes cards she never passes the marked card to anyone except girl A. It is clear that this procedure does not interfere with the conditions of the problem. But it means that the marked card can never go anywhere except girl A or girl B. We do this for each adjacent pair of girls. Then cards can only pass from girl A to her neighbor B if there is a card marked AB. If n &lt; 1994, there are less than 1994 cards and hence less than 1994 marked cards, so there must be two adjacent girls who never pass cards to each other. 
+<p>
+If the game does not terminate, then there must be a girl who passes cards infinitely many times. Hence there must be two adjacent girls, one of whom passes cards infinitely many times and one of whom does not (otherwise there could not be two adjacent girls who never pass cards to each other). But that means that the girl who only passes finitely many times will accumulate infinitely many cards from her neighbor. Contradiction (since she can accumulate at most n cards). So for n &lt; 1994 the game must terminate.
+<p>
+Suppose n = 1994. Label the girls 1, 2, ... , 1994 (with i adjacent to i-1 and i+1 and 1994 adjacent to 1993 and 1). Let S = <font face="symbol">S</font> i c<sub>i</sub>, where c<sub>i</sub> is the number of cards held by girl i. If girl i passes cards for 1 &lt; i &lt; 1994, then S does not change. If girl 1 passes cards, then S increases by 1994. If girl 1994 passes cards, then S decreases by 1994. Initially, S = 1994i for some i, so S is always a multiple of 1994. But if the game terminates, then each girl ends up with 1 card, so S = 1 + 2 + ... + 1994 = 997.1995 = odd. Contradiction. So the game cannot terminate.
+<p>
+For 1991 girls, the argument for n &lt; 1991 is the same. But the argument for the number of cards equal to the number of girls breaks down.
+<p>
+We show first that for n = 1991 it is <i>possible</i> for the game to end after finitely many moves. Label the girls -995, -994, ... , -1, 0, 1, ... 995, with girl 0 initially holding all the cards. Now play the game so that girl -i only plays immediately after girl i. This is always possible because it means that girls i and -i always hold the same number of cards except immediately after girl i-1, i or i+1 has played. It follows that girl 0 never plays except after a girl with positive number, so girl 0 always has an odd number of cards. So she can mark one card and never play it. Accordingly, the game is the same as a game with only 1990 cards and hence must terminate. At termination girl 0 must have 0 unmarked cards (because she must have an even number and if she had 2 or more the game would not have terminated), and hence 1 card in total. All the other girls must have at most 1 card (or the game would not have terminated) and hence exactly 1 card.
+<p>
+Represent a game as x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, ... where x<sub>i</sub> is the number of the girl who passes cards on move i. Let X = (x<sub>1</sub>, ... , x<sub>t</sub>) be the terminating game found above. Suppose there is a game Y = (y<sub>1</sub>, y<sub>2</sub>, y<sub>3</sub>, ... ) which is non-terminating. Let r be the smallest i such that x<sub>i</sub> &ne; y<sub>i</sub>. [Note that there must be such an i, because if x<sub>i</sub> = y<sub>i</sub> for i = 1, 2, ... , t, then X and Y have the same distribution of cards after t moves, but X terminates, so Y must also terminate. Contradiction.] Choose Y so that r is as large as possible. In a non-terminating game <i>every</i> girl must pass cards infinitely often (this is a simple induction - at least one girl must. Hence her neighbor must to avoid accumulating infinitely many cards. Hence her neighbor must, and so on). So there must be some s &gt; r with y<sub>s</sub> = x<sub>r</sub>. Take the smallest such. Let Z be the game (z<sub>1</sub>, z<sub>2</sub>, z<sub>3</sub>, ... ), where z<sub>1</sub> = y<sub>1</sub> = x<sub>1</sub>, ... , z<sub>r-1</sub> = y<sub>r-1</sub> = x<sub>r-1</sub>, z<sub>r</sub> = y<sub>s</sub> = x<sub>r</sub>, z<sub>r+1</sub> = y<sub>r</sub>, ... , z<sub>s</sub> = y<sub>s-1</sub>, z<sub>s+1</sub> = y<sub>s+1</sub>, ... . Note that Z is identical to Y and hence to X up to move r-1. On move r, girl y<sub>s</sub> passes cards instead of girl y<sub>r</sub>. Now girls y<sub>r</sub>, y<sub>r+1</sub>, ... , y<sub>s-1</sub> are (by definition) all different from girl y<sub>s</sub> (because s is the <i>smallest</i> index &gt; r with y<sub>s</sub> = x<sub>r</sub>). So they still have enough cards in Z to be able to pass. After move s, the girls have the same number of cards in the two games and the moves are again identical. So Z is also non-terminating. But it agrees with X up to move r, contradicting the definition of Y. So there cannot be a non-terminating game. 
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh94.html">35th IMO shortlist 1994</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+18 Sep 2002
+</BODY>
+
+</HTML>
+

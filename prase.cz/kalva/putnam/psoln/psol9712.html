@@ -1,0 +1,73 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1997/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+For a plane set S define d(S), the diameter of S, to be sup {PQ <b>:</b> P, Q &isin; S}. Let K be a triangle with sides 3, 4, 5 and its interior. If K = H<sub>1</sub> &cup; H<sub>2</sub> &cup; H<sub>3</sub> &cup; H<sub>4</sub>, what is the smallest possible value of max(d(H<sub>1</sub>), d(H<sub>2</sub>), d(H<sub>3</sub>), d(H<sub>4</sub>))?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<p><i>Moderately hard.</i>
+
+<p>
+Let the vertices be ABC with AB = 5, AB = 4 and BC = 3. Take a point D on AC with AD = 25/13, and a point E on AB with BE = 25/13. We show that DE = 25/13. Take X on AC so that AX = 32/13, then EX is parallel to BC and so EX = 24/13. Also DX = 7/13, and EDX is right-angled, so DE = 25/13. Now the distance between any two of the 5 points A, B, C, D, E is at least 25/13, so we cannot have a dissection into 4 parts of diameter less than 25/13. We now have to show that a dissection into parts with diameter &le; 25/13 is possible.
+
+<p>
+Such a dissection is not unique. We just have to exhibit one. The trick is to choose one for which it is reasonably easy to demonstrate that the sides and diagonals (and hence diameter) are less than 25/13. 
+
+<p>
+Since AB, AC &gt; 2 x 25/13, we must divide them each into three parts. We can divide BC into just two parts, so the first idea is to slice off the three vertices, giving three triangles and a pentagon. However, it is soon apparent that the pentagon necessarily has a diagonal longer than 25/13, so we need to convert the two triangles including B or C into quadrilaterals. 
+
+<p>
+So, take F on AB with AF = 25/13. We thus have AF = 25/13, FE = 15/13 and EB = 25/13. Now take a point H in the interior of the triangle so that BH = FH = 25/13. Take G on DC with DG = 14/13 (and hence GC = 1), and I on BC with IC = 20/13. So the four parts are an isosceles triangle AFD with AF = AD = 25/13; a pentagon EFDGH; and two quadrilaterals, BEHI and CGHI.
+
+<p>
+It is clear from the construction (at least if you draw a figure!) that DH is parallel to AB. The projections of AD and BH onto AB have length 20/13 (3-4-5 again), so DH = 5 - 20/13 - 20/13 = 25/13. Also X is the midpoint of DG and so EGX is congruent to EDX and hence EG = 25/13. Thus 4 of the pentagons five diagonals have length 25/13. The fifth diagonal is FG. If we take a point E' on GC with GE' = 1/13, then AE' = AE and AF = AD, so FE' = ED = 25/13. So FG &lt; FE' = 25/13. Clearly the sides of the pentagon are less than 25/13, so the pentagon has diameter 25/13. So does the triangle. For the quadrilateral BEIH, we need to check that EI &lt; 25/13 (the other diagonal BH = 25/13). The perpendicular from E to BC has length 20/13 and its foot is 15/13 from B (3-4-5 again). So  EI &lt; (BI - 15/13) + (20/13) = 24/13. CGHI obviously has diameter &lt; 25/13.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn97.html">Putnam 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

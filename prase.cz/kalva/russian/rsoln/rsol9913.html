@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 99/13 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 13</b>
+
+<p>
+
+A number n has sum of digits 100, whilst 44n has sum of digits 800. Find the sum of the digits of 3n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+300
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Suppose n has digits a<sub>1</sub>a<sub>2</sub>...a<sub>k</sub> and digit sum s = &sum; a<sub>i</sub>. If we temporarily allow digits larger than 9, then 4n = (4a<sub>1</sub>)(4a<sub>2</sub>)...(4a<sub>k</sub>). Each carry of one reduces the digit sum by 9, so after making all necessary carries, the digit sum for 4n is at most 4s. It can only be 4s iff there are no carries. Similarly, 11n has digit sum at most 2s, with equality iff there are no carries. 
+<p>
+Since 44n has digit sum 8s, there cannot be any carries. In particular, there are no carries in forming 4n, so each digit of n is at most 2. Hence there are no carries in forming 3n and the digit sum of 3n is 300.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus99.html">Russian 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 March 2004
+<br>Last corrected/updated 4 Mar 04
+
+</BODY>
+
+
+
+</HTML>
+

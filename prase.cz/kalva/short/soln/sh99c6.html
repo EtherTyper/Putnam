@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>40th IMO shortlist 1999/C6 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>40th IMO 1999 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C6</b><br>
+<p>
+Every integer is colored red, blue, green or yellow. m and n are distinct odd integers such that m + n is not zero. Show that we can find two integers a and b with the same color such that a - b = m, n m + n or m - n.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Suppose not. Color the 2D lattice by taking (i, j) to have the same color as mi + nj. Now take any unit square. Its vertices are (i, j), (i+1, j), (i, j+1), (i+1, j+1) for some i, j, so they are colored the same as h, h+m, h+n, h+m+n respectively, where h = mi+nj. Suppose two of h, h+m, h+n, h+m+n are the same color, then their difference is m, n, m+n or m-n. Contradiction. So the vertices of each unit square are all different colors. 
+<p>
+Suppose there are three adjacent points in a row of the lattice with different color. Without loss of generality they are: R B G. Then * must be Y and we can fill in the adjacent colors also. Then x must be B, and so on. So we can extend the three columns indefinitely and find that they must be periodic with period 2. But if a column is periodic with period 2, then it is easy to see that the adjacent column must be periodic with period 2 and hence <i>all</i> the columns have period 2.
+<pre>
+R  B  G     R  B  G     R  B  G
+   *        G  Y  R     G  Y  R
+               x        R  B  G
+</pre>
+But if there are not three adjacent points in a given row with different color, then that row must be periodic with period 2, and hence all rows must have period 2. So either all rows have period 2, or all columns have period 2.
+<p>
+Suppose all rows have period 2. Without loss of generality (0, 0) is R and (1, 0) is B. Then it is easy to see that the next row ... , (0, 1), (1, 1), (2, 1), ... uses the colors G and Y, the next row ... , (0, 2), (1, 2), (2, 2), ... uses R and B and so on. So (0, m) must be G or Y since  m is odd. But (n, 0) must be R or B. But the integer mn has the same color as (0, m) and as (n, 0). Contradiction. Similarly, if all columns have period 2.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh99.html">40th IMO shortlist 1999</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

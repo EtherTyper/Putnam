@@ -1,0 +1,69 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1985/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1985</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+For any polynomial P(x) = a<sub>0</sub> + a<sub>1</sub>x + ... + a<sub>k</sub>x<sup>k</sup> with integer coefficients, the number of odd coefficients is denoted by o(P). For i = 0, 1, 2, ... let Q<sub>i</sub>(x) = (1 + x)<sup>i</sup>. Prove that if i<sub>1</sub>, i<sub>2</sub>, ... , i<sub>n</sub> are integers satisfying 0 &le; i<sub>1</sub> &lt; i<sub>2</sub> &lt; ... &lt; i<sub>n</sub>, then:
+
+<p>&nbsp; &nbsp; o(Q<sub>i<sub>1</sub></sub> + Q<sub>i<sub>2</sub></sub> + ... + Q<sub>i<sub>n</sub></sub>) &ge; o(Q<sub>i<sub>1</sub></sub>).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+If i is a power of 2, then all coefficients of Q<sub>i</sub> are even except the first and last. [There are various ways to prove this. Let iCr denote the rth coefficient, so iCr = i!/(r!(i-r)!). Suppose 0 &lt; r &lt; i. Then iCr = i-1Cr-1 i/r, but i-1Cr-1 is an integer and i is divisible by a higher power of 2 than r, hence iCr is even.]
+
+<p>
+Let Q = Q<sub>i<sub>1</sub></sub> + ... + Q<sub>i<sub>n</sub></sub>. We use induction on i<sub>n</sub>. If i<sub>n</sub> = 1, then we must have n = 2, i<sub>1</sub> = 0, and i<sub>2</sub> = 1, so Q = 2 + x, which has the same number of odd coefficients as Q<sub>i<sub>1</sub></sub> = 1. So suppose it is true for smaller values of i<sub>n</sub>. Take m a power of 2 so that m &le; i<sub>n</sub> &lt; 2m. We consider two cases i<sub>1</sub> &ge; m and i<sub>1</sub> &lt; m.
+
+<p>
+Consider first i<sub>1</sub> &ge; m. Then Q<sub>i<sub>1</sub></sub> = (1 + x)<sup>m</sup>A, Q = (1 + x)<sup>m</sup>B, where A and B have degree less than m. Moreover, A and B are of the same form as Q<sub>i<sub>1</sub></sub> and Q, (all the i<sub>j</sub>s are reduced by m, so we have o(A) &le; o(B) by induction. Also o(Q<sub>i<sub>1</sub></sub>) = o((1 + x)<sup>m</sup>A) = o(A + x<sup>m</sup>A) = 2o(A) &le; 2o(B) = o(B + x<sup>m</sup>B) = o((1 + x)<sup>m</sup>B) = o(Q), which establishes the result for i<sub>n</sub>.
+
+<p>
+It remains to consider the case i<sub>1</sub> &lt; m. Take r so that i<sub>r</sub> &lt; m, i<sub>r+1</sub> &gt; m. Set A = Q<sub>i<sub>1</sub></sub> + ... + Q<sub>i<sub>r</sub></sub>, (1 + x)<sup>m</sup>B = Q<sub>i<sub>r+1</sub></sub> + ... + Q<sub>i<sub>n</sub></sub>, so that A and B have degree &lt; m. Then o(Q) = o(A + (1 + x)<sup>m</sup>B) = o(A + B + x<sup>m</sup>B) = o(A + B) + o(B). Now o(A - B) + o(B) &gt;= o(A - B + B) = o(A), because a coefficient of A is only odd if just one of the corresponding coefficients of A - B and B is odd. But o(A - B) = o(A + B), because corresponding coefficients of A - B and A + B are either equal or of the same parity. Hence o(A + B)  + o(B) &ge; o(A). But o(A) &ge; o(Q<sub>i<sub>i</sub></sub>) by induction. So we have established the result for i<sub>n</sub>.
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo85.html">26th IMO 1985</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

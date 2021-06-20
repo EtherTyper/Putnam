@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 80/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>41st Putnam 1980</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Show that for any integers a, b, c, not all zero, and such that |a|, |b|, |c| &lt; 10<sup>6</sup>, we have |a + b &radic;2 + c &radic;3| &gt; 10<sup>-21</sup>. But show that we can find such a, b, c with |a + b &radic;2 + c &radic;3| &lt; 10<sup>-11</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+This needs a trick: (a + b &radic;2 + c &radic;3)(a + b &radic;2 - c &radic;3)(a - b &radic;2 + c &radic;3)(a - b &radic;2 - c &radic;3) = a<sup>4</sup> + 4b<sup>4</sup> + 9c<sup>4</sup> - 4a<sup>2</sup>b<sup>2</sup> - 6c<sup>2</sup>a<sup>2</sup> - 12b<sup>2</sup>c<sup>2</sup> which is an integer. Moreover, it is non-zero by a slight extension of the argument used to prove the irrationality of &radic;2. 
+
+<p>
+
+For suppose a + b &radic;2 = c &radic;3 (*). Squaring: 2ab &radic;2 = 3c<sup>2</sup> - a<sup>2</sup> - 2b<sup>2</sup>. But &radic;2 is irrational, so a or b is zero. But b cannot be zero since &radic;3 is irrational, so a must be zero. Take b and c relatively prime (by dividing out any common factor if necessary). We have 2b<sup>2</sup> = 3c<sup>2</sup>. By the usual argument 2 divides both b and c. Contradiction. Hence (*) is impossible.
+
+<p>
+
+So the identity (a + b &radic;2 + c &radic;3)(a + b &radic;2 - c &radic;3)(a - b &radic;2 + c &radic;3)(a - b &radic;2 - c &radic;3) = a<sup>4</sup> + 4b<sup>4</sup> + 9c<sup>4</sup> - 4a<sup>2</sup>b<sup>2</sup> - 6c<sup>2</sup>a<sup>2</sup> - 12b<sup>2</sup>c<sup>2</sup> gives that |a + b &radic;2 + c &radic;3| &ge; 1/|(a + b &radic;2 - c &radic;3)(a - b &radic;2 + c &radic;3)(a - b &radic;2 - c &radic;3)|. But each of the three numbers in this product is at most 10<sup>7</sup>, so |a + b &radic;2 + c &radic;3| &ge; 10<sup>-21</sup>.
+
+<p>
+
+For the other inequality we use a pigeon-hole argument. Take the 10<sup>18</sup> numbers a + b &radic;2 + c &radic;3 with 0 &le; a, b, c &lt; 10<sup>6</sup>. They all lie in the interval [0, 5 x 10<sup>6</sup>], so if we divide this interval into 6 x 10<sup>17</sup> equal parts, then at least two numbers must lie in the same part. Subtracting them gives a number with absolute value at most 5/6 10<sup>-11</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn80.html">41st Putnam 1980</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+10 Dec 1999
+
+<br>Last corrected/updated 21 Nov 02
+
+</BODY>
+
+
+
+</HTML>
+

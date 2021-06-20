@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1995/A4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>36th IMO 1995 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A4</b><br>
+<p>
+a, b, c are fixed positive reals. Find all positive real solutions x, y, z to: x + y + z = a + b + c and 4xyz - (a<sup>2</sup>x + b<sup>2</sup>y + c<sup>2</sup>z) = abc.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: the unique solution is x = (b+c)/2, y = (c+a)/2, z = (a+b)/2.
+<p>
+Dividing by xyz, the second equation becomes 4 = a<sup>2</sup>/yz + b<sup>2</sup>/zx + c<sup>2</sup>/xy + abc/xyz. Put X = a/(yz)<sup>1/2</sup>, Y = b/(zx)<sup>1/2</sup>, Z = c/(xy)<sup>1/2</sup>, then this becomes 4 = X<sup>2</sup> + Y<sup>2</sup> + Z<sup>2</sup> + XYZ (*). All of a, b, c, x, y, z are positive, so X, Y, Z are positive. Hence X<sup>2</sup> &lt; 4, so X &lt; 2. Similarly, Y and Z &lt; 2. If we regard (*) as a quadratic in Z, then we can solve it to get Z = ( (X<sup>2</sup>Y<sup>2</sup> + 16 - 4X<sup>2</sup> - 4Y<sup>2</sup>)<sup>1/2</sup> - XY)/2 (the other solution is negative and hence ruled out). 
+<p>
+The key is to subsitute X = 2 sin u, Y = 2 sin v, then Z = 2(cos u cos v - sin u sin v) = 2 cos(u + v). So we have a = 2 (yz)<sup>1/2</sup> sin u, b = 2 (zx)<sup>1/2</sup> sin v, c = 2 (xy)<sup>1/2</sup>(cos u cos v - sin u sin v). So far we have not used the first equation. If we require that it holds then we have x + y + z = 2 (yz)<sup>1/2</sup> sin u + 2 (zx)<sup>1/2</sup> sin v + 2 (xy)<sup>1/2</sup> (cos u cos v - sin u sin v) (**). Writing x = ( x<sup>1/2</sup> sin v)<sup>2</sup> + (x<sup>1/2</sup> cos v)<sup>2</sup>, y = (y<sup>1/2</sup> sin u)<sup>2</sup> + (y<sup>1/2</sup> cos u)<sup>2</sup>, z = (z<sup>1/2</sup>)<sup>2</sup>, we can write (**) as (x<sup>1/2</sup> cos v - y<sup>1/2</sup> cos u)<sup>2</sup> + (x<sup>1/2</sup> sin v + y<sup>1/2</sup> sin u - z<sup>1/2</sup>)<sup>2</sup> = 0. Squares are non-negative, so each term must be zero. Hence z<sup>1/2</sup> = x<sup>1/2</sup> sin v + y<sup>1/2</sup> sin u = 1/z<sup>1/2</sup> (b/2 + a/2). Hence z = (a + b)/2.
+<p>
+But the problem is symmetrical. So we must also have x = (b + c)/2, y = (c + a)/2. It is not hard to check that this is indeed a solution. We get 8xyz - 2(a<sup>2</sup>x + b<sup>2</sup>y + c<sup>2</sup>z) = (b + c)(c + a)(a + b) - (a<sup>2</sup>(b+c) + b<sup>2</sup>(c+a) + c<sup>2</sup>(a+b) ) = 2abc (after some cancellation). 
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh95.html">36th IMO shortlist 1995</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+4 Sep 2002
+</BODY>
+
+</HTML>
+

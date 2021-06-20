@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1980/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>41st Putnam 1980</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+An array of rationals f(n, i) where n and i are positive integers with i &gt; n is defined by f(1, i) = 1/i, f(n+1, i) = (n+1)/i ( f(n, n) + f(n, n+1) + ... + f(n, i - 1) ). If p is prime, show that f(n, p) has denominator (when in lowest terms) not a multiple of p (for n &gt; 1).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Generating functions are always a technique to bear in mind for sequences. They are strongly suggested here by the form of the recurrence relation. So let us put f<sub>n</sub>(x) = f(n, n) x<sup>n</sup> + f(n, n+1) x<sup>n+1</sup> + f(n, n+2) x<sup>n+2</sup> + ... . We can get the sum f(n, n) + f(n, n+1) + ... + f(n, i - 1) by multiplying by (1 + x + x<sup>2</sup> + x<sup>3</sup> + ... ). For then the coefficient of x<sup>i-1</sup> is f(n, n) + f(n, n+1) + ... + f(n, i-1). We can easily get the factor (n+1) by multiplying by it. This gives us a series where the coefficient of x<sup>i-1</sup> is i f(n+1, i). In other words, it gives us f'<sub>n+1</sub>(x). So f'<sub>n+1</sub>(x) = (n+1) f<sub>n</sub>(x) (1 + x + x<sup>2</sup> + ... ).
+
+<p>
+
+Let us examine the special case n = 1: f'<sub>2</sub>(x) = 2 (x + x<sup>2</sup>/2 + x<sup>3</sup>/3 + ... )(1 + x + x<sup>2</sup> + ... ). At this point we need to spot that (1 + x + x<sup>2</sup> + ... ) is in fact the <i>derivative</i> of (x + x<sup>2</sup>/2 + x<sup>3</sup>/3 + ... ). So integration gives simply (x + x<sup>2</sup>/2 + x<sup>3</sup>/3 + ... )<sup>2</sup>. In fact it is now obvious that we can carry out a simple induction to get f<sub>n</sub>(x) = (x + x<sup>2</sup>/2 + x<sup>3</sup>/3 + ... )<sup>n</sup>. 
+
+<p>
+
+This is all that we need. For the coefficient of x<sup>p</sup> is a sum of terms a/b, where a is an integer and b is a product of n integers taken from {1, 2, ..., p-n+1}. Hence we may add these terms to get a fraction with denominator ( (p-n+1)! )<sup>n</sup>. This has no factor p. A fortiori, when reduced to lowest terms.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn80.html">41st Putnam 1980</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+<br>Last corrected/updated 21 Nov 02
+
+</BODY>
+
+
+
+</HTML>
+

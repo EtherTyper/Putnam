@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1971/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>32nd Putnam 1971</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Car A starts at time t = 0 and, traveling at a constant speed, completes 1 lap every hour. Car B starts at time t = &alpha; &gt; 0 and also completes 1 lap every hour, traveling at a constant speed. Let a(t) be the number of laps completed by A at time t, so that a(t) = [t]. Similarly, let b(t) be the number of laps completed by B at time t. Let S = {t &ge; &alpha; : a(t) = 2 b(t) }. Show that S is made up of intervals of total length 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: S = [ [&alpha;]+&alpha;, 2[&alpha;]+1 ) &cup; [ 2&alpha;]+2, [&alpha;]+&alpha;+2 ).
+
+<p>
+
+At all times in the interval [ [&alpha;]+&alpha;, 2[&alpha;]+1 ) car A has completed 2[&alpha;] laps and car B has completed [&alpha;] laps. At all times in the interval [ 2&alpha;]+2, [&alpha;]+&alpha;+2 ) car A has completed 2[&alpha;]+2 laps and car B has completed [&alpha;]+1 laps. The first interval has length 1-{&alpha;} and the second interval has length {&alpha;}, where {&alpha;} denotes the fractional part of &alpha;.
+
+<p>
+
+During the interval [ 2[&alpha;]-1, 2[&alpha;] ) car A has completed 2[&alpha;]-1 laps and car B either [&alpha;]-2 or [&alpha;]-1 laps, so car A has completed more than twice as many laps as car B. Similarly, during the interval [ 2[&alpha;]-n, 2[&alpha;]-n+1) car A has completed 2[&alpha;]-n laps and car B [&alpha;]-n-1 or [&alpha;]-n laps, so at all times before 2[&alpha;] car A has completed more than twice as many laps as car B and these times do not form part of S.
+
+<p>
+
+During [ 2&alpha;]+1, [&alpha;]+&alpha;+1 ) car A has completed 2[&alpha;]+1 laps and car B [&alpha;] laps, which is less than half the number. During [ [&alpha;]+&alpha;+1, 2[&alpha;]+2 ) car A has completed 2[&alpha;]+1 laps and car B [&alpha;]+1 laps, which is more than half the number. So no points in the gap between the two intervals of S belong in S.
+
+<p>
+
+Finally, during [ [&alpha;]+&alpha;+2, 2[&alpha;]+3 ) car A has completed 2[&alpha;]+2 laps and car B [&alpha;]+2 laps, whilst during [ 2[&alpha;]+n, 2[&alpha;]+n+1 ) car A has completed 2[&alpha;]+n laps and car B either [&alpha;]+n-1 or [&alpha;]+n laps. So at all times after [&alpha;]+&alpha;+2 car A has completed less than twice the number of laps completed by car B and none of these times belong in S.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn71.html">32nd Putnam 1971</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Feb 2001
+
+</BODY>
+
+
+
+</HTML>
+

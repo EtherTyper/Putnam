@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1985/15 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>26th IMO 1985 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 15</b><br>
+<p>
+On each edge of a regular tetrahedron of side 1 there is a sphere with that edge as diameter. S be the intersection of the spheres (so it is all points whose distance from the midpoint of every edge is at most 1/2). Show that the distance between any two points of S is at most 1/&radic;6.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+The midpoints of the edges are the vertices of a regular octahedron side 1/2. The sphere center a vertex of the octahedron and radius 1/2 passes through four of the other five vertices of the octahedron. Less obviously, it passes through the center of each of the four faces not adjacent to the vertex.
+<p>
+For suppose ABC and ABD are faces of the octahedron. CD is the diagonal of a square side 1/2, so it has length 1/&radic;2. Let M be the midpoint of AB and G the center of ABD. Using the cosine rule we find that cos CMD = (CM<sup>2</sup> + DM<sup>2</sup> - CD<sup>2</sup>)/(2 CM.DM) = (3/16 + 3/16 - 1/2)/(3/8) = -1/3. Hence CG<sup>2</sup> = CM<sup>2</sup> + GM<sup>2</sup> - 2.CM.GM cosCMD = (3/16 + 1/48 + 1/24) = (9 + 1 + 2)/48 = 1/4. So CG = CA as claimed.
+<p>
+The centers of the faces form the vertices of a cube side (&radic;2)/6. Each sphere encloses the cube and passes through the four vertices furthest from the sphere's center. Thus the intersection of the six spheres is the cube, but with curved faces which bulge out slightly because they are each part of a sphere. 
+<p>
+Consider the curved face GHIJ of the cube. It is part of the surface of the sphere center C. This lies inside the circumsphere of the cube, because the circumcenter also lies on the normal to the square GHIJ but closer to it than C, so the circumsphere bulges more and hence contains the part of the sphere center C which is bounded by GHIJ. This is true for each face of the cube. So the intersection S lies inside the circumsphere of the cube. The diameter of the circumsphere is the long diagonal of the cube, which has length (&radic;3) x (&radic;2)/6 = 1/&radic;6. Obviously the distance between any two points of the sphere is at most the diameter of the sphere. So any two points of S are at most a distance 1/&radic;6 apart. The vertices of the cube all belong to S, so this maximum is realised.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh85.html">26th IMO shortlist 1985</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+5 Oct 2002
+</BODY>
+
+</HTML>
+

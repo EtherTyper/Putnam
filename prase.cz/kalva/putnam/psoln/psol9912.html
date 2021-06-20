@@ -1,0 +1,56 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 99/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>60th Putnam 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+X is a finite set of integers greater than 1 such that for any positive integer n, we can find m &isin; X such that m divides n or is relatively prime to n. Show that X contains a prime or two elements whose greatest common divisor is prime.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+There are elements not relatively prime to any element of X (for example, the product of all elements of X). Take the smallest such, n. Then there must be m &isin; X which divides n. If m is prime we are home. If not, take a prime p which divides m. p must also divide n (a multiple of m). Set n' = n/p, then n' &lt; n, so we can find m' &isin; X which is relatively prime to n'. n = n'p is not relatively prime to m', so p must divide m'. So p divides both m and m'. Moreover, it must be the greatest common divisor. For if pd divides m and m', then it divides n and m' and hence d divides n' and m' which are relatively prime. So we have found two elements of X (m and m') whose greatest common divisor is prime.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+&nbsp;<p>
+
+<a href="../putn99.html">60th Putnam 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

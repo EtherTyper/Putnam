@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Vietnam 79/2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>17th VMO 1979</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b>
+
+<p>
+
+Find all real numbers a, b, c such that x<sup>3</sup> + ax<sup>2</sup> + bx + c has three real roots &alpha;,&beta;,&gamma; (not necessarily all distinct) and the equation x<sup>3</sup> + a<sup>3</sup>x<sup>2</sup> + b<sup>3</sup>x + c<sup>3</sup> has roots &alpha;<sup>3</sup>, &beta;<sup>3</sup>, &gamma;<sup>3</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+(a,b,c) = (h,k,hk), where k &le; 0
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+We have -a = &alpha; + &beta; + &gamma;, b = &alpha;&beta; + &beta;&gamma; + &gamma;&alpha;, -c = &alpha;&beta;&gamma;. We need -a<sup>3</sup> = &alpha;<sup>3</sup> + &beta;<sup>3</sup> + &gamma;<sup>3</sup>. Since -a<sup>3</sup> = (&alpha; + &beta; + &gamma;)<sup>3</sup> = &alpha;<sup>3</sup> + &beta;<sup>3</sup> + &gamma;<sup>3</sup> + 3(&alpha;&beta;<sup>2</sup> + ... ) + 6&alpha;&beta;&gamma; = -a<sup>3</sup> - 3ab + 3c, we require c = ab.
+<p>
+Now if c = ab, the cubic factorises as (x+a)(x<sup>2</sup>+b), so we get three real roots iff b &le; 0. But if b &le; 0 and c = ab, then the roots are -a, &plusmn;&radic;(-b). So the equation with roots &alpha;<sup>3</sup>, &beta;<sup>3</sup>, &gamma;<sup>3</sup> is (x + a<sup>3</sup>)(x<sup>2</sup> + b<sup>3</sup>) = x<sup>3</sup> + a<sup>3</sup>x<sup>2</sup> + b<sup>3</sup>x + a<sup>3</sup>b<sup>3</sup>. Thus c = ab, b &le; 0 is both a necessary and a sufficient condition.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../viet79.html">17th VMO 1979</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+6 March 2004
+<br>Last corrected/updated 6 Mar 04
+
+</BODY>
+
+
+
+</HTML>
+

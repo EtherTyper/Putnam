@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>40th IMO shortlist 1999/C3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>40th IMO 1999 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C3</b><br>
+<p>
+A chameleon repeatedly rests and then catches a fly. The first rest is for a period of 1 minute. The rest before catching the fly 2n is the same as the rest before catching fly n. The rest before catching fly 2n+1 is 1 minute more than the rest before catching fly 2n. How many flies does the chameleon catch before his first rest of 9 minutes? How many minutes (in total) does the chameleon rest before catching fly 98? How many flies has the chameleon caught after 1999 total minutes of rest?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 510, 312, 462.
+<p>
+This is a variant of a familiar theme. Either by calculating the first thirty or so values and studying them hard, or because one has seen something similar before, one guesses that the rest equals the number of 1s in the binary expression for n. Thus let f(n) be the rest (in minutes) between catching fly n-1 and catching fly n. We claim that f(n) = the number of 1s in the binary expression for n. Once guessed, this is a trivial induction.
+<p>
+The first n with f(n) = 9 is therefore 2<sup>9</sup> - 1 = 511. That occurs after fly 510 has been caught. Similarly, the rest before catching fly 98 is the no. of 1s in binary 98 = 64 + 32 + 2, so the rest is 3.
+<p>
+Let g(n) be the total rest before fly n is caught, so g(n) = f(1) + f(2) + ... + f(n). We claim that g(2<sup>n</sup> - 1) = n 2<sup>n-1</sup>. This is an easy induction. It is obviously true for n = 1. Suppose it is true for n. The numbers from 2<sup>n</sup> to 2<sup>n+1</sup> - 1 are the same (in binary) as the numbers from 0 to 2<sup>n</sup> - 1 except that each has an additional initial 1. Hence g(2<sup>n+1</sup> - 1) = 2<sup>n</sup> + 2 g(2<sup>n</sup> - 1) = 2<sup>n</sup> + n 2<sup>n</sup> = (n+1) 2<sup>n</sup>, so the result is true for n+1 and hence for all n.
+<p>
+Now we want to find g(98). The numbers from 64 to 95 = 64 + 31 are the same as those from 0 to 31 except that each has an additional initial 1. So g(95) = g(64) + 32 + g(32) = 192 + 32 + 80 = 304. Now f(96) = f(1100000<sub>2</sub>) = 2, f(97) = f(1100001<sub>2</sub>) = 3, f(98) = f(1100010<sub>2</sub>) = 3, so g(98) = 304 + 2 + 3 + 3 = 312.
+<p>
+Similarly, we have g(15) = 32, g(31) = 80, g(63) = 192, g(127) = 448, g(255) = 1024, g(511) = 2304. The numbers from 256 to 383 = 256 + 127 are the same as those from 0 to 127 with an additional initial 1. Hence g(383) = g(255) + 128 + g(127) = 1600. The numbers from 384 = 256 + 128 to 447 = 256 + 128 + 63 are the same as those from 0 to 63 with an additional two initial 1s. Hence g(447) = g(383) + 128 + g(63) = 1920. The numbers from 448 = 256 + 128 + 64 to 463 = 256 + 128 + 64 + 15 are the same as those from 0 to 15 with an additional three initial 1s. Hence g(463) = g(447) + 48 + g(15) = 2000. f(463) = f(111001111<sub>2</sub>) = 7, so g(462) = 1993. Thus a total rest of 1999 occurs during the rest period before catching fly 463 and hence after 462 flies have been caught.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh99.html">40th IMO shortlist 1999</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

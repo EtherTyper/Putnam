@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1985/16 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>26th IMO 1985 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 16</b><br>
+<p>
+Let x<sub>2</sub> = 2<sup>1/2</sup>, x<sub>3</sub> = (2 + 3<sup>1/3</sup>)<sup>1/2</sup>, x<sub>4</sub> = (2 + (3 + 4<sup>1/4</sup>)<sup>1/3</sup>)<sup>1/2</sup>, ... , x<sub>n</sub> = (2 + (3 + ... + n<sup>1/n</sup> ... )<sup>1/3</sup>)<sup>1/2</sup> (where the positive root is taken in every case). Show that x<sub>n+1</sub> - x<sub>n</sub> &lt; 1/n! .
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<i>Solution by Demetres Christofides</i>
+<p>
+We have (a<sup>1/n</sup> - b<sup>1/n</sup>)(a<sup>(n-1)/n</sup> + a<sup>(n-2)/n</sup>b<sup>1/n</sup> + ... + a<sup>1/n</sup>b<sup>(n-2)/n</sup> + b<sup>(n-1)/n</sup>) = a - b. So if a &gt; b &ge; 1, then the long parenthesis is &ge; n and hence (a<sup>1/n</sup> - b<sup>1/n</sup>) &le; (a - b)/n.
+<p>
+Applying this repeatedly, we get x<sub>n+1</sub> - x<sub>n</sub> &le; ( (3 + ... + (n+1)<sup>1/(n+1)</sup>)<sup>1/3</sup> - (3 + ... + n<sup>1/n</sup>)<sup>1/3</sup> )/2! &le; ( (4 + ... + (n+1)<sup>1/(n+1)</sup>)<sup>1/4</sup> - (4 + ... + n<sup>1/n</sup>)<sup>1/4</sup>)/3! &le; ... &le; (n+1)<sup>1/n+1</sup> 1/n!. So that almost gets us there, but not quite.
+<p>
+Note that (n + 1/n)<sup>n</sup> &lt; 3, so (n + 1)<sup>n</sup> &lt; 3.n<sup>n</sup> &le; n<sup>n+1</sup> for n &ge; 3. Taking the n(n+1)th root, we get (n + 1)<sup>1/(n+1)</sup> &lt; n<sup>1/n</sup> for n &ge; 3. Also 4<sup>1/4</sup> = 2<sup>1/2</sup>, so (n + 1)<sup>1/(n+1)</sup> &le; 2<sup>1/2</sup> for n &ge; 3.
+<p>
+We now make the first inequality in the chain slightly stronger. We have a<sup>1/2</sup> - b<sup>1/2</sup> = (a - b)/(a<sup>1/2</sup> + b<sup>1/2</sup>) &lt; (a - b)/(2<sup>1/2</sup> + 2<sup>1/2</sup>) = (a - b)/(2 2<sup>1/2</sup>) for a &gt; b &ge; 2. So the chain gives x<sub>n+1</sub> - x<sub>n</sub> &lt; (n+1)<sup>1/(n+1)</sup> (1/n!) (1/2<sup>1/2</sup>) &le; 1/n! for n &ge; 3.
+<p>
+It remains to show that x<sub>3</sub> - x<sub>2</sub> &lt; 1/2. We have x<sub>3</sub> - x<sub>2</sub> = 3<sup>1/3</sup>/( (2 + 3<sup>1/3</sup>)<sup>1/2</sup> + 2<sup>1/2</sup>) &lt; 1.5/( 3<sup>1/2</sup> + 2<sup>1/2</sup>) &lt; 1.5/3 &lt; 1/2.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh85.html">26th IMO shortlist 1985</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Sep 2002
+</BODY>
+
+</HTML>
+

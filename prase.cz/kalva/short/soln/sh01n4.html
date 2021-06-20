@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>42nd IMO shortlist 2001/N4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>42nd IMO 2001 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N4</b><br>
+<p>
+Let p &gt; 3 be a prime. Show that there is a positive integer n &lt; p-1 such that n<sup>p-1</sup> - 1 and (n+1)<sup>p-1</sup> - 1 are not divisible by p<sup>2</sup>.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+By the binomial theorem we have (p - a)<sup>p-1</sup> - a<sup>p-1</sup> = (p-1) p a<sup>p-1</sup> mod p<sup>2</sup>. For 0 &lt; a &lt; p, (p-1) p a = p mod p<sup>2</sup>, so (p - a)<sup>p-1</sup> and a<sup>p-1</sup> are unequal mod p<sup>2</sup>. Hence at most one of them is 0 mod p<sup>2</sup>. In particular, since 1<sup>2</sup>  = 1 mod p<sup>2</sup>, we must have (p-1)<sup>p-1</sup> &ne; 1 mod p<sup>2</sup>. Also, at least (p-3)/2 of 2, 3, ... , p-2 must have p-1th powers &ne; 1 mod p<sup>2</sup>. So either one of the pairs (2, 3), (4, 5), ... , (p-3, p-2) has both members with p-1th powers &ne; 1 mod p<sup>2</sup>, in which case we are done, or exactly one member of each pair has p-1th power &ne; 1 mod p<sup>2</sup>. 
+<p>
+Now if p-2 has p-1th power &ne; 1 mod p<sup>2</sup> then we are done (because of p-1). If not, then p-3 has p-1th power &ne; 1 mod p<sup>2</sup>. Now suppose (p-4)<sup>p-1</sup> = 1 mod p<sup>2</sup>. Then (expanding) 1 = 4<sup>p-1</sup> - (p-1)p 4<sup>p-2</sup> = 4<sup>p-1</sup> + p 4<sup>p-2</sup> mod p<sup>2</sup> (*). But (p-2)<sup>p-1</sup> = 1 mod p<sup>2</sup>, so (expanding) 1 = 2<sup>p-1</sup> + p 2<sup>p-2</sup> mod p<sup>2</sup>. Squaring, 1 = 4<sup>p-1</sup> + p 4<sup>p-1</sup> mod p<sup>2</sup>. Subtracting from (*), 0 = p(4<sup>p-1</sup> - 4<sup>p-2</sup>) = 3 p 4<sup>p-2</sup> mod p<sup>2</sup>, but that is clearly false. So we must have (p-4)<sup>p-1</sup> &ne; 1 mod p<sup>2</sup> and we are home (with p-4 and p-3).
+<p>
+<i>Comment. This is a weak result. There are relatively few a for which a<sup>p-1</sup> = 1 mod p<sup>2</sup>.</i>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh01.html">42nd IMO shortlist 2001</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+14 Oct 2002
+</BODY>
+
+</HTML>
+

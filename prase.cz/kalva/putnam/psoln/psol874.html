@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 87/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>48th Putnam 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+p(x, y, z) is a polynomial with real coefficients such that: (1) p(tx, ty, tz) = t<sup>2</sup>f(y - x, z - x) for all real x, y, z, t (and some function f); (2) p(1, 0, 0) = 4, p(0 ,1, 0) = 5, and p(0, 0, 1) = 6; and (3) p(&alpha;, &beta;, &gamma;) = 0 for some complex numbers &alpha;, &beta;, &gamma; such that |&beta; - &alpha;| = 10. Find |&gamma; - &alpha;|.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+5 &radic;30 /3.
+
+<p>
+
+<i>Easy.</i>
+
+<p>
+
+The key observation is that f must be a polynomial with each term of degree 2. This is well-known and could be quoted. It is also almost obvious. For put u = x, v = y - x, w = z - x. Then x = u, y = u + v, z = u + w, so we can write p(x, y, z) = q(u, v, w), where q is a polynomial. But we are given that f(v, w) = q(u, v, w) for all u, v, w, so u cannot appear in q (otherwise we could vary it to get a contradiction). Hence f is actually a polynomial. But now the relation with t implies that each term has degree 2.
+
+<p>
+
+So p(x, y, z) = a(y - x)<sup>2</sup> + b(y - x)(z - x) + c(z - x)<sup>2</sup> for some a, b, c. But we are given three values for p which allows us to solve for a, b, c: a = 5,  b = -7, c = 6. We have a quadratic in (y - x)/(z - x) which has roots (7 &plusmn; &radic;71 i)/10, so any roots &alpha;, &beta;, &gamma; of p must satisfy (&beta; - &alpha;) / (&gamma; - &alpha;) = (7 &plusmn; &radic;71 i)/10, and hence |(&beta; - &alpha;)| / |(&gamma; - &alpha;)| = &radic;120 /10. Hence if a root satisfies |&beta; - &alpha;| = 10, then it also satisfies |&gamma; - &alpha;| = 100/&radic;120 = 5 &radic;30 /3.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn87.html">48th Putnam 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Oct 1999
+
+</BODY>
+
+
+
+</HTML>
+

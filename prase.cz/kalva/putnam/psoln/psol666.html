@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1966/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>27th Putnam 1966</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Let a<sub>n</sub> = &radic;(1 + 2 &radic;(1 + 3 &radic;(1 + 4 &radic;(1 + 5 &radic;( ... + (n - 1) &radic;(1 + n) ... ) ) ) ) ). Prove lim a<sub>n</sub> = 3.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Clearly a<sub>n</sub> &lt; a<sub>n+1</sub>. Also, if we replace the final (1 + n) in a<sub>n</sub> by (1 + n)<sup>2</sup>, then a simple induction shows that the resulting expression simplifies to 3. Hence a<sub>n</sub> &lt; 3. An increasing sequence which is bounded above must converge. So a<sub>n</sub> tends to a limit which is at most 3.
+
+<p>
+
+However, it is harder to show that the limit is 3. We need a new idea. Put f(x) = lim &radic;(1 + x &radic;(1 + (x+1) &radic;(1 + (x+2) &radic;(1 + (x+3) &radic;( ... + (x+n-1) &radic;(1 + x+n) ... ) ) ) ) ). Then  we may guess that f(x) = x + 1. The same idea as before shows that f(x) exists and is at most x + 1. Also, we have that f(x)<sup>2</sup> = x f(x+1) + 1 (*).
+
+<p>
+
+The trick is that a crude lower limit works, because we can use (*) to refine it repeatedly. Removing all the 1s and replacing (x+1), (x+2) ... by x gives that f(x) &ge; lim &radic;( x &radic;( x &radic;( x &radic;( x ... )))) = x &gt; 1/2 (x + 1). Now (*) gives f(x)<sup>2</sup> &ge; 1/2 (x<sup>2</sup> + 2x) + 1 &gt; 1/2 (x + 1)<sup>2</sup>, so f(x) &gt; (x + 1)&radic;(1/2). Using (*) again gives f(x) &gt; (x + 1) (1/2)<sup>1/4</sup> and so on. Hence f(x) &ge; x + 1 as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn66.html">27th Putnam 1966</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1973/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>34th Putnam 1973</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+f is defined on the closed interval [0, 1], f(0) = 0, and f has a continuous derivative with values in (0, 1]. By considering the inverse f<sup> -1</sup> or otherwise, show that ( &int;<sub>0</sub><sup>1</sup> f(x) dx )<sup>2</sup> &ge; &int;<sub>0</sub><sup>1</sup> f(x)<sup>3</sup> dx. Give an example where we have equality.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We might suspect that there is nothing special about the upper limit 1. So put g(y) = ( &int;<sub>0</sub><sup>y</sup> f(x) dx )<sup>2</sup> - &int;<sub>0</sub><sup>y</sup> f(x)<sup>3</sup> dx. Then certainly g(0) = 0. So the obvious approach is to show that g'(y) &ge; 0. Differentiating, we get 2 f(y) &int;<sub>0</sub><sup>y</sup> f(x) dx - f(y)<sup>3</sup>. We know that f(y) &ge; 0 (because it is 0 at y = 0 and has non-negative derivative). So we need to show that 2  &int;<sub>0</sub><sup>y</sup> f(x) dx - f(y)<sup>2</sup> &ge; 0. Certainly it is 0 at y = 0, so we try differentiating again, hoping that the derivative will be non-negative. Differentiating gives 2 f(y) - 2 f(y) f '(y). But that is non-negative, because f(y) &ge; 0 and f '(y) &le; 1.
+
+<p>
+
+It is easy to see that f(x) = x gives equality. [Careful, f(x) = 0 is not an acceptable solution because the derivative is not strictly positive.]
+
+<p>
+
+[The suggestion about f<sup>-1</sup> was probably intended as follows. Let if y = f(x), let x = g(y). Then &int; f(x) dx = &int; y dx/dy dy = &int; y g'(y) dy. Now think of the square as a double integral and use g'(y) &ge; 1. But the straightforward solution above seems easier.]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn73.html">34th Putnam 1973</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

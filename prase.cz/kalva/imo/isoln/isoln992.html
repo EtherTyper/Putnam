@@ -1,0 +1,101 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1999/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b>
+
+<p>
+
+Let n &gt;= 2 by a fixed integer. Find the smallest constant C such that for all non-negative reals x<sub>1</sub>, ... , x<sub>n</sub>:
+
+<p> &nbsp;
+
+&sum;<sub>i&lt;j</sub> x<sub>i</sub> x<sub>j</sub> (x<sub>i</sub><sup>2</sup> + x<sub>j</sub><sup>2</sup>) &lt;= C (&sum; x<sub>i</sub>)<sup>4</sup>.
+
+<p>Determine when equality occurs.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+Answer: C = 1/8. Equality iff two x<sub>i</sub> are equal and the rest zero.
+
+<p>
+&nbsp;<p>
+<b>Solution</b>
+
+<p>
+
+<i>By a member of the Chinese team at the IMO - does anyone know who?</i>
+
+<p>
+
+(&sum; x<sub>i</sub>)<sup>4</sup> = (&sum; x<sub>i</sub><sup>2</sup> + 2 &sum;<sub>i&lt;j</sub>x<sub>i</sub>x<sub>j</sub>)<sup>2</sup> &ge; 4 (&sum; x<sub>i</sub><sup>2</sup>) (2 &sum;<sub>i&lt;j</sub> x<sub>i</sub>x<sub>j</sub>) = 8 &sum;<sub>i&lt;j</sub> ( x<sub>i</sub>x<sub>j</sub> &sum; x<sub>k</sub><sup>2</sup>) &ge; 8 &sum;<sub>i&lt;j</sub> x<sub>i</sub>x<sub>j</sub>(x<sub>i</sub><sup>2</sup> + x<sub>j</sub><sup>2</sup>).
+
+<p>
+The second inequality is an equality only if n - 2 of the x<sub>i</sub> are zero. So assume that x<sub>3</sub> = x<sub>4</sub> = ... = x<sub>n</sub> = 0. Then for the first inequality to be an equality we require that (x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup>) = 2 x<sub>1</sub>x<sub>2</sub> and hence that x<sub>1</sub> = x<sub>2</sub>. However, that is clearly also sufficient for equality.
+
+<p>
+
+&nbsp; <p>
+
+<i>Alternative solution by Gerhard Woeginger</i>
+
+<p>
+
+<p>Setting x<sub>1</sub> = x<sub>2</sub> = 1, x<sub>i</sub> = 0 for i &gt; 2 gives equality with C = 1/8, so, C cannot be smaller than 1/8.
+
+<p>
+We now use induction on n. For n = 2, the inequality with C = 1/8 is equivalent to (x<sub>1</sub> - x<sub>2</sub>)<sup>4</sup> &ge; 0, which is true, with equality iff x<sub>1</sub> = x<sub>2</sub>. So the result is true for n = 2.
+
+<p>
+For n &gt; 2, we may take x<sub>1</sub> + ... + x<sub>n</sub> = 1, and x<sub>1</sub> &le; x<sub>2</sub> &le; ... &le; x<sub>n</sub>. Now replace x<sub>1</sub> and x<sub>2</sub> by 0 and x<sub>1</sub> + x<sub>2</sub>. The sum on the rhs is unchanged and the sum on the lhs is increased by (x<sub>1</sub> + x<sub>2</sub>)<sup>3</sup> S - (x<sub>1</sub><sup>3</sup> + x<sub>2</sub><sup>3</sup>) S - x<sub>1</sub>x<sub>2</sub>(x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup>), where S = x<sub>3</sub> + x<sub>4</sub> + ... + x<sub>n</sub>. But S is at least 1/3 (the critical case is n = 3, x<sub>i</sub> = 1/3), so this is at least x<sub>1</sub>x<sub>2</sub>(x<sub>1</sub> + x<sub>2</sub> - x<sub>1</sub><sup>2</sup> - x<sub>2</sub><sup>2</sup>). This is strictly greater than 0 unless x<sub>1</sub> = 0 (when it equals 0), so the result follows by induction.
+
+<p>
+
+&nbsp;
+
+<p>
+
+<i>Comment. The first solution is elegant and shows clearly why the inequality is true. The second solution is more plodding, but uses an approach which is more general and can be applied in many other cases. At least with hindsight, the first solution is not as impossible to find as one might think. A little playing around soon uncovers the fact that one can get C = 1/8 with two x<sub>i</sub> equal and the rest zero, and that this looks like the best possible. One just has to make the jump to replacing (x<sub>i</sub><sup>2</sup> + x<sub>j</sub><sup>2</sup>) by &sum; x<sub>k</sub><sup>2</sup>. The solution is then fairly clear. Of course, that does not detract from the contestant's achievement, because I and almost everyone else who has looked at the problem failed to make that jump.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo99.html">40th IMO 1999</a><br>
+
+<p>(C) John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+3 Sep 1999
+<br>Last corrected/updated 19 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

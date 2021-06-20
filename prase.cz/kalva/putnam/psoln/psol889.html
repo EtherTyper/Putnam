@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1988/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>49th Putnam 1988</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+&alpha;<sub>n</sub> is the smallest element of the set { |a - b&radic;3| : a, b non-negative integers with sum n}. Find sup &alpha;<sub>n</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (&radic;3 + 1)/2.
+
+<p>
+
+Evidently the elements of { |a - b&radic;3| : a, b non-negative integers with sum n} are spaced a distance (&radic;3 + 1) apart, so either smallest positive or the largest negative lies in the interval ( -(&radic;3 + 1)/2, (&radic;3 + 1)/2). Thus (&radic;3 + 1)/2 is certainly an upper bound.
+
+<p>
+
+Let a<sub>n</sub>, b<sub>n</sub> be the pair with |a<sub>n</sub> - b<sub>n</sub> &radic;3| = &alpha;<sub>n</sub>. All the values (a<sub>n</sub> - b<sub>n</sub> &radic;3) lie in the interval ( - (&radic;3 + 1)/2, (&radic;3 + 1)/2) ), so for any &epsilon; &gt; 0, we can find two distinct values, corresponding to say m and n, which differ by less than &epsilon;. In other words &alpha;<sub>m-n</sub> &lt; &epsilon;. But now consider the sequence of values &alpha;<sub>m-n</sub>, &alpha;<sub>2(m-n)</sub>, &alpha;<sub>3(m-n)</sub>, ... For k&alpha;<sub>m-n</sub> &lt; (&radic;3 + 1)/2 we have &alpha;<sub>k(m-n)</sub> = k &alpha;<sub>m-n</sub>. So we get a sequence of increasing values with spacing less than &epsilon;. Thus the sequence gives a value within &epsilon; of (&radic;3 + 1)/2, which is therefore the least upper bound.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn88.html">49th Putnam 1988</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

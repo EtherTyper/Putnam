@@ -1,0 +1,61 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1998/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1998</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+In a competition there are a contestants and b judges, where b &ge; 3 is an odd integer. Each judge rates each contestant as either "pass" or "fail". Suppose k is a number such that for any two judges their ratings coincide for at most k contestants. Prove k/a &ge; (b-1)/2b.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let us count the number N of triples (judge, judge, contestant) for which the two judges are distinct and rate the contestant the same. There are b(b-1)/2 pairs of judges in total and each pair rates at most k contestants the same, so N &le; kb(b-1)/2.
+
+<p>Now consider a fixed contestant X and count the number of pairs of judges rating X the same. Suppose x judges pass X, then there are x(x-1)/2 pairs who pass X and (b-x)(b-x-1)/2 who fail X, so a total of (x(x-1) + (b-x)(b-x-1))/2 pairs rate X the same. But (x(x-1) + (b-x)(b-x-1))/2 = (2x<sup>2</sup> - 2bx + b<sup>2</sup> - b)/2 = (x - b/2)<sup>2</sup> + b<sup>2</sup>/4 - b/2 &ge; b<sup>2</sup>/4 - b/2 = (b - 1)<sup>2</sup>/4 - 1/4. But (b - 1)<sup>2</sup>/4 is an integer (since b is odd), so the number of pairs rating X the same is at least (b - 1)<sup>2</sup>/4. Hence N &ge; a (b - 1)<sup>2</sup>/4. Putting the two inequalities together gives k/a &ge; (b - 1)/2b.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo98.html">39th IMO 1998</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Oct 1998
+<br>Last corrected/updated 20 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

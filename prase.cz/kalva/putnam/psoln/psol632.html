@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1963/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>24th Putnam 1963</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+The sequence a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ...  of positive integers is strictly monotonic increasing, a<sub>2</sub> = 2 and a<sub>mn</sub> = a<sub>m</sub>a<sub>n</sub> for m, n relatively prime. Show that a<sub>n</sub> = n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The key observation is that if a<sub>N</sub> = N for N odd, then a<sub>2N</sub> = 2N, and hence a<sub>N+1</sub> = N+1, a<sub>N+2</sub> = N+2, ... , a<sub>2N-1</sub> = 2N-1 (because a<sub>n</sub> is strictly increasing, so there are only N-1 holes for N-1 pegs. But we can now repeat using 2N-1 (provided 2N-1 &gt; N, or N &gt 1) and the result is established for all n.
+
+<p>
+
+So we just need to get started with a<sub>3</sub>. Suppose a<sub>3</sub> = m. Then a<sub>6</sub> = 2m. So m+2 &le; a<sub>5</sub> &le; 2m-1. Hence a<sub>10</sub> &le; 4m-2 and a<sub>9</sub> &le; 4m-3. So a<sub>18</sub> &le; 8m-6 and hence a<sub>15</sub> &le; 8m-9. But a<sub>15</sub> = a<sub>3</sub>a<sub>5</sub> &ge; m<sup>2</sup>+2m, so m<sup>2</sup>+2m &le; 8m-9 or (m-3)<sup>2</sup> &le; 0. Hence m = 3.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn63.html">24th Putnam 1963</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1989/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>50th Putnam 1989</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Let R be the reals and R* the non-negative reals. f: R* &rarr; R satisfies the following conditions: (1) it is differentiable and f '(x) = - 3 f(x) + 6 f(2x) for x &gt; 0; (2) |f(x)| &le; e<sup>-&radic;x</sup> for x &ge; 0. Define u<sub>n</sub> = &int;<sub>0</sub><sup>&infin;</sup> x<sup>n</sup>f(x) dx for n &ge; 0. Express u<sub>n</sub> in terms of u<sub>0</sub>, prove that the sequence u<sub>n</sub>3<sup>n</sup>/n! converges, and show that the limit is 0 iff u<sub>0</sub> = 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Integrating by parts and using the relation given, we get u<sub>n</sub> = 3/(n+1) u<sub>n+1</sub> - 3/(n+1) (1/2)<sup>n+1</sup> u<sub>n+1</sub>. So u<sub>n</sub> = u<sub>0</sub> n!/3<sup>n</sup> &prod;<sub>1</sub><sup>n</sup> 1/(1 - 1/2<sup>r</sup>).
+
+<p>
+
+The product &prod;  (1 - 1/2<sup>r</sup>) converges to a positive value since &sum; 1/2<sup>r</sup> converges. Hence 3<sup>n</sup>/n! u<sub>n</sub> converges to a positive multiple of u<sub>0</sub>. Hence the limit is zero iff u<sub>0</sub> is zero.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn89.html">50th Putnam 1989</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

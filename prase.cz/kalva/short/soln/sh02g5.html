@@ -1,0 +1,46 @@
+<HTML>
+
+<HEAD>
+<TITLE>43rd IMO shortlist 2002/G5 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>43rd IMO 2002 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem G5</b><br>
+<p>
+S is a set of 5 coplanar points, no 3 collinear. M(S) is the largest area of a triangle with vertices in S. Similarly, m(S) is the smallest area. What is the smallest possible value of M(S)/m(S) as S varies?
+<p>
+&nbsp;<p>
+<b>Answer</b><br>
+<p>
+(1 + &radic;5)/2
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+It is easy to check that the ratio is (1 + &radic;5)/2 for a regular pentagon.
+<p>
+<img src="diag02g5.jpg">
+<p>
+Suppose we have any 5 points A, B, C, D, E (no three collinear). Let A, B, C be three points with area ABC = M(S). Let k = 2 M(S)/(1 + &radic;5). We have to show that at least one of the triangles formed by A, B, C, D, E has area &le; k. Take lines B'C', C'A', A'B' through A, B, C parallel to BC, CA, AB respectively. D must be on the same side of B'C' as BC, otherwise area BCD &gt; area ABC (contradicting the maximality of area ABC). Similarly, it lies on the same side of C'A' as CA, and on the same side of A'B' as AB. So D must lie inside or on A'B'C'. Similarly E.The three triangles A'BC, B'CA, C'BA are disjoint (apart from the 3 points A, B, C, and D and E cannot lie there), so one of the three triangles must be empty of points D, E. So wlog D and E lie inside B'CBC'.
+<p>
+Affine transformations do not affect the <i>ratio</i> of the areas of triangles, but by an affine transformation we can make ABC a 36<sup>o</sup>, 72<sup>o</sup>, 72<sup>o</sup> triangle, so that APBCQ is a regular pentagon. Since AB and CQ are parallel, and also AB and A'B', Q must lie on the segment B'C. Similarly, P must lie on BC'
+<p>
+<img src="dia02g5a.jpg">
+<p>
+Suppose D lies in the pentagon. If it lies in ABP, then area ABD &le; area ABP = k. Similarly if D lies in ACQ. If D lies in ABC, then at least one of ABD, BCD, CAD has area &le; area ABC/3 &lt; k. Similarly for E. So we may suppose that both D and E lie in APC' or AQB;. If they both lie in the same triangle, then area ADE &le; area APC' &lt; k. So suppose D lies in ABC' and E in AQB'. Then area ADE = (1/2) AD&middot;AE sin DAQ &le; (1/2) AP<sup>2</sup> sin PAQ = area PAQ = k.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh02.html">43rd IMO shortlist 2002</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+8 Aug 2003
+<br>Last corrected/updated 8 Aug 2003
+</BODY>
+
+</HTML>
+

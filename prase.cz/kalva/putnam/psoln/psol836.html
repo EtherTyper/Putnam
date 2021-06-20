@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1983/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>44th Putnam 1983</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Let T be the triangle with vertices (0, 0), (a, 0), and (0, a). Find lim<sub>a&rarr;&infin;</sub> a<sup>4</sup>exp(-a<sup>3</sup>) &int;<sub>T</sub> exp(x<sup>3</sup>+y<sup>3</sup>) dx dy.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 2/9.
+
+<p>
+
+The corresponding indefinite integral is obviously intractable and the definite integral clearly diverges. But exp(a<sup>3</sup>)/a<sup>4</sup> also diverges. So we have the ratio of two divergent quantities. This calls for l'H&ocirc;pital's rule: to evaluate lim f(a)/g(a) we take lim f'(a)/g'(a). The first step is to rearrange the integral so that a only occurs as an integration limit for one of the variables (thus making it easier to differentiate with respect to it).
+
+<p>
+
+After a little experimentation we take s = x + y, t = x - y. The Jacobian is 1/2 and so we get 1/2 &int;<sub>s=0</sub><sup>a</sup> &int;<sub>-s</sub><sup>s</sup> exp(s<sup>3</sup>/4 + 3s t<sup>2</sup>/4) dt ds. Differentiating wrt a, we get 1/2 &int;<sub>-a</sub><sup>a</sup> exp( a<sup>3</sup>/4 + 3a/4 t<sup>2</sup>) dt = 1/2 exp(a<sup>3</sup>/4) &int;<sub>-a</sub><sup>a</sup> exp( 3a/4 t<sup>2</sup>) dt. Similarly, differentiating the denominator gives (3/a<sup>2</sup>  - 4/a<sup>5</sup>) exp(a<sup>3</sup>). We can cancel out the exp(a<sup>3</sup>/4) to get 1/2 &int;<sub>-a</sub><sup>a</sup> exp( 3a/4 t<sup>2</sup>) dt and (3/a<sup>2</sup>  - 4/a<sup>5</sup>) exp(3a<sup>3</sup>/4), but both these still diverge. Accordingly, we must apply the rule again.
+
+<p>
+
+We would like to eliminate the a in the integrand to make differentiation simpler. This can be achieved by setting s = a<sup>1/2</sup> t. Notice that the integrand has the same value for t and -t (or s and -s) so we can further simplify by taking the integration from 0 to a and doubling. Thus we get for the numerator a<sup>-1/2</sup> &int;<sub>0</sub><sup>a&radic;a</sup> exp(3s<sup>2</sup>/4) ds. We can cancel the a<sup>-1/2</sup>. Now differentiating the numerator gives exp(3a<sup>3</sup>4) 3a<sup>1/2</sup>/2. Differentiating the denominator gives (27a<sup>1/2</sup>/4 + lower powers of a ) exp(3a<sup>3</sup>/4). This evaluates to (3/2)/(27/4) = 2/9 as a tends to infinity.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn83.html">44th Putnam 1983</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

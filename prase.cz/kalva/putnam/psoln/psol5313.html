@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>13th Putnam 1953/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>13th Putnam 1953</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+A and B are equidistant from O. Given k &gt; OA, find the point P in the plane OAB such that OP = k and PA + PB is a minimum.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let C be the circle centre O radius k. Take A' on the ray OA such that OA&middot;OA' = k<sup>2</sup> and B' on the ray OB such that OB&middot;OB' = k<sup>2</sup>. If A'B' intersects the circle C, then the points of intersection give the positions where PA + PB is a minimum. If not then the nearest point of C to A'B' (which is on the perpendicular bisector of AB) gives the minimum.
+
+<p>
+
+For given P on C, the triangles OAP and OPA' are similar, so PA = (AO/PO) PA'. Similarly, PB = (BO/PO) PB', so PA + PB = (AO/k) (PA' + PB'), so minimising PA + PB is equivalent to minimising PA' + PB'. If A'B' intersects C, then clearly the points of intersection minimise. If not, let Q be the point on C closest to A'B'. Let L be the tangent to the circle at that point (so that L is parallel to A'B'). Then QA + QB &lt; RA + RB for other points R on L. Given another point P on C, take the perpendicular to L through P. If it intersects L at R, then PA + PB &gt; RA + RB &gt; QA + QB.
+
+<p>
+
+<i>Comment. Ptolemy's theorem gives a partial solution OA&middot;PB + OB&middot;PA &ge; OP&middot;AB with equality iff O, A, B, P are concyclic or collinear. But OA = OB, so PA + PB &ge; k&middot;AB/OA with equality iff P lies on the circle (or line) OAB. Hence if the circle OAB (or line) intersects the circle C, then the two points of intersection give the minimum. However, this does not deal with the case where the circles do not intersect. Moreover, it does not completely deal with the case where they do, because one has to consider what happens if P is the opposite side of the line OA to B.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn53.html">13th Putnam 1953</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

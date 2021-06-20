@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1973/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>34th Putnam 1973</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+Show that sin<sup>2</sup>x sin 2x has two maxima in the interval [0, 2&pi;], at &pi;/3 and 4&pi;/3. Let f(x) = the absolute value of sin<sup>2</sup>x sin<sup>3</sup>4x sin<sup>3</sup>8x ... sin<sup>3</sup>2<sup>n-1</sup>x sin 2<sup>n</sup>x. Show that f(&pi;/3) &gt;= f(x). Let g(x) = sin<sup>2</sup>x sin<sup>2</sup>4x sin<sup>2</sup>8x ... sin<sup>2</sup>2<sup>n</sup>x. Show that g(x) &le; 3<sup>n</sup>/4<sup>n</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let h(x) = sin<sup>2</sup>x sin 2x. Then h(x) = 2 sin<sup>3</sup>x cos x, and h'(x) = 2 sin<sup>2</sup>x (3 - 4 sin<sup>2</sup>x). So h'(x) = 0 at x = 0, &pi;/3, 2&pi;/3, 4&pi;/3, 5&pi;/3, 2&pi; in the interval [0, 2&pi;]. We easily see that h(x) has maxima at &pi;/3 and 4&pi;/3, minima at 2&pi;/3 and 5&pi;/3 and inflexions at 0, 2&pi;. At the inflexions h(x) = 0, at the other stationary values, |h(x)| = (3&radic;3)/8.
+
+<p>
+
+Notice that, for n &gt; 1, 2<sup>n</sup>&pi;/3 = 2&pi;/3 or 4&pi;/3 (mod 2&pi;). So at x = 2<sup>n</sup>&pi;/3, |h(x)| attains its maximum value.
+
+<p>
+
+Let f<sub>n</sub>(x) = sin<sup>2</sup>x sin<sup>3</sup>4x sin<sup>3</sup>8x ... sin<sup>3</sup>2<sup>n-1</sup>x sin 2<sup>n</sup>x. Then f<sub>2</sub>(x) = h(x) h(2x) and in general f<sub>n</sub>(x) = f<sub>n-1</sub>(x) h(2<sup>n-1</sup>x), so that f<sub>n</sub>(x) = h(x) h(2x) h(4x) ... h(2<sup>n-1</sup>x). At x = &pi;/3 each of |h(2<sup>i</sup>x)| is maximised separately and hence |f<sub>n</sub>(x)| is maximised.
+
+<p>
+
+We have in fact that |f<sub>n</sub>(x)| &le; ( (&radic;3)/2 )<sup>3n</sup>. Hence also |sin x| |f<sub>n</sub>(x)| |sin<sup>2</sup>2<sup>n</sup>x| &le; ( (&radic;3)/2 )<sup>3n</sup>. But |sin x| |f<sub>n</sub>(x)| |sin<sup>2</sup>2<sup>n</sup>x| = g(x)<sup>3/2</sup>, so |g(x)| &le; ( (&radic;3)/2 )<sup>2n</sup> = (3/4)<sup>n</sup>, and hence g(x) &le; (3/4)<sup>n</sup> (g is certainly non-negative).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn73.html">34th Putnam 1973</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

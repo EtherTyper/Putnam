@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 79/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>40th Putnam 1979</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+A and B are disjoint sets of n points in the plane. No three points of A &cup; B are collinear. Can we always label the points of A as A<sub>1</sub>, A<sub>2</sub>, ... , A<sub>n</sub>, and the points of B as B<sub>1</sub>, B<sub>2</sub>, ... , B<sub>n</sub> so that no two of the n segments A<sub>i</sub>B<sub>i</sub> intersect?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes.
+
+<p>
+
+<i>Hard.</i>
+
+<p>
+
+It is easy to waste a lot of time failing to find inductive arguments (can we find a line with the same number of A-points and B-points on one side of it etc).
+
+<p>
+
+The trick is to find another property which cannot be satisfied if two segments intersect. Take the labeling which minimises the total length of the segments (obviously exists, since there are only finitely many labelings). If A<sub>i</sub>B<sub>i</sub> intersects A<sub>j</sub>B<sub>j</sub> at X. Then A<sub>i</sub>B<sub>j</sub> &lt; A<sub>i</sub>X + XB<sub>j</sub>, A<sub>j</sub>B<sub>i</sub> &lt; A<sub>j</sub>X + XB<sub>i</sub>. So A<sub>i</sub>B<sub>j</sub> + A<sub>j</sub>B<sub>i</sub> &lt; A<sub>i</sub>B<sub>i</sub> + A<sub>j</sub>B<sub>j</sub>. So the labeling was not minimal. Contradiction. Hence no pair of segments can intersect.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn79.html">40th Putnam 1979</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

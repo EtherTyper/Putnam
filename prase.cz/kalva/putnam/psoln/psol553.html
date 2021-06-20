@@ -1,0 +1,73 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 55/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>15th Putnam 1955</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+a<sub>n</sub> is a sequence of monotonically decreasing positive terms such that &sum; a<sub>n</sub> converges. S is the set of all &sum; b<sub>n</sub>, where b<sub>n</sub> is a subsequence of a<sub>n</sub>. Show that S is an interval iff a<sub>n-1</sub> &le; &sum;<sub>n</sub><sup>&infin;</sup> a<sub>i</sub> for all n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Fairly hard.</i>
+
+<p>
+
+The condition is certainly necessary. For suppose a<sub>n-1</sub> = k<sub>2</sub> &gt; k<sub>3</sub> = &sum;<sub>n</sub><sup>&infin;</sup> a<sub>i</sub>. Let k<sub>1</sub> = &sum;<sub>1</sub><sup>n-2</sup> a<sub>i</sub>. Then k<sub>1</sub> and k<sub>1</sub> + k<sub>2</sub> belong to S, but no number in the non-empty interval (k<sub>1</sub> + k<sub>3</sub>, k<sub>1</sub> + k<sub>2</sub>) belongs to S, so S cannot be an interval.
+
+<p>
+
+Now assume that the condition holds. Let k = &sum;a<sub>n</sub>. We show that S = [0, k]. We get the endpoints by taking the subsequence to be the empty set or the whole sequence. So take h &isin; (0, k). Define b<sub>n</sub> to be the earliest member of the sequence not so far chosen such that &sum;<sub>1</sub><sup>n</sup> b<sub>i</sub> &le; h. This is clearly possible since a<sub>m</sub> &rarr; 0. If at any point we get equality we are home. 
+
+<p>
+
+So assume that the resulting {b<sub>n</sub>} is infinite. Clearly &sum; b<sub>n</sub> &le; h. If {b<sub>n</sub>} is missing infinitely many members of {a<sub>n</sub>}, then given any &epsilon; &gt; 0, we can find a<sub>m</sub> &lt; &epsilon; missing from the subsequence. But that means that for some n, we rejected a<sub>m</sub> because b<sub>1</sub> + b<sub>2</sub> + ... + b<sub>n</sub> + a<sub>m</sub> &gt; h. So &sum; b<sub>i</sub> &ge; b<sub>1</sub> + b<sub>2</sub> + ... + b<sub>n</sub> &gt; h - &epsilon;. Hence &sum; b<sub>i</sub> = h.
+
+<p>
+It remains to consider the case where only finitely many members are missing from the subsequence. Let a<sub>m</sub> be the largest such. Then for some n we have that b<sub>1</sub> + b<sub>2</sub> + ... + b<sub>n</sub> + a<sub>m</sub> &gt; h. We also have that b<sub>1</sub> + b<sub>2</sub> + ... + b<sub>n</sub> + &sum;<sub>m+1</sub><sup>&infin;</sup> a<sub>i</sub> &le; h. But a<sub>m</sub> &le; &sum;<sub>m+1</sub><sup>&infin;</sup> a<sub>i</sub>. So we have a contradiction and this case cannot occur.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn55.html">15th Putnam 1955</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

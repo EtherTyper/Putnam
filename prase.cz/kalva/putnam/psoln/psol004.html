@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2000/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>61st Putnam 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Show that lim<sub>k&rarr;&infin;</sub> &int;<sub>0</sub><sup>k</sup> sin x sin x<sup>2</sup> dx converges.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We integrate by parts to get &int;<sub>0</sub><sup>k</sup> sin x sin x<sup>2</sup> dx = - &int;<sub>0</sub><sup>k</sup> (sin x)/2x d(cos x<sup>2</sup>) = (cos x<sup>2</sup> sin x)/2x |<sub>k</sub><sup>0</sup> + &int;<sub>0</sub><sup>k</sup> cos x<sup>2</sup> ( (cos x)/2x - (sin x)/2x<sup>2</sup> ) dx = term 1 + term 2 - term 3.
+
+<p>
+term 1 obviously converges to 1/2.
+
+<p>
+For term 3 the integral of the absolute value is less than &int;<sub>0</sub><sup>k</sup> 1/2x<sup>2</sup> dx, which converges.
+
+<p>
+For term 2, we integrate by parts again to get &int;<sub>0</sub><sup>k</sup> (cos x)/4x<sup>2</sup> d(sin x<sup>2</sup>) dx = (sin x<sup>2</sup> cos x)/4x<sup>2</sup> |<sub>0</sub><sup>k</sup> + &int;<sub>0</sub><sup>k</sup> (sin x<sup>2</sup> sin x)/4x<sup>2</sup> dx + &int;<sub>0</sub><sup>k</sup> (sin x<sup>2</sup> cos x)/8x<sup>3</sup> dx.
+
+<p>
+The first term obviously tends to zero and the second two converge, by comparison of the absolute value of the integrands to 1/x<sup>2</sup> and 1/x<sup>3</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn00.html">61st Putnam 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

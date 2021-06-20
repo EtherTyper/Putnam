@@ -1,0 +1,92 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 91/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>52nd Putnam 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+An n-sum of <i>type 1</i> is a finite sequence of positive integers a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>r</sub>, such that: (1) a<sub>1</sub> + a<sub>2</sub> + ... a<sub>r</sub> = n; and (2) &nbsp; a<sub>1</sub> &gt; a<sub>2</sub> + a<sub>3</sub>,  &nbsp; a<sub>2</sub> &gt; a<sub>3</sub> + a<sub>4</sub>, ... , a<sub>r-2</sub> &gt; a<sub>r-1</sub> + a<sub>r</sub>, and a<sub>r-1</sub> &gt; a<sub>r</sub>. For example, there are five 7-sums of type 1, namely: 7; 6, 1; 5, 2; 4, 3; 4, 2, 1.
+
+<p>
+An n-sum of <i>type 2</i> is a finite sequence of positive integers b<sub>1</sub>, b<sub>2</sub>, ... , b<sub>s</sub> such that: (1) b<sub>1</sub> + b<sub>2</sub> + ... + b<sub>s</sub> = n; (2) b<sub>1</sub> &ge; b<sub>2</sub> &ge; ... &ge; b<sub>s</sub>; (3) each b<sub>i</sub> is in the sequence 1, 2, 4, ... , g<sub>j</sub>, ... defined by g<sub>1</sub> = 1, g<sub>2</sub> = 2, g<sub>j</sub> = g<sub>j-1</sub> + g<sub>j-2</sub> + 1; and (4) if b<sub>1</sub> = g<sub>k</sub>, then 1, 2, 4, ... , g<sub>k</sub> is a subsequence. For example, there are five 7-sums of type 2, namely: 4, 2, 1; 2, 2, 2, 1; 2, 2, 1, 1, 1; 2, 1, 1, 1, 1, 1; 1, 1, 1, 1, 1, 1, 1.
+
+<p>
+Prove that for n &ge; 1 the number of type 1 and type 2 n-sums is the same.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Moderately hard.
+
+<p>
+
+Let f<sub>i</sub> be the usual Fibonacci sequence defined by f<sub>1</sub> = f<sub>2</sub> = 1, f<sub>n</sub> = f<sub>n-1</sub> + f<sub>n-2</sub>. A trivial induction gives that g<sub>n</sub> = &sum;<sub>1</sub><sup>n</sup> f<sub>i</sub>.
+
+<p>We show that there is a bijection between n-sums of type 2 with b<sub>1</sub> = g<sub>k</sub> and n sums of type 1 with k members. 
+
+<p>
+Since a type 2 n-sum with b<sub>1</sub> = g<sub>k</sub> is made up entirely of elements of {g<sub>1</sub>, g<sub>2</sub>, ... , g<sub>k</sub>} and includes each element at least once, there is a bijection between such n-sums and sequences of non-negative numbers c<sub>1</sub>, c<sub>2</sub>, ... , c<sub>k</sub> satisfying (c<sub>1</sub> + 1)g<sub>1</sub> + (c<sub>2</sub> + 1)g<sub>2</sub> + ... + (c<sub>k</sub> + 1)g<sub>k</sub> = n (*).
+
+<p>
+Suppose a<sub>i</sub> is a type 1 n-sum with k terms. Then condition (2) implies that a<sub>i</sub> &ge; a<sub>i+1</sub> + a<sub>i+2</sub> + 1, for i &lt; k - 1, and a<sub>k</sub> &ge; 1, a<sub>k-1</sub> &ge; 2. So a<sub>i</sub> &ge; g<sub>i</sub>. If we increase a<sub>i</sub> above this minimum value, then that has a knock-on effect for a<sub>j</sub> with j &lt; i. In fact, we can write:
+
+<br> &nbsp; &nbsp; a<sub>k</sub> = g<sub>1</sub> + c<sub>k</sub>f<sub>1</sub>;
+
+<br> &nbsp; &nbsp; a<sub>k-1</sub> = g<sub>2</sub> + c<sub>k</sub>f<sub>2</sub> + c<sub>k-1</sub>f<sub>1</sub>;
+
+<br> &nbsp; &nbsp; a<sub>k-2</sub> = g<sub>3</sub> + c<sub>k</sub>f<sub>3</sub> + c<sub>k-1</sub>f<sub>2</sub> + c<sub>k-2</sub>f<sub>1</sub>;
+
+<br> ...
+
+<br> &nbsp; &nbsp; a<sub>1</sub> = g<sub>k</sub> + c<sub>k</sub>f<sub>k</sub> + c<sub>k-1</sub>f<sub>k-1</sub> + ... + c<sub>1</sub>f<sub>1</sub>.
+
+<p>
+Since the sum of the a<sub>i</sub> is n, the c<sub>i</sub> satisfy (*). Conversely, if c<sub>i</sub> are any non-negative numbers satisfying (*), then the relations above give a type 1 n-sum a<sub>i</sub>. So we have a bijection between type 1 n-sums with k members and non-negative c<sub>i</sub> satisfying (*). Putting the two bijections together gives the claimed bijection between type 2 n-sums with largest member g<sub>k</sub> and type 1 n-sums with k members.
+
+<p>
+It follows that there is a bijection between type 1 and type 2 n-sums.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn91.html">52nd Putnam 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+21 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

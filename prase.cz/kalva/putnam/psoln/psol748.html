@@ -1,0 +1,83 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 74/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>35th Putnam 1974</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+f(x) is a real valued function on the reals, and has a continuous derivative. f '(x)<sup>2</sup> + f(x)<sup>3</sup> &rarr; 0 as x &rarr; &infin;. Show that f(x) and f '(x) &rarr; 0 as x &rarr; &infin;.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The key to getting started is to notice that if f ' = 0 for arbitrarily large values of x then the result is certainly true. Suppose f '(x<sub>n</sub>) = 0 and x<sub>n</sub> &rarr; &infin;. Then since f '<sup>2</sup> + f<sup>3</sup> &rarr; 0, we have f(x<sub>n</sub>) &rarr; 0. But f is monotonic on the interval [x<sub>n</sub>, x<sub>n+1</sub>} since its derivative does not change sign, hence f &rarr; 0. Hence also f ' &rarr; 0. So we may assume that for sufficiently large x, f ' does not change sign.
+
+<p>
+
+Now suppose f tends to a limit as x &rarr; &infin;. Then f ' must also tend to a limit. If that limit is non-zero, then f increases or decreases faster than some non-constant linear function for sufficiently large x and so cannot tend to a limit. Hence f ' must tend to zero. Hence f also.
+
+<p>
+
+So we may assume that either (1) for sufficiently large x, f is strictly monotonic increasing and tends to infinity, or (2) for sufficiently large x, f is strictly monotonic decreasing and tends to minus infinity.
+
+<p>
+
+The first case is impossible, because then f<sup>3</sup> and hence also f<sup>3</sup> + f '<sup>2</sup> would tend to infinity.
+
+<p>
+
+Showing that the second case is impossible needs a little more work. Suppose that for x &ge; X, we have f(x) &lt; -1 and 1/4 &gt; f(x)<sup>3</sup> + f '(x)<sup>2</sup> &gt; -1/4. Then 1/2 f(x)<sup>3</sup> &lt; -1/2, so -1/2 f(x)<sup>3</sup> &gt; 1/2. Hence f '(x)<sup>2</sup> + 1/2 f(x)<sup>3</sup> &gt; -1/4 - 1/2 f(x)<sup>3</sup> &gt; 1/4 &gt; 0. So f '(x)<sup>2</sup> &gt; -1/2 f(x)<sup>3</sup>. f '(x) is negative, so f '(x) &lt; -1/2 |f(x)|<sup>3/2</sup> (*).
+
+<p>
+
+Now define g(x) to satisfy g(X) = -1, g' = -1/2 |g|<sup>3/2</sup>. Solving, we get g(x) = (1 - (x - X)/4 )<sup>-2</sup> for x &gt;= X. (*) shows that we must have f(x) &lt; g(x) for x &ge; X. But g(x) &rarr; -&infin; as x &rarr; 5X, so f must be discontinuous on the interval (X, 6X). Contradiction.
+
+<p>
+<i>Comment. I found this hard. Note that the exact form of the relation is important. If, for example, it was replaced by f '(x)<sup>3</sup> + f(x)<sup>2</sup> &rarr; 0 as x &rarr; &infin;, then the result would not be true - we could have f(x) = -x<sup>3</sup>/27, in which case f '<sup>3</sup> + f<sup>2</sup> is identically zero.
+
+</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn74.html">35th Putnam 1974</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+18 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

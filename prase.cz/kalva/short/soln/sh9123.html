@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>32nd IMO shortlist 1991/23 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>32nd IMO 1991 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 23</b>
+<p>
+f(n) is an integer-valued function defined on the integers which satisfies f(m + f( f(n) ) ) = - f( f(m+1)) - n for all m, n. The polynomial g(n) has integer coefficients and g(n) = g( f(n) ) for all n. Find f(1991) and the most general form for g.
+<p>
+&nbsp;<p>
+<b>Answer</b>
+<p>
+f(1991) = -1992. 
+<br>g(x) is a polynomial in (x<sup>2</sup> + x) with integral coefficients.
+<p>
+<b>Solution</b>
+<p>
+Taking m = 1, and putting f(f(2)) = k, we get f( f(f(n)) + 1) = -n - k (*). Replacing m by f(f(m)) wet get f( f(f(m)) + f(f(n)) ) = - f( f( f(f(m)) + 1) - n. We can now interchange m and n to get f( f( f(f(m)) + 1) + n = f( f( f(f(n)) + 1) + m. Using (*), this gives f(-n-k) + n = f(-m-k) - m. Replacing -n-k by n and -m-k by m we get f(n) - f(m) = m - n for all m, n. Taking m = 0 and putting h = f(0), we get f(n) = h - n for all n.
+<p>
+Applying this to the original relation gives h - m - f(f(n)) = -f( f(m+1)) - n. Taking n = m+1, we get h = -1. Hence f(n) = -(n+1) for all n. In particular, f(1991) = -1992.
+<p>
+We want g to satisfy g(x) = g(-x-1) for all integers x. But since g(x) is a polynomial, it must satisfy the relation for all x. Put h(x) = g(x - &frac12;). Then h(-x) = g(-x - &frac12;) = g(x + &frac12; - 1) = g(x - &frac12;) = h(x). So h(x) has only even powers of x. Hence g(x) = h(x + &frac12;) has only even powers of (x + &frac12;) and hence only power of (x + &frac12;)<sup>2</sup> = x<sup>2</sup> + x + &frac14;. So we can certainly write g(x) as a polynomial in (x<sup>2</sup> + x). Since g(x) has integral coefficients, it is an easy induction to show that when g is written as a polynomial in (x<sup>2</sup> + x), the coefficients must be integers. Now suppose g is any such polynomial. Since x(x+1) = (-x-1)(-x-1 +1), we have that g(x) = g(-x-1). Thus this is the most general form of g.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh91.html">32nd IMO shortlist 1991</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+2 Jan 2003
+<br>Last corrected/updated 2Jan 03
+</BODY>
+
+</HTML>
+

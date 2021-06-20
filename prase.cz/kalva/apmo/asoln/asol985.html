@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 98/5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>10th APMO 1998</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 5</b><br>
+<p>
+What is the largest integer divisible by all positive integers less than its cube root.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 420.
+<p>
+Let N be a positive integer satisfying the condition and let n be the largest integer not exceeding its cube root. If n = 7, then 3&middot;4&middot;5&middot;7 = 420 must divide N. But N cannot exceed 8<sup>3</sup> - 1 = 511, so the largest such N is 420.
+<p>
+If n &ge; 8, then 3&middot;8&middot;5&middot;7 = 840 divides N, so N &gt; 729 = 9<sup>3</sup>. Hence 9 divides N, and hence 3&middot;840 = 2520 divides N. But we show that no N &gt; 2000 can satisfy the condition.
+<p>
+Note that 2(x - 1)<sup>3</sup> &gt; x<sup>3</sup> for any x &gt; 4. Hence [x]<sup>3</sup> &gt; x<sup>3</sup>/2 for x &gt; 4. So certainly if N &gt; 2000, we have n<sup>3</sup> &gt; N/2. Now let p<sub>k</sub> be the highest power of k which does not exceed n. Then p<sub>k</sub> &gt; n/k. Hence p<sub>2</sub>p<sub>3</sub>p<sub>5</sub> &gt; n<sup>3</sup>/30 &gt; N/60. But since N &gt; 2000, we have 7 &lt; 11 &lt; n and hence p<sup>2</sup>, p<sup>3</sup>, p<sup>5</sup>, 7, 11 are all &le; n. But 77 p<sup>2</sup>p<sup>3</sup>p<sup>5</sup> &gt; N, so N cannot satisfy the condition.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo98.html">10th APMO 1998</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

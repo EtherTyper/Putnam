@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<TITLE>41st IMO shortlist 2000/A4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>41st IMO 2000 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A4</b><br>
+<p>
+The function f on the non-negative integers takes non-negative integer values and satisfies f(4n) = f(2n) + f(n), f(4n+2) = f(4n) + 1, f(2n+1) = f(2n) + 1 for all n. Show that the number of non-negative integers n such that f(4n) = f(3n) and n &lt; 2<sup>m</sup> is f(2<sup>m+1</sup>).
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+f(4.0) = f(2.0) + f(0), so f(0) = 0. Hence f(1) = f(2.0+1) = f(0) + 1 = 1, f(2) = f(4.0+2) = f(0) + 1 = 1. Similarly, f(3) = f(2.1+1) = f(2) + 1 = 2. Calculating a few more terms, in a similar way, we get:
+<pre>
+n	0   1   2   3   4   5   6   7   8   9  10  11  12  13  14  15  16  17  18  19  20  21
+f(n)	0   1   1   2   2   3   3   4   3   4   4   5   5   6   6   7   5   6   6   7   7   8
+</pre>
+The pattern is not obvious.
+<p>
+However, we may notice f(4n) = f(2n) + f(n). That implies that f(2<sup>k+2</sup>) = f(2<sup>k+1</sup>) + f(2<sup>k</sup>). So if we put f(2<sup>k</sup>) = f<sub>k</sub>, then f<sub>k</sub> is just the kth Fibonacci number. A little further study may then suggest that each f(n) is a sum of Fibonnacci numbers. In fact, if n = b<sub>k</sub>...b<sub>0</sub> in binary, then f(n) = b<sub>k</sub>f<sub>k+1</sub> + ... + b<sub>0</sub>f<sub>1</sub>.
+<p>
+To prove this, we just have to verify the equalities in the question. Suppose n = b<sub>k</sub> ... b<sub>0</sub>. Then f(n) + f(2n) = (b<sub>k</sub>f<sub>k+1</sub> + ... + b<sub>0</sub>f<sub>1</sub>) + (b<sub>k</sub>f<sub>k+2</sub> + ... + b<sub>0</sub>f<sub>2</sub>) = b<sub>k</sub>f<sub>k+3</sub> ... b<sub>0</sub>f<sub>3</sub> = f(4n), which establishes the first equality. The second and third are obvious.
+<p>
+We now claim that f(3n) = f(4n) iff no two 1s appear in adjacent positions in the binary expansion of n. 
+<p>
+Granting the claim, it remains to show that there are f<sub>m+2</sub> integers &lt; 2<sup>m</sup> with no adjacent 1s. We prove this by induction on m. For m = 1, we have 0 and 1, and f<sub>3</sub> = 2. For m = 2, the integers are 0, 1, 3 = 10<sub>2</sub>, and f<sub>4</sub> = 3. Suppose it is true for integers &lt; m. Take n &lt; 2<sup>m</sup>. Let the binary expansion of n be b<sub>m-1</sub> ... b<sub>0</sub>. Then n &lt; 2<sup>m-1</sup> iff b<sub>m-1</sub> = 0. In this case there are f<sub>m+1</sub> possible numbers (by induction). If 2<sup>m-1</sup> &le; n &lt; 2<sup>m</sup>, then b<sub>m-1</sub> = 1, so b<sub>m-2</sub> = 0. There are then f<sub>m</sub> possibilities for the remaining digits (by induction). So in total there are f<sub>m</sub> + f<sub>m+1</sub> = f<sub>m+2</sub> possible numbers.
+<p>
+It remains to prove the claim. Suppose there are no adjacent 1s. Then 3n = 2n + n, and there are no carries when this is computed in binary. So if f(n) = b<sub>k</sub>f<sub>k+1</sub> + ... + b<sub>0</sub>f<sub>1</sub>, then f(3n) = b<sub>k</sub>(f<sub>k+1</sub> + f<sub>k+2</sub>) + ... + b<sub>0</sub>(f<sub>1</sub> + f<sub>2</sub>) = b<sub>k</sub>f<sub>k+3</sub> + ... + b<sub>0</sub>f<sub>3</sub> = f(4n). 
+<p>
+
+The reverse implication is harder. Let S<sub>m</sub> be the statement that for 0 &lt; n &lt; 2<sup>m</sup> we have f(3n) &le; f(4n) with equality only if the 1s are isolated. For m = 1 we must have n = 1. We have f(3) = f(4) = 2, so S<sub>1</sub> is true. So assume S<sub>m</sub> is true. Let n = 2<sup>m</sup> + k with 0 &le; k &lt; 2<sup>m</sup>. Then f(4n) = f(2<sup>m+2</sup> + 4k) = f<sub>m+3</sub> + f(4k). 
+<p>
+There are three cases to consider. 
+<p>
+<i>Case 1.</i> 0 &lt; k &lt; 2<sup>m</sup>/2. Then 3k &lt; 2<sup>m</sup>, so the binary representations of 3.2<sup>m</sup> = 2<sup>m+1</sup> + 2<sup>m</sup> and 3k do not overlap. So f(3n) = f(2<sup>m+1</sup> + 2<sup>m</sup> + 3k) = f<sub>m+2</sub> + f<sub>m+1</sub> + f(3k) = f<sub>m+3</sub> + f(3k) &le; f<sub>m+3</sub> + f(4k) (by induction) = f(4n) and we have equality only if the 1s are isolated (since k &lt; 2<sup>m</sup>, if the 1s are isolated in k, then the 1s are also isolated in n = 2<sup>m</sup> + k).
+<p>
+<i>Case 2.</i> 2<sup>m</sup>/3 &lt; k &lt; 2<sup>m+1</sup>/3. Then 3k = 2<sup>m</sup> + h with h &lt; 2<sup>m</sup>, so f(3k) = f<sub>m+1</sub> + f(h). But 3n = 2(<sup>m+1</sup> + 2<sup>m</sup>) + 3k = 2<sup>m+2</sup> + h, so f(3n) = f<sub>m+3</sub> + f(h) = f<sub>m+3</sub> + f(3k) - f<sub>m+1</sub> = f<sub>m+2</sub>  f(3k) &le; f<sub>m+2</sub> + f(4k) (by induction) &lt; f<sub>m+3</sub> + f(3k). We cannot have equality in this case.
+<p>
+<i>Case 3.</i> 2<sup>m+1</sup>/3 &lt; k &lt; 2<sup>m</sup>. So 3k = 2<sup>m+1</sup> + h with h &lt; 2<sup>m</sup>, so f(3k) = f<sub>m+2</sub> + f(h). We have 3n = (2<sup>m+1</sup> + 2<sup>m</sup>) + 2<sup>m+1</sup> + h = 2<sup>m+2</sup> + 2<sup>m</sup> + h, so f(3n) = f<sub>m+3</sub> + f<sub>m+1</sub> + f(h) = f<sub>m+3</sub> - f<sub>m+2</sub> + f<sub>m+1</sub> + f(3k) &lt; f<sub>m+3</sub> + f(3k) &le; f<sub>m+3</sub> + f(4k) = f(4n). We cannot have equality in this case. That completes the proof of the claim.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh00.html">41st IMO shortlist 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+</HTML>
+

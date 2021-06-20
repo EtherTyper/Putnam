@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE>32nd IMO shortlist 1991/19 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>32nd IMO 1991 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 19</b>
+<p>
+Show that the only rational solution q in the range 0 &lt; q &lt; 1 to the equation cos(3&pi;q) + 2 cos(2&pi;q) = 0 is 2/3.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+We have cos 2A = 2 cos<sup>2</sup>A - 1, cos 3A = 4 cos<sup>3</sup>A - 3 cos A. So put x = cos(&pi;q). Then 4x<sup>3</sup> - 3x + 4x<sup>2</sup> - 2 = 0, or (2x + 1)(2x<sup>2</sup> + x - 2) = 0, so x = -&frac12; or (-1 &plusmn; &radic;17)/4. For q to be real we must have |x| &lt;= 1, so x = -&frac12; or (&radic;17 - 1)/4. Since q is in the range 0 to 1, x = -&frac12; implies q = 2/3. Thus we have to show that if cos(&pi;q) = (&radic;17 - 1)/4, then q is irrational.
+<p>
+
+The idea is to show that cos(&pi;q), cos(2&pi;), cos(4&pi;q), cos(8&pi;q), cos(16&pi;q), ... are all distinct. But for any given positive integer d, n&pi;/d = one of 0, &pi;/d, 2&pi;/d, ... , (2d-1)&pi;/d mod 2&pi;, so there are at most 2d possible values for cos(n&pi;/d), where n is an arbitrary integer. Hence if q is rational, the there are only finitely many possible values for cos(2<sup>n</sup>&pi;q).
+<p>
+We show by induction that cos(2<sup>n</sup>&pi;q) = (a<sub>n</sub> + b<sub>n</sub>&radic;17)/4 for odd integers a<sub>n</sub>, b<sub>n</sub>. We have already shown that a<sub>1</sub> = -1, b<sub>1</sub> = 1. Suppose the result is true for n. Then cos(2<sup>n+1</sup>&pi;q) = 2cos<sup>2</sup>(2<sup>n</sup>&pi;q) - 1 = 2(a<sub>n</sub> + b<sub>n</sub>&radic;17)/16 - 1. So a<sub>n+1</sub> = (a<sub>n</sub><sup>2</sup> + 17b<sub>n</sub><sup>2</sup>)/2 - 4, b<sub>n</sub> = a<sub>n</sub>b<sub>n</sub>. Odd squares = 1 mod 4 and 17 = 1 mod 4, so a<sub>n</sub><sup>2</sup> + 17b<sub>n</sub><sup>2</sup> = 2 mod 4, and hence a<sub>n+1</sub> is odd. b<sub>n+1</sub> is obviously odd. So the result is true for n+1 and hence for all n. Also a<sub>n+1</sub> &gt; &frac12; a<sub>n</sub><sup>2</sup> + &frac12; &ge; a<sub>n</sub>, so all the a<sub>n</sub> are different. Hence all the cos(2<sup>n</sup>&pi;q) are different, as claimed.
+<p>
+<i>Note that although it might seem more natural to find cos(n&pi;q) for all integers n, it is much harder work, because the recurrence is more complicated. All we need is an infinite number of distinct values, so we pick a subsequence that is easy to deal with.</i>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh91.html">32nd IMO shortlist 1991</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+2 Jan 2003
+<br>Last corrected/updated 2Jan 03
+</BODY>
+
+</HTML>
+

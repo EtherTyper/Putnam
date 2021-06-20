@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1996/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+(x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub>) is a permutation of (1, 2, ... , n). What is the maximum of x<sub>1</sub>x<sub>2</sub> + x<sub>2</sub>x<sub>3</sub> + ... + x<sub>n-1</sub>x<sub>n</sub> + x<sub>n</sub>x<sub>1</sub>?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (2n<sup>3</sup> + 3n<sup>2</sup> - 11n + 18)/6.
+
+<p><i>Easy.</i>
+
+<p>
+For n = 2, the maximum is simply 1.2 + 2.1 = 4. If we take an arrangement for {1, 2, ... , n-1} and insert n between i and j then the net increase in the sum is n(i + j) - ij. This is an increasing function of i [ = (n - j)i + nj ] and of j, so its maximum value is n<sup>2</sup> - 2, achieved if n is inserted between (n - 1) and (n - 2). Of course, this might not be possible for a particular arrangement of {1, 2, ... , n-1}, but it shows that the maximum value for n elements is at most 4 + (3<sup>2</sup> - 2) + (4<sup>2</sup> - 2) + ... + (n<sup>2</sup> - 2) = n(n + 1)(n + 2)/6 - 2(n - 1) + 1 = (2n<sup>3</sup> + 3n<sup>2</sup> - 11n + 18)/6. This can actually be achieved by repeatedly inserting n between the two maximum elements. That puts the two new maximum elements together ready for the next insertion. 
+
+<p>
+[Definitely no extra credit for checking this explicitly! You find the arrangement can be written as {2, 4, 6, ... , 2[n/2], 2[(n-1]/2]+1, 2[(n-1]/2]-1, ... , 5, 3, 1 - the even elements in increasing sequence followed by the odd elements in decreasing sequence. For n = 2m, this gives 4(1.2 + 2.3 + ... + (m-1)m) + 2m(2m-1) + (1.3 + 3.5 + ... + (2m-3)(2m-1) ) + 2.1 = 4/3 (m-1)m(m+1) + 2m(2m-1) + 1/3 (m-1)(4n<sup>2</sup> - 2m - 3) + 2 = 1/3 (8m<sup>3</sup> + 6m<sup>2</sup> - 11m + 9), as required, and similarly for n odd. But why go through all that rigmarole?]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn96.html">Putnam 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

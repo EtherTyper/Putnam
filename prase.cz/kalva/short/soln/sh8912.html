@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+<TITLE>30th IMO shortlist 1989/12 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>30th IMO 1989 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 12</b><br>
+<p>
+a, b, c, d, m, n are positive integers such that a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + d<sup>2</sup> = 1989, a + b + c + d = m<sup>2</sup> and the largest of a, b, c, d is n<sup>2</sup>. Find m and n.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: m = 9, n = 6.
+<p>
+7<sup>4</sup> = 2401 &gt; 1989, so n &lt; 7. We have 4<sup>2</sup> = 16 and 4 x 16<sup>2</sup> = 1024 &lt; 1989, so n &gt; 4. Hence n = 5 or 6. Assume a &ge; b &ge; c &ge; d, so a = n<sup>2</sup>. 
+<p>
+k has the same parity as k<sup>2</sup>. But a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + d<sup>2</sup> = 1989 is odd, so a + b + c + d = m<sup>2</sup> is odd. If n = 36, then b<sup>2</sup> + c<sup>2</sup> + d<sup>2</sup> = 693, so by Cauchy, (b + c + d)<sup>2</sup> &le; 3.693. Hence b + c + d &le; 45. Hence 36 &lt; m<sup>2</sup> &le; 81 and m<sup>2</sup> is odd, so m = 7 or 9. Similarly, if n = 25, then b<sup>2</sup> + c<sup>2</sup> + d<sup>2</sup> = 1364 and so by Cauchy b + c + d &lt; 64. Hence again m = 7 or 9.
+<p>
+Suppose first that m = 7. Then (49 - a)<sup>2</sup> = (b + c + d)<sup>2</sup> &gt; b<sup>2</sup> + c<sup>2</sup> + d<sup>2</sup> = 1989 - a<sup>2</sup>, so a<sup>2</sup> - 49a + 206 &gt; 0. Put f(x) = x<sup>2</sup> - 49x + 206. We can easily check that f(4) = f(45) = 26, f(5) = f(44) = -14, so f(x) &lt; 0 for 5 &le; x &le; 44. But we know that a must be 25 or 36, so there are no solutions with m = 7. Hence m = 9. 
+<p>
+It is easy to check that we do have a solution for m = 9, n = 6: 12 + 15 + 18 + 36 = 9<sup>2</sup> and 12<sup>2</sup> + 15<sup>2</sup> + 18<sup>2</sup> + 36<sup>2</sup> = 1989.
+<p>
+Finally, suppose m = 9, n = 5. Then b + c + d = 56, b<sup>2</sup> + c<sup>2</sup> + d<sup>2</sup> = 1364. Put b = 25 - B, c = 25 - C, d = 25 - D, where B, C, D are non-negative. So B + C + D = 19, B<sup>2</sup> + C<sup>2</sup> + D<sup>2</sup> = 1364 - 1875 + 50.19 = 439. But now B<sup>2</sup> + C<sup>2</sup> + D<sup>2</sup> &gt; (B + C + D)<sup>2</sup>. Contradiction. So there are no solutions with m = 9, n = 5.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh89.html">30th IMO shortlist 1989</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+28 Dec 2002
+<br>Last corrected/updated 28 Dec 02
+</BODY>
+
+</HTML>
+

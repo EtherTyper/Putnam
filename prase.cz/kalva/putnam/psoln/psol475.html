@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>7th Putnam 1947/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>7th Putnam 1947</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+The sequences a<sub>n</sub>, b<sub>n</sub>, c<sub>n</sub> of positive reals satisfy: (1) a<sub>1</sub> + b<sub>1</sub> + c<sub>1</sub> = 1; (2) a<sub>n+1</sub> = a<sub>n</sub><sup>2</sup> + 2b<sub>n</sub>c<sub>n</sub>, b<sub>n+1</sub> = b<sub>n</sub><sup>2</sup> + 2c<sub>n</sub>a<sub>n</sub>, c<sub>n+1</sub> = c<sub>n</sub><sup>2</sup> + 2a<sub>n</sub>b<sub>n</sub>. Show that each of the sequences converges and find their limits.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+a<sub>n+1</sub> + b<sub>n+1</sub> + c<sub>n+1</sub> = (a<sub>n</sub> + b<sub>n</sub> + c<sub>n</sub>)<sup>2</sup>, so by a trivial induction a<sub>n</sub> + b<sub>n</sub> + c<sub>n</sub> = 1. There appears to be symmetry between the three sequences, so we conjecture that each converges to 1/3.
+
+<p>
+
+Suppose a<sub>n</sub> &le; b<sub>n</sub> &le; c<sub>n</sub>. We have a<sub>n+1</sub> = a<sub>n</sub><sup>2</sup> + 2b<sub>n</sub>c<sub>n</sub> &le; a<sub>n</sub>c<sub>n</sub> + b<sub>n</sub>c<sub>n</sub> + c<sub>n</sub>c<sub>n</sub> = c<sub>n</sub>(a<sub>n</sub> + b<sub>n</sub> + c<sub>n</sub>) = c<sub>n</sub>. Similarly, b<sub>n+1</sub> = b<sub>n</sub><sub>2</sub> + 2a<sub>n</sub>c<sub>n</sub> &le; b<sub>n</sub>c<sub>n</sub> + a<sub>n</sub>c<sub>n</sub> + c<sub>n</sub><sup>2</sup> = c<sup>n</sup>, and c<sub>n+1</sub> = c<sub>n</sub><sup>2</sup> + 2a<sub>n</sub>b<sub>n</sub> &le; c<sub>n</sub><sup>2</sup> + a<sub>n</sub>c<sub>n</sub> + b<sub>n</sub>c<sub>n</sub> = c<sub>n</sub>. Hence the largest of a<sub>n+1</sub>, b<sub>n+1</sub>, c<sub>n+1</sub> is no bigger than the largest of a<sub>n</sub>, b<sub>n</sub>, c<sub>n</sub>. An exactly similar argument works for the smallest. Hence the largest forms a monotonic decreasing sequence which is bounded below and the smallest forms a monotonic increasing sequence which is bounded above.
+
+<p>
+
+Let b<sub>n</sub> - a<sub>n</sub> = h &ge; 0, c<sub>n</sub> - b<sub>n</sub> = k &ge; 0. Then a<sub>n+1</sub> - b<sub>n+1</sub> = (a<sub>n</sub> - b<sub>n</sub>)(a<sub>n</sub> + b<sub>n</sub> - 2c<sub>n</sub>), so |a<sub>n+1</sub> - b<sub>n+1</sub>| = h(h + 2k) &le; (h + k)<sup>2</sup>. Similarly, |b<sub>n+1</sub> - c<sub>n+1</sub>| = |b<sub>n</sub> - c<sub>n</sub>| |b<sub>n</sub> + c<sub>n</sub> - 2a<sub>n</sub>| = k(2h + k) &le; (h + k)<sup>2</sup>, and |c<sub>n+1</sub> - a<sub>n+1</sub>| = |c<sub>n</sub> - a<sub>n</sub>| |c<sub>n</sub> + a<sub>n</sub> - 2b<sub>n</sub>| = |(h + k)(k - h)| &le; (h + k)<sup>2</sup>. So for n+1 the difference between the biggest and the smallest is the square of the difference for n. But a<sub>1</sub>, b<sub>1</sub>, c<sub>1</sub> are all positive and hence, by a trivial induction, a<sub>n</sub>, b<sub>n</sub>, c<sub>n</sub> are positive. Their sum is 1 so the difference between the biggest and smallest must be less than 1. Hence the difference tends to zero. Hence a<sub>n</sub>, b<sub>n</sub>, c<sub>n</sub> all tend to 1/3.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn47.html">7th Putnam 1947</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

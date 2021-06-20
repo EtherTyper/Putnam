@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1970/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1970</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+The real numbers a<sub>0</sub>, a<sub>1</sub>, a<sub>2</sub>, ... satisfy 1 = a<sub>0</sub> &lt;= a<sub>1</sub> &le; a<sub>2</sub> &lt;= ... . b<sub>1</sub>, b<sub>2</sub>, b<sub>3</sub>, ... are defined by b<sub>n</sub> = sum for k = 1 to n of (1 - a<sub>k-1</sub>/a<sub>k</sub>)/&radic;a<sub>k</sub>.
+
+<p>(a)&nbsp; Prove that 0 &le; b<sub>n</sub> &lt; 2.
+
+<p>(b)&nbsp; Given c satisfying 0 &le; c &lt; 2, prove that we can find a<sub>n</sub> so that b<sub>n</sub> &gt; c for all sufficiently large n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+(a)&nbsp; Each term of the sum is non-negative, so b<sub>n</sub> is non-negative. Let c<sub>k</sub> = &radic;a<sub>k</sub>. Then the kth term = (1 - a<sub>k-1</sub>/a<sub>k</sub>)/&radic;a<sub>k</sub> = c<sub>k-1</sub><sup>2</sup>/c<sub>k</sub> (1/a<sub>k-1</sub> - 1/a<sub>k</sub>) = c<sub>k-1</sub><sup>2</sup>/c<sub>k</sub> (1/c<sub>k-1</sub> + 1/c<sub>k</sub>)(1/c<sub>k-1</sub> - 1/c<sub>k</sub>). But c<sub>k-1</sub><sup>2</sup>/c<sub>k</sub> (1/c<sub>k-1</sub> + 1/c<sub>k</sub>) &le; 2, so the kth term &le; 2(1/c<sub>k-1</sub> - 1/c<sub>k</sub>). Hence b<sub>n</sub> &lt;= 2 - 2/c<sub>n</sub> &lt; 2.
+
+<p>(b)&nbsp; Let c<sub>k</sub> = d<sup>k</sup>, where d is a constant &gt; 1, which we will choose later. Then the kth term is (1 - 1/d<sup>2</sup>)1/d<sup>k</sup>, so b<sub>n</sub> = (1 - 1/d<sup>2</sup>)(1 - 1/d<sup>n+1</sup>)/(1 - 1/d) = (1 + 1/d)(1 - 1/d<sup>n+1</sup>). Now take d sufficiently close to 1 that 1 + 1/d &gt; c, and then take n sufficiently large so that (1 + 1/d)(1 - 1/d<sup>n+1</sup>) &gt; c.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>&nbsp;<p>
+
+<a href="../imo70.html">12th IMO 1970</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+6 Oct 1998
+
+<br>Last updated/corrected 14 Mar 03
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1982/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>43rd Putnam 1982</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+a<sub>i</sub> are real numbers and &sum;<sub>1</sub><sup>&infin;</sup> a<sub>i</sub> = 1. Also |a<sub>1</sub>| &gt; |a<sub>2</sub>| &gt; |a<sub>3</sub>| &gt; ... . f(i) is a bijection of the positive integers onto itself, and |f(i) - i| |a<sub>i</sub>| &rarr; 0 as i &rarr; &infin;. Prove or disprove that &sum;<sub>1</sub><sup>&infin;</sup> a<sub>f(i)</sub> = 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: it is false.
+
+<p>
+
+Take a<sub>i</sub> to be a sequence of terms with alternating signs, so that the sum of the odd terms diverges and the sum of the even terms diverges. To be specific, let us take the odd terms positive and the even terms negative. Now take the sequence f(1), f(2), f(3), ... to have runs of odd numbers followed by the corresponding even numbers. So it might start with 1, 3, 5, 7. The corresponding even numbers would then follow: 1, 3, 5, 7, 2, 4, 6, 8. At this point f(1), f(2), ... , f(8) is just a rearrangement of 1, 2, ... , 8. We then have another run of odd numbers, maybe 9, 11, 13, 15, 17, 19. Then the corresponding evens, 10, 12, ... , 20, so that f(1), f(2), ... , f(20) is just a rearrangement of 1, 2, ... , 20. No matter how long the runs, we will always have |f(n) - n| &lt;= n for all n. So we can satisfy |f(n) - n| |a<sub>n</sub>| &rarr; 0, provided that n a<sub>n</sub> &rarr; 0.
+
+<p>
+
+Now since the sum of the odd terms diverges, we can take each run of odds long enough that its sum is at least 2. The sum up to the start of the run is just &sum;<sub>1</sub><sup>N</sup> a<sub>i</sub> for some large N and so is close to 1. In particular, for the mth run of odds, the sum up to the start of the run will certainly be at least 1/2 for all sufficiently large m. Hence the sum up to the end of the run is more than 2. So we get arbitrarily large partial sums which differ from &sum; a<sub>i</sub> by at least 1. So we cannot have &sum; a<sub>f(i)</sub> = &sum; a<sub>i</sub>. In fact &sum; a<sub>f(i)</sub> does not even converge, since we also have arbitrarily large partial sums (up to the start of each run of odds) which converge to 1.
+
+<p>
+
+It remains to exhibit a<sub>n</sub> which satisfy |a<sub>n</sub>| &rarr; 0. A suitable example is a<sub>n-1</sub> = (-1)<sup>n</sup> 1/(n ln n).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn82.html">43rd Putnam 1982</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 70/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>31st Putnam 1970</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+Let f(n) = (n<sup>2</sup> + 1)(n<sup>2</sup> + 4)(n<sup>2</sup> + 9) ... (n<sup>2</sup> + (2n)<sup>2</sup>). Find lim<sub>n&rarr;&infin;</sub> f(n)<sup>1/n</sup>/n<sup>4</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Rearranging slightly, we may take g(n) = (1 + (1/n)<sup>2</sup>)(1 + (2/n)<sup>2</sup>)(1 + (3/n)<sup>2</sup>) ... (1 + (2n/n)<sup>2</sup>). We have to find lim g(n)<sup>1/n</sup>.
+
+<p>
+
+It is a mistake to approach this algebraically. It is not hard to show that the product of the pair of terms r and 2n+1-r is at least 4. There are n such pairs, so certainly g(n)<sup>1/n</sup> &gt; 4, but it is hard to get any further.
+
+<p>
+
+The key is to take logs. We then see immediately that g(n)<sup>1/n</sup> becomes a standard Riemann sum for &int;<sub>0</sub><sup>2</sup> log(1 + x<sup>2</sup>) dx. So the limit is simply the integral.
+
+<p>
+
+x log(1 + x<sup>2</sup>) differentiates to log(1 + x<sup>2</sup>) + 2x<sup>2</sup>/(1 + x<sup>2</sup>). A little reflection then suggests using 2 tan<sup>-1</sup>x, which differentiates to 2/(1 + x<sup>2</sup>). So the complete integral is x log(1 + x<sup>2</sup>) + 2 tan<sup>-1</sup>x - 2x. Evaluating between 0 and 2 gives 2 log 5 + 2 tan<sup>-1</sup>2 - 4 = k, say. Then the original limit in the question is e<sup>k</sup>. That is approximately 4.192.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn70.html">31st Putnam 1970</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 80/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>41st Putnam 1980</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Let R be the reals and C the set of all functions f <b>:</b> [0, 1] &rarr; R with a continuous derivative and satisfying f(0) = 0, f(1) = 1. Find inf<sub>C</sub> &int;<sub>0</sub><sup>1</sup> | f '(x) - f(x) | dx.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If it were not for the condition f(0) = 0, we could arrange for the infimum to be zero (which is obviously the lowest possible value), by taking f(x) = e<sup>x-1</sup>. It is tempting to think that we can adjust this solution (and keep zero inf) by taking f(x) = e<sup>x-1</sup> for [&epsilon;, 1] and kx for [0, &epsilon;]. However, this does not work because &int;<sub>0</sub><sup>&epsilon;</sup> f '(x) dx = f(&epsilon;) = 1/e. 
+
+<p>
+
+We need the following (familiar) trick: (f(x) e<sup>-x</sup>)' = (f '(x) - f(x) ) e<sup>-x</sup>. So &int;<sub>0</sub><sup>1</sup> | f '(x) - f(x) | dx = &int;<sub>0</sub><sup>1</sup> | e<sup>x</sup> (f(x) e<sup>-x</sup>)' | dx &ge; &int;<sub>0</sub><sup>1</sup> | (f(x) e<sup>-x</sup>)' | dx &ge; &int;<sub>0</sub><sup>1</sup> (f(x) e<sup>-x</sup>)' dx = f(1) e<sup>-1</sup> - f(0) e<sup>0</sup> = 1/e.
+
+<p>
+
+Finally, we just need to improve slightly our opening example. The integral of f(x) over [0, &epsilon;] will be arbitrarily small for small &epsilon;. But derivative is discontinuous at &epsilon;. However, we can fix that by taking f(x) to be an arbitrary monotonic increasing function with the required values at 0 and &epsilon; and with the required derivative at &epsilon;.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn80.html">41st Putnam 1980</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+10 Dec 1999
+
+<br>Last corrected/updated 21 Nov 02
+
+</BODY>
+
+
+
+</HTML>
+

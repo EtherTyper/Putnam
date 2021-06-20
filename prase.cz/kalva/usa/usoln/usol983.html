@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 98/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>27th USAMO 1998</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+The reals x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n+1</sub> satisfy 0 &lt; x<sub>i</sub> &lt; &pi;/2 and &sum;<sub>1</sub><sup>n+1</sup> tan(x<sub>i</sub> - &pi;/4) &ge; n-1. Show that &prod;<sub>1</sub><sup>n+1</sup> tan x<sub>i</sub> &ge; n<sup>n+1</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Put t<sub>i</sub> = tan(x<sub>i</sub> - &pi;/4). Then (1 + t<sub>i</sub>)/(1 - t<sub>i</sub>) = tan(&pi;/4 + x<sub>i</sub> - &pi;/4) = tan x<sub>i</sub>. So we wish to show that &prod;(1 + t<sub>i</sub>)/(1 - t<sub>i</sub>) &ge; n<sup>n+1</sup>.
+
+<p>
+
+The given inequality is equivalent to 1 + t<sub>i</sub> &ge; &sum;<sub>j&ne;i</sub> (1 - t<sub>j</sub>). Using the AM/GM inequality, this implies that (1 + t<sub>i</sub>)/n &gt;= &prod;<sub>j&ne;i</sub> (1 - t<sub>j</sub>)<sup>1/n</sup>. Hence &prod; (1 + t<sub>i</sub>)/n<sup>n+1</sup> &ge; &prod;<sub>i</sub> &prod;<sub>j&ne;i</sub> (1 - t<sub>j</sub>)<sup>1/n</sup> = &prod; (1 - t<sub>i</sub>).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa98.html">27th USAMO 1998</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,58 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 50/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>10th Putnam 1950</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+Given n, not necessarily distinct, points P<sub>1</sub>, P<sub>2</sub>, ... , P<sub>n</sub> on a line. Find the point P on the line to minimize &sum; |PP<sub>i</sub>|.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Assume that the points are in the order given. For two points A and B, |PA| + |PB| = AB for P on the segment AB and |PA| + |PB| &gt; AB for P outside it. Thus we minimise |PP<sub>1</sub>| + |PP<sub>n</sub>| by placing P between P<sub>1</sub> and P<sub>n</sub>. Similarly, we minimise |PP<sub>2</sub>| + |PP<sub>n-1</sub>| by placing P between P<sub>2</sub> and P<sub>n-1</sub>. And so on. But note that if we minimise |PP<sub>2</sub>| + |PP<sub>n-1</sub>| then we also minimise |PP<sub>1</sub>| + |PP<sub>n</sub>|. Thus for n odd we must take P to be the central point, for n even we can take P to be any point on the segment between the two central points.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn50.html">10th Putnam 1950</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

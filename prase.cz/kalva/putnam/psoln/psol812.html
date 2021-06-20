@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 81/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>42nd Putnam 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+We can label the squares of an 8 x 8 chess board from from 1 to 64 in 64! different ways. For each way we find D, the largest difference between the labels of two squares which are adjacent (orthogonally or diagonally). What is the smallest possible D?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 9.
+
+<p>
+
+Consider the straightforward ordering 1, 2, 3, 4, 5, 6, 7, 8 for the first row, 9, 10, ... , 16 for the second row, ... , 57, 58, ... , 64 for the last row.  Adjacent squares in the same row have difference 1, adjacent squares in different rows have difference 7, 8 or 9. So for this ordering D = 9. 
+
+<p>
+
+If we take any two squares on a chessboard there is a path from one to the other of length at most 7, where each step of the path is to an adjacent square [if the squares are at opposite corners of an m x n rectangle with m &gt;= n, then take m - 1 steps, n - 1 of them diagonal and the rest along the longest side.] So there is a path of at most 7 steps from 1 to 64. At least one step of that path must have a difference of at least 9 (since 7 x 9 = 64 - 1). So we always have D &ge; 9. Hence the minimal D is 9.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn41.html">4th Putnam 1941</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+8 Oct 1999
+
+</BODY>
+
+
+
+</HTML>
+

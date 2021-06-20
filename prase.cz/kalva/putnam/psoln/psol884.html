@@ -1,0 +1,88 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1988/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1988</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+The plane is divided into 3 disjoint sets. Can we always find two points in the same set a distance 1 apart? What about 9 disjoint sets?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes, no.
+
+<p>
+
+<i>Easy.</i>
+
+<p>
+
+Suppose it is impossible. Take a triangle ABC with AB = AC = &radic;3, BC = 1. A and B must be in the same set, because we can take two points X, Y such that AXY and BXY are equilateral triangles with side 1 (and then X and Y use up two sets, so A and B must both be the third set). Similarly A and C must be in the same set. But then B and C are in the same set and a distance 1 apart.
+
+<p>
+
+Tile the plane with squares side 0.7. Take all the points in a tile to be in the same set and label the tile 1 to 9 accordingly. Labels the tiles as follows:
+
+<tt><br>...
+
+<br>...123123123...
+
+<br>...456456456...
+
+<br>...789789789...
+
+<br>...123123123...
+
+<br>...456456456...
+
+<br>...</tt>
+
+<br>
+
+Two points in the same tile are at most a distance 0.7 &radic;2 &lt; 1 apart, and two points in different tiles with the same color are at least a distance 2 x 0.7 = 1.4 &gt; 1 apart.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn88.html">Putnam 1988</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,82 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 91/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>52nd Putnam 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+Let a and b be positive numbers. Find the largest number c, in terms of a and b, such that for all x with 0 &lt; |x| &le; c and for all &alpha; with 0 &lt; &alpha; &lt; 1, we have:
+
+<p>&nbsp; &nbsp; &nbsp; a<sup>&alpha;</sup> b<sup>1-&alpha;</sup> &le; a sinh &alpha;x/sinh x + b sinh x(1 - &alpha;)/sinh x.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: c = |ln a/b|.
+
+<p>
+
+Moderately hard.
+
+<p>
+
+Put &beta; = 1 - &alpha;, so that &alpha;, b</font> are both positive numbers less than 1 with sum 1. Let g<sub>&alpha;</sub>(x) = sinh &alpha;x/sinh x, and f(x) = a g<sub>&alpha;</sub>(x) + b g<sub>&beta;</sub>(x). For large positive x, g<sub>&alpha;</sub>(x) is approximately e<sup>&alpha;x</sup>/e<sup>x</sup> = e<sup>-&beta;x</sup> which is a decreasing function of x, so we suspect that g<sub>&alpha;</sub>(x) has a maximum at x = 0. To check we look at small x, where we have g<sub>&alpha;</sub>(x) = &alpha; - &alpha;(1 - &alpha;<sup>2</sup>)/6 x<sup>2</sup>. So we conjecture that g<sub>&alpha;</sub>(x) has a maximum at x = 0, and similarly, of course, g<sub>&beta;</sub>(x). This would imply that f(x) also had a maximum at x = 0 and indeed was strictly monotonic decreasing for x &gt; 0 (and strictly monotonic increasing for x &lt; 0, since f(-x) = f(x) ). If we can prove the conjecture, then we just have to find the value of x for which f(x) = a<sup>&alpha;</sup>b<sup>&beta;</sup>. 
+
+<p>
+
+So, with that motivation, we try to prove that g<sub>&alpha;</sub>(x) has a maximum at x = 0. The derivative of g<sub>&alpha;</sub>(x) is &alpha; cosh &alpha;x/sinh x - cosh x sinh &alpha;x/sinh<sup>2</sup>x. Multiplying by sinh<sup>2</sup>x/(cosh x cosh &alpha;x) gives h(x) = &alpha; tanh x - tanh &alpha;x and does not change the sign. It is not immediately clear that we are getting anywhere. But we try differentiating again: h'(x) = &alpha; sech<sup>2</sup>x - &alpha; sech<sup>2</sup>&alpha;x. We have apparently been lucky, since it is clear that: for x &gt; 0, &alpha;x &lt; x, so sech x &lt; sech &alpha;x, and hence h'(x) &lt; 0. But h'(-x) = h'(x), so h'(x) &lt; 0 for all x &ne; 0. Hence h(x) is strictly monotonic decreasing, as required. Hence g<sub>&alpha;</sub>(x), and hence f(x), does indeed have a (global) maximum at x = 0. [The difficulty about this procedure is that it is not at all clear in advance that we are going to get anywhere, the expressions seem to get <i>more</i> complicated as we differentiate. Also, it is much worse if you fail to simplify by taking out the always positive factor sinh<sup>2</sup>x/(cosh x cosh &alpha;x) after the first differentiation.]
+
+<p>
+We now have to find the value of x<sub>0</sub> at which f(x<sub>0</sub>) = a<sup>&alpha;</sup>b<sup>&beta;</sup>. It is not at all clear that this value will be independent of &alpha;, but the question suggests that it is. So the first step is to find x<sub>0</sub> for some special value of &alpha;. It is convenient at this point to assume that a &ge; b. &alpha; = 0 or 1 are unhelpful because in that case f(x) = a<sup>&alpha;</sup>b<sup>&beta;</sup> for all non-zero x. So we try the next simplest: &alpha; = 1/2. Using sinh x<sub>0</sub> = 2 sinh x<sub>0</sub>/2 cosh x<sub>0</sub>/2, we get that cosh x<sub>0</sub>/2 = ( &radic;(a/b) + &radic;(b/a) ) / 2. But the rhs is cosh (1/2 ln (a/b) ), so we find that x<sub>0</sub> = ln (a/b).
+
+<p>
+The second step is to see if this works for all &alpha;. Noting that a = b (a/b), we see that f( ln &radic;(a/b) ) = b/( a/b - b/a) { (a/b) ( (a/b)<sup>&alpha;</sup> - (a/b)<sup>-&alpha;</sup> ) + (a/b)<sup>1-&alpha;</sup> - (a/b)<sup>-1+&alpha;</sup> } = b/( a/b - b/a) { (a/b)<sup>1+&alpha;</sup> - (a/b)<sup>-1+&alpha;</sup> } (the two middle terms canceled) = b (a/b)<sup>&alpha;</sup> = a<sup>&alpha;</sup>b<sup>&beta;</sup>, as required. So it does work for all &alpha;, and we are done. Note that there was no real loss of generality in assuming that a &ge; b. If b&gt; a, just use the result with a and b interchanged. Hence the | | in the answer.
+
+<p>
+
+<i>Comment. I do not like this solution (which is adapted from the official solution in the American Mathematical Journal). It gives no real clue as to what is going on. Better motivated or more enlightening solutions would be welcome.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn91.html">52nd Putnam 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+28 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

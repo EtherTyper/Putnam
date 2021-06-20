@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 86/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>47th Putnam 1986</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+We use the congruence notation for polynomials (in one variable) with integer coefficients to mean that the corresponding coefficients are congruent. Thus if f(x) = a<sub>k</sub>x<sup>k</sup> + ... + a<sub>0</sub>, and g(x) = b<sub>k</sub>x<sup>k</sup> + ... + b<sub>0</sub>, then f = g (mod m) means that a<sub>i</sub> = b<sub>i</sub> (mod m) for all i. Let p be a prime and f(x), g(x), h(x), r(x), s(x) be polynomials with integer coefficients such that r(x)f(x) + s(x)g(x) = 1 (mod p) and f(x)g(x) = h(x) (mod p). Prove that for any positive integer n we can find F(x) and G(x) with integer coefficients such that F(x) = f(x) (mod p), G(x) = g(x) (mod p) and F(x)G(x) = h(x) (mod p<sup>n</sup>).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Fairly easy</i>
+
+<p>
+
+Suppose that r(x)f(x) + s(x)g(x) = 1 + p u(x) and f(x)g(x) = h(x) + p v(x). The obvious thing to try is F(x) = f(x) - p v(x) s(x), G(x) = g(x) - p v(x) r(x). That gives: F(x)G(x) = f(x)g(x) - p v(x) ( f(x)r(x) + g(x)s(x) ) + p<sup>2</sup> v(x)<sup>2</sup>r(x)s(x) = h(x) + terms divisible by p<sup>2</sup>. That does not quite work. Upping the power of p does not help, because we need p<sup>1</sup> to get h(x). However, it does move us from (mod p) to (mod p<sup>2</sup>), which suggests that induction could complete the proof.
+
+<p>So suppose r(x)f(x) + s(x)g(x) = 1 + p<sup>m</sup> u(x) and f(x)g(x) = h(x) + p<sup>m</sup> v(x). Then put F(x) = f(x) - p<sup>m</sup> v(x) s(x), G(x) = g(x) - p<sup>m</sup> v(x) r(x). That gives: F(x)G(x) = h(x) (mod p<sup>2m</sup>), which is sufficient to give the induction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn86.html">47th Putnam 1986</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+3 Oct 1999
+
+</BODY>
+
+
+
+</HTML>
+

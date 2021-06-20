@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1990/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>51st Putnam 1990</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+M and N are n x n matrices such that (MN)<sup>2</sup> = 0. Must (NM)<sup>2</sup> = 0?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes for n = 2; no for n &gt; 2.
+
+<p>
+
+For n &ge; 3, Take M<sub>12</sub> = M<sub>31</sub> = 1, other elements 0, and N<sub>11</sub> = N<sub>33</sub> = 1, other elements 0. Then (MN)<sub>31</sub> = 1 and its other elements are 0. So (MN)<sup>2</sup> = 0. (NM)<sub>31</sub> = (NM)<sub>12</sub> = 1 and its other elements are 0. So (NM)<sup>2</sup> is non-zero (its 3,2 element is 1). So we have a counter-example for n &ge; 3.
+
+<p>
+
+Note that if (MN)<sup>2</sup> = 0, then (NM)<sup>3</sup> = N(MN)<sup>2</sup>M = 0. But we can prove that if K is a 2 x 2 matrix and K<sup>3</sup> = 0, then K<sup>2</sup> = 0. 
+
+<p>
+
+Suppose K<sub>11</sub> = a, K<sub>12</sub> = b, K<sub>21</sub> = c, K<sub>22</sub> = d. Then since K<sup>3</sup> = 0, we have: a<sup>3</sup> + 2abc + bcd = 0, (1); a<sup>2</sup>b + abc + b<sup>2</sup>c + bd<sup>2</sup> = 0, (2); a<sup>2</sup>c + bc<sup>2</sup> + acd + cd<sup>2</sup> = 0, (3); abc + 2bcd + d<sup>3</sup> = 0, (4). Taking (1) - a/b (2) gives: a + d = 0 or bc = ad. We show that in fact a + d = 0 <i>and</i> bc = ad. For suppose a + d = 0, then (3) gives bc = ad. Conversely, if bc = ad, then (1) implies a(a + d)<sup>2</sup> = 0, so a = 0 or a + d = 0. If a = 0, then (4) implies d = 0 and so a + d = 0.
+
+<p>
+
+But a + d = 0 and bc = ad, gives immediately that K<sup>2</sup> = 0.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn90.html">51st Putnam 1990</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

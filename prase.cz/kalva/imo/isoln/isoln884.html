@@ -1,0 +1,67 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1988/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1988</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b>
+
+<p>
+
+Show that the set of real numbers x which satisfy the inequality:
+
+<p>&nbsp; 1/(x - 1) + 2/(x - 2) + 3/(x - 3) + ... + 70/(x - 70) &ge; 5/4
+
+<p>is a union of disjoint intervals, the sum of whose lengths is 1988.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Let f(x) = 1/(x - 1) + 2/(x - 2) + 3/(x - 3) + ... + 70/(x - 70). For any integer n, n/(x - n) is strictly monotonically decreasing except at x = n, where it is discontinuous. Hence f(x) is strictly monotonically decreasing except at x = 1, 2, ... , 70. For n = any of 1, 2, ... , 70, n/(x - n) tends to plus infinity as x tends to n from above, whilst the other terms m/(x - m) remain bounded. Hence f(x) tends to plus infinity as x tends to n from above. Similarly, f(x) tends to minus infinity as x tends to n from below. Thus in each of the intervals (n, n+1) for n = 1, ... , 69, f(x) decreases monotonically from plus infinity to minus infinity and hence f(x) = 5/4 has a single foot x<sub>n</sub>. Also f(x) &ge; 5/4 for x in (n, x<sub>n</sub>] and f(x) &lt; 5/4 for x in (x<sub>n</sub>, n+1). If x &lt; 0, then every term is negative and hence f(x) &lt; 0 &lt; 5/4. Finally, as x tends to infinity, every term tends to zero, so f(x) tends to zero. Hence f(x) decreases monotonically from plus infinity to zero over the range [70, infinity]. Hence f(x) = 5/4 has a single root x<sub>70</sub> in this range and f(x) &gt;= 5/4 for x in (70, x<sub>70</sub>] and f(x) &lt; 5/4 for x &gt; x<sub>70</sub>. Thus we have established that f(x) &ge; 5/4 for x in any of the disjoint intervals (1, x<sub>1</sub>], (2, x<sub>2</sub>], ... , (70, x<sub>70</sub>] and f(x) &lt; 5/4 elsewhere.
+
+<p>
+The total length of these intervals is (x<sub>1</sub> - 1) + ... + (x<sub>70</sub> - 70) = (x<sub>1</sub> + ... + x<sub>70</sub>) - (1 + ... + 70). The x<sub>i</sub> are the roots of the 70th order polynomial obtained from 1/(x - 1) + 2/(x - 2) + 3/(x - 3) + ... + 70/(x - 70) = 5/4 by multiplying both sides by (x - 1) ... (x - 70). The sum of the roots is minus the coefficient of x<sup>69</sup> divided by the coefficient of x<sup>70</sup>. The coefficient of x<sup>70</sup> is simply k, and the coefficient of x<sup>69</sup> is - (1 + 2 + ... + 70)k - (1 + ... + 70). Hence the sum of the roots is (1 + ... + 70)(1 + k)/k and the total length of the intervals is (1 + ... + 70)/k = 1/2 70&middot;71 4/5 = 28&middot;71 = 1988.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo88.html">29th IMO 1988</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

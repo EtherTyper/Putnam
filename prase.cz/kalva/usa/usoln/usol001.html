@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 00/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>29th USAMO 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+Show that there is no real-valued function f on the reals such that ( f(x) + f(y) )/2 &ge; f( (x+y)/2 ) + |x - y| for all x, y.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Put x = a + b, y = a - b with b &gt; 0. Then we have f(a) &le; 1/2 f(a+b) + 1/2 f(a-b) - 2b. Also f(a + b/2) &le; 1/2 f(a) + 1/2 f(a+b) - b, f(a - b/2) &le; 1/2 f(a-b) + 1/2 f(a) - b, and f(a) &le; 1/2 f(a - b/2) + 1/2 f(a + b/2) - b &le; 1/4 f(a-b) + 1/2 f(a) + 1/4 f(a+b) - 2b. Hence f(a) &le; 1/2 f(a-b) + 1/2 f(a+b) - 4b. But a and b are arbitrary (apart from b &gt; 0) so this argument can now be repeated to show that f(a) &le; 1/2 f(a-b) + 1/2 f(a+b) + 2<sup>n</sup>b for any positive integer n. Contradiction. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa00.html">29th USAMO 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

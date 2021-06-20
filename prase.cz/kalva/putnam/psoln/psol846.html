@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1984/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>45th Putnam 1984</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Let f(n) be the last non-zero digit in the decimal representation of n! . Show that for distinct integers a<sub>i</sub> &ge; 0, f(5<sup>a<sub>1</sub></sup> + 5<sup>a<sub>2</sub></sup> + ... + 5<sup>a<sub>r</sub></sup>) depends only on a<sub>1</sub> + ... + a<sub>r</sub> = a. Write the value as g(a). Find the smallest period for g, or show that it is not periodic.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: period 4.
+
+<p>
+
+Let &nu;(n) denote the last non-zero digit of n. Evidently &nu;(10n) = &nu;(n) and if mn is not a multiple of 10, then &nu;(mn) = &nu;(&nu;(m)&nu;(n))  . We have &nu;((5n+1)(5n+2)) = &nu;((5n+3)(5n+4)) = 2. Hence f(5n) = &nu;(4<sup>n</sup>5<sup>n</sup>n!) = &nu;(2<sup>n</sup>n!) = &nu;(2<sup>n</sup> f(n)) (*).
+
+<p>
+
+We now show by induction that f(5<sup>a</sup> + 5<sup>b</sup> + ... ) = &nu;(2<sup>a+b + ...</sup>) for a &gt; b &gt; ... &ge; 0. It is clearly true for 5<sup>a</sup> + 5<sup>b</sup> + ... = 1 or 5. So suppose it is true for all values &lt; N = 5<sup>a</sup> + 5<sup>b</sup> + ... There are two cases to consider. If the smallest power of 5 in N is 5<sup>0</sup>, then N - 1 is a multiple of 5, so N ends in a 6 or a 1. (N - 1)! is even, so f(N-1) = 2, 4, 6 or 8. In any case its last digit is unchanged on multiplying by 1 or 6, so f(N) = f(N-1). The result is true for N - 1 and the a + b + ... is not changed by adding 0, so it is also true for N.
+
+<p>
+
+So it remains to consider the case where N is divisible by 5. In other words N = 5M, where M = 5<sup>a-1</sup> + 5<sup>b-1</sup> + ... . By (*), we have that f(N) =&nu;(2<sup>M</sup> f(M)). Now &nu;(2<sup>5</sup>) = 2, so by a simple induction &nu;(2<sup>k</sup>) = 2 if k is any power of 5. Hence &nu;(2<sup>M</sup>) = &nu;(2<sup>n</sup>), where n is the number of terms in M = 2<sup>a-1</sup> + 2<sup>b-1</sup> + ... . By induction f(M) = &nu;(2<sup>a-1+b-1+ ...</sup>), hence f(N) = &nu;(2<sup>a+b+ ...</sup>) as required.
+
+<p>
+
+Finally, we find immediately that &nu;(2<sup>1</sup>) = 2, &nu;(2<sup>2</sup>) = 4, &nu;(2<sup>3</sup>) = 8, &nu;(2<sup>4</sup>) = 6, &nu;(2<sup>5</sup>) = 2. Hence the period is 4.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn84.html">45th Putnam 1984</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

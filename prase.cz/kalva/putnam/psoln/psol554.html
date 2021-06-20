@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 55/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>15th Putnam 1955</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+n vertices are taken on a circle and all possible chords are drawn. No three chords are concurrent (except at a vertex). How many points of intersection are there (excluding vertices)?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: nC4.
+
+<p>
+
+<i>Easy.</i>
+
+<p>
+
+Every 4 vertices correspond to a unique point of intersection (the intersection of the two diagonals defined by the 4 points).
+
+<p>
+
+[Actually, I got this the hard way. Take one of the vertices. Consider the diagonals from it. The diagonal to the next vertex but one has one vertex on one side and (n - 3) on the other. So it has 1(n - 3) points of intersection on it. The next diagonal has 2(n - 4) and so on up to (n - 3)1. We repeat for each vertex. That gives a total of n[1(n - 3) + 2(n - 4) + ... + (n - 3)1] points of intersection. But we count each diagonal twice and then each point of intersection twice. So the number of points of intersection is n/4 &sum;<sub>1</sub><sup>n-3</sup> r(n - 2 - r) = n/4 [ (n - 2) 1/2 (n - 3)(n - 2) - 1/6 (n - 3)(n - 2)(2n - 5) ] = 1/24 n(n - 2)(n - 3) [3(n - 2) - (2n - 5)] = nC4.
+
+<p>Of course, at this point, one wonders why the answer has such a nice form!]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn55.html">15th Putnam 1955</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,351 @@
+The 2010 Putnam exam was held yesterday, Dec 4 2010. All those taking
+the exam should be done by now, so I thought I'd post the questions and
+my take on the solutions. I have no idea about A4 and don't think I have
+a pretty enough idea for A6, but the others I think are more or less done.
+
+Here first are the questions:
+
+A1 -- Given a positive integer n, what is the largest k such
+that the numbers 1, 2, . . . , n can be put into k boxes so
+that the sum of the numbers in each box is the same?
+
+A2 -- Find all differentiable functions f : R -> R such that
+             f'(x) = (f(x + n) - f(x))/n
+for all real numbers x and all positive integers n.
+
+A3 -- Suppose that the function h : R^2 -> R has continuous
+partial derivatives and satisfies the equation
+    h(x, y) = a  dh/dx(x,y) + b  dh/dy (x,y)
+for some constants a, b. Prove that if there is a constant
+M such that |h(x, y)| <=  M for all (x, y) in R^2, then h
+is identically zero.
+
+A4 -- Prove that for each positive integer n, the number
+   10^10^10^n  + 10^10^n + 10^n - 1
+is not prime.
+
+A5 -- Let G be a group, with operation * .  Suppose that
+ (i) G is a subset of R^3 (but  *  need not be related to addition of vectors);
+(ii) For each a, b in  G, either a x b = a*b  or a x b = 0 (or both), 
+where "x" is the usual cross product in  R^3.
+Prove that a x b = 0 for all a, b  in  G.
+
+A6 -- Let f : [0,1) -> R be a strictly decreasing continuous
+function such that lim_{x->oo} f(x) = 0. Prove that
+   int_0^\infty  ( f(x) - f(x+1) ) / f(x)  dx
+diverges.
+
+
+B1 -- Is there an infinite sequence of real numbers
+a1, a2, a3, . . . such that
+  a1^m + a2^m + a3^m + ... = m
+for every positive integer m?
+
+B2 -- Given that A, B, and C are noncollinear points in the
+plane with integer coordinates such that the distances
+AB, AC, and BC are integers, what is the smallest
+possible value of AB?
+
+B3 -- There are 2010 boxes labeled  B_1,B_2, . . . ,B_2010, 
+and  2010n  balls have been distributed among them, for some positive 
+integer  n.  You may redistribute the balls by a sequence of moves, 
+each of which consists of choosing an  i  and moving exactly  i  balls 
+from box  B_i  into any one other box. For which values of  n 
+is it possible to reach the distribution with exactly  n  balls 
+in each box, regardless of the initial distribution of balls?
+
+B4 -- Find all pairs of polynomials p(x) and q(x) with real coefficients
+for which   p(x)q(x + 1) - p(x + 1)q(x) = 1.
+
+B5 -- Is there a strictly increasing function f : R -> R such
+that f'(x) = f(f(x)) for all x?
+
+B6 -- Let A be an  n x n  matrix of real numbers for some  n >= 1.
+For each positive integer  k,  let  A[k]  be the matrix obtained by 
+raising each entry to the kth power. Show that if  A^k = A[k] for 
+k = 1, 2, . . . , n + 1, then  A^k = A[k]  for all k >= 1.
+
+
+==============================================================================
+
+Here are my answers.
+
+A1-ans: The answer is floor((n+1)/2). That you can do it with this many is
+shown with the decompositions
+ {1, n}, {2, n-1}, ..., {n/2, n/2 + 1}  if  n  is even, 
+ {n}, {1, n-1}, {2, n-2}, ..., {(n-1)/2, (n+1)/2}  if  n  is odd
+You cannot use more boxes. If  n  is odd, this is obvious: the sum of
+the box totals must be a constant (namely  n(n+1)/2)  so if more boxes
+are used, the sum in each box must go down, making it less than  n,  leaving
+no box for  n  itself.  If  n  is even, a similar argument applies: the
+sum in each box must go down from  n+1  and cannot be less than  n, so
+our decomposition would be forced:  n  must be boxed alone, then  n-1  can
+only be paired with  1, then  n-2 with 2,  etc. But this leaves only  n/2
+alone in the last box, and the constant-sum condition is not met.
+
+Comment: seems to me like the idea is too simple and the amount of 
+detail-checking is too great for a Putnam-A1 problem.
+
+
+A2-ans:  f  must be linear (and any linear function will do).
+
+We have
+      f'(x+1) = (f(x + 2) - f(x + 1))
+      f'( x ) = (f(x + 1) - f(  x  ))
+     2f'( x ) = (f(x + 2) - f(  x  )) ;
+Add to discover  f'(x+1) = f'(x),  that is,  f'  is periodic with period 1.
+Let  C = f(1) - f(0)  and let  g(x) = f(x) - C x ; then  g'(x) = f'(x)-C
+is also periodic, and  g(1)-g(0) = f(1)-f(0) - C = 0.  Hence
+   g(x) - g(0) = \int_0^x  g'(t) dt = \int_0^x  g'(t+1) dt = g(x+1) - g(1)
+i.e.  g(x+1)-g(x) = g(1) - g(0) = 0 . Thus   g  itself is also periodic.
+
+Then for every  x,
+   g'(x) = f'(x) - C = f(x+1) - f(x) - C = (g(x+1)+C(x+1)) - (g(x)+Cx) - C = 0
+so  g  is constant, and hence  f(x) = g(x) + C x  is linear.
+
+I'm probably being pedantic.
+
+
+A3-ans: For any point  Q  in the plane, we consider the linear path
+p(t) = Q + t(a,b)  through the plane. The composite  H = h o p  has
+derivative  H'(t) = h'(p(t)) p'(t)  which is exactly the right side
+of the given equation (evaluated at  (x,y) = p(t) )  and so by the
+hypothesis, equals  H(t). But the only functions  H : R -> R  with
+H'(t) = H(t)  for all  t  are  H(t) = A exp(t)  for some constant  A.
+Since  h  is bounded on the plane, so must  H  be, which forces  A = 0.
+Hence  h(Q) = H(0) = 0  for all  Q.
+
+Comment: It helps to be teaching multivariable calculus this semester :-)
+
+
+A4-ans: unknown. It is easy to check that when  n  is odd, the number
+shown is divisible by  11, but I don't know about the general case.
+
+I didn't see any frequent small divisor, and none of the formulas I
+proposed for a general divisor (e.g.  10^n - n )  seemed to work out.
+Also, no luck with the Fermat theorem (e.g. I could not compute  10^N mod N
+and show it's different from  N.)
+
+
+A5-ans: We must prove that all the vectors in  G  lie in a line.
+
+Suppose not. Then the identity element  e  of  G  must be the zero vector
+of  R^3.  For if it is a nonzero vector it cannot be parallel to each of
+two other non-parallel vectors, so if  G  does not lie all in a line, there
+is an element  a  of  G  with  a  and  e  not parallel. Thus  a x e  is
+nonzero, so  a x e = a*e = a.  But this is absurd because  a x e  is
+perpendicular to  a.
+
+Now the inverse  a'  of every  a  must be parallel to  a. For if not, then
+a x a'  will be nonzero and hence equal to  a * a' = e = 0, contradicting
+the assumption that  a x a'  is nonzero.
+
+So suppose  a  and  b  are not parallel. Then  axb  is not the zero vector,
+but is perpendicular to  b  and thus to  b', so  (a x b) x b'  is nonzero.
+By assumption, then,  (a x b) x b' = a*b*b' = a.  But  (axb) x b'  is
+perpendicular to  b'  and hence to  b, that is, all non-parallel vectors
+in  G  are perpendicular to each other:  G  is contained in three mutually
+perpendicular lines, with  e  at the origin and the product of elements from
+any two different lines contained in the third line.
+
+Next note that each of the lines is a subgroup of  G.  We have shown it is
+closed under the taking of inverses. It is also closed under products. Fix
+non-identity elements  A, B, C  in the three lines. We must show that 
+the product of say  a1 = x1 A  and  a2 = x2 A  is parallel to  A.
+Note that  a1 a2 B  = a1 * (a2 * B)  = a1 * xC  is parallel to  B, while if
+a1 a2  lay in the same line as  C  we would have  a1 a2 B = (a1*a2)*B  in
+the same line as  A. Similarly we can obtain a contradiction if  a1 a2  lay
+in the same line as  B.  So it must be that  a1 a2  is in the same line as  A.
+In the same way, the other two lines are closed under products.
+
+So now we ask on which line  A A B  lies?   Since   A A  is parallel to  A,
+(AA)B  is parallel to  C.  On the other hand,  A B   is parallel to  C,  to
+A(AB)  is parallel to  B.  This must mean  AAB = 0, i.e.  A^2  is the inverse
+of  B.  But we know  A^2  is parallel to  A  and  B'  is parallel to  B;
+since  B  is not e,  B'  is not either, and so this is a contradiction.
+
+Comment: It seems to me that I worked out many more details of a
+hypothetical group  G  meeting the conditions than I needed to in order
+to get a contradiction!
+
+
+A6-ans: Incomplete. Since  f  decreases towards  0,  it is positive and we
+may write  f(x) = exp( - h(x) )  for a function  h  which is increasing and
+has no upper bound. Now the integral is that of  1 - exp( h(x) - h(x+1) ) .
+The conclusion is clear if  h  increases fast enough, that is, if  h(x)-h(x+1)
+(which is negative) tends toward something other than  0. IF instead the
+limit IS zero, then for sufficiently large  x  we can estimate this
+integrand in terms of  1 - (1 - [h(x)-h(x+1)])  itself, but this integral
+differs by a constant from   int_T^{T+1} h(x) dx,  which is small because
+we are assuming  h(x)-h(x+1) -> 0.   I haven't worked out the details of
+this argument, obviously. 
+
+Tempting to use the Mean Value Theorem on the integrand, but we were not
+told  f  is differentiable.
+
+
+B1-ans: Square the given statement for m=2, and then subtract the given
+statement with  m=4, to conclude  sum (a_i a_j)^2 = 0, which (since
+every term is non-negative) means there is at most one nonzero  a_i;
+clearly  a1=1  and  a1^2=2  are not consistent.
+
+Alternatively, let  v_n = ( a1^n, a2^n, a3^n, ... ),  a vector in (say)
+the inner product space l^2(R). Then by assumption,   < v_i , v_j > = i+j
+and in particular  || v_i || = sqrt( 2i ). Then the stated assumptions
+for  m = 2, 3, and 4  violate the Cauchy-Schwarz inequality for <v1, v2>.
+
+Not sure what the full set of constraints is on the numbers  s_m = sum (a_i)^m
+Not sure what is possible with sets of complex numbers -- surely one can
+indeed use the proposed  s_i  to compute the elementary symmetric functions
+of the  a_i  and thus the polynomial whose roots they are.
+
+
+B3-ans: Certainly AB=3  is possible, as shown by  A=(0,0), B=(3,0), C=(0,4).
+We have only to show that  AB=1 and  AB=2 are impossible. We will
+suppose such points can be found and obtain a contradiction. Note that
+we can relabel the points A and B so that  C  is at least as close to  B
+as it is to  A.
+
+By translation we may assume  A=(0,0), and by rotation we may then
+assume  B = (1,0)  in the first case,  B=(2,0)  in the second.
+Reflecting across the y-axis, and using our labeling convention, 
+we may assume that  C = (x,y)  is in the first quadrant. 
+
+In the first case, there are then positive integers  u,v  so that
+   x^2+y^2=u^2,  (x-1)^2 + y^2 = v^2  .
+The first of these shows  u >= x.
+But how does  v  compare to  u?  By our conventions it is no larger than  u
+but (since  2x-1 = u^2-v^2 )  it cannot be equal to  u. It also cannot be
+less than  u !  For then  v <=  u - 1, so  (u-1)^2 >= v^2 = (x^2+y^2) -2x + 1
+>= (x^2+y^2) - 2u + 1 = (u-1)^2, which requires all the inequalities to be
+equalities: in particular,  y = 0,  making  A,B,C  collinear, a contradiction.
+
+Likewise in the other case we have  C = (x,y)  with  y>=x  and  x+y >= 1 and
+   x^2+y^2=u^2,  (x-2)^2 + y^2 = v^2  .
+Thus while by assumption  v <= u, we also compute
+  v^2 = (x^2+y^2) -4x + 4 = u^2-4x+4 >= u^2-4u+4 = (u-2)^2
+and so  v >= u-2 .  So we must have  v=u, v=u-1, or v=u-2.
+On the other hand, by parity considerations we deduce from the equations
+that  u = v mod 2, forbidding  v = u-1. 
+
+In the case  u = v  we would have  C  on the line  x=1, but clearly
+y^2+1 = u^2  is only possible if  y=0.  In the case  v=u-2  then the
+precedings inequalities must be equations, so that u=x, so again y=0.
+In either case, when  y=0 the points ABC are collinear, which is forbidden.
+
+Seems to me this is a famous problem -- to find integer triangles with
+integer side lengths -- but I don't know the general solution.
+
+B3-ans: It is always possible if  n > 1004 . (But if  n < 1005, the
+original distribution may have set fewer than  i  balls into  B_i  for
+every  i  -- thus leaving no valid moves at all -- since that can be done
+with as many as  0+1+...+2009 = 2009 x 1005 = 2010 x 1004.5  balls.)
+
+So suppose  n  is at least  1005. In this case there ARE valid moves, 
+i.e. for some  i,  B_i  has  i  or more balls in it. For every such  i,
+move  i  balls all into box  B_1. Repeat until for every  i>1,  box  B_i
+has fewer than  i  balls in it. Note that these boxes then hold at most
+2009 x 1005  balls, so  B_1  holds at least  2010n - 2009.1005 >= 1005 balls. 
+(The inequality is better if  B_2010 has fewer than  2009 balls: we have
+|B_1| + |B_2010| >= 2010n - 2009.1004 > 3014 .)
+In particular we may move balls into  B_2010 until it contains exactly  2010
+balls, then move  2010 balls back to  B_1, then move  n  balls into  B_2010.
+Then  B_2010  contains the right number of balls, and all the others 
+each contain at most  i,  except  B_1  which contains the rest.
+
+Now there are  2009  remaining boxes to adjust, and  2009n  remaining balls,
+many in  B_1  and few in the other  B_i. Repeating the procedure above, we may
+adjust  B_2009  to contain exactly  n  balls, and work our way down the line.
+
+Comment: two balls-in-boxes problems, both using 1+2+...+n=n(n+1)/2 ? Ugh.
+
+
+B4-ans: The pairs are  p =ax+b, q=cx+d  for any  abcd  with  ad-bc = 1.
+
+Note that neither  p  nor  q  can be the zero polynomial. Thus the two of
+them must be of equal degree, unless the degrees are 0 and 1. Write:
+  p = a x^n + b x^(n-1) + ...
+  q = c x^m + d x^(m-1) + ...
+with  a,c  nonzero. Then  p(x+1) = a x^n + ( b + an ) x^(n-1) + ...  and 
+likewise  q(x+1), so that  p(x)q(x+1) - p(x+1)q(x) = ac(m-n) x^(m+n-1) + ... 
+If  m+n-1 > 0  this requires  m=n . (Otherwise,  m+n-1 = 0 requires one of
+the polynomials to be linear and the other to be constant.)
+
+On the other hand, if  (p,q)  is a solution, then so is (p,q-kp)  for
+any constant  k. So if there are solutions where  p,q  are polynomials of
+degree n,  then for  k=c/a,  (p,q-kp)  is a solution with polynomials
+of different degrees, which can only happen if  deg(p)=1  and  q-kp  is 
+constant. (The constant is then clearly  1/a .)  
+
+So the general solution may be written  (p,q) = (ax+b, 1/a + k(ax+b)).
+
+Comment: I expected a cleverer answer, which somehow used the determinant
+or Wronskians or Euclidean Algorithm or something. Getting only linear
+functions was kind of a let-down.
+
+
+B5-ans: No. Such a function may exist which are only increasing on a
+bounded interval, but any such function will have a pole (vertical asymptote).
+That is, there is an  L  in  R  with   lim_{x->L} f(x) = \infty.
+This is more easily stated in terms of the inverse function  g = f^{-1} :
+lim_{y->oo} g(y) = L .
+
+The differential equation may be written  dy/dx = f(y), from which we
+deduce that  g'(y) = dx/dy = 1/f(y). Therefore the values of  x = g(y)
+may be computed by integration: for any fixed  y0  we have
+    x = g(y) = g(y0) + \int_y0^y 1/f(t) dt.
+In order to show that   lim g(y)  exists, we have only to show that the
+improper integral  \int_y0^\infty 1/f(t) dt  converges, i.e. that  f
+grows fast enough.  We will in fact show that for all sufficiently large  t,
+f(t) > A exp(t)  for some  A,   which will suffice.
+
+We will derive this by collecting succesively more detailed information
+about  f, starting from the premises that  f' = f o f,  that  f  is
+increasing, and that  f  is defined on all of  R.
+
+1. f' > 0  (f  is increasing)
+2. f'  is increasing  (f' = composite of 2 increasing functions)
+   Thus the graph of   y=f(x)  is concave up.
+3. f is unbounded (For all x>0, f(x)>f(0) so f'(x)>f'(0), so f(x)>f'(0)x+f(0) )
+4. f' is unbounded (im(f') includes all sufficiently large values of im(f) )
+5. f(x)>x  for sufficiently large  x  (f(x) > 2x+B  after  f'(x) exceeds 2)
+6. f'(x)>f(x)  for sufficiently large  x  (apply  f  to both sides of #5)
+7. f(x) > A exp(x)  for suff.large x ( integrate   (d/dx) log(f(x)) > 1  )
+
+Comment: Seems rather convoluted but I think it is necessary: you can
+work out the (unique)  Taylor series of such a function which has a
+fixed point  a, and for some  a,  it seems the series converges on an
+interval. Such  f  is necessarily  C-infinity but it's not clear that
+it must be representable by a Taylor series anyway.
+
+
+B6-ans: This follows from the Hamilton-Cayley theorem, which 
+asserts that there is a monic polynomial  p  of degree  n  for which
+p(A) = 0, that is,   A^n  may be expressed as a real linear combination
+sum_{i=0}^{n-1} c_k  A^k . We may multiply this by any power of  A  to
+show that each  A^{n+r}  is a linear combination of the  n  next lower
+powers of  A,  using the same coefficients in the linear combination in 
+each case, that is,
+   A^{n+r} = sum_{i=0}^{n-1} c_k  A^{k+r}
+
+Apply this when  r=1  and use the hypotheses: since
+   A^{n+1} = sum_{i=0}^{n-1} c_k  A^{k+1}
+and each  A^{k+1} = A[k+1]  (including  A^{n+1}=A[n+1]) we may extract
+the  (i,j)  entry of this matrix equation to deduce that
+   (a_ij)^(n+1) = sum_{i=0}^{n-1} c_k (a_ij)^(k+1)
+for every  i,j .
+
+Multiply by  (a_ij)^(r-1)  to see
+   (a_ij)^(n+r) = sum_{i=0}^{n-1} c_k (a_ij)^(k+r)
+and then assemble these equations into the entries of a matrix to deduce that
+   A[n+r] = sum_{i=0}^{n-1} c_k  A[k+r]
+
+Comparing this equation to the one resulting from the Hamilton-Cayley
+theorem, we see that if  A^{k+r}=A[k+r]  for  k=0,1,...,n-1  then also
+A^{n+r}=A[n+r], so the desired result follows by induction.
+
+Comment: the set of such matrices is interesting. It includes all 1x1 matrices,
+and direct sums of solutions are also solutions. Thus we get all diagonal
+matrices, but there are other solutions too, e.g.  ((0,0),(c,c)). I don't 
+know what the general form of such matrices is, but it's kind of nice
+that it's too complex to become an alternative way of solving the problem :-)

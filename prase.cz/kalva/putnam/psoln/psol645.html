@@ -1,0 +1,58 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1964/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>25th Putnam 1964</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Find a constant k such that for any positive a<sub>i</sub>, &sum;<sub>1</sub><sup>&infin;</sup> n/(a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>n</sub>) &le; k &sum;<sub>1</sub><sup>&infin;</sup>1/a<sub>n</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let us write s<sub>n</sub> = a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>n</sub> and b<sub>n</sub>= n/s<sub>n</sub>. If &sum; 1/a<sub>n</sub> diverges, then there is nothing to prove. So assume it converges. Hence a<sub>n</sub> must diverge, so there are only finitely many values less than any given K, so we can arrange the terms in increasing order c<sub>1</sub> &le; c<sub>2</sub> &le; c<sub>3</sub> ... . Since all the terms are positive &sum; 1/a<sub>n</sub> is absolutely convergent and equal to &sum; 1/c<sub>n</sub>. Also we have s<sub>n</sub> &ge; c<sub>1</sub> + c<sub>2</sub> + ... + c<sub>n</sub>. The trick is to notice that half the c<sub>i</sub> are at least c<sub>n/2</sub>. It is convenient to consider separately n = 2m and n = 2m+1. So s<sub>2m</sub> &ge; m c<sub>m</sub>. Hence b<sub>2m</sub> &lt; 2/c<sub>m</sub>. Similarly, s<sub>2m-1</sub> &gt; m c<sub>m</sub>, so b<sub>2m-1</sub> &lt; 2/c<sub>m</sub>. Hence &sum;<sub>1</sub><sup>2m</sup> b<sub>i</sub> &le; 4 &sum;<sub>1</sub><sup>m</sup> 1/c<sub>i</sub>, which gives the required result with k = 4.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn64.html">25th Putnam 1964</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

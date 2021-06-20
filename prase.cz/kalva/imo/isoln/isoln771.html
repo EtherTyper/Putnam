@@ -1,0 +1,63 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1977/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1977</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b>
+
+<p>
+
+Construct equilateral triangles ABK, BCL, CDM, DAN on the inside of the square ABCD. Show that the midpoints of KL, LM, MN, NK and the midpoints of AK, BK, BL, CL, CM, DM, DN, AN form a regular dodecahedron.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+The most straightforward approach is to use coordinates. Take A, B, C, D to be (1,1), (-1,1), (-1,-1), (1,-1). Then K, L, M, N are (0, -2k), (2k, 0), (0, 2k), (-2k, 0), where k = (&radic;3 - 1)/2. The midpoints of KL, LM, MN, NK are (k, -k), (k, k), (-k, k), (-k, -k). These are all a distance k&radic;2 from the origin, at angles 315, 45, 135, 225 respectively. The midpoints of AK, BK, BL, CL, CM, DM, DN, AN are (h, j), (-h, j), (-j, h), (-j, -h), (-h, -j), (h, -j), (j, -h), (j, h), where h = 1/2, j = (1 - 1/2 &radic;3). These are also at a distance k&radic;2 from the origin, at angles 15, 165, 105, 255, 195, 345, 285, 75 respectively. For this we need to consider the right-angled triangle sides k, h, j. The angle x between h and k has sin x = j/k and cos x = h/k. So sin 2x = 2 sin x cos x = 2hj/k<sup>2</sup> = 1/2. Hence x = 15.
+
+<p>
+So the 12 points are all at the same distance from the origin and at angles 15 + 30n, for n = 0, 1, 2, ... , 11. Hence they form a regular dodecagon.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo77.html">19th IMO 1977</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1961/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>22nd Putnam 1961</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+If n = &prod;p<sup>r</sup> be the prime factorization of n, let f(n) = (-1)<sup>&sum; r</sup> and let F(n) = &sum;<sub>d|n</sub> f(d). Show that F(n) = 0 or 1. For which n is F(n) = 1?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: F(n) = 1 for n square.
+
+<p>
+
+If some r is odd, then the factors of n can be grouped into pairs p<sup>a</sup>m, p<sup>r-a</sup>m with f(p<sup>a</sup>m), f(p<sup>r-a</sup>m) having opposite signs. So in this case F(n) = 0.
+
+<p>
+
+If all r are even, so that n is a square, then we may use induction on the number N of prime factors. For N = 1, we have n = p<sup>2m</sup>, so there are m+1 factors p<sup>2r</sup> with f = 1 and m factors p(2r+1) with f = -1. So the result is true for N = 1. Suppose it is true for N. Take n = p<sup>2m</sup>P, where P has m prime factors. Each divisor of n has the form p<sup>2r</sup>s or p<sup>2r+1</sup>s, where s is a divisor of P. For the first type f(p<sup>2r</sup>s) = f(s), so summing over s gives 1. Then summing over r gives m+1. For the second type f(p<sup>2r+1</sup>s) = -f(s), so summing over s gives -1. Then summing over r gives -m. Hence F(n) = 1 and the result is true for N+1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn61.html">22nd Putnam 1961</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

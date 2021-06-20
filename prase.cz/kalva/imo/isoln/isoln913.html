@@ -1,0 +1,77 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1991/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+Let S = {1, 2, 3, ... 280}. Find the smallest integer n such that each n-element subset of S contains five numbers which are pairwise relatively prime.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>Answer: 217.
+
+<p>Let A be the subset of all multiples of 2, 3, 5 or 7. Then A has 216 members and every 5-subset has 2 members with a common factor. [To show that |A| = 216, let a<sub>n</sub> be the number of multiples of n in S. Then a<sub>2</sub> = 140, a<sub>3</sub> = 93, a<sub>5</sub> = 56, a<sub>6</sub> = 46, a<sub>10</sub> = 28, a<sub>15</sub> = 18, a<sub>30</sub> = 9. Hence the number of multiples of 2, 3 or 5 = a<sub>2</sub> + a<sub>3</sub> + a<sub>5</sub> - a<sub>6</sub> - a<sub>10</sub> - a<sub>15</sub> + a<sub>30</sub> = 206. There are ten additional multiples of 7: 7, 49, 77, 91, 119, 133, 161, 203, 217, 259.]
+
+<p>
+
+Let P be the set consisting of 1 and all the primes &lt; 280. Define:
+
+<br>A1 = {2&middot;41, 3&middot;37, 5&middot;31, 7&middot;29, 11&middot;23, 13&middot;19}
+
+<br>A2 = {2&middot;37, 3&middot;31, 5&middot;29, 7&middot;23, 11&middot;19, 13&middot;17}
+
+<br>A3 = {2&middot;&middot;31, 3&middot;29, 5&middot;23, 7&middot;19, 11&middot;17, 13&middot;13}
+
+<br>B1 = {2&middot;29, 3&middot;23, 5&middot;19, 7&middot;17, 11&middot;13}
+
+<br>B2 = {2&middot;23, 3&middot;19, 5&middot;17, 7&middot;13, 11&middot;11}
+
+<p>
+Note that these 6 sets are disjoint subsets of S and the members of any one set are relatively prime in pairs. But P has 60 members, the three As have 6 each, and the two Bs have 5 each, a total of 88. So any subset T of S with 217 elements must have at least 25 elements in common with their union. But 6&middot;4 = 24 &lt; 25, so T must have at least 5 elements in common with one of them. Those 5 elements are the required subset of elements relatively prime in pairs.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo91.html">32nd IMO 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

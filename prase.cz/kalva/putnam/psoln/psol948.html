@@ -1,0 +1,75 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1994/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1994</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+For which real &alpha; does the curve y = x<sup>4</sup> + 9x<sup>3</sup> + &alpha; x<sup>2</sup> + 9x + 4 contain four collinear points?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: &alpha; &lt; 30.375.
+
+<p>
+
+<i>Straightforward.</i>
+
+<p>
+
+We look at the second derivative y'' = 12x<sup>2</sup> + 54x + 2&alpha; = 12(x + 2.25)<sup>2</sup> + 2(&alpha; - 30.375). This has two zeros iff &alpha; &lt; 30.375.
+
+<p>
+If &alpha; &gt; 30.375, then y'' has no zeros and hence y' is strictly monotonically increasing. Hence no line cuts the curve in more than two points (if a line gradient k cut the curve at x = a, b and c, with a &lt; b &lt; c, then there would be a point between a and b with gradient k and another between b and c, contradicting the strict monotonicity of y'.].
+
+<p>
+If &alpha; &lt; 30.375, the y'' has two zeros either side of x = 2.25. Hence the curve has two points of inflection either side of x = 2.25. The line through these two inflection points will cut the curve in four points. [Suppose the two points are at x = a and x = b with a &lt; b. The line has a smaller gradient than the tangent at the point of inflection at x = a and hence cuts the curve again for x &lt; a. Similarly it has larger gradient than the tangent at the point of inflection at x = b and hence cuts the curve again for x &gt; b.]
+
+<p>
+It remains to consider the case &alpha; = 30.375. In this case y'' has a single zero at x = 2.25. In this case there is no point of inflection. The gradient is monotonic and hence a line can only cut the curve in two points. [We cannot have degeneracy with infinitely many solutions because we are dealing with a polynomial which has at most 4 solutions.]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn94.html">Putnam 1994</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

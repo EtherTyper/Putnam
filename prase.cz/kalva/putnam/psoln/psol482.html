@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 48/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>8th Putnam 1948</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+K is a cone. s is a sphere radius r, and S is a sphere radius R. s is inside K touches it along all points of a circle. S is also inside K and touches it along all points of a circle. s and S also touch each other. What is the volume of the finite region between the two spheres and inside K?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+A straight slog is fairly long and tiresome.
+
+<p>
+
+Slice off the top of a sphere radius r by a cut a distance d from the surface. A simple integration shows that the volume removed is &pi; d<sup>2</sup>(3r - d)/3.
+
+<p>
+
+Let h be the distance from the vertex of the cone along the axis to the nearest sphere. Similar triangles gives (h+r)/r = (h+2r+R)/R. Hence h = 2r<sup>2</sup>/(R-r). Let the plane through the circle of contact between the small sphere and the cone cut the cone's axis at a distance h+d from its vertex. Similarly, let the plane through the circle of contact of the other sphere cut the cone's axis a distance D from the point of contact between the two spheres. Let t be the distance from the cone's vertex to the circle of contact with the small sphere. Then t<sup>2</sup> = h(h+2r). By similar triangles (h+d)/t = t/(h+r), so d = 2r<sup>2</sup>/(R+r). Hence by similar triangles D = 2rR/(R+r).
+
+<p>
+
+Let v be the volume in the cone between the vertex and the small sphere. We find this as the volume of a cone with circular base less the volume of a slice of sphere. The cone has height h+d. The square of the radius of the base is (2rd-d<sup>2</sup>). Hence v = &pi;/3 ( (h+d)(2rd-d<sup>2</sup>) - d<sup>2</sup>(3r-d) ). This simplifies to 4r<sup>5</sup>&pi;/(3(R<sup>2</sup>-r<sup>2</sup>)). 
+
+<p>
+
+Hence V the volume of the corresponding region between the vertex and the large sphere (assuming the small sphere is temporarily removed) is 4r<sup>2</sup>R<sup>3</sup>&pi;/(3(R<sup>2</sup>-r<sup>2</sup>)). Hence the required volume is V - v - 4&pi;r<sup>3</sup>/3 = 4&pi;r<sup>2</sup>R<sup>2</sup>/3(R+r).
+
+<p>
+
+<i>Comment. There are more elegant ways of doing this, but this type of solid geometry is not currently in fashion and no one is likely to remember them. In an exam one has no time to look for such things.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn48.html">8th Putnam 1948</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

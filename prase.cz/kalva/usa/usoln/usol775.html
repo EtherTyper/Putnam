@@ -1,0 +1,67 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 77/5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>6th USAMO 1977</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 5</b><br>
+
+<p>
+
+The positive reals v, w, x, y, z satisfy 0 &lt; h &le; v, w, x, y, z &le; k. Show that (v + w + x + y + z)(1/v + 1/w + 1/x + 1/y + 1/z) &le; 25 + 6( &radic;(h/k) - &radic;(k/h) )<sup>2</sup>. When do we have equality?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Fix four of the variables and allow the other to vary. Suppose, for example, we fix all but x. Then the expression on the lhs has the form (r + x)(s + 1/x) = (rs + 1) + sx + r/x, where r and s are fixed. But this is convex. That is to say, as x increases if first decreases, then increases. So its maximum must occur at x = h or x = k. This is true for each variable. 
+
+<p>
+Suppose all five are h or all five are k, then the lhs is 25, so the inequality is true and strict unless h = k. If four are h and one is k, then the lhs is 17 + 4(h/k + k/h). Similarly if four are k and one is h. If three are h and two are k, then the lhs is 13 + 6(h/k + k/h). Similarly if three are k and two are h. 
+
+<p>
+
+h/k + k/h &ge; 2 with equality iff h = k, so if h &lt; k, then three of one and two of the other gives a larger lhs than four of one and one of the other. Finally, we note that the rhs is in fact 13 + 6(h/k + k/h), so the inequality is true with equality iff either (1) h = k or (2) three of v, w, x, y z are h and two are k or vice versa.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa77.html">6th USAMO 1977</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+20 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

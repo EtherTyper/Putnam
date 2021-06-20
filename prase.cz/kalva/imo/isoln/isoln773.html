@@ -1,0 +1,68 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1977/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1977</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+Given an integer n &gt 2, let V<sub>n</sub> be the set of integers 1 + kn for k a positive integer. A number m in V<sub>n</sub> is called indecomposable if it cannot be expressed as the product of two members of V<sub>n</sub>. Prove that there is a number in V<sub>n</sub> which can be expressed as the product of indecomposable members of V<sub>n</sub> in more than one way (decompositions which differ solely in the order of factors are not regarded as different).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Take a, b, c, d = -1 (mod n). The idea is to take abcd which factorizes as ab.cd or ac.bd. The hope is that ab, cd, ac, bd will not factorize in V<sub>n</sub>. But a little care is needed, since this is not necessarily true. 
+
+<p>
+Try taking a = b = n - 1, c = d = 2n -1. a<sup>2</sup> must be indecomposable because it is less than the square of the smallest element in V<sub>n</sub>. If ac = 2n<sup>2</sup> - 3n + 1 is decomposable, then we have kk'n + k + k' = 2n - 3 for some k, k' &gt;= 1. But neither of k or k' can be 2 or more, because then the lhs is too big, and k = k' = 1 does not work unless n = 5. Similarly, if c<sup>2</sup> is decomposable, then we have kk'n + k + k' = 4n - 4. k = k' = 1 only works for n = 2, but we are told n &gt; 2. k = 1, k' = 2 does not work (it would require n = 7/2). k = 1, k' = 3 only works for n = 8. Other possibilities make the lhs too big.
+
+<p>
+So if n is not 5 or 8, then we can take the number to be (n - 1)<sup>2</sup>(2n - 1)<sup>2</sup>, which factors as (n - 1)<sup>2</sup> x (2n - 1)<sup>2</sup> or as (n - 1)(2n - 1) x (n - 1)(2n - 1). This does not work for 5 or 8: 16&middot;81 = 36&middot;36, but 36 decomposes as 6&middot;6; 49&middot;225 = 105&middot;105, but 225 decomposes as  9&middot;25.
+
+<p>For n = 5, we can use 3136 = 16&middot;196 = 56&middot;56. For n = 8, we can use 25921 = 49&middot;529 = 161&middot;161.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo77.html">19th IMO 1977</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

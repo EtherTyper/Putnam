@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>40th IMO shortlist 1999/C4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>40th IMO 1999 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C4</b><br>
+<p>
+Let A be any set of n residues mod n<sup>2</sup>. Show that there is a set B of n residues mod n<sup>2</sup> such that at least half of the residues mod n<sup>2</sup> can be written as a + b with a in A and b in B.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<i>Solution by jys</i>
+<p>
+Let R be the set of all n<sup>2</sup> residues and let S be the set of all subsets of R with n elements. Let P be the set of all pairs (r, X), where r belongs to R and X belongs to S, such that r cannot be written as a + x for any a in A, x in X.
+<p>
+For any given r, there are (n<sup>2</sup>-n)Cn subsets X in S such that (r, X) is in P. But (n<sup>2</sup>-n)Cn &le; &frac12; (n<sup>2</sup>Cn), so at most half the subsets X have (r, X) in P (for any given r). Hence for some B in S, at most half the elements r of R have (r, B) in P. So for this B at least half the elements of R can be written as a + b with a in A and b in B.
+<p>
+(Note that (n<sup>2</sup>Cn/(n<sup>2</sup>-n)Cn = (n<sup>2</sup>(n<sup>2</sup>-1)(n<sup>2</sup>-2) ... (n<sup>2</sup>-n+1)/( (n<sup>2</sup>-n)(n<sup>2</sup>-n-1) ... (n<sup>2</sup>-2n+1) ) &ge; (n<sup>2</sup>/(n<sup>2</sup>-n) = (1 + 1/(n-1) )<sup>n</sup> &gt; e &gt; 2. )
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh99.html">40th IMO shortlist 1999</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+23 Dec 2002
+<br>Last corrected/updated 23 Dec 02
+</BODY>
+
+</HTML>
+

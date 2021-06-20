@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1965/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>26th Putnam 1965</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+{a<sub>r</sub>} is an infinite sequence of real numbers. Let b<sub>n</sub> = 1/n &sum;<sub>1</sub><sup>n</sup> exp(i a<sub>r</sub>). Prove that b<sub>1</sub>, b<sub>2</sub>, b<sub>3</sub>, b<sub>4</sub>, ... converges to k iff b<sub>1</sub>, b<sub>4</sub>, b<sub>9</sub>, b<sub>16</sub>, ... converges to k.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If a sequence converges to k, then any subsequence also converges to k. 
+
+<p>
+
+So suppose that the square terms converge to k. Let c<sub>r</sub> = exp(i a<sub>r</sub>). Take two consecutive squares N = n<sup>2</sup> and N' = n<sup>2</sup> + 2n + 1 and m between them. Then |b<sub>N</sub> - b<sub>m</sub>| &le; |b<sub>N</sub> - 1/N &sum; c<sub>r</sub>| + |(1/N - 1/m) &sum; c<sub>r</sub> |, where the sums are over m terms. But |b<sub>N</sub> - 1/N &sum; c<sub>r</sub>| &le; 1/N &sum;<sub>N+1</sub><sup>m</sup> |c<sub>r</sub>| = (m - N)/N &le; 2n/n<sup>2</sup> = 2/n. Also |(1/N - 1/m) &sum; c<sub>r</sub> | &le; (1/N - 1/m) &sum; |c<sub>r</sub>| &lt; (1/n<sup>2</sup> - 1/(n+1)<sup>2</sup>) (n+1)<sup>2</sup> = (2n+1)/n<sup>2</sup> &lt; 3/n. So the difference |b<sub>m</sub> - b<sub>N</sub>| is arbitrarily small for n sufficiently large. Thus if we take m sufficiently large, then |b<sub>m</sub> - b<sub>N</sub>| &lt; &epsilon; and |b<sub>N</sub> - k| &lt; &epsilon;. So |b<sub>m</sub> - k| &lt; 2&epsilon; and the sequence converges.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn65.html">26th Putnam 1965</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

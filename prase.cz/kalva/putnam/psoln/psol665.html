@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1966/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>27th Putnam 1966</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Let S be the set of continuous real-valued functions on the reals. &phi; <b>:</b>S &rarr; S is a linear map such that if f, g &isin; S and f(x) = g(x) on an open interval (a, b), then &phi;f = &phi;g on (a, b). Prove that for some h &isin; S, (&phi;f)(x) = h(x)f(x) for all f and x.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Obviously if f = 0 on an open interval (a, b) then &phi;f = 0 on (a, b). But we need the stronger result that if f(x<sub>0</sub>) = 0, then &phi;f(x<sub>0</sub>) = 0.
+
+<p>
+
+So take any f and any x<sub>0</sub> such that f(x<sub>0</sub>) = 0. Let L(x) = f(x) for x &lt; x<sub>0</sub> and 0 for x &ge; x<sub>0</sub>, and le R(x) = 0 for x &le; x<sub>0</sub> and f(x) for x &gt; x<sub>0</sub>. Then f = L + R. Also &phi;L(x) = 0 for any x &gt; 0. But &phi;L is continuous, so &phi;L(x<sub>0</sub>) = 0. Similarly, &phi;R(x<sub>0</sub>) = 0. Hence &phi;f(x<sub>0</sub>) = 0.
+
+<p>
+
+Let u be the function which has value 1 for all x. Let h = &phi;u. Then h is continuous. Also for any f and any x<sub>0</sub> the function f - f(x<sub>0</sub>)u is zero at x<sub>0</sub> and hence &phi;f(x<sub>0</sub>) = h(x<sub>0</sub>)f(x<sub>0</sub>).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn66.html">27th Putnam 1966</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

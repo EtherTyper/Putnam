@@ -1,0 +1,67 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 03/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>33rd USAMO 2003</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+A convex polygon has all its sides and diagonals with rational length. It is dissected into smaller polygons by drawing all its diagonals. Show that the small polygons have all sides rational.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+It is not hard to see that it is sufficient to prove the result for convex quadrilaterals. For in the case of an n-gon any side of a small polygon is either a side of the n-gon (in which case there is nothing to prove) or a segment of a diagonal. Suppose the diagonal is A<sub>i</sub>A<sub>j</sub>. Suppose the points of intersection along this diagonal are (in order) P<sub>0</sub> = A<sub>i</sub>, P<sub>1</sub>, P<sub>2</sub>, ... , P<sub>m</sub> = A<sub>j</sub>. Suppose P<sub>k</sub> is the intersection of A<sub>i</sub>A<sub>j</sub> with A<sub>r</sub>A<sub>s</sub>. Then using the quadrilateral A<sub>i</sub>A<sub>r</sub>A<sub>j</sub>A<sub>s</sub> we deduce that P<sub>0</sub>P<sub>k</sub> (= A<sub>i</sub>P<sub>k</sub>) is rational. Hence P<sub>h</sub>P<sub>k</sub> = P<sub>0</sub>P<sub>k</sub> - P<sub>0</sub>P<sub>h</sub> is rational. So all the segments of the diagonal are rational.
+
+<p>
+<img src="diag032.jpg">
+<p>
+It is immediate from the cosine rule that the angles in a triangle with rational sides have rational cosines. So cos x, cos y and cos(x+y) are rational (using triangles ABD, BCD, ADC). Using the formula for cos(x+y) it follows that sin x sin y is rational. Now sin<sup>2</sup>y = 1 - cos<sup>2</sup>y is rational, so sin x/sin y is rational.
+<p>
+Now area APD = (AD&middot;PD sin x)/2 and area CPD = CD&middot;PD sin y)/2, so AP/PC = area APD/area CPD = (sin x/sin y)(AD/CD) = rational. But AP + PC is rational, so AP is rational. Similarly for the other segments.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa03.html">33rd USAMO 2003</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+6 Aug 2003
+<br>Last corrected/updated 6 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

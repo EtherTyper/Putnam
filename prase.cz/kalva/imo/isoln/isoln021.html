@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 2002/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+S is the set of all (h, k) with h, k non-negative integers such that h + k &lt; n. Each element of S is colored red or blue, so that if (h, k) is red and h' &le; h, k' &le; k, then (h', k') is also red. A type 1 subset of S has n blue elements with different first member and a type 2 subset of S has n blue elements with different second member. Show that there are the same number of type 1 and type 2 subsets.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let a<sub>i</sub> be the number of blue members (h, k) in S with h = i, and let b<sub>i</sub> be the number of blue members (h, k) with k = i. It is sufficient to show that b<sub>0</sub>, b<sub>1</sub>, ... , b<sub>n-1</sub> is a rearrangement of a<sub>0</sub>, a<sub>1</sub>, ... , a<sub>n-1</sub> (because the number of type 1 subsets is the product of the a<sub>i</sub> and the number of type 2 subsets is the product of the b<sub>i</sub>).
+
+<p>
+
+Let c<sub>i</sub> be the largest k such that (i, k) is red. If (i, k) is blue for all k then we put c<sub>i</sub> = -1. Note that if i &lt; j, then c<sub>i</sub> &ge; c<sub>j</sub>, since if (j, c<sub>i</sub> ) is red, then so is (i, c<sub>i</sub> ). Note also that (i, k) is red for k &le; c<sub>i</sub>, so the sequence c<sub>0</sub>, c<sub>1</sub>, ... , c<sub>n-1</sub> completely defines the coloring of S.
+
+<p>
+
+Let S<sub>i</sub> be the set with the sequence c<sub>0</sub>, c<sub>1</sub>, ... , c<sub>i</sub>, -1, ... , -1, so that S<sub>n-1</sub> = S. We also take S<sub>-1</sub> as the set with the sequence -1, -1, ... , -1, so that all its members are blue. We show that the rearrangement result is true for S<sub>-1</sub> and that if it is true for S<sub>i</sub> then it is true for S<sub>i+1</sub>. It is obvious for S<sub>-1</sub>, because both a<sub>i</sub> and b<sub>i</sub> are n, n-1, ... , 2, 1. So suppose it is true for S<sub>i</sub> (where i &lt; n-1). The only difference between the a<sub>j</sub> for S<sub>i</sub> and for S<sub>i+1</sub> is that a<sub>i+1</sub> = n-i-1 for S<sub>i</sub> and (n-i-1)-(c<sub>i+1</sub>+1) for S<sub>i+1</sub>. In other words, the number n-i-1 is replaced by the number n-i-c-2, where c = c<sub>i+1</sub>. The difference in the b<sub>j</sub> is that 1 is deducted from each of b<sub>0</sub>, b<sub>1</sub>, ... , b<sub>c</sub>. But these numbers are just n-i-1, n-i-1, n-i-2, ... , n-i-c-1. So the effect of deducting 1 from each is to replace n-i-1 by n-i-c-2, which is the same change as was made to the a<sub>j</sub>. So the rearrangement result also holds for S<sub>i+1</sub>. Hence it holds for S.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo02.html">43rd IMO 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Jul 2002
+
+<br>Last corrected/updated 27 Jul 2002
+
+</BODY>
+
+
+
+</HTML>
+

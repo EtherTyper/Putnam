@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1994/N6 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>35th IMO 1994 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N6</b><br>
+<p>
+Define the sequence a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ... as follows. a<sub>1</sub> and a<sub>2</sub> are coprime positive integers and a<sub>n+2</sub> = a<sub>n+1</sub>a<sub>n</sub> + 1. Show that for every m &gt; 1 there is an n &gt; m such that a<sub>m</sub><sup>m</sup> divides a<sub>n</sub><sup>n</sup>. Is it true that a<sub>1</sub> must divide a<sub>n</sub><sup>n</sup> for some n &gt; 1?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: no.
+<p>
+Let p be any prime divisor of a<sub>i</sub>. Let u<sub>n</sub> be the residue of a<sub>n</sub> mod p. So u<sub>n+2</sub> = u<sub>n+1</sub>u<sub>n</sub> mod p. Since there are only finitely many pairs (u<sub>n+1</sub>, u<sub>n</sub>), the sequence u<sub>n</sub> must be eventually periodic. We claim that it is periodic from n = i. Suppose not, so that the first two periods are u<sub>s</sub>, u<sub>s+1</sub>, ... , u<sub>s+t-1</sub> (first complete period), u<sub>s+t</sub>, ... , u<sub>s+2t-1</sub> (second complete period) with s &gt; i as small as possible and all terms in the periods not equal to u<sub>i</sub> and hence non-zero. Then u<sub>s</sub>u<sub>s-1</sub> = u<sub>s+1</sub> - 1 = u<sub>s+1+t</sub> - 1 = u<sub>s+t</sub>u<sub>s+t-1</sub>. But since u<sub>s</sub> = u<sub>s+t</sub> is non-zero, we may divide to get u<sub>s-1</sub> = u<sub>s-1+t</sub>. So it is periodic from s-1, contradicting the minimality of s. So for some integer k(p) we have u<sub>i+n k(p)</sub> = 0 for all n. 
+<p>
+Now take all the primes p that divide a<sub>i</sub> and let m be the lcm of the corresponding k(p). Then u<sub>i+nm</sub> = 0 for all n and p, so every prime dividing a<sub>i</sub> divides a<sub>i+nm</sub> for n = 1, 2, 3, ... . Let the highest exponent of any prime p that divides a<sub>i</sub> be r. Take n sufficiently large so that i + nm &gt; ri. Then a<sub>i</sub><sup>i</sup> divides a<sub>i+nm</sub><sup>i+nm</sup>.
+<p>
+Take a<sub>1</sub> = 22, a<sub>2</sub> = 9. We find that the sequence u<sub>n</sub> for the prime 2 is 0, 1, 1, 0, 1, 1, ... so a<sub>n</sub> is even iff n = 1 mod 3. For the prime 11 the sequence is 0, 9, 1, 10, 0, 1, 1, 2, 3, 7, 0, ... so for n &gt; 1, a<sub>n</sub> is divisible by 11 iff n = 5 mod 6. But we cannot have n = 1 mod 3 and 5 mod 6, so there is no j &gt; 1 with a<sub>1</sub> dividing a<sub>j</sub><sup>j</sup>.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh94.html">35th IMO shortlist 1994</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+18 Sep 2002
+</BODY>
+
+</HTML>
+

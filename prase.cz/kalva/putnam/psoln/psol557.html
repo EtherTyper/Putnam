@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 55/A7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>15th Putnam 1955</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A7</b><br>
+
+<p>
+
+k is a real constant. y satisfies y'' = (x<sup>3</sup> + kx) y with initial conditions y = 1, y' = 0 at x = 0. Show that the solutions of y = 0 are bounded above but not below. 
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>The first part is easy; the second part is hard.</i>
+
+<p>
+
+For some x<sub>0</sub>, x<sup>3</sup> + kx &gt; 0 for all x &gt; x<sub>0</sub>. [For example, if k &ge; 0, then we may take x<sub>0</sub> = 0. If k &lt; 0, then we may take x<sub>0</sub> = -k.] Now suppose that a &lt; b are two consecutive zeros greater than x<sub>0</sub>. If y(x) &gt; 0 on (a, b), then y'' must be negative for at least part of the interval (a, b), but that is impossible, since (x<sup>3</sup> + kx) y &gt; 0 for the whole interval. Similarly, if y(x) &lt; 0 on (a, b), then y'' must be positive for at least part of the interval (a, b), but that is impossible, since (x<sup>3</sup> + kx) y &lt; 0 for the whole interval. So there is at most one root greater than x<sub>0</sub> and that provides a bound. [For completeness, we note that we require y not to be identically zero on a non-zero interval, but that is not possible because y(0) is non-zero.]
+
+<p>
+
+Suppose the second part is false. Then we can find x<sub>2</sub> such that for any x &lt; x<sub>2</sub>, y(x) is non-zero. There are two cases. Suppose first that y(x) &gt; 0 for all x &lt; x<sub>2</sub>. We can take x<sub>3</sub> &lt; x<sub>2</sub> such that x<sup>3</sup> + kx &lt; -2 for all x &lt; x<sub>3</sub>. Hence, in particular, y''(x) &lt; 0 for x &lt; x<sub>3</sub>. Take arbitary a &lt; b &lt; x<sub>3</sub>, then as usual we can find &xi; &isin; (a, b) such that y(a) = y(b) - (b - a) y'(b) + 1/2 (b - a)<sup>2</sup> y''(&xi;) &lt; y(b) - (b - a) y'(b). If y'(b) &gt; 0, then for (b - a) sufficiently large y(a) &lt; 0 (contradiction). So y'(b) &ge; 0. So y(a) &le; y(b) + 1/2 (b - a)<sup>2</sup> y''(&xi;). But now we use the stronger assumption that &xi;<sup>3</sup> + k&xi; &lt; -2 and hence y(a) &lt; y(b)( 1 - (b - a)<sup>2</sup>), which becomes negative for sufficiently large (b - a). Contradiction.
+
+<p>
+
+The remaining case is y(x) &lt; 0 and y''(x) &gt; -2 y(x) for all x &lt; x<sub>3</sub>. In particular, y''(x) &gt; 0 for x &lt; x<sub>3</sub>. So arguing as before, y'(b) &le; 0. As before y(a) &ge; -y(b) ( (b - a)<sup>2</sup> - 1), which becomes positive for sufficiently large (b - a). Contradiction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn55.html">15th Putnam 1955</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

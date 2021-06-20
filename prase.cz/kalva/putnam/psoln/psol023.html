@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 02/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>63rd Putnam 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+A subset of {1, 2, ... , n} is <i>round</i> if it is non-empty and the average (arithmetic mean) of its elements is an integer. Show that the number of round subsets of {1, 2, ... , n} has the same parity as n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Given a subset S of {1, 2, ... , n}, let S' be the subset {n+1-k | k is in S}. Note that the average of the elements of S is integral iff the average of the elements of S' is integral. We look separately at n odd and n even.
+
+<p>
+
+Suppose n is odd. The subsets S such that S &ne; S' divide into pairs S, S'. So there are an even number of subsets S with integral average and S &ne; S'. With one exception, the non-empty subsets S with S = S' divide into pairs T, T &cup; {(n+1)/2} (where (n+1)/2 is not a member of T). If T = T' then T has average (n+1)/2, so either both or neither of T, T &cup; {(n+1)/2} have integral average. The exception is the subset { (n+1)/2 } (where the corresponding member of the pair is empty). Thus the number of non-empty subsets S with integral average and S = S' is odd. So the result is true for n odd. 
+
+<p>
+
+The case n even is simpler, because we cannot have S = S' for a subset with integral average (the average is (n+1)/2, which is not integral). So the subsets with integral average form pairs S, S'. Hence the number of such subsets is even.
+
+<p>
+
+<i>Alternative solution</i>
+
+<p>
+
+We can divide the subsets with integral average and more than one element into pairs, one of which contains the average and one of which does not. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn02.html">63rd Putnam 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Dec 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 95/2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>24th USAMO 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 2</b><br>
+
+<p>
+
+A trigonometric map is any one of sin, cos, tan, arcsin, arccos and arctan. Show that given any positive rational number x, one can find a finite sequence of trigonometric maps which take 0 to x. [So we need to show that we can always find a sequence of trigonometric maps t<sub>i</sub> so that: x<sub>1</sub> = t<sub>0</sub>(0), x<sub>2</sub> = t<sub>1</sub>(x<sub>1</sub>), ... , x<sub>n</sub> = t<sub>n-1</sub>(x<sub>n-1</sub>), x = t<sub>n</sub>(x<sub>n</sub>).]
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We have cos<sup>2</sup>t + sin<sup>2</sup>t = 1. Hence cos t = cos t/(&radic;(cos<sup>2</sup>t + sin<sup>2</sup>t)) = 1/(&radic;(1 + tan<sup>2</sup>t)). So if we put tan t = &radic;x, then cos tan<sup>-1</sup>&radic;x = 1/&radic;(1 + x). We also have cos(<font face="symbol">p</font>/2 - x) = sin x and tan(<font face="symbol">p</font>/2 - x) = 1/tan x. So tan cos<sup>-1</sup> sin tan<sup>-1</sup> x = 1/x (1). Hence also tan cos<sup>-1</sup> sin tan<sup>-1</sup> cos tan<sup>-1</sup> &radic;x = &radic;(x + 1) (2). These two relations solve the problem.
+
+<p>
+
+Using (2) and iterating we can get &radic;n for any positive integer n. Hence <i>in particular</i> we can get n for any positive integer n. Now suppose we want m/n with m and n relatively prime. We show that m/n can be achieved by induction on n. We have just dealt with the case n = 1. Suppose we have dealt with all a/b with b &lt; n. If m &gt; n, then we can write m = qn + r with 0 &lt; r &lt; n and use (2) to reduce the problem to getting r/n. If m &lt; n, then put r = m. Now use (1) to reduce the problem to n/r, which is solved by induction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa95.html">24th USAMO 1995</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,80 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 86/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>47th Putnam 1986</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+A, B, C, D are n x n matrices with entries in some field F. The transpose of a matrix X is denoted as X' (defined as X'<sub>ij</sub> = X<sub>ji</sub>). Given that A B' and C D' are symmetric, and A D' - B C' = 1, prove that A'D - C'B = 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Moderately hard, unless you have seen something similar before.</i>
+
+<p>
+
+Notice first three obvious facts: X is symmetric iff X = X'; X'' = X, (XY)' = Y'X'. So we are given that AB' = BA', CD' = DC', and AD' - BC' = 1. A little playing around shows that the result does not follow trivially. So we need some additional piece.
+
+<p>
+
+The commonest non-trivial fact about matrices is that one-sided inverses are two-sided inverses. In other words, if XY = 1, then YX = 1. But it is not immediately obvious how to use it.
+
+<p>Playing around may lead us to write AB' = BA' as AB' - BA' = 0. Further playing around might lead us to take transposes of AD' - BC' = 1 to get DA' - CB' = 1. Some inspiration might lead us to notice that we can write the relations as:
+
+<p> &nbsp; AD' - BC' = 1
+
+<br> &nbsp; AB' - BA' = 0
+
+<br> &nbsp; CD' - DC' = 0
+
+<br>&nbsp; -CB' + DA' = 1
+
+<p>If we are lucky these formulae may remind us of 2 x 2 matrix multiplication (the only obstacle to instant recognition is the minus signs). It is a well-known trick that one can group matrix elements into blocks and iterate to get the matrix product (the proof is trivial). So we could summarise the four equations as: (A, B; C, D) (D', -B'; -C', A') = 1, where (A, B; C, D) is the 4 x 4 matrix with the upper left 2 x 2 block as A, the upper right 2 x 2 block as B, the lower left 2 x 2 block as C, and the lower right 2 x 2 block as D. 
+
+<p>Now we can use the fact noted at the start to get (D', -B'; -C', A') (A, B; C, D) and hence four more relations, including, for the bottom right blocks, the required -C'B + A'D = 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn86.html">47th Putnam 1986</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

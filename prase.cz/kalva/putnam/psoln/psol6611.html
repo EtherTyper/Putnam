@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1966/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>27th Putnam 1966</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Given n points in the plane, no three collinear, prove that we can label them P<sub>i</sub> so that P<sub>1</sub>P<sub>2</sub>P<sub>3</sub> ... P<sub>n</sub> is a simple closed polygon (with no edge intersecting any other edge except at its endpoints).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Take arbitrary x, y axes. Take P to be the point with the smallest x-coordinate, or if there are two such, the one with the smaller y-coordinate. Take Q to be the point with the largest x-coordinate, or if there are two such the one with the smaller y-coordinate. Join P to Q by a path p along the lower part of the convex hull of the points (so that all other points are above the path).
+
+<p>
+
+Now order the remaining points not in the path according to the size of their x-coordinate (with the largest first). Continue the path from Q back to P by taking the remaining points in this order. We can never intersect the existing path p without going outside the convex hull and we cannot intersect the later part of the path because it has smaller x-coordinate.
+
+<p>
+
+<i>Comment. It is tempting to argue by induction. Take a path through the first n. Then given another point P, we can always find two earlier points Q and R, so that PQ and PR do not intersect the n-path. Then replace the segment QR by QP and PR. Unfortunately, this is false. It is not too hard to find cases where we cannot find such Q, R. </i>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn66.html">27th Putnam 1966</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

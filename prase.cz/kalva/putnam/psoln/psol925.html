@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1992/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>53rd Putnam 1992</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Let N be the positive integers. Define f <b>:</b> N &rarr; {0, 1} by f(n) = 1 if the number of 1s in the binary representation of n is odd and 0 otherwise. Show that there do not exist positive integers k and m such that f(k + j) = f(k + m + j) = f(k + 2m + j) for 0 &le; j &lt; m.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Note that f(2n) &ne; f(2n+1). So f(n), f(n+1), f(n+2) cannot all be equal, which establishes the case m = 1.
+
+<p>
+
+Note that the condition f(k + j) = f(k + m + j) = f(k + 2m + j) for 0 &le; j &lt; m can alternatively be written as f(k + j) = f(k + j + m) for 0 &le; j &lt; 2m.
+
+<p>
+
+f(4n+1) = f(4n+2), so we cannot have f(a) = f(b) and f(a+1) = f(b+1) if a is even and b = 1 (mod 4). This is sufficient to establish the case m odd and &gt; 1. For suppose k is even. Then either k+m or k+m+2 = 1 (mod 4). So taking a = k and b = whichever of k+m and k+m+2 is 1 mod 4, we cannot have f(a) = f(b) and f(a+1) = f(b+1). Similarly, if k is odd, then either k or k+2 is 1 mod 4 and both k+m and k+m+2 are even.
+
+<p>
+
+It remains to consider m even. But given a case with 2m we can always find another case with m. Repeating we would eventually reach a case with m odd. So even cases cannot exist either.
+
+<p>
+
+Since f(2n) = f(n) the case 2k, 2m immediately gives the case k, m. Just select the even j: f(2k + 2j) = f(2k + 2j + 2m) for 0 &le; j &lt; m and deduce f(k + j) = f(k + j + m) for 0 &le; j &lt; m, which is the case k, m. Similarly, the case 2k+1, 2m gives the case k+1, m.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn92.html">53rd Putnam 1992</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 79/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>40th Putnam 1979</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+z<sub>i</sub> are complex numbers. Show that |Re[ (z<sub>1</sub><sup>2</sup> + z<sub>2</sub><sup>2</sup> + ... + z<sub>n</sub><sup>2</sup>)<sup>1/2</sup> ]| &le; |Re z<sub>1</sub>| + |Re z<sub>2</sub>| + ... + |Re z<sub>n</sub>|.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let z<sub>k</sub> = x<sub>k</sub> + i y<sub>k</sub>, and let (z<sub>1</sub><sup>2</sup> + z<sub>2</sub><sup>2</sup> + ... + z<sub>n</sub><sup>2</sup>)<sup>1/2</sup> = a + ib.
+
+<p>
+
+Then, squaring, a<sup>2</sup> - b<sup>2</sup> = &sum; x<sub>k</sub><sup>2</sup> - &sum; y<sub>k</sub><sup>2</sup> (1), ab = &sum; x<sub>k</sub>y<sub>k</sub> (2). The Cauchy inequality gives that |&sum; x<sub>k</sub>y<sub>k</sub>| &le; ( &sum; x<sub>k</sub><sup>2</sup> )<sup>1/2</sup> ( &sum; y<sub>k</sub><sup>2</sup> )<sup>1/2</sup>, so from (1) we have |ab| &le; ( &sum; x<sub>k</sub><sup>2</sup> )<sup>1/2</sup> ( &sum; y<sub>k</sub><sup>2</sup> )<sup>1/2</sup> (3). If |a| &gt; ( &sum; x<sub>k</sub><sup>2</sup> )<sup>1/2</sup>, then from (3) |b| &lt; ( &sum; y<sub>k</sub><sup>2</sup> )<sup>1/2</sup>. But then a<sup>2</sup> - b<sup>2</sup> &gt; &sum; x<sub>k</sub><sup>2</sup> - &sum; y<sub>k</sub><sup>2</sup>, contradicting (1). So we must have that |a| &le; ( &sum; x<sub>k</sub><sup>2</sup> )<sup>1/2</sup>. The required result follows immediately since obviously ( &sum; |x<sub>k</sub>| )<sup>2</sup> &ge; &sum; x<sub>k</sub><sup>2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn79.html">40th Putnam 1979</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

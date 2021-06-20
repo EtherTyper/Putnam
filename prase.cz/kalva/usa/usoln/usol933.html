@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 93/3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>22nd USAMO 1993</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 3</b><br>
+
+<p>
+
+Let S be the set of functions f defined on reals in the closed interval [0, 1] with non-negative real values such that f(1) = 1 and f(x) + f(y) &le; f(x + y) for all x, y such that x + y &le; 1. What is the smallest k such that f(x) &le; kx for all f in S and all x?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: k = 2.
+
+<p>
+
+Consider the function f(x) = 0 for 0 &le; x &le; 1/2, 1 for 1/2 &lt; x &le; 1. If x + y &le; 1, then at least one of x, y is &le; 1/2, so at least one of f(x), f(y) is 0. But f is obviously increasing, so the other of f(x), f(y) is &le; f(x + y). Thus f satisfies the conditions. But f(1/2 + &epsilon;) = 1, so k cannot be smaller than 2. 
+
+<p>
+
+So now let f be any function satisfying the conditions. We wish to show that f(x) &le; 2x. Putting y = 1-x, we get f(x) + f(y) &lt;= f(1) = 1. But f(y) is non-negative, so f(x) &le; 1. Put y = x &le; 1/2. Then 2f(x) &le; f(2x). A simple induction gives 2<sup>n</sup>f(x) &le; f(2<sup>n</sup>x) for x &le; 1/2<sup>n</sup>. Now take any x in [0, 1]. If x &gt; 1/2, then 2x &gt; 1, so f(x) &lt; 2x. If x &le; 1/2, choose n &ge; 1, so that 1/2<sup>n+1</sup> &lt; x &le; 1/2<sup>n</sup>. Then 2<sup>n</sup>f(x) &le; f(2<sup>n</sup>x) &le; 1, so f(x) &le; 1/2<sup>n</sup> &le; 2x.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa93.html">22nd USAMO 1993</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+23 Aug 2002
+<br>Last corrected/updated 25 Nov 03
+
+</BODY>
+
+
+
+</HTML>
+

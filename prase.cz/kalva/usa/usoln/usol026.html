@@ -1,0 +1,84 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 02/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>31st USAMO 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+A tromino is a 1 x 3 rectangle.  Trominoes are placed on an n x n board. Each tromino must line up with the squares on the board, so that it covers exactly three squares. Let f(n) be the smallest number of trominoes required to stop any more being placed. Show that for all n &gt; 0, n<sup>2</sup>/7 + hn &le; f(n) &le; n<sup>2</sup>/5 + kn for some reals h and k.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+A tromino may be placed in n - 2 positions in each row and column, so there are 2n<sup>2</sup> - 4n possible positions in total. Placing a tromino occupies or blocks at most 14 of these positions (5 parallel and 9 perpendicular). Hence any placement of (2n<sup>2</sup> - 4n)/14 = n<sup>2</sup>/7 - 2n/7 trominoes will block further trominoes. So f(n) &gt;= n<sup>2</sup>/7 - 2n/7.
+
+<p>
+
+If we place trominoes roughly like this:
+
+<pre>x x x o o x x x o o x x x o o x x x o o x
+
+o x x x o o x x x o o x x x o o x x x o o 
+
+o o x x x o o x x x o o x x x o o x x x o
+
+x o o x x x o o x x x o o x x x o o x x x
+
+x x o o x x x o o x x x o o x x x o o x x
+
+x x x o o x x x o o x x x o o x x x o o x
+
+</pre>
+
+it is obvious that no further trominoes are possible and the number of occupied squares is about 3n<sup>2</sup>/5. Hence the number of trominoes is about n<sup>2</sup>/5. But we need to do some tidying up in relation to edge effects.
+
+<p>
+
+The safe way to deal with partial trominoes at the beginning or end of rows is to pull them completely onto the board. Each complete group of five cells in a row needs a tromino, but we may need one extra at the start and one extra at the end. So [n/5] + 2 will always suffice for the row. Thus n<sup>2</sup>/5 + 2n will suffice for the board and so f(n) &le; n<sup>2</sup>/5 + 2n.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa02.html">31st USAMO 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

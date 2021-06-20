@@ -1,0 +1,71 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 40/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>3rd Putnam 1940</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+A stone is thrown from the ground with speed v at an angle &theta; to the horizontal. There is no friction and the ground is flat. Find the total distance it travels before hitting the ground. Show that the distance is greatest when sin &theta; ln (sec &theta; + tan &theta;) = 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Straightforward, except for a tricky integral.
+
+<p>
+
+Take coordinates (time and distance) zeroed on the peak of the trajectory. After time t, the stone travels a distance x = v t cos &theta; horizontally and a distance 1/2 g t<sup>2</sup> vertically. So the trajectory is a parabola 2y = k x<sup>2</sup>, where k = g/(v cos &theta;)<sup>2</sup>. The stone is on the ground at t = +/- v/g sin &theta;, at a horizontal distance +/- a from the peak, where a = v<sup>2</sup>/g sin &theta; cos &theta;.
+
+<p>
+The length of the parabola y = k/2 x<sup>2</sup> between x = -a and x = a is 2 &int;<sub>0</sub><sup>a</sup> (1 + k<sup>2</sup>x<sup>2</sup>)<sup>1/2</sup> dx.
+
+<p>
+To do the integral it helps to remember that 1 + sinh<sup>2</sup>z = cosh<sup>2</sup>z. So substituting kx = sinh z, will essentially give us the integral of cosh<sup>2</sup>z. That is doable, using the analog of the double angle formulae. So setting I = &int; (1 + k<sup>2</sup>x<sup>2</sup>)<sup>1/2</sup> dx, and substituting x = sinh z, we have I = 1/k &int; cosh<sup>2</sup> z dz = 1/(2k) &int; (cosh 2z + 1) dz = 1/(4k) sinh 2z + 1/(2k) z = 1/(2k) sinh z cosh z + 1/2 z = x/2 (1 + k<sup>2</sup>x<sup>2</sup>)<sup>1/2</sup> + 1/(2k) sinh<sup>-1</sup>(kx). We have k = g/(v cos &theta;)<sup>2</sup>, and a = v<sup>2</sup>/g sin &theta; cos &theta;, so ka = tan &theta;. So the required path length is p(&theta;) = a(1 + k<sup>2</sup>a<sup>2</sup>)<sup>1/2</sup> + 1/k sinh<sup>-1</sup>a = v<sup>2</sup>/g (sin &theta; + cos<sup>2</sup>&theta; sinh<sup>-1</sup> tan &theta;).
+
+<p>
+To find the maximum, we differentiate, getting p'(&theta;) = cos <font face="Symbol">q</font> - 2 cos &theta; sin &theta; sinh<sup>-1</sup> tan &theta; + cos<sup>2</sup>&theta; (1 + tan<sup>2</sup>&theta;)<sup>-1/2</sup> sec<sup>2</sup>&theta; = 2 cos &theta;(1 - sin &theta; sinh<sup>-1</sup>tan &theta;). In the range [0, <font face="Symbol">p</font>/2], tan &theta; is monotone increasing. Sinh<sup>-1</sup>z is strictly monotone increasing for positive z, so sinh<sup>-1</sup>tan &theta; is strictly monotone increasing on (0, &pi;/2). Indeed it evidently tends to &infin; as &theta; tends to &pi;/2. Hence (1 - sin &theta; sinh<sup>-1</sup>tan &theta;) is strictly monotone decreasing on (0, &pi;/2) and crosses zero once. Cos &theta; is monotone decreasing and positive, so p'(&theta;) is strictly monotone decreasing and crosses zero once. Hence p(&theta;) has a single maximum on [0, &pi;/2], which is achieved for the value &phi; in (0, &pi;/2) for which (1 - sin &phi; sinh<sup>-1</sup>tan &phi;) = 0. Rearranging, sinh(1/sin &phi;) = tan &phi;. Squaring, adding 1, and taking the square root: cosh(1/sin &phi;) = sec &phi;. Adding the last two equations: e<sup>1/sin &phi;</sup> = tan &phi; + sec &phi;, or 1/sin &phi; = ln(tan &phi; + sec &phi;), or sin &phi; ln(tan &phi; + sec &phi;) = 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn40.html">3rd Putnam 1940</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

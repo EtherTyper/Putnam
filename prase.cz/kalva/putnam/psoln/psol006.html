@@ -1,0 +1,61 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2000/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>61st Putnam 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+p(x) is a polynomial with integer coefficients. A sequence x<sub>0</sub>, x<sub>1</sub>, x<sub>2</sub>, ... is defined by x<sub>0</sub> = 0, x<sub>n+1</sub> = p(x<sub>n</sub>). Prove that if x<sub>n</sub> = 0 for some n &gt; 0, then x<sub>1</sub> = 0 or x<sub>2</sub> = 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If x<sub>1</sub> = 0, then obviously all x<sub>n</sub> = 0. So that is one possibility. Assume, then, that x<sub>1</sub> is non-zero. Assume also that x<sub>N</sub> = 0 for some N &gt; 1. Then x<sub>N+1</sub> = p(0) = x<sub>1</sub>.
+
+<p>
+a - b always divides a<sup>s</sup> - b<sup>s</sup> and hence also p(a) - p(b). So x<sub>n+1</sub> - x<sub>n</sub> divides x<sub>n+2</sub> - x<sub>n+1</sub>. But x<sub>N+1</sub> - x<sub>N</sub> = x<sub>1</sub> - x<sub>0</sub>. So for all 0 &lt;= n &lt;= N, we have x<sub>n+1</sub> - x<sub>n</sub> = &plusmn;x<sub>1</sub>. Moreover, some signs must be positive and some negative, since (x<sub>1</sub> - x<sub>0</sub>) + (x<sub>2</sub> - x<sub>1</sub>) + ... + (x<sub>N</sub> - x<sub>N-1</sub>) = x<sub>N</sub> - x<sub>0</sub> = 0. So we must be able to find an adjacent pair of opposite signs: x<sub>n+1</sub> - x<sub>n</sub> = -(x<sub>n</sub> - x<sub>n-1</sub>), with 1 &le; n &le; N. Hence x<sub>n-1</sub> = x<sub>n+1</sub>. But now p(x<sub>n-1</sub>) = p(x<sub>n+1</sub>), or x<sub>n</sub> = x<sub>n+2</sub>. So by a simple induction x<sub>N</sub> = x<sub>N+2</sub>. But x<sub>N</sub> = 0, and x<sub>N+2</sub> = x<sub>2</sub>, so x<sub>2</sub> = 0, as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn00.html">61st Putnam 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

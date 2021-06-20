@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1995/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+R is the reals. x<sub>i</sub> <b>:</b> R &rarr; R are differentiable for i = 1, 2, ... , n and satisfy x<sub>i</sub>' = a<sub>i1</sub>x<sub>1</sub> + ... + a<sub>in</sub>x<sub>n</sub> for some constants a<sub>ij</sub> &ge; 0. Also lim<sub>t&rarr;&infin;</sub> x<sub>i</sub>(t) = 0. Can the functions x<sub>i</sub> be linearly independent?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: no.
+
+<p>
+
+<i>Fairly easy.</i>
+
+<p>
+
+Let A be the n x n matrix (a<sub>ij</sub>). Let A<sup>T</sup> be its transpose. We know that the trace of A<sup>T</sup> is non-negative (since all its elements are non-negative). So it must have an eigenvalue &lambda; with Re(&lambda;) &ge; 0. Let <b>v</b> = (v<sub>i</sub>) be a corresponding eigenvector and consider the linear combination y = &sum; v<sub>i</sub>x<sub>i</sub>. We have y' = &sum; v<sub>i</sub>a<sub>ij</sub>x<sub>j</sub> = &lambda; &sum; v<sub>j</sub>x<sub>j</sub> = &lambda; y. So, integrating, y = k e<sup>&lambda;t</sup> for some constant k. But |e<sup>&lambda;t</sup>| does not tend to zero as t &rarr; &infin;, since Re(&lambda;) &ge; 0. We are given that each x<sub>i</sub>(t) and hence y(t) &rarr; 0, so k = 0. In other words we have found a (non-trivial) linear combination of the x<sub>i</sub> which is zero, so they are not linearly independent.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn95.html">Putnam 1995</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

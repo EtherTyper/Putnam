@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1962/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>23rd Putnam 1962</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+Define x<sup>(n)</sup> = x(x - 1)(x - 2) ... (x - n + 1) and x<sup>(0)</sup> = 1. Show that (x + y)<sup>(n)</sup> = nC0 x<sup>(0)</sup>y<sup>(n)</sup> + nC1 x<sup>(1)</sup>y<sup>(n-1)</sup> + nC2 x<sup>(2)</sup>y<sup>(n-2)</sup> + ... + nCn x<sup>(n)</sup>y<sup>(0)</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Induction on n. It is obviously true for n = 1. Suppose it is true for n. We now multiply the rhs by (x + y - n). We now write:
+
+<pre>nC0 x<sup>(0)</sup>y<sup>(n)</sup>(x + y - n) = (nC0 x<sup>(0)</sup>y<sup>(n)</sup> (y-n) )  + (nC0 x<sup>(0)</sup>y<sup>(n)</sup> x );
+
+nC1 x<sup>(1)</sup>y<sup>(n-1)</sup> (x + y - n)  = (nC1 x<sup>(1)</sup>y<sup>(n-1)</sup> (y-n+1) ) + (nC1 x<sup>(1)</sup>y<sup>(n-1)</sup> (x-1) );
+
+nC2 x<sup>(2)</sup>y<sup>(n-2)</sup> (x + y - n) = (nC2 x<sup>(2)</sup>y<sup>(n-2)</sup> (y-n+2) ) + (nC2 x<sup>(2)</sup>y<sup>(n-2)</sup> (x-2) ); 
+
+...
+
+nCn x<sup>(n)</sup>y<sup>(0)</sup> (x + y - n) = (nCn x<sup>(n)</sup>y<sup>(0)</sup> y ) + (nCn x<sup>(n)</sup>y<sup>(0)</sup> (x-n) ).
+
+</pre>
+
+Now the first term in the 1st equation gives (n+1)C0 x<sup>(0)</sup>y<sup>(n+1)</sup>. The second term in the 1st equation and the first term in the 2nd equation give (n+1)C1 x<sup>(1)</sup>y<sup>(n)</sup>. Then the second term in the 2nd equation and the first in the 3rd equation gives (n+1)C2 x<sup>(2)</sup>y<sup>(n-1)</sup> and so on. Finally the second term in the last equation gives (n+1)C(n+1) x<sup>(n+1)</sup>y<sup>(0)</sup>. So we have the result for n+1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn62.html">23rd Putnam 1962</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

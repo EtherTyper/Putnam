@@ -1,0 +1,75 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1976/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1976</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+A rectangular box can be completely filled with unit cubes. If one places as many cubes as possible, each with volume 2, in the box, with their edges parallel to the edges of the box, one can fill exactly 40% of the box. Determine the possible dimensions of the box.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 2 x 3 x 5 or 2 x 5 x 6.
+
+<p>
+This is somewhat messy. The basic idea is that the sides cannot be too long, because then the ratio becomes too big. Let k denote the (real) cube root of 2. Given any integer n, let n' denote the least integer such that n'k &lt;= n. Let the sides of the box be a &le; b &le; c. So we require 5a'b'c' = abc (*).
+
+<p>
+It is useful to derive n' for small n: 1' = 0, 2' = 1, 3' = 2, 4' = 3, 5' = 3, 6' = 4, 7' = 5, 8' = 6, 9' = 7, 10' = 7.
+
+<p>
+Clearly n'k &ge; n-2. But 6<sup>3</sup> &gt; 0.4 8<sup>3</sup>, and hence (n'k)<sup>3</sup> &ge; (n - 2)<sup>3</sup> &gt; 0.4 n<sup>3</sup> for all n &ge; 8. We can check directly that (n'k)<sup>3</sup> &gt; 0.4 n<sup>3</sup> for n = 3, 4, 5, 6, 7. So we must have a = 2 (we cannot have a = 1, because 1' = 0).
+
+<p>
+From (*) we require b or c to be divisible by 5. Suppose we take it to be 5. Then since 5' = 3, the third side n must satisfy: n' = 2/3 n. We can easily check that 2k/3 &lt; 6/7 and hence (2/3 nk + 1 ) &lt; n for n &ge; 7, so n' &gt; 2/3 n for n &ge; 7. This just leaves the values n = 3 and n = 6 to check (since n' = 2/3 n is integral so n must be a multiple of 3). Referring to the values above, both these work. So this gives us two possible boxes: 2 x 3 x 5 and 2 x 5 x 6.
+
+<p>
+The only remaining possibility is that the multiple of 5 is at least 10. But then it is easy to check that if it is m then m'/m &ge; 7/10. It follows from (*) that the third side r must satisfy r'/r &lt;= 4/7. But using the limit above and referring to the small values above, this implies that r must be 2. So a = b = 2. But now c must satisfy c' = 4/5 c. However, that is impossible because 4/5 k &gt; 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo76.html">18th IMO 1976</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+10 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

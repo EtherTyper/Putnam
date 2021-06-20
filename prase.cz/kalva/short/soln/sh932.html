@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1993/2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>34th IMO 1993 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 2</b>
+<p>
+ABC is a triangle with circumradius R and inradius r. If p is the inradius of the orthic triangle, show that p/R &le; 1 - (1/3) (1 + r/R)<sup>2</sup>). [The <i>orthic</i> triangle has as vertices the feet of the altitudes of ABC.]
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+<img src="diag932.jpg">
+<p>
+&ang;HA'B = &ang;HC'C = 90<sup>o</sup>, so HA'BC' is cyclic. Hence &ang;HA'C' = &ang;HBC' = 90<sup>o</sup> - &ang;A. Similarly, &ang;HA'B' = 90<sup>o</sup> - &ang;A, so H is the incenter of the orthic triangle. 
+<p>
+HA' = A'B tan HBA' = A'B cot C = c cos B cot C. Hence p = HA' sin HA'C' = HA' cos A = c cos A cos B cos C/sin C. If O is the circumcenter, then &ang;AOB = 2 &ang;C, so c/2R = sin C. Hence p = 2R cos A cos B cos C.
+<p>
+We have 4 cos A cos B cos C = 2 (cos(A+B) + cos(A-B)) cos C = cos(A+B+C) + cos(A+B-C) + cos(A-B+C) + cos(A-B-C) = cos 180<sup>o</sup> + cos(180<sup>o</sup>-2C) + cos(180<sup>o</sup>-2B) + cos(2A-180<sup>o</sup>) = -1 - cos 2C - cos 2B - cos 2A = 2 - 2(cos<sup>2</sup>A + cos<sup>2</sup>B + cos<sup>2</sup>C). Hence p/R = 1 - (cos<sup>2</sup>A + cos<sup>2</sup>B + cos<sup>2</sup>C).
+<p>
+Now by Cauchy we have (1<sup>2</sup>+1<sup>2</sup>+1<sup>2</sup>)(cos<sup>2</sup>A + cos<sup>2</sup>B + cos<sup>2</sup>C) &ge; (cos A + cos B + cos C)<sup>2</sup>, so p/R &le; 1 - (cos A + cos B + cos C)<sup>2</sup>/3.
+<p>
+Finally, we need the result that cos A + cos B + cos C = 1 + r/R. We have cos A = (b<sup>2</sup>+c<sup>2</sup>-a<sup>2</sup>)/2bc, cos B = (a<sup>2</sup>+c<sup>2</sup>-b<sup>2</sup>)/2ac, cos C = (a<sup>2</sup>+b<sup>2</sup>-c<sup>2</sup>)/2ab, so cos A + cos B + cos C = (ab<sup>2</sup> + a<sup>2</sup>b + b<sup>2</sup>c + bc<sup>2</sup> + c<sup>2</sup>a + ca<sup>2</sup> - a<sup>3</sup> - b<sup>3</sup> - c<sup>3</sup>)/2abc = (8(s-a)(s-b)(s-c) + 2abc)/2abc = 4(area ABC)<sup>2</sup>/(abcs) + 1 (using Heron). But we also have area ABC = &frac12;ab sin C = abc/4R, and area ABC = rs. So 4(area ABC)<sup>2</sup>/(abcs) = r/R, giving cos A + cos B + cos C = 1 + r/R, as required.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh93.html">34th IMO shortlist 1993</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+8 Nov 2003
+<br>Last corrected/updated 8 Nov 03
+</BODY>
+
+</HTML>
+

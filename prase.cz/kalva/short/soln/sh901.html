@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>31st IMO shortlist 1990/1 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>31st IMO 1990 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 1</b>
+<p>
+Is there a positive integer which can be written as the sum of 1990 consecutive positive integers and which can be written as a sum of two or more consecutive positive integers in just 1990 ways?
+<p>
+&nbsp;<p>
+<b>Answer</b>
+<p>
+Yes
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+We require N = m + (m+1) + ... + (m+1989) = 1990m + 1989&middot;1990/2 = 5&middot;199(2m+1989). So N must be odd and divisible by 5 and 199.
+<p>
+We also require that there are just 1990 pairs m, n such that N = m + (m+1) + ... + (m+n) = (n+1)(n+2m)/2, or equivalently, such that 2N = (n+1)(n+2m). Note that n+1 &lt; n+2m. So if a is any factor of 2N, put b = 2N/a. Let A be the smaller of a, b and B the larger. Then, provided that A &gt; 1, we can take n+1 to be A and m to be (B+1-A)/2. Since N is odd, just one of A, B will be even, so (B+1-A) is even and m is integral. Thus we require 2N to have 2&middot;1991 factors (the extra two are the pair 1 and N which do not give a solution) = 2&middot;11&middot;181. We know that 2N has factors 2, 5, 199, so it cannot have any others. The factor 2<sup>1</sup> gives rise to the factor (1+1) = 2, the other two must give rise to the 11 and the 181. So N = 5<sup>10</sup>199<sup>180</sup> or 5<sup>180</sup>199<sup>10</sup>.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh90.html">31st IMO shortlist 1990</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+7 Aug 2003
+<br>Last updated/corrected 7 Aug 2003
+</BODY>
+
+</HTML>
+

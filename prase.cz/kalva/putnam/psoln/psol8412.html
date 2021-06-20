@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1984/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>45th Putnam 1984</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+Define a sequence of convex polygons P<sub>n</sub> as follows. P<sub>0</sub> is an equilateral triangle side 1. P<sub>n+1</sub> is obtained from P<sub>n</sub> by cutting off the corners one-third of the way along each side (for example P<sub>1</sub> is a regular hexagon side 1/3). Find lim<sub>n&rarr;&infin;</sub>area(P<sub>n</sub>).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (&radic;3)/7.
+
+<p>
+
+n = 0 and n = 1 are untypical cases. Later polygons have unequal sides and sides that do not touch the circle inscribed in P<sub>0</sub>. The key is to look at a slightly more general case. Suppose that just before the nth series of cuts we have two adjacent sides, represented by vectors <b>a</b>, <b>b</b>. Then the new side formed when we cut off the corner is (<b>a</b>+<b>b</b>)/3, so the three new sides are <b>a</b>/3, (<b>a</b>+<b>b</b>)/3, <b>b</b>/3, and the area of corner removed is (<b>a x b</b>)/2. At step n+1 we remove two corners, with areas ( <b>a</b>/3 <b>x</b> (<b>a</b>+<b>b</b>)/3 + (<b>a</b>+<b>b</b>)/3 <b>x</b> <b>b</b>/3 )/2 = (<b>a x b</b>)/9 = 2/9 x area removed at step n. 
+
+<p>
+
+The area removed in going from the triangle to the hexagon is 1/3 area triangle. So the total area removed is 1/3 (1 + 2/9 + (2/9)<sup>2</sup> + ... ) = 3/7 area triangle. Hence the area remaining is 4/7 (&radic;3)/4 = (&radic;3)/7.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn84.html">45th Putnam 1984</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

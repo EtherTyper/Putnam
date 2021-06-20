@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 94/3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>6th APMO 1994</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 3</b><br>
+<p>
+Find all positive integers n such that n = a<sup>2</sup> + b<sup>2</sup>, where a and b are relatively prime positive integers, and every prime not exceeding &radic;n divides ab.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 2 = 1<sup>2</sup> + 1<sup>2</sup>, 5 = 1<sup>2</sup> + 2<sup>2</sup>, 13 = 2<sup>2</sup> + 3<sup>2</sup>.
+<p>
+The key is to use the fact that a and b are relatively prime. We show in fact that they must differ by 1 (or 0). Suppose first that a = b. Then since they are relatively prime they must both be 1. That gives the first answer above. So we may take a &gt; b. Then (a - b)<sup>2</sup> &lt; a<sup>2</sup> + b<sup>2</sup> = n, so if a - b is not 1, it must have a prime factor which divides ab. But then it must divide a or b and hence both. Contradiction. So a = b + 1. 
+<p>
+Now (b - 1)<sup>2</sup> &lt; b<sup>2</sup> &lt; n, so any prime factor p of b - 1 must divide ab = b(b + 1). It cannot divide b (or it would divide b and b - 1 and hence 1), so it must divide b + 1 and hence must be 2. But if 4 divides b - 1, then 4 does not divide b(b - 1), so b - 1 must be 0, 1 or 2. But it is now easy to check the cases a, b = (4, 3), (3, 2), (2, 1).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo94.html">6th APMO 1994</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+</HTML>
+

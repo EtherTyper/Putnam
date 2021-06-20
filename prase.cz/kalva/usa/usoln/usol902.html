@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 90/2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>19th USAMO 1990</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 2</b><br>
+
+<p>
+
+Define f<sub>1</sub>(x) = &radic;(x<sup>2</sup> + 48) and f<sub>n</sub>(x) =  &radic;(x<sup>2</sup> + 6f<sub>n-1</sub>(x) ). Find all real solutions to f<sub>n</sub>(x) = 2x.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: For each n, x = 4 is the only solution.
+
+<p>
+
+Obviously x = 4 is a solution. Since f<sub>n</sub>(x) &gt;= 0, any solution must be non-negative. So we restrict attention to x &ge; 0.
+
+<p>
+
+Suppose x &lt; 4. We show by induction that f<sub>n</sub>(x) &gt; 2x. For n = 1, the claim is equivalent to 4x<sup>2</sup> &lt; x<sup>2</sup> + 48, or x<sup>2</sup> &lt; 16, which is true. So suppose the result is true for n. Then x<sup>2</sup> + 6f<sub>n</sub>(x) &gt; x<sup>2</sup> + 12x. But x &lt; 4, so 3x<sup>2</sup> &lt; 12x, so 4x<sup>2</sup> &lt; x<sup>2</sup> + 12x. Hence f<sub>n+1</sub>(x) &gt; 2x, as required.
+
+<p>
+
+An exactly similar argument shows that f<sub>n</sub>(x) &lt; 2x for x &gt; 4. Hence x = 4 is the only solution.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa90.html">19th USAMO 1990</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

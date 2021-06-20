@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 00/2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>12th APMO 2000</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 2</b><br>
+<p>
+Find all permutations a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>9</sub> of 1, 2, ... , 9 such that a<sub>1</sub> + a<sub>2</sub> + a<sub>3</sub> + a<sub>4</sub> = a<sub>4</sub> + a<sub>5</sub> + a<sub>6</sub> + a<sub>7</sub> = a<sub>7</sub> + a<sub>8</sub> + a<sub>9</sub> + a<sub>1</sub> and a<sub>1</sub><sup>2</sup> + a<sub>2</sub><sup>2</sup> + a<sub>3</sub><sup>2</sup> + a<sub>4</sub><sup>2</sup> = a<sub>4</sub><sup>2</sup> + a<sub>5</sub><sup>2</sup> + a<sub>6</sub><sup>2</sup> + a<sub>7</sub><sup>2</sup> = a<sub>7</sub><sup>2</sup> + a<sub>8</sub><sup>2</sup> + a<sub>9</sub><sup>2</sup> + a<sub>1</sub><sup>2</sup>.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+We may start by assuming that a<sub>1</sub> &lt; a<sub>4</sub> &lt; a<sub>7</sub> and that a<sub>2</sub> &lt; a<sub>3</sub>, a<sub>5</sub> &lt; a<sub>6</sub>, a<sub>8</sub> &lt; a<sub>9</sub>.
+<p>
+Note that 1 + ... + 9 = 45 and 1<sup>2</sup> + ... + 9<sup>2</sup> = 285. Adding the three square equations together we get (a<sub>1</sub><sup>2</sup> + ... + a<sub>9</sub><sup>2</sup>) + a<sub>1</sub><sup>2</sup> + a<sub>4</sub><sup>2</sup> + a<sub>7</sub><sup>2</sup> = 285 + a<sub>1</sub><sup>2</sup> + a<sub>4</sub><sup>2</sup> + a<sub>7</sub><sup>2</sup>. The total must be a multiple of 3. But 285 is a multiple of 3, so a<sub>1</sub><sup>2</sup> + a<sub>4</sub><sup>2</sup> + a<sub>7</sub><sup>2</sup> must be a multiple of 3. Now 3<sup>2</sup>, 6<sup>2</sup> and 9<sup>2</sup> are all congruent to 0 mod 3 and the other squares are all congruent to 1 mod 3. Hence either a<sub>1</sub>, a<sub>4</sub> and a<sub>7</sub> are all multiples of 3, or none of them are. Since 45 is also a multiple of three a similar argument with the three linear equations shows that a<sub>1</sub> + a<sub>4</sub> + a<sub>7</sub> is a multiple of 3. So if none of a<sub>1</sub>, a<sub>4</sub>, a<sub>7</sub> are multiples of 3, then they are all congruent to 1 mod 3 or all congruent to 2 mod 3. Thus we have three cases: (1) a<sub>1</sub> = 3, a<sub>4</sub> = 6, a<sub>7</sub> = 9, (2) a<sub>1</sub> = 1, a<sub>4</sub> = 4, a<sub>7</sub> = 7, and (3) a<sub>1</sub> = 2, a<sub>4</sub> = 5, a<sub>7</sub> = 8.
+<p>
+In case (1), we have that each sum of squares equals 137. Hence a<sub>8</sub><sup>2</sup> + a<sub>9</sub><sup>2</sup> = 47. But 47 is not a sum of two squares, so this case gives no solutions.
+<p>
+In case (2), we have that each sum of squares is 117. Hence a<sub>5</sub><sup>2</sup> + a<sub>6</sub><sup>2</sup> = 52. But the only way of writing 52 as a sum of two squares is 4<sup>2</sup> + 6<sup>2</sup> and 4 is already taken by a<sub>4</sub>, so this case gives no solutions.
+<p>
+In case (3), we have that each sum of squares is 126 and each linear sum 20. We quickly find that the only solution is 2, 4, 9, 5, 1, 6, 8, 3, 7.
+<p>
+Obviously, this generates a large number of equivalent solutions. We can interchange a<sub>2</sub> and a<sub>3</sub>, or a<sub>5</sub> and a<sub>6</sub>, or a<sub>8</sub> and a<sub>9</sub>. We can also permute a<sub>1</sub>, a<sub>4</sub> and a<sub>7</sub>. So we get a total of 2 x 2 x 2 x 6 =48 solutions.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo00.html">12th APMO 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

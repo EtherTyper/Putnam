@@ -1,0 +1,58 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1972/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>33rd Putnam 1972</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+Let &sum;<sub>0</sub><sup>&infin;</sup> x<sup>n</sup>(x - 1)<sup>2n</sup> / n! = &sum;<sub>0</sub><sup>&infin;</sup> a<sub>n</sub> x<sup>n</sup>. Show that no three consecutive a<sub>n</sub> are zero.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let p(x) = x(x - 1)<sup>2</sup>, and f(x) = e<sup>p(x)</sup>. Then f(x) has the expansion given. Differentiating f ' = e<sup>p(x)</sup>p'(x) = f p' (*). Now since p is a polynomial of degree 3, we have p<sup>(n)</sup> = 0 for n &gt; = 4. So differentiating (*) n times we get: f<sup>(n+1)</sup> = nC0 f<sup>(n)</sup> p' + nC1 f<sup>(n-1)</sup> p'' + nC2 f<sup>(n-2)</sup> p'''. So if f<sup>(n)</sup>(0) = f<sup>(n-1)</sup>(0) = f<sup>(n-2)</sup>(0), then f<sup>(m)</sup>(0) = 0 for all m &ge; n - 2. In other words if three consecutive a<sub>n</sub> are zero then all subsequent a<sub>n</sub> are zero, and hence f(x) is a finite polynomial, which is impossible.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn72.html">33rd Putnam 1972</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

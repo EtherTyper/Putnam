@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 02/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>63rd Putnam 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+k and n are positive integers. Let f(x) = 1/(x<sup>k</sup> - 1). Let p(x) = (x<sup>k</sup> - 1)<sup>n+1</sup> f<sup>n</sup>(x), where f<sup>n</sup> is the nth derivative. Find p(1).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (-1)<sup>n+1</sup> n! k<sup>n</sup>.
+
+<p>
+
+A routine differentiation.
+
+<p>
+
+Let p<sub>n</sub>(x) = (x<sup>k</sup> - 1)<sup>n+1</sup>f<sup>n</sup>(x). So f<sup>n</sup> = p<sub>n</sub>/(x<sup>k</sup> - 1)<sup>n+1</sup>. Differentiating, f<sup>n+1</sup> = (p<sub>n</sub>' (x<sup>k</sup> - 1) - (n+1)kx<sup>k-1</sup>p<sub>n</sub>)/(x<sup>k</sup> - 1)<sup>n+2</sup>. Hence p<sub>n+1</sub>(1) = - (n+1)kp<sub>n</sub>(1). Also p<sub>1</sub>(1) = -k. Hence p<sub>n</sub>(1) = (-1)<sup>n</sup> n! k<sup>n</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn02.html">63rd Putnam 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Dec 2002
+
+<br>Last corrected/updated 16 Dec 02
+
+</BODY>
+
+
+
+</HTML>
+

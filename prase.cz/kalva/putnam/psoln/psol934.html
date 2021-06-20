@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1993/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1993</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Given a sequence of 19 positive (not necessarily distinct) integers not greater than 93, and a set of 93 positive (not necessarily distinct) integers not greater than 19. Show that we can find non-empty subsequences of the two sequences with equal sum. 
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<p><i>Moderately hard. It is not clear how to proceed.</i>
+
+<p>
+We establish the general case for 0 &lt; x<sub>1</sub> &le; x<sub>2</sub> &le; ... &le; x<sub>m</sub> &le; n, 0 &lt; y<sub>1</sub> &le; y<sub>2</sub> &le; ... &le; y<sub>n</sub> &le; m &le; n.
+
+<p>
+Let a<sub>h</sub> = x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>h</sub>, b<sub>k</sub> = y<sub>1</sub> + y<sub>2</sub> + ... + y<sub>k</sub>. Suppose that a<sub>m</sub> &le; b<sub>n</sub> (if not, we can just reverse the roles of x, a and y, b in what follows). For each i we have b<sub>n</sub> &ge; a<sub>m</sub> &ge; a<sub>i</sub>, so we may define f(i) as the smallest j such that b<sub>j</sub> &ge; a<sub>i</sub>. Now consider the set {b<sub>f(1)</sub> - a<sub>1</sub>, b<sub>f(2)</sub> - a<sub>2</sub>, ... , b<sub>f(m)</sub> - a<sub>m</sub>}. If any element is zero, then we are done, so we may assume that all elements are &ge; 1. Each element must be less than m, because if b<sub>f(i)</sub> &ge; a<sub>i</sub> + m, then b<sub>f(i)-1</sub> &gt;= a<sub>i</sub>, contradicting the minimality of f(i). So we have a set of m elements drawn from {1, 2, ... , m-1}. Hence there must be two elements, b<sub>f(r)</sub> - a<sub>r</sub> and b<sub>f(s)</sub> - a<sub>s</sub>, which are equal. Assume r &lt; s, then b<sub>f(s)-f(r)</sub> = a<sub>s-r</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn93.html">Putnam 1993</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

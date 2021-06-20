@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 40/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>3rd Putnam 1940</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Let S be the surface ax<sup>2</sup> + by<sup>2</sup> + cz<sup>2</sup> = 1 (a, b, c all non-zero), and let K be the sphere x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> = 1/a + 1/b + 1/c (known as the <i>director</i> sphere). Prove that if a point P lies on 3 mutually perpendicular planes, each of which is tangent to S, then P lies on K.
+
+<p>
+<i>Comment. The original question also asked for a proof that every point of K had this property, which is (a) false unless we allow planes which are asymptotes (or tangents at infinity), and (b) unreasonably hard - at least, I cannot see a neat proof.</i>
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Moderately hard.
+
+<p>
+
+Let f(x, y, z) = ax<sup>2</sup> + by<sup>2</sup> + cz<sup>2</sup>. Then the normal vector is the vector grad f, so the tangent plane at (u, v, w) is a.u.x + b.v.y + c.w.z = 1. 
+
+<p>Note that this does not pass through the origin. The general plane not through the origin has equation <b>p</b>.(<b>x</b> - &lambda;<b>p</b>) = 0 or <b>p.x</b> = &lambda;, where <b>x</b> is the vector (x, y, z) representing a general point on the plane, <b>p</b> = (p, q, r) is a unit vector normal to the plane, and &lambda; &gt; 0 is the distance of the plane from the origin. If this is a tangent plane at some point of the quadric, then a(p/&lambda;a)<sup>2</sup> + b(q/&lambda;b)<sup>2</sup> + c(r/&lambda;c)<sup>2</sup> = 1, or p<sup>2</sup>/a + q<sup>2</sup>/b + r<sup>2</sup>/c = &lambda;<sup>2</sup>.
+
+<p>
+So suppose P is the point of intersection of three perpendicular tangent planes p<sub>i</sub>x + q<sub>i</sub>y + r<sub>i</sub>z = &lambda;<sub>i</sub>, i = 1, 2, 3, where <b>p</b><sub>i</sub> are orthonormal vectors. The squared distance of P from the origin is &lambda;<sub>1</sub><sup>2</sup> + &lambda;<sub>2</sub><sup>2</sup> + &lambda;<sub>3</sub><sup>2</sup> = (p<sub>1</sub><sup>2</sup> + p<sub>2</sub><sup>2</sup> + p<sub>3</sub><sup>2</sup>)/a + (q<sub>1</sub><sup>2</sup> + q<sub>2</sub><sup>2</sup> + q<sub>3</sub><sup>2</sup>)/b + (r<sub>1</sub><sup>2</sup> + r<sub>2</sub><sup>2</sup> + r<sub>3</sub><sup>2</sup>)/c = 1/a + 1/b + 1/c, since <b>p</b><sub>i</sub> are orthonormal. [This is the key trick: if the rows of a matrix are orthonormal vectors, then the matrix is orthogonal and hence its <i>columns</i> are also orthonormal vectors.].
+
+<p>
+
+[For a proof of the italicized second part, see the book referred to below.]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+The original text of the problems and the official solutions are available in: A M Gleason, R E Greenwood & L M Kelly, The William Lowell Putnam Mathematical Competition, Problems and Solutions, 1938-1964, MAA 1980. Out of print, but available in some university libraries.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn40.html">3rd Putnam 1940</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

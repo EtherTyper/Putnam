@@ -1,0 +1,36 @@
+<HTML>
+
+<HEAD>
+<TITLE>APMO 03/2 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>15th APMO 2003</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 2</b>
+<p>
+A unit square lies across two parallel lines a unit distance apart, so that two triangular areas of the square lie outside the lines. Show that the sum of the perimeters of these two triangles is independent of how the square is placed.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+<img src="diag032.jpg">
+<p>
+Let the lines be L, L'. Let the square be ABA'B', with A, A' the two vertices not between L and L'. Let L meet AB at X and AB' at Y. Let L' meet A'B' at X' and A'B at Y'. So AXY and A'X'Y' are similar. Suppose angle AXY = x. If we move L towards A by a distance d perpendicular to itself, then AX is shortened by d cosec x. If L' remains a distance 1 from L, then A'X' is lengthened by d cosec x. The new triangle AXY is similar to the old. Suppose that perimeter AXY = k&middot;AX, then perimeter AXY is increased by kd cosec x. Since AXY and A'X'Y' are similar, perimeter A'X'Y' is shortened by kd cosec x, so the sum of their perimeters is unchanged. It remains to show that the sum of the perimeters does not depend on the angle x.
+<p>
+Let us move L towards A until L' passes through A', at which point the perimeter of A'X'Y' is zero. Now if h is the height of AXY (from the base XY), then 1 + h = AA' sin(45<sup>o</sup> + x) = sin x + cos x. The perimeter of AXY is h/sin x + h/cos x + h/(sin x cos x) = h(sin x + cos x + 1)/(sin x cos x) = (sin x + cos x - 1)(sin x + cos x + 1)/(sin x cos x) = 2, which is independent of x.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo03.html">15th APMO 2003</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+14 Aug 2003
+<br>Last corrected/updated 14 Aug 03
+</BODY>
+
+</HTML>
+

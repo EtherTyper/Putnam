@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1998/C1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>39th IMO 1998 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C1</b><br>
+<p>
+An m x n array of real numbers has the sum of each row and column integral. Show that each non-integral element x can be changed to [x] or [x] + 1, so that the row and column sums are unchanged.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Start by replacing every non-integral element x by [x] and marking it -. Then, taking each column in turn, take enough elements which have been rounded down and round them up instead so that the column total becomes correct. Mark + each element which is rounded up. Now let S be the sum over the rows of the non-negative difference between the row sum and the desired row sum. Then S must be zero or positive and even. If S is non-zero, we show how to make a series of changes each of which reduces S by 2.
+<p>
+If S is non-zero, then at least one row must have its sum too high. Take such a row R<sub>1</sub>. It must contain an element E<sub>1</sub>marked +. The column through this element has the correct total, so it must have an element E<sub>2</sub> marked -. Let R<sub>2</sub> be the row containing this element. If R<sub>2</sub>'s total is too low, then increasing E<sub>2</sub> by 1 and reducing E<sub>1</sub> by 1 will reduce S by 2. If R<sub>2</sub>'s total is not too low, then it must contain another element E'<sub>2</sub> marked +. The column containing this element has the correct total, so it must have another element E<sub>3</sub> marked -. Now continue this process. If we eventually reach a row R<sub>n</sub> with sum too low, then we can change all the E<sub>i</sub> and E'<sub>i</sub> and hence reduce S by 2. Note that the sequence R<sub>i</sub> may include the same row more than once. Suppose R<sub>i</sub> = R<sub>j</sub> and j &gt; i. Then since the row total is not too low, we must still be able to find an element E'<sub>j</sub> marked + which is distinct from E'<sub>i</sub>. The same is true if the sequence includes R<sub>i</sub> a third or fourth time. However, there are only finitely many elements available, so the sequence must eventually terminate. So we must eventually reach a row R<sub>n</sub> with sum too low. Thus if S is non-zero, then we can always reduce it. Repeating, we must eventually get S zero and hence both row and column sums correct.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh98.html">39th IMO shortlist 1998</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Aug 2002
+</BODY>
+
+</HTML>
+

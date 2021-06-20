@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 49/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>9th Putnam 1949</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Let (1 + x - &radic;(x<sup>2</sup> - 6x + 1) )/4 = &sum;<sub>1</sub><sup>&infin;</sup> a<sub>n</sub>x<sup>n</sup>. Show that all a<sub>n</sub> are positive integers.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We have 1 + x - &radic;(x<sup>2</sup> - 6x + 1) ) = 4 &sum; a<sub>n</sub> x<sup>n</sup>, and hence 1 + x + &radic;(x<sup>2</sup> - 6x + 1) ) = 2x + 2 - 4 &sum; a<sub>n</sub> x<sup>n</sup>. Multiplying, 1 + 2x + x<sup>2</sup> - x<sup>2</sup> + 6x - 1 = 8 x = 8(a<sub>1</sub>x + a<sub>2</sub>x<sup>2</sup> + ... ) (1 + (1 - 2a<sub>1</sub>)x - 2a<sub>2</sub>x<sup>2</sup> - 2a<sub>3</sub>x<sup>3</sup> - ... ). Hence:
+
+<pre>
+
+a<sub>1</sub> = 1
+
+a<sub>2</sub> + a<sub>1</sub>(1 - 2a<sub>1</sub>) = 0
+
+a<sub>3</sub> + a<sub>2</sub>(1 - 2a<sub>1</sub>) - 2a<sub>1</sub>a<sub>2</sub> = 0
+
+a<sub>4</sub> + a<sub>3</sub>(1 - 2a<sub>1</sub>) - 2a<sub>2</sub>a<sub>2</sub> - 2a<sub>1</sub>a<sub>3</sub> = 0
+
+...
+
+</pre>
+
+The nth equation has the form a<sub>n</sub> + combination of a<sub>1</sub>, ... , a<sub>n-1</sub> with integer coefficients, so by a simple induction, a<sub>n</sub> is integral.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn49.html">9th Putnam 1949</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

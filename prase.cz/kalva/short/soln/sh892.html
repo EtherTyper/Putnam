@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>30th IMO shortlist 1989/2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>30th IMO 1989 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 2</b><br>
+<p>
+Prove that for n &gt; 1 the polynomial x<sup>n</sup>/n! + x<sup>n-1</sup>/(n-1)! + ... + x/1! + 1 has no rational roots.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Let p be any prime. We show first that p<sup>k</sup> does not divide k! Take m so that p<sup>m</sup> &le; k &lt; p<sup>m+1</sup>. Then the highest power of p dividing k! is p<sup>r</sup>, where r = [k/p] + [k/p<sup>2</sup>] + [k/p<sup>3</sup>] + ... + [k/p<sup>m</sup>] &le; k/p + k/p<sup>2</sup> + ... + k/p<sup>m</sup> = k(1 - 1/p<sup>m</sup>)/(p - 1) &lt; k.
+<p>
+Suppose there is a rational root x of the polynomial. Put x = a/b, where a and b are coprime integers. Then a<sup>n</sup> + na<sup>n-1</sup>b + ... + (n-1)! a b<sup>n-1</sup> + n! b<sup>n</sup> = 0. So a<sup>n</sup> must be divisible by b. But a and b are coprime, so b must be 1, in other words, the root must be an integer.
+<p>
+Now take p to be a prime dividing n. Then p must divide a<sup>n</sup> and hence a. But we have  - n! = n! (a<sup>n</sup>/n! + a<sup>n-1</sup>/(n-1)! + ... + a<sup>1</sup>/1! ). Each term inside the parentheses is divisible by p, because p<sup>k</sup> divides a<sup>k</sup> but not k! So a higher power of p divides the rhs than the lhs. Contradiction.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh89.html">30th IMO shortlist 1989</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+28 Dec 2002
+<br>Last corrected/updated 28 Dec 02
+</BODY>
+
+</HTML>
+

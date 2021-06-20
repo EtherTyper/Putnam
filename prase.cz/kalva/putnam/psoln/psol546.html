@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 54/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>14th Putnam 1954</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+The real sequence a<sub>n</sub> satisfies a<sub>n</sub> = &sum;<sub>n+1</sub><sup>&infin;</sup> a<sub>k</sub><sup>2</sup>. Show &sum; a<sub>n</sub> does not converge unless all a<sub>n</sub> are zero.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Clearly a<sub>n</sub> &ge; 0. If any a<sub>n</sub> = 0, then all subsequent a<sub>i</sub> must be zero, and, by a trivial induction, all previous a<sub>i</sub>. So assume no a<sub>n</sub> = 0.
+
+<p>
+
+Notice that a<sub>n+1</sub> = a<sub>n</sub><sup>2</sup> + a<sub>n</sub>. But we have just shown that a<sub>n</sub><sup>2</sup> &gt; 0, so a<sub>n+1</sub> &gt; a<sub>n</sub>.
+
+<p>
+
+If the sum converges, then we can take n sufficiently large that a<sub>n+1</sub> + a<sub>n+2</sub> + a<sub>n+3</sub> + ... &lt; 1. Then a<sub>n</sub> = a<sub>n+1</sub><sup>2</sup> + a<sub>n+2</sub><sup>2</sup> + a<sub>n+3</sub><sup>2</sup> + ... &lt; a<sub>n</sub>(a<sub>n+1</sub> + a<sub>n+2</sub> + a<sub>n+3</sub> + ... ) &lt; a<sub>n</sub>. Contradiction. So the sum does not converge.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn54.html">14th Putnam 1954</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

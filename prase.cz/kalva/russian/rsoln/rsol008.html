@@ -1,0 +1,67 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 00/8 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 8</b>
+
+<p>
+
+We wish to place 5 stones with distinct weights in increasing order of weight. The stones are indistinguisable (apart from their weights). Nine questions of the form "Is it true that A &lt; B &lt C?" are allowed (and get a yes/no answer). Is that sufficient?
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+no
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+There are 120 possible orders for the weights. 20 will fit any given A &lt; B &lt; C. So a "No" answer can exclude at most 20 possible orders. Thus if the answer to the first 5 questions is "No", then there are still 20 possible orders after them. Now if a "No" to the next question leaves k possibilities, then a "Yes" will leave at least 20-k, so one answer must leave at least 10 possibilities. Similarly, one answer to the 7th question must leave at least 5 possibilities, one answer to the 8th question must leave at least 3 possibilities, and one answer to the 9th question must leave at least 2 possibilities.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus00.html">Russian 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 March 2004
+<br>Last corrected/updated 4 Mar 04
+
+</BODY>
+
+
+
+</HTML>
+

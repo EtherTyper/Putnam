@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>30th IMO shortlist 1989/16 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>30th IMO 1989 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 16</b><br>
+<p>
+A positive integer is written in each square of an m x n board. The allowed move is to add an integer k to each of two adjacent numbers (whose squares have a common side). Find a necessary and sufficient condition for it to be possible to get all numbers zero by a finite sequence of moves.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: color the squares alternately black and white as on a chessboard. We can get all zeros iff the sum of the numbers on the black squares equals the sum of the numbers on the white squares.
+<p>
+The condition is clearly necessary, because if &sum;<sub>black</sub> denotes the sum of the numbers on the black squares and &sum;<sub>white</sub> the sum of the numbers on the white squares, then &sum;<sub>black</sub> - &sum;<sub>white</sub> is invariant.
+<p>
+So suppose the condition holds. By adding enough to every adjacent pair in the second row, we can ensure that each number in the second row is at least as large as the integer above it in the first row. Then for each integer in the first row subtract it from itself and the integer below. That zeros the first row. Similarly, we can zero each row except the bottom row. 
+<p>
+We now work along the bottom row in a similar way. We start by adding enough to the integers in columns 2 and 3, so that the number in column 2 is at least as large as the number in column 1. Then subtract the number in column 1 from that in column 1 and column 2, thus zeroing the number in column 1. In this way we zero all except the last two numbers in the row. But by the invariant they must be equal, so we can zero them both simultaneously.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh89.html">30th IMO shortlist 1989</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+28 Dec 2002
+<br>Last corrected/updated 28 Dec 02
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1962/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>23rd Putnam 1962</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Let R be the reals, let N be the set of positive integers, and let P = {X <b>:</b> X &sube; N}. Find f <b>:</b> R &rarr; P such that f(a) &sub; f(b) (and f(a) &ne; f(b) ) if a &lt; b.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let Q be the rationals. Define g: Q &rarr; N as follows. For m/n where m and n are positive integers without any common factor, let g(m/n) = 2<sup>m</sup>3<sup>n</sup> and let g(-m/n) = 2<sup>m</sup>5<sup>n</sup>. Now define f: R &rarr; P by f(x) = { g(r) : r &lt;= x is rational }. We claim that f has the required property.
+
+<p>
+
+Clearly g is injective. Now suppose x &lt; y are reals. We can find a rational r such that x &lt; r &lt; y. So g(r) belongs to f(y) but not to f(x). But S belongs to f(x), then S = g(q) for some q in Q with q &lt; x. So q &lt; y and hence S belongs to f(y) also. So f(x) is a subset of f(y).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn62.html">23rd Putnam 1962</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

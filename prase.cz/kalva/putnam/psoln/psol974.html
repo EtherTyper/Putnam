@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1997/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+G is a group, not necessarily abelian. We write the operation as juxtapostion and the identity as 1. There is a function &phi; <b>:</b> G &rarr; G such that if abc = def = 1, then &phi;(a)&phi;(b)&phi;(c) = &phi;(d)&phi;(e)&phi;(f). Prove that there exists an element k &isin; G such that k&phi;(x) is a homomorphism.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Easy.</i>
+
+<p>
+x<sup>-1</sup>1 x = 1 = x<sup>-1</sup> x 1, so &phi;(x<sup>-1</sup>)&phi;(1)&phi;(x) = &phi;(x<sup>-1</sup>)&phi;(x)&phi;(1). Hence &phi;(1)&phi;(x) = &phi;(x)&phi;(1), so &phi;(1) commutes with all &phi;(x), and hence k = &phi;(1)<sup>-1</sup> also commutes with all &phi;(x).
+
+<p>
+x y (y<sup>-1</sup>x<sup>-1</sup>) = 1 = (x y)(y<sup>-1</sup>x<sup>-1</sup>) 1, so &phi;(x)&phi;(y)&phi;(y<sup>-1</sup>x<sup>-1</sup>) = &phi;(xy)&phi;(y<sup>-1</sup>x<sup>-1</sup>)&phi;(1). But &phi;(1) commutes, so &phi;(xy)&phi;(y<sup>-1</sup>x<sup>-1</sup>)&phi;(1) = &phi;(1)&phi;(xy)&phi;(y<sup>-1</sup>x<sup>-1</sup>) and hence &phi;(x)&phi;(y)&phi;(y<sup>-1</sup>x<sup>-1</sup>) = &phi;(1)&phi;(xy)&phi;(y<sup>-1</sup>x<sup>-1</sup>). So &phi;(x)&phi;(y) = &phi;(1)&phi;(xy), and hence k &phi;(xy) = k&phi;(x)k&phi;(y), as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn97.html">Putnam 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

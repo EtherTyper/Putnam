@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1997/7 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>38th IMO 1997 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 7</b><br>
+<p>
+ABCDEF is a convex hexagon with AB = BC, CD = DE, EF = FA. Show that BC/BE + DE/DA + FA/FC &ge; 3/2. When does equality occur?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p><i>Many thanks to David Krumm for the following solution</i>
+<p>
+We need Ptolemy's inequality - WX&middot;YZ + XY&middot;ZW &ge; WY&middot;XZ with equality iff the quadrilateral WXYZ is cyclic (or a straight line) - and Nesbitt's inequality: a/(b+c) + b/(a+c) + c/(a+b) &gt;= 3/2 for any positive numbers a, b, c. Both should be well-known. For example, taking a/(b+c) + 1 = (a+b+c)/(b+c) etc and (a+b+c) = (A + B + C)/2, where A = b+c, B = a+c, C = a+b, Nesbitt is equivalent to (A+B+C)/(1/A + 1/B + 1/C) &ge; 9, which is easily seen to be true since x + 1/x &ge; 2. The proof also shows that we have equality in Nesbitt iff a = b = c.
+<p>
+Applying Ptolemy to ACDE we get DE&middot;AC + DC&middot;AE &ge; DA&middot;CE. Using DE = DC, this becomes DE(AC + AE) &ge; DA&middot;CE or DE/DA &ge; CE/(AC + AE). Similarly (move on two letters) we get FA/FC &ge; EA/(CE + CA), and BC/BE &ge; EA/(EA + EC). Adding, and using Nesbitt we get the result. 
+<p>
+For equality we must have equality in each of the three Ptolemy relations and in the Nesbitt relation. Nesbitt equality implies ACE must be equilateral, so angle CAE = 60<sup>o</sup>. Then ACDE is cyclic, so angle D must be 120<sup>o</sup>. Similarly angles B and F must be 120<sup>o</sup>. Now each of the triangles ABC, CDE, EFA must be congruent (ABC is isosceles, so its angles are 30<sup>o</sup>, 120<sup>o</sup>, 30<sup>o</sup> and the long side AC is a side of the equilateral triangle). Thus the hexagon has all sides equal and all angles 120<sup>o</sup>, so it is regular. Conversely, it is obvious that if the hexagon is regular, then we have equality (because the long diagonal of a regular hexagon is twice as long as a side).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh97.html">38th IMO shortlist 1997</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+28 Apr 2003
+<br>Last corrected/updated 28 April 2003
+</BODY>
+
+</HTML>
+

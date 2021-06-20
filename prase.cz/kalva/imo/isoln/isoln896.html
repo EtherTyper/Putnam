@@ -1,0 +1,71 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1989/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1989</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+A permutation {x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>m</sub>} of the set {1, 2, ... , 2n} where n is a positive integer is said to have property P if |x<sub>i</sub> - x<sub>i+1</sub>| = n for at least one i in {1, 2, ... , 2n-1}. Show that for each n there are more permutations with property P than without.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+<i>from Arthur Engel, Problem-Solving Strategies, Springer 1998 [Problem books in mathematics series], ISBN 0387982191. A rather good training book.</i>
+
+<p>
+
+Let A<sub>k</sub> be the set of permutations with k and k+n in neighboring positions, and let A be the set of permutations with property P, so that A is the union of the A<sub>k</sub>.
+
+<p>
+Then |A| = Sum<sub>k</sub> |A<sub>k</sub>| - Sum<sub>k&lt;l</sub> |A<sub>k</sub>&cap;A<sub>l</sub>| + Sum<sub>k&lt;l&lt;m</sub> |A<sub>k</sub>&cap;A<sub>l</sub>&cap;A<sub>m</sub>| - ... . But this is an alternating sequence of monotonically decreasing terms, hence |A| &ge; &sum;<sub>k</sub> |A<sub>k</sub>| - Sum<sub>k&lt;l</sub> |A<sub>k</sub>&cap;A<sub>l</sub>|.
+
+<p>
+
+But |A<sub>k</sub>| = 2 (2n - 1)! (two orders for k, k+n and then (2n - 1)! ways of arranging the 2n - 1 items, treating k, k+n as a single item). Similarly, |A<sub>k</sub>&cap;A<sub>l</sub>| = 4 (2n - 2)! So |A| &ge; (2n - 2)! [n.2(2n -1) - n(n - 1)/2 4] = 2n<sup>2</sup> (2n - 2)! &gt; (2n)!/2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo89.html">30th IMO 1989</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+3 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

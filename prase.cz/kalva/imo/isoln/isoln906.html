@@ -1,0 +1,71 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1990/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1990</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+Prove that there exists a convex 1990-gon such that all its angles are equal and the lengths of the sides are the numbers 1<sup>2</sup>, 2<sup>2</sup>, ... , 1990<sup>2</sup> in some order.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+<i>By Robin Chapman, Dept of Maths, Macquarie University, Australia</i>
+
+<p>
+
+In the complex plane we can represent the sides as p<sub>n</sub><sup>2</sup>w<sup>n</sup>, where p<sub>n</sub> is a permutation of (1, 2, ... , 1990) and w is a primitive 1990th root of unity. 
+
+<p>The critical point is that 1990 is a product of more than 2 distinct primes: 1990 = 2&middot;5&middot;199. So we can write w = -1&middot;a&middot;b, where -1 is primitive 2nd root of unity, a is a primitive 5th root of unity, and b is a primitive 199th root of unity.
+
+<p>Now given one of the 1990th roots we may write it as (-1)<sup>i</sup>a<sup>j</sup>b<sup>k</sup>, where 0 &lt; i &lt; 2, 0 &lt; j &lt; 5, 0 &lt; k &lt; 199 and hence associate it with the integer r(i,j,k) = 1 + 995i + 199j + k. This is a bijection onto (1, 2, ... , 1990). We have to show that the sum of r(i,j,k)<sup>2</sup> (-1)<sup>i</sup>a<sup>j</sup>b<sup>k</sup> is zero.
+
+<p>
+We sum first over i. This gives -995<sup>2</sup> x sum of a<sup>j</sup>b<sup>k</sup> which is zero, and - 1990 x sum s(j,k) a<sup>j</sup>b<sup>k</sup>, where s(j,k) = 1 + 199j + k. So it is sufficient to show that the sum of s(j,k) a<sup>j</sup>b<sup>k</sup> is zero. We now sum over j. The 1 + k part of s(j,k) immediately gives zero. The 199j part gives a constant times b<sup>k</sup>, which gives zero when summed over k.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo90.html">31st IMO 1990</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

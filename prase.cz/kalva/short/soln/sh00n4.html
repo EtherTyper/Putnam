@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<TITLE>41st IMO shortlist 2000/N4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>41st IMO 2000 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N4</b><br>
+<p>
+Find all positive integers a, m, n such that a<sup>m</sup> + 1 divides (a + 1)<sup>n</sup>.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: (a, m, n) = (1, m, n), (a, 1, n) or (2, 3, k) where k &gt; 1.
+<p>
+It is obvious that (1, m, n) and (a, 1, n) are solutions, so assume a &gt; 1 and m &gt; 1. We show first that m must be odd.
+<p>
+Suppose there is an odd prime p dividing a<sup>m</sup> + 1. Then p must also divide (a + 1)<sup>n</sup> and hence (a + 1). So a = -1 mod p, so a<sup>m</sup> + 1 = (-1)<sup>m</sup> + 1 mod p. Hence m is odd. If there is no such prime p, then a<sup>m </sup> + 1 = 2<sup>k</sup> for some k. But a and m are assumed to be at least 2, so a<sup>m</sup> + 1 must be at least 5 and hence k &ge; 3. So a<sup>m</sup> = -1 mod 4. But squares can only be 0 or 1 mod 4, so a<sup>m</sup> cannot be a square, so m must be odd.
+<p>
+Suppose p divides m. Then (since m is odd) a<sup>p</sup> + 1 divides a<sup>m</sup> + 1 and hence (a + 1)<sup>n</sup>. But p is odd, so a + 1 divides a<sup>p</sup> + 1 and (a<sup>p</sup> + 1)/(a + 1) = a<sup>p-1</sup> - a<sup>p-2</sup> + a<sup>p-3</sup> - ... - p + 1 divides (a + 1)<sup>n-1</sup>. Put f(x) = x<sup>p-1</sup> - x<sup>p-2</sup> + ... - x + 1. Then f(-1) = p, so f(x) - p = (x + 1) g(x) for some polynomial g(x). Putting x = a, we get f(a) = (a + 1) g(a) + p. If a prime q divides f(a), then since f(a) divides (a + 1)<sup>n-1</sup>, q must divide (a + 1). Hence q divides p, so q = p. So f(a) = p<sup>k</sup> for some k &ge; 1. Since f(a) divides (a + 1)<sup>n-1</sup>, p must divide a + 1.
+<p>
+We show next that k = 1, so f(a) = p. If p<sup>2</sup> divides (a + 1), then f(a) = (a + 1) g(a) + p implies that p<sup>2</sup> does not divide f(a). If p<sup>2</sup> does not divide (a + 1), then (a + 1) = ph (with h not divisible by p). So f(a) = (a<sup>p</sup> + 1)/(a + 1) = ( (1 + ph - 1)<sup>p</sup>)/ph = ( 1 - 1 + p<sup>2</sup>h + terms divisible by p<sup>3</sup>)/ph = p mod p<sup>2</sup>, so again p<sup>2</sup> does not divide f(a). So in any case f(a) = p.
+<p>
+Now (a<sup>2</sup> - a) &ge; 2, (a<sup>4</sup> - a<sup>3</sup>) &ge; 8 and obviously (a<sup>2r</sup> - a<sup>2r-1</sup>) &ge; 2 for r &ge; 2. So f(a) &ge; 11 &gt; 5 for p = 5, and hence by a trivial induction f(a) &gt; p for p &gt; 5. So the only possibility is p = 3. Then we have a<sup>2</sup> - a + 1 = 3 and hence a = 2. 
+<p>
+So far we have established that a = 2 and that m is a power of 3. But (2<sup>9</sup> + 1) = 513, which is not a power of 3 and so cannot divide (2 + 1)<sup>n</sup>. But (2<sup>27</sup> + 1), (2<sup>81</sup> + 1), ... are all divisible by (2<sup>9</sup> + 1) and hence are also not powers of 3. So m must be 3. Finally, we require that (a<sup>m</sup> + 1) = 9 divides (2 + 1)<sup>n</sup>, so n &ge; 2.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh00.html">41st IMO shortlist 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

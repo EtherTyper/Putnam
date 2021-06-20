@@ -1,0 +1,100 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 87/5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>16th USAMO 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 5</b><br>
+
+<p>
+
+a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>n</sub> is a sequence of 0s and 1s. T is the number of triples (a<sub>i</sub>, a<sub>j</sub>, a<sub>k</sub>) with i &lt; j &lt; k which are not equal to (0, 1, 0) or (1, 0, 1). For 1 &le; i &le; n, f(i) is the number of j &lt; i with a<sub>j</sub> = a<sub>i</sub> plus the number of j &gt; i with a<sub>j</sub> &ne; a<sub>i</sub>. Show that T = f(1) (f(1) - 1)/2 + f(2) (f(2) - 1)/2 + ... + f(n) (f(n) - 1)/2. If n is odd, what is the smallest value of T?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+For n odd, the smallest value of T is n(n-1)(n-3)/8 achieved by 01010... 010.
+
+<p>
+
+Suppose a particular a<sub>i</sub> = 0. Let S<sub>i</sub> be the set of a<sub>j</sub> with j &lt; i and a<sub>j</sub> = a<sub>i</sub> and a<sub>j</sub> with j &gt; i and a<sub>j</sub> &ne; a<sub>i</sub>. Suppose we take any two members of S<sub>i</sub> and consider the triple formed with a<sub>i</sub> itself. Surprisingly perhaps, they are all of the required form (a<sub>i</sub> is bold):
+
+<pre>
+
+... 0 ... 0 ... <b>0</b>
+
+... 0 ... <b>0</b> ... 1
+
+... <b>0</b> ... 1 ... 1
+
+</pre>
+
+Similarly, if a<sub>i</sub> = 1:
+
+<pre>
+
+... 1 ... 1 ... <b>1</b>
+
+... 1 ... <b>1</b> ... 0
+
+... <b>1</b> ... 0 ... 0
+
+</pre>
+
+Conversely, any triple of the required form can be considered (uniquely) to be an a<sub>i</sub> with members of the triple before it equal to it and members of the triple after it unequal to it. Since f(m) ( f(m) - 1) is the number of ways of choosing two items from f(m), we have established that T = &sum; f(m) ( f(m) - 1).
+
+<p>
+
+We show that &sum; f(m) = n(n-1)/2 (and is hence independent of the details of the particular sequence a<sub>i</sub> - it depends only on its length). In the case of a sequence of all 0s, we have f(1) = 0, f(2) = 1, ... , f(n) = n-1, so &sum; f(m) = n(n-1)/2. Now suppose we have a particular sequence and we change a<sub>i</sub> from 0 to 1. Suppose there are a 0s before a<sub>i</sub>, b 1s before a<sub>i</sub>, c 0s after a<sub>i</sub> and d 1s after a<sub>i</sub>. Then the value of f(i) is changed from a + d to b + c, an increase of (b - a) + (c - d). The value of f(j) with j &lt; i is decreased by 1 if f(j) is 0 and increased by 1 if f(j) is 0. So in total there is an increase of (a - b) for such j. Similarly, for j &gt; i, the value of f(j) is decreased by 1 if f(j) is 0 and increased by 1 if f(j) is 1, a net increase of (d - c). Thus overall &sum; f(m) is increased by (b - a) + (c - d) + (a - b) + (d - c) = 0. But by a sequence of such changes we can get to any sequence a<sub>i</sub>, so all sequences (of length n) have the same value for &sum; f(m).
+
+<p>
+
+Thus T is minimised when &sum; f(m)<sup>2</sup> is minimised. But since &sum; f(m) is fixed, that is achieved when the f(m) are as equal as possible. If n =2k+1, then &sum; f(m) = n(n-1)/2, so the average value of f(m) is exactly k, so we look for an arrangement with all f(m) = k. It is not hard to see that 01010...1010 works. So this gives T = &sum; k(k-1)/2 = n(n-1)(n-3)/8. 
+
+<p>
+
+The question does not ask for it, but the even case is also straightforward. If n = 2k, then the best we can hope for is k values of k and k values of k-1, so that &sum; f(m) = k.k + k.(k-1) = k(2k-1) = n(n-1)/2. That is achieved by 0101...0101 (all the 0s have f(m) = k and all the 1s have f(m) = k-1). Hence T = k.k(k-1)/2 + (k-1).(k-1)(k-2)/2 = (k-1)(2k<sup>2</sup>-3k+2)/2 = (n-2)(n<sup>2</sup>-3n+4)/8.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa87.html">16th USAMO 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

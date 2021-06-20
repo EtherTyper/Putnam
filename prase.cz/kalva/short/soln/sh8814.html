@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<TITLE>29th IMO shortlist 1988/14 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>29th IMO 1988 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 14</b>
+<p>
+For what values of n, does there exist an n x n array of entries 0, &plusmn;1 such that all rows and columns have different sums?
+<p>
+&nbsp;<p>
+<b>Answer</b>
+n even.
+<p>
+<b>Solution</b>
+<p>
+For n = 2m we may take:
+<pre>
+ 1    1    1    1    1    1
+-1    1    1    1    1    1
+-1   -1    1    1    1    1
+-1   -1   -1    0    1    1
+-1   -1   -1   -1    0    1
+-1   -1   -1   -1   -1    0
+</pre>
+Thus rows 1, 2, ... , m have sums 2m, 2m-2, 2m-4, ... , 2, and the rows m+1, m+2, ... , 2m have sums -1, -3, ... , -(2m-1). Columns 1, 2, ... , m have sums -(2m-2), -(2m-4), ... , 0, and columns m+1, ... , 2m have sums 1, 3, 5, ... , 2m-1. So we get each of the sums -(2m-1), -(2m-2), ... , -1, 0, 1, 2, ... , 2m just once.
+<p>
+Now suppose that we have a solution a<sub>ij</sub> for n. Let the row sums be r<sub>i</sub> and the column sums be c<sub>j</sub>. The r<sub>i</sub> and c<sub>j</sub> are all different and all lie in the range -n to n. There are 2n+1 values in that range. Let the value in the range -n to n not taken by any row or column sum be N. 
+<p>
+Suppose that N = 0. Suppose there are k positive row sums. Then there are n-k negative row sums, n-k positive column sums and k negative column sums. 
+<p>
+Suppose N &gt; 0. Then n of the sums are negative and n are non-negative. So if there are k non-negative row sums, then there are n-k negative row sums, n-k non-negative column sums and k negative column sums. 
+<p>
+Similarly, if N &lt; 0, then n of the sums are positive and n are non-positive. So if there are k positive row sums, then there are n-k non-positive row sums, n-k positive column sums and k non-positive column sums. 
+<p>
+Thus whatever the value of N, we may assume that there are k row sums &ge; 0, n-k row sums &le; 0, n-k column sums &ge; 0, and k column sums &le; 0. Let L be the set of row indices for which the row sum is &ge; 0, and R the set for which it is &le; 0. Similarly, let L' be the set of column indices for which the column sum is &ge; 0, and R' the set for which it is &le; 0.
+<p>
+Then we have &sum; |r<sub>i</sub>| + &sum; |c<sub>j</sub>| = &sum;<sub>L</sub> r<sub>i</sub> - &sum;<sub>R</sub> r<sub>i</sub> + &sum;<sub>L'</sub> c<sub>j</sub> - &sum;<sub>R'</sub> c<sub>j</sub> = &sum;<sub>LL'</sub> + &sum;<sub>LR'</sub> - &sum;<sub>RL'</sub> - &sum;<sub>RR'</sub> + &sum;<sub>LL'</sub> + &sum;<sub>RL'</sub> - &sum;<sub>LR'</sub> - &sum;<sub>RR'</sub>, where &sum;<sub>LL'</sub> denotes the sum of a<sub>ij</sub> for i in L and j in L' (and similarly for the other terms) = 2 &sum;<sub>LL'</sub> - 2 &sum;<sub>RR'</sub>. But &sum;<sub>LL'</sub> and &sum;<sub>RR'</sub> each have k(n-k) terms, each of which is at most 1, so 2 &sum;<sub>LL'</sub> - 2 &sum;<sub>RR'</sub> &le; 4k(n-k). Hence &sum; |r<sub>i</sub>| + &sum; |c<sub>j</sub>| &le; 4k(n-k). But &sum; |r<sub>i</sub>| + &sum; |c<sub>j</sub>| = 2(1 + 2 + ... + n) - |N| = n(n+1) - |N| &ge; n<sup>2</sup>, so n<sup>2</sup> &lt;= 4k(n-k). But n<sup>2</sup> - 4k(n-k) = (n - 2k)<sup>2</sup>, so if n is odd then n<sup>2</sup> &gt; 4k(n - k). Contradiction.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh88.html">29th IMO shortlist 1988</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+16 Dec 2002
+</BODY>
+
+</HTML>
+

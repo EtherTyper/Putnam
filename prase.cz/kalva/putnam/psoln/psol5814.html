@@ -1,0 +1,58 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>18th Putnam 1958/B7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>18th Putnam 1958</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B7</b><br>
+
+<p>
+
+R is the reals. f <b>:</b> [a, b] &rarr; R is continuous and &int;<sub>a</sub><sup>b</sup> x<sup>n</sup>f(x) dx = 0 for all non-negative integers n. Show that f(x) = 0 for all x.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We deduce immediately that &int;<sub>a</sub><sup>b</sup> x<sup>n</sup>f(x) p(x) dx = 0 for any polynomial p(x). We now need the Weierstrass approximation theorem: we can uniformly approximate any continuous function on a compact set by polynomials. In other words, we can find a polynomial p(x) such that |f(x) - p(x)| &lt; &epsilon; for all x in [a, b]. Also, since [a, b] is compact, f must be bounded, say by k, so |f(x)| &lt; k for all x in [a, b]. Now we have that |&int;<sub>a</sub><sup>b</sup>f(x)<sup>2</sup> dx| = |&int; f(x) (f(x) - p(x)) dx| &le; &int; |f(x)| |f(x) - p(x)| dx &le; (b - a) k &epsilon;, which can be made arbitrarily small by choosing &epsilon; sufficiently small. Hence &int;<sub>a</sub><sup>b</sup>f(x)<sup>2</sup> dx = 0, so f(x) = 0 throughout the interval.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn58.html">18th Putnam 1958</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

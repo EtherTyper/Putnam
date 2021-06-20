@@ -1,0 +1,58 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Vietnam 64/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>3rd VMO 1964</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b>
+
+<p>
+
+Define the sequence of positive integers f<sub>n</sub> by f<sub>0</sub> = 1, f<sub>1</sub> = 1, f<sub>n+2</sub> = f<sub>n+1</sub> + f<sub>n</sub>. Show that f<sub>n</sub> = (a<sup>n+1</sup> - b<sup>n+1</sup>)/&radic;5, where a, b are real numbers such that a + b = 1, ab = -1 and a &gt; b.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+Put a = (1+&radic;5)/2, b = (1-&radic;5)/2. Then a, b are the roots of x<sup>2</sup> - x - 1 = 0 and satisfy a + b = 1, ab = -1. We show by induction that f<sub>n</sub> = (a<sup>n+1</sup> - b<sup>n+1</sup>)/&radic;5.  We have f<sub>0</sub> = (a-b)/&radic;5 = 1, f<sub>1</sub> = (a<sup>2</sup>-b<sup>2</sup>)/&radic;5 = (a+1 - b-1)/&radic;5 = 1, so the result is true for n = 0, 1. Finally, suppose f<sub>n</sub> = (a<sup>n+1</sup> - b<sup>n+1</sup>)/&radic;5 and f<sub>n+1</sub> = (a<sup>n+2</sup> - b<sup>n+2</sup>)/&radic;5. Then f<sub>n+2</sub> = f<sub>n+1</sub> + f<sub>n</sub> = (1/&radic;5)(a<sup>n+1</sup>(a+1) - b<sup>n+1</sup>(b+1) ) =  (a<sup>n+1</sup>a<sup>2</sup> - b<sup>n+1</sup>b<sup>2</sup>)/&radic;5, so the result is true for n+1.
+<p>
+<i>Thanks to Suat Namli</i>
+<p>
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../viet64.html">3rd VMO 1964</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 March 2004
+<br>Last corrected/updated 7 Mar 04
+
+</BODY>
+
+
+
+</HTML>
+

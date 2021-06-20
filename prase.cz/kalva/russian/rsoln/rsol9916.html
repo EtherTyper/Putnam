@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 99/16 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 16</b>
+
+<p>
+
+Do there exist 19 distinct positive integers whose sum is 1999 and each of which has the same digit sum?
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+no
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Suppose each of the integers has digit sum k. Then each number = k mod 9 and so their sum = 19k mod 9. But their sum is 1999 = 1 mod 9. Hence k = 1 mod 9. So k = 1 or 10 or k &ge; 19. If k = 1, then the only possible numbers under 1999 are 1, 10, 100, 1000, so we cannot get 19 distinct integers. If k &ge; 19, then each number must have at least 3 digits. So their sum is at least 100 + 101 + ... + 118 = 2071 &gt; 1999. So we must have k = 10.
+<p>
+The 20 smallest integers with digit sum 10 are: 19, 28, 37, 46, 55, 64, 73, 82, 91, 109, 118, 127, 136, 145, 154, 163, 172, 181, 190, 208. The sum of the first 19 is 1990, which is too small. However, the next smallest sum comes from replacing 190 by 208, but that gives 2008, which is too large.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus99.html">Russian 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 March 2004
+<br>Last corrected/updated 4 Mar 04
+
+</BODY>
+
+
+
+</HTML>
+

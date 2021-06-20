@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1969/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>30th Putnam 1969</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+A is an n x n matrix with elements a<sub>ij</sub> = |i - j|. Show that the determinant |A| = (-1)<sup>n-1</sup> (n - 1) 2<sup>n-2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+For i = 1, 2, 3, ... , n-2 subtract twice row i+1 from row i and add row i+2 to row i. For i &lt; n-1, row i becomes all 0s except for a 2 in column i+1.
+
+<p>
+
+Now expand successively by the first, second, third ... rows to get (-2)<sup>n-2</sup> times the 2 x 2 determinant with first row n-2, 1 and second row n-1, 0. This 2 x 2 determinant has value -(n-1), so the |A| = (-1)<sup>n-1</sup> (n-1) 2<sup>n-2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn69.html">30th Putnam 1969</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

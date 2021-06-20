@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 51/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>11th Putnam 1951</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Find &sum;<sub>0</sub><sup>&infin;</sup> (-1)<sup>n</sup>/(3n + 1).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We have ln(1 + x) = x - x<sup>2</sup>/2 + x<sup>3</sup>/3 - x<sup>4</sup>/4 + ...  (1). Put &omega; = e<sup>2&pi;i/3</sup>, so that &omega;<sup>3</sup> = 1 and 1 + &omega; + &omega;<sup>2</sup> = 1. Then &omega;<sup>2</sup> ln(1 + &omega;x) = x - &omega;x<sup>2</sup>/2 + &omega;<sup>2</sup>x<sup>3</sup>/3 - x<sup>4</sup>/4 + ... (2) and <font face="symbol">w</font> ln(1 + &omega;<sup>2</sup>x) = x - &omega;<sup>2</sup>x<sup>2</sup>/2 + &omega;x<sup>3</sup>/3 - x<sup>4</sup>/4 + ... (3).
+
+<p>
+
+Adding (1), (2), (3) we get 3(x - x<sup>4</sup>/4 + x<sup>7</sup>/7 - ... ) = ln(1 + x) + &omega;<sup>2</sup> ln(1 + &omega;x) + &omega; ln(1 + &omega;<sup>2</sup>x). Hence the required series sums to 1/3 (ln 2 + &omega;<sup>2</sup> ln(1 + &omega;) + &omega; ln(1 + &omega;<sup>2</sup>) ).
+
+<p>
+
+If k = ln(1 + &omega;), then e<sup>k</sup> = 1 + &omega; = - &omega;<sup>2</sup> = e<sup>i&pi;/3</sup>, so k = i&pi;/3. Hence &omega;<sup>2</sup> ln(1 + &omega;) = -(1 + i&radic;3)/2 i&pi;/3 = &pi;/2&radic;3 - i&pi;/6. Similarly, &omega; ln(1 + &omega;<sup>2</sup>) = -i&pi;/3 (-1/2 + i&radic;3/2) = &pi;/2&radic;3 + i&pi;/6. Hence the series sums to 1/3 ln 2 + &pi;/3&radic;3.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn51.html">11th Putnam 1951</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

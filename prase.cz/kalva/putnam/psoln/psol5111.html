@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 51/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>11th Putnam 1951</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Can we find four distinct concentric circles all touching an ellipse?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes, we can find four such circles for any ellipse except the circle.
+
+<p>
+
+We show first that we can find four such circles for any non-circular ellipse. Let the ellipse have centre O, major axis AB (length 2a) and minor axis CD (length 2b). Take a point P with OP &lt; (a - b)/2. Then using the triangle inequality we have PA &gt; OA - OP = (a + b)/2, PB &gt; OB - OP = (a + b)/2. PC &lt; OC + OP = (a + b)/2, PD &lt; OD + OP = (a + b)/2. Put k = (a + b)/2. Then, if Q is a point on the ellipse, (PQ - k) is positive at A and B and negative at C and D. Hence there must be at least four points Q on the ellipse at which it is stationary and hence at which PQ is normal to the ellipse. There is a point A' near A which is a maximum and hence has PA' &gt; k. Similarly, there is a point B' near B with PB' &gt; k. There is a point C' near C with PC' &lt; k and a point D' near D with PD' &lt; k. Let us assume that P is in the quadrant AOC and not on either axis. The reflection D'' of D' in the line AB lies at or near C' and hence has PD'' &gt;= PC' (which is known to be a minimum). Put P lies closer to D'' than to D'. Hence PC' &lt; PD'. A similar argument shows that PB' &gt; PA'. So we have PB' &gt; PA' &gt; k &gt; PD' &gt; PC'. Thus the circles centre P through A', B', C' and D' are all distinct and all touch the ellipse.
+
+<p>
+
+Note that we cannot find 4 circles in the case when the ellipse is circular. For given a point P and a circle E centre O, a circle centre P can only touch E on the line OP, but that implies there can only be two such circles.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn51.html">11th Putnam 1951</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

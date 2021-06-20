@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1960/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>21st Putnam 1960</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Define a<sub>n</sub> by a<sub>0</sub> = 0, a<sub>n+1</sub> = 1 + sin(a<sub>n</sub> - 1). Find lim (&sum;<sub>0</sub><sup>n</sup> a<sub>i</sub>)/n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 1.
+
+<p>
+
+Note that 1 - a<sub>n+1</sub> = sin (1 - a<sub>n</sub>). Put c<sub>n</sub> = 1 - a<sub>n</sub>. Note that c<sub>0</sub> belongs to the interval (0, 1]. Now for x in (0, 1] we have that sin x &lt; x and sin x is also in (0 , 1]. So it follows (by a trivial induction) that 1 = c<sub>0</sub> &gt; c<sub>1</sub> &gt; c<sub>2</sub> &gt; ... &gt; c<sub>n</sub> &gt; 0. So c<sub>n</sub> is a monotonically decreasing sequence bounded below by 0. Hence it must tend to a limit c &ge; 0. But c must satisfy c = sin c. Hence c = 0. Hence a<sub>n</sub> converges to 1. Hence (&sum;<sub>0</sub><sup>n</sup> a<sub>i</sub>)/n converges to 1 also.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn60.html">21st Putnam 1960</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

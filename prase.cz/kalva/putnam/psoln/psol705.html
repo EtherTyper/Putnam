@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 70/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>31st Putnam 1970</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Find the radius of the largest circle on an ellipsoid with semi-axes a &gt; b &gt; c.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: b.
+
+<p>
+
+A circle lies in a plane, so we consider planes cutting the ellipsoid. The intersection of any plane P with the ellipsoid is an ellipse (assuming it cuts the ellipsoid in more than one point). That is fairly obvious. Substitute the linear equation for the plane into the quadratic equation for the ellipsoid and we get a quadratic equation for the projection of the intersection onto one of the coordinate planes. This must be a conic and, since bounded, an ellipse. Projecting back onto P shows that the intersection is an ellipse.
+
+<p>
+
+It is less obvious, but true, that parallel planes give similar ellipses. So to maximise the size we take the plane P through the centre of the ellipsoid. Suppose its intersection with the ellipsoid is a circle K. P cannot be normal to one of the semi-axes, because then its intersection is certainly an ellipse with unequal semi-axes. So P must meet the bc plane in a line. This line is a diameter of K. But it is also a diameter of an ellipse with semi-major axes b and c, so it has length at most 2b, so K has diameter is at most 2b. Similarly P meets the ab plane in a line, which has length at least 2b, so the diameter of K is at least 2b. So if K has radius b.
+
+<p>
+
+It remains to show that some planes do intersect the ellipsoid in a circle. Consider a plane through the semi-major axis b of the ellipsoid. The intersection K clearly has one diameter 2b. Moreover, the ellipse K is symmetrical about this diameter, so it must be one of its two semi-major axes. If we start with the plane also containing the semi-major axis c of the ellipsoid, then K has another diameter perpendicular to the first and length 2c. This must be the other semi-major axis of K. As we rotate the plane through a right-angle, the length of this diameter increases continuously to 2a. So at some angle it must be 2b. But an ellipse with equal semi-major axes is a circle.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn70.html">31st Putnam 1970</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

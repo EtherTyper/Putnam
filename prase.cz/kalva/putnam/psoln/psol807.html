@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 80/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>41st Putnam 1980</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+For which real k do we have cosh x &le; exp(k x<sup>2</sup>) for all real x?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: k &ge; 1/2.
+
+<p>
+
+cosh x = 1 + x<sup>2</sup>/2! + x<sup>4</sup>/4! + ... + x<sup>2n</sup>/(2n)! + ...  and exp(x<sup>2</sup>/2) = 1 + x<sup>2</sup>/2 + x<sup>4</sup>/8 + ... + x<sup>2n</sup>/(2<sup>n</sup>n!). But 2<sup>n</sup>n! = 2n.(2n - 2).(2n - 4) ... 2 &lt; (2n)! for n &gt; 1, so cosh x &lt; e<sup>x<sup>2</sup>/2</sup> for all x. Hence the inequality holds for k &ge; 1/2.
+
+<p>
+
+cosh x = 1 + x<sup>2</sup>/2 + o(x), exp(k x<sup>2</sup>) = 1 + kx<sup>2</sup> + o(x). So if k &lt; 1/2, then cosh x &gt; exp(k x<sup>2</sup>) for sufficiently small x. Thus the inequality does not hold for k &lt; 1/2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn80.html">41st Putnam 1980</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+10 Dec 1999
+
+<br>Last corrected/updated 21 Nov 02
+
+</BODY>
+
+
+
+</HTML>
+

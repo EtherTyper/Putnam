@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1972/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>33rd Putnam 1972</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b>
+
+<p>
+
+The polynomial p(x) has all coefficients 0 or 1, and p(0) = 1. Show that if the complex number z is a root, then |z| &ge; (&radic;5 - 1)/2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Let h = (&radic;5 - 1)/2. h is approx 0. 618, so certainly if |z| &ge; 1, then |z| &gt; h. So it is sufficient to show that if z is a root with |z| &lt; 1, then |z| &ge; h.
+
+<p>
+
+For such values of z, 1 + z + z<sup>2</sup> + ... converges, so we have 2 + z + z<sup>2</sup> + z<sup>3</sup> + ... - 2 p(z) = &plusmn; z &plusmn; z<sup>2</sup> &plusmn; z<sup>3</sup> &plusmn; ... . Now |rhs| &le; |z| + |z<sup>2</sup>| + ... = |z|/(1 - |z| ). If z is a root, then p(z) = 0, so lhs = 2 + z + z<sup>2</sup> + ...  = 2 + z/(1 - z) . If we could show that |lhs| &ge; (2 + |z|)/(1 + |z|), then we would have |z|/(1 - |z|) &ge; (2 + |z|)/(1 + |z|) and hence |z|<sup>2</sup> + |z| - 1 &ge; 0. But |z| &ge; 0, so |z| &ge; h.
+
+<p>
+We require |2 - z| (1 + |z|) &ge; |1 - z| (2 + |z|). Squaring and using the polar form z = r e<sup>i&theta;</sup>, this is equivalent to (4 - 4r cos &theta; + r<sup>2</sup>)(1 + r)<sup>2</sup> &ge; (1 - 2r cos &theta; + r<sup>2</sup>) (2 + r)<sup>2</sup>, or after some simplification, 2r (1 - r<sup>2</sup>)(1 + cos &theta;) &ge; 0, which is true. 
+<p>
+
+<i>Many thanks to Thomas Linhart for correcting an error in the original proof.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn72.html">33rd Putnam 1972</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Jan 2001
+<br>Last corrected/updated 19 Aug 2003
+
+</BODY>
+
+
+
+</HTML>
+

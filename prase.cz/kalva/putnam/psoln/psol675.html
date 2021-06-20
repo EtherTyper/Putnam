@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1967/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>28th Putnam 1967</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+K is a convex, finite or infinite, region of the plane, whose boundary is a union of a finite number of straight line segments. Its area is at least &pi;/4. Show that we can find points P, Q in K such that PQ = 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Suppose the result is false, so that the maximum distance is 2d &lt; 1. Take a diameter of K (in other words two points A, B for which AB = 2d). Let the x-axis lie along this diameter with the origin at its midpoint. Take the y-axis perpendicular to the x-axis as usual. Then K lies entirely between x = -d and x = +d. Let t(x) be the top boundary of K (above the x-axis) and -b(x) be the bottom boundary of K (below the x-axis).
+
+<p>
+
+The area A of K is the area under the curve t(x) plus the area between b(x) and the x-axis. In other words A = &int;<sub>-d</sub><sup>d</sup> t(x) dx + &int;<sub>-d</sub><sup>d</sup> b(x) dx = &int;<sub>-d</sub><sup>d</sup> t(x) dx + &int;<sub>-d</sub><sup>d</sup> b(-x) dx = &int;<sub>-d</sub><sup>d</sup>( t(x) + b(-x) ) dx. Now (t(x) + b(-x))<sup>2</sup> = D<sup>2</sup> - (2x)<sup>2</sup>, where D is the distance between the two points (x, t(x)) and (-x, b(-x)). Certainly, D &lt; 1, so &int;<sub>-d</sub><sup>d</sup>( t(x) + b(-x) ) dx &lt; &int;<sub>-d</sub><sup>d</sup> &radic;( 1 - 4x<sup>2</sup> ) dx.
+
+<p>
+
+The indefinite integral is 1/2 &radic;( 1 - 4x<sup>2</sup>) + (1/4) sin<sup>-1</sup>(2x), so integrated between -1/2 and 1/2 it gives &pi;/4. The integrand is positive, so between -d and d it gives a smaller result. In other words we have established that if 2d &lt; 1, then A &lt; &pi;/4. Contradiction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn67.html">28th Putnam 1967</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

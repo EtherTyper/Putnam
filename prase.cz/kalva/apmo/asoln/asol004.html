@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 00/4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>12th APMO 2000</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 4</b><br>
+<p>
+If m &lt; n are positive integers prove that n<sup>n</sup>/(m<sup>m</sup> (n-m)<sup>n-m</sup>) &gt; n!/( m! (n-m)! ) &gt; n<sup>n</sup>/( m<sup>m</sup>(n+1) (n-m)<sup>n-m</sup>).
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+The key is to consider the binomial expansion (m + n-m)<sup>n</sup>. This is a sum of positive terms, one of which is nCm m<sup>m</sup>(n-m)<sup>n-m</sup>, where nCm is the binomial coefficient n!/( m! (n-m)! ). Hence nCm m<sup>m</sup>(n-m)<sup>n-m</sup> &lt; n<sup>n</sup>, which is one of the required inequalities.
+<p>
+We will show that nCm m<sup>m</sup>(n-m)<sup>n-m</sup> is the largest term in the binomial expansion. It then follows that (n+1) nCm m<sup>m</sup>(n-m)<sup>n-m</sup> &gt; n<sup>n</sup>, which is the other required inequality.
+<p>
+Comparing the rth term nCr m<sup>r</sup>(n-m)<sup>n-r</sup> with the r+1th term nCr+1 m<sup>r+1</sup>(n-m)<sup>n-r-1</sup> we see that the rth term is strictly larger for r &ge; m and smaller for r &lt; m. Hence the mth term is larger than the succeeding terms and also larger than the preceding terms.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo00.html">12th APMO 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

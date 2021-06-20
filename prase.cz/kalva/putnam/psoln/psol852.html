@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1985/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>46th Putnam 1985</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+ABC is an acute-angled triangle with area 1. A rectangle R has its vertices R<sub>i</sub> on the sides of the triangle, R<sub>1</sub> and R<sub>2</sub> on BC, R<sub>3</sub> on AC and R<sub>4</sub> on AB. Another rectangle S has it vertices on the sides of the triangle AR<sub>3</sub>R<sub>4</sub>, two on R<sub>3</sub>R<sub>4</sub> and one one each of the other two sides. What is the maximum total area of R and S over all possible choices of triangle and rectangles?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 2/3.
+
+<p>
+
+Let k = AR<sub>3</sub>/AC. The triangle AR<sub>4</sub>R<sub>3</sub> is similar to ABC with all dimensions a factor k smaller. So its area is k<sup>2</sup>. Similarly, the two triangles BR<sub>4</sub>R<sub>1</sub> and CR<sub>3</sub>R<sub>2</sub> together have area (1-k)<sup>2</sup>. So the area of the bottom rectangle is 1 - k<sup>2</sup> - (1-k)<sup>2</sup> = 2k(1-k). Defining h in a similar way, the area of the top rectangle is 2h(1-h) times the area of triangle AR<sub>4</sub>R<sub>3</sub> = 2h(1-h)k<sup>2</sup>.
+
+<p>
+
+For any given choice of k, we maximise the area of the top rectangle by taking h = 1/2. The area of the two rectangles together is then 2k(1-k) + k<sup>2</sup>/2 = 2/3 - 3/2(k - 2/3)<sup>2</sup>. This evidently has maximum value 2/3, obtained by taking k = 2/3. Note that the maximum is independent of the choice of triangle.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn85.html">46th Putnam 1985</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

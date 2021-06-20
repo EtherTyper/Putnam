@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1971/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>32nd Putnam 1971</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+|f(1)/1 + f(2)/2 + ... + f(n)/n - 2n/3| &lt; 1, where f(n) is the largest odd divisor of n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If n is odd, then f(n)/n = 1. If n is even, then f(n) = f(n/2). If n = 2m, then f(1)/1 + f(3)/3 + ... + f(2m-1)/(2m-1) = m, and f(2)/2 + f(4)/4 + ... + f(2m)/(2m) = 1/2 ( f(1)/1 + f(2)/2 + ... + f(m)/m ). So if we put g(n) = f(1)/1 + f(2)/2 + ... + f(n)/n, then we have the relations: g(2n+1) = g(2n) + 1 (*), and g(2n) = n + g(n)/2 (**). That allows us to establish by induction that 2n/3 &lt; g(n) &lt; 2n/3 + 5/6 for n odd and 2n/3 &lt; g(n) &lt; 2n/3 + 1/2 for n even.
+
+<p>
+
+For g(1) = 1 = 2/3 + 1/3, g(2) = 3/2 = 2/3 x 2 + 1/6, so the result is true for n = 1, 2. Suppose it is true for n &lt; 2m. Then g(2m) = m + g(m)/2 &gt; m + m/3 = 2/3 (2m), and g(2m) &lt; m + m/3 + 1/2 (5/6) &lt; 2/3 (2m) + 1/2. Also g(2m+1) = g(2m) + 1 &gt; 2/3 (2m) + 2/3 = 2/3 (2m+1), and g(2m+1) &lt; 2/3 (2m) + 1/2 + 1 = 2/3 (2m+1) + 5/6.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn71.html">32nd Putnam 1971</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Feb 2001
+
+</BODY>
+
+
+
+</HTML>
+

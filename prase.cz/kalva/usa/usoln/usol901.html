@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 90/1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>19th USAMO 1990</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 1</b><br>
+
+<p>
+
+A license plate has six digits from 0 to 9 and may have leading zeros. If two plates must always differ in at least two places, what is the largest number of plates that is possible?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 10<sup>5</sup>.
+
+<p>
+
+We show by induction that we can find a set of 10<sup>n-1</sup> plates for n &gt; 1 digits. It is true for n = 2: take the plates 00, 11, 22, ... , 99. Suppose it is true for n. 
+
+If d is a digit from 0 to 9 and s is a plate of n digits, let [d, s] be the plate of n+1 digits which has a as its first digit, and the remaining digits the same as those of s, except that the last digit is that for s plus d (reduced mod 10 if necessary). Let S be a set of plates for n digits. We claim that the set S' = { [d, s] : d = 0, 1, ... or 9 and s belongs to S} is a set of plates for n+1 digits. It obviously has 10 times as many members as S, so this claim is sufficient to establish the induction.
+
+<p>
+
+We have to show that [a, s] and [b, t] differ in at least two places. If a = b, then s &ne; t, so s and t differ in at least two places. The same change is made to their last digits, so [a, s] and [a, t] differ in at least two places. If a &ne; b and s = t, then [a, s] and [b, s] differ in both their first and last places. If a &ne; b and s &ne; t, then s and t differ in at least two places and so the modified s and t, differ in at least one place. But [a, s] and [b, t] also differ in the first place, so they differ in at least two places.
+
+<p>
+
+So we have established that the largest number is at least 10<sup>n-1</sup> for n digits.
+
+<p>
+
+But any two plates which differ only in the last digit cannot both be chosen. So at most 1/10 of the 10<sup>n</sup> possible plates can be chosen. That shows that 10<sup>n-1</sup> is best possible.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa90.html">19th USAMO 1990</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

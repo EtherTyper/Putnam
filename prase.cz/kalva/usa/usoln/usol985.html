@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 98/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>27th USAMO 1998</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Show that one can find a finite set of integers of any size such that for any two members the square of their difference divides their product.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We find inductively a set with n elements satisfying the slightly stronger condition that if a and b are any two elements, then a - b divides both a and b. For n = 2, we may take {1, 2}. Suppose we have a set S for n. Let m be the lowest common multiple (or any multiple) of all the members of S. Now take the set {m + a: a &isin; S} &cup; {m} for n+1. A difference (m + a) - (m + b) = a - b divides a and b, hence also m, and hence m + a and m + b. A difference (m + a) - m = a divides a and m and hence also m + a.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa98.html">27th USAMO 1998</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1995/N4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>36th IMO 1995 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N4</b><br>
+<p>
+Find all positive integers m, n such that m + n<sup>2</sup> + d<sup>3</sup> = mnd, where d is the greatest common divisor of m and n.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: (m, n) = (4, 2), (4, 6), (5, 2) or (5, 3).
+<p>
+Put m = Md, n = Nd, so that M and N are coprime. Then: M + N<sup>2</sup>d + d<sup>2</sup> = MNd<sup>2</sup>. So d must divide M. Put M = M'd, then M' + N<sup>2</sup> + d = M'Nd<sup>2</sup>.
+<p>
+So M' = (N<sup>2</sup> + d)/(Nd<sup>2</sup> - 1). Hence M'd<sup>2</sup> = N + (N+d<sup>3</sup>)/(Nd<sup>2</sup> - 1). So (N + d<sup>3</sup>)/(Nd<sup>2</sup> - 1) is an integer. If d = 1, (N+1)/(N-1) can only be an integer for N = 2 or 3. That gives the solutions (m, n) = (5, 2) and (5, 3). So assume d &gt; 1. Since (N + d<sup>3</sup>)/(Nd<sup>2</sup> - 1) is an integer and positive, we must have N + d<sup>3</sup> &gt;= Nd<sup>2</sup> - 1, so N &lt;= (d<sup>3</sup> + 1)/(d<sup>2</sup> - 1). If d = 2, then N &lt;= 3. Then N = 1 gives the solution (m, n) = (4, 2), N = 2 gives (N + d<sup>3</sup>)/(Nd<sup>2</sup> - 1) non-integral and hence no solution, N = 3 gives the solution (m, n) = (4, 6).
+<p>
+So assume d &gt; 2. Then (d<sup>3</sup> + 1)/(d<sup>2</sup> - 1) &lt; d + 1. Hence N &le; d. Hence M' = (N<sup>2</sup> + d)/(Nd<sup>2</sup> - 1) &lt;= (d<sup>2</sup> + d)/(Nd<sup>2</sup> - 1) &lt;= (d<sup>2</sup> + d)/(d<sup>2</sup> - 1), since N &ge; 1 and hence M' &lt; 2 (since d &gt; 2). So M' = 1. So N is a root of the quadratic N<sup>2</sup> - d<sup>2</sup>N + d+1 = 0. But d<sup>4</sup> - 4(d+1) &gt; d<sup>4</sup> - 4d<sup>2</sup> + 1 = (d<sup>2</sup> - 1)<sup>2</sup> and &lt; d<sup>4</sup>, so d<sup>4</sup> - 4(d+1) cannot be a square and hence N cannot be integral. So there are no solutions with d &gt; 2.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh95.html">36th IMO shortlist 1995</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+8 Oct 2002
+</BODY>
+
+</HTML>
+

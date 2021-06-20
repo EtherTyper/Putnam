@@ -1,0 +1,84 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 85/2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>14th USAMO 1985</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 2</b><br>
+
+<p>
+
+Find all real roots of the quartic x<sup>4</sup> - (2N + 1)x<sup>2</sup> - x + N<sup>2</sup> + N - 1 = 0 correct to 4 decimal places, where N = 10<sup>10</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 99999.9984 and 100000.0016.
+
+<p>
+
+We can write the equation as (x<sup>2</sup> - N - 1/2)<sup>2</sup> = x + 5/4. For x &lt; -5/4 the lhs is positive and the rhs is negative, so there are no roots with x &lt; -5/4. If x lies between -5/4 and 0, then the lhs is obviously much larger than the rhs, so again there is no root. Thus there are no negative roots. Descartes' rule of signs (see below) tells us that there are at most 2 positive roots.
+
+<p>
+
+If x = 10<sup>5</sup>, then the lhs is 1/4 and the rhs is much larger (approx 10<sup>5</sup>). If x = 10<sup>5</sup> &plusmn; 1, then the lhs is (&plusmn; 2 10<sup>5</sup> + 1/2)<sup>2</sup> which is approximately 4 10<sup>10</sup> and much larger than the rhs. So there is a root either side of 10<sup>5</sup>. Put x = 10<sup>5</sup> &plusmn; k. Then we want (&plusmn; 2k.10<sup>5</sup> + k<sup>2</sup> - 1/2)<sup>2</sup> = 10<sup>5</sup> + 5/4, or (4k<sup>2</sup>10<sup>5</sup> - 1)10<sup>5</sup> &plusmn; 2k(1-2k<sup>2</sup> )10<sup>5</sup> - 5/4 = 0. So evidently we need approximately 4k<sup>2</sup> = 10<sup>-5</sup>, or k = &plusmn; 0.0016. So it looks as though the roots are 10<sup>5</sup> &plusmn; 0.0016 = 99999.9984 and 100000.0016.
+
+<p>
+
+Put x = 10<sup>5</sup> &plusmn; 0.00155. Then (x<sup>2</sup> - 10<sup>10</sup> - 1/2)<sup>2</sup> - x - 5/4 = (&plusmn;310 - 1/2 + 0.00155<sup>2</sup>)<sup>2</sup> - 10<sup>5</sup>&plusmn; 0.00155 - 5/4 &lt; 311<sup>2</sup> - 10<sup>5</sup> &lt; 0. Put x = 10<sup>5</sup> &plusmn; 0.00165, then (x<sup>2</sup> - 10<sup>10</sup> - 1/2)<sup>2</sup> - x - 5/4 = (&plusmn;330 -1/2 + 0.00165<sup>2</sup>)<sup>2</sup> - 10<sup>5</sup> &plusmn; 0.00165 - 5/4 &gt; 329<sup>2</sup> - 10<sup>5</sup> - 2 &gt; 0. So indeed one root lies between 10<sup>5</sup> - 0.00165 and 10<sup>5</sup> - 0.00155 and the other root lies between 10<sup>5</sup> + 0.00155 and 10<sup>5</sup> + 0.00165.
+
+<p>
+
+<i>Descartes' rule of signs.</i>
+
+<p>
+
+This states that if the number of sign changes in the coefficients of the polynomial is d, then the number of positive roots is d or d less an even number. So, for example, if the polynomial is x<sup>5</sup> + 14.3 x<sup>4</sup> - 34 x<sup>2</sup> - x + 3.2, then there are two sign changes (+14.3 to -34 and -1 to 3.2), so there are either 0 or 2 positive roots. Note that we ignore zero coefficients. If r is a positive root of p(-x) = 0, then -r is a negative root of p(x) = 0. So if we substitute -x for x in the polynomial and the number of sign changes is then d', then we can conclude that the number of negative roots of the polynomial is either d' or d' less an even number. With the example above we get -x<sup>5</sup> + 14.3 x<sup>4</sup> - 34 x<sup>2</sup> + x + 3.2, which has 3 sign changes. So the polynomial has 1 or 3 negative roots. 
+
+<p>
+
+The proof is not difficult. The key idea is to show that if k is a positive root, so that p(x) = (x - k) q(x), then (1) p(x) has at least one more sign change than q(x), and (2) the difference between the number of sign changes is odd (note that the signs of the constant coefficients of p(x) and q(x) are different).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa85.html">14th USAMO 1985</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

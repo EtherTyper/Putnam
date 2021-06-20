@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 87/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>48th Putnam 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+<b>f</b>: R<sup>2</sup>&rarr;R<sup>3</sup> (where R is the real line) is defined by <b>f</b>(x, y) = (-y/(x<sup>2</sup> + 4y<sup>2</sup>), x/(x<sup>2</sup> + 4y<sup>2</sup>), 0). Can we find <b>F</b>: R<sup>3</sup>&rarr;R<sup>3</sup>, such that: 
+
+<br>(1) &nbsp; if <b>F</b> = (F<sub>1</sub>, F<sub>2</sub>, F<sub>3</sub>), then F<sub>i</sub> all have continuous partial derivatives for all (x, y, z) &ne; (0, 0, 0);
+
+<br>(2) &nbsp; <b>&nabla; x F</b> = <b>0</b> for all (x, y, z) &ne; 0;
+
+<br>(3) &nbsp; <b>F</b>(x, y, 0) = <b>f</b>(x, y)?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: no.
+
+<p>
+
+<i>Straightforward.</i>
+
+<p>
+
+We look first at (2). We know that <b>&nabla;x F</b> = <b>0</b> iff <b>F</b> = <b>&nabla;</b>g for some g: R<sup>3</sup>&rarr;R. Remembering that tan<sup>-1</sup>k has derivative 1/(1 + k<sup>2</sup>) and playing around a little, we soon hit on g(x, y, z) = 1/2 tan<sup>-1</sup>(2y/x) + h(z). That looks promising. In fact, it <i>almost</i> works. We might, for example take h(z) = 1/2 z<sup>2</sup>, so that F(x, y, z) = (-y/(x<sup>2</sup> + 4y<sup>2</sup>), x/(x<sup>2</sup> + 4y<sup>2</sup>), z). That satisfies (2) and (3), and almost satisfies (1). The difficulty is that it, and its partial derivatives wrt x and y, are discontinuous (and arguably undefined) on the entire line x = 0, y = 0 (not just at the origin).
+
+<p>
+
+So we suspect that we <i>cannot</i> find F to satisfy all the conditions. The obvious approach is to assume we can and to seek a contradiction using Stokes' theorem ( &int;<sub>S</sub> <b>&nabla;x F .</b>d<b>a</b> = &int;<sub>&Gamma;</sub> <b>F.</b>d<b>s</b>, where S is a surface bounded by a closed curve &Gamma; ). We want S to cut the z axis at z &ne; 0, because we believe the discontinuities are on the z-axis and so that will ensure that the surface integral is non-zero, whereas (2) would imply that it was zero. We want a curve &Gamma; on which the line integral is easy to calculate. It clearly must lie entirely within the x, y plane (so that we can use (3) to give us F - otherwise we do not know what F is). It also looks sensible to take an ellipse x<sup>2</sup> + 4y<sup>2</sup> = k, because then f is drastically simplified. The line integral is then &int;<sub>&Gamma;</sub> <b>F.</b>d<b>s</b> = &int;<sub>&Gamma;</sub> <b>f.</b>d<b>s</b> = &int;<sub>&Gamma;</sub> (-y dx + x dy)/k =  2/k area ellipse &ne; 0. If (2) was satisfied, then the surface integral would be zero, since the surface avoids the origin. Contradiction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn87.html">48th Putnam 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Oct 1999
+
+</BODY>
+
+
+
+</HTML>
+

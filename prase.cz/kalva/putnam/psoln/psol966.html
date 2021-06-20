@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1996/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Let R be the reals and k a non-negative real. Find all continuous functions f <b>:</b> R &rarr; R such that f(x) = f(x<sup>2</sup> + k) for all x.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Apart from one trap, this is straightforward.</i>
+
+<p>
+We note that first that f(-x) = f(x), so it is sufficient to define f for non-negative x.
+
+<p>
+We note that (x<sup>2</sup> + k) &ge; k for all x, with equality iff x = 0, so it is tempting to say that on [0, k] f is arbitary except that it must be continuous and f(0) = f(k). We then extend f to the rest of the real line using the relation given.
+
+<p>
+The trap is that this does not work for k &le; 1/4. The extension process just generates smaller and smaller intervals which converge on a root of the equation x<sup>2</sup> + k = x. If we try starting with a larger interval above the roots, then we can extend the function towards infinity without difficulty, but extending back to smaller values gives the same problem as before.
+
+<p>
+In fact, it is not too difficult to see that for k &le; 1/4 the function must be constant. 
+
+<p>
+Actually, spelling this out in detail is fairly painful! It  is most easily seen from the graph. Let a<sub>1</sub> &lt; a<sub>2</sub> be the two roots of x<sup>2</sup> - x + k = 0. If we define x<sub>1</sub> = a, x<sub>n+1</sub> = x<sub>n</sub><sup>2</sup> + k for 0 &lt; a &lt; a<sub>2</sub> (and also a &ne; a<sub>1</sub>) then x<sub>n</sub> tends to a<sub>1</sub>. By the continuity of f, f(x<sub>n</sub>) must tend to f(a<sub>1</sub>), but f is constant on the sequence, so f(a) = f(a<sub>1</sub>). Similarly, for any a &gt; a<sub>2</sub>, we define x<sub>1</sub> = a, x<sub>n+1</sub> = &radic;(x<sub>n</sub> - k). This time x<sub>n</sub> tends to a<sub>2</sub> and by the same argument as before we must have f(a) = f(a<sub>2</sub>). But we have f(x) = f(a<sub>1</sub>) for values of x arbitarily close to a<sub>2</sub> (and below it) and f(x) = f(a<sub>2</sub>) for values of x arbitarily close to a<sub>2</sub> and above it, so f(a<sub>1</sub>) = f(a<sub>2</sub>) and hence f is constant.
+
+<p>
+If we want a more rigorous treatment of the fact that x<sub>n</sub> tends to the root, there is further pain! Write x<sub>n</sub> = a<sub>1</sub> + k<sub>n</sub>, x<sub>n+1</sub> = a<sub>1</sub> + k<sub>n+1</sub>, then k<sub>n+1</sub> = 2a<sub>1</sub>k<sub>n</sub> + k<sub>n</sub><sup>2</sup>. But 0 &lt; 2a<sub>1</sub> &lt; 1, so for k<sub>n</sub> &lt; 0, we have 0 &gt; k<sub>n+1</sub> &gt; 2a<sub>1</sub>k<sub>n</sub>, and hence k<sub>n</sub>tends to zero. For k<sub>n</sub> &gt; 0, we observe first that x<sub>n+1</sub> &lt; x<sub>n</sub>, so we have k<sub>n</sub> &lt; k<sub>1</sub> = a<sub>2</sub> - a<sub>1</sub> - &epsilon; for some &epsilon; &gt; 0, so k<sub>n+1</sub> = (2a<sub>1</sub> + k<sub>n</sub>)k<sub>n</sub> &lt; (2a<sub>1</sub> + k<sub>1</sub>)k<sub>n</sub> = (2a<sub>1</sub> + a<sub>2</sub> - a<sub>1</sub> - &epsilon;)k<sub>n</sub> = (1 - &epsilon;)k<sub>n</sub>. Hence k<sub>n</sub> tends to zero. A similar argument deals with the case a &gt; a<sub>2</sub>. We have skated over the case k = 1/4, but I leave that as an exercise. [f is still constant. In graphical terms the curves y = x<sup>2</sup> + 1/4 and y = &radic;(x - 1/4) touches the line y = x at x = 1/2 and it is clear from the graph that the same sequences work as before.]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn96.html">Putnam 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

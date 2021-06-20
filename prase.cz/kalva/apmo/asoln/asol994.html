@@ -1,0 +1,88 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2//EN">
+
+
+
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>APMO 99/4 solution</TITLE>
+
+<META NAME="GENERATOR" CONTENT="Arachnophilia 3.6">
+
+<META NAME="FORMATTER" CONTENT="Arachnophilia 3.6">
+
+</HEAD>
+
+
+
+<BODY BACKGROUND="../../pap1.jpg" TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>11th APMO 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 4</b><br>
+
+<p>
+
+Find all pairs of integers m, n such that m<sup>2</sup> + 4n and n<sup>2</sup> +4m are both squares.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (m, n) or (n, m) = (0, a<sup>2</sup>), (-5, -6), (-4, -4), (a+1, -a) where a is a non-negative integer.
+
+<p>
+
+Clearly if one of m, n is zero, then the other must be a square and that is a solution.
+
+<p>
+
+If both are positive, then m<sup>2</sup> + 4n must be (m + 2k)<sup>2</sup> for some positive k, so n = km + k<sup>2</sup> &gt; m. But similarly m &gt; n. Contradiction. So there are no solutions with m and n positive.
+
+<p>
+
+Suppose both are negative. Put m = -M, n = -N, so M and N are both positive. Assume M &gt;= N. M<sup>2</sup> - 4N is a square, so it must be (M - 2k)<sup>2</sup> for some k, so N = Mk - k<sup>2</sup>. If M = N, then M(k-1) = k<sup>2</sup>, so k-1 divides k<sup>2</sup> and hence k<sup>2</sup> - (k-1)(k+1) = 1, so k = 2 and M = 4, giving the solution (m, n) = (-4, -4). So we may assume M &gt; N and hence M &gt; Mk - k<sup>2</sup> &gt; 0. But that implies that k = 1 or M-1 and hence N = M-1. [If M &gt; Mk - k<sup>2</sup>, then (k-1)M &lt; k<sup>2</sup>. Hence k = 1 or M &lt; k+2. But Mk - k<sup>2</sup> &gt; 0, so M &gt; k. Hence k = 1 or M = k+1.]. 
+
+<p>
+
+But N<sup>2</sup> - 4M is also a square, so (M-1)<sup>2</sup> - 4M = M<sup>2</sup> - 6M + 1 is a square. But (M-3)<sup>2</sup> &gt; M<sup>2</sup> - 6M + 1 and (M-4)<sup>2</sup> &lt; M<sup>2</sup> - 6M + 1 for M &gt;= 8, so the only possible solutions are M = 1, 2, ... , 7. Checking, we find that only M = 6 gives M<sup>2</sup> - 6M + 1 a square. This gives the soluton (m, n) = (-6, -5). Obviously, there is also the solution (-5, -6).
+
+<p>
+
+Finally, consider the case of opposite signs. Suppose m = M &gt; 0, n = -N &lt; 0. Then N<sup>2</sup> + 4M is a square, so by the argument above M &gt; N. But M<sup>2</sup> - 4N is a square and so the argument above gives N = M-1. Now we can easily check that (m, n) = (M, -(M-1) ) is a solution for any positive M.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../apmo99.html">11th APMO 1999</a><br>
+
+<p>(C) John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Apr 2002
+
+</BODY>
+
+
+
+</HTML>
+

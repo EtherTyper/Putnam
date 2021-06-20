@@ -1,0 +1,61 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Vietnam 98/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>36th VMO 1998</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b>
+
+<p>
+
+Define the sequence x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>, ... by x<sub>1</sub> = a &ge; 1, x<sub>n+1</sub> = 1 + ln(x<sub>n</sub>(x<sub>n</sub><sup>2</sup>+3)/(1 + 3x<sub>n</sub><sup>2</sup>) ). Show that the sequence converges and find the limit.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+(x-1)<sup>3</sup> &ge; 0, so x(x<sup>2</sup>+3)/(1+3x<sup>2</sup>) &ge; 1. So the ln term is well-defined and non-negative and 1 + ln(x(x<sup>2</sup>+3)/(1+3x<sup>2</sup>)) &ge; 1. So by a trivial induction all x<sub>n</sub> &ge; 1.
+<p>
+Also x<sup>2</sup> &ge; 1 implies (x<sup>2</sup>+3)/(1+3x<sup>2</sup>) &le; 1, so x(x<sup>2</sup>+3)/(1+3x<sup>2</sup>) &le; x and hence 1 + ln(x(x<sup>2</sup>+3)/(1+3x<sup>2</sup>)) &le; 1 + ln x &le; x (*). So the sequence is monotonically decreasing and bounded below by 1. So it must converge. Suppose the limit is L. Then L = 1 + ln(L(L<sup>2</sup>+3)/(1+Lx<sup>2</sup>)). But we only have equality in (*) at 1. Hence L = 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../viet98.html">36th VMO 1998</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 March 2004
+<br>Last corrected/updated 7 Mar 04
+
+</BODY>
+
+
+
+</HTML>
+

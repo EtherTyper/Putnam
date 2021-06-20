@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1981/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>42nd Putnam 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+Evaluate lim<sub>n&rarr;&infin;</sub> 1/n<sup>5</sup> &sum; (5 r<sup>4</sup> - 18 r<sup>2</sup> s<sup>2</sup> + 5 s<sup>4</sup>), where the sum is over all r, s satisfying 0 &lt; r, s &le; n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: - 1.
+
+<p>
+
+This seems curiously difficult for a qu 1, which makes me think I am missing something!
+
+<p>
+
+We need: &sum;<sub>1</sub><sup>n</sup> r<sup>2</sup> = 1/3 n<sup>3</sup> + 1/2 n<sup>2</sup> + O(n), and &sum;<sub>1</sub><sup>n</sup> r<sup>4</sup> = 1/5 n<sup>5</sup> + 1/2 n<sup>4</sup> + O(n<sup>3</sup>).
+
+<p>
+
+Applying these we get that the sum given is 5 (1/5 n<sup>5</sup> + 1/2 n<sup>4</sup> + O(n<sup>3</sup>) ) n - 18 (1/3 n<sup>3</sup> + 1/2 n<sup>2</sup> + O(n) )<sup>2</sup> + 5 (1/5 n<sup>5</sup> + 1/2 n<sup>4</sup> + O(n<sup>3</sup>) ) n = (n<sup>6</sup> + 5/2 n<sup>5</sup> + O(n<sup>4</sup>) ) - (2n<sup>6</sup> + 6n<sup>5</sup> + O(n<sup>4</sup>) ) + (n<sup>6</sup> + 5/2 n<sup>5</sup> + O(n<sup>4</sup>) ) = - n<sup>5</sup> + O(n<sup>4</sup>). So the required limit is &nbsp; - 1.
+
+<p>
+
+The tricky part is proving the relation for &sum; r<sup>4</sup>. A fairly trivial induction gives that &sum; r(r+1)(r+2)...(r+s) = 1/(s+2) r(r+1)...(r+s+1). Hence &sum; r<sup>k</sup> = 1/(k+1) n<sup>k+1</sup> + O(n<sup>k</sup>). Also &sum;(r<sup>4</sup> + 6r<sup>3</sup> + O(r<sup>2</sup>) ) = 1/5 (n<sup>5</sup> + 10 n<sup>4</sup> +O(n<sup>3</sup>) ). Hence &sum; r<sup>4</sup> = 1/5 n<sup>5</sup> + 2n<sup>4</sup> + O(n<sup>3</sup>) - 6(1/4 n<sup>4</sup> + O(n<sup>3</sup>) ) - &sum; O(n<sup>2</sup>) = 1/5 n<sup>5</sup> + 1/2 n<sup>4</sup> + O(n<sup>3</sup>). The relation for &sum; r<sup>2</sup> can be obtained similarly, although most people probably remember the exact formula 1/6 n(n+1)(2n+1), which is easy to prove by induction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn81.html">42nd Putnam 1981</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,68 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1987/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+Let x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub> be real numbers satisfying x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> + ... + x<sub>n</sub><sup>2</sup> = 1. Prove that for every integer k &ge; 2 there are integers a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>n</sub>, not all zero, such that |a<sub>i</sub>| &le; k - 1 for all i, and |a<sub>1</sub>x<sub>1</sub> + a<sub>2</sub>x<sub>2</sub> + ... + a<sub>n</sub>x<sub>n</sub>| &le; (k - 1)&radic;n/(k<sup>n</sup> - 1).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+This is an application of the pigeon-hole principle.
+
+<p>
+Assume first that all x<sub>i</sub> are non-negative. Observe that the sum of the x<sub>i</sub> is at most &radic;n. [This is a well-known variant, (&sum;<sub>1&le;i&le;n</sub> x<sub>i</sub>)<sup>2</sup> &le; n &sum;<sub>1&le;i&le;n</sub> x<sub>i</sub><sup>2</sup>, of the AM-GM result. See, for example, Arthur Engel, Problem Solving Strategies, Springer 1998, p163, ISBN 0387982191].
+
+<p>
+Consider the k<sup>n</sup> possible values of &sum;<sub>1&le;i&le;n</sub> b<sub>i</sub>x<sub>i</sub>, where each b<sub>i</sub> is an integer in the range [0,k-1]. Each value must lie in the interval [0, k-1 &radic;n]. Divide this into k<sup>n</sup>-1 equal subintervals. Two values must lie in the same subinterval. Take their difference. Its coefficients are the required a<sub>i</sub>. Finally, if any x<sub>i</sub> are negative, solve for the absolute values and then flip signs in the a<sub>i</sub>.
+
+<p>
+
+<i>Comment</i>
+
+<p>This solution is due to Gerhard Woeginger, email 24 Aug 99.
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo87.html">28th IMO 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Aug 99
+
+</BODY>
+
+
+
+</HTML>
+

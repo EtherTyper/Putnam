@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1995/S3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>36th IMO 1995 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem S3</b><br>
+<p>
+For any integer n &gt; 1, let p(n) be the smallest prime which does not divide n and let q(n) = the product of all primes less than p(n), or 1 if p(n) = 2. Define the sequence a<sub>0</sub>, a<sub>1</sub>, a<sub>2</sub>, ... by a<sub>0</sub> = 1 and a<sub>n+1</sub> = a<sub>n</sub>p(a<sub>n</sub>)/q(a<sub>n</sub>). Find all n such that a<sub>n</sub> = 1995.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 142.
+<p>
+We calculate the first few terms: 1, 2, 3, 2.3, 5, 2.5, 3.5, 2.3.5, 7, 2.7, 3.7, ... . On that basis we might guess that if p<sub>m</sub> is the (m+1)th prime and n = b<sub>r</sub> ... b<sub>0</sub> in binary, then a<sub>n</sub> = product of primes p<sub>i</sub> for which b<sub>i</sub> = 1.
+<p>
+q(n) is a product of primes which divide n, so n/q(n) is an integer. Hence a<sub>n</sub> are all integral. Moreover it is easy to show by induction that a<sub>n</sub> is square-free. It is true for n = 1. Suppose it is true for n. Since a<sub>n+1</sub> is obtained from a<sub>n</sub> by dropping some prime factors and adding a prime factor not already present, it is true for n+1. Hence for all n. So we can certainly represent a<sub>n</sub> as a binary number b<sub>r</sub> ... b<sub>0</sub>, where b<sub>m</sub> = 1 iff p<sub>m</sub> divides a<sub>m</sub>. Now p(a<sub>n</sub>) = m, where m is the smallest subscript such that b<sub>m</sub> = 0 (with the obvious meaning m if a<sub>n</sub> is represented by m 1s: 1 ... 1). Hence a<sub>n+1</sub> is represented by the binary number obtained by adding 1 to that for a<sub>n</sub>. But a<sub>1</sub> is represented by 1, so a<sub>n</sub> is represented by the binary expression for n.
+<p>
+1995 = 3.5.7.19, so it is represented by the binary number 10001110 (19<sup>1</sup>17<sup>0</sup>13<sup>0</sup>11<sup>0</sup>7<sup>1</sup>5<sup>1</sup>3<sup>1</sup>2<sup>0</sup>). Hence the only possible n with a<sub>n</sub> = 1995 is 10001110 = 128 + 8 + 4 + 2 = 142.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh95.html">36th IMO shortlist 1995</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+8 Oct 2002
+</BODY>
+
+</HTML>
+

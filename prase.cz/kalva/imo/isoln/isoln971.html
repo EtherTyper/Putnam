@@ -1,0 +1,71 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1997/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b>
+
+<p>
+
+In the plane the points with integer coordinates are the vertices of unit squares. The squares are colored alternately black and white as on a chessboard. For any pair of positive integers m and n, consider a right-angled triangle whose vertices have integer coordinates and whose legs, of lengths m and n, lie along the edges of the squares. Let S<sub>1</sub> be the total area of the black part of the triangle, and S<sub>2</sub> be the total area of the white part. Let f(m, n) = |S<sub>1</sub> - S<sub>2</sub>|.
+
+<p>(a)&nbsp; Calculate f(m, n) for all positive integers m and n which are either both even or both odd.
+
+<br>(b)&nbsp; Prove that f(m, n) &le; max(m, n)/2 for all m, n.
+
+<br>(c)&nbsp; Show that there is no constant C such that f(m, n) &lt; C for all m, n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+(a)&nbsp; If m and n are both even, then f(m,n) = 0. Let M be the midpoint of the hypoteneuse. The critical point is that M is a lattice point. If we rotate the triangle through 180 to give the other half of the rectangle, we find that its coloring is the same. Hence S<sub>1</sub> and S<sub>2</sub> for the triangle are each half their values for the rectangle. But the values for the rectangle are equal, so they must also be equal for the triangle and hence f(m,n) = 0. 
+
+<p>If m and n are both odd, then the midpoint of the hypoteneuse is the center of a square and we may still find that the coloring of the two halves of the rectangle is the same. This time S<sub>1</sub> and S<sub>2</sub> differ by one for the rectangle, so f(m,n) = 1/2.
+
+<p>(b)&nbsp; The result is immediate from (a) for m and n of the same parity. The argument in (a) fails for m and n with opposite parity, because the two halves of the rectangle are oppositely colored. Let m be the odd side. Then if we extend the side length m by 1 we form a new triangle which contains the original triangle. But it has both sides even and hence S<sub>1</sub> = S<sub>2</sub>. The area added is a triangle base 1 and height n, so area n/2. The worst case would be that all this area was the same color, in which case we would get f(m,n) = n/2. But n &lt;= max(m,n), so this establishes the result.
+
+<p>(c)&nbsp; Intuitively, it is clear that if the hypoteneuse runs along the diagonal of a series of black squares, and we then extend one side, the extra area taken in will be mainly black. We need to make this rigorous. For the diagonal to run along the diagonal of black squares we must have n = m. It is easier to work out the white area added by extending a side. The white area takes the form of a series of triangles each similar to the new n+1 x n triangle. The biggest has sides 1 and n/(n+1). The next biggest has sides (n-1)/n and (n-1)/(n+1), the next biggest (n-2)/n and (n-2)/(n+1) and so on, down to the smallest which is 1/n by 1/(n+1). Hence the additional white area is 1/2 (n/(n+1) + (n-1)<sup>2</sup>/(n(n+1)) + (n-2)<sup>2</sup>/(n(n+1)) + ... + 1/(n(n+1)) ) = 1/(2n(n+1))&nbsp; (n<sup>2</sup> + ... + 1<sup>2</sup>) = (2n+1)/12. Hence the additional black area is n/2 - (2n+1)/12 = n/3 - 1/12 and the black excess in the additional area is n/6 - 1/6. If n is even, then f(n,n) = 0 for the original area, so for the new triangle f(n+1,n) = (n-1)/6 which is unbounded.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo97.html">38th IMO 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Oct 1998
+
+<br>Last corrected/udpated 21 Aug 03
+</BODY>
+
+
+
+</HTML>
+

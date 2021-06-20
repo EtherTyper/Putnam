@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1995/N1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>36th IMO 1995 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N1</b><br>
+<p>
+k is a positive integer. Show that there are infinitely many squares of the form 2<sup>k</sup>n - 7.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+We show first that there is at least <i>one</i> such square. We use induction on k. For k = 1 we have 4.2<sup>1</sup> - 7 = 1<sup>2</sup>. For k = 2 we have 2.2<sup>2</sup> - 7 = 1<sup>2</sup>. For k = 3 we have 1.2<sup>3</sup> - 7 = 1<sup>2</sup>. So it is true for k = 1, 2, 3. Suppose it is true for k, so that 2<sup>k</sup>n = m<sup>2</sup> + 7 or m<sup>2</sup> = -7 mod 2<sup>k</sup>. Then either m<sup>2</sup> = -7 mod 2<sup>k+1</sup> or m<sup>2</sup> = 2<sup>k</sup> - 7 mod 2<sup>k+1</sup>. In the first case, we are home. In the second case, we have (m + 2<sup>k-1</sup>)<sup>2</sup> = m<sup>2</sup> + 2<sup>k</sup>m + 2<sup>2k-2</sup> = (2<sup>k</sup> - 7) + 2<sup>k</sup>m mod 2<sup>k+1</sup> (since k &ge; 3 implies 2k-2 &ge; k+1) = -7 mod 2<sup>k+1</sup> since m must be odd. So the result holds for all k.
+<p>
+So for each k we have a<sub>k</sub> such that a<sub>k</sub><sup>2</sup> = -7 mod 2<sup>k</sup>. But a<sub>k</sub><sup>2</sup> &ge; 2<sup>k</sup> - 7, which is unbounded, so { a<sub>k</sub>} is unbounded. Hence there are infinitely many distinct a<sub>k</sub>. But if h &gt; k, then a<sub>h</sub><sup>2</sup> = -7 mod 2<sup>h</sup> and hence a<sub>h</sub><sup>2</sup> = -7 mod 2<sup>k</sup>. So there are infinitely many squares for any given k.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh95.html">36th IMO shortlist 1995</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+8 Oct 2002
+</BODY>
+
+</HTML>
+

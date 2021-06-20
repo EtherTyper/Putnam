@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 70/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>31st Putnam 1970</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+A vehicle covers a mile (= 5280 ft) in less than a minute, starting and ending at rest and never exceeding 90 miles/hour. Show that its acceleration or deceleration exceeded 6.6 ft/sec<sup>2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Plot velocity (v in ft/sec ) against time ( t in sec ) . 
+
+<p>
+
+The graph never gets above the line v = 132 ( ft/sec =90 mph). 
+
+<p>
+
+If the vehicle's acceleration never exceeds 6.6 ft/sec<sup>2</sup>, then in particular, its acceleration in the first 20 seconds does not exceed 6.6 ft/sec and hence the velocity curve never gets above the line v = 6.6 t, which cuts the line v = 132 at t = 20. 
+
+<p>
+
+Similarly, if the vehicle's deceleration never exceeds 6.6 ft/sec<sup>2</sup>, then its deceleration in the last 20 seconds never exceeds 6.6 ft/sec, so the velocity curve it never gets above the line v = - 6.6 (t - 60), which represents constant deceleration at the maximum 6.6 ft/sec<sup>2</sup> from t = 40 until the finish at t = 60 when it is stationary. In fact the curve must lie strictly under this line, since the vehicle finishes in less than a minute.
+
+<p>
+
+Hence the area under the curve, which represents distance travelled, is less than the area of the quadrilateral bounded by t = 0, v = 6.6t, v = 132 and v = -6.6(t - 60), which is 1/2 20. 132 + 20.132 + 1/2 20.132 = 40.132 = 5280 = 1 mile. But we know that the distance travelled was 1 mile. Hence either it accelerated at more than 6.6 ft/sec<sup>2</sup> at some point in the first 20 seconds, or it decelerated at more than 6.6 ft/sec<sup>2</sup> at some point in the last 20 seconds.
+
+<p>
+
+<i>Comment. This solution is much easier than it looks. Just draw the graph!</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn70.html">31st Putnam 1970</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,77 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 95/4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>24th USAMO 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 4</b>
+
+<p>
+
+a<sub>0</sub>, a<sub>1</sub>, a<sub>2</sub>, ... is an infinite sequence of integers such that a<sub>n</sub> - a<sub>m</sub> is divisible by n - m for all (unequal) n and m. For some polynomial p(x) we have p(n) &gt; |a<sub>n</sub>| for all n. Show that there is a polynomial q(x) such that q(n) = a<sub>n</sub> for all n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Clearly for any finite N, we can find a polynomial q(n) of degree N such that q(n) = a<sub>n</sub> for n = 0, ... , N. Also, once a<sub>0</sub>, a<sub>1</sub>, ... , a<sub>N</sub> are fixed, a<sub>m</sub> is somewhat constrained for m &gt; N, because we require a<sub>m</sub> to be a<sub>0</sub> mod m, a<sub>1</sub> mod m-1, ... , a<sub>N</sub> mod m-N. Put M = lcm(m, m-1, ... , m-N). Then a<sub>m</sub> is determined mod M. 
+
+<p>
+
+We would like to argue that q(m) is known to satisfy the congruences (because m - n divides q(m) - q(n) ), that q(m) and a<sub>m</sub> are bounded so that they cannot differ by as much as M and hence must be equal. The snag is that q(x) does not necessarily have integer coeffcients, so it is not necessarily true that m - n divides q(m) - q(n). [The argument is that m - n divides m<sup>k</sup> - n<sup>k</sup> for any integer k and hence divides q(m) - q(n) for any polynomial with integer coefficients.]
+
+<p>
+
+However, the coefficients of q(x) are rational. So let Q be the lcm of the denominators. Then Q q(x) does have integer coefficients and m - n does divide Q( q(m) - q(n) ). So Q q(m) = Q q(0) = Q a<sub>0</sub> = Q a<sub>m</sub> mod m, and similarly Q q(m) = Q a<sub>m</sub> mod m-1 and so on. Hence Q q(m) = Q a<sub>m</sub> mod M. 
+
+<p>But we know that |q(m)| &lt; c m<sup>N</sup> for some constant c, since q(x) has degree N. Similarly, we know that |a<sub>m</sub>| is bounded by a polynomial of degree N and hence |a<sub>m</sub>| &lt; c' m<sup>N</sup> for some constant c'. Now M certainly exceeds the product of the N+1 numbers m, m-1, ... , m-N divided by the greatest common divisor for each of the N(N+1)/2 pairs (m - i, m - j). But each gcd is at most N, so M is more than c" m<sup>N+1</sup> for some (small) constant c" which does not depend on m. Hence for m &ge; some N' we have M &gt; |Q q(m)| + |Q a<sub>m</sub>| and hence q(m) = a<sub>m</sub>. 
+
+<p>
+
+So we have q(m) = a<sub>m</sub> for m &le; N and for m &ge; N'. Suppose N &lt; m &lt; N'. Then for <i>any</i> m' &gt; N' we have that (m' - m) divides Q q(m') - Q q(m) and Q a<sub>m'</sub> - Q a<sub>m</sub>. So it must divide their difference. But q(m') = a<sub>m'</sub>, so it divides Q(q(m) - a<sub>m</sub>). But we can choose m' so that (m' - m) is prime to Q and larger than (q(m) - a<sub>m</sub>). Hence q(m) = a<sub>m</sub>. So we have established that q(m) = a<sub>m</sub> for all m.
+
+<p>
+<i>Thanks to Nghi Nguyen for showing that we need Q in the last paragraph also.</i>
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa95.html">24th USAMO 1995</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Aug 2002
+<br>Last corrected/updated 25 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

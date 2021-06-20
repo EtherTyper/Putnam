@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>1st Putnam 1938/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>1st Putnam 1938</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+<i>Do either (1) or (2)</i>
+
+<p>(1) &nbsp; Let A be matrix (a<sub>ij</sub>), 1 &le; i,j &le; 4. Let d = det(A), and let A<sub>ij</sub> be the cofactor of a<sub>ij</sub>, that is, the determinant of the 3 x 3 matrix formed from A by deleting a<sub>ij</sub> and other elements in the same row and column. Let B be the 4 x 4 matrix (A<sub>ij</sub>) and let D be det B. Prove D = d<sup>3</sup>.
+
+<p>(2) &nbsp; Let P(x) be the quadratic Ax<sup>2</sup> + Bx + C. Suppose that P(x) = x has unequal real roots. Show that the roots are also roots of P(P(x)) = x. Find a quadratic equation for the other two roots of this equation. Hence solve (y<sup>2</sup> - 3y + 2)<sup>2</sup> - 3(y<sup>2</sup> - 3y + 2) + 2 - y = 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (2) The quadratic is A<sup>2</sup>x<sup>2</sup> + (AB + A)x + (AC + B + 1) = 0. The quartic in y has roots 0, 1, 2, 2.
+
+<p>
+
+(1)  We have a<sub>i1</sub>A<sub>i1</sub> + a<sub>i2</sub>A<sub>i2</sub> + a<sub>i3</sub>A<sub>i3</sub> + a<sub>i4</sub>A<sub>i4</sub> = d. But a<sub>i1</sub>A<sub>j1</sub> + a<sub>i2</sub>A<sub>j2</sub> + a<sub>i3</sub>A<sub>j3</sub> + a<sub>i4</sub>A<sub>j4</sub> = 0 for i not equal to j (because it can be considered as an expansion of the determinant for the matrix derived from A by replacing row i by row j - the resulting matrix has two identical rows and hence zero determinant). So if we multiply the transpose of A by the matrix (A<sub>ij</sub>) then we get d down the diagonal and zeros elsewhere. Hence d D = d<sup>4</sup>, so D = d<sup>3</sup>.
+
+<p>
+
+(2)  It is obvious that if P(x) = x, then P(P(x)) = x.
+
+<p>P(P(x)) = x is A(Ax<sup>2</sup> + Bx + C)<sup>2</sup> + B(Ax<sup>2</sup> + Bx + C) + C = x. This is evidently a quartic and two of its roots are those of Ax<sup>2</sup> + (B - 1)x + C = 0. We could obtain the quadratic for the other two roots by multiplying out P(P(x)) - x and factorising it. But it is sufficient to obtain the coefficients of x<sup>4</sup>, x<sup>3</sup> and x<sup>0</sup>. This gives us the sum of the four roots as -2B/A and their product as (AC + B + 1)C/A<sup>3</sup>. The sum and product of the two known roots are -B/A - 1/A and C/A. Hence the sum and product of the other two roots are -B/A + 1/A and (AC + B + 1)/A<sup>2</sup>, so the roots are the roots of the quadratic A<sup>2</sup>x<sup>2</sup> + (AB + A)x + (AC + B + 1) = 0.
+
+<p>
+
+y<sup>2</sup> - 3y + 2 = 0 has roots 1 and 2. So these values are also roots of (y<sup>2</sup> - 3y + 2)<sup>2</sup> - 3(y<sup>2</sup> - 3y + 2) + 2 - y = 0. The other two roots are also the roots of x<sup>2</sup> + (-3 + 1)x + (2 - 3 + 1) = 0. These are obviously 0 and 2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn38.html">1st Putnam 1938</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

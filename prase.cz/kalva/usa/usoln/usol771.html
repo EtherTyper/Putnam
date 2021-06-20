@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 77/1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>6th USAMO 1977</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 1</b><br>
+
+<p>
+
+For which positive integers a, b does (x<sup>a</sup> + ... + x + 1) divide (x<sup>ab</sup> + x<sup>ab-b</sup> + ... + x<sup>2b</sup> + x<sup>b</sup> + 1)?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: a+1 and b relatively prime.
+
+<p>
+
+The question is when (x<sup>a+1</sup> - 1)/(x - 1) divides (x<sup>b(a+1)</sup> - 1)/(x<sup>b</sup> - 1) or when (x<sup>a+1</sup> - 1)(x<sup>b</sup> - 1) divides (x<sup>b(a+1)</sup> - 1)(x - 1). Now both (x<sup>a+1</sup> - 1) and (x<sup>b</sup> - 1) divide (x<sup>b(a+1)</sup> - 1). They both have a factor (x - 1), so if that is their <i>only</i> common factor, then their product divides (x<sup>b(a+1)</sup> - 1)(x - 1). That is true if a+1 and b are relatively prime, for the roots of x<sup>k</sup> - 1 are the kth roots of 1. Thus if a+1 and b are relatively prime, then the only (complex) number which is an (a+1)th root of 1 and a bth root of 1 is 1.
+
+<p>
+
+But suppose d is a common factor of a+1 and b, then exp(2&pi;i/d) is a root of both x<sup>a+1</sup> - 1 and x<sup>b</sup> - 1. It is a root of x<sup>b(a+1)</sup> - 1, but only with multiplicity 1, so (x<sup>a+1</sup> - 1)(x<sup>b</sup> - 1) does not divide (x<sup>b(a+1)</sup> - 1)(x - 1).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa77.html">6th USAMO 1977</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

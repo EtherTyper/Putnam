@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 46/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>6th Putnam 1946</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+ABCD are the vertices of a square with A opposite C and side AB = s. The distances of a point P in space from A, B, C, D are a, b, c, d respectively. Show that a<sup>2</sup> + c<sup>2</sup> = b<sup>2</sup> + d<sup>2</sup>, and that the perpendicular distance k of P from the plane ABCD is given by 8k<sup>2</sup> = 2(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + d<sup>2</sup>) - 4s<sup>2</sup> - (a<sup>4</sup> + b<sup>4</sup> + c<sup>4</sup> + d<sup>4</sup> - 2a<sup>2</sup>c<sup>2</sup> - 2b<sup>2</sup>d<sup>2</sup>)/s<sup>2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let Q be the point of the plane ABCD closest to P. Let O be the center of the square ABCD. Let QO make an angle &theta; with AC. Then using the cosine rule we have: AQ<sup>2</sup> = AO<sup>2</sup> + OQ<sup>2</sup> - 2AO&middot;OQ cos &theta;, CQ<sup>2</sup> = CO<sup>2</sup> + OQ<sup>2</sup> + 2CO.OQ cos &theta; (*). Adding: AQ<sup>2</sup> + CQ<sup>2</sup> = 2AO<sup>2</sup> + 2QO<sup>2</sup>. But a<sup>2</sup> = AQ<sup>2</sup> + k<sup>2</sup> etc, so a<sup>2</sup> + c<sup>2</sup> = 2k<sup>2</sup> + s<sup>2</sup> + 2QO<sup>2</sup>. Similarly, b<sup>2</sup> + d<sup>2</sup> = 2k<sup>2</sup> + s<sup>2</sup> + 2QO<sup>2</sup>. We have established that a<sup>2</sup> + c<sup>2</sup> = b<sup>2</sup> + d<sup>2</sup>.
+
+<p>
+
+We have also established that 8k<sup>2</sup> = 2(a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> + d<sup>2</sup>) - 4s<sup>2</sup> - 8QO<sup>2</sup> (**). The angle &phi; between QO and BD is &pi;/2 - &theta;. So cos &phi; = sin &theta;. Hence, going back to (*), AQ<sup>2</sup> - CQ<sup>2</sup> = -4 AO&middot;OQ cos &theta;, and BQ<sup>2</sup> - DQ<sup>2</sup> = &plusmn; 4 AO&middot;OQ sin &theta;. But AQ<sup>2</sup> - CQ<sup>2</sup> = a<sup>2</sup> - c<sup>2</sup> etc. So (a<sup>2</sup> - c<sup>2</sup>)<sup>2</sup> + (b<sup>2</sup> - d<sup>2</sup>)<sup>2</sup> = 16 AO<sup>2</sup>OQ<sup>2</sup> = 8s<sup>2</sup>OQ<sup>2</sup>. Substituting in (**) gives the required result.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn46.html">6th Putnam 1946</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

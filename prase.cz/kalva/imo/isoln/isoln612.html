@@ -1,0 +1,82 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1961/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1961</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b>
+
+<p>
+
+Let a, b, c be the sides of a triangle and A its area. Prove that:
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; a<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup> &ge; 4&radic;3 A
+
+<p>
+
+When do we have equality?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+One approach is a routine slog from Heron's formula. The inequality is quickly shown to be equivalent to a<sup>2</sup>b<sup>2</sup> + b<sup>2</sup>c<sup>2</sup> + c<sup>2</sup>a<sup>2</sup> &le; a<sup>4</sup> + b<sup>4</sup> + c<sup>4</sup>, which is true since a<sup>2</sup>b<sup>2</sup> &le; (a<sup>4</sup> + b<sup>4</sup>)/2. We get equality iff the triangle is equilateral.
+
+<p>
+
+Another approach is to take an altitude lying inside the triangle. If it has length h and divides the base into lengths r and s, then we quickly find that the inequality is equivalent to (h - (r + s)&radic;3/2)<sup>2</sup> + (r - s)<sup>2</sup> &ge; 0, which is true. We have equality iff r = s and h = (r + s)&radic;3/2, which means the triangle is equilateral.
+
+<p>
+
+<i>A third solution is due to Jonathan Mizrahi (somewhat adapted):</i>
+
+<p>
+
+We have b<sup>2</sup> + c<sup>2</sup> &gt;= 2bc with equality iff b = c. Also for any angle x in the range 0<sup>o</sup> to 180<sup>o</sup> we have 2bc &ge; 2bc sin(X + 30<sup>o</sup>) with equality iff X = 60<sup>o</sup>. So taking X to be the angle between the sides b and c (we cannot call it A because A is already used to mean the area in this question!) we have that b<sup>2</sup> + c<sup>2</sup> &ge; bc sin(X + 30<sup>o</sup>) with equality iff the triangle is equilateral. Now 2 sin(X + 30<sup>o</sup>) = &radic;3 sin X + cos X, so using the cosine rule a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup> - 2bc cos X, we get the required inequality.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2">
+
+<pr>
+
+&nbsp;<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>&nbsp;<p>
+
+<a href="../imo61.html">3rd IMO 1961</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+19 Sep 1998
+
+<br>Last corrected/updated 24 Sep 2003
+
+</BODY>
+
+
+
+</HTML>
+

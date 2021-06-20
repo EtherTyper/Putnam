@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 76/1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>5th USAMO 1976</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 1</b><br>
+
+<p>
+
+The squares of a 4 x 7 chess board are colored red or blue. Show that however the coloring is done, we can find a rectangle with four distinct corner squares all the same color. Find a counter-example to show that this is not true for a 4 x 6 board.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+A counter-example for 4 x 6 is:
+
+<pre>
+
+R   B   R   B   R   B
+
+R   B   B   R   B   R
+
+B   R   R   B   B   R
+
+B   R   B   R   R   B
+
+</pre>
+
+Every column has two blue and two red squares and no two columns have the red squares in the same two rows or the blue squares in the same two rows, so there can be no rectangles.
+
+<p>
+
+Suppose there is a counter-example for a 4 x 7 rectangle. Suppose it has three red squares in the first column. Then in those rows each remaining column can have at most one red square, so four remaining columns each have at least two blue squares in those three columns. Hence two of those columns have blue squares in the same two rows and hence a blue cornered rectangle. Contradiction. Similarly if there are three blue squares in the first column. So each column must have two red and two blue squares. But there are only 6 ways of choosing 2 items from 4, so two columns must have red squares in the same rows. Contradiction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa76.html">5th USAMO 1976</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Jul 2002
+
+</BODY>
+
+
+
+</HTML>
+

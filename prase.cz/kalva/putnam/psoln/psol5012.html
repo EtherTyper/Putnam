@@ -1,0 +1,80 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 50/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>10th Putnam 1950</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+(1) &nbsp; The convex polygon C' lies inside the polygon C. Is it true that the perimeter of C' is no longer than the perimeter of C?
+
+<br>(2) &nbsp; C is the convex polygon with shortest perimeter enclosing the polygon C'. Is it true that the perimeter of C is no longer than the perimeter of C' ?
+
+<br>(3) &nbsp; The closed convex surface S' lies inside the closed surface S. Is it true that area S' &le; area S?
+
+<br>(4) &nbsp; S is the smallest convex surface containing the closed surface S'. Is it true that area S &le; area S'?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(1) True. On each side of C' take a semi-infinite strip perpendicular to the side and extending outwards from C'. Since C' is convex, these strips are all disjoint. But the intersection of C with each strip is at least as long as the corresponding side of C', hence the total length of C that intersects the strips is at least as long as the perimeter of C'.
+
+<p>
+
+(2)  True. Take C as the convex hull of C'. If is sufficient to prove that the perimeter of C is no longer than the perimeter of C'. Evidently the vertices of C form a subset of the vertices of C'. If C' includes a vertex P which is not a vertex of C, then removing it does not increase the perimeter of C' (by the triangle inequality) and leaves C unaffected. So we can assume that C and C' have the same vertices. If C' just has the vertices of C permuted cyclically (or in reverse order), then its perimeter is the same. If not, then there are vertices A, B which are adjacent in C' but not in C. We show that in this case we can permute the vertices of C' so as to shorten the perimeter. We can repeat this process, shortening the perimeter each time. But there are only finitely many permutations so we must eventually reach a perimeter with the same length as C.
+
+<p>
+
+Suppose C' has vertices in the order X<sub>1</sub>X<sub>2</sub> ... X<sub>n</sub>. wlog we may assume that X<sub>1</sub> and X<sub>2</sub> are not adjacent in C, so we can find X<sub>i</sub> on one side of X<sub>1</sub>X<sub>2</sub> and X<sub>j</sub> on the other. Then one of the pairs X<sub>i</sub>X<sub>i+1</sub>, X<sub>i+1</sub>X<sub>i+2</sub>, ... , X<sub>j-1</sub>X<sub>j</sub> must straddle X<sub>1</sub>X<sub>2</sub>. Suppose it is X<sub>k</sub>X<sub>k+1</sub>. Consider the quadrilateral X<sub>1</sub>X<sub>k</sub>X<sub>2</sub>X<sub>k+1</sub>. Suppose its diagonals X<sub>1</sub>X<sub>2</sub> and X<sub>k</sub>X<sub>k+1</sub> meet at O. Then X<sub>1</sub>X<sub>2</sub> + X<sub>k</sub>X<sub>k+1</sub> = X<sub>1</sub>O + OX<sub>2</sub> + X<sub>k</sub>O + OX<sub>k+1</sub> = (X<sub>1</sub>O + OX<sub>k</sub>) + (X<sub>2</sub>O + OX<sub>k+1</sub>) &gt; X<sub>1</sub>X<sub>k</sub> + X<sub>2</sub>X<sub>k+1</sub>. So if we take C'' to have vertices in the order X<sub>1</sub>X<sub>k</sub>X<sub>k-1</sub> ... X<sub>3</sub>X<sub>2</sub>X<sub>k+1</sub>X<sub>k+2</sub> ... X<sub>n</sub>, then C'' has shorter perimeter.
+
+<p>
+
+(3)  True. The same argument as (1) works. Take semi-infinite columns on each face of the inner polyhedron.
+
+<p>
+
+(4)  False. Take the 4 vertices of a regular tetrahedron and its centre. We can find a surface S' with arbitrarily small area which contains these 5 points, but the convex hull S is the tetrahedron. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn50.html">10th Putnam 1950</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

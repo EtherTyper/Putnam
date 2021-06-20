@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1990/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>51st Putnam 1990</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Can we find a sequence of reals a<sub>i</sub> &ne; 0 such that each polynomial p<sub>n</sub>(x) = a<sub>0</sub> + a<sub>1</sub>x + ... + a<sub>n</sub>x<sup>n</sup> has all its roots real and distinct?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes.
+
+<p>
+
+Take a<sub>0</sub> = -1, a<sub>1</sub> = 1. We take even coefficients negative and odd coefficients positive. Suppose we have found a<sub>0</sub>, a<sub>1</sub>, ... , a<sub>n</sub>, so that the polynomial p<sub>n</sub>(x) has roots at x<sub>1</sub> &lt; x<sub>2</sub> &lt; ... &lt; x<sub>n</sub>. Take points y<sub>0</sub> &lt; x<sub>1</sub>, y<sub>1</sub> between x<sub>1</sub> and x<sub>2</sub>, y<sub>2</sub> between x<sub>2</sub> and x<sub>3</sub>, ... , y<sub>n-1</sub> between x<sub>n-1</sub> and x<sub>n</sub>, and y<sub>n</sub> &gt; x<sub>n</sub>. Then p<sub>n</sub>(y<sub>i</sub>) is positive for i odd and negative for i even. If we now take |a<sub>n+1</sub>| sufficiently small, then p<sub>n+1</sub>(y<sub>i</sub>) will also be positive for i odd and negative for i even. Moreover, if we take y<sub>n+1</sub> to be sufficiently large, then p<sub>n+1</sub>(y<sub>n+1</sub>) will have the opposite sign to p<sub>n+1</sub>(y<sub>n</sub>). So p<sub>n+1</sub>(y<sub>0</sub>), p<sub>n+1</sub>(y<sub>1</sub>), ... , p<sub>n+1</sub>(y<sub>n+1</sub>) alternate in sign. Hence p<sub>n+1</sub>(x) has at least n+1 distinct roots, namely one between y<sub>i</sub> and y<sub>i+1</sub> for each of i = 0, 1, 2, ... , n.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn90.html">51st Putnam 1990</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2001/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>62nd Putnam 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+x<sub>1</sub> &lt; x<sub>2</sub> &lt; x<sub>3</sub> &lt; ... is a sequence of positive reals such that lim x<sub>n</sub>/n = 0. Is it true that we can find arbitrarily large N such that all of (x<sub>1</sub> + x<sub>2N-1</sub>),  (x<sub>2</sub> + x<sub>2N-2</sub>), (x<sub>3</sub> + x<sub>2N-3</sub>), ... , (x<sub>N-1</sub> + x<sub>N+1</sub>) are less than 2 x<sub>N</sub>?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes.
+
+<p>
+
+Given 0 &lt; k &lt; x<sub>1</sub>, take N to be the largest n which maximises (x<sub>n</sub> - nk). k is chosen so that (x<sub>1</sub> - k) is positive. Since x<sub>n</sub>/n tends to zero, only finitely many (x<sub>n</sub> - nk) are positive, so N is well defined. Now x<sub>N-m</sub> - (N - m)k &le; x<sub>N</sub> - Nk and x<sub>N+m</sub> - (N + m)k &lt; x<sub>N</sub> - Nk. Adding gives x<sub>N-m</sub> + x<sub>N+m</sub> &lt; 2x<sub>N</sub>. So we are home provided we can show that this process generates arbitrarily large N.
+
+<p>
+
+The trick is to take k small. In particular, take k &lt; (x<sub>N+1</sub> - x<sub>N</sub>)/(N+1). Then x<sub>N+1</sub> - (N+1)k &gt; x<sub>N</sub>. A fortiori it is greater than all of x<sub>i</sub> - ki for i &le; N. So the value corresponding to this k is bigger than N, which completes the proof.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn01.html">62nd Putnam 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Dec 2001
+
+</BODY>
+
+
+
+</HTML>
+

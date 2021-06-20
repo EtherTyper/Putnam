@@ -1,0 +1,79 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 47/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>7th Putnam 1947</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+The sequence a<sub>n</sub> of real numbers satisfies a<sub>n+1</sub> = 1/(2 - a<sub>n</sub>). Show that lim<sub>n&rarr;&infin;</sub>a<sub>n</sub> = 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Fairly easy.</i>
+
+<p>
+
+This is slightly messy. First, since k = 1/(2 - k) implies k = 1, it is obvious that if the sequence tends to a limit, then the limit is 1.
+
+<p>
+Next, if 0 &lt; a<sub>n</sub> &lt; 1, then 1 &lt; 2 - a<sub>n</sub> &lt; 2, so 1/2 &lt; a<sub>n+1</sub> &lt; 1. So once the sequence gets into the interval (0, 1) it stays there. But a<sub>n+1</sub> - a<sub>n</sub> = (a<sub>n</sub> - 1)<sup>2</sup>/(2 - a<sub>n</sub>) &gt; 0 for a<sub>n</sub> &lt; 2 &nbsp; (*). So once the sequence gets into the interval (0, 1) it is monotonic increasing and bounded above by 1, and hence tends to a limit (which must be 1).
+
+<p>
+If a<sub>n</sub> &lt; 0, then 0 &lt; a<sub>n+1</sub> &lt; 1, so we are also home if a member of the sequence is negative. Similarly, a<sub>n</sub> &gt; 2 implies a<sub>n+1</sub> &lt; 0. If a<sub>n</sub> = 1, then all following terms are 1 and so the limit is 1. So the only issue is if 1 &lt; a<sub>1</sub> &lt; 2.
+
+<p>
+But then (*) shows that whilst the sequence remains in the interval (1, 2) it is monotonic increasing. It cannot tend to a limit, because that limit would have to be 1, which is impossible. So it cannot stay in the interval. We cannot have a<sub>m</sub> = 2, because then we would not have a<sub>m+1</sub> = 1/(2 - a<sub>m</sub>), so we must have a<sub>m</sub> &gt; 2 for some m and then we are home.
+
+<p>
+
+<i>The official solutions have a neater solution:</i>
+
+<p>
+
+Let b<sub>n</sub> = 1/(1 - a<sub>n</sub>). Then b<sub>n+1</sub> = (2 - a<sub>n</sub>)/(1 - a<sub>n</sub>) = b<sub>n</sub> + 1. Hence for some &beta;, b<sub>n</sub> = n + &beta;, and hence a<sub>n</sub> = (n + &beta; - 1)/(n + &beta;). With a little tidying up, this is a solution.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn47.html">7th Putnam 1947</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+3 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

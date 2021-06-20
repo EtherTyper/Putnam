@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1959/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>20th Putnam 1959</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Given any real numbers &alpha;<sub>1</sub>, &alpha;<sub>2</sub>, ... , &alpha;<sub>m</sub>, &beta;, show that for m, n &gt; 1 we can find m real n x n matrices A<sub>1</sub>, ... , A<sub>m</sub> such that det A<sub>i</sub> = &alpha;<sub>i</sub>, and det(&sum; A<sub>i</sub>) = &beta;.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Start by setting A<sub>i</sub> to be the matrix with 1, 1, ..., 1, &alpha;<sub>i</sub> down the main diagonal and zeros elsewhere. Modify A<sub>1</sub> by changing the n, n-1 element to 1. Modify A<sub>m</sub> by changing the n-1, n element to m(&alpha;<sub>1</sub> + ... + &alpha;<sub>m</sub>) - &beta;/m<sup>n-2</sup>. It is clear that this gives det A<sub>i</sub> = &alpha;<sub>i</sub>. 
+
+<p>
+
+A<sub>1</sub> + ... + A<sub>m</sub> has m, m, ... , m, (&alpha;<sub>1</sub> + ... + &alpha;<sub>m</sub>) down the main diagonal. The only other non-zero elements are n, n-1, which is 1 and n-1, n, which is m(&alpha;<sub>1</sub> + ... + &alpha;<sub>m</sub>) - &beta;/m<sup>n-2</sup>. Hence its determinant evaluates to &beta;.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn59.html">20th Putnam 1959</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

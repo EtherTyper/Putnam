@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 50/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>10th Putnam 1950</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+The sequence a<sub>n</sub> is defined by a<sub>0</sub> = &alpha;, a<sub>1</sub> = &beta;, a<sub>n+1</sub> = a<sub>n</sub> + (a<sub>n-1</sub> - a<sub>n</sub>)/(2n). Find lim a<sub>n</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+a<sub>n+1</sub> - a<sub>n</sub> = -1/2n (a<sub>n</sub> - a<sub>n-1</sub>), hence a<sub>n+1</sub> - a<sub>n</sub> = (-1)<sup>n</sup>/(2&middot;4&middot;6 ... .2n) (a<sub>1</sub> - a<sub>0</sub>). Then a<sub>n</sub> = (a<sub>n</sub> - a<sub>n-1</sub>) + (a<sub>n-1</sub> - a<sub>n-2</sub>) + ... + (a<sub>1</sub> - a<sub>0</sub>) + a<sub>0</sub>.
+
+<p>
+
+Hence the limit is &beta; + (&beta; - &alpha;)/2 - (&beta; - &alpha;)/2&middot;4 + (&beta; - &alpha;)/2&middot;4&middot;6 - ... . But 1/2 -1/2&middot;4 + 1/2&middot;4&middot;6 - ... = 1 - 1/&radic;e, so the limit is &alpha; + (&beta; - &alpha;)/&radic;e.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn50.html">10th Putnam 1950</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

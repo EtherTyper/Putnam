@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 70/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>31st Putnam 1970</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+x is chosen at random from the interval [0, a] (with the uniform distribution). y is chosen similarly from [0, b], and z from [0, c]. The three numbers are chosen independently, and a &ge; b &ge; c. Find the expected value of min(x, y, z).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: c/2 - c<sup>2</sup>(1/(6a) + 1/(6b) ) + c<sup>3</sup>/(12ab).
+
+<p>
+
+Let m(k) = prob(x &ge; k and y &ge; k and z &ge; k). We have that prob(x &ge; k) = 1 for k &lt; 0, 1 - k/a for 0 &le; k &le; a, 0 for k &gt; a. Similarly for y and z. So m(k) is 1  for k &lt; 0, and (1 - k/a)(1 - k/b)(1 - k/c) for 0 &le; k &le; c, and 0 for k &ge; a.
+
+<p>
+
+Now the probability that the minimum lies between k and k + &delta;k is m(k) - m(k + &delta;k), so the probability density for min(x, y, z) to equal k is -m'(k) which is:
+
+(1/a + 1/b + 1/c) -2k(1/(ab) + 1/(bc) + 1/(ca) ) + 3k<sup>2</sup>/(abc) for 0 &le; k &le; c. Thus the expected value is the integral from 0 to c of k(1/a + 1/b + 1/c) -2k<sup>2</sup>(1/(ab) + 1/(bc) + 1/(ca) ) + 3k<sup>3</sup>/(abc) which is c<sup>2</sup>(1/a + 1/b + 1/c)/2 -2c<sup>3</sup>(1/(ab) + 1/(bc) + 1/(ca) )/3 + 3c<sup>4</sup>/(4abc).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn70.html">31st Putnam 1970</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

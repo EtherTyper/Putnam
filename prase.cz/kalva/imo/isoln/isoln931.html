@@ -1,0 +1,65 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1993/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1993</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b>
+
+<p>
+
+Let f(x) = x<sup>n</sup> + 5x<sup>n-1</sup> + 3, where n &gt; 1 is an integer. Prove that f(x) cannot be expressed as the product of two non-constant polynomials with integer coefficients.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Suppose f(x) = (x<sup>r</sup> + a<sub>r-1</sub>x<sup>r-1</sup> + ... + a<sub>1</sub>x &plusmn; 3)(x<sup>s</sup> + b<sub>s-1</sub>x<sup>s-1</sup> + ... + b<sub>1</sub>x &plusmn; 1). We show that all the a's are divisible by 3 and use that to establish a contradiction.
+
+<p>
+First, r and s must be greater than 1. For if r = 1, then &plusmn; 3 is a root, so if n is even, we would have 0 = 3<sup>n</sup> &plusmn; 5&middot;3<sup>n-1</sup> + 3 = 3<sup>n-1</sup>( 3 &plusmn; 5) + 3, which is false since 3 &plusmn; 5 = 8 or -2. Similarly if n is odd we would have 0 = 3<sup>n-1</sup>(&plusmn;3 + 5) + 3, which is false since &plusmn;3 + 5 = 8 or 2. If s = 1, then &plusmn;1 is a root and we obtain a contradiction in the same way.
+
+<p>
+So r &le; n - 2, and hence the coefficients of x, x<sup>2</sup>, ... , x<sup>r</sup> are all zero. Since the coefficient of x is zero, we have: a<sub>1</sub> &plusmn; 3b<sub>1</sub> = 0, so a<sub>1</sub> is divisible by 3. We can now proceed by induction. Assume a<sub>1</sub>, ... , a<sub>t</sub> are all divisible by 3. Then consider the coefficient of x<sup>t+1</sup>. If s-1 &ge; t+1, then a<sub>t+1</sub> = linear combination of a<sub>1</sub>, ... , a<sub>t</sub> &plusmn; 3b<sub>t+1</sub>. If s-1 &lt; t+1, then a<sub>t+1</sub> = linear combination of some or all of a<sub>1</sub>, ... , a<sub>t</sub>. Either way, a<sub>t+1</sub> is divisible by 3. So considering the coefficients of x, x<sup>2</sup>, ... , x<sup>r-1</sup> gives us that all the a's are multiples of 3. Now consider the coefficient of x<sup>r</sup>, which is also zero. It is a sum of terms which are multiples of 3 plus &plusmn;1, so it is not zero. Contradiction. Hence the factorization is not possible.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p> &nbsp; <p>
+<a href="../imo93.html">34th IMO 1993</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Nov 1998
+
+<br>Last corrected/updated 25 Aug 03
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,69 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1972/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1972</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b>
+
+<p>
+
+Given n &gt; 4, prove that every cyclic quadrilateral can be dissected into n cyclic quadrilaterals.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+A little tinkering soon shows that it is easy to divide a cyclic quadrilateral ABCD into 4 cyclic quadrilaterals. Take a point P inside the quadrilateral and take an arbitrary line PK joining it to AB. Now take L on BC so that &ang;KPL = 180<sup>o</sup> - &ang;B (thus ensuring that KPLB is cyclic), then M on CD so that &ang;LPM = 180<sup>o</sup> - &ang;C, then N on AD so that &ang;MPN = 180<sup>o</sup> - &ang;D. Then &ang;NPK = 180<sup>o</sup> - &ang;A. We may need to impose some restrictions on P and K to ensure that we can obtain the necessary angles. It is not clear, however, what to do next.
+
+<p>
+The trick is to notice that the problem is easy if two sides are parallel. For then we may take arbitrarily many lines parallel to the parallel sides and divide the original quadrilateral into any number of parts.
+
+<p>
+So we need to arrange our choice of P and K so that one of the new quadrilaterals has parallel sides. But that is easy, since K is arbitrary. So take PK parallel to AD, then we must also have PL parallel to CD. 
+
+<p>
+It remains to consider how we ensure that the points lie on the correct sides. Consider first K and L. K cannot lie on AD since PK is parallel to AD, and we can avoid it lying on BC by taking P sufficiently close to D. Similarly, taking P sufficiently close to D ensures that L lies on BC. Now suppose that M and N are both on AD. Then if we keep K fixed and move P closer to CD, N will move on to CD, leaving M on AD.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+&nbsp;<p>
+
+<a href="../imo72.html">14th IMO 1972</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+10 Oct 1998
+
+<br>Last updated/corrected 14 Mar 03
+
+</BODY>
+
+
+
+</HTML>
+

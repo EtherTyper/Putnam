@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>33rd IMO shortlist 1992/1 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>33rd IMO 1992 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 1</b>
+<p>
+m is a positive integer. If there are two coprime integers a, b such that a divides m + b<sup>2</sup> and b divides m + a<sup>2</sup>, show that we can also find two such coprime integers with the additional restriction that a and b are positive and their sum does not exceed m + 1.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+A rare flop. Take a = b = 1. That works and satisfies the additional restriction also! So suppose we rule out a = b = 1. Then try m = 4. The only (a, b) with a + b &le; 5 and a, b coprime are (1, 1), (1, 2), (1, 3), (1, 4), (2, 3). But 2 does not divide 5, 3 does not divide 5, 4 does not divide 5, 3 does not divide 4+2<sup>2</sup>, so the <i>only</i> solution is (1, 1).
+<p>
+The proposer's idea was that one should show how to derive another solution (a', b') from (a, b). Then from the sequence of solutions, one could always pick one meeting the additional restriction. The Committee salvaged the reformulation: show that for any positive integer m there are infinitely many pairs of coprime integers (a, b) such that a divides m + b<sup>2</sup> and b divides m + a<sup>2</sup>.
+<p>
+But that is too easy: Suppose (a, b) is a solution with a &le; b. Take a' such that aa' = m + b<sup>2</sup>, we claim that (a', b) is also a solution and a' &gt; a. So starting with (1, 1) we get an infinite number of solutions. Since aa' &gt; b<sup>2</sup> &gt;= a<sup>2</sup>, we have a' &gt; a. If d divides a' and b, then it must divide m and hence also a, but a and b are coprime, so d = 1 and hence a' and b are coprime. Obviously a' divides m + b<sup>2</sup>, so it remains to show that b divides m + (a')<sup>2</sup>. But it is easy to see that b divides a<sup>2</sup>(m + (a')<sup>2</sup>), so it must divide m + (a')<sup>2</sup>.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh92.html">33rd IMO shortlist 1992</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+7 Aug 2003
+<br>Last updated/corrected 7 Aug 2003
+</BODY>
+
+</HTML>
+

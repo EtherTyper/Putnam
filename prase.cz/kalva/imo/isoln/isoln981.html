@@ -1,0 +1,67 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1998/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1998</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+In the convex quadrilateral ABCD, the diagonals AC and BD are perpendicular and the opposite sides AB and DC are not parallel. The point P, where the perpendicular bisectors of AB and DC meet, is inside ABCD. Prove that ABCD is cyclic if and only if the triangles ABP and CDP have equal areas.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+<img src="diag981.jpg">
+<p>
+
+Let AC and BD meet at X. Let H, K be the feet of the perpendiculars from P to AC, BD respectively. We wish to express the areas of ABP and CDP in terms of more tractable triangles. There are essentially two different configurations possible. In the first, we have area PAB = area ABX + area PAX + area PBX, and area PCD = area CDX - area PCX - area PDX. So if the areas being equal is equivalent to: area ABX - area CDX + area PAX + area PCX + area PBX + area PDX = 0. ABX and CDX are right-angled, so we may write their areas as AX&middot;BX/2 and CX&middot;DX/2. We may also put AX = AH - HX = AH - PK, BX = BK - PH, CX = CH + PK, DX = DK + PH. The other triangles combine in pairs to give area ACP + area BDP = (AC&middot;PH + BD&middot;PK)/2. This leads, after some cancellation to AH&middot;BK = CH&middot;DK. There is a similar configuration with the roles of AB and CD reversed. 
+
+<p>The second configuration is area PAB = area ABX + area PAX - PBX, area PCD = area CDX + area PDX - area PCX. In this case AX = AH + PK, BX = BK - PH, CX = CH - PK, DX = DK + PH. But we end up with the same result: AH&middot;BK = CH&middot;DK.
+
+<p>Now if ABCD is cyclic, then it follows immediately that P is the center of the circumcircle and AH = CH, BK = DK. Hence the areas of PAB and PCD are equal.
+
+<p>Conversely, suppose the areas are equal. If PA &gt; PC, then AH &gt; CH. But since PA = PB and PC = PD (by construction), PB &gt; PD, so BK &gt; DK. So AH&middot;BK &gt; CH&middot;DK. Contradiction. So PA is not greater than PC. Similarly it cannot be less. Hence PA = PC. But that implies PA = PB = PC = PD, so ABCD is cyclic.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo98.html">39th IMO 1998</a><br>
+
+<p>(C) John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Oct 1998
+<br>Last corrected/updated 19 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1973/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>34th Putnam 1973</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+An object's equations of motion are: x' = yz, y' = zx, z' = xy. Its coordinates at time t = 0 are (x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>). If two of these coordinates are zero, show that the object is stationary for all t. If (x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>) = (1, 1, 0), show that at time t, (x, y, z) = (sec t, sec t, tan t). If (x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub>) = (1, 1, -1), show that at time t, (x, y, z) = (1/(1 + t), 1/(1 + t), -1/(1 + t) ). If two of the coordinates x<sub>0</sub>, y<sub>0</sub>, z<sub>0</sub> are non-zero, show that the object's distance from the origin d &rarr; &infin; at some finite time in the past or future.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+You are meant to assume the usual uniqueness theorems. So the only non-trivial part of the question is the last. For the first three parts, one just has to verify that the three solutions given satisfy the equations.
+
+<p>
+
+We have xx' = yy' = zz' = xyz. So integrating y<sup>2</sup> = x<sup>2</sup> + A, z<sup>2</sup> = x<sup>2</sup> + B. We may assume that y<sub>0</sub> and z<sub>0</sub> are non-zero and that |x<sub>0</sub>| &le; |y<sub>0</sub>| and |z<sub>0</sub>|. So A and B are positive and x' = ( (x<sup>2</sup> + A) (x<sup>2</sup> + B) )<sup>1/2</sup>. Suppose we take the positive square root so that x increases with time. Then t = &int; ( (x<sup>2</sup> + A) (x<sup>2</sup> + B) )<sup>1/2</sup> dx. But the integral converges as x tends to infinity, so x reaches infinity at a finite (future) time. If we had taken the negative root, then we conclude that x reaches infinity at a finite (past) time.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn73.html">34th Putnam 1973</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

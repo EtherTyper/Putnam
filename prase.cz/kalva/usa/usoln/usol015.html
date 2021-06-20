@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 01/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>30th USAMO 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+A set of integers is such that if a and b belong to it, then so do a<sup>2</sup> - a, and a<sup>2</sup> - b. Also, there are two members a, b whose greatest common divisor is 1 and such that a - 2 and b - 2 also have greatest common divisor 1. Show that the set contains all the integers.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Suppose 1 belongs to the set. Then so does 0 = 1<sup>2</sup> - 1.We have 0<sup>2</sup> - 1 = -1, 1<sup>2</sup> - (-1) = 2, 2<sup>2</sup> - 1 = 3, 2<sup>2</sup> - 0 = 4, 2<sup>2</sup> - (-1) = 5. Now given that we have every integer up to k<sup>2</sup> we can get the integers from k<sup>2</sup> + 1 to (k + 1)<sup>2</sup> using (k + 1)<sup>2</sup> - h for h = 0, 1, ... , 2k (assuming that k &ge; 2). Hence we can get all positive integers. Now to get any negative integer -k just take 0<sup>2</sup> - k.
+
+<p>
+
+Now if a, b, c belong to the set, then so do (a<sup>2</sup> - b<sup>2</sup>) + c = a<sup>2</sup> - (b<sup>2</sup> - c) and -(a<sup>2</sup> - b<sup>2</sup>) + c. So by induction n(a<sup>2</sup> - b<sup>2</sup>) + c belongs for any integer n. Put A = a<sup>2</sup> - b<sup>2</sup>. Now if a' and b' are two other numbers in the set, put B = a'<sup>2</sup> - b'<sup>2</sup>. Then mA + nB + c belongs to the set for all integers m and n. If we could find A and B which were relatively prime, then we would be home, because we could find m, n for which mA + nB = 1 and hence we could find m, n for which mA + nB = -(c - 1), so that mA + nB + c = 1.
+
+<p>
+
+It is not obvious how to find such A, B. But we can find A, B, C such that the greatest common divisor is 1 and that is sufficient. Let A = a<sup>2</sup> - b<sup>2</sup>, where a, b are the two given numbers. Let B = a<sup>3</sup>(a - 2) and let C = b<sup>3</sup>(b - 2). Since a is in the set so is a<sup>2</sup> - a and B = (a<sup>2</sup> - a)<sup>2</sup> - a<sup>2</sup>. Similarly C. So certainly all numbers mA + nB + rC + a are in the set for any integers m, n, r. If a prime p divides B, then it must divide a or a - 2. If it also divides A, then it cannot divide a, for then it would also divide b<sup>2</sup> and hence b, but we are told that a and b have no common factor. So any prime dividing all of A, B and C must divide a - 2. Similarly, it must divide b - 2. But we are told that a - 2 and b - 2 have no common factor. Hence A, B, C have no common factor. So we can find m, n, r such that mA + nB + rC = 1, and hence m, n, r such that mA + nB + rC = -(a - 1) and hence such that mA + nB + rC + a = 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa01.html">30th USAMO 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

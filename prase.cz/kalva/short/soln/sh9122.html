@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<TITLE>32nd IMO shortlist 1991/22 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>32nd IMO 1991 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 22</b>
+<p>
+There is exactly one square with its vertices on the curve y = x<sup>3</sup> + ax<sup>2</sup> + bx + c, where a, b, c are real. Show that the square must have side 72<sup>1/4</sup>.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+<img src="http://atrey.karlin.mff.cuni.cz/~franta/kalva/short/soln/diag9122.bmp">
+<p>
+By a translation along the x-axis we can take a = 0. By a translation along the y-axis we can take c = 0, so the curve is y = x<sup>3</sup> + bx. We call the curve C. The center of the square O must be at the origin, otherwise we could get a second square by rotating through 180<sup>o</sup>. Suppose one of the vertices has coordinates (r, s). Then the opposite vertex must be (-r, -s). Another vertex is obtained by rotating (r, s) through 90<sup>o</sup> about O, so it must be (-s, r), and the fourth vertex must be (s, -r).
+<p>
+The vertices also lie on the cubic -x = y<sup>3</sup> + by, which we call C'. Now suppose P (u, v) is any point which lies on both cubics. Then R (-u, -v) must also lie on both conics. Since C' is obtained from C by a rotation of 90<sup>o</sup>, the point Q (v, -u) obtained from P by a rotation of 90<sup>o</sup> must lie on on C. But Q is also obtained from R by a rotation of -90<sup>o</sup> and R lies on C, so Q must also lie on C'. Hence S (-v, u) must also lie on both cubics. Thus we have a square PQRS with vertices on C. But it is clear from the graph that (apart from the intersection at the origin), the two cubics generally intersect in 0 or 8 points. 0 intersections gives 0 squares on C, and 8 intersections gives 2 squares on C.
+<p>
+The only way we can get just 4 intersections, and a single square, is if the cubics touch  (at each of four points).
+<p>
+Note that (r, s) satisfy s = r<sup>3</sup> + br, -r = s<sup>3</sup> + b<sup>s</sup>. Hence s + (s<sup>3</sup> + bs)<sup>3</sup> + b(s<sup>3</sup> + bs) = 0, or s(s<sup>8</sup> + 3bs<sup>6</sup> + 3b<sup>2</sup>s<sup>4</sup> + (b<sup>3</sup> + b)s<sup>2</sup> + b<sup>2</sup> + 1) = 0. Thus the 8th degree polynomial x<sup>8</sup> + 3bx<sup>6</sup> + 3b<sup>2</sup>x<sup>4</sup> + (b<sup>3</sup> + b)x<sup>2</sup> + b<sup>2</sup> + 1 must be the square of the polynomial with roots &plusmn;r, &plusmn;s. In other words, it must be (x<sup>2</sup> - r<sup>2</sup>)<sup>2</sup>(x<sup>2</sup> - s<sup>2</sup>)<sup>2</sup> = x<sup>8</sup> - 2(r<sup>2</sup> + s<sup>2</sup>)x<sup>6</sup> + (r<sup>4</sup> + 4r<sup>2</sup>s<sup>2</sup> + s<sup>4</sup>) - 2r<sup>2</sup>s<sup>2</sup>(r<sup>2</sup> + s<sup>2</sup>)x<sup>2</sup> + r<sup>4</sup>s<sup>4</sup>.
+<p>
+Comparing coefficients: 
+<br>3b = -2(r<sup>2</sup> + s<sup>2</sup>) (1)
+<br>b<sup>3</sup> + b = -2r<sup>2</sup>s<sup>2</sup>(r<sup>2</sup> + s<sup>2</sup>) (2)
+<br>3b<sup>2</sup> = r<sup>4</sup> + 4r<sup>2</sup>s<sup>2</sup> + s<sup>4</sup> (3)
+<br>b<sup>2</sup> + 1 = r<sup>4</sup>s<sup>4</sup> (4)
+<p>
+Substituting (1) in (2), we get b(b<sup>2</sup> + 1) = 3br<sup>2</sup>s<sup>2</sup>. Squaring, (b<sup>2</sup> + 1)<sup>2</sup> = 9r<sup>4</sup>s<sup>4</sup> = 9(b<sup>2</sup> + 1), from (4). Hence b<sup>2</sup> = 8. But if d is the side of the square, then d<sup>2</sup> = 2(r<sup>2</sup> + s<sup>2</sup>). Squaring, d<sup>4</sup> = 9b<sup>2</sup> (from (1)). Hence d<sup>4</sup> = 72.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh91.html">32nd IMO shortlist 1991</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+2 Jan 2003
+<br>Last corrected/updated 2Jan 03
+</BODY>
+
+</HTML>
+

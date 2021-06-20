@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1961/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>22nd Putnam 1961</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Given x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub> &isin; [0, 1], let s = <font face="Symbol">S</font><sub>1&le;i&lt;j&le;n</sub> |x<sub>i</sub> - x<sub>j</sub>|. Find f(n), the maximum value of s over all possible {x<sub>i</sub>}.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: f(2m) = m<sup>2</sup> (half the points 0, half 1); f(2m+1) = m<sup>2</sup> + m (m+1 points 0, m points 1).
+
+<p>
+
+It remains to prove that we cannot do better than this. We prove that this is best possible by induction. It is obvious for n = 2, 3. Suppose it is true for n. Take n+2 points. Let A be the leftmost point and B the rightmost point. Then the new terms in the sum the n+2 points are AB and AC, CB for each existing C. But these 2n + 1 terms sum to at most n + 1 (AC + CB = AB &le; 1). So f(n+2) &le; f(n) + n + 1. For n = 2m this gives f(2m+2) &le; m<sup>2</sup> + 2m + 1 = (m + 1)<sup>2</sup>. For n = 2m + 1, it gives f(2m+3) &le; m<sup>2</sup> + m + 2m + 1 + 1 = (m+1)<sup>2</sup> + (m+1).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn61.html">22nd Putnam 1961</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

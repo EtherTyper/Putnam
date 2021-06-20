@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1971/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1971</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+<p>Let E<sub>n</sub> = (a<sub>1</sub> - a<sub>2</sub>)(a<sub>1</sub> - a<sub>3</sub>) ... (a<sub>1</sub> - a<sub>n</sub>) + (a<sub>2</sub> - a<sub>1</sub>)(a<sub>2</sub> - a<sub>3</sub>) ... (a<sub>2</sub> - a<sub>n</sub>) + ... + (a<sub>n</sub> - a<sub>1</sub>)(a<sub>n</sub> - a<sub>2</sub>) ... (a<sub>n</sub> - a<sub>n-1</sub>). Let S<sub>n</sub> be the proposition that E<sub>n</sub> &ge; 0 for all real a<sub>i</sub>.
+
+<p>Prove that S<sub>n</sub> is true for n = 3 and 5, but for no other n &gt; 2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Take a<sub>1</sub> &lt; 0, and the remaining a<sub>i</sub> = 0. Then E<sub>n</sub> = a<sub>1</sub><sup>n-1</sup> &lt; 0 for n even, so the proposition is false for even n.
+
+<p>Suppose n &ge; 7 and odd. Take any c &gt; a &gt; b, and let a<sub>1</sub> = a, a<sub>2</sub> = a<sub>3</sub> = a<sub>4</sub>= b, and a<sub>5</sub> = a<sub>6</sub> = ... = a<sub>n</sub> = c. Then E<sub>n</sub> = (a - b)<sup>3</sup>(a - c)<sup>n-4</sup> &lt; 0. So the proposition is false for odd n &ge; 7.
+
+<p>
+Assume a<sub>1</sub> &ge; a<sub>2</sub> &ge; a<sub>3</sub>. Then in E<sub>3</sub> the sum of the first two terms is non-negative, because (a<sub>1</sub> - a<sub>3</sub>) &ge; (a<sub>2</sub> - a<sub>3</sub>). The last term is also non-negative. Hence E<sub>3</sub> &ge; 0, and the proposition is true for n = 3.
+
+<p>
+It remains to prove S<sub>5</sub>. Suppose a<sub>1</sub> &ge; a<sub>2</sub> &ge; a<sub>3</sub> &ge; a<sub>4</sub> &ge; a<sub>5</sub>. Then the sum of the first two terms in E<sub>5</sub> is (a<sub>1</sub> - a<sub>2</sub>){(a<sub>1</sub> - a<sub>3</sub>)(a<sub>1</sub> - a<sub>4</sub>)(a<sub>1</sub> - a<sub>5</sub>) - (a<sub>2</sub> - a<sub>3</sub>)(a<sub>2</sub> - a<sub>4</sub>)(a<sub>2</sub> - a<sub>5</sub>)} &ge; 0. The third term is non-negative (the first two factors are non-positive and the last two non-negative). The sum of the last two terms is: (a<sub>4</sub> - a<sub>5</sub>){(a<sub>1</sub> - a<sub>5</sub>)(a<sub>2</sub> - a<sub>5</sub>)(a<sub>3</sub> - a<sub>5</sub>) - (a<sub>1</sub> - a<sub>4</sub>)(a<sub>2</sub> - a<sub>4</sub>)(a<sub>3</sub> - a<sub>4</sub>)} &ge; 0. Hence E<sub>5</sub> &ge; 0.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>&nbsp;<p>
+
+<a href="../imo71.html">13th IMO 1971</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+8 Oct 1998
+
+<br>Last updated/corrected 14 Mar 03
+
+</BODY>
+
+
+
+</HTML>
+

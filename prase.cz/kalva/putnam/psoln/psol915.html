@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 91/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>52nd Putnam 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Let f(z) = &int;<sub>0</sub><sup>z</sup> &nbsp; &radic;(x<sup>4</sup> + (z - z<sup>2</sup>)<sup>2</sup>) dx. Find the maximum value of f(z) in the range 0 &le; z &le; 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Moderately hard.
+
+<p>
+
+Answer: 1/3.
+
+<p>
+
+The integrand is strictly positive for 0 &lt; x &le; 1 and 0 &le; z &le; 1, so f(z) &gt; 0 for 0 &lt; z &le; 1. However, it is not at all clear how to get the integral in closed form except for z = 0 or 1. So we have a strong suspicion that the maximum must be the higher of the two values we can actually calculate: f(1) = 1/3! To prove this we need to show that f '(z) &gt; 0 for z &gt; 0.
+
+<p>
+f '(z) = &radic;(z<sup>4</sup> + z<sup>2</sup>(1 - z)<sup>2</sup>) + z(1 - z)(1 - 2z) &int;<sub>0</sub><sup>z</sup> (x<sup>4</sup> + z<sup>2</sup>(1 - z)<sup>2</sup>)<sup>-1/2</sup> dx. The integrand is positive, so clearly f '(z) &gt; 0 for 0 &lt; z &le; 1/2. The integrand is less than 1/&radic;(z<sup>2</sup>(1 - z)<sup>2</sup>) = 1/z 1/(1 - z), so the integral is less than 1/(1 - z), and for z &gt; 1/2, f '(z) &gt; &radic;(z<sup>4</sup> + z<sup>2</sup>(1 - z)<sup>2</sup>) - z(2z - 1). But, squaring, we see that z(2z - 1) &lt; &radic;(z<sup>4</sup> + z<sup>2</sup>(1 - z)<sup>2</sup>) for 1/2 &lt; z &lt; 1, which completes the proof. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn91.html">52nd Putnam 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+21 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

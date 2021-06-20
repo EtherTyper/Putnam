@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>41st IMO shortlist 2000/A7 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>41st IMO 2000 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A7</b><br>
+<p>
+A polynomial p(x) of degree 2000 with distinct real coefficients satisfies condition n if (1) p(n) = 0 and (2) if q(x) is obtained from p(x) by permuting its coefficients, then either q(n) = 0, or we can obtain a polynomial r(x) by transposing two coefficients of q(x) such that r(n) = 0. Find all integers n for which there is a polynomial satisfying condition n.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: n = 0 and 1.
+<p>
+If p(x) has zero coefficient of x<sup>0</sup> then it obviously satisfies condition 0. Similarly if p(x) = a<sub>2000</sub>x<sup>2000</sup> + ... + a<sub>0</sub> and we put a<sub>0</sub> = a<sub>1</sub> + ... + a<sub>2000</sub>, then it satisfies condition 1. [In both cases all we need to do to get q(n) = 0 is to get the right coefficient of x<sup>0</sup>.]
+<p>
+It remains to show that if n is not 0 or 1, then p(x) cannot satisfy condition n. We consider first the case |n| &gt; 1. The idea is that we can get too many different values at x = n by permuting the coefficients of p(x) for condition n to hold. Specifically, we claim that we can get at least 2<sup>2000</sup> different values. Now suppose q(x) = b<sub>2000</sub>x<sup>2000</sup> + ... + b<sub>0</sub> is obtained by permuting the coefficients of p(x). Then if we transpose the coefficients b<sub>i</sub> and b<sub>j</sub>, then we increase the value at x = n by (b<sub>i</sub>n<sup>j</sup> + b<sub>j</sub>n<sup>i</sup> - b<sub>i</sub>n<sup>i</sup> - b<sub>j</sub>n<sup>j</sup>) = d. Now as q(x) ranges over all possibilities and i and j range over all possibilities, d has less than 2001<sup>4</sup> possible values, because there are 2001 choices for i, 2000 choices for j, then 2001 choices for the coefficient of p(x) which equals b<sub>i</sub> and 2000 choices for the coefficient of p(x) which equals b<sub>j</sub>. So if q(n) = 0, then r(n) has less than 2001<sup>4</sup> possible values (where r(x) is obtained from q(x) by transposing two coefficients). But if p(x) satisfies condition n, then r(x) could be any polynomial obtained by permuting the coefficients of p(x). Contradiction, since 2001<sup>4</sup> &lt; 2<sup>2000</sup>.
+<p>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh00.html">41st IMO shortlist 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+</HTML>
+

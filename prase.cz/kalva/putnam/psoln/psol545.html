@@ -1,0 +1,58 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 54/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>14th Putnam 1954</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+R is the reals. f <b>:</b> (0, 1) &rarr; R satisfies lim<sub>x&rarr;0</sub> f(x) = 0, and f(x) - f(x/2) = o(x) as x&rarr;0. Show that f(x) = o(x) as x&rarr;0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We wish to show that given &delta; &gt; 0, |f(x)| &lt; x &delta; for sufficiently small x. Certainly we can find &epsilon; &gt; 0, such that for x &lt; &epsilon;, |f(x/2<sup>r</sup>) - f(x/2<sup>r+1</sup>)| &lt; x/2<sup>r+2</sup> &delta;. Summing, |f(x)| &lt; x &delta; (1/4 + 1/8 + ... ) + |f(x/2<sup>n</sup>)| = x &delta;/2  + |f(x/2<sup>n</sup>)|. But since f(x/2<sup>n</sup>) tends to zero, for any given x we can take n sufficiently large that |f(x/2<sup>n</sup>)| &lt; x &delta;/2 and hence |f(x)| &lt; x &delta; as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn54.html">14th Putnam 1954</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

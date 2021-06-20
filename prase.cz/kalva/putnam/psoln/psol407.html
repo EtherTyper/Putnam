@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 40/A7solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>3rd Putnam 1940</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A7</b><br>
+
+<p>
+
+a<sub>i</sub> and b<sub>i</sub> are real, and &sum;<sub>1</sub><sup>&infin;</sup> a<sub>i</sub><sup>2</sup> and &sum;<sub>1</sub><sup>&infin;</sup> b<sub>i</sub><sup>2</sup> converge. Prove that &sum;<sub>1</sub><sup>&infin;</sup> (a<sub>i</sub> - b<sub>i</sub>)<sup>p</sup> converges for p &ge; 2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Moderately easy.
+
+<p>
+Notice first that it is sufficient to prove the result for p = 2. For that is equivalent to the statement that &sum; |a<sub>i</sub> - b<sub>i</sub>|<sup>2</sup> converges. Hence for sufficiently large i, |a<sub>i</sub> - b<sub>i</sub>| &lt; 1, and hence |a<sub>i</sub> - b<sub>i</sub>|<sup>p</sup> &le; |a<sub>i</sub> - b<sub>i</sub>|<sup>2</sup>. So &sum; (a<sub>i</sub> - b<sub>i</sub>)<sup>p</sup> is absolutely convergent and hence convergent.
+
+<p>
+(a<sub>i</sub> - b<sub>i</sub>)<sup>2</sup> = a<sub>i</sub><sup>2</sup> - 2a<sub>i</sub>b<sub>i</sub> + b<sub>i</sub><sup>2</sup>. The only tricky part is the middle term. It may be positive, so we cannot simply argue that 0 &le; (a<sub>i</sub> - b<sub>i</sub>)<sup>2</sup> &le; a<sub>i</sub><sup>2</sup> + b<sub>i</sub><sup>2</sup>. However, it is true that 0 &le; (a<sub>i</sub> - b<sub>i</sub>)<sup>2</sup> = 2a<sub>i</sub><sup>2</sup> + 2b<sub>i</sub><sup>2</sup> - (a<sub>i</sub> + b<sub>i</sub>)<sup>2</sup> &le; 2a<sub>i</sub><sup>2</sup> + 2b<sub>i</sub><sup>2</sup>. That suffices, since &sum; a<sub>i</sub><sup>2</sup> and &sum; b<sub>i</sub><sup>2</sup> are absolutely convergent, hence also &sum; (2a<sub>i</sub><sup>2</sup> + 2b<sub>i</sub><sup>2</sup>).
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn40.html">3rd Putnam 1940</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

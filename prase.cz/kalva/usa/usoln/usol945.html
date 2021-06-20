@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 94/5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>23rd USAMO 1994</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 5</b><br>
+
+<p>
+
+X is a set of n positive integers with sum s and product p. Show for any integer N &gt;= s, &sum;( parity(Y) (N - sum(Y))Cs ) = p, where aCb is the binomial coefficient a!/(b! (a-b)! ), the sum is taken over all subsets Y of X, parity(Y) = 1 if Y is empty or has an even number of elements, -1 if Y has an odd number of elements, and sum(Y) is the sum of the elements in Y.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(&sum; (-1)<sup>n</sup> binomial) with the sum over all subsets Y of a set X strongly suggests the principle of inclusion and exclusion. 
+
+<p>
+
+Consider all sequences of length N &ge; s of 0s and 1s with a total of s 1s. We can regard positions 1, 2, ... , a<sub>1</sub> as block a<sub>1</sub>, positions a<sub>1</sub> + 1, a<sub>2</sub> + 2, ... , a<sub>1</sub> + a<sub>2</sub> as block a<sub>2</sub>, positions a<sub>1</sub>+a<sub>2</sub> + 1, a<sub>1</sub>+a<sub>2</sub> + 2, ... , a<sub>1</sub>+a<sub>2</sub> + a<sub>3</sub> as block a<sub>3</sub>, and so on up to a<sub>1</sub> + ... + a<sub>n-1</sub> + 1, ... a<sub>1</sub> + ... + a<sub>n</sub> as block a<sub>n</sub>. We are interested in sequences which have just one 1 in each block. Counting directly there are obviously just p such sequences. 
+
+<p>
+
+But we can also take N' to be the total number of sequences of 0s and 1s with s 1s and N<sub>Y</sub> to be the number with no 1s in block k for k in Y, where Y is a subset of X. Requiring one 1 in each block is equivalent to requiring no block to have no 1s. So the PIE gives that p = N' - N<sub>Y</sub> for Y with one element + N<sub>Y</sub> for Y with 2 elements and so on. N' = NCs and N<sub>Y</sub> = (N - sum(Y))Cs, so we have p = &sum;( parity(Y) (N - sum(Y))Cs ), which is the required relation.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa94.html">23rd USAMO 1994</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+23 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

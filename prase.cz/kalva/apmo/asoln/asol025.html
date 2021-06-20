@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 02/5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>14th APMO 2002</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 5</b><br>
+<p>
+Find all real-valued functions f on the reals which have at most finitely many zeros and satisfy f(x<sup>4</sup> + y) = x<sup>3</sup>f(x) + f(f(y)) for all x, y.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Putting x = 0, we get f(y) = f(f(y)) for all y (*).
+<p>
+Putting x = 1, y = 0, we get f(0) = 0. Hence putting y = 0, f(x<sup>4</sup>) = x<sup>3</sup>f(x) (**). 
+<p>
+<p>
+If f(1) = 0, then f(2) = f(1 + 1) = f(1) + f(1) = 0, so f(3) = f(1 + 2) = f(1) + f(2) = 0 and so on. Contradiction (only finitely many zeros). So f(1) = k for some non-zero k. By (*), f(k) = k. 
+<p>
+Suppose f(h) = 0 for some h not 0 or 1. Then f(h<sup>4</sup>) = h<sup>3</sup>f(h) = 0, so f(x) = 0 for any of the distinct values x = h, h<sup>4</sup>, h<sup>16</sup>, h<sup>64</sup>, ... . Contradiction (only finitely many zeros). So f(h) is not 0 for any non-zero h.
+<p>
+Given any x, put z = f(x<sup>4</sup>) - x<sup>4</sup>. Then f(x<sup>4</sup>) = f(f(x<sup>4</sup>)) = f(x<sup>4</sup> + z) = x<sup>3</sup>f(x) + f(z). But f(x<sup>4</sup>) = x<sup>3</sup>f(x), so f(z) = 0. Hence z = 0. So for any positive x we have f(x) = x. But f(x<sup>4</sup>) = f( (-x)<sup>4</sup> ) = - x<sup>3</sup> f(-x). Hence f(-x) = - f(x). So f(x) = x for all x.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo02.html">14th APMO 2002</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

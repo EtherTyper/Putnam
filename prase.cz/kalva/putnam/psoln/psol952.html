@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1995/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+For what positive reals &alpha;, &beta; does &int;<sub>&beta;</sub><sup>&infin;</sup> &radic;(&radic;(x + &alpha;) - &radic;x) - &radic;(&radic;x - &radic;(x - &beta;) ) dx converge?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: it converges for &alpha; = &beta;.
+
+<p>
+
+<i>Straightforward.</i>
+
+<p>
+Multiplying up shows that given positive k &lt; 1, &alpha;k/(2&radic;x) &lt; (&radic;(x + &alpha;) - &radic;x) &lt; &alpha;/(2&radic;x) for all sufficiently large x.
+
+<p>
+So if &alpha; &gt; &beta;, take k such that 0 &lt; k &lt; 1 and &alpha;k &gt; &beta;. Then the integrand is greater than (&radic;(&alpha;k) - &radic;&beta;)/(x<sup>1/4</sup>&radic;2). But the integral of x<sup>-1/4</sup> diverges (because x<sup>3/4</sup> tends to infinity as x tends to infinity), do the original integral does also.
+
+<p>
+Similarly, if &alpha; &lt; &beta;, take k such that 0 &lt; k &lt; 1 and &beta;k &gt; &alpha;. Then the integrand is less than (&radic;&alpha; - &radic;(&beta;k)/(x<sup>1/4</sup>&radic;2) and so the integral again diverges.
+
+<p>
+If &alpha; = &beta;, then (&radic;(x + &alpha;) - &radic;x) takes the same values on the interval [n&alpha;, n&alpha; + &alpha;] as (&radic;x - &radic;(x - &beta;)) does on the interval [n&alpha;+&alpha;, n&alpha;+2&alpha;]. Thus the integral from &alpha; to n&alpha; equals the K + L where - K is the integral from 0 to &alpha; of &radic;(&radic;(x + &alpha;) - &radic;x) and L is the integral from n&alpha;-&alpha; to n&alpha; of &radic;(&radic;(x + &alpha;) - &radic;x). But the integrand &radic;(&radic;(x + &alpha;) - &radic;x) tends to zero as x tends to infinity, so L tends to zero as n tends to infinity and the integral converges to K.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn95.html">Putnam 1995</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

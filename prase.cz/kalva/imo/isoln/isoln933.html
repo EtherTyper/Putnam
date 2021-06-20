@@ -1,0 +1,186 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1993/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1993</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+On an infinite chessboard a game is played as follows. At the start n<sup>2</sup> pieces are arranged in an n x n block of adjoining squares, one piece on each square. A move in the game is a jump in a horizontal or vertical direction over an adjacent occupied square to an unoccupied square immediately beyond. The piece which has been jumped over is removed. Find those values of n for which the game can end with only one piece remaining on the board.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>We show first that the game can end with only one piece if n is not a multiple of 3. Note first that the result is true for n = 2 or 4.
+
+<p>n=2
+
+<pre>
+
+X X   . . X   . . X   . . . 
+
+X X   X X     . . X   . . .
+
+                          X
+
+</pre>
+
+n = 4
+
+<pre>
+
+              X         X         X         X         X
+
+X X X X   X X . X   X X . X   . . X X   . . X X   . X . .
+
+X X X X   X X . X   . . X X   . . X X   X . X X   X . X X
+
+X X X X   X X X X   X X X X   X X X X   . X X X   . X X X
+
+X X X X   X X X X   X X X X   X X X X   . X X X   . X X X
+
+
+
+    X         X         X
+
+. X . .   . X . .   . X X .   . X . .   . X . .   . . . .
+
+X X . .   . . X .   . . . .   . . X .   . X X .   . . X .
+
+. X X X   . X X X   . X . X   . X . X   . . . X   . X . X
+
+. X X X   . X X X   . X X X   . X X X   . . X X   . . X X
+
+
+
+. . . .   . . . .   . . . .   . . . .
+
+. . X X   . X . .   . . . .   . . . .
+
+. X . .   . X . .   . . . .   . . . .
+
+. . X .   . . X .   . X X .   . . . X
+
+</pre>
+
+The key technique is the following three moves which can be used to wipe out three adjacent pieces on the border provided there are pieces behind them:
+
+<pre>
+
+ X X X     X X .     X X .     X X X
+
+ X X X     X X .     . . X     . . .
+
+               X         X
+
+</pre>
+
+We can use this technique to reduce (r + 3) x s rectangle to an r x s rectangle. There is a slight wrinkle for the last two rows of three:
+
+<pre>
+
+ X X X X     X X . X     . . X X     . . X X     . . . X     . . . X
+
+ X X X X     X X . X     . . X X     . . X X     . . . X     . . . X
+
+ . . . X     . . X X     . . X X     . X . .     . X X .     . . . X
+
+</pre>
+
+Thus we can reduce a square side 3n+2 to a 2 x (3n+2) rectangle. We now show how to wipe out the rectangle. First, we change the 2 x 2 rectangle at one end into a single piece alongside the (now) 2 x 3n rectangle:
+
+<pre>
+
+  X X    . .     . .
+
+  X X    . .     . .
+
+         X X        X   
+
+</pre>
+
+Then we use the following technique to shorten the rectangle by 3:
+
+<pre>
+
+ X X X     X . X     X . X     . . .     . . .
+
+ X X X     X . X     X . X     . . .     . . .
+
+ X         X X     X .       X X . X         . X
+
+</pre>
+
+That completes the case of the square side 3n+2. For the square side 3n+1 we can use the technique for removing 3 x r rectangles to reduce it to a 4 x 4 square and then use the technique above for the 4 x 4 rectangle.
+
+<p>
+
+Finally, we use a parity argument to show that if n is a multiple of 3, then the square side n cannot be reduced to a single piece. Color the board with 3 colors, red, white and blue:
+
+<pre>
+
+ R W B R W B R W B ...
+
+ W B R W B R W B R ...
+
+ B R W B R W B R W ...
+
+ R W B R W B R W B ...
+
+ ...
+
+</pre>
+
+Let suppose that the single piece is on a red square. Let A be the number of moves onto a red square, B the number of moves onto a white square and C the number of moves onto a blue square. A move onto a red square increases the number of pieces on red squares by 1, reduces the number of pieces on white squares by 1, and reduces the number of pieces on blue squares by 1. Let n = 3m. Then there are initially m pieces on red squares, m on white and m on blue. Thus we have:
+
+<p>&nbsp; - A + B + C = m-1; &nbsp; A - B + C = m; &nbsp; A + B - C = m.
+
+<p>Solving, we get A = m, B = m - 1/2, C = m - 1/2. But the number of moves of each type must be integral, so it is not possible to reduce the number of pieces to one if n is a multiple of 3.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo93.html">34th IMO 1993</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+31 Oct 1998
+<br>Last corrected/updated 25 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

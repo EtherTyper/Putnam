@@ -1,0 +1,62 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>1st Putnam 1938/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>1st Putnam 1938</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+(1) &nbsp; Find lim<sub>x-&gt;inf</sub> x<sup>2</sup>/e<sup>x</sup>.
+
+<p>(2) &nbsp; Find lim<sub>k-&gt;0</sub> 1/k &nbsp;&int;<sub>0</sub><sup>k</sup> &nbsp;  (1 + sin 2x)<sup>1/x</sup> dx.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(1) Let f(x) = x<sup>3</sup>e<sup>-x</sup>. Then f '(x) = (3x<sup>2</sup> - x<sup>3</sup>) e<sup>-x</sup> &lt; 0 for x &gt; 3. Hence f(x) &lt; f(3) for x &gt; 3, so x<sup>2</sup> e<sup>-x</sup> &lt; f(3)/x for x &gt; 3. Hence x<sup>2</sup> e<sup>-x</sup> tends to zero.
+
+<p>
+
+(2) We use L'H&ocirc;pital's rule lim f(x)/g(x) = lim f '(x)/g'(x). Applied to the expression given it gives lim (1 + sin 2x)<sup>1/x</sup>. Write (1 + sin 2x)<sup>1/x</sup> = exp( 1/x ln(1 + sin 2x) ). So apply the rule again to 1/x ln( 1 + sin 2x) to get 2 cos 2x/(1 + sin 2x) which tends to 2. Hence (1 + sin 2x)<sup>1/x</sup> tends to e<sup>2</sup> and so does the original expression.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn38.html">1st Putnam 1938</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

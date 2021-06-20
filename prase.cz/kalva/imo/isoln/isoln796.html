@@ -1,0 +1,74 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1979/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1979</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+Let A and E be opposite vertices of an octagon. A frog starts at vertex A. From any vertex except E it jumps to one of the two adjacent vertices. When it reaches E it stops. Let a<sub>n</sub> be the number of distinct paths of exactly n jumps ending at E. Prove that:
+
+<p>&nbsp; &nbsp; &nbsp; a<sub>2n-1</sub> = 0
+
+<br>&nbsp; &nbsp; &nbsp; a<sub>2n</sub> = (2 + &radic;2)<sup>n-1</sup>/&radic;2 - (2 - &radic;2)<sup>n-1</sup>/&radic;2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Each jump changes the parity of the shortest distance to E. The parity is initially even, so an odd number of jumps cannot end at E. Hence a<sub>2n-1</sub> = 0.
+
+<p>
+We derive a recurrence relation for a<sub>2n</sub>. This is not easy to do directly, so we introduce b<sub>n</sub> which is the number of paths length n from C to E. Then we have immediately:
+
+<p>&nbsp; &nbsp; a<sub>2n</sub> = 2a<sub>2n-2</sub> + 2b<sub>2n-2</sub> for n &gt; 1
+
+<br>&nbsp; &nbsp; b<sub>2n</sub> = 2b<sub>2n-2</sub> + a<sub>2n-2</sub> for n &gt; 1
+
+<p>
+Hence, using the first equation: a<sub>2n</sub> - 2a<sub>2n-2</sub> = 2a<sub>2n-2</sub> - 4a<sub>2n-4</sub> + 2b<sub>2n-2</sub> - 4b<sub>2n-4</sub> for n &gt; 2. Using the second equation, this leads to: a<sub>2n</sub> = 4a<sub>2n-2</sub> - 2a<sub>2n-4</sub> for n &gt; 2. This is a linear recurrence relation with the general solution: a<sub>2n</sub> = a(2 + &radic;2)<sup>n-1</sup> + b(2 - &radic;2)<sup>n-1</sup>. But we easily see directly that a<sub>4</sub> = 2, a<sub>6</sub> = 8 and we can now solve for the coefficients to get the solution given.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo79.html">21st IMO 1979</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

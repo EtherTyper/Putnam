@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>5th Putnam 1942/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>5th Putnam 1942</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Let C be the family of conics (2y + x)<sup>2</sup> = a(y + x). Find C', the family of conics which are orthogonal to C. At what angle do the curves of the two families meet at the origin?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+For most points P in the plane we can find a unique conic in the family passing through the point. Thus we should be able to find the gradient of members of the family at (x, y) in a formula which is independent of a. We then use this to get a formula for the gradient of the orthogonal family and solve the resulting first-order differential equation to get the orthogonal family.
+
+<p>
+
+Thus we have 8y y' + 4x y' + 4y + 2x = ay' + a = (y' + 1)(2y + x)<sup>2</sup>/(y + x). So y'(2y+x)( 4(x+y) - (2y+x) ) = (2y+x)<sup>2</sup> - (x+2y)(x+y), or y'(2y+x)(2y+3x) = -2x(2y+x), so y' = -x/(2y+3x). Hence the orthogonal family satisfies y' = (2y+3x)/x. So y'/x<sup>2</sup> - 2y/x<sup>3</sup> = 3/x<sup>2</sup>. Integrating y = bx<sup>2</sup> - 3x. These are all parabolas.
+
+<p>
+
+All members of both families pass through the origin. Changing coordinates to X = x + 2y, Y = y - 2x, the equation of a member of the first family becomes X<sup>2</sup> = a(3X-Y)/5 or Y = - 5/a (X - 3a/10)<sup>2</sup> + 9a/20. This has gradient 3 (in the new system) at the origin. In the old system the tangent is y = -x. The orthogonal set obviously has gradient -3 at the origin. If the angle between them is k, then tan k = (-1 +3)/(1+3) = 1/2. So k = tan<sup>-1</sup>1/2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn42.html">5th Putnam 1942</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1968/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>29th Putnam 1968</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Given that a 60<sup>o</sup> angle cannot be trisected with ruler and compass, prove that a 120<sup>o</sup>/n angle cannot be trisected with ruler and compass for n = 1, 2, 3, ... .
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+This is a trap.
+
+<p>
+
+The obvious answer is that if we could trisect an angle 120<sup>o</sup>/n, that would give us an angle 40<sup>o</sup>/n and hence 60<sup>o</sup>/3. But we are told we cannot trisect 60<sup>o</sup>.
+
+<p>
+
+This does not work for a slightly subtle reason. We are given the angle 120<sup>o</sup>/n. That <b><i>in itself</i></b> may help us to trisect 60<sup>o</sup>. For example, it certainly allows us to trisect 60<sup>o</sup> if n = 6. 
+
+<p>
+
+So we have to use the standard Galois theory approach. It is not hard to show that a straight-edge allows us to get rational distances and compasses allow us to get any finite number of square roots. So we can construct distances which are in an extension K of the rationals of degree 2<sup>n</sup> for some n. Constructing an angle is equivalent to constructing its cosine. 
+
+<p>
+
+So if we are given an angle A, then we can construct distances which are in any extension K of degree 2<sup>n</sup>over Q(cos A). Now if K is an extension of L of degree r and L is an extension of F of degree s, then K is an extension of degree rs of F. So suppose Q(cos A) has degree u and Q(cos(A/3 ) has degree v. If we can construct A/3 given A, then cos(A/3) must lie in an extension K of Q(cos A) of degree 2<sup>n</sup>. But K is also an extension of Q(cos(A/3) ) so v/u must be a power of 2.
+
+<p>
+
+Finally, it is well-known that Q(cos(360/m) ) has degree &phi;(m) over Q, where &phi; is Euler's function (so that &phi;(m) is the number of 1, 2, ... m-1 relatively prime to m). So we have to show that &phi;(9n)/&phi;(3n) is not a power of 2. But &phi;(m) = m &prod;(1 - 1/p), where the product is taken over all primes p dividing m. But 3n and 9n have the same prime divisors, so &phi;(9n) = 3 &phi;(3n), and 3 is not a power of 2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn68.html">29th Putnam 1968</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

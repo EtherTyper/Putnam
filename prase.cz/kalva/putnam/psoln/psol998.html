@@ -1,0 +1,56 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 99/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>60th Putnam 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+p(x) is a polynomial of degree n. q(x) is a polynomial of degree 2. p(x) = p''(x)q(x) and the roots of p(x) are not all equal. Show that the roots of p(x) are all distinct.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Suppose not, so for some &alpha; and n &gt; 1, we have p(x) = (x - &alpha;)<sup>n</sup>r(x) with r(&alpha;) &ne; 0. Then (x - &alpha;)<sup>n</sup>r(x) = ( n(n - 1)(x - &alpha;)<sup>n-2</sup>r(x) + 2n(x - &alpha;)<sup>n-1</sup>r'(x) + (x - &alpha;)<sup>n</sup>r''(x) ) q(x). Dividing by (x - &alpha;)<sup>n-2</sup>, we get (x - &alpha;)<sup>2</sup>r(x) = ( n(n - 1)r(x) + 2n(x - &alpha;)r'(x) + (x - &alpha;)<sup>2</sup>r''(x) ) q(x). Setting x = &alpha;, we conclude that q(&alpha;) = 0 and hence (x - &alpha;) divides q(x). Dividing through by (x - &alpha;) and repeating the argument, we find that q(x) has a second factor (x - &alpha;), in other words q(x) = c(x - &alpha;)<sup>2</sup>. Dividing that out too, we get: r(x) = c n(n - 1) r(x) + c 2 n(x - &alpha;)r'(x) + c(x - &alpha;)<sup>2</sup>r''(x). Setting x = &alpha; gives c = 1/(n(n - 1)). Hence r''(x)/r'(x) = -2n/(x - &alpha;). Integrating: r'(x) = A/(x - &alpha;)<sup>2n</sup>, which is impossible since r(x) is supposed to be a polynomial.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+&nbsp;<p>
+
+<a href="../putn99.html">60th Putnam 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

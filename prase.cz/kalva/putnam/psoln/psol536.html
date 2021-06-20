@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>13th Putnam 1953/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>13th Putnam 1953</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Show that &radic;7, &radic;(7 - &radic;7), &radic;(7 - &radic;(7 + &radic;7)), &radic;(7 - &radic;(7 + &radic;(7 - &radic;7))), ... converges and find its limit.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 2.
+
+<p>
+
+Let x<sub>n</sub> be the nth number in the sequence. We have x<sub>n+2</sub> = &radic;(7 - &radic;(7 + x<sub>n</sub>)). Hence if x<sub>n</sub> &lt; 2, then x<sub>n+2</sub> &gt; 2, and if x<sub>n</sub> &gt; 2, then x<sub>n+2</sub> &lt; 2. So if the sequence converges, its limit must be 2.
+
+<p>
+
+If x<sub>n</sub> = 2 + &epsilon;, with 0 &lt; &epsilon; &lt; 1, then 9 + &epsilon; &lt; 9 + &epsilon; + &epsilon;<sup>2</sup>/36 = (3 + &epsilon;/6)<sup>2</sup>, so x<sub>n+2</sub> &gt; &radic;(7 - (3 + &epsilon;/6)) = &radic;(4 - &epsilon;/6). But certainly &epsilon;/6 &lt; &epsilon;/3 - &epsilon;<sup>2</sup>/144, so &radic;(4 - &epsilon;/6) &gt; 2 - &epsilon;/12. Thus x<sub>n+2</sub> differs from 2 by less than &epsilon;/12. Similarly, if x<sub>n</sub> = 2 - &epsilon;, with 0 &lt; &epsilon; &lt; 1, then 9 - &epsilon; &gt; 9 - &epsilon;/2 + &epsilon;<sup>2</sup>/144 = (3 - &epsilon;/12)<sup>2</sup>, so x<sub>n+2</sub> &lt; &radic;(4 + &epsilon;/12) &lt; 2 + &epsilon;/48. 
+
+<p>
+
+So we have established that if |x<sub>n</sub> - 2| &lt; 1, then |x<sub>n+2</sub> - 2| &lt; 1/12 |x<sub>n</sub> - 2|. But we certainly have |x<sub>1</sub> - 2| &lt; 1, and |x<sub>2</sub> - 2| &lt; 1, so x<sub>n</sub> converges to 2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn53.html">13th Putnam 1953</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

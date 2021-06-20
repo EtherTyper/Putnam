@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1988/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1988</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+For what real numbers &alpha; does (1/ 1 cosec(1) - 1)<sup>&alpha;</sup> + (1/2 cosec(1/2) - 1)<sup>&alpha;</sup> + ... + (1/n cosec(1/n) - 1)<sup>&alpha;</sup> + ... converge?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: &alpha; &gt; 1/2.
+
+<p>cosec 1/n is about n + 1/(6n). So the series is roughly 1/6 &sum;1/n<sup>2&alpha;</sup>, which converges iff &alpha; &gt; 1/2. We just have to tighten that up slightly. 
+
+<p>
+
+n sin 1/n = 1 - 1/(6n<sup>2</sup>) + 1/(120n<sup>4</sup>) - ..., so 1/n cosec(1/n) = 1/(1 - 1/(6n<sup>2</sup>) + 1/(120n<sup>4</sup>) - ... ) = 1 + 1/(6n<sup>2</sup>) + terms in 1/n<sup>4</sup> and higher. Hence (1/n cosec(1/n) - 1) = 1/n<sup>2</sup> (1/6 + terms which tend to zero as n &rarr; &infin;). So for n sufficiently large (1/n cosec(1/n) - 1) lies between 1/(12n<sup>2</sup>) and 1/(3n<sup>2</sup>) and hence the nth term of the series lies between k/n<sup>2&alpha;</sup> and k'/n<sup>2&alpha;</sup>. But &sum; 1/n<sup>&beta;</sup> converges for &beta; &gt; 1 and diverges for &beta; &le; 1. So the comparison test gives the result.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn88.html">Putnam 1988</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,64 @@
+<HTML>
+<HEAD>
+<TITLE>40th IMO shortlist 1999/A3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>40th IMO 1999 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A3</b><br>
+<p>
+Each of n &gt; 1 girls has a doll with her name on it. Each pair of girls swaps dolls in some order. For which values of n is it possible for each girl to end up (1) with her own doll, (2) with another girl's doll? [For example, if n = 4, denote girls by A, B, C, D and dolls by a, b, c, d. So the initial position is Aa Bb Cc Dd. If the swaps are in the order AB, CD, AC, BD, AD, BC, then the successive positions are Ab Ba Cc Dd, Ab Ba Cd Dc, Ad Ba Cb Dc, Ad Bc Cb Da, Aa Bc Cb Dd and Aa Bb Cc Dd. So for n = 4, (1) is possible.]
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: (1) possible iff n = 0 or 1 mod 4; (2) possible except for n = 3.
+<p>
+Label the girls 1, 2, ... , n and the corresponding dolls 1, 2, ... , n. Then we can represent the allocation of dolls by a permutation of 1, 2, ... n. For example 1423 means that girl 1 has doll 1, girl 2 has doll 4, girl 3 has doll 2 and girl 4 has doll 3. Now each swap is a transposition. So starting with the identity permutation 12 ... n we make n(n-1)/2 transpositions. If n = 2 or 3 mod 4, then n(n-1)/2 is odd, so the final result must be an odd permutation, whereas the identity permutation is an even permutation. So n = 0 or 1 mod 4 is a necessary condition for each girl ending up with her own doll. [See note below on <i>odd</i> and <i>even</i> permutations if this is unfamiliar.]
+<p>
+The question shows that swaps giving every girl her own doll are possible for n = 4. It is not hard to construct such swaps for n = 5. For example:
+<pre>
+1  2  3  4  5
+2  1  3  4  5	12
+3  1  2  4  5	13
+4  1  2  3  5	14
+4  5  2  3  1	25
+1  5  2  3  4	15
+1  3  2  5  4	24
+1  2  3  5  4	23
+1  2  5  3  4	34
+1  2  5  4  3	45
+1  2  3  4  5	35
+</pre>
+So we suspect that n = 0 or 1 mod 4 may also be a sufficient condition.
+<p>
+Suppose we have a solution for 4n, add a further 4 girls, A, B, C, D. Then taking (A1) (B2) (A2) (B1) has the net effect of swapping 1 and 2, and A and B. So (A1) (B2) (A2) (B1) (C1) (D2) (C2) (D1) has the net effect of swapping A and B, and C and D. Repeating on 3 and 4 gets us back to the identity whilst using all the transpositions (X i), where X = A, B, C or D and i = 1, 2, 3 or 4. Proceeding, we use up all the transpositions (X, i) whilst getting back to the identity. Finally, we can use all (X, Y) and all (i, j) by induction whilst still gettting back to the identity. So we get a solution for 4n+4 and hence for all n = 0 mod 4.
+<p>
+Similarly, suppose that we have a solution for 4n+1, and add a further 4 girls A, B, C, D. Proceeding as in the 4n case we use up all transpositions (X, i) with i &lt; 4n+1 whilst getting back to the identity. Then we can use the solution for 5 shown above to use all the transpositions on {A, B, C, D, 4n+1} whilst getting back to the identity. Finally, we use the solution for 4n+1. That exhausts all the transpositions and gets us back to the identity. So we have a solution for 4n+5 and hence for all n = 1 mod 4.
+<p>
+It is easy to see that (2) is impossible for n = 3, because it requires an even permutation, whereas the result of 3 transpositions must be an odd permutation. But we will show that (2) is possible for all other n. 
+<p>
+Note that (12), (13), ... , (1n) gives n 1 2 ... n-1. So if we make the swaps in the order (12), (13), ... , (1n), (23), (24), ... , (2n), ... , (34), ... , (3n), ... , (n-1 n), then we get the permutation n n-1 n-2 ... 3 2 1 (by a trivial induction). For n even, this gives each girl another girl's doll. 
+<p>
+For n = 1 mod 4. We use up the transpositions (1 n), (2 n), ... , (n-1 n) to get n 1 2 3 ... n-1. Then we use the transpositions that do not involve n to leave this permutation unchanged. So giving every girl another girl's doll is also possible for n = 1 mod 4.
+<p>
+For n = 3 mod 4 and n &ge; 7, we can use the transpositions (12), (13), ... , (1n) to give n 1 2 3 ... n-1, then the transpositions (23), (24), ... , (2n) to give n n-1 1 2  ... n-2. Now we use the remaining transpositions to leave this unchanged. 
+<p>
+<i>Odd and even permutations</i>
+<p>
+A swap of i and j is usually called a <i>transposition</i>. Obviously any permutation is a product of transpositions. This can be done in many different ways. We claim that half the permutations are such that the number of transpositions is always even and the other half are such that the number is always odd. They are called even and odd permutations accordingly.
+<p>
+Instead of permuting 1, 2, ... , n, let us permute x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub>. Put D = &prod;<sub>i&lt;j</sub>(x<sub>i</sub> - x<sub>j</sub>). Then any permutation either leaves D unchanged or changes D to -D. But a transposition changes D to -D, so an even number of transpositions leave D unchanged and an odd number change D to -D. That proves the claim except for the <i>half</i>. But let A be the set of even permutations. Let B be the set of permutations (x<sub>1</sub>x<sub>2</sub>) p, where p is an even permutation. Then if (x<sub>1</sub>x<sub>2</sub>) p = (x<sub>1</sub>x<sub>2</sub>) p', it follows that (x<sub>1</sub>x<sub>2</sub>)(x<sub>1</sub>x<sub>2</sub>) p = (x<sub>1</sub>x<sub>2</sub>)(x<sub>1</sub>x<sub>2</sub>) p' and hence p = p' (since (x<sub>1</sub>x<sub>2</sub>)(x<sub>1</sub>x<sub>2</sub>) is the identity). So A and B have the same number of elements. But if p is any odd permutation, then (x<sub>1</sub>x<sub>2</sub>) p is even and so belongs to A. Hence p = (x<sub>1</sub>x<sub>2</sub>)(x<sub>1</sub>x<sub>2</sub>) p and so belongs to B. 
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh99.html">40th IMO shortlist 1999</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

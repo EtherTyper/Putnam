@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 02/2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>14th APMO 2002</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 2</b><br>
+<p>
+Find all pairs m, n of positive integers such that m<sup>2</sup> - n divides m + n<sup>2</sup> and n<sup>2</sup> - m divides m<sup>2</sup> + n.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Assume n &ge; m.
+<p>
+(m+1)<sup>2</sup> - m = (m+1) + m<sup>2</sup>. Clearly n<sup>2</sup> increases faster than n, so n<sup>2</sup> - m &gt; n + m<sup>2</sup> for n &gt; m+1 and hence there are no solutions with n &gt; m+1. It remains to consider the two cases n = m and n = m+1.
+<p>
+Suppose n = m. Then we require that n<sup>2</sup> - n divides n<sup>2</sup> + n. If n &gt; 3, then n<sup>2</sup> &gt; 3n, so 2(n<sup>2</sup> - n) &gt; n<sup>2</sup> + n. Obviously n<sup>2</sup> - n &lt; n<sup>2</sup> + n, so if n &gt; 3, then n<sup>2</sup> - n cannot divide n<sup>2</sup> + n. It is easy to check that the only solutions (with n = m) less than 3 are n = 2 and n = 3.
+<p>
+Finally suppose n = m+1. We require m<sup>2</sup> - m - 1 divides m<sup>2</sup> + 3m + 1. If m &gt= 6, then m(m - 5) &gt; 3, so 2(m<sup>2</sup> - m - 1) &gt; m<sup>2</sup> + 3m + 1. Obviously m<sup>2</sup> - m - 1 &lt; m<sup>2</sup> + 3m + 1, so m<sup>2</sup> - m - 1 cannot divide m<sup>2</sup> + 3m + 1 for m &gt;= 6. Checking the smaller values, we find the solutions less than 6 are m = 1 and m = 2.
+<p>
+Summarising, the only solutions are: (n, m) = (2, 2), (3, 3), (1, 2), (2, 1), (2, 3), (3, 2).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo02.html">14th APMO 2002</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

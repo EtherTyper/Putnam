@@ -1,0 +1,73 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 87/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>48th Putnam 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+F is a field in which 1 + 1 &ne; 0. Define P<sub>&alpha;</sub> = ( (&alpha;<sup>2</sup> - 1)/(&alpha;<sup>2</sup> + 1), 2&alpha;/(&alpha;<sup>2</sup> + 1) ). Let A = { (&beta;, &gamma;) : &beta;, &gamma; &isin; F, and &beta;<sup>2</sup> + &gamma;<sup>2</sup> = 1}, and let B= { (1, 0) } &cup; { P<sub>&alpha;</sub>: &alpha; &isin; F, and &alpha;<sup>2</sup> &ne; -1}. Prove that A = B.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Fairly easy</i>
+
+<p>
+
+Obviously B &sube; A. The problem is to find some expression for &alpha; in terms of &beta; and &gamma;.
+
+<p>
+We start from &beta; = (&alpha;<sup>2</sup> - 1)/(&alpha;<sup>2</sup> + 1), and get &alpha;<sup>2</sup> = (1 + &beta;) / (1 - &beta;). (*)
+
+<p>
+
+We cannot take square roots. So it may not be obvious what to do next. But we do have one square root available, because we know that &gamma;<sup>2</sup> = 1 - &beta;<sup>2</sup>. It is now obvious that we multiply top and bottom of (*) by (1 + &beta;). That gives &alpha; = (1 + &beta;)/&gamma;.
+
+<p>
+
+So we can now start again to show that A &sube; B. Given (&beta;, 0) &isin; A. Then &beta;<sup>2</sup> - 1 = 0, so (&beta; + 1)(&beta; - 1) = 0, so &beta; = &plusmn;1. (1, 0) is specifically included in B, and (-1, 0) = P<sub>0</sub>. Now for (&beta;, &gamma;) &isin; A with &gamma; &ne; 0, we also have &beta; &ne; 1. Let &alpha; = (1 + &beta;)/&gamma;. Then &alpha;<sup>2</sup> = (1 + &beta;)<sup>2</sup>/&gamma;<sup>2</sup> = (1 + &beta;)<sup>2</sup>/( (1 + &beta;)(1 - &beta;) ) = (1 + &beta;)/(1 - &beta;). Hence &alpha;<sup>2</sup> + 1 = 2/(1 - &beta;), and &alpha;<sup>2</sup> - 1 = 2&beta;/(1 - &beta;), so P<sub>&alpha;</sub> = (&beta;, &gamma;).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn87.html">48th Putnam 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Oct 1999
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1967/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>28th Putnam 1967</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Let 1/2 &lt; &alpha; &isin; R, the reals. Show that there is no function f <b>:</b> [0, 1] &rarr; R such that f(x) = 1 + &alpha; &int;<sub>x</sub><sup>1</sup> f(t) f(t - x) dt for all x &isin; [0, 1].
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Suppose there is such a function. Let K = &int;<sub>0</sub><sup>1</sup> f(x) dx. Then K = 1 + &alpha; &int;<sub>0</sub><sup>1</sup>&int;<sub>x</sub><sup>1</sup> f(t) f(t - x) dt dx. 
+
+<p>
+
+Interchanging the order of integration gives &int;<sub>0</sub><sup>1</sup>&int;<sub>x</sub><sup>1</sup> f(t) f(t - x) dt dx = &int;<sub>0</sub><sup>1</sup>&int;<sub>0</sub><sup>t</sup> f(t) f(t - x) dx dt = &int;<sub>0</sub><sup>1</sup> f(t) &int;<sub>0</sub><sup>t</sup> f(x) dx dt (*).
+
+<p>
+
+Put g(x) = &int;<sub>0</sub><sup>x</sup> f(t) dt. Then g'(x) = f(x), so (*) gives &int;<sub>0</sub><sup>1</sup> g'(t) g(t) dt = 1/2 g(1)<sup>2</sup> - 1/2 g(0)<sup>2</sup>. But g(1) = K and g(0) = 0. Thus we have K = 1 + &alpha;/2 K<sup>2</sup>, or rearranging (K - 1/&alpha;)<sup>2</sup> = -2/&alpha;<sup>2</sup> (&alpha; - 1/2). But that is impossible for &alpha; &gt; 1/2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn67.html">28th Putnam 1967</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

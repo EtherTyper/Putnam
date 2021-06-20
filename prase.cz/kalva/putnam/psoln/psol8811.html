@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1988/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>49th Putnam 1988</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Find the rank of the 2n+1 x 2n+1 skew-symmetric matrix with entries given by a<sub>ij</sub> = 1 for (i - j) = -2n, -(2n-1), ... , -(n+1); -1 for (i - j) = -n, -(n-1), ... , -1; 1 for (i - j) = 1, 2, ... , n; -1 for (i - j) = n+1, n+2, ... , 2n+1. In other words, the main diagonal is 0s, the n diagonals immediately below the main diagonal are 1s, the n diagonals below that are -1s, the n diagonals immediately above the main diagonal are -1s, and the n diagonals above that are 1s.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 2n.
+
+<p>
+
+The determinant is zero, since each column sums to zero. Hence the rank is not 2n+1. However, we will show that the matrix D<sub>2n</sub> formed by deleting the first row and the first column has determinant &plusmn;1, which is non-zero. Hence the rank is 2n.
+
+<p>
+
+We proceed by induction. The result is clearly true for n = 1, since D<sub>2</sub> = 1. Suppose it is true for n-1. We carry out row and column operations on D<sub>2n</sub> to show that its determinant is &plusmn;D<sub>2n-2</sub>.
+
+<p>
+
+Adding the row n+2 to row 1 gives 0s except in for the -1 in col 1 and the 1 in col n+2. Adding or subracting the new row 1 from all others except row n+2 gives 0s in col 1 except for -1 in rows 1 and n+2. It also gives 0s in col n+2 except for 1 in row 1. Note that the submatrix formed by deleting rows 1 and n+2 and cols 1 and n+2 has not been changed by these operations and is D<sub>2n-2</sub>.
+
+<p>
+
+We may now expand by col n+2. This gives a single term &plusmn; the determinant formed by deleting row 1 and col n+2. This has only one non-zero entry in col 1, that in the old row n+2. So expanding gives &plusmn;D<sub>2n-2</sub> as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn88.html">49th Putnam 1988</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

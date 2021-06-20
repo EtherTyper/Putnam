@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2001/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>62nd Putnam 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+A parabola intersects a disk radius 1. Can the arc length of the parabola inside the disk exceed 4?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes (just).
+
+<p>
+
+Without loss of generality, we may take the circle to be x<sup>2</sup> + (y - 1)<sup>2</sup> = 1 and the parabola to be y = kx<sup>2</sup>. The parabola touches the circle at the origin and intersects it at ( &plusmn;X, Y), where X = &radic;(2k - 1) )/k, Y=(2k - 1)/k. The arc length within the disk is L = 2 &int;<sub>0</sub><sup>X</sup> &radic;(1 + 4k<sup>2</sup>x<sup>2</sup>) dx. Substituting t = 2kx, and putting T = 2&radic;(2k - 1), we have L = 1/k &int;<sub>0</sub><sup>T</sup> &radic;(1 + t<sup>2</sup>) dt.
+
+<p>
+
+Clearly k small is a poor choice - as k tends to zero the arc length obviously tends to zero. The extreme case k = infinity gives a degenerate parabola comprising two half-lines along the y-axis. That gives arc length exactly 4. So we might expect that for k large the gain from the extra width of the parabola (in the x-direction) would outweigh the loss from the loss of length in the y-direction (compared to k infinite). 
+
+<p>
+
+So far the question is easy, but it is not clear what to do next. The integral can be evaluated exactly but it is a complicated: 1/2 t &radic;(1 + t<sup>2</sup>) + 1/2 ln(t + &radic;(1 + t<sup>2</sup>) ). That is not promising. The next obvious approach is to approximate the integral. The simplest approximation is &radic;(1 + t<sup>2</sup>) &gt; t. That evaluates to 4 - 2/k, so it is not quite good enough.
+
+<p>
+
+If we expand &radic;(1 + t<sup>2</sup>) we get t + 1/(2t) - 1/(8t<sup>3</sup>) + ... . So that suggests that t + 0.4/t might be suitable. This type of approximation will not work for t near zero.  However, we can easily check that &radic;(1 + t<sup>2</sup>) &gt; t + 0.4/t for t &ge; 1. Integrating the extra term from 1 to T gives 0.4/k ln T. Evidently ln T increases without limit (as k increases), so (0.4 ln T)/k will exceed 2/k for k sufficiently large.
+
+<p>
+
+A slightly slicker approximation (which avoids the need to approximate the integrand by zero for 0 &lt; t &lt; 1) is t + 1/(2(1 + t)).
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn01.html">62nd Putnam 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Dec 2001
+
+</BODY>
+
+
+
+</HTML>
+

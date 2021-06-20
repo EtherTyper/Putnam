@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 95/18 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 18</b>
+
+<p>
+
+Given any positive integer k, show that we can find a<sub>1</sub> &lt; a<sub>2</sub> &lt; a<sub>3</sub> &lt; ... such that a<sub>1</sub> = k and (a<sub>1</sub><sup>2</sup> + a<sub>2</sub><sup>2</sup> + ... + a<sub>n</sub><sup>2</sup>) is divisible by (a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>n</sub>) for all n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Induction on n. Suppose a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>n</sub> = A divides a<sub>1</sub><sup>2</sup> + a<sub>2</sub><sup>2</sup> + ... + a<sub>n</sub><sup>2</sup> = B. Then put a<sub>n+1</sub> = A<sup>2</sup>+B-A. We have a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>n+1</sub> = A<sup>2</sup>+B, and a<sub>n+1</sub><sup>2</sup> = (A<sup>2</sup>+B)<sup>2</sup> - 2A(A<sup>2</sup>+B) + A<sup>2</sup>, so a<sub>1</sub><sup>2</sup> + a<sub>2</sub><sup>2</sup> + ... + a<sub>n+1</sub><sup>2</sup> = (A<sup>2</sup>+B)<sup>2</sup> - 2A(A<sup>2</sup>+B) + (A<sup>2</sup>+B), which is divisible by A<sup>2</sup>+B.
+<p>
+<i>Thanks to Suat Namli</i>
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus95.html">Russian 1995</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 February 2004
+<br>Last corrected/updatd 7 Feb 04
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1967/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1967</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+In a sports contest a total of m medals were awarded over n days. On the first day one medal and 1/7 of the remaining medals were awarded. On the second day two medals and 1/7 of the remaining medals were awarded, and so on. On the last day, the remaining n medals were awarded. How many medals were awarded, and over how many days?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Let the number of medals remaining at the start of day r be m<sub>r</sub>. Then m<sub>1</sub> = m, and 6(m<sub>k</sub> - k)/7 = m<sub>k+1</sub> for k &lt; n with m<sub>n</sub> = n.
+
+<p>After a little rearrangement, we find that m = 1 + 2(7/6) + 3(7/6)<sup>2</sup> + ... + n(7/6)<sup>n-1</sup>. Summing, we get m = 36(1 - (n + 1)(7/6)<sup>n</sup> + n (7/6)<sup>n+1</sup>) = 36 + (n - 6)7<sup>n</sup>/6<sup>n-1</sup>. 6 and 7 are coprime, so 6<sup>n-1</sup> must divide n - 6. But 6<sup>n-1</sup> &gt; n - 6, so n = 6 and m = 36.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo67.html">9th IMO 1967</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+29 Sep 1998
+
+<br>Last corrected/updated 29 Sep 1998
+
+</BODY>
+
+
+
+</HTML>
+

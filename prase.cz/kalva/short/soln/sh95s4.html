@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1995/S4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>36th IMO 1995 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem S4</b><br>
+<p>
+x is a positive real such that 1 + x + x<sup>2</sup> + ... x<sup>n-1</sup> = x<sup>n</sup>. Show that 2 - 1/2<sup>n-1</sup> &le; x &lt; 2 - 1/2<sup>n</sup>.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+For n = 1, the unique root is x = 1, which satisfies 1 &le; x &le; 3/2. So assume n &gt; 1. By Descartes' rule of signs, the polynomial x<sup>n</sup> - x<sup>n-1</sup> - ... - x - 1 = 0 has one positive root (see below).
+<p>
+(1 - 1/2<sup>n</sup>)<sup>n</sup> &ge; (1 - 1/2<sup>n</sup>)<sup>2n-2</sup> = (1 - 1/2<sup>n-1</sup> + 1/2<sup>2n</sup>)<sup>n-1</sup> &gt; (1 - 1/2<sup>n-1</sup>)<sup>n-1</sup>. So iterating, (1 - 1/2<sup>n</sup>)<sup>n</sup> &gt; (1 - 1/2)<sup>1</sup> = 1/2 (*). 
+<p>
+Put f(x) = x<sup>n</sup> - x<sup>n-1</sup> - ... - x - 1. Put g(x) = (x - 1) f(x) = x<sup>n+1</sup> - 2x<sup>n</sup> + 1. We have g(2 - 1/2<sup>n</sup>) = -(1/2<sup>n</sup>) (2 - 1/2<sup>n</sup>)<sup>n</sup> + 1 = - (1 - 1/2<sup>n+1</sup>)<sup>n</sup> + 1 &gt; 0 (since 0 &lt; 1 - 1/2<sup>n+1</sup> &lt; 1). Hence f(2 - 1/2<sup>n</sup>) &gt; 0.
+<p>
+Similarly, g(2 - 1/2<sup>n-1</sup>) = -(1/2<sup>n-1</sup>) (2 - 1/2<sup>n-1</sup>)<sup>n</sup> + 1 = -2(1 - 1/2<sup>n</sup>)<sup>n</sup> + 1 &lt; 0 (by (*) above). Hence f(2 - 1/2<sup>n-1</sup>) &lt; 0.
+<p> &nbsp; <p>
+<i>Descartes' rule of signs</i>
+<p>
+Suppose a<sub>n</sub>x<sup>n</sup> + ... + a<sub>0</sub> has real coefficients. Ignoring zero coefficients, count the number of sign changes from a<sub>n</sub> to a<sub>0</sub>. For example: x<sup>3</sup> - 5x<sup>2</sup> + 5x - 1 has three sign changes; x<sup>2</sup> + 1 has none; x<sup>2</sup> - 1 has one sign change. The result is that the number of positive roots is either the number of sign changes or an even number less. So x<sup>3</sup> - 5x<sup>2</sup> + 5x - 1 has 1 or 3 positive roots, x<sup>2</sup> + 1 has none, x<sup>2</sup> - 1 has 1.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh95.html">36th IMO shortlist 1995</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+8 Oct 2002
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,73 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 39/B7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>2nd Putnam 1939</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B7</b><br>
+
+<p>
+
+<i>Do either (1) or (2):</i>
+
+<p>(1) &nbsp; Let a<sub>i</sub> = &sum;<sub>n=0</sub><sup>&infin;</sup> x<sup>3n+i</sup>/(3n+i)! &nbsp; Prove that a<sub>0</sub><sup>3</sup> + a<sub>1</sub><sup>3</sup> + a<sub>2</sub><sup>3</sup> - 3 a<sub>0</sub>a<sub>1</sub>a<sub>2</sub> = 1.
+
+<p>(2) &nbsp; Let O be the origin, &lambda; a positive real number, C be the conic &nbsp; ax<sup>2</sup> + by<sup>2</sup> + cx + dy + e = 0, and C<sub>&lambda;</sub> the conic &nbsp; ax<sup>2</sup> + by<sup>2</sup> + &lambda;cx + &lambda;dy + &lambda;<sup>2</sup>e = 0. Given a point P and a non-zero real number k, define the transformation D(P,k) as follows. Take coordinates (x',y') with P as the origin. Then D(P,k) takes (x',y') to (kx',ky'). Show that D(O,&lambda;) and D(A,-&lambda;) both take C into C<sub>&lambda;</sub>, where A is the point (-c&lambda;/(a(1 + &lambda;)), -d&lambda;/(b(1 + &lambda;)) ). Comment on the case &lambda; = 1.
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(1) &nbsp; Moderately hard, unless differentiating is a reflex, in which case it is easy. 
+
+<p>The series are all absolutely convergent for all x, so we can carry out whatever operations we want. But it is not at all obvious what to do. Multiplying out the power series to get a complicated sum for the coefficient of x<sup>n</sup> is offputting. Much scope for algebraic error, and no guarantee that the eventual simplification will be obvious. So we look for some trick. The a<sub>i</sub> are closely related to the exponential series, eg a<sub>0</sub> + a<sub>1</sub> + a<sub>2</sub> = e<sup>x</sup>, and the prevalence of 3 in the question may eventually suggest looking at &omega;, the cube root of 1. Indeed, a<sub>0</sub> + &omega;a<sub>1</sub> + &omega;<sup>2</sup>a<sub>2</sub> = e<sup>&omega;x</sup>. Since &omega;<sup>2</sup> is also a root, we also have a<sub>0</sub> + &omega;<sup>2</sup>a<sub>1</sub> + &omega;a<sub>2</sub> = e<sup>&omega;<sup>2</sup>x</sup>. Remembering that 1 + &omega; + &omega;<sup>2</sup> = 0 might prompt us to multiply these three expressions together, but it helps to remember the product of the three left hand sides: (a<sub>0</sub> + a<sub>1</sub> + a<sub>2</sub>)(a<sub>0</sub> + &omega;a<sub>1</sub> + &omega;<sup>2</sup>a<sub>2</sub>)(a<sub>0</sub> + &omega;<sup>2</sup>a<sub>1</sub> + &omega;a<sub>2</sub>) = a<sub>0</sub><sup>3</sup> + a<sub>1</sub><sup>3</sup> + a<sub>2</sub><sup>3</sup> - 3a<sub>0</sub>a<sub>1</sub>a<sub>2</sub>. Otherwise, you are faced with multiplying this out the hard way: after collecting terms, you get (a<sub>0</sub><sup>3</sup> + a<sub>1</sub><sup>3</sup> + a<sub>2</sub><sup>3</sup>), then 6 expressions of the type a<sub>0</sub><sup>2</sup>(1 + &omega; + &omega;<sup>2</sup>), which are all zero, and 3a<sub>0</sub>a<sub>1</sub>a<sub>2</sub>(&omega; + &omega;<sup>2</sup>), which is -3a<sub>0</sub>a<sub>1</sub>a<sub>2</sub>.
+
+<p>A more general approach, which is more likely to work, is to differentiate the expression &nbsp; a<sub>0</sub><sup>3</sup> + a<sub>1</sub><sup>3</sup> + a<sub>2</sub><sup>3</sup> - 3 a<sub>0</sub>a<sub>1</sub>a<sub>2</sub>. Provided you notice that a<sub>0</sub>' = a<sub>2</sub> etc, this gives the result almost immediately (the derivative is zero, so the expression must be constant, but its value for x = 0 is 1).
+
+<p>
+
+(2) &nbsp; Trivial. [D(O,&lambda;) takes (x,y) to (&lambda;x,&lambda;y). So if (x,y) satisfies the equation for C, just check that (&lambda;x,&lambda;y) satisfies the equation for C<sub>&lambda;</sub>. Similarly, D(A,-&lambda;) takes (x,y) to (-&lambda;x - &lambda;c/a, -&lambda;y - &lambda;d/b). Again, just check by substituting this into the equation for C<sub>&lambda;</sub> and using the fact that (x,y) satisfies the equation for C. If &lambda; = 1, then C<sub>&lambda;</sub> = C, D(O,&lambda;) is the identity transformation, and D(A,-&lambda;) the central symmetry.]
+
+<p>
+
+<i>Comment. I find the contrast between these two parts odd, given that they are alternatives. It is obvious how to attack (2) and the algebra is not at all heavy, so you are almost guaranteed to complete it within 5 minutes or so. (1) may be easy once you have seen how to attack it, but it is far from obvious how to attack it, so you could easily waste half-an-hour getting nowhere. Maybe the question is designed to test your ability to pick the easy option.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn39.html">2nd Putnam 1939</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

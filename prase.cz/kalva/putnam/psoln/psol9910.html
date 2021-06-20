@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 99/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>60th Putnam 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Let R be the reals. f <b>:</b>R &rarr; R is three times differentiable, and f(x), f '(x), f ''(x), f '''(x) are all positive for all x. Also f(x) &ge; f '''(x) for all x. Show that f '(x) &lt; 2 f(x) for all x.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Take an arbitrary point x = a. Let f(a) = b, f '(a) = c, f ''(a) = d. We wish to show that c &lt; 2b. 
+
+<p>
+
+f ''(x) has positive derivative, so f ''(x) &le; f ''(a) = d for x &lt;= a. Hence f '(x) &ge; f '(a) + d(x - a) = c + d(x - a), and f(x) &le; f(a) + c(x - a) + d(x - a)<sup>2</sup>/2 = b + c(x - a) + d(x - a)<sup>2</sup>/2 for x &le; a. But f(x) is positive for x &le; a, so the quadratic b + c(x - a) + d(x - a)<sup>2</sup>/2 has no roots for (x - a) negative. But it has no roots for positive (x - a) since all its coefficients are positive. Hence it has no real roots and so c<sup>2</sup> &lt; 2bd.
+
+<p>
+
+We are given that f '''(x) &le; f(x), so f '''(x) &lt; f(x) &lt; f(a) = b for x &lt; a. Hence f ''(x) &ge; f ''(a) + b(x - a) = d + b(x - a) for x &le; a. Hence f '(x) &le; f '(a) + d(x - a) + b(x - a)<sup>2</sup>/2 = c + d(x - a) + b(x - a)<sup>2</sup>/2 for x &lt;= a. But f '(x) is everywhere positive, so the quadratic c + d(x - a) + b(x - a)<sup>2</sup>/2 has no roots for negative (x - a). It also has none for positive (x - a), so it has no real roots and d<sup>2</sup> &lt; 2bc.
+
+<p>
+
+So c<sup>4</sup> &lt; 4b<sup>2</sup>d<sup>2</sup> &lt; 8b<sup>3</sup>c, and hence c &lt; 2b, which is the required result.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn99.html">60th Putnam 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1971/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>32nd Putnam 1971</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+A player scores either A or B at each turn, where A and B are unequal positive integers. He notices that his cumulative score can take any positive integer value except for those in a finite set S, where |S| =35, and 58 &isin; S. Find A and B.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: A, B = 8, 11.
+
+<p>
+
+Let us call a number <i>green</i> if it can be expressed as a non-negative multiple of A plus a non-negative multiple of B. Assume A &gt; B. A and B must be coprime. Otherwise there would be infinitely many non-green numbers. The set of integers 0, A, 2A, ... , (B-1)A are all incongruent mod B (since A and B are coprime), so they form a complete set of residues mod B. Hence any integer &ge; (B-1)A can be expressed as the sum of a multiple of B and one of the members of the set and is thus green. In fact, the none of the numbers (B-1)A - B + 1, (B-1)A - B + 2, ... , (B-A)A - 1is a multiple of A and they are are incongruent to (B-1)A mod B, so they must equal one of the numbers 0, A, 2A, ... , (B-2)A plus a multiple of B. Thus any integer greater than (B-1)A - B is green. On the other hand, (B-1)A - B itself cannot because it is (B-1)A mod B, so it is incongruent to kA mod B for k &lt; (B-1) (and it cannot be (B-1)A plus a multiple of B because it is too small).
+
+<p>
+
+So we need to look at the numbers &le; AB - A - B. Exactly [A/B] of them are congruent to A mod B, but are not green. For if A = [A/B] B + r (with 0 &lt; r &lt; B), then they are r, r + B, r + 2B, ... , r + ([A/B] - 1)B. Similarly, [2A/B] are congruent to 2A mod B, but not green. So the total number of non-green numbers is: [A/B] + [2A/B] + ... + [(B-1)A/B] (*). But kA/B cannot be integral for k = 0, 1, ... , (B-1) since A and B are coprime, so [A/B] + [(B-1)A/B] = A-1, [2A/B] + [(B-2)A/B] = A-1, ... . If B - 1 is even, then this establishes that (*) is 1/2 (A-1)(B-1). If B - 1 is odd, then the central term is [A/2]. B is even, so A must be odd, so [A/2] = 1/2 (A - 1). So in this case also (*) is 1/2 (A-1)(B-1).
+
+<p>
+
+So we have (A-1)(B-1) = 2&middot;35 = 70 = 2&middot;5&middot;7. So A = 11, B = 8, or A = 15, B = 6, or A = 36, B = 3. But the last two cases are ruled out because they do not have A, B coprime. So we have A = 11, B = 8. We can easily check that 58 is not green in this case.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn71.html">32nd Putnam 1971</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Feb 2001
+
+</BODY>
+
+
+
+</HTML>
+

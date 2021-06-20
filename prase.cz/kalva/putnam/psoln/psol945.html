@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1994/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1994</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Given a sequence of positive real numbers which tends to zero, show that every non-empty interval (a, b) contains a non-empty subinterval (c, d) that does not contain any numbers equal to a sum of 1994 distinct elements of the sequence.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let the sequence be r<sub>n</sub>. Let S<sub>k</sub> be the set of all sums of k distinct elements of the sequence. We prove the result by induction on k.
+
+<p>
+Consider first k = 1, so we are given an interval (a, b). If b &lt;= 0, there is nothing to prove. If b &gt; 0, take a subinterval (c, b) with c &gt; 0. Then for all n &gt; some N, we have r<sub>n</sub> &lt; c and hence r<sub>n</sub> &notin; (c, b). So there are only finitely many r<sub>i</sub> in (c, b). Hence we can pick an interval that lies between two of them.
+
+<p>
+Now assume the result for k, so given (a, b), take (c', d) which does not intersect S<sub>k</sub>. Let h &gt; 0 be half the width of (c', d), so that c = c'+h is the midpoint of (c', d). Then we can find m such that r<sub>i</sub> &lt; h for i &gt; m. Now take a sum s in S<sub>k+1</sub>. If it falls in (c, d), then the last term must be one of r<sub>1</sub>, ... , r<sub>m</sub>, because if it was a later term, then it would be smaller than h and hence the sum of the first k terms in s would fall in (c', d) [contradicting the choice of (c', d).]. Now by induction on m we can find a subinterval of (c, d) which also excludes sums with last term r<sub>1</sub>, ... , or r<sub>m</sub>. Consider the interval (c-r<sub>1</sub>, d-r<sub>1</sub>). We can find a subinterval (e, f) of this which does not intersect S<sub>k</sub>. Now (c<sub>1</sub>, d<sub>1</sub>), where c<sub>1</sub> = e + r<sub>1</sub>, d<sub>1</sub> = f + r<sub>1</sub>, is a subinterval of (c, d) and does not contain any sum s in S<sub>k+1</sub> with last term r<sub>1</sub> (or any r<sub>i</sub> with i &gt; m). In the same way we find a subinterval (c<sub>2</sub>, d<sub>2</sub>) of (c<sub>1</sub>, d<sub>1</sub>) which does not contain any sum s with last term r<sub>2</sub> (or r<sub>1</sub> or r<sub>i</sub> with i &gt; m, since it is a subinterval). And so on.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn94.html">Putnam 1994</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

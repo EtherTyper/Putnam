@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>30th IMO shortlist 1989/4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>30th IMO 1989 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 4</b><br>
+<p>
+The angle bisectors of the triangle ABC meet the circumcircle again at A'B'C'. Show that 16 (area A'B'C')<sup>3</sup> &ge; 27 area ABC R<sup>4</sup>, where R is the circumradius of ABC.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<img src="diag894.bmp">
+<p>
+Let R be the circumradius and O the circumcircle. &ang;BOC = 2 &ang;A, so area BOC = &frac12; R<sup>2</sup> sin 2A. Hence area ABC = &frac12; R<sup>2</sup>(sin 2A + sin 2B + sin 2C).
+<p>
+&ang;A'C'C = &ang;A'AC = &ang;A/2, and &ang;B'C'C = &ang;B'BC = &ang;B/2, so &ang;A'C'B' = &ang;A/2 + &ang;B/2. The circumradius is the same, so area A'B'C' = &frac12; R<sup>2</sup>(sin(A+B) + sin(B+C) + sin(C+A) ). Thus we have to show that 4 (sin(A+B) + sin(B+C) + sin(C+A) )<sup>3</sup> &ge; 27 (sin 2A + sin 2B + sin 2C).
+<p>
+Applying AM/GM to sin(A+B), sin(B+C), sin(C+A) we get (sin(A+B) + sin(B+C) + sin(C+A) )<sup>3</sup> &ge; 27 sin(A+B) sin(B+C) sin(C+A). 
+<p>
+We now need some straightforward applications of the forumulae for sin(x+y), cos(x+y) etc. We have sin(B+C) sin(C+A) = (cos(B-A) - cos(C+180<sup></sup>) )/2 = (cos(B-A) + cos C)/2, so sin(A+B) sin(B+C) sin(C+A) = &frac12; sin(A+B) cos(B-A) + &frac12; sin(A+B) cos C. But sin 2A + sin 2B = sin( (A+B) + (B-A) ) + sin( (A+B) - (B--A) ) = 2 sin(A+B) cos(B-A), and sin( (A+B) + C) + sin( (A+B) - C) = 2 sin(A+B) cos C, so sin(A+B) sin(B+C) sin(C+A) = &frac14; (sin 2A + sin 2B + sin(A+B-C) ) = &frac14; (sin 2A + sin 2B + sin 2C). Hence (sin(A+B) + sin(B+C) + sin(C+A) )<sup>3</sup> &ge; (27/4) (sin 2A + sin 2B + sin 2C), as required.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh89.html">30th IMO shortlist 1989</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+28 Dec 2002
+<br>Last corrected/updated 28 Dec 02
+</BODY>
+
+</HTML>
+

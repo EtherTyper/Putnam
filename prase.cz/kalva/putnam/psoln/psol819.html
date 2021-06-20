@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1981/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>42nd Putnam 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Prove that infinitely many positive integers n have the property that for any prime p dividing n<sup>2</sup> + 3, we can find an integer m such that (1) p divides m<sup>2</sup> + 3, and (2) m<sup>2</sup> &lt; n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+I started by finding some small n with the required property. This led to: (1) 5<sup>2</sup> + 3 = 2<sup>2</sup>7, with 7 | 2<sup>2</sup> + 3, 2 | 1<sup>2</sup> + 3; (2) 12<sup>2</sup> + 1 = 7<sup>2</sup>3, with 3 | 3<sup>2</sup> + 3; (3) 23<sup>2</sup> + 1 = 2<sup>2</sup>7 19 with 19<sup>2</sup> | 4<sup>2</sup> + 3.
+
+<p>
+
+That suggested as the first line of attack looking at special n such as 2<sup>a</sup>7<sup>b</sup>. That led nowhere.
+
+<p>
+
+My second line of attack was to look for relations of the type (a<sup>2</sup> + 3)(b<sup>2</sup> + 3) = f(a, b)<sup>2</sup> + 3. After some playing around, I obtained (m<sup>2</sup> + 3)( (m+1)<sup>2</sup> + 3) = M<sup>2</sup> + 3, where M = (m<sup>2</sup> + m + 3). We are almost there. Any prime factor of M<sup>2</sup> + 3 which divides m<sup>2</sup> + 3 has the required property since m<sup>2</sup> &lt; M. But that is not true for prime factors of (m+1)<sup>2</sup> + 3. However, all we have to do is to iterate. We need to split the larger factor:
+
+<p>
+
+(m<sup>2</sup> + 3)( (m+1)<sup>2</sup> + 3)( (m<sup>2</sup>+m+2)<sup>2</sup> + 3) = ( (m<sup>2</sup>+m+2)<sup>2</sup> + (m<sup>2</sup>+m+2) + 3)<sup>2</sup> + 3.
+
+<p>
+
+This shows that any n of the form ( (m<sup>2</sup>+m+2)<sup>2</sup> + (m<sup>2</sup>+m+2) + 3) has the required property.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn81.html">42nd Putnam 1981</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

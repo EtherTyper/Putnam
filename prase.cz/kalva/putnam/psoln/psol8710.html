@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1987/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>48th Putnam 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Define the sequences x<sub>i</sub> and y<sub>i</sub> as follows. Let (x<sub>1</sub>, y<sub>1</sub>) = (0.8, 0.6) and let (x<sub>n+1</sub>, y<sub>n+1</sub>) = (x<sub>n</sub>cos y<sub>n</sub> - y<sub>n</sub>sin y<sub>n</sub>, x<sub>n</sub>sin y<sub>n</sub> + y<sub>n</sub> cos y<sub>n</sub>) for n &ge; 1. Find lim<sub>n&rarr;&infin;</sub> x<sub>n</sub> and lim<sub>n&rarr;&infin;</sub> y<sub>n</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Put y<sub>0</sub> = sin<sup>-1</sup>0.6. Then the relations give immediately x<sub>n+1</sub> = cos(y<sub>0</sub> + y<sub>1</sub> + ... + y<sub>n</sub>), y<sub>n+1</sub> = sin(y<sub>0</sub> + y<sub>1</sub> + ... + y<sub>n</sub>). 
+
+<p>
+
+Since sin x &lt; x for x &gt; 0, we have sin x &lt; &pi; - x for 0 &lt; x &lt; &pi;. Hence y<sub>0</sub> + y<sub>1</sub> + ... + y<sub>n</sub> &lt; &pi; implies y<sub>0</sub> + y<sub>1</sub> + ... + y<sub>n+1</sub> &lt; &pi;. So all y<sub>n</sub> are positive. Hence &sum; y<sub>n</sub> is monotone increasing and bounded above. So it converges. Hence y<sub>n</sub> &rarr; 0. But that implies that &sum; y<sub>n</sub> &rarr; &pi;, and hence x<sub>n</sub> &rarr; -1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn87.html">48th Putnam 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

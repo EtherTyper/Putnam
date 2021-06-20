@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 89/2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>1st APMO 1989</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 2</b><br>
+<p>
+Prove that 5n<sup>2</sup> = 36a<sup>2</sup> + 18b<sup>2</sup> + 6c<sup>2</sup> has no integer solutions except a = b = c = n = 0.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+The rhs is divisible by 3, so 3 must divide n. So 5n<sup>2</sup> - 36a<sup>2</sup> - 18b<sup>2</sup> is divisible by 9, so 3 must divide c. We can now divide out the factor 9 to get: 5m<sup>2</sup> = 4a<sup>2</sup> + 2b<sup>2</sup> + 6d<sup>2</sup>. Now take m, a, b, d to be the solution with the smallest m, and consider residues mod 16. Squares = 0, 1, 4, or 9 mod 16. Clearly m is even so 5m<sup>2</sup> = 0 or 4 mod 16. Similarly, 4a<sup>2</sup> = 0 or 4 mod 16. Hence 2b<sup>2</sup> + 6d<sup>2</sup> = 0, 4 or 12 mod 16. But 2b<sup>2</sup> = 0, 2 or 8 mod 16 and 6d<sup>2</sup> = 0, 6 or 8 mod 16. Hence 2b<sup>2</sup> + 6d<sup>2</sup> = 0, 2, 6, 8, 10 or 14 mod 16. So it must be 0. So b and d are both even. So a cannot be even, otherwise m/2, a/2, b/2, d/2 would be a solution with smaller m/2 &lt; m. 
+<p>
+So we can divide out the factor 4 and get: 5k<sup>2</sup> = a<sup>2</sup> + 2e<sup>2</sup> + 6f<sup>2</sup> with a odd. Hence k is also odd. So 5k<sup>2</sup> - a<sup>2</sup> = 4 or 12 mod 16. But we have just seen that 2e<sup>2</sup> + 6 f<sup>2</sup> cannot be 4 or 12 mod 16. So there are no solutions.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo89.html">1st APMO 1989</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

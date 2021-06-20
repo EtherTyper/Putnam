@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1983/8 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>24th IMO 1983 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 8</b><br>
+<p>
+3n students are sitting in 3 rows of n. The students leave one at a time. All leaving orders are equally likely. Find the probability that there are never two rows where the number of students remaining differs by 2 or more.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Initially, we have n, n, n. It does not matter which student leaves first. We get n, n, n-1 (in some order). Now one of the students in the fuller rows must leave, which has probability 2n/(3n-1), giving n, n-1, n-1 (in some order). Now one of the students in the fullest row must leave, which has probability n/(3n-2) and gives n-1, n-1, n-1. Thus we have probability 6n<sup>3</sup>/(3n(3n-1)(3n-2) of getting from n, n, n to n-1, n-1, n-1. Continuing we have probability of 6<sup>n</sup>(n!)<sup>3</sup>/(3n)! of completing the job.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh83.html">24th IMO shortlist 1983</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+26 Nov 2003
+<br>Last corrected/updated 26 Nov 03
+</BODY>
+
+</HTML>
+

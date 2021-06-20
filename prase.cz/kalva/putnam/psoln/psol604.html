@@ -1,0 +1,92 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1960/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>21st Putnam 1960</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Given two points P, Q on the same side of a line <i>l</i>, find the point X which minimises the sum of the distances from X to P, Q and <i>l</i>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+wlog take P to the right of Q and Q to be closer to the line than P. Take A on the line so that PA makes a 30<sup>o</sup> angle with the line and A is to the left of P. Similarly, take B on the line so that QB makes a 30<sup>o</sup> angle with the line and B is to the right of Q. There are three cases to consider. 
+
+<br>(1) If the two segments PA and QB intersect, then their point of intersection X is the required point. 
+
+<br>(2) If A is to the right of B, then join P to Q' the reflection of Q in the line. X is the point at which PQ' meets the line. 
+
+<br>(3) If PA and QB do not meet, but A is to the left of B, then take X = Q.
+
+<p>
+
+We must now prove these statements. It is convenient to take the line <i>l</i> to be the x-axis. Take Q to be (a, b) and P to be (c, d). We assume that d &gt; b &gt; 0. Notice first that the sum of the three distances from the point X with coordinates (x, y) , which we will write as f(x, y), is a continuous and differentiable function of x and y. Also it tends to infinity as x or y tends to infinity. Hence the minimum must occur either (A) at a point where grad f = 0, or (B) on the boundary of the allowed region, in other words on y = 0, or (C) at a point where grad f does not exist. 
+
+<p>
+
+We have f(x, y) = y + &radic;( (x - a)<sup>2</sup> + (y - b)<sup>2</sup>) + &radic;( (x - c)<sup>2</sup> + (y - d)<sup>2</sup>). Hence grad f = ( (x - a)/QX + (x - c)/PX, 1 + (y - b)/QX + (y - d)/PX) = <b>r</b> + <b>q</b> + <b>p</b>, where <b>r</b> is the unit vector along the perpendicular line from the line <i>l</i> to X, <b>q</b> is the unit vector from Q to X, and <b>p</b> is the unit vector from P to X. By resolving along the line perpendicular to <b>r</b> we find that the angles between <b>q</b> and <b>r</b> and between <b>p</b> and <b>r</b> must be equal. Similarly, the other pairs of angles. Hence the angle between each pair of <b>p</b>, <b>q</b>, <b>r</b> is 120<sup>o</sup>. But it is clear that the only possible such point is the intersection H of the segments PA and QB (if it exists). H is thus the only candidate of type (A). 
+
+<p>
+
+It is obvious that for points X on the line <i>l</i>, f(x, y) is minimised at K, the intersection of the line with PQ' (joining P to the reflection of Q), so that is the only candidate of type (B). Finally, the only points were the existence of grad f is doubtful are P and Q and indeed it is easy to see that grad f is not well defined there (for example, the limits as we approach parallel to the two axes are different). But clearly the distance sum is lower at Q than at P, so Q is the only candidate of type (C).
+
+<p>
+
+We now look separately at cases (1), (2) and (3). In case (1) all three candidates H, K and Q are available. We show first that H is better than Q. Let the perpendicular from Q to <i>l</i> meet <i>l</i> at C and the perpendicular from H to <i>l</i> meet <i>l</i> at D. Then angle HQC is 60<sup>o</sup>, so QC = HD + QH/2. By the cosine rule we have PQ<sup>2</sup> = PH<sup>2</sup> + QH<sup>2</sup> + PH&middot;QH &gt; (PH + QH/2)<sup>2</sup>. Hence PQ + QH/2 &gt; PH + QH and so PQ + QC = PQ + QH/2 + HD &gt; PH + QH + HD. Next we show that H is better than K. As before let HD be the perpendicular to <i>l</i>. It is sufficient to show that PH + QH + HD &lt; PD + QD, since we know that PD + QD &lt;= PK + QK. Now PD<sup>2</sup> = PH<sup>2</sup> + HD<sup>2</sup> + PH&middot;HD &gt; (PH + HD/2)<sup>2</sup>, so PD &gt; PH + HD/2. Similarly, QD &gt; QH + HD/2. Adding gives the required result. That shows that H minimises the distance sum for case (1).
+
+<p>
+
+In case (2) only candidates K and Q are available. Take QC and PE as the perpendiculars to <i>l</i>. Then PQ<sup>2</sup> = CE<sup>2</sup> + (PE - QC)<sup>2</sup>, PQ'<sup>2</sup> = CE<sup>2</sup> + (PE + QC)<sup>2</sup>. We wish to show that PQ' &lt; PQ + QC, or CE<sup>2</sup> + (PE + QC)<sup>2</sup> &lt; CE<sup>2</sup> + (PE - QC)<sup>2</sup> + QC<sup>2</sup> + 2 QC &radic;(CE<sup>2</sup> + (PE - QC)<sup>2</sup>), or (4 PE - QC)<sup>2</sup> &lt; 4(CE<sup>2</sup> + PE<sup>2</sup> - 2 PE QC + QC<sup>2</sup>), or 4 CE<sup>2</sup> &gt; 12 PE<sup>2</sup> - 3 QC<sup>2</sup>. That is certainly true since we have CE &gt; (PE + QC) &radic;3.
+
+<p>
+
+Finally, in case (3) the only candidates are K and Q. So as in the previous paragraph we wish to show that 4 CE<sup>2</sup> &lt; 12 PE<sup>2</sup> - 3 QC<sup>2</sup>. Now we have CE &lt; &radic;3 (PE - QC) from which the inequality follows.
+
+<p>
+
+<i>This is a messy problem. It is fairly well known that in the general case one wants 120 deg angles and that for points on a line one looks at the straight line to the reflection, so it is fairly clear what the solution is. But there are lots of messy details.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn60.html">21st Putnam 1960</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

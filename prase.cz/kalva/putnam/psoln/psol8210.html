@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1982/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>43rd Putnam 1982</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+A set S of k distinct integers n<sub>i</sub> is such that &prod; n<sub>i</sub> divides &prod; (n<sub>i</sub> + m) for all integers m. Must 1 or -1 belong to S? If all members of S are positive, is S necessarily just {1, 2, ... , k}?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes, yes.
+
+<p>
+
+m is allowed to be <i>negative</i>, so we can use the weaker condition that &prod; n<sub>i</sub> &ge; &prod; (n<sub>i</sub> + m). Suppose neither 1 nor -1 is in S. Then taking m = 1 and -1 gives non-zero products. Moreover the product of their absolute values is &prod; |n<sub>i</sub> + 1| |n<sub>i</sub> - 1| = &prod; |n<sub>i</sub><sup>2</sup> - 1| &lt; (&prod; n<sub>i</sub>)<sup>2</sup>. So at least one of the absolute values is less than | &prod; n<sub>i</sub> | (and hence cannot be divisible by it). Contradiction.
+
+<p>
+
+Now consider the case where all members of S are positive. Let m be the smallest positive integer not in S. Then &prod; n<sub>i</sub> = | &prod; (n<sub>i</sub> - m) |, where we take the product over the members of S less than m. For any member x of S greater than m, we obviously have 0 &lt; x - m &lt; m. So if there are any such members, then &prod; n<sub>i</sub> &gt; |&prod; (n<sub>i</sub> - m) | (taking the products over all members of S). Contradiction. Hence S must be just 1, 2, ... , m - 1.
+
+<p>
+
+Of course, the question becomes more interesting if we restrict m to be positive.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn82.html">43rd Putnam 1982</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

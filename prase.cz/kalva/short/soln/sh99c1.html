@@ -1,0 +1,37 @@
+<HTML>
+<HEAD>
+<TITLE>40th IMO shortlist 1999/C1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>40th IMO 1999 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C1</b><br>
+<p>
+A <i>low path</i> from the lattice point (0, 0) to the lattice point (n, n) is a sequence of 2n moves, each one point up or one point to the right, starting at (0, 0) and ending at (n, n) such that all points of the path satisfy y &le; x. A <i>step</i> is two consecutive moves, the first right and the second up. Show that the number of low paths from (0, 0) to (n, n) with just k steps is 1/k (n-1)C(k-1) nC(k-1), where mCk is the binomial coefficient.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Let f(n, k) be the number of low paths (with k steps) and let g(n, k) = 1/k (n-1)C(k-1) nC(k-1). We show by induction on n that f(n, s) = g(n, s) for s = 1, 2, ... , n.
+<p>
+It is clear that f(1, 1) = g(1, 1) = 1, f(2, 1) = g(2, 1) = 1, f(2, 2) = g(2, 2) = 1. So the result is true for n = 1, 2. Now assume it is true for n.
+<p>
+It is clear that f(n+1, 1) = g(n+1, 1) = 1 (the only possible path is to go n steps R, then n steps U).
+<p>
+We show that (k+1) f(n+1, k+1) = (2n+1-k) f(n, k) + (k+1) f(n, k+1) (*)
+<p>
+Each (n, k) low path has 2n-1-s pairs RR, UR and UU. Placing RU inside such a pair or at the beginning or end of the path gives an (n+1, k+1) low path. So we get (2n+1-k) f(n, k) low paths of type (n+1,k+1). Similarly, an (n, k+1) path has k+1 pairs RU and placing RU inside such a pair gives an (n+1, k+1) low path. So we get another (k+1) f(n, k+1). But we evidently get each (n+1, k+1) path k+1 times. Hence (*). But it is easy to check that g satisfies the same recurrence relation. Hence f(n+1, k+1) = g(n+1, k+1).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh99.html">40th IMO shortlist 1999</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+<br>Last corrected/updated 23 Dec 02
+</BODY>
+
+</HTML>
+

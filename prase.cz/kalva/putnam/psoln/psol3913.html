@@ -1,0 +1,90 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 39/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>2nd Putnam 1939</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+<i>Do either (1) or (2):</i>
+
+<p>
+(1) &nbsp; f is continuous on the closed interval [a, b] and twice differentiable on the open interval (a, b). Given x<sub>0</sub> &isin; (a, b), prove that we can find &xi; &isin; (a, b) such that ( (f(x<sub>0</sub>) - f(a))/(x<sub>0</sub> - a) - (f(b) - f(a))/(b - a) )/(x<sub>0</sub> - b) = f ''(&xi;)/2.
+
+<p>
+(2) &nbsp; AB and CD are identical uniform rods, each with mass <i>m</i> and length 2<i>a</i>. They are placed a distance <i>b</i> apart, so that ABCD is a rectangle. Calculate the gravitational attraction between them. What is the limiting value as <i>a</i> tends to zero?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(1) &nbsp; Moderately hard.
+
+<p>
+We obviously have to use the mean value theorem. So we need to construct a suitable auxiliary function to apply it to. It is usually easiest to apply the MVT in cases where the function has equal values at the two ends of the interval. So we want to find some function g, such that g' has equal values at two different points. Let the value of the expression given, ( (f(x<sub>0</sub>) - f(a))/(x<sub>0</sub> - a) - (f(b) - f(a))/(b - a) )/(x<sub>0</sub> - b), be y<sub>0</sub>. Then we are looking for g''(x) to be something like 1/2 f ''(x) - y<sub>0</sub>.
+
+<p>
+Let us start by rearranging the expression for y<sub>0</sub> to give &nbsp; f(x<sub>0</sub>) = f(a) + ( f(b) - f(a) )(x<sub>0</sub> - a)/(b - a) + y<sub>0</sub>(x<sub>0</sub> - a)(x<sub>0</sub> - b). After a little experimentation we may try looking at:
+
+<p>
+&nbsp; &nbsp; g(x) = f(x) - f(a) - ( f(b) - f(a) )(x - a)/(b - a) - y<sub>0</sub>(x - a)(x - b).
+
+<p>
+We notice that g(a) = 0, g(b) = 0, g(x<sub>0</sub>) = 0, g'(x) = f '(x) - ( f(b) - f(a) )/(b - a) - y<sub>0</sub>(2x - a - b), g''(x) = f ''(x) - 2 y<sub>0</sub>. At this point we should realize that we are home, because we have to show that we can find &xi; such that g''(&xi;) = 0. But the mean value theorem gives us a value in the interval (a, x<sub>0</sub>) at which g' is zero and another in (x<sub>0</sub>, b). Hence there must be a value between the two (and <i>a fortiori</i> in (a, b) ) at which g'' is zero.
+
+<p>
+
+(2) &nbsp; Straightforward, apart from an awkward integral. Answer: Gm<sup>2</sup>( 1 - (1 + 4a<sup>2</sup>/b<sup>2</sup>)<sup>1/2</sup> )/(2a<sup>2</sup>), which tends to Gm<sup>2</sup>/b<sup>2</sup> as the rods shorten to become point masses.
+
+<p>By symmetry the net force must be perpendicular to the rods, so we just calculate the perpendicular component. Take coordinates x along one rod and y along the other. Then we can write down immediately that the perpendicular component is:
+
+<p> &nbsp; &nbsp; Gm<sup>2</sup>/(4a<sup>2</sup>) &nbsp; &int; (b<sup>2</sup> + (x - y)<sup>2</sup>)<sup>-1</sup> b (b<sup>2</sup> + (x - y)<sup>2</sup>)<sup>-1/2</sup> dx dy.
+
+<p>
+The integrand is of the form &nbsp; (1 + z<sup>2</sup>)<sup>-3/2</sup>. It helps to know that this integrates to &nbsp; z/(1 + z<sup>2</sup>)<sup>1/2</sup> (as is easily checked). People used to mess around with trigonometric substitutions (eg tan &theta; reduces it to cos &theta;, which integrates immediately to sin &theta;, which one has to remember to think of as tan &theta;/sec &theta;). But it was always easier simply to learn a large number of integrals by rote. Nowadays, of course, one tends to look them up or use Mathematica/Maple.
+
+<p>
+So integrating first by y, we get Gm<sup>2</sup>/(4a<sup>2</sup>) &nbsp; &int; dx/b { (x - 2a)/b (1 + (x - 2a)<sup>2</sup>/b<sup>2</sup>)<sup>-1/2</sup> - x/b (1 + x<sup>2</sup>/b<sup>2</sup>)<sup>-1/2</sup> }. This is much less horrible than it looks, because we are just faced with integrating &nbsp; z/(1 + z<sup>2</sup>)<sup>1/2</sup> which is obviously &nbsp; (1 + z<sup>2</sup>)<sup>1/2</sup>. So we get the expression above. For the limit, just expand the square root as a power series 1 + 2a<sup>2</sup>/b<sup>2</sup> - a<sup>4</sup>/(4b<sup>4</sup>) + ... .
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn39.html">2nd Putnam 1939</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

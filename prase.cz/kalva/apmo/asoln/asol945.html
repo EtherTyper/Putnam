@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 94/5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>6th APMO 1994</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 5</b><br>
+<p>
+Prove that for any n &gt; 1 there is either a power of 10 with n digits in base 2 or a power of 10 with n digits in base 5, but not both.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+10<sup>k</sup> has n digits in base 5 iff 5<sup>n-1</sup> &lt; 10<sup>k</sup> &lt; 5<sup>n</sup>. Similarly, 10<sup>h</sup> has n digits in base 2 iff 2<sup>n-1</sup> &lt; 10<sup>h</sup> &lt; 2<sup>n</sup>. So if we can find both 10<sup>k</sup> with n digits in base 5 and 10<sup>h</sup> with n digits in base 2, then, multiplying the two inequalities, we have 10<sup>n-1</sup> &lt; 10<sup>h+k</sup> &lt; 10<sup>n</sup>, which is clearly impossible. This establishes the "but not both" part.
+<p>
+Let S be the set of all positive powers of 2 or 5. Order the members of S in the usual way and let a<sub>n</sub> be the n-1th member of the set. We claim that if a<sub>n</sub> = 2<sup>k</sup>, then 10<sup>k</sup> has n digits in base 5, and if a<sub>n</sub> = 5<sup>h</sup>, then 10<sup>h</sup> has n digits in base 2. We use induction on n.
+<p>
+a<sub>2</sub> = 2<sup>1</sup>, a<sub>3</sub> = 2<sup>2</sup>, a<sub>4</sub> = 5<sup>1</sup>, a<sub>5</sub> = 2<sup>3</sup>, ... . Thus the claim is certainly true for n = 2. Suppose it is true for n.
+<p>
+Note that 10<sup>k</sup> has n digits in base 5 iff 5<sup>n-k-1</sup> &lt; 2<sup>k</sup> &lt; 5<sup>n-k</sup>. Similarly, 10<sup>h</sup> has n digits in base 2 iff 2<sup>n-h-1</sup> &lt; 5<sup>h</sup> &lt; 2<sup>n-h</sup>. There are 3 cases. Case (1). a<sub>n</sub> = 2<sup>k</sup> and a<sub>n+1</sub> = 2<sup>k+1</sup>. Hence 10<sup>k+1</sup> has n+1 digits in base 5. Case (2). a<sub>n</sub> = 2<sup>k</sup> and a<sub>n+1</sub> is a power of 5. Hence a<sub>n+1</sub> must be 5<sup>n-k</sup>. Hence 2<sup>k</sup> &lt; 5<sup>n-k</sup> &lt; 2<sup>k+1</sup>. Hence 2<sup>n</sup> &lt; 10<sup>n-k</sup> &lt; 2<sup>n+1</sup>. So 10<sup>n-k</sup> has n+1 digits in base 2. Case (3). a<sub>n</sub> = 5<sup>h</sup>. Since there is always a power of 2 between two powers of 5, a<sub>n+1</sub> must be a power of 2. Hence it must be 2<sup>n-h</sup>. So we have 5<sup>h</sup> &lt; 2<sup>n-h</sup> &lt; 5<sup>h+1</sup>. So 5<sup>n</sup> &lt; 10<sup>n-h</sup> &lt; 5<sup>n+1</sup> and hence 10<sup>n-h</sup> has n+1 digits in base 5.
+<p>
+<i>Jacob Tsimerman pointed out that the second part can be done in a similar way to the first - which is neater than the above:</i>
+<p>
+If no power of 10 has n digits in base 2 or 5, then for some h, k: 10<sup>h</sup> &lt; 2<sup>n-1</sup> &lt; 2<sup>n</sup> &lt; 10<sup>h+1</sup> and 10<sup>k</sup> &lt; 5<sup>n-1</sup> &lt; 5<sup>n</sup> &lt; 10<sup>k+1</sup>. Hence 10<sup>h+k</sup> &lt; 10<sup>n-1</sup> &lt; 10<sup>n</sup> &lt; 10<sup>h+k+2</sup>. But there is only one power of 10 between h+k and h+k+2.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo94.html">6th APMO 1994</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

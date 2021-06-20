@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 81/2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>10th USAMO 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 2</b><br>
+
+<p>
+
+What is the largest number of towns that can meet the following criteria. Each pair is directly linked by just one of air, bus or train. At least one pair is linked by air, at least one pair by bus and at least one pair by train. No town has an air link, a bus link and a trian link. No three towns, A, B, C are such that the links between AB, AC and BC are all air, all bus or all train.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 4. [eg A and B linked by bus. C and D both linked to A and B by air and to each other by train.] 
+
+<p>
+
+Suppose A is linked to three other towns by air. Let them be B, C, D. B has at most one other type of link. Suppose it is bus. Then B must be linked to C and D by bus. But now there is a problem with the CD link. If it is air, then A, C, D are all linked by air. If it is bus, then B, C, D are all linked by bus. If it is train, then C has links of all three types. So A cannot be linked to three others by air. Similarly it cannot be linked to three others by train, or to three others by bus. Since it has at most two types of link, it can be linked to at most 4 towns (2 by one type of link and 2 by another). So certainly there cannot be more than 5 towns. 
+
+<p>
+
+Suppose 5 is possible. A must be linked to two towns by one type of link and two by another. Without loss of generality we may suppose A is linked to B and C by bus and to D and E by train. Now suppose BE is an air link. Then B cannot have a train link (or it will have all three). It cannot be linked to C by bus (or ABC is all bus), so BC must be air. Similarly, ED must be air (it cannot be train or ADE is all train, or bus because then E has air, bus and train). But now there is a problem with the CE link. It cannot be air (or BCE is all air). It cannot be train, because C already has air and bus links. It cannot be bus, because E already has train and air links. So BE cannot be an air link. So it must be a bus or train link. Without loss of generality, we may assume it is a bus link. 
+
+<p>
+
+E has a bus and a train link, so it cannot have air links. It cannot be linked to D by train (or AED is all train). So ED must be bus. Now DB cannot be air (or D has air, train and bus). It cannot be bus (or DBE is all bus). So it must be train. So BC cannot be air (or B has train, bus and air). It cannot be bus (or ABC is all bus). So BC must be train. CD cannot be air (or C has air, bus and train). It cannot be train (or BCD is all train). So CD must be bus. Finally, CE cannot be air (or C has air, bus and train). It cannot be bus (or CDE is all bus). So CE must be train. So none of the links are air. Contradiction. Hence 5 towns is not possible. But 4 is, as given in the Answer above.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa81.html">10th USAMO 1981</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

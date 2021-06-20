@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1963/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>24th Putnam 1963</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Is the set { 2<sup>m</sup>3<sup>n</sup><b>:</b> m, n are integers } dense in the positive reals?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes.
+
+<p>
+
+It is easier to consider the set X = { m log 2 + n log 3: m, n integers }. We note first that there is no pair of integers m, n (except (0, 0) ) such that m log 2 + n log 3 = 0. For we would then have 2<sup>m</sup>3<sup>n</sup> = 1. That is clearly impossible if m and n have the same sign. If m and n have opposite signs, then it would imply that 2<sup>|m|</sup> = 3<sup>|n|</sup>, but a power of 2 is not divisible by 3. 
+
+<p>
+
+If X has a least positive member k, then log 2 must be an integral multiple of k (for we can write log 2 = q k + r for some integer q and 0 &lt;= r &lt; k, but then r must be zero). Similarly log 3. So if log 2 = nk and log 3 = mk, then m log 2 - n log 3 = 0, contradicting what we just proved. 
+
+<p>
+
+X contains the positive member log 2. But log 2 cannot be the least member, so it contains another member in (0, log 2). That cannot be the least member, so we can find another smaller positive member, and so on. So we get a countable infinity of members in (0, log 2). Hence for any &epsilon; &gt; 0, there are infinitly many members in a subinterval of (0, log 2) of length &epsilon;. The difference between any two of these must also lie in X and will lie in the interval (0, &epsilon;). Now the multiples of this number all lie in X and form a grid of mesh less than &epsilon;, so at least one of them is within &epsilon; of any given real.
+
+<p>
+
+That establishes that X is dense in the reals. But the map e<sup>x</sup> maps the reals to the positive reals and is continuous, so the set { 2<sup>m</sup>3<sup>n</sup><b>:</b> m, n are integers } is dense in the positive reals.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn63.html">24th Putnam 1963</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

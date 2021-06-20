@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1985/3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>26th IMO 1985 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 3</b><br>
+<p>
+Given n &gt; 1, find the maximum value of sin<sup>2</sup>x<sub>1</sub> + sin<sup>2</sup>x<sub>2</sub> + ... + sin<sup>2</sup>x<sub>n</sub>, where x<sub>i</sub> are non-negative and have sum &pi;.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<i>Solution by Demetres Christofides</i>
+<p>
+Answer: 2 for n = 2; 9/4 for n &gt; 2.
+<p>
+The result for n = 2 is obvious. So assume n &gt; 2. The expression is the sum of the squares of the sides of an n-gon inscribed in a circle radius 1/2 whose sides subtend angles 2x<sub>1</sub>, 2x<sub>2</sub>, ... , 2x<sub>n</sub> at the center. If n &gt; 3, then this n-gon must have an angle &ge; 90<sup>o</sup>. Suppose it is the angle at B between the sides AB and AC. Then by the cosine rule AC<sup>2</sup> &ge; AB<sup>2</sup> + BC<sup>2</sup>, so the expression is not reduced if we drop one of the vertices to get an (n-1)-gon. Hence the maximum is achieved by taking at least n-3 angles x<sub>i</sub> = 0. So we need only consider the case n = 3.
+<p>
+So let ABC be a triangle with circumcenter O, centroid G and circumradius R. Take G as the origin and P as any point. Using vectors it is immediate that PA<sup>2</sup> + PB<sup>2</sup> + PC<sup>2</sup> = 3 GP<sup>2</sup> + GA<sup>2</sup> + GB<sup>2</sup> + GC<sup>2</sup>. Putting P = O gives 3R<sup>2</sup> + 3OG<sup>2</sup> = GA<sup>2</sup> + GB<sup>2</sup> + GC<sup>2</sup>. Putting P = A gives AB<sup>2</sup> + AC<sup>2</sup> = 4GA<sup>2</sup> + GB<sup>2</sup> + GC<sup>2</sup>. Putting P = B and P = C and adding the three equations gives: AB<sup>2</sup> + BC<sup>2</sup> + CA<sup>2</sup> = 3(GA<sup>2</sup> + GB<sup>2</sup> + GC<sup>2</sup>). Hence AB<sup>2</sup> + BC<sup>2</sup> + CA<sup>2</sup> = 9R<sup>2</sup> - 9 OG<sup>2</sup> &le; 9R<sup>2</sup> = 9/4 for R = 1/2. [Note that equality is certainly achieved by x<sub>1</sub> = x<sub>2</sub> = x<sub>3</sub> = 60<sup>o</sup> and other x<sub>i</sub> = 0.]
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh85.html">26th IMO shortlist 1985</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Sep 2002
+</BODY>
+</HTML>
+

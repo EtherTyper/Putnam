@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2000/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>61st Putnam 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+We are given N triples of integers (a<sub>1</sub>, b<sub>1</sub>, c<sub>1</sub>), (a<sub>2</sub>, b<sub>2</sub>, c<sub>2</sub>), ... (a<sub>N</sub>, b<sub>N</sub>, c<sub>N</sub>). At least one member of each triple is odd. Show that we can find integers A, B, C such that at least 4N/7 of the N values A a<sub>i</sub> + B b<sub>i</sub> + C c<sub>i</sub> are odd.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Evidently we are only interested in the residues of the integers mod 2. So there are 7 possibilities for the each triple: (1, 1, 1), (1, 1, 0), (1, 0, 1), (0, 1, 1), (1, 0, 0), (0, 1, 0), (0, 0, 1). These are also the possibilities for (A, B, C).
+
+<p>It is easy to verify that if we take any fixed triple (a, b, c), then just 4 of the 7 possibilities for Aa + Bb + Cc are odd. So given any set of N triples, just 4N of the 7N sums Aa<sub>i</sub> + Bb<sub>i</sub> + Cc<sub>i</sub> are odd. These are divided into 7 sets (corresponding to the 7 possibilities for (A, B, C) ), so at least one of the these sets must contain at least 4N/7 odds.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn00.html">61st Putnam 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

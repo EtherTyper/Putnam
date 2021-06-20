@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1973/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>34th Putnam 1973</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+n is a positive integer. Prove that [&radic;(4n + 1) ] = [ min (k + n/k) ], where the minimum is taken over all positive integers k.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We evaluate each side. It is probably easiest to tackle [&radic;(4n + 1) ] first. Let f(n) = [&radic;(4n + 1) ]. If n &le; m<sup>2</sup> - 1, then 4n + 1 &le; 4m<sup>2</sup> - 3 &lt; (2m)<sup>2</sup>, so f(n) &lt; 2m. If n &ge; m<sup>2</sup>, then 4n + 1 &gt; 4m<sup>2</sup>, so f(n) &ge; 2m. If n &lt; m(m+1), then 4n + 1 &lt; 4m<sup>2</sup> + 4m + 1 = (2m+1)<sup>2</sup>, so f(n) &lt; 2m+1. If n &ge; m(m+1), then 4n+1 &ge; (2m+1)<sup>2</sup>, so f(n) &ge; 2m+1. Hence for n = m<sup>2</sup>, m<sup>2</sup> + 1, m<sup>2</sup> + 2, ... , m<sup>2</sup> + m - 1, we have f(n) = 2m. For n = m<sup>2</sup> + m, m<sup>2</sup> + m + 1, m<sup>2</sup> + m + 2, ... , m<sup>2</sup> + 2m we have f(n) = 2m+1.
+
+<p>
+
+Let g(n) be the minimum value of [k + n/k], where k is a positive integer. Consider h(x) = x + n/x, with x real and positive. h'(x) &lt;0, =0, &gt;0 according as x &lt;&radic;n, =&radic;n, &gt;&radic;n. So for positve real x, the smallest value of x + n/x occurs at x = &radic;n and the smallest value with x restricted to be an integer must occur at [&radic;n] or [&radic;n] + 1.
+
+<p>
+
+For n = m<sup>2</sup>, m<sup>2</sup> + 1, m<sup>2</sup> + 2, ... , m<sup>2</sup> + m - 1, we have [&radic;n] = m. Also 0 &lt; (m-1)/m &lt; 1, so [m + n/m] = 2m. Now n &gt; m<sup>2</sup> - 1, so n/(m+1) &gt; m - 1 and hence [(m+1) + n/(m+1)] &ge; [m+1 + m-1] = 2m. So for these values of n we have g(n) = 2m = f(n).
+
+<p>
+
+Now consider n = m<sup>2</sup> + m, m<sup>2</sup> + m + 1, m<sup>2</sup> + m + 2, ... , m<sup>2</sup> + 2m. For these values of n also we have [&radic;n] = m. For all except the last value of n, we have [m + n/m] = 2m+1. For the last we have [m + n/m] = 2m+2. But for all of them we have [(m+1) + n/(m+1)] = 2m+1. Hence for these values of n also g(n) = 2m+1 = f(n).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn73.html">34th Putnam 1973</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

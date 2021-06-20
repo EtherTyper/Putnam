@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1975/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>36th Putnam 1975</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Given three points in space forming an acute-angled triangle, show that we can find two further points such that no three of the five points are collinear and the line through any two is normal to the plane through the other three.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let the points be A, B, C. Let the two additional points be D, E. There are three cases to consider:
+
+<p>(1) the plane ABC and the line DE; (2) the plane ADE and the line BC, and the two similar configurations; (3) the plane ABD and the line CE, and the five similar configurations.
+
+<p>
+
+Clearly (1) works provided the line DE is normal to ABC. 
+
+<p>
+
+Now consider (2). Let the line DE intersect ABC at X. Let AX meet BC at Y. If BC is normal to ADE, then it is perpendicular to any line in ADE, so in particular it must be perpendicular to AY. In other words, AY must be an altitude of the triangle. But that is also sufficient. For we know that BC is perpendicular to DE (and if it is perpendicular to two non-parallel lines of the plane, then it must be normal to the plane). Similarly, X must lie on the other two altitudes. So this case works provided X is the orthocenter of ABC.
+
+<p>
+
+Take X as the origin. Let the vectors XA, XB, XC, XD, XE be <b>a</b>, <b>b</b>, <b>c</b>, <b>d</b>, k <b>d</b> respectively. A necessary and sufficient condition for AE to be normal to the plane BCD is that AE be perpendicular to BC and BD. We already know that it is perpendicular to BC (we have just shown that BC is normal to the plane ADE which contains it). So a necessary and sufficient condition is that AE be perpendicular to BD, or in vector language, (k <b>d</b> - <b>a</b>).(<b>b</b> - <b>d</b>) = 0, or k <b>d</b><sup>2</sup> = - <b>a</b>.<b>b</b>. This fixes k. Note that k is positive (so that D and E are on the same side of ABD, since <b>a</b>.<b>b</b> is negative). Now since X is the orthocenter of ABC, we have <b>a</b>.<b>b</b> = <b>b</b>.<b>c</b> = <b>c</b>.<b>a</b>. So with this choice of k we also have k <b>d</b><sup>2</sup> = - <b>b</b>.<b>c</b> = - <b>c</b>.<b>a</b>. It is easily checked that this is sufficient for the other five configurations also.
+
+<p>
+
+Finally, note that since ABC is acute, X lies strictly inside the triangle and hence <b>a</b>.<b>b</b> is non-zero, so k is non-zero and hence E is not collinear with any two of A, B, C. The only remaining point to check on non-collinearity is that D and E do not coincide. But then we would have AD perpendicular to BD, which is clearly false since AX is perpendicular to BX and D lies above X.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn75.html">36th Putnam 1975</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

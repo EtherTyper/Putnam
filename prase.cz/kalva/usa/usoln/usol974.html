@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 97/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>26th USAMO 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+A sequence of polygons is derived as follows. The first polygon is a regular hexagon of area 1. Thereafter each polygon is derived from its predecessor by joining to adjacent edge midpoints and cutting off the corner. Show that all the polygons have area greater than 1/3.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The first point to observe is that each polygon in the sequence is convex. The next point is that we can never completely eliminate the sides of the hexagon, in other words every polygon in the sequence has a vertex on each of the sides of the hexagon.
+
+<p>
+
+Let the hexagon be ABCDEF. The diagonals AC, BD, CE, DF, EA, FB meet at the six vertices of a smaller hexagon. Call it UVWXYZ. To be specific, let U be the intersection of FB and AC, V the intersection of AC and BD, W the intersection of BD and CE and so on. Now take any polygon in the sequence. It has a vertex on AB and a vertex on BC. Since it is convex, it must also include the segment joining these points. But any such segment intersects BU and BV. So it has a point on BU and on BV. Similarly for each of the other segments: CV, CW, DW, DX, ... . But the convex hull of these 12 points includes the hexagon UVWXYZ. Hence the area of any polygon in the sequence is at least that of UVWXYZ.
+
+<p>
+
+The triangle ABF is isosceles with angle ABF = 30 deg, so if AB = k, then BF = k&radic;3. But BU = FZ = k/&radic;3. Hence UZ = k&radic;3 - 2k/&radic;3 = k/&radic;3. So the area of UVWXYZ is 1/3 the area of ABCDEF.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa97.html">26th USAMO 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

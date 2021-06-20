@@ -1,0 +1,84 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 2002/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+2 circles of radius 1 are drawn in the plane so that no line meets more than two of the circles. Their centers are O<sub>1</sub>, O<sub>2</sub>, ... , O<sub>n</sub>. Show that &sum;<sub>i&lt;j</sub> 1/O<sub>i</sub>O<sub>j</sub> &le; (n-1)&pi;/4.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<img src="diag02b3.jpg">
+
+<p>
+
+Denote the circle center O<sub>i</sub> by C<sub>i</sub>. The tangents from O<sub>1</sub> to C<sub>i</sub> contain an angle 2x where sin x = 1/O<sub>1</sub>O<sub>i</sub>. So 2x &gt; 2/O<sub>1</sub>O<sub>i</sub>. These double sectors cannot overlap, so &sum; 2/O<sub>1</sub>O<sub>i</sub> &lt; &pi;. Adding the equations derived from O<sub>2</sub>, O<sub>3</sub>, ... we get 4 &sum; O<sub>i</sub>O<sub>j</sub> &lt; n&pi;, so &sum; O<sub>i</sub>O<sub>j</sub> &lt; n&pi;/4, which is not quite good enough.
+
+<p>
+
+<img src="dia02b3a.jpg">
+
+<p>
+
+There are two key observations. The first is that it is better to consider the angle O<sub>i</sub>O<sub>1</sub>O<sub>j</sub> than the angle between the tangents to a single circle. It is not hard to show that this angle must exceed both 2/O<sub>1</sub>O<sub>i</sub> and 2/O<sub>1</sub>O<sub>j</sub>. For consider the two common tangents to C<sub>1</sub> and C<sub>i</sub> which intersect at the midpoint of O<sub>1</sub>O<sub>i</sub>. The angle between the center line and one of the tangents is at least 2/O<sub>1</sub>O<sub>i</sub>. No part of the circle C<sub>j</sub> can cross this line, so its center O<sub>j</sub> cannot cross the line parallel to the tangent through O<sub>1</sub>. In other word, angle O<sub>i</sub>O<sub>1</sub>O<sub>j</sub> is at least 2/O<sub>1</sub>O<sub>i</sub>. A similar argument establishes it is at least 2/O<sub>1</sub>O<sub>j</sub>.
+
+<p>
+
+Now consider the convex hull of the n points O<sub>i</sub>. m &le; n of these points form the convex hull and the angles in the convex m-gon sum to (m-2)&pi;. That is the second key observation. That gains us not one but two amounts &pi;/4. However, we lose one back. Suppose O<sub>1</sub> is a vertex of the convex hull and that its angle is &theta;<sub>1</sub>. Suppose for convenience that the rays O<sub>1</sub>O<sub>2</sub>, O<sub>1</sub>O<sub>3</sub>, ... , O<sub>1</sub>O<sub>n</sub> occur in that order with O<sub>2</sub> and O<sub>n</sub> adjacent vertices to O<sub>1</sub> in the convex hull. We have that the n-2 angles between adjacent rays sum to &theta;<sub>1</sub>. So we have &sum; 2/O<sub>1</sub>O<sub>i</sub> &lt; &theta;<sub>1</sub>, where the sum is taken over only n-2 of the i, not all n-1. But we can choose which i to drop, because of our freedom to choose either distance for each angle. So we drop the longest distance O<sub>1</sub>O<sub>i</sub>. [If O<sub>1</sub>O<sub>k</sub> is the longest, then we work outwards from that ray. Angle O<sub>k-1</sub>O<sub>1</sub>O<sub>k</sub> &gt; 2/O<sub>1</sub>O<sub>k-1</sub>, and angle O<sub>k</sub>O<sub>1</sub>O<sub>k+1</sub> &gt; 2/O<sub>1</sub>O<sub>k+1</sub> and so on.]
+
+<p>
+
+We now sum over all the vertices in the convex hull. For any centers O<sub>i</sub>  inside the hull we use the &sum;<sub>j</sub> 2/O<sub>i</sub>O<sub>j</sub> &lt; &pi; which we established in the first paragraph, where the sum has all n-1 terms. Thus we get &sum;<sub>i,j</sub> 2/O<sub>i</sub>O<sub>j</sub> &lt; (n-2)&pi;, where for vertices i for which O<sub>i</sub> is a vertex of the convex hull the sum is only over n-2 values of j and excludes 2/O<sub>i</sub>O<sub>max i</sub> where O<sub>max i</sub>denotes the furthest center from O<sub>i</sub>.
+
+<p>
+
+Now for O<sub>i</sub> a vertex of the convex hull we have that the sum over all j, &sum; 2/O<sub>i</sub>O<sub>j</sub>, is the sum &Sigma;' over all but j = max i plus at most 1/(n-2) &Sigma;'. In other words we must increase the sum by at most a factor (n-1)/(n-2) to include the missing term. For O<sub>i</sub> not a vertex of the hull, obviously no increase is needed. Thus the full sum &sum;<sub>i,j</sub> 2/O<sub>i</sub>O<sub>j</sub> &lt; (n-1)&pi;. Hence &sum;<sub>i&lt;j</sub> 1/O<sub>i</sub>O<sub>j</sub> &lt; (n-1)&pi;/4 as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo02.html">43rd IMO 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Jul 2002
+
+<br>Last corrected/updated 30 Jul 2002
+
+</BODY>
+
+
+
+</HTML>
+

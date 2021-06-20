@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 49/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>9th Putnam 1949</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+C is a closed plane curve. If P, Q &isin; C, then |PQ| &lt; 1. Show that we can find a disk radius 1/&radic;3 which contains C.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+C can be any set of points in the plane. The usual proof uses Helly's theorem. Given any three points of the set we can find a circle radius 1/&radic;3 which contains them. This is fairly obvious. Take the points to be P, Q, R with PQ the longest side of the triangle. Take S on the same side of PQ as R so that PQS is equilateral. Then R must lie inside the bounding circle of PQS (in fact it must lie inside the region bounded PQ, the arc of the circle centre P from S to Q, and the arc of the circle centre Q from S to P, and this region lies entirely inside the bounding circle of PQS).
+
+<p>
+
+Another way of expressing this is that the three circles radius 1/&radic;3 and centres P, Q, R have a point in common. We can now apply Helly's theorem to the set of circles radius 1/&radic;3 and with centres at all the points of the set C. Every three of these circles have a point in common (proved above) and hence by Helly's theorem there is a point common to all of them. But this point can be taken as the centre of the required circle.
+
+<p>
+
+<i>Comment. This is a well-known result (Jung's theorem). But it is hard to prove if you are not familiar with Helly's theorem. </i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn49.html">9th Putnam 1949</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

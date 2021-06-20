@@ -1,0 +1,58 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 00/14 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 14</b>
+
+<p>
+
+Some cells of a 2n x 2n board contain a white token or a black token. All black tokens which have a white token in the same column are removed. Then all white tokens which have one of the remaining black tokens in the same row are removed. Show that we cannot end up with more than n<sup>2</sup> black tokens and more than n<sup>2</sup> white tokens.
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+After the first move every column contains nothing but black tokens (and empty cells) or nothing but white tokens (and empty cells). After the second move the same applies to the rows. So let B be the number of rows containing a black token, and W be the number of rows with no black token. Similarly, let b be the number of columns containing a black token, and w the number of columns with no black token. Then B+W+b+w = 4n, so BWbw &le; n<sup>4</sup> (by AM/GM). Hence either Bb &le; n<sup>2</sup> or Ww &le; n<sup>2</sup>. But the number of black tokens &le; Bb (because only rows contain black tokens, and in each of those columns there are at most b black tokens). Similarly, the no. of white tokens is &le; Ww.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus00.html">Russian 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+20 December 2003
+
+</BODY>
+
+
+
+</HTML>
+

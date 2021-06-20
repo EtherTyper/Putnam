@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1982/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>43rd Putnam 1982</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Let a(r) be the number of lattice points inside the circle center the origin, radius r. Let k = 1 + e<sup>-1</sup> + e<sup>-4</sup> + ... + exp(-n<sup>2</sup>) + ... . Express &int;<sub>U</sub> a(&radic;(x<sup>2</sup> + y<sup>2</sup>) ) exp( -(x<sup>2</sup>+y<sup>2</sup>) ) dx dy as a polynomial in k, where U represents the entire plane.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: &pi;(4k<sup>2</sup> -4k + 1).
+
+<p>
+
+a(r) is constant except at certain values &radic;n where it increases. Let a<sub>n</sub> be the increase at &radic;n, and a<sub>0</sub> = 1, so that a(r) = a<sub>0</sub> + a<sub>1</sub> + ... + a<sub>n</sub> on the interval (&radic;n, &radic;(n+1) ).
+
+<p>
+
+In the integral given, change variables to r, &theta;. The Jacobian is r, so we get 2&pi; &int;<sub>0</sub><sup>&infin;</sup> r a(r) exp( - r<sup>2</sup>) dr = 2&pi; &sum;<sub>0</sub><sup>&infin;</sup> &int;<sub>&radic;n</sub><sup>&radic;(n+1)</sup> r a(r) exp( - r<sup>2</sup>) dr = 2&pi; &sum;<sub>0</sub><sup>&infin;</sup> &int;<sub>&radic;n</sub><sup>&radic;(n+1)</sup> r (a<sub>0</sub> + a<sub>1</sub> + ... + a<sub>n</sub>) exp( - r<sup>2</sup>) dr = &pi; ( a<sub>0</sub>(1 - e<sup>-1</sup>) + (a<sub>0</sub> + a<sub>1</sub>)(e<sup>-1</sup> - e<sup>-2</sup>) + (a<sub>0</sub> + a<sub>1</sub> + a<sub>2</sub>)(e<sup>-2</sup> - e<sup>-3</sup>) + ... ) = &pi;(a<sub>0</sub> + a<sub>1</sub>e<sup>-1</sup> + a<sub>2</sub>e<sup>-2</sup> + ... ).
+
+<p>
+
+Let p(x) = 1 + x + x<sup>4</sup> + x<sup>9</sup> + x<sup>16</sup> + ... . Then the coefficient of x<sup>n</sup> in p(x)<sup>2</sup> is the number of lattice points in the first quadrant on the circle radius &radic;n centre the origin. The total number of lattice points on the circle is not 4p(x)<sup>2</sup> because that double-counts the points on the axes, it is 4p(x)<sup>2</sup> - 4p(x) + 1 (the final 1 is to put back the point at the origin). Hence a<sub>0</sub> + a<sub>1</sub>e<sup>-1</sup> + a<sub>2</sub>e<sup>-2</sup> + ... = 4p(1/e)<sup>2</sup> -4p(1/e) + 1 = 4k<sup>2</sup> -4k + 1 and the integral is &pi;(4k<sup>2</sup> -4k + 1).
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn82.html">43rd Putnam 1982</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

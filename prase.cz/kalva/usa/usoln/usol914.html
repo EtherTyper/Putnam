@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 91/4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>20th USAMO 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 4</b><br>
+
+<p>
+
+a and b are positive integers and c = (a<sup>a+1</sup> + b<sup>b+1</sup>)/(a<sup>a</sup> + b<sup>b</sup>). By considering (x<sup>n</sup> - n<sup>n</sup>)/(x - n) or otherwise, show that c<sup>a</sup> + c<sup>b</sup> &ge; a<sup>a</sup> + b<sup>b</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(x<sup>n</sup> - n<sup>n</sup>)/(x - n) = x<sup>n-1</sup> + x<sup>n-2</sup>n + ... + n<sup>n-1</sup>. If x &gt; n, then each term is &gt; n<sup>n-1</sup>, so (x<sup>n</sup> - n<sup>n</sup>)/(x - n) &gt; n<sup>n</sup>. If x &lt; n, then each term is &lt;= n<sup>n</sup> with equality only for the last term, so (x<sup>n</sup> - n<sup>n</sup>)/(x - n) &lt; n<sup>n</sup>. So multiplying by x - n, which is positive for x &gt; n and negative for x &lt; n, we get (x<sup>n</sup> - n<sup>n</sup>) &gt; (x - n)n<sup>n</sup> except for x = n, and hence (x<sup>n</sup> - n<sup>n</sup>) &ge; (x - n)n<sup>n</sup> for all x &ge; 0.
+
+<p>
+
+Putting x = c, n = a, we get (c<sup>a</sup> - a<sup>a</sup>) &ge; (c - a)a<sup>a</sup>. Similarly, putting x = c, n = b, we get (c<sup>b</sup> - b<sup>b</sup>) &ge; (c - b)b<sup>b</sup>. Adding (c<sup>a</sup> + c<sup>b</sup>) - (a<sup>a</sup> + b<sup>b</sup>) &ge; (c - a)a<sup>a</sup> + (c - b)b<sup>b</sup> = c(a<sup>a</sup> + b<sup>b</sup>) - a<sup>a+1</sup> - b<sup>b+1</sup> = 0, which is the required result.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa91.html">20th USAMO 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

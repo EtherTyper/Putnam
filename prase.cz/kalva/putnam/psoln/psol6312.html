@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1963/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>24th Putnam 1963</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+Let S = S<sub>0</sub> be a set of points in space. Let S<sub>n</sub> = { P <b>:</b> P belongs to the closed segment AB, for some A, B &isin; S<sub>n-1</sub>}. Show that S<sub>2</sub> = S<sub>3</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+ We have to show that S<sub>2</sub> is already the convex hull of S. We can define the convex hull of points <b>x<sub>i</sub></b> i = 1, 2, ... , n as the collection of all points &sum; &lambda;<sub>i</sub><b>x<sub>i</sub></b> with all &lambda;<sub>i</sub> non-negative and &sum; &lambda;<sub>i</sub> = 1. Given two such points P = &sum; &lambda;<sub>i</sub><b>x<sub>i</sub></b> and Q = &sum; &mu;<sub>i</sub><b>x<sub>i</sub></b>, any point on the closed segment PQ can be written as &lambda;P + &mu;Q with &lambda;, &mu; non-negative and &lambda; + &mu; = 1, but &lambda;P + &mu;Q = &sum; (&lambda; &lambda;<sub>i</sub> + &mu; &mu;<sub>i</sub>) <b>x<sub>i</sub></b> and &sum; (&lambda; &lambda;<sub>i</sub> + &mu; &mu;<sub>i</sub>) = 1. So it follows immediately that all S<sub>n</sub> are subsets of the convex hull.
+
+<p>
+
+Now we claim that any point in the convex hull can be written as a sum &sum; &lambda;<sub>i</sub><b>x<sub>i</sub></b> with at most 4 non-zero terms. Suppose not. Then some point P requires at least m &ge; 5 terms. wlog we may take these to be the first m terms, so that P = &sum;<sub>1</sub><sup>m</sup>&lambda;<sub>i</sub><b>x<sub>i</sub></b>. But now we can find &mu;<sub>i</sub> not all zero so that &sum;<sub>1</sub><sup>m</sup> &mu;<sub>i</sub><b>x<sub>i</sub></b> = 0 (3 equations, one for each coordinate) and &sum; &mu;<sub>i</sub> = 0 (1 equation). But now P = &sum;<sub>1</sub><sup>m</sup>(&lambda;<sub>i</sub> + k &mu;<sub>i</sub>)<b>x<sub>i</sub></b> for all k and we still have &sum; (&lambda;<sub>i</sub> + k &mu;<sub>i</sub>) = 1. Take the smallest &lambda;<sub>i</sub>/&mu;<sub>i</sub> and set k as its negative. Then &lambda;<sub>i</sub> + k &mu;<sub>i</sub> = 0 but the other terms &lambda;<sub>j</sub> + k &mu;<sub>j</sub> remain non-negative, so we have expressed P as a sum of less than m terms. Contradiction.
+
+<p>
+
+So given any P in the convex hull we may write (wlog) P = &lambda;<sub>1</sub><b>x<sub>1</sub></b> + ... + &lambda;<sub>4</sub><b>x<sub>4</sub></b> for some non-negative &lambda;<sub>i</sub> with sum 1. If two or three of the &lambda;<sub>i</sub> are zero, then this shows that P is in S<sub>1</sub>. So suppose &lambda;<sub>1</sub>, &lambda;<sub>2</sub>, &lambda;<sub>3</sub> are all positive. Then P = (&lambda;<sub>1</sub> + &lambda;<sub>2</sub>) (&lambda;<sub>1</sub><b>x<sub>1</sub></b>/(&lambda;<sub>1</sub> + &lambda;<sub>2</sub>) + &lambda;<sub>2</sub><b>x<sub>2</sub></b>/(&lambda;<sub>1</sub> + &lambda;<sub>2</sub>) ) + (&lambda;<sub>3</sub> + &lambda;<sub>4</sub>) (&lambda;<sub>3</sub><b>x<sub>3</sub></b>/(&lambda;<sub>3</sub> + &lambda;<sub>4</sub>) + &lambda;<sub>4</sub><b>x<sub>4</sub></b>/(&lambda;<sub>3</sub> + &lambda;<sub>4</sub>) ), which shows that P is in S<sub>2</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn63.html">24th Putnam 1963</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

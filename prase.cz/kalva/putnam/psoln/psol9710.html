@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1997/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Let (1 + x + x<sup>2</sup>)<sup>m</sup> = &sum;<sub>0</sub><sup>2m</sup> a<sub>m,n</sub>x<sup>n</sup>. Prove that for all k &ge; 0, &sum;<sub>0</sub><sup>[2k/3]</sup> (-1)<sup>i</sup>a<sub>k-i,i</sub> &isin; [0,1].
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<p>
+<i>Straightforward. (Easy if you instinctively leap for generating functions).</i>
+
+<p>
+Notice first that, if we let a<sub>m,n</sub> = 0 where there is no term x<sup>n</sup> in the expansion, then the required sum is simply taken over all i.
+
+<p>
+There are two ways to do this. The straightforward way is induction, using the fact that a<sub>m+1,n</sub>= a<sub>m,n</sub> + a<sub>m,n-1</sub> + a<sub>m,n-2</sub>. If S(k) denotes the sum for k, then we find that S(k) = S(k-1) - S(k-2) + S(k-3). This is a routine computation.
+
+<p>
+The slick way is to use a generating function in two variables f(x,y) = &sum; a<sub>m,n</sub> y<sup>m</sup>x<sup>n</sup>. Then if we set x = - y, we find that the coefficient of y<sup>k</sup> is the required sum. But f(x, y) = 1/(1 - y(1+x+x<sup>2</sup>)), so f(-y, y) = (1 + y)/(1 - y<sup>4</sup>) = (1 + y)(1 + y<sup>4</sup> + y<sup>8</sup> + ... ) and the coefficient of y<sup>k</sup> = 1 if k = 0 or 1 (mod 4), 0 otherwise.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn97.html">Putnam 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 82/3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>11th USAMO 1982</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 3</b><br>
+
+<p>
+
+D is a point inside the equilateral triangle ABC. E is a point inside DBC. Show that area DBC/(perimeter DBC)<sup>2</sup> &gt; area EBC/(perimeter EBC)<sup>2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let us find an expression for t = (area DBC)/(perimeter DBC)<sup>2</sup>. Let angle B = 2x, angle C = 2y and angle D = 2z and let the inradius be r. Then area DBC = r/2 x perimeter DBC. Also BC = r cot x + r cot y, and similarly for the other sides, so perimeter = 2r(cot x + cot y + cot z). Hence t = 1/(4 (cot x + cot y + cot z) ). Putting z = 90<sup>o</sup> - x - y, we get 1/4t = cot x + cot y + (cot x + cot y)/(cot x cot y - 1). Now EBC has both x and y smaller than DBC, and cot x is a decreasing function of x (certainly for x in the range 0 to 30<sup>o</sup>). So writing u = cot x, v = cot y, it is sufficient to show that u + v + (u + v)/(uv - 1) is an increasing function of u. [It is symmetric, so it follows that it is also an increasing function of v.] We have x, y &lt; 30<sup>o</sup>, and hence u, v &gt; &radic;3, so we need the result at least for u, v &gt; &radic;3.
+
+<p>
+
+We have u + v + (u + v)/(uv - 1) = u + v + 1/v (uv - 1)/(uv - 1) + (v + 1/v)/(uv - 1). In considering the dependence on u, we can ignore the terms that do not depend on u, so we have u + (1 + 1/v<sup>2</sup>)/(u - 1/v). Put k = u - 1/v, then we have to consider k + h<sup>2</sup>/k, where h<sup>2</sup> = 1 + 1/v<sup>2</sup>. But this is an increasing function for k &gt; h (see below). Thus u + v + (u + v)/(uv - 1) is an increasing function of u for u - 1/v &gt; (1 + 1/v<sup>2</sup>)<sup>1/2</sup>, or for u &gt; 1/v + (1 + 1/v<sup>2</sup>)<sup>1/2</sup>. This bound is highest for the smallest v in other words for v = &radic;3, when it is &radic;3. So for v &gt; &radic;3, u + v + (u + v)/(uv - 1) is an increasing function of u for u &gt; &radic;3.
+
+<p>
+
+[To see that k + h<sup>2</sup>/k is increasing for k &gt; h, take k' &gt; k &gt; h. Then k' + h<sup>2</sup>/k' - k - h<sup>2</sup>/k = (k' - k) - h<sup>2</sup>(1/k - 1/k') = (k' - k)(1 - h<sup>2</sup>/kk') &gt; 0.]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa82.html">11th USAMO 1982</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+21 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

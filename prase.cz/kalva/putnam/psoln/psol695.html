@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1969/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>30th Putnam 1969</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+u(t) is a continuous function. x(t), y(t) is the solution of x' = -2y + u(t), y' = -2x + u(t) satisfying the initial condition x(0) = x<sub>0</sub>, y(0) = y<sub>0</sub>. Show that if x<sub>0</sub> &ne; y<sub>0</sub>, then we do not have x(t) = y(t) = 0 for any t, but that given any x<sub>0</sub> = y<sub>0</sub> and any T &gt; 0, we can always find some u(t) such that x(T) = y(T) = 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Subtracting, we have z' = 2z, where z = x - y. So z(t) = Ae<sup>2t</sup>. If x<sub>0</sub> &ne; y<sub>0</sub>, then A &ne; 0 and so z(t) &ne; 0  for any t. Hence, in particular, we do not have x(t) = y(t) = 0 for any t.
+
+<p>
+
+If x<sub>0</sub> = y<sub>0</sub> = k, then z(0) = 0, so A = 0, so x(t) = y(t) for all t. Take (for example) u(t) = -(k/T) e<sup>-2t</sup>. Then we may solve x' + 2x = u with x(0) = k to get x(t) = k(1 - t/T) e<sup>-2t</sup>. This has x(T) = 0 as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn69.html">30th Putnam 1969</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1965/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>26th Putnam 1965</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Let S be a set with n &gt; 3 elements. Prove that we can find a collection of [n<sup>2</sup>/4] 2-subsets of S such that for any three distinct elements A, B, C of the collection, A &cup; B &cup; C has at least 4 elements.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+This is just another form of finding a graph without triangles. If n = 2m, then take S to be the disjoint union of U and V, where U and V each have m elements. Now take K to be the collection all sets {u, v} with u in U and v in V. Evidently K has m<sup>2</sup> = [n<sup>2</sup>/4] members. Suppose we have three distinct elements A, B, C of K. A &cup; B &cup; C cannot have less than three elements, for then two of A, B, C would be identical. So if it has less than 4 elements, then it has just three elements. But that means that for some a, b, c, we have A = {b, c}, B = {a, c}, C = {a, b}. Suppose a is in U. Then, considering B and C, c and b must be in V, but then A has two elements in V. Contradiction. Similarly if a is in V. So K has the required property.
+
+<p>
+
+Similarly, if n = 2m+1, take S to be the disjoint union of U and V, where U has m+1 elements and V has m elements. Then K, the set of all {u, v} with u in U and v in V has m(m+1) = [n<sup>2</sup>/4] elements and has the required property by the same argument.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn65.html">26th Putnam 1965</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

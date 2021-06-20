@@ -1,0 +1,65 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1994/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1994</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Let R be the reals and R<sup>+</sup> the positive reals. f <b>:</b> R &rarr; R<sup>+</sup> is differentiable and f '(x) &gt; f(x) for all x. For what k must f(x) exceed e<sup>kx</sup> for all sufficiently large k?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: k &le; 1.
+
+<p>
+
+Let g(x) = e<sup>-x</sup>f(x), then g'(x) = e<sup>-x</sup>(f '(x) - f(x) ) &gt; 0 for all x, so g is a strictly increasing function. Hence for any h &lt; 0, g(x) &gt; e<sup>hx</sup> for all sufficiently large x. Hence if k &lt; 1, then f(x) &gt; e<sup>kx</sup> for all sufficiently large x.
+
+<p>
+The tricky case is obviously k = 1. The argument above suggests that if g(x) keeps below 1, then we will have f(x) &lt; e<sup>x</sup> for all x. For example, we can take f(x) = e<sup>x - e<sup>-x</sup></sup>. Then f '(x) = f(x) (1 + e<sup>-x</sup>) &gt; f(x), but f(x) &lt; e<sup>kx</sup> for all x, provided k &ge; 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn94.html">Putnam 1994</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,95 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1988/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1988</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b>
+
+<p>
+
+Let n be a positive integer and let A<sub>1</sub>, A<sub>2</sub>, ... , A<sub>2n+1</sub> be subsets of a set B. Suppose that:
+
+<br>(i)&nbsp; Each A<sub>i</sub> has exactly 2n elements,
+
+<br>(ii)&nbsp; The intersection of every two distinct A<sub>i</sub> contains exactly one element, and
+
+<br>(iii)&nbsp; Every element of B belongs to at least two of the A<sub>i</sub>.
+
+<br>For which values of n can one assign to every element of B one of the numbers 0 and 1 in such a way that A<sub>i</sub> has 0 assigned to exactly n of its elements?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Answer: n even.
+
+<p>
+Each of the 2n elements of A<sub>i</sub> belongs to at least one other A<sub>j</sub> because of (iii). But given another A<sub>j</sub> it cannot contain more than one element of A<sub>i</sub> because of (ii). There are just 2n other A<sub>j</sub> available, so each must contain exactly one element of A<sub>i</sub>. Hence we can strengthen (iii) to every element of B belongs to exactly two of the As. 
+
+<p>
+This shows that the arrangement is essentially unique. We may call the element of B which belongs to A<sub>i</sub> and A<sub>j</sub> (i,j). Then A<sub>i</sub> contains the 2n elements (i, j) with j not i. 
+
+<p>
+|B| = 1/2 x no. of As x size of each A = n(2n+1). If the labeling with 0s and 1s is possible, then  if we list all the elements in each A, n(2n+1) out of the 2n(2n+1) elements have value 0. But each element appears twice in this list, so n(2n+1) must be even. Hence n must be even.
+
+<p>
+<i>Next part thanks to Stan Dolan</i>
+<p>
+Label (i,j) 0 if j = i-n/2, i-(n/2 - 1), ... , i-1, i+1, i+2, ... , i+n/2 (working mod 2n+1 when necessary). This clearly has the required property.
+<p>
+<i>My original solution was a pedestrian induction:</i>
+<p>
+We show by induction that a labeling is always possible for n even. If n = 2, there is certainly a labeling. For example, we may assign 0 to (1,2), (1,3), (2,4), (3,5), (4,5). Now suppose we have a labeling for n. For n + 2, we label (i , j) 0 if it was labeled 0 for n or if it is:
+
+<br>&nbsp; &nbsp; (i, 2n+2) or (i, 2n+3) for i = 1, 2, ... , n+1
+
+<br>&nbsp; &nbsp; (i, 2n+4) or (i, 2n+5) for i = n+2, n+3, ... , 2n+1
+
+<br>&nbsp; &nbsp; (2n+2, 2n+4), (2n+3, 2n+5), (2n+4,2n+5).
+
+<br>For i = 1, 2, ... n+1, A<sub>i</sub> has n elements (i, j) labeled zero with j &le; 2n+1 and also (i, 2n+2) and (i, 2n+3), giving n+2 in all. For i = n+2, n+3, ... , 2n+1, A<sub>i</sub> has n elements (i, j) labeled zero with j &le; 2n+1 and also (i, 2n+4) and (i, 2n+5), giving n+2 in all. A<sub>2n+2</sub> has the n+1 elements (i, 2n+2) with i &lt;= n+1 and also (2n+2, 2n+4), giving n+2 in all. A<sub>2n+3</sub> has the n+1 elements (i, 2n+3) for i &le; n+1 and also (2n+3, 2n+5), giving n+2 in all. A<sub>2n+4</sub> has the n elements (i, 2n+4) with n+2 &le; i &le; 2n+1 and also (2n+2, 2n+4) and (2n+4, 2n+5), giving n+2 in all. Finally A<sub>2n+5</sub> has the n elements (i, 2n+5) with n+2 &le; i &le; 2n+1 and also (2n+3, 2n+5) and (2n+4, 2n+5), giving n+2 in all.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo88.html">29th IMO 1988</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Oct 1998
+<br>Last corrected/updated 5 Jan 04
+
+</BODY>
+
+
+
+</HTML>
+

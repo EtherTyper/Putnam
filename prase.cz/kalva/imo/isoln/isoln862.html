@@ -1,0 +1,64 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1986/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1986</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b>
+
+<p>
+
+Given a point P<sub>0</sub> in the plane of the triangle A<sub>1</sub>A<sub>2</sub>A<sub>3</sub>. Define A<sub>s</sub> = A<sub>s-3</sub> for all s &ge; 4. Construct a set of points P<sub>1</sub>, P<sub>2</sub>, P<sub>3</sub>, ... such that P<sub>k+1</sub> is the image of P<sub>k</sub> under a rotation center A<sub>k+1</sub> through  120<sup>o</sup> clockwise for k = 0, 1, 2, ... . Prove that if P<sub>1986</sub> = P<sub>0</sub>, then the triangle A<sub>1</sub>A<sub>2</sub>A<sub>3</sub> is equilateral.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+The product of three successive rotations about the three vertices of a triangle must be a translation (see below). But that means that P<sub>1986</sub> (which is the result of 662 such operations, since 1986 = 3 x 662) can only be P<sub>0</sub> if it is the identity, for a translation by a non-zero amount would keep moving the point further away. It is now easy to show that it can only be the identity if the triangle is equilateral. Take a circle center A<sub>1</sub>, radius A<sub>1</sub>A<sub>2</sub> and take P on the circle so that a 120<sup>o</sup> clockwise rotation about A<sub>1</sub> brings P to A<sub>2</sub>. Take a circle center A<sub>3</sub>, radius A<sub>3</sub>A<sub>2</sub> and take Q on the circle so that a 120<sup>o</sup> clockwise rotation about A<sub>3</sub> takes A<sub>2</sub> to Q. Then successive 120<sup>o</sup> clockwise rotations about A<sub>1</sub>, A<sub>2</sub>, A<sub>3</sub> take P to Q. So if these three are equivalent to the identity we must have P = Q. Hence &ang;A<sub>1</sub>A<sub>2</sub>A<sub>3</sub> = &ang;A<sub>1</sub>A<sub>2</sub>P + &ang;A<sub>3</sub>A<sub>2</sub>P = 30<sup>o</sup> + 30<sup>o</sup> = 60<sup>o</sup>. Also A<sub>2</sub>P = 2A<sub>1</sub>A<sub>2</sub>cos 30<sup>o</sup> and = 2A<sub>2</sub>A<sub>3</sub>cos 30<sup>o</sup>. Hence A<sub>1</sub>A<sub>2</sub> = A<sub>2</sub>A<sub>3</sub>. So A<sub>1</sub>A<sub>2</sub>A<sub>2</sub> is equilateral. Note in passing that it is not sufficient for the triangle to be equilateral. We also have to take the rotations in the right order. If we move around the vertices the opposite way, then we get a net translation.
+
+<p>
+It remains to show that the three rotations give a translation. Define rectangular coordinates (x, y) by taking A<sub>1</sub> to be the origin and A<sub>2</sub> to be (a, b). Let A<sub>3</sub> be (c, d). A clockwise rotation through 120 degrees about the origin takes (x, y) to (-x/2 + y&radic;3/2, -x&radic;3/2 - y/2). A clockwise rotation through 120 degrees about some other point (e, f) is obtained by subtracting (e, f) to get (x - e, y - f), the coordinates relative to (e, f), then rotating, then adding (e, f) to get the coordinates relative to (0, 0). Thus after the three rotations we will end up with a linear combination of x's, y's, a's, b's, c's and d's for each coordinate. But the linear combination of x's and y's must be just x for the x-coordinate and y for the y-coordinate, since three successive 120 degree rotations about the same point is the identity. Hence we end up with simply  (x + constant, y + constant), in other words, a translation. 
+
+<p>
+[Of course, there is nothing to stop you actually carrying out the computation. It makes things slightly easier to take the triangle to be (0, 0), (1, 0), (a, b). The net result turns out to be (x, y) goes to (x + 3a/2 - b&radic;3/2, y - &radic;3 + a&radic;3/2 + 3b/2). For this to be the identity requires a = 1/2, b = &radic;3/2. So the third vertex must make the triangle equilateral (and it must be on the correct side of the line joining the other two). This approach avoids the need for the argument in the first paragraph above, but is rather harder work.]
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo86.html">27th IMO 1986</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

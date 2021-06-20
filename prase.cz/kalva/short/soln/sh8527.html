@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1985/27 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>26th IMO 1985 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 27</b><br>
+<p>
+Find the largest and smallest values of w(w + x)(w + y)(w + z) for reals w, x, y, z such that w + x + y + z = 0 and w<sup>7</sup> + x<sup>7</sup> + y<sup>7</sup> + z<sup>7</sup> = 0.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<i>Solution by Demetres Christofides</i>
+<p>
+Answer: both 0.
+<p>
+We have that (w+x)<sup>7</sup> - 7wx(w+x)(w<sup>2</sup>+wx+x<sup>2</sup>)<sup>2</sup> = w<sup>7</sup> + x<sup>7</sup>. Similarly for y and z. So adding gives wx(w+x)(w<sup>2</sup>+wx+x<sup>2</sup>)<sup>2</sup> + yz(y+z)(y<sup>2</sup>+yz+z<sup>2</sup>)<sup>2</sup> = 0. Dividing by w+x = -(y+z), we get wx(w<sup>2</sup>+wx+x<sup>2</sup>)<sup>2</sup> = yz(y<sup>2</sup>+yz+z<sup>2</sup>)<sup>2</sup>.
+<p>
+We have w<sup>2</sup> + wx + x<sup>2</sup> = (w+x)<sup>2</sup> - wx, and y<sup>2</sup> + yz + z<sup>2</sup> = (y+z)<sup>2</sup> - yz = (w+x)<sup>2</sup> - yz. Hence (wx - yz)(w+x)<sup>4</sup> - 2(wx)<sup>2</sup>(w+x)<sup>2</sup> + 2(yz)<sup>2</sup>(w+x)<sup>2</sup> + (wx)<sup>3</sup> - (yz)<sup>3</sup> = 0. So either (wx - yz) = 0 or (w+x)<sup>4</sup> - 2(wx + yz)(w+x)<sup>2</sup> + ( (wx)<sup>2</sup> + wxyz + (yz)<sup>2</sup>) = 0.
+<p>
+If wx = yz, then since also w + x = -(y + z), we have that w and x are the roots of the quadratic  t<sup>2</sup> + (y+z) t + yz. Solving, w, x = -y, -z in some order. So (w + y)(w + z) = 0.
+<p>
+So suppose wx - yz is non-zero. Then (w+x)<sup>4</sup> - 2(wx + yz)(w+x)<sup>2</sup> + ( (wx)<sup>2</sup> + wxyz + (yz)<sup>2</sup>) = 0, or ( (w+x)<sup>2</sup> - (wx + yz) )<sup>2</sup> = wxyz (*). Since (w+x)<sup>2</sup> = (y+z)<sup>2</sup>, we have 2( (w+x)<sup>2</sup> - (wx + yz) ) = ( (w+x)<sup>2</sup> - 2wx + (y+z)<sup>2</sup> - 2yz) = (w<sup>2</sup> + x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>). So (*) becomes (w<sup>2</sup> + x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>)<sup>2</sup> = 4wxyz. But by AM/GM we have (w<sup>2</sup> + x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>) &gt; 4(w<sup>2</sup>x<sup>2</sup>y<sup>2</sup>z<sup>2</sup>)<sup>1/4</sup> and hence (w<sup>2</sup> + x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>)<sup>2</sup> &gt;= 16wxyz. So 4wxyz &gt;= 16wxyz. Also 4wxyz is non-negative, since it is a square. So we must have wxyz = 0. Hence also (w<sup>2</sup> + x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>) = 0, so w = x = y = z = 0 and we have a special case of wx = yz after all. 
+<p>
+So the <i>only possible</i> value of w(w + x)(w + y)(w + z) is zero.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh85.html">26th IMO shortlist 1985</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Sep 2002
+</BODY>
+
+</HTML>
+

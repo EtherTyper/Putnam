@@ -1,0 +1,118 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 02/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>63rd Putnam 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Two players play a game on a 3 x 3 board. The first player places a 1 on an empty square and the second player places a 0 on an empty square. Play continues until all squares are occupied. The second player wins if the resulting determinant is 0 and the first player wins if it has any other value. Who wins?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: the second player.
+
+<p>
+
+Divide and conquer.
+
+<p>
+
+The determinant is certainly zero if we have a row or column or zeros or if we have two identical rows. We show that the second player can always achieve one of these outcomes.
+
+<p>
+
+The absolute value of a determinant is not affected if the rows or columns are permuted, so there is no loss of generality in assuming that the first player's first move is at the top right. The second player then plays in the middle.
+
+<pre>
+
+   1   A   B
+
+   .   0   C
+
+   .   .   D
+
+</pre>
+
+Since permuting rows or columns, or interchanging rows and columns, does not affect the absolute value, we can assume that the first players next move is A, B, C, or D. The remaining moves by the first player are all forced:
+
+<pre>
+
+case A   1   1   .     1   1   .     1   1   .     1   1   1     1   1   1     1   1   1
+
+         .   0   0     1   0   0     1   0   0     1   0   0     1   0   0     1   0   0
+
+         .   .   .     .   .   .     .   .   0     .   .   0     .   0   0     1   0   0
+
+
+
+case B   1   .   1     1   .   1     1   .   1     1   1   1     1   1   1     1   1   1
+
+         .   0   0     1   0   0     1   0   0     1   0   0     1   0   0     1   0   0
+
+         .   .   .     .   .   .     .   0   .     .   0   .     .   0   0     1   0   0
+
+
+
+case C   1   .   .     1   1   .     1   1   .     1   1   .     1   1   .     1   1   1
+
+         .   0   1     .   0   1     .   0   1     .   0   1     0   0   1     0   0   1
+
+         .   0   .     .   0   .     0   0   .     0   0   1     0   0   1     0   0   1
+
+
+
+case D   1   .   .     1   1   .     1   1   .     1   1   .     1   1   .     1   1   1
+
+         .   0   .     .   0   .     0   0   .     0   0   1     0   0   1     0   0   1
+
+         .   0   1     .   0   1     .   0   1     .   0   1     0   0   1     0   0   1
+
+</pre>
+
+
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn02.html">63rd Putnam 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Dec 2002
+
+</BODY>
+
+
+
+</HTML>
+

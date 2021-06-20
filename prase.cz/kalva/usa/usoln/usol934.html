@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 93/4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>22nd USAMO 1993</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 4</b><br>
+
+<p>
+
+The sequence a<sub>n</sub> of odd positive integers is defined as follows: a<sub>1</sub> = r, a<sub>2</sub> = s, and a<sub>n</sub> is the greatest odd divisor of a<sub>n-1</sub> + a<sub>n-2</sub>. Show that, for sufficiently large n, a<sub>n</sub> is constant and find this constant (in terms of r and s).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+This is awkward to get started. Note that if a<sub>n-1</sub> = a<sub>n-2</sub>, then a<sub>n-1</sub> + a<sub>n-2</sub> = 2a<sub>n-1</sub>, whose greatest odd divisor is just a<sub>n-1</sub>, so a<sub>n</sub> = a<sub>n-1</sub>. So once two consecutive terms are constant the following terms are constant.
+
+<p>
+
+Both a<sub>n-1</sub> and a<sub>n-2</sub> are odd, so a<sub>n-1</sub> + a<sub>n-2</sub> is even and hence a<sub>n</sub> &le; (a<sub>n-1</sub> + a<sub>n-2</sub>)/2. So if a<sub>n-1</sub> and a<sub>n-2</sub> are unequal, then a<sub>n</sub> &lt; max(a<sub>n-1</sub>, a<sub>n-2</sub>). As already noted, if they are equal, then a<sub>n</sub> = max(a<sub>n-1</sub>, a<sub>n-2</sub>).
+
+<p>
+
+Put b<sub>n</sub> = max(a<sub>n</sub>, a<sub>n-1</sub>). If a<sub>n</sub> &lt; a<sub>n-1</sub>, then a<sub>n+1</sub> &lt; max(a<sub>n</sub>, a<sub>n-1</sub>) = a<sub>n-1</sub>. Also a<sub>n+2</sub> &le; max(a<sub>n+1</sub>, a<sub>n</sub>) &lt; a<sub>n-1</sub>. Hence max(a<sub>n+2</sub>, a<sub>n+1</sub>) &lt; max(a<sub>n</sub>, a<sub>n-1</sub>) or b<sub>n+2</sub> &lt; b<sub>n</sub>. If a<sub>n</sub> &gt; a<sub>n-1</sub>, then a<sub>n+1</sub> &lt; max(a<sub>n</sub>, a<sub>n-1</sub>) = a<sub>n</sub>, and a<sub>n+2</sub> &lt; max(a<sub>n+1</sub>, a<sub>n</sub>) = a<sub>n</sub>. Hence b<sub>n+2</sub> &lt; b<sub>n</sub>. Thus if a<sub>n</sub> and a<sub>n-1</sub> are unequal, then b<sub>n+2</sub> &lt; b<sub>n</sub>. But obviously a<sub>n</sub> &gt; 0 for all n, and so b<sub>n</sub> &gt; 0 for all n. Also it is integral, and b<sub>1</sub> = max(r, s), so we can only have b<sub>2n+1</sub> &lt; b<sub>2n-1</sub> for at most max(r, s) values of n. Hence for some n we must have a<sub>n</sub> = a<sub>n-1</sub> and then a<sub>n</sub> is constant from that point on.
+
+<p>
+
+We show that the constant is the greatest common divisor of r and s. Use parentheses to denote the greatest common divisor, so the greatest common divisor of r and s is (r, s). We have (a<sub>n-1</sub>, a<sub>n-2</sub>) = (a<sub>n-1</sub>, a<sub>n-1</sub> + a<sub>n-2</sub>) = (a<sub>n</sub>, a<sub>n-1</sub>). So if a<sub>n</sub> is constant for n &ge; N, we have (r, s) = (a<sub>1</sub>, a<sub>2</sub>) = (a<sub>2</sub>, a<sub>3</sub>) = ... = (a<sub>N</sub>, a<sub>N+1</sub>) = a<sub>N</sub>.
+
+
+
+
+
+ We claim that a<sub>n</sub> = d for n &gt; 3. Clearly d divides r + s and hence d divides a<sub>3</sub>. But d divides a<sub>2</sub> = s, so d also divides a<sub>2</sub> + a<sub>3</sub> and hence d divides a<sub>4</sub>. Now suppose some odd k divides r + s, but does not divide s. So k divides a<sub>3</sub>, but not a<sub>2</sub>. Hence it does not divide a<sub>4</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa93.html">22nd USAMO 1993</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+23 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

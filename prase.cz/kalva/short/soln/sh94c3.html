@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1994/C3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>35th IMO 1994 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C3</b><br>
+<p>
+Peter has three accounts at a bank, each with an integral number of dollars. He is only allowed to transfer money from one account to another if the effect of the transfer is to double the amount of money in one of the accounts. Show that by a series of transfers he can always empty one account, but that he cannot always get all his money into one account.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+The last part is trivial. Suppose all the money can be transferred to one account. Then the last move must be to double the money in that account. So Peter's total number of dollars must be even. If it is odd, then he cannot get all the money into one account.
+<p>
+Suppose the initial amount in each account is a &le; b &le; c. If a &gt; 0 we show how to make transfers which end up with the smallest amount being reduced. That is evidently sufficient.
+<p>
+Call the account initially containing a, b, c the first, second, third account respectively. Write b = qa + r, with 0 &le; r &lt; a. Write q in binary: b<sub>k</sub>...b<sub>0</sub>. Now for i = 0, 1, ... , k make a transfer from the second account to the first if b<sub>i</sub> = 1 or a transfer from the third account to the first if b<sub>i</sub> = 0. In total, qa is transferred from the second account. Note also that at most 011...1 (k 1s) x a &lt; b<sub>k</sub>0 ... 0 &le; qa &le; b &le; c is transferred in total from the third account, so the transfers are possible. Since the second account is left with r &lt; a, the effect of the transfers is to reduce the smallest amount, as claimed.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh94.html">35th IMO shortlist 1994</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+18 Sep 2002
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,85 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 39/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>2nd Putnam 1939</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+<i>Do either (1) or (2)</i>
+
+<p>(1) &nbsp; x and y are functions of t. Solve x' = x + y - 3, y' = -2x + 3y + 1, given that x(0) = y(0) = 0.
+
+<p>(2) &nbsp; A weightless rod is hinged at O so that it can rotate without friction in a vertical plane. A mass m is attached to the end of the rod A, which is balanced vertically above O. At time t = 0, the rod moves away from the vertical with negligible initial angular velocity. Prove that the mass first reaches the position under O at t = &radic;(OA/g) ln (1 + &radic;2).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(1) &nbsp; Straightforward.
+
+<p>Differentiate the first equation, use the second equation to eliminate y', and then the (undifferentiated) first equation to eliminate y, giving:
+
+<br> &nbsp; x'' - 4 x' + 5x = 10. Solving: x = 2 + A e<sup>2t</sup> sin t + B e<sup>2t</sup> cos t. But x(0) = 0, so B = -2. The first equation now gives y = x' - x + 3 = 1 + (A + 2) e<sup>2t</sup> sin t + (A - 2) e<sup>2t</sup> cos t. But y(0) = 1, so A = 1. The final solution is thus: x = 2 + e<sup>2t</sup> sin t - 2 e<sup>2t</sup> cos t; y = 1 + 3 e<sup>2t</sup> sin t - e<sup>2t</sup> cos t.
+
+<p>
+
+(2) &nbsp; Trivial, except for the integral, which is moderately hard, unless you happen to know it.
+
+<p>
+Let the angle the rod makes with the (upward) vertical be &theta;. Conservation of energy gives immediately: 1/2 OA<sup>2</sup>(d&theta;/dt)<sup>2</sup> = OA.g(1 - cos &theta;).
+
+<p>
+Now for the first time in this exam we come up against something that is not completely obvious. How do we do the integral? 
+
+<p>
+You need the half-angle formulae, eg (1 - cos &theta;) = 2 sin<sup>2</sup>&theta;/2. Now if you can remember the integral for 1/sin z (eg ln sin z - ln(1 + cos z), or equivalently ln(cosec z - cot z), then you are home.
+
+<p>
+If not, use the half-angle formulae again: sin &theta;/2 = 2 sin &theta;/4 cos &theta;/4. Putting c = cos &theta;/4, we have to integrate 1/(c(1 - c<sup>2</sup>)). Expand using partial fractions and now the integral is just a sum of logs.
+
+<p>
+<i>Comment. People practised integration much more in those days, because the tables were not so readily available and the computer software (Mathematica, Maple etc) did not exist. Today's student, unlikely to be so fluent, would be much better off choosing (1)!</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn39.html">2nd Putnam 1939</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

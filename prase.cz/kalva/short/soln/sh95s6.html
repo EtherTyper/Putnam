@@ -1,0 +1,36 @@
+<HEAD>
+<TITLE>IMO shortlist 1995/S6 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>36th IMO 1995 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem S6</b><br>
+<p>
+Show that there is a unique function f on the positive integers with positive integer values such that f(m + f(n) ) = n + f(m + 95) for all m, n. Find f(1) + f(2) + ... + f(19).
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 1995.
+<p>
+We show that f(n) = n + 95. Put F(n) = f(n) - 95. Putting k = m + 95, the given relation becomes f(k - 95 + f(n) ) = n + f(k) or f(k + F(n) ) = n + f(k) or F(k + F(n) ) = n + F(k), for n &gt;= 1, k &gt; = 96. 
+<p>
+Putting k = m, we have F(m + F(n) ) = n + F(m). Adding h:  h+n + F(m) = h + F(m + F(n) ). Taking F( ), we get F(h + n + F(m) ) = F(h + F(m + F(n) ). Now lhs = m + F(h+n) for h+n &ge; 96, m &ge; 96. Similarly, rhs = m + F(n) + F(h) for h &ge; 96. Hence, F(h + n) = F(h) + F(n) for h &ge; 96.
+<p>We now show by induction that F(n) = n F(1). It is obviously true for n = 1. Suppose it is true for n. Then F(96) + F(n+1) = F(96 + n + 1) = F(96 + 1) + F(n) = (F(96) + F(1) ) + n F(1) = F(96) + (n+1) F(1), so it is true for n+1 and hence for all n.
+<p>
+Now n + F(96) = F(96 + F(n) ) = (96 + F(n) ) F(1) = F(96) + n F(1)<sup>2</sup>. So F(1) = 1 or -1. If F(1) = -1, then F(96) = -96, so f(96) = F(96) + 95 = -1. Contradiction, since f(n) is required to be positive. So F(1) = 1. Hence f(n) = n + 95, as claimed.
+<p>
+Hence f(1) + f(2) + ... + f(19) = 1 + ... + 19 + 19.95 = 19.10 + 19.95 = 1995.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh95.html">36th IMO shortlist 1995</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+9 Oct 2002
+</BODY>
+
+</HTML>
+

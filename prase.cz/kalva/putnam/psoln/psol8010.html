@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 80/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>41st Putnam 1980</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+S is a finite set with subsets S<sub>1</sub>, S<sub>2</sub>, ... , S<sub>1066</sub> each containing more than half the elements of S. Show that we can find T &sube; S with |T| &le; 10, such that all T &cap; S<sub>i</sub> are non-empty.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let |S| = n. Consider the number of pairs (x, X) with x &isin; S and X one of the 1066 subsets. There are &gt; n/2 pairs (x, X<sub>0</sub>) for a given X<sub>0</sub>, and hence more than 533n in total. Hence there is an x<sub>1</sub> which is in at least 534 subsets. That leaves &le; 532 subsets. Each of these contains &gt; n/2 elements of S - {x<sub>1</sub>}, so by the same argument we can find x<sub>2</sub> so that the number of subsets not containing either x<sub>1</sub> or x<sub>2</sub> is at most 265. Similarly, we can find x<sub>3</sub>, so that at most 132 subsets do not intersect {x<sub>1</sub>, x<sub>2</sub>, x<sub>3</sub>}. Continuing, the sequence goes 65, 32, 15, 7, 3, 1, 0 for ten elements.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn80.html">41st Putnam 1980</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+10 Dec 1999
+
+<br>Last corrected/updated 21 Nov 02
+
+</BODY>
+
+
+
+</HTML>
+

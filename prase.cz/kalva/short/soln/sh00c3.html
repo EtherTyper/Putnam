@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>41st IMO shortlist 2000/C3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>41st IMO 2000 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C3</b><br>
+<p>
+n &gt; 3. S = {P<sub>1</sub>, ... , P<sub>n</sub>} is a set of n points in the plane, no three collinear and no four concyclic. Let a<sub>i</sub> be the number of circles through three points of S which have P<sub>i</sub> as an interior point. Let m(S) = a<sub>1</sub> + ... + a<sub>n</sub>. Show that the points of S are the vertices of a convex polygon iff m(S) = f(n), where f(n) is a value that depends only on n.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: f(n) = 2 n(n-1)(n-2)(n-3)/4!
+<p>
+Consider first the case n = 4. If the convex hull is a triangle, then m(S) = 1. Suppose ABCD is convex. Without loss of generality angle ABD &gt; angle ACD. So B lies inside the circle ACD and C lies outside the circle ABD. Hence A lies outside the circle CBD. Hence D lies inside the circle ABC. So m(S) = 2.
+<p>
+Now consider n &gt; 4 points. Suppose there are c(S) convex subsets of 4 points. Each of those gives 2 circles through 3 points with 1 inside. The other nC4 (binomial n!/( (n-4)! 4!) - c(S) subsets of 4 points give just one such circle. So m(S) = c(S) + nC4. Now put f(n) = 2 (nC4). If m(S) = f(n), the c(S) = nC4, so every subset of 4 points is convex, so S is convex. Conversely, if S is convex, then c(S) = nC4, so m(S) = f(n).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh00.html">41st IMO shortlist 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

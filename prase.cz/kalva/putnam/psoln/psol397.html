@@ -1,0 +1,85 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 39/A7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>2nd Putnam 1939</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A7</b><br>
+
+<p>
+
+<i>Do either (1) or (2):</i>
+
+<p>(1) &nbsp; Let C<sub>a</sub> be the curve (y - a<sup>2</sup>)<sup>2</sup> = x<sup>2</sup>(a<sup>2</sup> - x<sup>2</sup>). Find the curve which touches all C<sub>a</sub> for a &gt; 0. Sketch the solution and at least two of the C<sub>a</sub>.
+
+<p>(2) &nbsp; Given that (1 - hx)<sup>-1</sup>(1 - kx)<sup>-1</sup> = &sum;<sub>i&ge;0</sub> &nbsp;a<sub>i</sub> x<sup>i</sup>, prove that (1 + hkx)(1 - hkx)<sup>-1</sup>(1 - h<sup>2</sup>x)<sup>-1</sup>(1 - k<sup>2</sup>x)<sup>-1</sup> = &sum;<sub>i&ge;0</sub> &nbsp;a<sub>i</sub><sup>2</sup> x<sup>i</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(1) &nbsp; It is not hard to see that C<sub>1</sub> is a figure 8 lying on its side with the double point at (1,0), vertical tangents at (1,1) and (-1,1) and horizontal tangents at (1/&radic;2, 1/2), (1/&radic;2, 3/2), (-1/&radic;2,1/2), (-1/&radic;2,3/2). C<sub>a</sub> is obtained from C<sub>1</sub> by transforming (x,y) to (ax,a<sup>2</sup>y) (so stretching by a factor a in the x-direction and a factor a<sup>2</sup> in the y-direction). So we get a sequence of ever-larger horizontal 8s centered ever-further up the y-axis. This suggests that the envelope is something like a parabola y = k x<sup>2</sup>.
+
+<p>
+At this point it is distinctly helpful to know more classical differential geometry than today's undergraduate. The classical method for finding the envelope for a 1-parameter family of curves (which <i>usually</i> works) is to differentiate wrt the parameter. Thus we eliminate a from:
+
+<p>
+ &nbsp; (y - a<sup>2</sup>)<sup>2</sup> - x<sup>2</sup>(a<sup>2</sup> - x<sup>2</sup>) = 0, and &nbsp; 4a(y - a<sup>2</sup>) + 2a x<sup>2</sup> = 0
+
+<p>
+giving y = 3/4 x<sup>2</sup> (or the y-axis, which is presumably a spurious solution arising from the double points).
+
+<p>
+Alternatively, we might guess that that the envelope is a curve y = k x<sup>2</sup> for some k. The intersection of this with C<sub>a</sub> is given by:
+
+<br> &nbsp; (k<sup>2</sup> + 1)x<sup>4</sup> - (2k + 1) a<sup>2</sup>x<sup>2</sup> + a<sup>4</sup> = 0, or x<sup>2</sup> = (2k + 1)a<sup>2</sup>/(2k<sup>2</sup> + 2) +/- a<sup>2</sup>(4k - 3)<sup>1/2</sup>/(2k<sup>2</sup> + 2).
+
+<p>For this to be a tangent we need double roots and hence k = 3/4. It is now easy to check that this parabola meets C<sub>a</sub> at (2a/&radic;5,3a<sup>2</sup>/5), (-2a/&radic;5,3a<sup>2</sup>/5) and to check that the gradients match.
+
+<p>
+
+(2) &nbsp; Fairly easy.
+
+<p>
+This is obviously not a general result (whereby we derive &sum; a<sub>i</sub><sup>2</sup>x<sup>i</sup> from &sum; a<sub>i</sub>x<sup>i</sup>), so we need to evaluate the a<sub>i</sub>. In fact, it is easily seen that a<sub>i</sub> = (h<sup>i+1</sup> - k<sup>i+1</sup>)/(h - k). [For example, multiply the expansions of (1 - hx)<sup>-1</sup> and (1 - kx)<sup>-1</sup> to get a<sub>i</sub> = h<sup>i</sup> + h<sup>i-1</sup>k + ... + h k<sup>i-1</sup> + k<sup>i</sup> = (h<sup>i+1</sup> - k<sup>i+1</sup>)/(h - k).]
+
+<p>Multiplying across to try to show that higher powers of (1 - hkx)(1 - h<sup>2</sup>x)(1 - k<sup>2</sup>x) &sum; a<sub>i</sub><sup>2</sup>x<sup>i</sup> &nbsp; have zero coefficients is a mistake (doable, but much algebra). It is better to evaluate &sum; a<sub>i</sub><sup>2</sup>x<sup>i</sup> directly. After substituting for a<sub>i</sub>, we are going to get terms of the form &nbsp; &sum; z<sup>i</sup> &nbsp; which evaluates immediately to (1 - z)<sup>-1</sup>, giving the expression in the question in partial fraction form.
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn39.html">2nd Putnam 1939</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

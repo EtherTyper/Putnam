@@ -1,0 +1,95 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1993/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1993</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+There are n &gt; 1 lamps L<sub>0</sub>, L<sub>1</sub>, ... , L<sub>n-1</sub> in a circle. We use L<sub>n+k</sub> to mean L<sub>k</sub>. A lamp is at all times either on or off. Initially they are all on. Perform steps s<sub>0</sub>, s<sub>1</sub>, ... as follows: at step s<sub>i</sub>, if L<sub>i-1</sub> is lit, then switch L<sub>i</sub> from on to off or vice versa, otherwise do nothing. Show that:
+
+<p>(a)&nbsp; There is a positive integer M(n) such that after M(n) steps all the lamps are on again;
+
+<p>(b)&nbsp; If n = 2<sup>k</sup>, then we can take M(n) = n<sup>2</sup> - 1.
+
+<p>(c)&nbsp; If n = 2<sup>k</sup> + 1, then we can take M(n) = n<sup>2</sup> - n + 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+(a)&nbsp; The process cannot terminate, because before the last move a single lamp would have been on. But the last move could not have turned it off, because the adjacent lamp was off. There are only finitely many states (each lamp is on or off and the next move can be at one of finitely many lamps), hence the process must repeat. The outcome of each step is uniquely determined by the state, so either the process moves around a single large loop, or there is an initial sequence of steps as far as state k and then the process goes around a loop back to k. However, the latter is not possible because then state k would have had two different precursors. But a state has only one possible precursor which can be found by toggling the lamp at the current position if the previous lamp is on and then moving the position back one. Hence the process must move around a single large loop, and hence it must return to the initial state. 
+
+<p>
+
+(b)&nbsp; Represent a lamp by X when on, by - when not. For 4 lamps the starting situation and the situation after 4, 8, 12, 16 steps is as follows:
+
+<pre>
+
+X X X X
+
+- X - X
+
+X - - X
+
+- - - X
+
+X X X -
+
+</pre>
+
+On its first move lamp n-2 is switched off and then remains off until each lamp has had n-1 moves. Hence for each of its first n-1 moves lamp n-1 is not toggled and it retains its initial state. After each lamp has had n-1 moves, all of lamps 1 to n-2 are off. Finally over the next n-1 moves, lamps 1 to n-2 are turned on, so that all the lamps are on. We show by induction on k that these statements are all true for n = 2<sup>k</sup>. By inspection, they are true for k = 2. So suppose they are true for k and consider 2n = 2<sup>k+1</sup> lamps. For the first n-1 moves of each lamp the n left-hand and the n right-hand lamps are effectively insulated. Lamps n-1 and 2n-1 remain on. Lamp 2n-1 being on means that lamps 0 to n-2 are in just the same situation that they would be with a set of only n lamps. Similarly, lamp n-1 being on means that lamps n to 2n-2 are in the same situation that they would be with a set of only n lamps. Hence after each lamp has had n-1 moves, all the lamps are off except for n-1 and 2n-1. In the next n moves lamps 1 to n-2 are turned on, lamp n-1 is turned off, lamps n to 2n-2 remain off, and lamp 2n-1 remains on. For the next n-1 moves for each lamp, lamp n-1 is not toggled, so it remains off. Hence all of n to 2n-2 also remain off and 2n-1 remains on. Lamps 0 to n-2 go through the same sequence as for a set of n lamps. Hence after these n-1 moves for each lamp, all the lamps are off, except for 2n-1. Finally, over the next 2n-1 moves, lamps 0 to 2n-2 are turned on. This completes the induction. Counting moves, we see that there are n-1 sets of n moves, followed by n-1 moves, a total of n<sup>2</sup> - 1.
+
+<p>
+(c)&nbsp; We show by induction on the number of moves that for n = 2<sup>k</sup>+ 1 lamps after each lamp has had m moves, for i = 0, 1, ... , 2<sup>k</sup> - 2, lamp i+2 is in the same state as lamp i is after each lamp has had m moves in a set of n - 1 = 2<sup>k</sup> lamps (we refer to this as lamp i in the <i>reduced</i> case). Lamp 0 is off and lamp 1 is on. It is easy to see that this is true for m = 1 (in both cases odd numbered lamps are on and even numbered lamps are off). Suppose it is true for m. Lamp 2 has the same state as lamp 0 in the reduced case and both toggle since their predecessor lamps are on. Hence lamps 3 to n - 1 behave the same as lamps 1 to n - 3 in the reduced case. That means that lamp n - 1 remains off. Hence lamp 0 does not toggle on its m+1th move and remains off. Hence lamp 1 does not toggle on its m+1th move and remains on. The induction stops working when lamp n - 2 toggles on its nth move in the reduced case, but it works up to and including m = n - 2. So after n - 2 moves for each lamp all lamps are off except lamp 1. In the next two moves nothing happens, then in the following n - 1 moves lamps 2 to n - 1 and lamp 0 are turned on. So all the lamps are on after a total of (n - 2)n + n + 1 = n<sup>2</sup> + n + 1 moves.
+
+
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo93.html">34th IMO 1993</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Oct 1998
+<br>Last corrected/updated 25 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

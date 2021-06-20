@@ -1,0 +1,82 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2001/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>62nd Putnam 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Find all solutions to x<sup>n+1</sup> - (x + 1)<sup>n</sup> = 2001 in positive integers x, n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: x = 13, n = 2: 13<sup>3</sup> - 14<sup>2</sup> = 2001.
+
+<p>
+
+Use congruences.
+
+<p>
+
+Note that 2002 = 2&middot;7&middot;11&middot;13. Taking the equation mod x gives that 0 - 1 = 2001 (mod x), so x must be a divisor of 2002.
+
+<p>
+
+x cannot be a multiple of 3, because then we would have 0 - 1 = 0 (mod 3). Similarly, it cannot be = 2 (mod 3). So it must be = 1 (mod 3) and n must be even.
+
+<p>
+
+Taking the equation mod x+1 gives (-1)<sup>odd</sup> = 2001 (mod x+1), so x + 1 must divide 2002. Hence x = 1 or 13. x = 1 is obviously not a solution, so the only possibility is x = 13 and we must find all solutions to 13<sup>n+1</sup> - 14<sup>n</sup> = 2001.
+
+<p>
+
+There are obviously at most two solutions (since 13<sup>n+1</sup> - 14<sup>n</sup> increases to a maximum, then decreases). It is also obvious that n = 2 is a solution. But it is not immediately obvious that there is not a second solution.
+
+<p>
+
+The trick is to work mod 8. We then have (4 + 1)<sup>odd</sup> - (-2)<sup>even</sup> = 1. If the even is greater than 2, then 2<sup>even</sup> = 0 (mod 8) and we have a contradiction, because expanding (4 + 1)<sup>odd</sup> we get zero terms + odd x 4 + 1 = 5 (mod 8). So the only possibility is n = 2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn01.html">62nd Putnam 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Dec 2001
+
+</BODY>
+
+
+
+</HTML>
+

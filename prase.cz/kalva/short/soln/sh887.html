@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>29th IMO shortlist 1988/7 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>29th IMO 1988 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 7</b>
+<p>
+c is the largest positive root of x<sup>3</sup> - 3x<sup>2</sup> + 1. Show that [c<sup>1788</sup>] and [c<sup>1988</sup>] are multiples of 17.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Put f(x) = x<sup>3</sup> - 3x<sup>2</sup> + 1. Let the roots be a &lt; b &lt; c. We have f(-1) = -3, f(-&frac12;) = 1/8, f(&frac12;) = 3/8, f(1) = -1, f(2&radic;2) = 16&radic;2 - 23 &lt; 0, f(3) = 1. Hence -1 &lt; a &lt; -&frac12;,  &frac12; &lt; b &lt; 1, 2&radic;2 &lt; c &lt; 3. Hence |a|, |b| &lt; 1. Also a + b + c = 3, so a + b = 3 - c &gt; 0, so |a| &lt; |b|. Hence |a|<sup>n</sup> &lt; |b|<sup>n</sup>. But b &gt; 0, so a<sup>n</sup> + b<sup>n</sup> &gt; 0. Finally, a<sup>2</sup> + b<sup>2</sup> = (a + b)<sup>2</sup> - 2ab = (3 - c)<sup>2</sup> + 2/c = 9 - 6c + c<sup>2</sup> + 2/c. But c<sup>3</sup> - 3c + 1 = 0, so -6c + c<sup>2</sup> + 2/c = -c<sup>2</sup>. Hence a<sup>2</sup> + b<sup>2</sup> = 9 - c<sup>2</sup> &lt; 1. Hence a<sup>n</sup> + b<sup>n</sup> &lt; 1 for all n &gt; 1. 
+<p>
+Put u<sub>n</sub> = a<sup>n</sup> + b<sup>n</sup> + c<sup>n</sup>. Then u<sub>0</sub> = 3, u<sub>1</sub> = 3, u<sub>2</sub> = (a + b + c)<sup>2</sup> - 2(ab + bc + ca) = 9 and u<sub>n+3</sub> = 3u<sub>n+2</sub> - u<sub>n</sub>. Hence u<sub>n</sub> is an integer for all n. Hence [c<sup>n</sup>] = u<sub>n</sub> - 1.
+<p>
+Working mod 17, we have u<sub>0</sub> = 3, u<sub>1</sub> = 3, u<sub>2</sub> = 9. Hence u<sub>3</sub> = 3&middot;9 - 3 = 7, u<sub>4</sub> = 3&middot;7 - 3 = 1, u<sub>5</sub> = 3&middot;1 - 9 = 11, u<sub>6</sub> = 3&middot;11 - 7 = 9, u<sub>7</sub> = 3&middot;9 - 1 = 9, u<sub>8</sub> = 3&middot;9 - 11 = -1, u<sub>9</sub> = -3&middot;1 - 9 = 5, u<sub>10</sub> =3&middot;5 - 9 = 6, u<sub>11</sub> = 3&middot;6 + 1 = 2, u<sub>12</sub> = 3&middot;2 - 5 = 1, u<sub>13</sub> = 3&middot;1 - 6 = -3, u<sub>14</sub> = -3&middot;3 - 2 = 6, u<sub>15</sub> = 3&middot;6 - 1 = 0, u<sub>16</sub> = 3&middot;0 + 3 = 3, u<sub>17</sub> = 3&middot;3 - 6 = 3, u<sub>18</sub> = 3&middot;3 - 0 = 9. Hence u<sub>n</sub> = u<sub>n+16</sub> mod 17 for n = 0, 1, 2. So the recurrence relation implies that u<sub>n</sub> = u<sub>n+16</sub> mod 17 for all n, and hence that u<sub>n</sub> = u<sub>m</sub> mod 17 if n = m mod 16. Hence, in particular, u<sub>1788</sub> = u<sub>12</sub> = 1 mod 17, and u<sub>1988</sub> = u<sub>4</sub> = 1 mod 17. Hence [c<sup>1788</sup>] and [c<sup>1988</sup>] are divisible by 17.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh88.html">29th IMO shortlist 1988</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Dec 2002
+<br>Last corrected/updated 30 Dec 02
+</BODY>
+
+</HTML>
+

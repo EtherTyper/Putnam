@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 98/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>27th USAMO 1998</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+The sets {a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>999</sub>} and {b<sub>1</sub>, b<sub>2</sub>, ... , b<sub>999</sub>} together contain all the integers from 1 to 1998. For each i, |a<sub>i</sub> - b<sub>i</sub>| = 1 or 6. For example, we might have a<sub>1</sub>  = 18, a<sub>2</sub> = 1, b<sub>1</sub> = 17, b<sub>2</sub> = 7. Show that &sum;<sub>1</sub><sup>999</sup> |a<sub>i</sub> - b<sub>i</sub>| = 9 mod 10.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If |a<sub>i</sub> - b<sub>i</sub>| = 6, then a<sub>i</sub> and b<sub>i</sub> have the same parity, so the set of such a<sub>i</sub> and b<sub>i</sub> contains an even number of odd numbers. But if |a<sub>i</sub> - b<sub>i</sub>| = 1, then a<sub>i</sub> and b<sub>i</sub> have opposite parity, so each such pair includes just one odd number. Hence if the number of such pairs is even, then the set of all such a<sub>i</sub> and b<sub>i</sub> also has an even number of odd numbers. But the total number of a<sub>i</sub> and b<sub>i</sub> which are odd is 999 which is odd. Hence the number of pairs with |a<sub>i</sub> - b<sub>i</sub>| = 1 must be odd, and hence the number of pairs with |a<sub>i</sub> - b<sub>i</sub>| = 6 must be even. Suppose it is 2k. Then &sum; |a<sub>i</sub> - b<sub>i</sub>| = (999 - 2k) 1 + 2k 6 = 999 + 10k = 9 mod 10.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa98.html">27th USAMO 1998</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

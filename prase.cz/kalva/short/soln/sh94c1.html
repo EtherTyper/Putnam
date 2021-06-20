@@ -1,0 +1,61 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1994/C1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>35th IMO 1994 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C1</b><br>
+<p>
+Two players play alternately on a 5 x 5 board. The first player always enters a 1 into an empty square and the second player always enters a 0 into an empty square. When the board is full, the sum of the numbers in each of the nine 3 x 3 squares is calculated and the first player's score is the largest such sum. What is the largest score the first player can make (if the second player plays so as to minimise this score)?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 6.
+<p>
+Consider the square below. The second player can always occupy one of each pair of squares numbered the same. That means the second player will occupy at least three squares in every 3 x 3 square, so the first player cannot do better than 6.
+<pre>
+0  1  2  3  4
+0  1  2  3  4
+5  6  7  8  9
+5  6  7  8  9
+x  x  x  x  x
+</pre>
+We now show how the first player can always get at least 6. The first player plays initially in the center square (marked 1 below). Then he can make his second move in the square marked 2, chosen so that the second player has not made his first move in any of the squares marked y.
+<pre>
+x  x  x  x  x
+x  x  x  x  x
+y  y  1  y  y
+y  y  2  y  y
+y  y  y  y  y 
+</pre>
+If the second player does not play at 3, then the first player makes his third move there and (without loss of generality) the six squares marked y are still empty after his third move. The first player can now occupy at least three of the squares marked y giving 6 moves in the bottom left 3 x 3 square.
+<pre>
+x  x  x  x  x
+x  x  x  x  x
+y  y  1  x  x
+y  y  2  x  x
+y  y  3  x  x 
+</pre>
+If the second player does make his second move in the middle of the bottom row (marked 0 below), then the first player makes his third move at 3 below:
+<pre>
+x  x  x  x  x
+x  x  x  x  x
+z  3  1  z  y
+z  y  2  z  y
+z  y  0  z  y 
+</pre>
+At this point the two squares marked y and the six squares marked z are all empty. So the first player can occupy at least one of the y's and at least three of the z's. The first player will then have 6 squares in either the bottom left 3 x 3 square or the 3 x 3 square with its center at 2.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh94.html">35th IMO shortlist 1994</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+18 Sep 2002
+</BODY>
+</HTML>
+

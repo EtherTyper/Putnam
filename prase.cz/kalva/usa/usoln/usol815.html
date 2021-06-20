@@ -1,0 +1,92 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 81/5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>10th USAMO 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 5</b><br>
+
+<p>
+
+Show that for any positive real x, [nx] &ge; &sum;<sub>1</sub><sup>n</sup> [kx]/k.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If x is an integer, then we have equality. So it is sufficient to prove the result for 0 &lt; x &lt; 1. The rhs only increases at x = a/b, where a, b are coprime positive integers with 1 &le; b &le; n, and 0 &le; a &le; b. So it is sufficient to consider x of this form. In fact we can assume 0 &lt; a &lt; b since the equality is obvious for x = 0 or 1. We may write:
+
+<br>a = q<sub>1</sub>b + r<sub>1</sub>
+
+<br>2a = q<sub>2</sub>b + r<sub>2</sub>
+
+<br>3a = q<sub>3</sub>b + r<sub>3</sub>
+
+<br> ...
+
+<br>na = q<sub>n</sub>b + r<sub>n</sub>
+
+<br>with each 0 &le; r<sub>i</sub> &lt; b. 
+
+<p>
+
+Thus kx = q<sub>k</sub> and we have to prove that q<sub>1</sub> + q<sub>2</sub>/2 + ... + q<sub>n</sub>/n &le; q<sub>n</sub>.
+
+<p>
+
+We claim that r<sub>1</sub>, r<sub>2</sub>, ... , r<sub>b-1</sub> is just a permutation of 1, 2, ... , b-1. For if r<sub>i</sub> = r<sub>j</sub> with i &lt; j, then (j - i)a = (q<sub>j</sub> - q<sub>i</sub>)b, but a and b are coprime and j - i &lt; b, so that is impossible. So we may use the rearrangement inequality to give r<sub>1</sub>/1 + r<sub>2</sub>/2 + ... + r<sub>b-1</sub>/b-1 &ge; 1/1 + 2/2 + ... + (b-1)/(b-1) = b-1. The inequality remains true if we add some positive terms to the lhs, so we have r<sub>1</sub>/1 + r<sub>2</sub>/2 + ... + r<sub>n</sub>/n &ge; b-1. Hence r<sub>1</sub>/b + r<sub>2</sub>/(2b) + ... + r<sub>n</sub>/(nb) &ge; (b-1)/b. 
+
+<p>
+
+So (q<sub>1</sub> + q<sub>2</sub>/2 + ... + q<sub>n</sub>/n) + (b-1)/b &le; (q<sub>1</sub> + r<sub>1</sub>/b) + (q<sub>2</sub> + r<sub>2</sub>/(2b) ) + ... (q<sub>n</sub> + r<sub>n</sub>/(nb) ) = a/b + a/b + ... + a/b = na/b = (q<sub>n</sub>b + r<sub>n</sub>)/b &le; q<sub>n</sub> + (b-1)/b. Subtracting (b-1)/b from both sides gives the required result.
+
+<p>
+
+<i>Comment. This is unusually hard for an early USAMO question.</i>
+
+<p>
+
+<i>The rearrangement inequality states that if we consider all possible sums a<sub>1</sub>b<sub>1</sub> + a<sub>2</sub>b<sub>2</sub> + ... + a<sub>n</sub>b<sub>n</sub> where we can permute the two sequences a<sub>i</sub> and b<sub>i</sub> separately, then we get the largest sum when they are sorted the same way and the smallest when they are oppositely sorted (one increasing and one decreasing).</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa81.html">10th USAMO 1981</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+21 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,92 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1995/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Express (2207-1/(2207-1/(2207-1/(2207- ... ))))<sup>1/8</sup> in the form (a + b&radic;c)/d, where a, b, c, d are integers.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (3 + &radic;5)/2.
+
+<p>
+
+<i>Fairly easy. There are three parts: finding x (see below), which is easy; finding x<sup>1/8</sup> which is less easy; and noticing that we need to prove convergence (the actual proof of convergence is straightforward).</i>
+
+<p>
+
+Let x = (2207-1/(2207-1/(2207-1/(2207- ... )))). Then x = 1/(2207 - x), so x<sup>2</sup> - 2207x + 1 = 0. Evidently x is only just less than 2207, so the root is 2207/2 + &radic;(2207<sup>2</sup> - 4)/2 = 2207/2 + 987/2 &radic;5.
+
+<p>
+
+It is easy to verify that if y = (3 + &radic;5)/2, then y<sup>8</sup> = x.
+
+<p>
+
+[How do we come up with y? Well, we are effectively told to look for something of the form (a + b&radic;5)/c. 2<sup>8</sup> = 256, 3<sup>8</sup> = 6561, so we are looking for y between 2 and 3. We end up with a factor 2 in the denominator, so the simplest choice for c is 2. a, b = 2, 1 looks as though y will be too close to 2, so we try a, b = 3, 1.]
+
+<p>
+
+[Or you can take the square root three times. (a + b&radic;5)<sup>2</sup> = (a<sup>2</sup> + 5b<sup>2</sup>) + 2ab&radic;5. The simplest thing is to look for a and b both half odd integers. So we look for factors of 987. We have 987 = 3.7.47. So we can try each of the pairs (3, 329), (7, 141), (21, 47). The first two obviously do not work (the squares are too large), but the third does. Similarly, for the next two square roots.]
+
+<p>
+
+[Or, better, use y = x<sup>1/8</sup>. Note that 2207 + 2 = 47<sup>2</sup>. Start from 2207 = y<sup>8</sup> + 1/y<sup>8</sup>. Iterate twice more to get 3 = y + 1/y. An elegant approach, for which I thank <i>Henry Pan</i> from Toronto, email 29 May 2001.]
+
+<p>
+
+[Strictly we should also establish that the continued fraction converges and that we take the larger root for x. So, define a<sub>1</sub>= 2207, a<sub>n+1</sub> = 2207 - 1/a<sub>n</sub>, b<sub>1</sub> = 2206, b<sub>n+1</sub> = 2207 - 1/b<sub>n</sub>. We show that a<sub>n</sub> &gt; a<sub>n+1</sub> &gt; b<sub>n+1</sub> &gt; b<sub>n</sub> and that a<sub>n</sub> - b<sub>n</sub> tends to zero. It follows that the continued fraction converges to a value larger than 2206, which suffices.
+
+<p>
+If y = 2207 - 1/z, then y<sup>2</sup> - 2207y + 1 = (z<sup>2</sup> - 2207z + 1)/z<sup>2</sup>. But a<sub>1</sub><sup>2</sup> - 2207a<sub>1</sub> + 1 &gt; 0, so a<sub>n</sub><sup>2</sup> - 2207a<sub>n</sub> + 1 &gt; 0 for all n. Hence a<sub>n</sub> &gt; 2207 - 1/a<sub>n</sub> = a<sub>n+1</sub>. Similarly, b<sub>1</sub><sup>2</sup> - 2207b<sub>1</sub> + 1 &lt; 0, so b<sub>n</sub><sup>2</sup> - 2207b<sub>n</sub> + 1 &lt; 0 for all n, and hence b<sub>n</sub> &lt; b<sub>n+1</sub>.
+
+<p>
+a<sub>n+1</sub> - b<sub>n+1</sub> = 1/b<sub>n</sub> - 1/a<sub>n</sub> = (a<sub>n</sub> - b<sub>n</sub>)/(a<sub>n</sub>b<sub>n</sub>. But a<sub>1</sub> - b<sub>1</sub> &gt; 0 and b<sub>1</sub> &gt; 0, so a<sub>n</sub> - b<sub>n</sub> &gt; 0 for all n. Also a<sub>n</sub> &gt; b<sub>n</sub> &ge; b<sub>1</sub> = 2206, so (a<sub>n+1</sub> - b<sub>n+1</sub>) &lt; (a<sub>n</sub> - b<sub>n</sub>)/10<sup>6</sup>, and hence (a<sub>n</sub> - b<sub>n</sub>) tends to zero.]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn95.html">Putnam 1995</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

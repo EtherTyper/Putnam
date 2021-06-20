@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<TITLE>41st IMO shortlist 2000/C6 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>41st IMO 2000 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C6</b><br>
+<p>
+a and b are positive coprime integers. A subset S of the non-negative integers is called <i>admissible</i> if 0 belongs to S and whenever k belongs to S, so do k + a and k + b. Find f(a, b), the number of admissible sets.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: f(a, b) = ( (a+b)Cb )/(a+b) = (a+b-1)/( a! b! ). 
+p>
+Every integer k has a unique representation k = ma + nb with m and n integers and 0 &le; m &lt; b. [That should be reasonably well-known, but a proof is given at the end.] Hence there is a bijection between the integers and the lattice points (m, n) with 0 &le; m &lt; n. Fill this strip with a standard grid of unit squares and place the number (ma+nb) inside the square with (m, n) as its bottom left vertex. Obviously all the integers above the line n = 0 are non-negative. They must all be included in <i>any</i> admissible set S since 0 &isin; S. All the lattice points below the line ma + nb = 0 are negative, so we are only interested in squares which lie above this line. It runs from (0, 0) to (b, -a). Note that there are no lattice points this segment except for its endpoints, since a and b are relatively prime (if (c, d) was on the segment, then the (negative) slope would be a/b and d/c, which is impossible since a/b is in lowest terms). Thus S is defined by the numbers it contains inside the triangle bounded by m = b, n = 0, ma + nb = 0. The triangle for a = 4, b = 5 is shown below.
+<p>
+<img src="diag00c6.bmp">
+<p>
+However, we do not have complete freedom to include or exclude numbers in the triangle, because if a particular number N is included, then all numbers above and to the right of it must also be included since they are obtained by adding positive multiples of a and/or b. In fact, these are the only numbers in the triangle which <i>must</i> be included if N is included. To prove this we have to show that if we add a to a number on the right hand border of the triangle, then we get a number <i>above</i> the triangle. In other words, we have to show that if ( (b-1)a + nb ) + a = m'a + n'b with 0 &le; m' &lt; b, then n' &ge; 0. But m'a = ba + nb - n'b = b(a + n - n'), so b must divide m'. Hence m' = 0. But the new number is certainly positive, so n' &gt; 0, as required. Hence the intersection of an admissible set S with the numbers in the triangle is the numbers inside a union of rectangles each with upper right vertex at (b, 0) (the upper right vertex of the triangle). Hence it is all numbers inside the region bounded by the top and right sides of the triangle and a zig-zag line from (0, 0) to (b, -a). This zig-zag line or <i>path</i> has every step downwards or to the right. Also its vertices all lie above the line ma + nb = 0. 
+<p>
+Conversely, any such path corresponds to a union of rectangles with upper right vertex at (b, 0) and hence to an admissible set S. So the number of admissible sets is the number of such paths. It is easy to count the paths which only satisfy the first condition (every step downwards or to the right). It is just (a+b)Cb or (a+b)!/( a! b! ). [That should be well-known. But to prove it a path is defined by the order of the unit steps. There are a downward steps and b rightward steps, so the number of paths is the number of ways of picking b objects from a+b. ] 
+<p>
+Which of these have all their vertices inside the triangle?
+<p>
+<img src="dia00c6a.bmp">
+<p>
+Consider the diagram above. Label the lattice points on the path in sequence P<sub>1</sub>, P<sub>2</sub>, ... as shown. Now draw a line through each P<sub>i</sub> parallel to the line ma + nb = 0. The key point is that all these lines are distinct. For if two points lie on a line then using them to get the slope of the line we have c/d = a/b with c smaller than a contradicting the fact that a/b is in lowest terms. So pick the point P<sub>j</sub> with the lowest line (P<sub>7</sub> in the example in the diagram). If we start from (0, 0) but follow the step sequence as if we had started at P<sub>j</sub> then we get a path entirely above the line ma + nb = 0. [For clarity, the path is shown starting at P<sub>j</sub> in the diagram.]. So, being slightly more formal, suppose the path is (s<sub>1</sub>, s<sub>2</sub>, ... , s<sub>a+b</sub>), where each s<sub>i</sub> represents a step downwards or to the right. Then (s<sub>2</sub>, s<sub>3</sub>, ... , s<sub>a+b</sub>, s<sub>1</sub>), (s<sub>3</sub>, s<sub>4</sub>, ... , s<sub>a+b</sub>, s<sub>1</sub>, s<sub>2</sub>) , ... , (s<sub>a+b</sub>, s<sub>1</sub>, ... , s<sub>a+b-1</sub>) are also paths. It is clear from the diagram that the path (s<sub>i+1</sub>, s<sub>i+2</sub>, ... ) corresponds to the path starting from P<sub>i</sub> and that if the line through P<sub>i</sub> is a distance d<sub>i</sub> above the lowest line through P<sub>j</sub>, then the path starting from P<sub>i</sub> will dip a maximum distance d<sub>i</sub> below the line ma + nb = 0 (when translated to start at (0, 0) ). Since we have shown that all the distances d<sub>i</sub> are different, it follows that all the (a+b) cyclically related paths are distinct and that just one of them lies entirely above the line ma + nb = 0.
+<p>
+So the paths divide into ( (a+b)Cb )/(a+b) groups of (a+b) paths with just one path in each group corresponding to an admissible set S. Hence f(a, b) = ( (a+b)Cb )/(a+b) = (a+b-1)/( a! b! ) admissible sets S.
+<p>
+<i>Note</i>
+<p>
+The proof that for relatively prime a, b every integer has a unique representation k = ma + nb with m and n integers and 0 &le; m &lt; b is as follows.
+<p>
+Let d be the smallest positive integer of the form ma + nb with m and n any integers. We can write a = qd + r with 0 &le; r &lt; d. But r also has the form ma + nb and it is smaller than d, so it must be 0. Hence d divides a. Similarly, d divides b. But a and b are relatively prime, so d = 1 and ma + nb = 1. So we also have (m + hb)a + (n - ha)b = 1 for any integer h. So by taking a suitable h we can get m+hb into the range 0, 1, ... , b-1. That establishes existence. Suppose k = ma + nb = m'a + n'b with 0 &le; m, m' &lt; b. Then (m-m')a = (n'-n)b. But a and b are relatively prime, so b must divide m-m'. Since -b &lt; m-m' &lt; b, that implies m = m'. Hence also n = n'.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh00.html">41st IMO shortlist 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+17 Oct 2002
+</BODY>
+
+</HTML>
+

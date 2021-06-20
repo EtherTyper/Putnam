@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 50/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>10th Putnam 1950</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+An ellipse with semi-axes a and b has perimeter length p(a, b). For b/a near 1, is &pi;(a + b) or 2&pi; &radic;(ab) the better approximation to p(a, b)?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: &pi;(a + b).
+
+<p>
+
+Put b<sup>2</sup> = a<sup>2</sup>(1 - &epsilon;). The perimeter is 4 &int;<sub>0</sub><sup>&pi;/2</sup> (a<sup>2</sup>sin<sup>2</sup>t + b<sup>2</sup>cos<sup>2</sup>t)<sup>1/2</sup> dt = 4a &int; (1 - &epsilon; cos<sup>2</sup>t)<sup>1/2</sup> dt = 4a &int; ( 1 - 1/2 &epsilon; cos<sup>2</sup>t - 1/8 &epsilon;<sup>2</sup> cos<sup>4</sup>t + O(&epsilon;<sup>4</sup>) dt = 2&pi; a ( 1 - &epsilon;/4 - 3&epsilon;<sup>2</sup>/64 + O(&epsilon;<sup>4</sup>) ).
+
+<p>
+
+b = a(1 - &epsilon;)<sup>1/2</sup> = a(1 - &epsilon;/2 - &epsilon;<sup>2</sup>/8 + O(&epsilon;<sup>3</sup>) ). Hence &pi; (a + b) = 2&pi; a (1 - &epsilon;/4 - 4&epsilon;<sup>2</sup>/64 + O(&epsilon;<sup>3</sup>) ). Whilst 2&pi;&radic;(ab) = 2&pi; a (1 - &epsilon;/2 - &epsilon;<sup>2</sup>/8 + O(&epsilon;<sup>3</sup>) )<sup>1/2</sup> = 2&pi; a (1 - &epsilon;/4 - 6&epsilon;<sup>2</sup>/64 + O(&epsilon;<sup>3</sup>) ).
+
+<p>
+
+Hence the error in &pi; (a + b) is &pi; a &epsilon;<sup>2</sup>/32 + O(&epsilon;<sup>3</sup>), and the error in 2&pi;&radic;(ab) is 3&pi; a &epsilon;<sup>2</sup>/32 + O(&epsilon;<sup>3</sup>), which is roughly three times as large for small &epsilon;.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn50.html">10th Putnam 1950</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

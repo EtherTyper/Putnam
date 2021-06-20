@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1997/14 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>38th IMO 1997 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 14</b><br>
+<p>
+b &gt; 1 and m &gt; n. Show that if b<sup>m</sup> - 1 and b<sup>n</sup> - 1 have the same prime divisors then b + 1 is a power of 2. [For example, 7 - 1 = 2.3, 7<sup>2</sup> - 1 = 2<sup>4</sup>.3.]
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p><i>Many thanks to Kamil Duszenko for the following solution</i>
+<p>
+Consider first the case n = 1. So suppose first that a - 1 and a<sup>m</sup> - 1 have the same prime divisors. If a prime p divides m, then a - 1 divides a<sup>p</sup> - 1, and a<sup>p</sup> - 1 divides a<sup>m</sup> - 1, so a - 1 and a<sup>p</sup> - 1 have the same prime divisors. But a<sup>p</sup> - 1 = (a - 1) L, where L = a<sup>p-1</sup> + a<sup>p-2</sup> + ... + a + 1. So if a prime q divides L, then it must divide a<sup>p</sup> - 1 and hence a - 1. But L = (a - 1) (a<sup>p-2</sup> + 2 a<sup>p-3</sup> + ... + p-1) + p, so any prime q dividing L and a - 1 must also divide p. So L must be a power of p, m must be a power of p, and p must divide a - 1. In other words, a = 1 mod p. Hence (a<sup>p-2</sup> + 2 a<sup>p-3</sup> + ... + p-1) = 1 + 2 + ... + p-1 = p(p-1)/2 mod p. But if p &gt; 2, p(p-1)/2 = 0 mod p, so L = p<sup>2</sup> + p mod p<sup>2</sup>. But L is a power of p, so L = p. Contradiction, since L is obviously &gt; p (or p &gt; 2). Hence p must be 2. Hence L = a + 1, and a + 1 is a power of 2.
+<p>
+Now take the general case. Suppose d is the greatest common divisor of m and n. Put m = dM, n = dN and a = b<sup>d</sup>, so that a<sup>M</sup> - 1 and a<sup>N</sup> - 1 have the same prime divisors, and M, N are relatively prime. Take positive integers h, k such that hM - kN = 1, then (a<sup>hM</sup> - 1) - (a<sup>kN</sup> - 1) = a<sup>hM</sup> - a<sup>kN</sup> = a<sup>kN</sup>(a - 1). So if s &gt; 1 divides a<sup>M</sup> - 1 and a<sup>N</sup> - 1, then it also divides a<sup>hM</sup> - 1 and a<sup>kN</sup> - 1 and hence also a<sup>kN</sup>(a - 1). It cannot divide a<sup>kN</sup>, so it must divide a - 1. So the greatest common divisor of a<sup>M</sup> - 1 and a<sup>N</sup> - 1 must divide a - 1. But a - 1 divides both, so the greatest common divisor is a - 1. So a - 1 must also have the same prime divisors as a<sup>M</sup> - 1. It follows from the special case that a + 1 = b<sup>d</sup> + 1 is a power of 2. Since b &gt; 1, b<sup>d</sup> + 1 &gt; 2, so b<sup>d</sup> + 1 is certainly divisible by 4. If d is even, then odd<sup>d</sup> = 1 mod 4 and even<sup>d</sup> = 0 mod 4, so b<sup>d</sup> + 1 = 2 or 1 mod 4. Hence d must be odd. Hence b + 1 divides b<sup>d</sup> + 1, so b + 1 is also a power of 2.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh97.html">38th IMO shortlist 1997</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+7 July 2003
+<br>Last corrected/updated 7 Jul 2003
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 70/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>31st Putnam 1970</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+The real sequence a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ... has the property that lim<sub>n&rarr;&infin;</sub> (a<sub>n+2</sub> - a<sub>n</sub>) = 0. Prove that lim<sub>n&rarr;&infin;</sub> (a<sub>n+1</sub> - a<sub>n</sub>)/n = 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Suppose we have any series a<sub>n</sub> satisfying the condition. Take a new series b<sub>n</sub> defined by b<sub>2n+1</sub> = 0 and b<sub>2n</sub> = a<sub>2n</sub>. Then b<sub>n</sub> also satisfies the condition, but (b<sub>2n+1</sub> - b<sub>2n</sub>)/n = - a<sub>2n</sub>/n, so we must have the apparently stronger result that a<sub>2n</sub>/(2n) tends to zero (and similarly that a<sub>2n+1</sub>/(2n+1) tends to zero).
+
+<p>
+
+Thus we need to prove that if c<sub>n</sub> is any sequence such that c<sub>n+1</sub> - c<sub>n</sub> tends to zero, then c<sub>n</sub>/n tends to zero.
+
+<p>
+
+Given any positive k, we have |c<sub>n+1</sub> - c<sub>n</sub>| &lt; k for all n &gt; some N. Now for any M &gt; N, we have c<sub>M</sub> = c<sub>N</sub> + (c<sub>N+1</sub> - c<sub>N</sub>) + ... + (c<sub>M</sub> - c<sub>M-1</sub>). Hence |c<sub>M</sub>| &le; |c<sub>N</sub>| + (M-N)k. If we take M sufficiently large that |b<sub>N</sub>|/M &lt; k, then |c<sub>M</sub>|/M &lt; 2k, which establishes that c<sub>n</sub>/n tends to zero.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn70.html">31st Putnam 1970</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

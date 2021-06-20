@@ -1,0 +1,54 @@
+<HTML>
+<HEAD>
+<TITLE>29th IMO shortlist 1988/20 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>29th IMO 1988 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 20</b>
+<p>
+Find the smallest n such that if {1, 2, ... , n} is divided into two disjoint subsets then we can always find three distinct numbers a, b, c in the same subset with ab = c.
+<p>
+&nbsp;<p>
+<b>Answer</b>
+<p>
+96.
+<p>
+<b>Solution</b>
+<p>
+We show first that however we partition {1, 2, 3, ... , 96}, one part always contains three distinct numbers a, b, c with ab = c. Suppose that we have a partition A, B with neither A nor B containing such a, b, c. We will obtain a contradiction. Without loss of generality 2 belongs to A. 
+<p>
+<i>Case 1</i> 3 and 4 belong to A. Then 2.3 = 6, 2.4 = 8, and 3.4 = 12 belong to B. Hence 6.8 = 48, and 6.12 = 96 belong to A. Contradiction (2.48 = 96). 
+<p>
+<i>Case 2</i> 3 belongs to A, 4 belongs to B. Then 2.3 = 6 belongs to B, 4.6 = 24 belongs to A. So 12 = 24/2 belongs to B. So 4.12 = 48 belongs to A. Contradiction (2.24 = 48).
+<p>
+<i>Case 3</i> 4 belongs to A, 3 belongs to B. Then 2.4 = 8 belongs to B, 3.8 = 24 belongs to A. So 24/2 = 12 and 24/4 = 6 belong to B. Hence 3.6 = 18 and 3.12 = 36 belong to A. Contradiction (2.18 = 36).
+<p>
+<i>Case 4</i> 3, 4 belong to B. Then 3.4 = 12 belongs to A. So 12/2 = 6 belongs to B. Hence 4.6 = 24 belongs to A. Contradiction (2.12 = 24).
+<p>
+Next we show that there is a partition of (1, 2, 3, ... , 95} such that neither part contains such a, b, c. Take
+<pre>
+A	p<sup>a</sup> for p prime and a = 1 or 2
+	p<sup>4</sup>q, p<sup>3</sup>q<sup>2</sup> for distinct primes p, q
+	p<sup>2</sup>qr for distinct primes p, q, r
+B	p<sup>a</sup> for p prime and a = 3, 4, 5 or 6
+	pq, p<sup>2</sup>q, p<sup>2</sup>q<sup>2</sup>, p<sup>3</sup>q for distinct primes p, q
+	pqr for distinct primes p, q, r
+</pre>
+Note that 2<sup>7</sup> = 128 &gt; 95, 2<sup>5</sup>3 = 96 &gt; 95, so we do not need to consider p<sup>a</sup> for a &gt; 6 or p<sup>a</sup>q for a &gt; 4. Also 2<sup>3</sup>3<sup>3</sup> = 216, so we do not need to consider p<sup>3</sup>q<sup>3</sup>. Finally 2<sup>2</sup>3<sup>2</sup>5 = 180, 2<sup>3</sup>3.5 = 120, so we do not need to consider any p<sup>a</sup>q<sup>b</sup>r<sup>c</sup> except pqr and p<sup>2</sup>qr. It is easy to check that A and B satisfy the condition. [Note that it does not extend to 96 because 2<sup>5</sup>3 = 2(2<sup>4</sup>3) = 2<sup>4</sup>(2.3).]
+<p>
+Finally for n &lt; 95, A &sube; {1, 2, ... , n} and B &sube; {1, 2, ... , n} provide a partition of {1, 2, ... , n} with neither art containing such a, b, c.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh88.html">29th IMO shortlist 1988</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Dec 2002
+<br>Last corrected/updated 30 Dec 02
+</BODY>
+
+</HTML>
+

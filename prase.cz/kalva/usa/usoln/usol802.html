@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 80/2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>9th USAMO 1980</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 2</b><br>
+
+<p>
+
+Find the maximum possible number of three term arithmetic progressions in a monotone sequence of n distinct reals.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: m<sup>2</sup> for n = 2m+1, m(m-1) for n = 2m.
+
+<p>
+
+Let the reals be a<sub>1</sub>, ... , a<sub>n</sub>. Suppose n = 2m+1 and the middle term is a<sub>k</sub>. If k &lt; m+1, then we are constrained by the shortage of first terms. If k &gt; m+1 we are constrained by the shortage of third terms. Thus if k = 1, a<sub>k</sub> cannot be the middle term. If k = 2, there is only one candidate for the first term. If k = 3, there are two candidates for the middle terms and so on. Thus the total number of possible progressions certainly cannot exceed: 1 + 2 + ... + m + m-1 + m-2 + ... + 1 = m(m+1)/2 + m(m-1)/2 = m<sup>2</sup>. But this bound is achieved by the sequence 1, 2, 3, ... , n.
+
+<p>
+
+Similarly, if n = 2m, then the upper bound is 1 + 2 + ... + m-1 + m-1 + ... + 1 = m(m-1). Again, this is achieved by the sequence 1, 2, ... , n.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa80.html">9th USAMO 1980</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

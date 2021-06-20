@@ -1,0 +1,46 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1985/13 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>26th IMO 1985 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 13</b><br>
+<p>
+A die is tossed repeatedly. A wins if it is 1 or 2 on two consecutive tosses. B wins if it is 3 - 6 on two consecutive tosses. Find the probability of each player winning if the die is tossed at most 5 times. Find the probability of each player winning if the die is tossed until a player wins.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 5 throws or less: A 55/243, B 176/243; arbitrarily many throws: A 5/21, B 16/21.
+<p>
+<i>Solution by Demetres Christofides</i>
+<p>
+Denote an outcome of 1 or 2 as L and an outcome of 3, 4, 5, or 6 as H. For 5 tosses or less we have:
+<pre>LL	A wins prob. 27/243
+LHLL	A wins prob 6/243
+LHLHL	draw prob 4/243
+LHLHH	B wins prob 8/243
+LHH	B wins prob 36/243
+HLL	A wins prob 18/243
+HLHLL	A wins prob 4/243
+HLHLH	draw prob 8/243
+HLHH	B wins prob 24/243
+HH	B wins prob 108/243
+</pre>
+Summarising, the prob of A winning is 55/243, of B winning is 176/243 and of a draw is 12/243.
+<p>
+With an arbitrary number of throws A wins with LL, LHLL, LHLHLL, ... or with HLL, HLHLL, HLHLHLL, ... . Probability (1 + 2/3) 1/9 (1 + 2/9 + (2/9)<sup>2</sup> + ... ) = (5/3)(1/7) = 5/21. But no draw is possible, so B wins with prob 16/21.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh85.html">26th IMO shortlist 1985</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Sep 2002
+</BODY>
+
+</HTML>
+

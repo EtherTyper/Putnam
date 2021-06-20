@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 56/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>16th Putnam 1956</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Let P be the set of all subsets of the plane. f <b>:</b> P &rarr; P satisfies f(X &cup; Y) &supe; f( f(X) ) &cup; f(Y) &cup; Y for all X, Y &isin; P (*). Show that (1) f(X) &supe; X, (2) f( f(X) ) = f(X) , (3) if X &supe; Y, then f(X) &supe; f(Y), for all X, Y &isin; P. Show conversely that if f <b>:</b> P &rarr; P satisfies (1), (2), (3), then f satisfies (*).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Taking Y = X in (*) gives immediately that f(X) = f(X &cup; Y) &supe; f( f(X) ) &cup; f(X) &cup; X &supe; X, which proves (1).
+
+<p>
+
+It also shows that f(X) &supe; f( f(X) ). Now put Y = f(X) in (*). Then X &cup; Y = f(X) (by (1) ), so (*) gives f( f(X) ) &supe; Y = f(X). So we have proved (2).
+
+<p>
+
+Finally, if X &supe; Y, then X &cup; Y = X, so f(X) = f(X &cup; Y) &supe; f(Y), which proves (3).
+
+<p>
+
+Now assume (1), (2) and (3) and take any X, Y. Then X &cup; Y &supe; Y, so f(X &cup; Y) &supe; f(Y) (using (3) ). But f(Y) &supe; Y (using (1) ), so also f(X &cup; Y) &supe; Y. Similarly, f(X &cup; Y) &supe; f(X). But f(X) = f( f(X) ) (using (2) ), so f(X &cup; Y) &supe; f( f(X) ), which establishes (*). 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn56.html">16th Putnam 1956</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

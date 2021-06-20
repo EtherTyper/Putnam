@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 56/A7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>16th Putnam 1956</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A7</b><br>
+
+<p>
+
+Show that for any given positive integer n, the number of odd nCm with 0 &le; m &le; n is a power of 2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(2n)C(2m+1) = 2n/(2m+1) (2n-1)C2m, which is even. There are n even factors in the numerator of 2nC2m and n even factors in its denominator. If we cancel 2 from each of these even factors, then we get nCm. So 2nC2m has the same parity as nCm. Hence there are the same number of odd binomial coefficients for 2n as for n.
+
+<p>
+
+(2n+1)C2m =2nC(2m-1) + 2nC2m, so (2n+1)C2m has the same parity as 2nC2m. Similarly, (2n+1)C(2m+1) = 2nC2m + 2nC(2m+1), so (2n+1)C(2m+1) has the same parity as 2nC2m. Hence there are twice as many odd binomial coefficients for 2n+1 as for 2n.
+
+<p>
+
+The required result now follows by a trivial induction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn56.html">16th Putnam 1956</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

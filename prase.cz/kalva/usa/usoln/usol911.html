@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 91/1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>20th USAMO 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 1</b><br>
+
+<p>
+
+An obtuse angled triangle has integral sides and one acute angle is twice the other. Find the smallest possible perimeter.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 77 = 16 + 28 + 33.
+
+<p>
+
+Let the triangle be ABC with angle A obtuse and angle B = 2 angle C. Let the sides be a, b, c as usual. Note that a &gt; b &gt; c. We have b sin C = c sin 2C and c<sup>2</sup> = a<sup>2</sup> + b<sup>2</sup> - 2ab sin C. Hence, b/2c = sin 2C/sin C = cos C = (a<sup>2</sup> + b<sup>2</sup> - c<sup>2</sup>)/2ab. So ab<sup>2</sup> = a<sup>2</sup>c + b<sup>2</sup>c - c<sup>3</sup>. Hence b<sup>2</sup>(a - c) = c(a<sup>2</sup> - c<sup>2</sup>). Dividing by a - c we get b<sup>2</sup> = c(a + c).
+
+<p>
+
+Now the triangle with smallest perimeter will have a, b, c relatively prime (otherwise we could divide by the common factor). Hence c must be a square. For if c and a+c have a common factor, then so do a and c and hence a, b and c, which means they cannot be the minimal set. Clearly c is not 1 (or the triangle would have nil area). c = 4 gives a = 5, which is too short, or a &ge; 21, which is too long. c = 9 gives a = 7 (too short), 18 (3 divides a, b, c), or &ge; 40 (too long). c = 16 gives a = 20 (too short) or a = 33 which works. Larger c gives a larger perimeter. Eg c = 25 gives a = 56, b = 45 (perimeter 126).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa91.html">20th USAMO 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

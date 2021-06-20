@@ -1,0 +1,82 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>13th Putnam 1953/B7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>13th Putnam 1953</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B7</b><br>
+
+<p>
+
+Show that we can express any irrational number &alpha; &isin; (0, 1) uniquely in the form &sum;<sub>1</sub><sup>&infin;</sup> (-1)<sup>n+1</sup> 1/(a<sub>1</sub>a<sub>2</sub> ... a<sub>n</sub>), where a<sub>i</sub> is a strictly monotonic increasing sequence of positive integers. Find a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub> for &alpha; = 1/&radic;2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: a<sub>1</sub> = 1, a<sub>2</sub> = 3, a<sub>3</sub> = 8.
+
+<p>
+
+Let s<sub>n</sub> be the sum of the first n terms. The terms alternate in sign and decrease in absolute value, so the odd terms of the sequence s<sub>n</sub> decrease and the even terms increase. Every odd term exceeds every even term, so the odds and the evens must each converge. But s<sub>n</sub> - s<sub>n+1</sub> &lt; 1/2<sup>n</sup> which tends to zero, so they tend to a common limit. 
+
+<p>
+
+Choose a<sub>n</sub> as follows. Take a<sub>1</sub> to be the smallest integer whose inverse exceeds &alpha;. Having chosen a<sub>2n-1</sub>, take a<sub>2n</sub> to be the largest integer such that s<sub>2n</sub> &lt; &alpha;. Having chosen a<sub>2n</sub>, take a<sub>2n+1</sub> to be the largest integer such that s<sub>2n+1</sub> &gt; &alpha;.
+
+<p>
+
+We have to show that these choices are always possible, or, in other words, that they yield a strictly increasing sequence a<sub>n</sub>. This depends on the relation 1/k - 1/k(k+1) = 1/(k+1) (*). For suppose we have just chosen a<sub>2n-1</sub>. Then we know that s<sub>2n-1</sub> &gt; &alpha;, but that if increased a<sub>2n-1</sub> by 1, then s<sub>2n-1</sub> would be &lt; &alpha;. Hence, using (*), taking a<sub>2n</sub> = a<sub>2n-1</sub> + 1 certainly gives s<sub>2n</sub> &lt; &alpha;. On the other hand, if we take a<sub>2n</sub> to be sufficiently large, then s<sub>2n</sub> will be close to s<sub>2n-1</sub> and hence exceed &alpha; (note that &alpha; is irrational so it cannot equal any s<sub>m</sub>). So the choice of a<sub>2n</sub> will exceed a<sub>2n-1</sub>. A similar argument shows that a<sub>2n+1</sub> exceeds a<sub>2n</sub>.
+
+<p>
+
+So we have established that we can find a sequence a<sub>n</sub> such that all the odd partial sums s<sub>n</sub> exceed &alpha; and all the even partial sums are less than &alpha;. But we have also established that s<sub>n</sub> tends to a limit, so that limit must be &alpha;. That establishes existence.
+
+<p>
+
+Suppose there is another expansion so that &alpha; = 1/a<sub>1</sub> - 1/a<sub>1</sub>a<sub>2</sub> + ... = 1/b<sub>1</sub> - 1/b<sub>1</sub>b<sub>2</sub> + ... . As above, we have that 1/(a<sub>1</sub> + 1) &lt; &alpha; &lt; 1/a<sub>1</sub> and also 1/(b<sub>1</sub> + 1) &lt; &alpha; &lt; 1/b<sub>1</sub>. But since a<sub>1</sub> and b<sub>1</sub> are both integers that implies that a<sub>1</sub> = b<sub>1</sub>. Suppose now that we have established that a<sub>i</sub> = b<sub>i</sub> for i &le; n. Then we have that &beta; = (-1)<sup>n</sup> a<sub>1</sub> ... a<sub>n</sub>(&alpha; - 1/a<sub>1</sub> + 1/a<sub>1</sub>a<sub>2</sub> - ... + (-1)<sup>n</sup>/a<sub>1</sub>...a<sub>n</sub> ) = 1/a<sub>n+1</sub> - 1/a<sub>n+1</sub>a<sub>n+2</sub> + ... . But we also have &beta; = 1/b<sub>n+1</sub> - 1/b<sub>n+1</sub>b<sub>n+2</sub> + ... .  We now argue as before that &beta; lies between 1/(a<sub>n+1</sub> + 1) and 1/a<sub>n+1</sub> and also between 1/(b<sub>n+1</sub> + 1) and 1/b<sub>n+1</sub>. Hence a<sub>n+1</sub> = b<sub>n+1</sub>. That establishes uniqueness.
+
+<p>
+
+Finally, consider &alpha; = 1/&radic;2. We have 1/2 &lt; 1/&radic;2 &lt; 1, so a<sub>1</sub> = 1. We must pick a<sub>2</sub> as the largest integer so that 1 - 1/a<sub>2</sub> &lt; 1/&radic;2, or a<sub>2</sub> &lt; 2 + &radic;2 = 3.4. So a<sub>2</sub> = 3. We must pick a<sub>3</sub> as the largest integer so that 1 - 1/3 + 1/3a<sub>3</sub> &gt; 1/&radic;2 or 2 + 1/x &gt; 3/&radic;2 or x &lt; 3&radic;2 + 4 = 8.2. So a<sub>3</sub> = 8.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn53.html">13th Putnam 1953</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

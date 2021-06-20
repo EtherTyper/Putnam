@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 79/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>40th Putnam 1979</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Find a non-trivial solution of the differential equation F(y) &equiv; (3x<sup>2</sup> + x - 1)y'' - (9x<sup>2</sup> + 9x - 2)y' + (18x + 3)y = 0. 
+
+<br>y = f(x) is the solution of F(y) = 6(6x + 1) such that f(0) = 1, and ( f(-1) - 2)( f(1) - 6) = 1. Find a relation of the form ( f(-2) - a)( f(2) - b) = c.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: a = 6, b = 14, c = 1.
+
+<p>
+
+The differential equation looks fairly horrible; there is no obvious systematic way of solving it. So we try various types of solutions. Trying simple polynomials leads to x<sup>2</sup> + x. Trying exponentials leads to e<sup>3x</sup>. Obviously, a particular solution to F(y) = 36x + 6 is y = 2, so the general solution is y = 2 + Ae<sup>3x</sup> + Bx + Bx<sup>2</sup>. f(0) = 1 implies A = -1. ( f(-1) - 2)( f(1) - 6) = (- e<sup>-3</sup> )( -4 - e<sup>3</sup> + 2B) = 1, so B = 2.
+
+<p>
+
+f(-2) = 2 - e<sup>-6</sup> + 4, f(2) = 2 - e<sup>6</sup> + 12, so we need a = 6, b = 14, c = 1 (and then the relation reduces to ( - e<sup>-6</sup> )( - e <sup>6</sup>) = 1, as required).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn79.html">40th Putnam 1979</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

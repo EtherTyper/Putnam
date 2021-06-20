@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1973/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>34th Putnam 1973</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+a<sub>n</sub> = &plusmn;1/n and a<sub>n+8</sub> &gt; 0 iff a<sub>n</sub> &gt; 0. Show that if four of a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>8</sub> are positive, then &sum; a<sub>n</sub> converges. Is the converse true?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes.
+
+<p>
+
+Consider a<sub>n</sub> + a<sub>n+1</sub> + ... + a<sub>n+7</sub>. It is  ( &plusmn;(n+1)(n+2)(n+3)(n+4)(n+5)(n+6)(n+7) &plusmn;n(n+2)(n+3)(n+4)(n+5)(n+6)(n+7) &plusmn; ... &plusmn; n(n+1)(n+2)(n+3)(n+4)(n+5)(n+6) ) / ( n(n+1)(n+2)(n+3)(n+4)(n+5)(n+6)(n+7) ). If there are an equal number of plus and minus signs, then there is no n<sup>7</sup> term in the numerator, so the expression is O(1/n<sup>2</sup>). On the other hand if there are an unequal number of plus and minus signs, then there is an n<sup>7</sup> term in the numerator and the expression is O(1/n). But &sum; 1/n diverges, and &sum; 1/n<sup>2</sup> converges. 
+
+<p>
+
+Let s<sub>n</sub> be the sum of the first n terms. We have shown that with an unequal number of positive and negative signs s<sub>8n</sub> diverges and hence s<sub>n</sub> does not converge. With an equal number of signs, s<sub>8n</sub> converges. But each term tends to zero, so |s<sub>8n+i</sub> - s<sub>8n</sub>| tends to zero for i = 1, ... 7. Hence s<sub>n</sub> converges.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn73.html">34th Putnam 1973</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

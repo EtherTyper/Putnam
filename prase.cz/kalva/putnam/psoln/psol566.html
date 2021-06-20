@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 56/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>16th Putnam 1956</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Let R be the reals. Find f <b>:</b> R &rarr; R which preserves all rational distances but not all distances. Show that if f <b>:</b> R<sup>2</sup> &rarr; R<sup>2</sup> preserves all rational distances then it preserves all distances.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let f(x) = x for x rational, x + 1 for x irrational. If x - y is rational, then either both x and y are rational in which case f(x) - f(y) = x - y, or neither are in which case f(x) - f(y) = (x + 1) - (y + 1) = x - y. So f preserves rational distances. But f does not preserve all distances. For example f(&radic;2) - f(0) &ne; &radic;2 - 0.
+
+<p>
+
+Given points A and B in the plane a distance k apart, and any &epsilon; &gt; 0, we can find a point C such that AC and BC are rational and |AC - k| &lt; &epsilon;/2, |BC| &lt; &epsilon;/2. Let A' = f(A), B' = f(B), C' = f(C). Then |A'C'| = |AC|, |B'C'| = |BC|, and hence |A'B'| lies within &epsilon; of k. This is true for all &epsilon; &gt; 0, so |A'B'| = k and f preserves all distances.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn56.html">16th Putnam 1956</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1997/11 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>38th IMO 1997 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 11</b>
+<p>
+p(x) is a polynomial with real coefficients such that p(x) &gt; 0 for x &ge; 0. Show that (1 + x)<sup>n</sup>p(x) has non-negative coefficients for some positive integer n.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+A product of two polynomials with non-negative coefficients also has non-negative coefficients and any real polynomial can be factorised into linear and quadratic factors, so it is sufficient to prove the result for p(x) linear and quadratic.
+<p>
+If p(x) = ax + b, then b = p(0) &gt; 0. Also p(-b/a) = 0, so -b/a &le; 0 and hence a &ge; 0. So p itself has non-negative coefficients, and hence (1 + x)<sup>n</sup>p(x) has non-negative coefficients for all positive n. Thus the result is true for p(x) linear. 
+<p>
+Now suppose p(x) is quadratic, p(x) is positive for x zero and x large, so the coefficients of x<sup>2</sup> and x<sup>0</sup> must be positive. There is no loss of generality in taking the coefficient of x<sup>2</sup> to be 1. If the coefficient of x is also positive, then we are home. So assume it is negative. Thus p(x) = x<sup>2</sup> - bx + c, with b, c &gt; 0. Also b<sup>2</sup> &lt; 4c or p(b/2) &lt; 0. So the coefficients of (1+x)<sup>n</sup>p(x) are c, nc - b, n - b, 1 which are all positive for any sufficiently large n, and nCk-2 - nCk-1 b + nCk c for k = 2, 3 ... , n.
+<p>
+Ignoring the positive factor n!/(k! n-k+2!), we get k<sup>2</sup>(1+b+c) - k(n(b+2c)+2b+3c+1) + c(n<sup>2</sup>+3n+2). Put A = 1+b+c, B = b+2c, C = 2b+3c+1. So we have Ak<sup>2</sup> + (Bn+C)k + c(n<sup>2</sup>+3n+2) (*). Obviously A &gt; 0. But b<sup>2</sup> &lt; 4c, so (b+2c)<sup>2</sup> &lt; 4(1+b+c)c or B<sup>2</sup> &lt; 4Ac. Hence for all sufficiently large n, (Bn+C)<sup>2</sup> &lt; 4Ac(n<sup>2</sup>+3n+2) and so (*) is positive for all k, as required.
+<p>
+<i>Thanks to Kamil Duszenko</i>
+<p>&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh97.html">38th IMO shortlist 1997</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+2 Dec2003
+<br>Last corrected/updated 2 Dec 2003
+</BODY>
+
+
+
+</HTML>
+

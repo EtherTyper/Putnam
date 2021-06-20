@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1982/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>43rd Putnam 1982</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+a, b, c, d are positive integers satisfying a + c &le; 1982 and a/b + c/d &lt; 1. Prove that 1 - a/b - c/d &gt; 1/1983<sup>3</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let us consider the general case with 1982 replaced by N. We have a &lt; N, so 1 - a/b &gt; 1/N. So there is no benefit in making d too large. Certainly, for example, we must have d &lt; 2Nc &lt; 2N<sup>2</sup>. Similarly for b. So there are only finitely many candidates for a, b, c, d. Hence there is a set of values which minimises 1 - a/b - c/d. Let us adopt these values.
+
+<p>
+
+Evidently 1 - a/b - c/d = k/bd for some positive integer k. We may assume that b &ge; d. The fact that a, b, c, d is an optimal set means that k cannot be too large. Multipying across, k = bd - ad - bc. So if k &gt; d, we could increase a by 1. That would reduce 1 - a/b - c/d to (k-d)/bd, contradicting minimality. So k &le; d.
+
+<p>
+
+Now bd = k + ad + bc &lt;= k + ab + bc = k + b(a + c) &lt;= k + bN. Hence d &lt;= N + k/b &lt;= N + 1.
+
+<p>
+
+But (k/bd + a/b) = 1 - c/d &ge; 1/d &ge; 1/(N+1). We have (k/bd + a/b) = 1/b (a + k/d) &le; 1/b (a + 1) &lt;= 1/b N. So 1/b &ge; 1/(N(N+1)) &gt; 1/(N+1)<sup>2</sup>. Hence 1 - a/b - c/d = k/bd &gt; k/(N+1)<sup>3</sup> &ge; 1/(N+1)<sup>3</sup>.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn82.html">43rd Putnam 1982</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,72 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1988/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1988</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+Let a and b be positive integers such that ab + 1 divides a<sup>2</sup> + b<sup>2</sup>. Show that (a<sup>2</sup> + b<sup>2</sup>)/(ab + 1) is a perfect square.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+A little experimentation reveals the following solutions: a, a<sup>3</sup> giving a<sup>2</sup>; a<sup>3</sup>, a<sup>5</sup> - a giving a<sup>2</sup>; and the recursive a<sub>1</sub> = 2, b<sub>1</sub> = 8, a<sub>n+1</sub> = b<sub>n</sub>, b<sub>n+1</sub> = 4b<sub>n</sub> - a<sub>n</sub> giving 4. The latter may lead us to: if a<sup>2</sup> + b<sup>2</sup> = k(ab + 1), then take A = b, B = kb - a, and then A<sup>2</sup> + B<sup>2</sup> = k(AB + 1). Finally, we may notice that this can be used to go down as well as up.
+
+<p>
+So starting again suppose that a, b, k is a solution in positive integers to a<sup>2</sup> + b<sup>2</sup> = k(ab + 1). If a = b, then 2a<sup>2</sup> = k(a<sup>2</sup> + 1). So a<sup>2</sup> must divide k. But that implies that a = b = k = 1. Let us assume we do not have this trivial solution, so we may take a &lt; b. We also show that a<sup>3</sup> &gt; b. For (b/a - 1/a)(ab + 1) = b<sup>2</sup> + b/a - b - 1/a &lt; b<sup>2</sup> &lt; a<sup>2</sup> + b<sup>2</sup>. So k &gt; b/a - 1/a. But if a<sup>3</sup> &lt; b, then b/a (ab + 1) &gt; b<sup>2</sup> + a<sup>2</sup>, so k &lt; b/a. But now b &gt; ak and &lt; ak + 1, which is impossible. It follows that k &ge; b/a.
+
+<p>
+Now define A = ka - b, B = a. Then we can easily verify that A, B, k also satisfies a<sup>2</sup> + b<sup>2</sup> = k(ab + 1), and B and k are positive integers. Also a &lt; b implies a<sup>2</sup> + b<sup>2</sup> &lt; ab + b<sup>2</sup> &lt; ab + b<sup>2</sup> + 1 + b/a = (ab + 1)(1 + b/a), and hence k &lt; 1 + b/a, so ka - b &lt; a. Finally, since k &gt; b/a, ka - b &ge; 0. If ka - b &gt; 0, then we have another smaller solution, in which case we can repeat the process. But we cannot have an infinite sequence of decreasing numbers all greater than zero, so we must eventually get A = ka - b = 0. But now A<sup>2</sup> + B<sup>2</sup> = k(AB + 1), so k = B<sup>2</sup>. k was unchanged during the descent, so k is a perfect square.
+<p>
+<i>A slightly neater variation on this is due to Stan Dolan</i>
+<p>
+As above take a<sup>2</sup> + b<sup>2</sup> = k(ab + 1), so a, b, and k are all positive integers. Now fixing k take positive integers A, B such that A<sup>2</sup> + B<sup>2</sup> = k(AB + 1) (*) and min(A,B) is as small as possible. Assume B &le; A. Regarding (*) as a quadratic for A, we see that the other root C satisfies A + C = kB, AC = B<sup>2</sup> - k. The second equation implies that C = B<sup>2</sup>/A - k/A &lt; B. So C cannot be a positive integer (or the solution C, B would have min(C,B) &lt; min(A,B)). But we have (A+1)(C+1) = A+C + AC + 1 = B<sup>2</sup> + (B-1)k + 1 &gt; 0, so C &gt; -1. C = kB - A is an integer, so C = 0. Hence k = B<sup>2</sup>.
+<p>
+<i>Note that jumping straight to the minimal without the infinite descent avoids some of the verification needed in the infinite descent.</i>
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo88.html">29th IMO 1988</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Oct 1998
+<br>Last corrected/updated 5 Jan 04
+
+</BODY>
+
+
+
+</HTML>
+

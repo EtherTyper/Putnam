@@ -1,0 +1,73 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1985/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1985</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+For every real number x<sub>1</sub>, construct the sequence x<sub>1</sub>, x<sub>2</sub>, ... by setting:
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; x<sub>n+1</sub> = x<sub>n</sub>(x<sub>n</sub> + 1/n).
+
+<p>Prove that there exists exactly one value of x<sub>1</sub> which gives 0 &lt; x<sub>n</sub> &lt; x<sub>n+1</sub> &lt; 1 for all n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Define S<sub>0</sub>(x) = x, S<sub>n</sub>(x) = S<sub>n-1</sub>(x) (S<sub>n-1</sub>(x) + 1/n). The motivation for this is that x<sub>n</sub> = S<sub>n-1</sub>(x<sub>1</sub>).
+
+<p>
+S<sub>n</sub>(0) = 0 and S<sub>n</sub>(1) &gt; 1 for all n &gt; 1. Also S<sub>n</sub>(x) has non-negative coefficients, so it is strictly increasing in the range [0,1]. Hence we can find (unique) solutions a<sub>n</sub>, b<sub>n</sub> to S<sub>n</sub>(a<sub>n</sub>) = 1 - 1/n, S<sub>n</sub>(b<sub>n</sub>) = 1. 
+
+<p>
+S<sub>n+1</sub>(a<sub>n</sub>) = S<sub>n</sub>(a<sub>n</sub>) (S<sub>n</sub>(a<sub>n</sub>) + 1/n) = 1 - 1/n &gt; 1 - 1/(n+1), so a<sub>n</sub> &lt; a<sub>n+1</sub>. Similarly, S<sub>n+1</sub>(b<sub>n</sub>) = S<sub>n</sub>(b<sub>n</sub>) (S<sub>n</sub>(b<sub>n</sub>) + 1/n) = 1 + 1/n &gt; 1, so b<sub>n</sub> &gt; b<sub>n+1</sub>. Thus a<sub>n</sub> is an increasing sequence and b<sub>n</sub> is a decreasing sequence with all a<sub>n</sub> less than all b<sub>n</sub>. So we can certainly find at least one point x<sub>1</sub> which is greater than all the a<sub>n</sub> and less than all the b<sub>n</sub>. Hence 1 - 1/n &lt; S<sub>n</sub>(x<sub>1</sub>) &lt; 1 for all n. But S<sub>n</sub>(x<sub>1</sub>) = x<sub>n+1</sub>. So x<sub>n+1</sub> &lt; 1 for all n. Also x<sub>n</sub> &gt; 1 - 1/n implies that x<sub>n+1</sub> = x<sub>n</sub>(x<sub>n</sub> + 1/n) &gt; x<sub>n</sub>. Finally, we obviously have x<sub>n</sub> &gt; 0. So the resulting series x<sub>n</sub> satisfies all the required conditions. 
+
+<p>
+It remains to consider uniqueness. Suppose that there is an x<sub>1</sub> satisfying the conditions given. Then we must have S<sub>n</sub>(x<sub>1</sub>) lying in the range 1 - 1/n, 1 for all n. [The lower limit follows from x<sub>n+1</sub> = x<sub>n</sub>(x<sub>n</sub> + 1/n).] Hence we must have a<sub>n</sub> &lt; x<sub>1</sub> &lt; b<sub>n</sub> for all n. We show uniqueness by showing that b<sub>n</sub> - a<sub>n</sub> tends to zero as n tends to infinity. Since all the coefficients of S<sub>n</sub>(x) are non-negative, it is has increasing derivative. S<sub>n</sub>(0) = 0 and S<sub>n</sub>(b<sub>n</sub>) = 1, so for any x in the range 0, b<sub>n</sub> we have S<sub>n</sub>(x) &le; x/b<sub>n</sub>. In particular, 1 - 1/n &lt; a<sub>n</sub>/b<sub>n</sub>. Hence b<sub>n</sub> - a<sub>n</sub> &le; b<sub>n</sub> - b<sub>n</sub>(1 - 1/n) = b<sub>n</sub>/n &lt; 1/n, which tends to zero.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo85.html">26th IMO 1985</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

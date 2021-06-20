@@ -1,0 +1,102 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>4th Putnam 1941/A7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>4th Putnam 1941</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A7</b><br>
+
+<p>
+
+<i>Do either (1) or (2):</i>
+
+<p>(1) &nbsp; <i>Do either (1) or (2):</i>
+
+<p>(1) &nbsp; Let A be the 3 x 3 matrix 
+
+<pre>1+x<sup>2</sup>-y<sup>2</sup>-z<sup>2</sup>     2(xy+z)    2(zx-y)
+
+  2(xy-z)    1+y<sup>2</sup>-z<sup>2</sup>-x<sup>2</sup>   2(yz+x)
+
+  2(zx+y)     2(yz-x)   1+z<sup>2</sup>-x<sup>2</sup>-y<sup>2</sup>
+
+</pre>
+
+Show that det A = (1 + x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>)<sup>3</sup>.
+
+<p>(2) &nbsp; A solid is formed by rotating about the x-axis the first quadrant of the ellipse x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>b<sup>2</sup> = 1. Prove that this solid can rest in stable equilibrium on its vertex (corresponding to x = a, y = 0 on the ellipse) iff a/b &le; &radic;(8/5).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(1)  subtract z times row 2 from row 1 and add y times row 3 to row 1. After taking out the common factor 1+x<sup>2</sup>+y<sup>2</sup>+z<sup>2</sup> from row 1 we get:
+
+<pre>     1           z         -y
+
+  2(xy-z)    1+y<sup>2</sup>-z<sup>2</sup>-x<sup>2</sup>   2(yz+x)
+
+  2(zx+y)     2(yz-x)   1+z<sup>2</sup>-x<sup>2</sup>-y<sup>2</sup>
+
+</pre>
+
+Subtract z times col 1 from col 2 and add y times col 1 to col 3. We get:
+
+<pre>     1           0            0
+
+  2(xy-z)   1+y<sup>2</sup>+z<sup>2</sup>-x<sup>2</sup>-2xyz   2x(1+y<sup>2</sup>)
+
+  2(zx+y)     -2x(1+z<sup>2</sup>)   1+z<sup>2</sup>-x<sup>2</sup>+y<sup>2</sup>+2xyz
+
+</pre>
+
+Multiplying this out, we get (1-x<sup>2</sup>+y<sup>2</sup>+z<sup>2</sup>)<sup>2</sup> - 4x<sup>2</sup>y<sup>2</sup>z<sup>2</sup> + 4x<sup>2</sup>(1+y<sup>2</sup>+z<sup>2</sup>+y<sup>2</sup>z<sup>2</sup>) = (1+x<sup>2</sup>+y<sup>2</sup>+z<sup>2</sup>)<sup>2</sup>. Hence with the additional factor we took out, we get the result.
+
+<p>
+
+(2)  We first have to find the position of the centre of mass on the axis. The moment about the y-axis of the solid is &int;<sub>0</sub><sup>a</sup> &pi;y<sup>2</sup> x dx = &pi;b<sup>2</sup> &int;<sub>0</sub><sup>a</sup> (x - x<sup>3</sup>/a<sup>2</sup>) dx = &pi;b<sup>2</sup>a<sup>2</sup>/4. The volume is &int;<sub>0</sub><sup>a</sup> &pi;y<sup>2</sup> dx = &pi;b<sup>2</sup> &int;<sub>0</sub><sup>a</sup> (1 - x<sup>2</sup>/a<sup>2</sup>) dx = 2/3 &pi;b<sup>2</sup>a. Hence the centre of mass is a distance 3a/8 from the flat surface or 5a/8 from the point of contact.
+
+<p>
+
+Now suppose the point of contact is at (a cos t, b sin t). The tangent has gradient - b/a cot t, so the normal has gradient a/b tan t. So the equation of the normal is y - b sint = a/b tan t (x - a cos t). This meets the x-axis at a(1 - b<sup>2</sup>/a<sup>2</sup>) cos t. For stability we want this to be closer to the origin than the centre of mass, in other words we want (1 - b<sup>2</sup>/a<sup>2</sup>) cos t &lt; 3/8. The point of contact is at cos t = 1, so we require (1 - b<sup>2</sup>/a<sup>2</sup>) &lt; 3/8 or b/a &gt; &radic;(5/8).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn41.html">4th Putnam 1941</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

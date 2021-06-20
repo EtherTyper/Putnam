@@ -1,0 +1,82 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 77/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>38th Putnam 1977</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+G is a group. H is a finite subgroup with n elements. For some element g &isin; G, (gh)<sup>3</sup> = 1 for all elements h &isin; H. Show that there are at most 3n<sup>2</sup> distinct elements which can be written as a product of a finite number of elements of the coset Hg.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+It is essential to notice first that g<sup>3</sup> = 1 (since 1 &isin; H).
+
+<p>
+
+A little messing around should now convince us that we can simplify finite products of elements of the form hg. In fact, we show that they can always be written as (1) h<sub>1</sub>gh<sub>2</sub>, (2) h<sub>1</sub>g<sup>2</sup>h<sub>2</sub>, or (3) h<sub>1</sub>g<sup>2</sup>h<sub>2</sub>g.
+
+<p>
+
+Clearly hg is of the form (1), so it is sufficient to show that given an element k of form (1), (2) or (3), then k (hg) is also of one of these forms.
+
+<p>
+
+It is convenient to note that: ghg = h<sup>-1</sup>g<sup>2</sup>h<sup>-1</sup> (*) (post-multiply ghghgh = 1 successively by h<sup>-1</sup>, g<sup>2</sup>, h<sup>-1</sup>); and g<sup>2</sup>hg<sup>2</sup> = h<sup>-1</sup>gh<sup>-1</sup> (**) (pre-multiply gh<sup>-1</sup>gh<sup>-1</sup>gh<sup>-1</sup> = 1 successively by g<sup>2</sup>, h, g<sup>2</sup>).
+
+<p>
+
+So dealing with the three cases in turn: (h<sub>1</sub>gh<sub>2</sub>) h<sub>3</sub>g = h<sub>1</sub>h<sub>3</sub><sup>-1</sup>h<sub>2</sub><sup>-1</sup>g<sup>2</sup>h<sub>3</sub><sup>-1</sup>h<sub>2</sub><sup>-1</sup>g, which is of form (2).
+
+<p>
+
+(h<sub>1</sub>g<sup>2</sup>h<sub>2</sub>) h<sub>3</sub>g is obviously of form (3).
+
+<p>
+
+(h<sub>1</sub>g<sup>2</sup>h<sub>2</sub>g) h<sub>3</sub>g = h<sub>1</sub>g<sup>2</sup>h<sub>2</sub>h<sub>3</sub><sup>-1</sup>g<sup>2</sup>h<sub>3</sub><sup>-1</sup> = h<sub>1</sub>h<sub>3</sub>h<sub>2</sub><sup>-1</sup>gh<sub>3</sub>h<sub>2</sub><sup>-1</sup>h<sub>3</sub><sup>-1</sup>, which is of form (1).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn77.html">38th Putnam 1977</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

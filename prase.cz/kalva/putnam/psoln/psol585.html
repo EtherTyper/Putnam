@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>18th Putnam 1958/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>18th Putnam 1958</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Let R be the reals. Show that there is at most one continuous function f <b>:</b> [0, 1]<sup>2</sup> &rarr; R satisfying f(x, y) = 1 + &int;<sub>0</sub><sup>x</sup>&int;<sub>0</sub><sup>y</sup> f(s, t) dt ds.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If there are two, then their difference d(x, y) satisfies d(x, y) = &int;<sub>0</sub><sup>x</sup>&int;<sub>0</sub><sup>y</sup> d(s, t) dt ds (*). 
+
+<p>
+
+The domain is compact and d is continuous, so |d| has some upper bound k. Now applying (*) gives |d(x, y)| &le; k xy. Applying (*) again gives |d(x, y)| &le; k x<sup>2</sup>/2 y<sup>2</sup>/2. So by a simple induction |d(x, y)| &le; k x<sup>n</sup>/n! y<sup>n</sup>/n! . Hence |d(x, y)| &le; k/(n! n!) for all n, and so d(x, y) = 0.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn58.html">18th Putnam 1958</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

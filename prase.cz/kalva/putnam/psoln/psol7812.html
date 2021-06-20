@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 78/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>39th Putnam 1978</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+a<sub>ij</sub> are reals in [0, 1]. Show that ( &sum;<sub>i=1</sub><sup>n</sup> &sum;<sub>j=1</sub><sup>mi</sup> a<sub>ij</sub>/i )<sup>2</sup> &le; 2m &sum;<sub>i=1</sub><sup>n</sup> &sum;<sub>j=1</sub><sup>mi</sup> a<sub>ij</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The question looks incredibly complicated, but is actually easy. We just use induction and the fact that each a<sub>ij</sub> &le; 1.
+
+<p>
+
+Put b<sub>i</sub> = &sum;<sub>1</sub><sup>mi</sup> a<sub>ij</sub>. Notice that since each a<sub>ij</sub> &le; 1, we have b<sub>i</sub> &le; mi. We use induction on n. For n = 1, the required result is: b<sub>1</sub><sup>2</sup> &le; 2mb<sub>1</sub>. But b<sub>1</sub> &le; m and b<sub>1</sub> &ge; 0, so this is certainly true.
+
+<p>
+
+Now assume the result is true for n.
+
+<br>For n + 1, the lhs is (b<sub>1</sub>/1 + b<sub>2</sub>/2 + ... + b<sub>n</sub>/n)<sup>2</sup> + 2(b<sub>1</sub>/1 + ... + b<sub>n</sub>/n) b<sub>n+1</sub>/(n+1) + b<sub>n+1</sub><sup>2</sup>/(n+1)<sup>2</sup>, and the rhs is 2m(b<sub>1</sub> + ... + b<sub>n</sub>) + 2mb<sub>n+1</sub>. Given the result for n, it is sufficient to show that: 2(b<sub>1</sub>/1 + ... + b<sub>n</sub>/n) b<sub>n+1</sub>/(n+1) + b<sub>n+1</sub><sup>2</sup>/(n+1)<sup>2</sup> &le; 2mb<sub>n+1</sub>. Divding by b<sub>n+1</sub> and using b<sub>i</sub>/i le; m, we need: 2nm/(n+1) + m/(n+1) &le; 2m, which is clearly true.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn78.html">39th Putnam 1978</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

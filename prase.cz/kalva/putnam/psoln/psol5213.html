@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 52/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>12th Putnam 1952</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+A, B, C are points of a fixed ellipse E. Show that the area of ABC is a maximum iff the centroid of ABC is at the center of E.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Take the ellipse as x<sup>2</sup>/a<sup>2</sup> + y<sup>2</sup>b<sup>2</sup> = 1. Take the three points as A (a cos u, b sin u), B (a cos v, b sin v), C (a cos w, b sin w). If the area is a maximum then the tangent at A must be parallel to BC (otherwise we could keep B and C fixed and move A to increase the altitude and hence the area). So we have - b/a cot u = (b sin v - b sin w)/(a cos v - a cos w) and hence cos(u - v) = cos(u - w). Similarly, cos(v - u) = cos(v - w).
+
+<p>
+
+Hence 2u = v + w (mod 2&pi;). Similarly 2v = u + w (mod 2&pi;), so 3u = 3v (mod 2&pi;). Hence u, v, w are (in some order and for some k) k, k + 2&pi;/3, k - 2&pi;/3. Hence the centroid is at x = a cos k + a cos(k+2&pi;/3) + a cos(k-2&pi;/3) = 0, y = b sin k + b sin(k+2&pi;/3) + b sin(k-2&pi;/3) = 0.
+
+<p>
+
+Conversely, if the centroid of A, B, C is at the centre, then cos u + cos v + cos w = 0, sin u + sin v + sin w = 0. Hence cos(u - v) = cos u (- cos u - cos w) + sin u (- sin u - sin w) = -1 - cos(u - w). Hence cos(u - v) + cos(u - w) = -1. Similarly, cos(v - u) + cos(v - w) = -1, hence cos(u - w) = cos(v - w). So cos w (cos u - cos v) = sin w (sin v - sin u), so -b/a cot w = (b sin v - b sin u)/(a cos v - a cos u), and hence the tangent at C is parallel to AB. Simiarly, the tangent at A is parallel to BC and the tangent at B is parallel to AC. Hence the area is a maximum.
+
+<p>
+
+<i>Comment. It is much easier to proceed as in the official solutions. Carry out an expansion by a factor a/b parallel to the y-axis. Then the ratio of distances and hence the ratio of areas is preserved. Hence the centroid of ABC is unchanged and triangles of maximum area remain triangles of maximum area. However, the ellipse becomes a circle. It is now easy to see that the triangle has maximum area iff it is equilateral and hence iff its centroid is at the centre of the circle.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn52.html">12th Putnam 1952</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

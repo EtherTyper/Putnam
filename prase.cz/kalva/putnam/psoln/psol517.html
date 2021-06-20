@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 51/A7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>11th Putnam 1951</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A7</b><br>
+
+<p>
+
+Show that if &sum; a<sub>n</sub> converges, then so does &sum; a<sub>n</sub>/n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Put s<sub>n</sub> = a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>n</sub>. Then s<sub>n</sub> - s<sub>n-1</sub> = a<sub>n</sub>, and so a<sub>1</sub>/1 + a<sub>2</sub>/2 + a<sub>3</sub>/3 + ... + a<sub>n</sub>/n = s<sub>1</sub>(1/1 - 1/2) + s<sub>2</sub>(1/2 - 1/3) + ... + s<sub>n</sub>(1/n - 1/n+1) + s<sub>n</sub>/n+1. Now s<sub>1</sub>(1/1 - 1/2) + s<sub>2</sub>(1/2 - 1/3) + ... + s<sub>n</sub>(1/n - 1/n+1)+ ... is absolutely convergent, because the sequence |s<sub>n</sub>| is bounded, say by B. Hence |s<sub>1</sub>(1/1 - 1/2)| + |s<sub>2</sub>(1/2 - 1/3)| + ... + |s<sub>n</sub>(1/n - 1/n+1)| &lt;= B( (1/1 - 1/2) + (1/2 - 1/3) + ... + (1/n - 1/n+1) ) = B(1 - 1/n+1) &lt; B. Obviously s<sub>n</sub>/n+1 tends to zero, so &sum; a<sub>n</sub>/n is absolutely convergent and hence convergent.
+
+<p>
+
+<i>Comment. This is Abel's summation formula.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn51.html">11th Putnam 1951</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

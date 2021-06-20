@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 02/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>31st USAMO 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+The triangle ABC satisfies the relation cot<sup>2</sup>A/2 + 4 cot<sup>2</sup>B/2 + 9 cot<sup>2</sup>C/2 = 9(a+b+c)<sup>2</sup>/(49r<sup>2</sup>), where r is the radius of the incircle (and a = |BC| etc, as usual). Show that ABC is similar to a triangle whose sides are integers and find the smallest set of such integers.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: a =13, b = 40, c = 45.
+
+<p>
+
+Let the incenter be I. Consider the triangle IBC. It has angle IBC = B/2, angle ICB = C/2 and height r. Hence a = r cot B/2 + r cot C/2. With the two similar relations for the other sides, that gives 2r cot A/2 = (b + c - a), 2r cot B/2 = (c + a - b), 2r cot C/2 = (a + b - c). So the given relation becomes: 49( (b + c - a)<sup>2</sup> + 4(c + a - b)<sup>2</sup> + 9(a + b - c)<sup>2</sup>) = 36(a + b + c)<sup>2</sup>.
+
+<p>
+
+Multiplying out is a mistake. It leads nowhere. It is more helpful to change variable to d = b + c - a, e = c + a - b, f = a + b - c giving 49(d<sup>2</sup> + 4e<sup>2</sup> + 9f<sup>2</sup>) = 36(d + e + f)<sup>2</sup>, or 13d<sup>2</sup> + 160e<sup>2</sup> + 405f<sup>2</sup> - 72(de + ef + fd) = 0. We would like to express this as (hd + ke)<sup>2</sup> + (h'e + k'f)<sup>2</sup> + (h''f + k''d)<sup>2</sup> = 0. Presumably 13 = 3<sup>2</sup> + 2<sup>2</sup>. Then 72 = 2&middot;3&middot;something and 2&middot;2&middot;something, giving 12 and 18. Squares 144, 324. Fortunately, we see that 160 = 12<sup>2</sup>+ 4<sup>2</sup>, 405 = 18<sup>2</sup> + 9<sup>2</sup> and 2&middot;4&middot;9 = 72. So putting that together we get: (2d - 18f)<sup>2</sup> + (3d - 12e)<sup>2</sup> + (4e - 9f)<sup>2</sup> = 0. 
+
+<p>
+
+So we conclude that b + c - a = 9(a + b - c) = 4(c + a - b), or 5a + 4b = 5c, 5a + 3c = 5b, or a = 13k, b = 40k, c = 45k. We get the smallest triangle with integer sides by taking k = 1.
+
+<p> 
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa02.html">31st USAMO 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

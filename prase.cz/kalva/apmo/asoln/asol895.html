@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 89/5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>1st APMO 1989</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 5</b><br>
+<p>
+f is a strictly increasing real-valued function on the reals. It has inverse f<sup>-1</sup>. Find all possible f such that f(x) + f<sup>-1</sup>(x) = 2x for all x.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: f(x) = x + b for some fixed real b.
+<p>
+Suppose for some a we have f(a) &ne; a. Then for some b &ne; 0 we have f(a) = a + b. Hence f(a + b) = a + 2b (because f( f(a) ) + f<sup>-1</sup>( f(a) ) = 2 f(a), so f(a + b) + a = 2a + 2b  ) and by two easy inductions, f(a + nb) = a + (n+1)b for all integers n (positive or negative). 
+<p>
+Now take any x between a and a + b. Suppose f(x) = x + c. The same argument shows that f(x + nc) = x + (n+1)c. Since f is strictly increasing x + c must lie between f(a) = a + b and f(a+b) = a + 2b. So by a simple induction x + nc must lie between a + nb and a + (n+1)b. So c lies between b + (x-a)/n and b + (a+b-x)/n or all n. Hence c = b. Hence f(x) = x + b for all x.
+<p>
+If there is no a for which f(a) &ne; a, then we have f(x) = x for all x.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo89.html">1st APMO 1989</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+23 Sep 2002
+</BODY>
+
+</HTML>
+

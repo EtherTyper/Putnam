@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1985/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>46th Putnam 1985</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+G is a finite group consisting of real n x n matrices with the operation of matrix multiplication. The sum of the traces of the elements of G is zero. Prove that the sum of the elements of G is the zero matrix.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let the elements of G be A<sub>1</sub>, A<sub>2</sub>, ... , A<sub>m</sub>. Let A = &sum; A<sub>i</sub>. Then A<sub>i</sub>A = A (since G is a group the multiplication just rearranges the order of the terms in the sum). Hence A<sup>2</sup> = mA (*).
+
+<p>
+
+Now if we allow complex values, A has m eigenvalues (some possibly repeated). Similarly, if we allow complex vectors, then each eigenvalue has an eigenvector. But if A<b>v</b> = &lambda;<b>v</b>, then (*) implies that &lambda;<sup>2</sup> = m&lambda;, so &lambda; = 0 or m. But the trace of A is the sum of its eigenvalues, so m cannot be an eigenvalue. In other words, det(A - mI) is non-zero and A - mI is invertible. Suppose its inverse is B. We may write (*) as A(A - mI) = 0. Hence 0 = A(A - mI)B = A.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn85.html">46th Putnam 1985</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

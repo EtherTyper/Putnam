@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>40th IMO shortlist 1999/N5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>40th IMO 1999 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N5</b><br>
+<p>
+Show that for any n not divisible by 3 and k &ge; n, there is a multiple of n which has sum of digits k.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+We start by considering n not divisible by 2 or 5. We can find a positive integer h such that 10<sup>h</sup> = 1 mod n. Consider the number N = (10<sup>h</sup> + 10<sup>2h</sup> + 10<sup>3h</sup> + ... + 10<sup>Ah</sup>) + (10<sup>h+1</sup> + 10<sup>2h+1</sup> + 10<sup>3h+1</sup> + ... + 10<sup>Bh+1</sup>). Each number in the first group is 1 mod n and each number in the second group is 10 mod n, so N = A + 10B mod n. Also N has A + B digits 1 and the rest 0, so its sum of digits is A + B. We want A + B = k. But since N is relatively prime to 9, one of k, k + 9, k + 2.9, ... , k + (n-1)9 must be 0 mod n. So we can find B such that k + 9B = 0 mod n and 0 &le; B &lt; n. Then take A = k - B. Since k &ge; n, A is positive. Also A + B = k and A + 10B = k + 9B = 0 mod n. Hence N = 0 mod n, so N is a multiple of n.
+<p>
+Now if n = 2<sup>a</sup>5<sup>b</sup>m, where m is not divisible by 2 or 5, then we can find N which is a multiple of n and has sum of digits k. Take c = max(a, b). Then N.10<sup>c</sup> meets the requirements.
+<p>
+For example, take n = 19 and k = 22. Then we can take h = 18. We have 22 + 9.6 = 0 mod 19, so we take B = 6, A = 16. Hence we get N = (10<sup>18</sup> + 10<sup>36</sup> + 10<sup>54</sup> + ... + 10<sup>288</sup>) + (10<sup>19</sup> + ... + 10<sup>109</sup>).  So the process does not generate small numbers!
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh99.html">40th IMO shortlist 1999</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+<br>Last corrected/updated 22 Oct 2002
+</BODY>
+
+</HTML>
+

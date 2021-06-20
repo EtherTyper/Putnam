@@ -1,0 +1,89 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1999/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b>
+
+<p>
+
+Find all pairs (n, p) of positive integers, such that: p is prime; n &le; 2p; and (p - 1)<sup>n</sup> + 1 is divisible by n<sup>p-1</sup>.
+
+<p>
+
+&nbsp;<p>
+<b>Answer</b>
+
+<p>
+
+(1, p) for any prime p; (2, 2); (3, 3).
+
+<p>
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+<i>by Gerhard Woeginger, Technical University, Graz</i>
+
+<p>
+
+Answer: (1, p) for any prime p; (2, 2); (3, 3).
+
+<p>
+
+Evidently (1, p) is a solution for every prime p. Assume n &gt; 1 and take q to be the smallest prime divisor of n. We show first that q = p.
+
+<p>
+Let x be the smallest positive integer for which  (p - 1)<sup>x</sup> = - 1 (mod q), and y the smallest positive integer for which  (p - 1)<sup>y</sup> = 1 (mod q). Certainly y exists and indeed y &lt; q, since (p - 1)<sup>q-1</sup> = 1 (mod q). We know that (p - 1)<sup>n</sup> = -1 (mod q),  so x exists also. Writing n = sy + r, with 0 &le; r &lt; y, we conclude that (p - 1)<sup>r</sup> = -1 (mod q), and hence x &le; r &lt; y (r cannot be zero, since 1 is not -1 (mod q) ).
+
+<p>
+Now write n = hx + k with 0 &le; k &lt; x. Then &nbsp; -1 = (p - 1)<sup>n</sup> = (-1)<sup>h</sup>(p - 1)<sup>k</sup> (mod q). h cannot be even, because then (p - 1)<sup>k</sup> = -1 (mod q), contradicting the minimality of x. So h is odd and hence (p - 1)<sup>k</sup> = 1 (mod q) with 0 &le; k &lt; x &lt; y. This contradicts the minimality of y unless k = 0, so n = hx. But x &lt; q, so x = 1. So (p - 1) = -1 (mod q). p and q are primes, so q = p, as claimed.
+
+<p>
+So p is the smallest prime divisor of n. We are also given that n &le; 2p. So either p = n, or p = 2, n = 4. The latter does not work, so we have shown that n = p. Evidently n = p = 2 and n = p = 3 work. Assume now that p &gt; 3. We show that there are no solutions of this type.
+
+<p>
+Expand (p - 1)<sup>p</sup> + 1 by the binomial theorem, to get (since (-1)<sup>p</sup> = -1): 1 + -1 + p<sup>2</sup> - 1/2 p(p - 1)p<sup>2</sup> + p(p - 1)(p - 2)/6 p<sup>3</sup> - ...
+
+<br>The terms of the form (bin coeff) p<sup>i</sup> with i &gt;= 3 are obviously divisible by p<sup>3</sup>, since the binomial coefficients are all integral. Hence the sum is p<sup>2</sup> + a multiple of p<sup>3</sup>. So the sum is not divisible by p<sup>3</sup>. But for p &gt; 3, p<sup>p-1</sup> is divisible by p<sup>3</sup>, so it cannot divide (p - 1)<sup>p</sup> + 1, and there are no more solutions.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo99.html">40th IMO 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Sep 1999
+
+<br>Last corrected/updated 19 Aug 03
+</BODY>
+
+
+
+</HTML>
+

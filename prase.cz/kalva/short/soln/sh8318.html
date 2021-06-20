@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1983/18 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>24th IMO 1983 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 18</b><br>
+<p>
+Let F<sub>1</sub> = 1, F<sub>2</sub> = 1, F<sub>n+2</sub> = F<sub>n+1</sub> + F<sub>n</sub> be the Fibonacci sequence. Let p(x) be a polynomial of degree 990 such that p(k) = F<sub>k</sub> for k = 992, 993, ... , 1982. Show that p(1983) = F<sub>1983</sub> - 1.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<i>Solution by Alexandre Thi&eacute;ry</i>
+<p>
+We show first that mC0 F<sub>n</sub> + mC1 F<sub>n+1</sub> + mC2 F<sub>n+2</sub> + ... + mCm F<sub>n+m</sub> = F<sub>n+2m</sub>, where aCb is the binomial coefficient. This is a simple induction on m. For m = 1 it is immediate. Suppose it is true for m. Then &sum;<sub>0</sub><sup>m+1</sup> m+1Ci F<sub>n+i</sub> = F<sub>n</sub> + &sum;<sub>1</sub><sup>m</sup> (mCi + mCi-1)F<sub>n+i</sub> + F<sub>n+m+1</sub> = &sum; mCi F<sub>n+i</sub> + &sum; mCi F<sub>n+i+1</sub> = &sum; mCi F<sub>n+2+i</sub> = F<sub>n+2+2m</sub> = F<sub>n+2(m+1)</sub>, so it is true for m+1.
+<p>
+Now we claim that p(x) = F<sub>992</sub> + F<sub>991</sub> (x-992) + (1/2!) F<sub>990</sub> (x-992)(x-993) + (1/3!) F<sub>989</sub> (x-992)(x-993)(x-994) + ... + (1/990!) F<sub>2</sub> (x-992)(x-993)...(x-1981). For we have p(992+n) = F<sub>992</sub> + nC1 F<sub>991</sub> + nC2 F<sub>990</sub> + ... + nCn F<sub>992-n</sub> = F<sub>992+n</sub> for n = 0, 1, ... , 990.
+<p>
+If we add the term 1/991! F<sub>1</sub> (x-992)(x-993)...(x-1982), then we keep the same values at x = 992, 993, ... , 1982 and we get F<sub>1983</sub> at x = 1983. Hence p(1983) = F<sub>1983</sub> - the value of the extra term at 1983 = F<sub>1983</sub> - 1.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh83.html">24th IMO shortlist 1983</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+24 Nov 2003
+<br>Last corrected/updated 24 Nov 03
+</BODY>
+
+</HTML>
+

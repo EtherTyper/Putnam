@@ -1,0 +1,82 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 86/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>47th Putnam 1986</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Find cot<sup>-1</sup>(1) + cot<sup>-1</sup>(3) + ... + cot<sup>-1</sup>(n<sup>2</sup>+n+1) + ... , where the cot<sup>-1</sup>(m) is taken to be the value in the range (0, &pi;/2].
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: &pi;/2.
+
+<p>
+
+<i>Moderately easy.</i>
+
+<p>
+
+The problem is trivial once you see that cot<sup>-1</sup>(n<sup>2</sup> + n + 1) = cot<sup>-1</sup>n - cot<sup>-1</sup>(n+1). [Because then the sum telescopes to cot<sup>-1</sup>0 = &pi;/2.]
+
+<p>
+
+But how do you get that insight? We know that Putnam problems are broadly in order of increasing difficulty and that the 3rd problem, whilst not trivial, is usually fairly easy, so we expect this the solution to be fairly short and straightforward. The simplest thing is to try to evaluate cot<sup>-1</sup>m explicitly. But whilst cot<sup>-1</sup>1 = &pi;/4, but there do not look to be any simple expressions for m &gt; 1. 
+
+<p>
+The next simplest thing is likely to be something involving some cot<sup>-1</sup>a &plusmn; cot<sup>-1</sup>b formula. We probably do not know any such formulae, but we do know cot(A &plusmn; B), or can easily work it out from the formulae for sin(A + B) and cos(A + B): cot(A + B) = (cot A cot B - 1)/(cot A + cot B) and cot(A - B) = (cot A cot B + 1)/(cot B - cot A). To turn that into something involving cot<sup>-1</sup>, we need to put A = cot<sup>-1</sup>a, B = cot<sup>-1</sup>b, giving cot<sup>-1</sup>a + cot<sup>-1</sup>b = cot<sup>-1</sup>( (ab - 1)/(a + b) ), and cot<sup>-1</sup>a - cot<sup>-1</sup>b = cot<sup>-1</sup>( (ab + 1)/(b - a) ) &nbsp; (*). 
+
+<p>
+That may not be enough of a clue. Putting a = n<sup>2</sup> + n + 1, b = (n+1)<sup>2</sup> + (n+1) + 1, for example, just gives a mess. But we might think of telescoping, or just of using the formula the other way around to get cot<sup>-1</sup>(n<sup>2</sup> + n + 1) as a sum or difference of two cot<sup>-1</sup>. With a little playing around that should lead to using the difference with a = n, b = n+1 in (*).
+
+<p>
+An alternative approach is to notice that for large m, cot<sup>-1</sup>m is about 1/m. But 1/(n<sup>2</sup> + n + 1) is about 1/(n<sup>2</sup> + n) = 1/n - 1/(n+1) and hence about cot<sup>-1</sup>n - cot<sup>-1</sup>(n+1). That might trigger the insight.
+
+<p>
+Alternatively, we might speculate about why n<sup>2</sup> + n + 1 had been chosen. If we noticed that n<sup>2</sup> + n + 1 = n(n + 1) + 1, we might think about the relation to the cot(A + B) formulae (remembering perhaps the cot A cot B + 1). That could give us the solution.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn86.html">47th Putnam 1986</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 74/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>35th Putnam 1974</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+Let S be a set with 1000 elements. Find a, b, c, the number of subsets R of S such that |R| = 0, 1, 2 (mod 3) respectively. Find a, b, c if |S| = 1001.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: [2<sup>1000</sup>/3], [2<sup>1000</sup>/3], [2<sup>1000</sup>/3] + 1; [2<sup>1001</sup>/3] + 1, [2<sup>1001</sup>/3], [2<sup>1001</sup>/3] + 1.
+
+<p>
+
+Let f<sub>0</sub>(n), f<sub>1</sub>(n), f<sub>2</sub>(n) be the number of subsets of a set with n elements whose size is = 0, 1, 2 (mod 3) respectively.
+
+<p>
+
+Let S be a set with n elements and X another element not in S, so that S' = S &cup; {X} has n+1 elements. Then the subsets of S' are just the subsets of S and the subsets of S with X adjoined. So f<sub>0</sub>(n+1) = f<sub>0</sub>(n) + f<sub>2</sub>(n). Similarly, f<sub>1</sub>(n+1) = f<sub>1</sub>(n) + f<sub>0</sub>(n) and f<sub>2</sub>(n+1) = f<sub>2</sub>(n) + f<sub>1</sub>(n).
+
+<p>
+
+These recurrence relations and the obvious initial values f<sub>0</sub>(1) = f<sub>1</sub>(1) = 1, f<sub>2</sub>(1) = 0 are sufficient to determine f<sub>0</sub>, f<sub>1</sub> and f<sub>2</sub>. By looking at low values of n we quickly conjecture that f<sub>i</sub>(n) = [2<sup>n</sup>/3] for n = 2i+2, 2i+3, 2i+4 (mod 6) and [2<sup>n</sup>/3] + 1 for n = 2i-1, 2i, 2i+1 (mod 6). Proving that is an easy (but slightly monotonous) induction. The required answer then follows at once.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn74.html">35th Putnam 1974</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+18 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

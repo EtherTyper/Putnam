@@ -1,0 +1,38 @@
+<HTML>
+<HEAD>
+<TITLE>32nd IMO shortlist 1991/30 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>32nd IMO 1991 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 30</b><br>
+<p>
+Two people A and B and an umpire U play the following game. A chooses an arbitrary positive integer m, and B chooses an arbitrary positive integer n. Each gives his integer to U but not to the other player. U then writes two integers on a blackboard, one of which is m + n. U asks A if he knows n. If he does not, then U asks B if he knows m. If he does not, then U asks A if he knows n, and so on. Show that one player will be able to deduce the other's number after a finite number of questions.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+We claim that: at question 2k-1, A knows the answer if T &lt;= S - n/k; and at question 2k, B knows the answer if T &ge; S + n/k. We prove this by induction.
+<p>
+Take question 1. If T &le; S - n = m, then A argues that if the true total is T, then n &le; 0, which is impossible. So the true total must be S and A knows the answer.
+<p>
+Now take question 2. If T &le; S + n, then B argues that if the true total is T, then at question 1, A would have been faced with m' = T - n, n' = n, S' = T and T' = S. Also T &ge; S + n translates to S' &ge; T' + n' or T' &le; S' - n', so A would have known the answer. But he did not, so the true total must be S and B knows the answer. Thus the result is true for k = 1. Now suppose it is true for k.
+<p>
+So suppose we reach question 2k+1 and T &le; S - n/(k+1). A argues that if the true total is T, then at the previous question B would have been faced with m' = m, n' = T - m, S' = T, T' = S. Also n = S - m = S - T + (T - m) = T' - S' + n', so T &le; S - n/(k+1) translates into S' &le; T' - (T' - S' + n')/(k+1) or (k+1) S' &le; k T' + S' - n' or T' &ge; S' + n'/k. So (by induction) B would have known the answer. But he did not, so the true total must be S and A knows the answer.
+<p>
+Similarly, suppose we reach question 2k+2 and T &ge; S + n/(k+1). B argues that if the true total is T, then at the previous question B would have been faced with m' = T - n, n' = n, S' = T, T' = S. Also n = n' = S' - m', so T &ge; S + n/(k+1) translates into S' &ge; T' + n'/(k+1) or T' &lt;= S' - n'/(k+1). So (by induction) A would have known the answer. But he did not, so the true total must be S and B knows the answer. Thus the result is true for k+1 and hence for all k.
+<p>
+Now if T = S, then A knows the answer on the first question. If T &lt; S, then we must have T &lt;= S - n/k for some positive integer k, and so A will know the answer after a finite number of questions. Similarly, if T &gt; S, then we must have T &ge; S + n/k for some positive integer k, and so B will know the answer after a finite number of questions.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh91.html">32nd IMO shortlist 1991</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+21 Dec 2002
+</BODY>
+
+</HTML>
+

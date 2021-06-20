@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1983/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>44th Putnam 1983</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Let f(n) be the number of ways of representing n as a sum of powers of 2 with no power being used more than 3 times. For example, f(7) = 4 (the representations are 4 + 2 + 1, 4 + 1 + 1 + 1, 2 + 2 + 2 + 1, 2 + 2 + 1 + 1 + 1). Can we find a real polynomial p(x) such that f(n) = [p(n)] ?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: f(n) = [(n + 2)/2].
+
+<p>
+
+We prove this relation by induction. It is obviously true for n = 1. Any representation of 2m can include at most two 1s (because a representation with three 1s is necessarily odd). So from any representation of 2m we can derive a representation of 2m+1 by adding a 1. Similarly, any representation of 2m+1 must include at least one 1 (since it is odd), so we can derive a representation of 2m by removing a 1. Hence f(2m) = f(2m+1). So if the relation is true for 2m then it is true for 2m+1.
+
+<p>
+
+Similarly, the representations of 2m with no 1s correspond to the representations of m (just double every component) and the representations of 2m with two 1s correspond to the representations of m - 1 (double every component and add two 1s). So if the relation is true for n &lt; 2m, then f(2m) = [(m+2)/2] + [(m+1)/2]. Just one of m+2 and m+1 is odd, so this is (m+2)/2 + (m+1)/2 - 1/2 = m+1 = [(n+2)/2], and the relation holds for n.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn83.html">44th Putnam 1983</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

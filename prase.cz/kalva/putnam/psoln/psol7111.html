@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1971/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>32nd Putnam 1971</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+A <i>hypocycloid</i> is the path traced out by a point on the circumference of a circle rolling around the inside circumference of a larger fixed circle. Show that the plots in the (x, y) plane of the solutions ( x(t), y(t) ) of the differential equations x'' + y' + 6x = 0, y'' - x' + 6y = 0 with initial conditions x'(0) = y'(0) = 0 are hypocycloids. Find the possible radii of the circles.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: if we take the radius of the rolling circle to be R, then the radius of the fixed circle is 5/2 R or 5/3 R.
+
+<p>
+
+Take x, y coordinates and let the fixed circle have centre at the origin O and radius cR (with c &gt; 1). Take the rolling circle to have centre C, radius R and to be initially touching the fixed circle at x = cR, y = 0. Take this point to be the point P on the rolling circle whose motion we track. After time t, let OC make an angle &theta; with the x-axis. Then the rolling circle will have rolled through an angle c&theta;. We assume that the motion is uniform so that &theta; = bt.
+
+<p>
+
+At time t, the coordinates of C will be x = aR cos bt, y = aR sin bt, where a = c - 1. CP makes an angle c&theta; - &theta; = a&theta; with the x-axis (in the opposite sense to &theta;), so P has coordinates: x = aR cos bt + R cos abt, y = aR sin bt - R sin abt (*).
+
+<p>
+
+However, we could also take the y-axis in the opposite direction, in which case the equations would become: x = aR cos bt + R cos abt, y = -aR sin bt + R sin abt (**).
+
+<p>
+
+Turning to the differential equations given, take the first + i times the second and put z = x + i y. Then we get: z'' - i z + 6z = 0. This has general solution z = A e<sup>3it</sup> + B e<sup>-2it</sup>, or x = A cos 3t + B cos 2t, y = A sin 3t - B sin 2t. But we are told that x'(0) = y'(0) = 0, so 3A = 2B. Hence x = 2/3 B cos 3t + B cos(2/3 3t), y = 2/3 B sin 3t - B sin(2/3 3t). Comparing with (*) we see that it represents a hypocycloid with c = 5/3.
+
+<p>
+
+Alternatively, we can cast the solution into the form (**) by writing it as: x = 3/2 A cos 2t + A cos(3/2 2t), y = -3/2 A sin 2t + A sin(3/2 2t). Comparing with (**) we see that this represents a hypocycloid with c = 3/2 + 1 = 5/2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn71.html">32nd Putnam 1971</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Feb 2001
+
+</BODY>
+
+
+
+</HTML>
+

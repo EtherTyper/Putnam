@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 91/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>52nd Putnam 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Can we find N such that all m x n rectangles with m, n &gt; N can be tiled with 4 x 6 and 5 x 7 rectangles?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes.
+
+<p>Moderately easy.
+
+<p>If a and b are relatively prime then we can express any integer N &gt; ab as N = ra + sb with r and s positive integers. For a proof, take a &gt; b, and observe that N, N - b, N - 2b, N - (a - 1)b are all positive and incongruent mod a, so they must constitute a complete set of residues mod a. In particular, we can find one which is congruent to zero mod a.
+
+<p>We can tile 35 x 5 and 35 x 7 using just 5 x 7 rectangles. But 5 and 7 are relatively prime, so we can use 35 x 5 and 35 x 7 rectangles to tile any 35 x n rectangle for n &gt; 35. Similarly, we can tile 24 x 4 and 24 x 6 using just 4 x 6 rectangles. 4 and 6 have greatest common divisor 2, so we can use 24 x 4 and 24 x 6 rectangles to tile any 24 x 2n rectangle for n &gt; 24. But 24 and 35 are relatively prime so for any 2n &gt; 48, and m &gt; 840 we can use 35 x 2n and 24 x 2n rectangles to tile an m x 2n rectangle. Finally, given any m x (2n+1) rectangle with 2n+1 &gt; 83 and m &gt; 840, we can divide it into an m x 35 rectangle and an m x 2n rectangle, each of which can be tiled. So any m x n rectangle can be tiled provided m, n &gt; 840.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn91.html">52nd Putnam 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+24 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

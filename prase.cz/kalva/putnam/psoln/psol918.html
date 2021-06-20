@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 91/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>52nd Putnam 1991</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+R is the real line. f, g: R &rarr; R are non-constant, differentiable functions satisfying: (1) f(x + y) = f(x)f(y) - g(x)g(y) for all x, y; (2) g(x + y) = f(x)g(y) + g(x)f(y) for all x, y; and (3) f '(0) = 0. Prove that f(x)<sup>2</sup> + g(x)<sup>2</sup> = 1 for all x.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Moderately hard.
+
+<p>
+
+Let f(0) = A, g(0) = B. Setting x = y = 0 in (1) and (2) gives: A = A<sup>2</sup> - B<sup>2</sup>, B = 2AB. The latter implies that B = 0 or A = 1/2. But the former shows that A &ne; 1/2 (since B<sup>2</sup> cannot be negative). Hence B = 0, and hence A = 0 or 1.
+
+<p>
+Putting y = 0 in (2) gives g(x) = Ag(x). So A &ne; 0 (since g is not constant). Hence A = 1.
+
+<p>
+We now use the differentiability of f and g. Let g'(0) = C. Then f(&delta;x) = 1 + O(&delta;x<sup>2</sup>), g(&delta;x) = C&delta;x + O(&delta;x<sup>2</sup>). Hence, using (1), f(x + &delta;x)  = f(x) f(x + &delta;x) - g(x) g(&delta;x) = f(x) (1 + O(&delta;x<sup>2</sup>)) - g(x) (C &delta;x + O(&delta;x<sup>2</sup>) ). So f '(x) = - C g(x). Similarly, from (2), we get g'(x) = C f(x). So the derivative of f(x)<sup>2</sup> + g(x)<sup>2</sup> is 2f(x)f '(x) + 2g(x)g'(x) = -2Cf(x)g(x) + 2Cf(x)g(x) = 0 for all x, and hence f(x)<sup>2</sup> + g(x)<sup>2</sup> = f(0)<sup>2</sup> + g(0)<sup>2</sup> = 1 for all x.
+
+<p>
+
+<i>Comment. The relations given are modeled on those for cos and sin. The proof above shows that they are essentially the only solutions. [Because f '' = -C<sup>2</sup>f, so we can integrate and apply the values of f and f ' at 0.]</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn91.html">52nd Putnam 1991</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+21 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

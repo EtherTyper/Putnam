@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 91/2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>3rd APMO 1991</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 2</b><br>
+<p>
+There are 997 points in the plane. Show that they have at least 1991 distinct midpoints. Is it possible to have exactly 1991 midpoints?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: yes. Take the 997 points collinear at coordinates x = 1, 3, ... , 1993. The midpoints are 2, 3, 4, ... , 1992.
+<p>
+Take two points A and B which are the maximum distance apart. Now consider the following midpoints: M, the midpoint of AB, the midpoint of each AX for any other X in the set (not A or B), and the midpoint of each BX. We claim that all these are distinct. Suppose X and Y are two other points (apart from A and B). Clearly the midpoints of AX and AY must be distinct (otherwise X and Y would coincide). Similarly the midpoints of BX and BY must be distinct. Equally, the midpoint of AX cannot be M (or X would coincide with B), nor can the midpoint of BX be M. Suppose, finally, that N is the midpoint of AX and BY. Then AYXB is a parallelogram and either AX or BY must exceed AB, contradicting the maximality of AB. So we have found 1991 distinct midpoints. The example above shows that there can be exactly 1991 midpoints.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo91.html">3rd APMO 1991</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

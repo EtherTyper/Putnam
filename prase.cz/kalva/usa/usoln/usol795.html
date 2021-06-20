@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 79/5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>8th USAMO 1979</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 5</b><br>
+
+<p>
+
+X has n members. Given n+1 subsets of X, each with 3 members, show that we can always find two which have just one member in common.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We use induction on n. The result is true for n &lt; 5, because there are at most n distinct subsets of 3 elements. Suppose it is true for all sets X with &lt; n members. Let X have n members and consider a collection of n+1 subsets with 3 members. If every member of X was in at most 3 of the subsets, there would be at most n subsets, so some member A is in at least 4 of the subsets. Suppose one of them is {A, B, C}. There are at least three others, so B (say) must be in at least two of the others. Suppose they are {A, B, D} and {A, B, E}. Now any other subset containing A must contain B, because otherwise it would have to contain C, D and E, which is impossible. Similarly, any other subset containing B must contain A. So suppose there are m subsets containing A and B. If {A, B, K} is such a subset, then K cannot belong to any other subsets (because if it also belonged to S, then S and {A, B, K} would have just one member in common). So consider the n-(m+2) people other than those who belong to sets of the type {A, B, K}. There can be at most n-m-2 subsets involving them. Hence at most n-2 in total. So the result is true for n.
+
+<p>
+
+Note that we do worse than n subsets if we allow any member to be in 4 subsets. But at least for n = 4m we can achieve n subsets. Just take m groups of 4 and take all subsets with 3 members of each group.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa79.html">8th USAMO 1979</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+20 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

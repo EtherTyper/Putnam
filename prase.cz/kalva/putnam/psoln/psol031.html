@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 03/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>64th Putnam 2003</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b>
+
+<p>
+
+Given n, how many ways can we write n as a sum of one or more positive integers a<sub>1</sub> &le; a<sub>2</sub> &le; ... &le; a<sub>k</sub> with a<sub>k</sub> - a<sub>1</sub> = 0 or 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+n
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+There is one way for each 1 &le; k &le; n. Induction on n. Obvious for n = 1. Write the solution with a &gt; 0 Ns and b &ge; 0 (N+1)s as (a,b,N). Define a map f from the solutions for n to the solutions for n+1 by f(a,b,N) = (a-1,b+1,N) for a &gt; 1 or (b+1,0,N+1) for a = 1. Define a map g from the solutions for n+1 excluding (n,0,1) to the solutions for n by g(a,b,N) = (a+1,b-1,N) for b &ge; 1 and (1,a-1,N-1) for b = 1. Evidently f and g are inverses, so each is a bijection. Hence there is one more solution for n+1 than for n.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn03.html">64th Putnam 2003</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+8 Dec 2003
+
+<br>Last corrected/updated 8 Dec 03
+
+</BODY>
+
+
+
+</HTML>
+

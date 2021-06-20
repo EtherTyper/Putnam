@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE>33rd IMO shortlist 1992/17 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>33rd IMO 1992 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 17</b>
+<p>
+Let b(n) be the number of 1s in the binary representation of a positive integer n. Show that b(n<sup>2</sup>) &le; b(n) (b(n) + 1)/2 with equality for infinitely many positive integers n. Show that there is a sequence of positive integers a<sub>1</sub> &lt; a<sub>2</sub> &lt; a<sub>3</sub> &lt; ... such that b(a<sub>n</sub><sup>2</sup>)/b(a<sub>n</sub>) tends to zero.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Consider N' = 2<sup>n</sup> + N in binary. If N has a 0 in the 2<sup>n</sup> position, then this changes to a 1 in N' and so b(N') = b(N) + 1. If not, then N has  0 followed by r 1s, the last in the 2<sup>n</sup> position. Adding 2<sup>n</sup> changes the 0 to 1 and the r 1s to 0s, so b(N') &lt; b(N) + 1. Thus in any case b(N') &lt; b(N) + 1. Now we can get M + N by adding b(M) powers of 2 to N, so b(M+N) &le; b(M) + b(N).
+<p>
+We now show that b(n<sup>2</sup>) &le; b(n) (b(n) + 1)/2 by induction on n. For n = 1, it is obvious. Suppose it is true for &lt; N. If N is even, then b(N<sup>2</sup>) = b(N<sup>2</sup>/4) &le; &frac12; b(N/2) (b(N/2) + 1) = &frac12; b(N) (b(N) + 1). So suppose N is odd = 2n+1. Then b(N<sup>2</sup>) = b(4n<sup>2</sup>+4n+1) = b(n<sup>2</sup>+n) + 1 &le; b(n<sup>2</sup>) + b(n) + 1 &le; &frac12; b(n) (b(n) + 1) + b(n) + 1 = &frac12; (b(n) + 1)(b(n) + 2) = &frac12; b(N) (b(N) + 1). So the result is true for N.
+<p>
+Put N = 2<sup>2<sup>1</sup></sup> + 2<sup>2<sup>2</sup></sup> + 2<sup>2<sup>3</sup></sup> + ... + 2<sup>2<sup>m</sup></sup>. If we consider N<sup>2</sup>, there are m terms 2<sup>2<sup>i</sup></sup>2<sup>2<sup>i</sup></sup> = 2<sup>2<sup>i+1</sup></sup> and &frac12;m(m-1) terms 2 2<sup>2<sup>i</sup></sup> 2<sup>2<sup>j</sup></sup> = 2<sup>2<sup>i</sup>+2<sup>j</sup>+1</sup>  with i &ne; j. Evidently these are all distinct, so b(N) = m and b(N<sup>2</sup>) = &frac12;m(m+1) = &frac12; b(N) (b(N)+1).
+<p>
+Put N = 2<sup>2<sup>m</sup>-1</sup> - 2<sup>2<sup>m</sup>-2<sup>1</sup></sup> - 2<sup>2<sup>m</sup>-2<sup>2</sup></sup> - 2<sup>2<sup>m</sup>-2<sup>3</sup></sup> - ... - 2<sup>2<sup>m</sup>-2<sup>m-1</sup></sup> - 1. Note that 2<sup>2<sup>m</sup>-1</sup> - 1 has 2<sup>m</sup> 1s (and no 0s) in binary. We are subtracting m-1 smaller distinct powers of 2, so b(N) = 2<sup>m</sup> - m + 1. Now consider N<sup>2</sup>. We get m+1 positive powers of 2 from squaring each term. We get m negative terms: 2 x first term x other term. But these cancel with m of the first set to leave 1. We then get &frac12;m(m-1) positive terms, all different, from 2 x other term x different other term. Hence b(N<sup>2</sup>) = &frac12;m(m-1) + 1. Hence b(N<sup>2</sup>)/b(N) &rarr; 0.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh92.html">33rd IMO shortlist 1992</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+25 Nov 2003
+<br>Last updated/corrected 25 Nov 2003
+</BODY>
+
+</HTML>
+

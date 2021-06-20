@@ -1,0 +1,32 @@
+<HTML>
+
+<HEAD>
+<TITLE>43rd IMO shortlist 2002/N5 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>43rd IMO 2002 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N5</b><br>
+<p>
+m, n are integers &gt; 1. a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>n</sub> are integers, and none is a multiple of m<sup>n-1</sup>. Show that there are integers e<sub>i</sub>, not all zero, with |e<sub>i</sub>| &lt; m, such that e<sub>1</sub>a<sub>1</sub> + e<sub>2</sub>a<sub>2</sub> + ... + e<sub>n</sub>a<sub>n</sub> is a multiple of m<sup>n</sup>.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+Put N = m<sup>n</sup>. Let X be the set of all (b<sub>1</sub>, b<sub>2</sub>, ... , b<sub>n</sub>), where b<sub>i</sub> are non-negative integers &lt; m. Evidently X has N elements. Define f(b<sub>1</sub>, b<sub>2</sub>, ... , b<sub>n</sub>) = the residue of a<sub>1</sub>b<sub>1</sub> + a<sub>2</sub>b<sub>2</sub> + ... + a<sub>n</sub>b<sub>n</sub> mod N. If any two distinct elements B = (b<sub>1</sub>, b<sub>2</sub>, ... , b<sub>n</sub>) and C = (c<sub>1</sub>, c<sub>2</sub>, ... , c<sub>n</sub>) of X have f(B) = f(C), then we are home, taking e<sub>i</sub> = b<sub>i</sub> - c<sub>i</sub>.
+<p>
+So it is sufficient to show that there must be two such elements. If not, then the set of all f(B) as B ranges over X is just {0, 1, 2, ... , N-1}. Let w be a primitive Nth root of unity. Take the sum of w<sup>f(B)</sup> over all elements B of X. It is 1 + w + w<sup>2</sup> + ... + w<sup>N-1</sup> = 0. On the other hand, it is the product of n terms (1 + w<sub>i</sub> + w<sub>i</sub><sup>2</sup> + ... + w<sub>i</sub><sup>m-1</sup>), where w<sub>i</sub> = w to the power of a<sub>i</sub>. The term can be written as (1 - w<sub>i</sub><sup>m</sup>)/(1-w<sub>i</sub>), which is non-zero because a<sub>i</sub> is not a multiple of m<sup>n-1</sup> and so ma<sup>i</sup> is not a multiple of N. So zero is a product of non-zero terms. Contradiction.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh02.html">43rd IMO shortlist 2002</a><br>
+<p>(C) John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+8 Aug 2003
+<br>Last corrected/updated 8 Aug 2003
+</BODY>
+
+</HTML>
+

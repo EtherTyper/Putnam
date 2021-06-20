@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1976/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>37th Putnam 1976</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+Let a(x, y) be the polynomial x<sup>2</sup>y + xy<sup>2</sup>, and b(x, y) the polynomial x<sup>2</sup> + xy + y<sup>2</sup>. Prove that we can find a polynomial p<sub>n</sub>(a, b) which is identically equal to (x + y)<sup>n</sup> + (-1)<sup>n</sup> (x<sup>n</sup> + y<sup>n</sup>). For example, p<sub>4</sub>(a, b) = 2b<sup>2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let us write E(n) = (x + y)<sup>n</sup> + (-1)<sup>n</sup> (x<sup>n</sup> + y<sup>n</sup>). We use induction on n. We have E(1) = 0, E(2) = 2b, E(3) = 3a. 
+
+<p>
+
+We find that (x + y)<sup>n+3</sup> = b (x + y)<sup>n+1</sup> + a (x + y)<sup>n</sup> and x<sup>n+3</sup> + y<sup>n+3</sup> = b (x<sup>n+1</sup> + y<sup>n+1</sup>) - a (x<sup>n</sup> + y<sup>n</sup>). So it follows that E(n+3) = b E(n+1) + a E(n). That completes the induction.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn76.html">37th Putnam 1976</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+23 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

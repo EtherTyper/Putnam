@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 92/3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>21st USAMO 1992</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 3</b><br>
+
+<p>
+
+A set of 11 distinct positive integers has the property that we can find a subset with sum n for any n between 1 and 1500 inclusive. What is the smallest possible value for the second largest element?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 248.
+
+<p>
+
+By taking the integers to be 1, 2, 4, 8, ... , 1024 we can generate all integers up to 2047. But by taking some integers smaller, we can do better. For example, 1, 2, 4, ... , 128, 247, 248, 750 gives all integers up to 1500. We can obviously use the integers 1, 2, 4, ... , 128 to generate all integers up to 255. Adding 248 gives all integers from 256 up to 503. Then adding 247 gives all integers from 504 to 750. So adding 750 gives all integers up to 1500. We show that we cannot do better than this.
+
+<p>
+
+Let the integers be a<sub>1</sub> &lt; a<sub>2</sub> &lt; ... &lt; a<sub>11</sub>. Put s<sub>n</sub> = a<sub>1</sub> + ... + a<sub>n</sub>. Take N such that s<sub>N-1</sub> &lt; 1500 &le; s<sub>N</sub>. Note that 1500 must be a sum of some of the integers so certainly 1500 &le; s<sub>11</sub>. Equally we obviously have a<sub>1</sub> = 1, a<sub>2</sub> = 2, so N is well-defined and we have 1 &lt; N &le; 11. Now if 1 &lt; k &le; N, we have s<sub>k-1</sub> &lt; 1500 and hence s<sub>k-1</sub> + 1 &le; 1500. So some sum of distinct a<sub>i</sub> must equal s<sub>k-1</sub> + 1 and it must involve an a<sub>i</sub> with i &gt; k-1 since s<sub>k-1</sub> &lt; s<sub>k-1</sub> + 1. Hence a<sub>k</sub> &le; s<sub>k-1</sub> + 1 for 1 &lt; k &le; N.
+
+<p>
+
+Now an easy induction gives s<sub>k</sub> &le; 2<sub>k</sub> - 1. We must have a<sub>1</sub> = 1 and hence s<sub>1</sub> = 1, so it is true for k = 1. Suppose it is true for k-1. Then a<sub>k</sub> &le; s<sub>k-1</sub> + 1 &le; 2<sup>k-1</sup>, so s<sub>k</sub> = s<sub>k-1</sub> + a<sub>k</sub> &le; 2<sup>k-1</sup> - 1 + 2<sup>k-1</sup> = 2<sup>k</sup> - 1, so it is true for k. Hence for all k &le; N. But 2<sup>10</sup> -1 = 1023 &lt; 1500, so if N &lt; 11, then s<sub>N</sub> &lt; 1500. Contradiction. Hence N = 11.  
+
+<p>
+
+We have s<sub>k</sub> = s<sub>k-1</sub> + a<sub>k</sub> &le; 2s<sub>k-1</sub> + 1. Hence s<sub>k-1</sub> &ge; (s<sub>k</sub> - 1)/2. So s<sub>11</sub> &ge; 1500 implies s<sub>10</sub> &ge; 750. But s<sub>8</sub> &le; 255, so a<sub>9</sub> + a<sub>10</sub> &ge; 495, so a<sub>10</sub> &ge; 248.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa92.html">21st USAMO 1992</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

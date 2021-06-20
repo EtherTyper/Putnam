@@ -1,0 +1,50 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 01/5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>13th APMO 2001</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 5</b>
+<p>
+What is the largest n for which we can find n + 4 points in the plane, A, B, C, D, X<sub>1</sub>, ... , X<sub>n</sub>, so that AB is not equal to CD, but for each i the two triangles ABX<sub>i</sub> and CDX<sub>i</sub> are congruent?
+<p>
+&nbsp;<p>
+<b>Answer</b>
+<p>
+4
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+<i>Many thanks to Allen Zhang for completing the proof</i>
+<p>
+Assume AB = a, CD = b with a &gt; b. If ABX and CDX are congruent, then either AX or BX = CD = b, so X lies either on the circle S<sub>A</sub> center A radius b, or on the circle S<sub>B</sub>center B radius b. Similarly, CX or DX = AB = a, so X lies either on the circle S<sub>C</sub> center C radius a, or on the circle S<sub>D</sub> center D radius a. Thus we have four pairs of circles, (S<sub>A</sub>, S<sub>C</sub>), (S<sub>A</sub>, S<sub>D</sub>), (S<sub>B</sub>, S<sub>C</sub>), (S<sub>B</sub>, S<sub>D</sub>) each with at most 2 points of intersection. X must be one of these 8 points. 
+<p>
+However, we show that if <i>two</i> points of intersection of (S<sub>A</sub>, S<sub>C</sub>) are included, then <i>no</i> points of (S<sub>B</sub>, S<sub>D</sub>) can be included. The same applies to each pair of circles, so at most 4 points X are possible. Finally, we will give an example of n = 4, showing that the maximum of 4 is achieved.
+<p>
+So suppose (S<sub>A</sub>, S<sub>C</sub>) intersect at X and Y. We must have BX = DX and BY = DY, so X and Y both lie on the perpendicular bisector of BD. In other words, XY is the perpendicular bisector of BD, so D is the reflection of B in the line XY. There is no loss of generality in taking B (and D) to be on the same side of AC as X. Let A' be the reflection of A in the line XY. Since B lies on the circle center A radius a, D must lie on the circle center A' radius A. Thus the triangles A'XC and CDA' are congruent.
+<p>
+<img src="http://atrey.karlin.mff.cuni.cz/~franta/kalva/apmo/asoln/diag015.jpg">
+<p>
+(Note that A and C can be on the same side of XY or opposite sides.) Hence D is the same height above AC as X, so DX is perpendicular to XY. Hence X is the midpoint of BD. Also &ang;A'CD = &ang;CA'X = 180<sup>o</sup> - &ang;CAX, so AX and CD are parallel. They are also equal, so ACDX is a parallelogram and hence AC = DX = BD/2. In the second configuration above, both A and C are on the same side of XY as D, so the midpoint M of AC lies on the same side of XY as D. In the first configuration, since AX = b &lt; a = CX, M lies to the right of XY.
+<p>
+Now suppose there is a solution for the configuration (S<sub>B</sub>, S<sub>D</sub>). Thus there is a point Z such that ABZ and ZDC are congruent. Then AZ = CZ, so Z lies on the perpendicular bisector of AC and hence on the same side of XY as D. But it is also a distance a from D and a distance b from B, and a &gt; b, so it must lie on the same side of XY as B. Contradiction. So there are no solutions for the configuration (S<sub>B</sub>, S<sub>D</sub>), as required. That completes the proof that n &le; 4.
+<p>
+<img src="http://atrey.karlin.mff.cuni.cz/~franta/kalva/apmo/asoln/diag015a.jpg">
+<p>
+For an example with n = 4, take a regular hexagon ACDBX<sub>3</sub>X<sub>2</sub>. Extend the side X<sub>2</sub>X<sub>3</sub> to X<sub>1</sub>X<sub>4</sub>, with X<sub>1</sub>, X<sub>2</sub>, X<sub>3</sub>, X<sub>4</sub> equally spaced in that order, so that X<sub>1</sub>AX<sub>2</sub> and X<sub>3</sub>BX<sub>4</sub> are equilateral. Then ABX<sub>1</sub> and CX<sub>1</sub>D are congruent, ABX<sub>2</sub> and DX<sub>2</sub>C are congruent, ABX<sub>3</sub> and X<sub>3</sub>CD are congruent, and ABX<sub>4</sub> and X<sub>4</sub>DC are congruent.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../apmo01.html">13th APMO 2001</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+8 February 2004
+<br>Last corrected/updated 8 Feb 04
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 85/3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>14th USAMO 1985</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 3</b><br>
+
+<p>
+
+A tetrahedron has at most one edge longer than 1. What is the maximum total length of its edges?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 5 + &radic;3.
+
+<p>
+
+Suppose AB is the edge which may be longer than 1. Then if we rotate the triangle ACD about CD until A lies in the same plane as BCD and is on the opposite side of CD to B, then we maximise AB without changing any of the other side lengths. So the maximal configuration must be planar.
+
+<p>
+
+Now suppose we regard C and D as fixed and the other points as variable. Suppose CD = 2x (&lt;= 1). Then A and B must both lie inside the circle center C radius 1 and inside the circle center D radius 1 and hence inside their intersection which is bounded by the two arcs XY (assuming they meet at X and Y). Obviously we maximise AC + AD + BC + BD by taking A at X and B at Y (or vice versa). We claim that that choice also maximises AB. Suppose that is true. Then it also maximises AC + AD + BC + BD + AB at 4 + 2(1 - x<sup>2</sup>)<sup>1/2</sup>. So we now have to vary CD to maximise 2x + 4 + 2(1 - x<sup>2</sup>)<sup>1/2</sup>. We show that x + (1 - x<sup>2</sup>)<sup>1/2</sup> is increasing for x &lt;= 1/2 and hence that the maximum is at x = 1/2. Put x = sin t. Then we have x + (1 - x<sup>2</sup>)<sup>1/2</sup> = &radic;2 sin(t + &pi;/4) which is indeed increasing for x &le; &pi;/6.
+
+<p>
+
+It remains to prove the claim. Take the circle diameter XY. Then the two arcs both lie inside this circle. [Two circles intersect in at most two points, so each arc must lie entirely inside or entirely outside the circle center O and it obviously does not lie outside. ] But AB lies inside a chord of this circle The length of the chord cannot exceed the diameter of the circle (which is XY) and hence AB &le; XY.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa85.html">14th USAMO 1985</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

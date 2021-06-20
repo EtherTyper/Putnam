@@ -1,0 +1,80 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1998/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1998</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+Consider all functions f from the set of all positive integers into itself satisfying f(t<sup>2</sup>f(s)) = s f(t)<sup>2</sup> for all s and t. Determine the least possible value of f(1998).
+
+<p>
+
+&nbsp;<p>
+<b>Answer</b>
+<p>
+120
+<p>
+
+&nbsp;<p>
+<b>Solution</b>
+
+<p>
+Let f(1) = k. Then f(kt<sup>2</sup>) = f(t)<sup>2</sup> and f(f(t)) = k<sup>2</sup>t. Also f(kt)<sup>2</sup> = 1&middot;f(kt)<sup>2</sup> = f(k<sup>3</sup>t<sup>2</sup>) = f(1<sup>2</sup>f(f(kt<sup>2</sup>))) = k<sup>2</sup>f(kt<sup>2</sup>) = k<sup>2</sup>f(t)<sup>2</sup>. Hence f(kt) = k f(t).
+
+<p>
+By an easy induction k<sup>n</sup>f(t<sup>n+1</sup>) = f(t)<sup>n+1</sup>. But this implies that k divides f(t). For suppose the highest power of a prime p dividing k is a &gt; b, the highest power of p dividing f(t). Then a &gt; b(1 + 1/n) for some integer n. But then na &gt; (n + 1)b, so k<sup>n</sup> does not divide f(t)<sup>n+1</sup>. Contradiction. <p>
+Let g(t) = f(t)/k. Then f(t<sup>2</sup>f(s)) = f(t<sup>2</sup>kg(s)) = k f(t<sup>2</sup>g(s) = k<sup>2</sup>g(t<sup>2</sup>g(s)), whilst s f(t)<sup>2</sup> = k<sup>2</sup>s f(t)<sup>2</sup>. So g(t<sup>2</sup>g(s)) = s g(t)<sup>2</sup>. Hence g is also a function satisfying the conditions which evidently has smaller values than f (for k &gt; 1). It also satisfies g(1) = 1. Since we want the smallest possible value of f(1998) we may restrict attention to functions f satisfying f(1) = 1.
+
+<p>
+Thus we have f(f(t) = t and f(t<sup>2</sup>) = f(t)<sup>2</sup>. Hence f(st)<sup>2</sup> = f(s<sup>2</sup>t<sup>2</sup>) = f(s<sup>2</sup>f(f(t<sup>2</sup>))) = f(s)<sup>2</sup>f(t<sup>2</sup>) = f(s)<sup>2</sup>f(t)<sup>2</sup>. So f(st) = f(s) f(t).
+
+<p>
+Suppose p is a prime and f(p) = m&middot;n. Then f(m)f(n) = f(mn) = f(f(p)) = p, so one of f(m), f(n) = 1. But if f(m) = 1, then m = f(f(m)) = f(1) = 1. So f(p) is prime. If f(p) = q, then f(q) = p. <p>Now we may define f arbitarily on the primes subject only to the conditions that each f(prime) is prime and that if f(p) = q, then f(q) = p. For suppose that s = p<sub>1</sub><sup>a<sub>1</sub></sup>...p<sub>r</sub><sup>a<sub>r</sub></sup> and that f(p<sub>i</sub>) = q<sub>i</sub>. If t has any additional prime factors not included in the q<sub>i</sub>, then we may add additional p's to the expression for s so that they are included (taking the additional a's to be zero). So suppose t = q<sub>1</sub><sup>b<sub>1</sub></sup>...q<sub>r</sub><sup>b<sub>r</sub></sup>.Then t<sup>2</sup>f(s) = q<sub>1</sub><sup>2b<sub>1</sub>+a<sub>1</sub></sup>
+
+...q<sub>r</sub><sup>2b<sub>r</sub>+a<sub>r</sub></sup> and hence f(t<sup>2</sup>f(s) = p<sub>1</sub><sup>2b<sub>1</sub>+a<sub>1</sub></sup>
+
+...p<sub>r</sub><sup>2b<sub>r</sub>+a<sub>r</sub></sup> = s f(t)<sup>2</sup>.
+
+<p>
+We want the minimum possible value of f(1998). Now 1998 = 2.3<sup>3</sup>.37, so we achieve the minimum value by taking f(2) = 3, f(3) = 2, f(37) = 5 (and f(37) = 5). This gives f(1998) = 3&middot;2<sup>3</sup>5 = 120.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo98.html">39th IMO 1998</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Oct 1998
+
+<br>Last corrected/updated 20 Aug 03
+</BODY>
+
+
+
+</HTML>
+

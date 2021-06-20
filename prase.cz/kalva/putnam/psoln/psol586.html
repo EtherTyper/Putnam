@@ -1,0 +1,58 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>18th Putnam 1958/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>18th Putnam 1958</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Assume that the interest rate is r, so that capital of k becomes k(1 + r)<sup>n</sup> after n years. How much do we need to invest to be able to withdraw 1 at the end of year 1, 4 at the end of year 2, 9 at the end of year 3, 16 at the end of year 4 and so on (in perpetuity)?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+To meet the withdrawal at the end of year n we need to invest n<sup>2</sup>/(1+r)<sup>n</sup>. Thus the total investment required is 1/(1+r) + 4/(1+r)<sup>2</sup> + 9/(1+r)<sup>3</sup> + 16/(1+r)<sup>4</sup> + ... . Now we know that 1 + x + x<sup>2</sup> + ... = 1/(1 - x). Differentiating, we get: x/(1 - x)<sup>2</sup> = x + 2x<sup>2</sup> + 3x<sup>3</sup> + ... . Differentiating again: x(1 + x)/(1 - x)<sup>3</sup> = 1<sup>2</sup>x + 2<sup>2</sup>x<sup>2</sup> + 3<sup>2</sup>x<sup>3</sup> + ... . Substituting x = 1/(1+r) gives (1 + r)(2 + r)/r<sup>3</sup> as the required investment.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn58.html">18th Putnam 1958</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

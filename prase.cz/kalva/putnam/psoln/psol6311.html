@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1963/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>24th Putnam 1963</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+The series &sum; a<sub>n</sub> of non-negative terms converges and a<sub>i</sub> &le; 100a<sub>n</sub> for i = n, n + 1, n + 2, ... , 2n. Show that lim<sub>n&rarr;&infin;</sub> na<sub>n</sub> = 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We need to invert the inequality given. We are given a collection of a<sub>i</sub> which are less than a fixed a<sub>n</sub>. We want to fix a<sub>n</sub> and find a collection of a<sub>j</sub> such that a<sub>n</sub> &le; 100 a<sub>j</sub>.
+
+<p>
+
+Evidently, a<sub>2n</sub> &le; 100 a<sub>2n-1</sub>, a<sub>2n</sub> &le; 100 a<sub>2n-2</sub>, a<sub>2n</sub> &le; 100 a<sub>2n-3</sub>, ... , a<sub>2n</sub> &le; 100 a<sub>n</sub>. Adding and multiplying by two, 2n a<sub>2n</sub> &le; 200 (a<sub>n</sub> + a<sub>n+1</sub> + ... + a<sub>2n-1</sub>). But &sum; a<sub>n</sub> converges, so (a<sub>n</sub> + a<sub>n+1</sub> + ... + a<sub>2n-1</sub>) &lt; &epsilon;/200 for all sufficiently large n, and hence 2n a<sub>2n</sub> &lt; &epsilon; for sufficiently large n. Similarly for (2n+1) a<sup>2n+1</sup>. So n a<sub>n</sub> tends to zero.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn63.html">24th Putnam 1963</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

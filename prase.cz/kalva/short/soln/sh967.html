@@ -1,0 +1,44 @@
+<HTML>
+<HEAD>
+<TITLE>37th IMO shortlist 1996/7 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>37th IMO 1996 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 7</b><br>
+<p>
+f is a real-valued function on the reals such that | f(x) | &lt;= 1 and f(x + 13/42) + f(x) = f(x + 1/6) + f(x + 1/7) for all x. Show that there is a real number c &gt; 0 such that f(x + c) = f(x) for all x.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+We show that f(x + 1) = f(x) for all x.
+<p>
+Note that 13/42 = 1/6 + 1/7. Using the relation for x + k/7, x + k/7 + 1/6, ... , x + k/7 + (n-1)/6, we get: 
+<p>f(x + (k+1)/7) + f(x + 1/6 + k/7) = f(x + k/7) + f(x + 1/6 + (k+1)/7)
+<br>f(x + 1/6 + (k+1)/7) + f(x + 2/6 + k/7) = f(x + 1/6 + k/7) + f(x + 2/6 + (k+1)/7)
+<br>f(x + 2/6 + (k+1)/7) + f(x + 3/6 + k/7) = f(x + 2/6 + k/7) + f(x + 3/6 + (k+1)/7)
+<br><b>...</b>
+<br>f(x + (n-1)/6 + (k+1)/7) + f(x + n/6 + k/7) = f(x + (n-1)/6 + k/7) + f(x + n/6 + (k+1)/7)
+<p>
+Adding, most of the terms cancel and we get: f(x + (k+1)/7) + f(x + n/6 + k/7) = f(x + k/7) + f(x + n/6 + (k+1)/7). Taking x, x + 1/7, x + 2/7, ... , x + (m-1)/7, we get:
+<p>f(x + 1/7) + f(x + n/6) = f(x) + f(x + n/6 + 1/7)
+<br>f(x + 2/7) + f(x + n/6 + 1/7) = f(x + 1/7) + f(x + n/6 + 2/7)
+<br>f(x + 3/7) + f(x + n/6 + 2/7) = f(x + 2/7) + f(x + n/6 + 3/7)
+<br><b>...</b>
+<br>f(x + m/7) + f(x + n/6 + (m-1)/7) = f(x + (m-1)/7) + f(x + n/6 + m/7)
+<p>
+Adding, most of the terms cancel and we get: f(x + m/7) + f(x + n/6) = f(x) + f(x + n/6 + m/7). Now putting m = 7, n = 6, we get 2 f(x+1) = f(x) + f(x+2). Hence f(x+2) - f(x+1) = f(x+1) - f(x). So if f(x+1) = f(x) + h, then f(x+2) = f(x) + 2h and by a trivial induction f(x + n) = f(x) + nh. But |f(x)| &lt;= 1 for all x, so h = 0.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh96.html">37th IMO shortlist 1996</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+20 Dec 2002
+</BODY>
+
+</HTML>
+

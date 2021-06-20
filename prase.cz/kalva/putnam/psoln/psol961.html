@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1996/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+What is the smallest &alpha; such that two squares with total area 1 can always be placed inside a rectangle area &alpha; with sides parallel to those of the rectangle and with no overlap (of their interiors)?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 1/2 (1 + &radic;2).
+
+<p><i>Easy.</i>
+
+<p>
+Let the squares, have sides x &ge; 1/&radic;2 &ge; &radic;(1 - x<sup>2</sup>). Then the smallest rectangle containing them has sides x, x + &radic;(1 - x<sup>2</sup>), and hence area f(x) = x<sup>2</sup> + x &radic;(1 - x<sup>2</sup>). Evidently &alpha; is the maximum value of f(x) in the range 1/&radic;2 &le; x &le; 1.
+
+<p>
+Evidently x<sup>2</sup> is an increasing function, and x &radic;(1 - x<sup>2</sup>) a decreasing function, so f(x) has a single maximum where f '(x) = 0. f '(x) = 2x + &radic;(1 - x<sup>2</sup>) - x<sup>2</sup>/&radic;(1 - x<sup>2</sup>), so f '(x) = 0 for 8x<sup>4</sup> - 8x<sup>2</sup> + 1 = 0, or x<sup>2</sup> = 1/2 + &radic;2/4 (we want the larger root so that x &ge; 1/&radic;2). Substituting in f(x) gives f(x) = 1/2 (1 + &radic;2).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn96.html">Putnam 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+<TITLE>30th IMO shortlist 1989/22 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>30th IMO 1989 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 22</b><br>
+<p>
+The points O, A, B, C, D in the plane are such that the six triangles OAB, OAC, OAD, OBC, OBD, OCD all have area at least 1. Show that one of the triangles must have area at least &radic;2.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<img src="diag8922.bmp">
+<p>
+Take OA = a, OB = b, OC = c, OD = d, &ang;AOB = x, &ang;BOC = y, &ang;COD = z, with the configuration as shown. Now we have:
+<br>|OAB| = ab |sin x|
+<br>|OBC| = bc |sin y|
+<br>|OCD| = cd |sin z|
+<br>|OAC| = ac |sin(x+y)|
+<br>|OAD| = ad |sin(x+y+z)|
+<br>|OBD| = bd |sin(y+z)|
+<p>
+But 2 sin(x+y+z) sin y + 2 sin x sin z = cos(x+z) - cos(x+2y+z) + cos(x-z) - cos(x+z) = cos(x-z) - cos(x+2y+z) = 2 sin(x+y) sin(y+z). So multiplying through by abcd/2 we get &plusmn; |OAB| |OCD| &plusmn; |OBC| |OAD| &plusmn; |OAC| |OBD| = 0. Two of the signs must be the same. So we get that the product of two of the areas equals the sum of two other area products and hence is at least 2. Hence one of the two areas in the product must be at least &radic;2.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh89.html">30th IMO shortlist 1989</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+28 Dec 2002
+<br>Last corrected/updated 28 Dec 02
+</BODY>
+
+</HTML>
+

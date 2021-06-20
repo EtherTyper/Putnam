@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>29th IMO shortlist 1988/12 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>29th IMO 1988 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 12</b>
+<p>
+ABC is a triangle. K, L, M are points on the sides BC, CA, AB respectively. D, E, F are points on the sides LM, MK, KL respectively. Show that (area AME)(area CKE)(area BKF)(area ALF)(area BDM)(area CLD) &le; (1/8 area ABC)<sup>6</sup>.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+<img src="diag8812.bmp">
+<p>
+area AME/area ABC = (area AME/area AMK) (area AMK/area ABK) (area ABK/area ABC) = (ME/MK) (AM/AB) (BK/BC). So, by the AM/GM inequality, we have (area AME/area ABC)<sup>1/3</sup> &le; (1/3) (ME/MK + AM/AB + BK/BC).
+<p>
+Similarly, area CKE/area ABC = (area CKE/area CKM) (area CKM/area CBM) (area CBM/area CBA) = (KE/MK) (KC/BC) (MB/AB), and hence (area CKE/area ABC)<sup>1/3</sup> &le; (1/3) (KE/MK + MB/AB + KC/BC).
+<p>
+Adding, we get (area AME)<sup>1/3</sup> + (area CKE)<sup>1/3</sup> &le; (area ABC)<sup>1/3</sup>. Similarly for the other pairs. So if we denote the areas of the 6 small triangles as A<sub>i</sub>, we have &sum; A<sub>i</sub><sup>1/3</sup> &le; 3 (area ABC)<sup>1/3</sup>. Now applying AM/GM again we get &sum; A<sub>i</sub><sup>1/3</sup> &ge; 6 (&prod; A<sub>i</sub><sup>1/3</sup>)<sup>1/6</sup>. So (area ABC)<sup>1/3</sup> &le; 2 (&prod; A<sub>i</sub><sup>1/3</sup>)<sup>1/6</sup>. Cubing gives:  (&prod; A<sub>i</sub>)<sup>1/6</sup> &lt;= (1/8) area ABC.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh88.html">29th IMO shortlist 1988</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Dec 2002
+<br>Last corrected/updated 30 Dec 02
+</BODY>
+
+</HTML>
+

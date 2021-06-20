@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 01/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>30th USAMO 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Non-negative reals x, y, z satisfy x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> + xyz = 4. Show that xyz &le; xy + yz + zx &le; xyz + 2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Assume x &ge; y &ge; z. If z &gt; 1, then x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> + xyz &gt; 1 + 1 + 1 + 1 = 4. Contradiction. So z &le; 1. Hence xy + yz + zx &ge; xy &ge; xyz.
+
+<p>
+
+Put x = u + v, y = u - v, so that u, v &ge; 0. Then the equation given becomes u<sup>2</sup>(2 + z) + (2 - z)v<sup>2</sup> + z<sup>2</sup> = 4. So we we keep z fixed and reduce v to nil, then we must increase u. But xy + yz + zx - xyz = (u<sup>2</sup> - v<sup>2</sup>)(1 - z) + 2zu, so decreasing v and increasing u has the effect of increasing xy + yz + zx - xyz. Hence xy + yz + zx - xyz takes its maximum value when x = y. But if x = y, then the equation gives x = y = &radic;(2 - z). So to establish that xy + yz + zx - xyz &le; 2 it is sufficient to show that 2 - z + 2z&radic;(2 - z) &le; 2 + z(2 - z). Evidently we have equality if z = 0. If z is non-zero, then the relation is equivalent to 2&radic;(2 - z) &le; 3 - z or (z - 1)<sup>2</sup> &ge; 0. Hence the relation is true and we have equality only for z = 0 or 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa01.html">30th USAMO 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

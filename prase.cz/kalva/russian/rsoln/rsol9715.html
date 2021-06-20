@@ -1,0 +1,73 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 97/15 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 15</b>
+
+<p>
+
+Find all solutions in positive integers to a + b = gcd(a,b)<sup>2</sup>, b + c = gcd(b,c)<sup>2</sup>, c + a = gcd(c,a)<sup>2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+(a,b,c) = (2,2,2)
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Put d = gcd(a,b,c). Then a = Ad, b = Bd, c = Cd. Put t = gcd(A,B), r = gcd(B,C), s = gcd(A,C). If r, s have a common factor, then it divides all of A, B, C, contradicting the definition of d. So r, s, t are coprime in pairs. Hence A = Rst, B = rSt, C = rsT for some R, S, T which are relatively prime in pairs. Thus a = Rstd, b = rStd, c = rsTd.
+<p>
+Now a + b = gcd(a,b)<sup>2</sup> implies A + B = t<sup>2</sup>d. Similarly, B + C = r2d, C + A = s2d. Adding, 2(A + B + C) = d(r<sup>2</sup> + s<sup>2</sup> + t<sup>2</sup>). Now if any odd prime divides d, then it must divide A + B + C and A + B, B + C and C + A and hence each of A, B, C, which is impossible. Similarly, if 4 divides d, then 2 divides A, B, C, which is impossible. Hence d = 1 or 2.
+<p>
+We can also write a + b = gcd(a,b)<sup>2</sup> etc as Rs + rS = td, St + sT = rd, Tr + Rt = sd. Suppose (without loss of generality) that r is the smallest of r, s, t. Then 2r &ge; rd = St + sT &ge; s + t &ge; 2r. So we must have equality throughout and hence d = 2, S = T = 1 and r = s = t. But r, s, t are coprime, so r = s = t = 1. Hence from Rs + rS = td, we have R = 1 also. Hence a = b = c = 2.
+<p>
+<i>Thanks to Suat Namli</i>
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus97.html">Russian 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 February 2004
+<br>Last corrected/updatd 7 Feb 04
+
+</BODY>
+
+
+
+</HTML>
+

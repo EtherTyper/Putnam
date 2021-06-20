@@ -1,0 +1,79 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1987/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+<b>1.</b>&nbsp; Let p<sub>n</sub>(k) be the number of permutations of the set {1, 2, 3, ... , n} which have exactly k fixed points. Prove &sum;<sub>0</sub><sup>n</sup> (k p<sub>n</sub>(k) ) = n!.
+
+<p>
+
+&nbsp;<p>
+
+<b>First Solution</b><br>
+
+<p>
+
+We show first that the number of permutations of n objects with no fixed points is n!(1/0! - 1/1! + 1/2! - ... + (-1)<sup>n</sup>/n!). This follows immediately from the law of inclusion and exclusion: let N<sub>i</sub> be the number which fix i, N<sub>ij</sub> the number which fix i and j, and so on. Then N<sub>0</sub>, the number with no fixed points, is n! - all N<sub>i</sub> + all N<sub>ij</sub> - ... + (-1)<sup>n</sup>N<sub>1...n</sub>. But N<sub>i</sub> = (n-1)!, N<sub>ij</sub> = (n-2)! and so on. So N<sub>0</sub> = n! ( 1 - 1/1! + ... + (-1)<sup>r</sup>(n-r)!/(r! (n-r)!) + ... + (-1)<sup>n</sup>/n!) = n! (1/0! - 1/1! + ... + (-1)<sup>n</sup>/n!).
+
+<p>
+Hence the number of permutations of n objects with exactly r fixed points = no. of ways of choosing the r fixed points x no. of perms of the remaining n - r points with no fixed points = n!/(r! (n-r)!) x (n-r)! (1/0! - 1/1! + ... + (-1)<sup>n-r</sup>/(n-r)! ). Thus we wish to prove that the sum from r = 1 to n of 1/(r-1)! (1/0! - 1/1! + ... + (-1)<sup>n-r</sup>/(n-r)! ) is 1. We use induction on n. It is true for n = 1. Suppose it is true for n. Then the sum for n+1 less the sum for n is: 1/0! (-1)<sup>n</sup>/n! + 1/1! (-1)<sup>n-1</sup>/(n-1)! + ... + 1/n! 1/0! = 1/n! (1 - 1)<sup>n</sup> = 0. Hence it is true for n + 1, and hence for all n.
+
+<p>
+
+<i>Comment</i>
+
+<p>This is a plodding solution. If you happen to know the result for no fixed points (which many people do), then it is essentially a routine induction.
+
+<p>
+
+<br><b>Second solution</b>
+
+<p>Count all pairs (x, s) where s is a permutation with x a fixed point of x. Clearly, if we fix x, then there are (n-1)! possible permutations s. So the total count is n!. But if we count the number of permutations s with exactly k fixed points, then we get the sum in the question.
+
+<p>
+
+<i>Comment</i>
+
+<p>This much more elegant solution is due to Gerhard W&ouml;ginger (email 24 Aug 99).
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo87.html">28th IMO 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Nov 1998
+
+</BODY>
+
+
+
+</HTML>
+

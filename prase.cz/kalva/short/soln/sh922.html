@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>33rd IMO shortlist 1992/2 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>33rd IMO 1992 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 2</b>
+<p>
+a and b are positive reals. Let X be the set of non-negative reals. Show that there is a unique function f:X &rarr; X such that f( f(x) ) = b(a + b)x - af(x) for all x.
+<p>
+&nbsp;<p>
+<b>Answer</b>
+<p>
+f(x) = bx
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Put u<sub>0</sub> = k, u<sub>n+1</sub> = f(u<sub>n</sub>). Then u<sub>n+2</sub> - b(a+b)u<sub>n+1</sub> + au<sub>n</sub> = 0. That is a standard linear recurrence relation, so we can immediately solve it. The associated quadratic factorises as (x - b)(x + a + b) = 0, so the general solution is u<sub>n</sub> = Ab<sup>n</sup> + B(-a-b)<sup>n</sup>. Hence u<sub>n</sub>/(a+b)<sup>n</sup> = A(b/(a+b))<sup>n</sup> + (-1)<sup>n</sup>B. But (b/(a+b))<sup>n</sup> &rarr; 0 and lhs is always non-negative. Hence B = 0. So A = k. Hence f(k) = u<sub>1</sub> = bk. It is easy to check that this does indeed satisfy the relation given.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh92.html">33rd IMO shortlist 1992</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+25 Nov 2003
+<br>Last updated/corrected 25 Nov 2003
+</BODY>
+
+</HTML>
+

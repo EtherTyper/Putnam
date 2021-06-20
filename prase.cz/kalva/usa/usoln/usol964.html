@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 96/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>25th USAMO 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+A type 1 sequence is a sequence with each term 0 or 1 which does not have 0, 1, 0 as consecutive terms. A type 2 sequence is a sequence with each term 0 or 1 which does not have 0, 0, 1, 1 or 1, 1, 0, 0 as consecutive terms. Show that there are twice as many type 2 sequences of length n+1 as type 1 sequences of length n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let S be the set of sequences length n and T the set of sequences length n+1 beginning with 0. Define f: S &rarr; T as follows. Let the m+1th term of f(s) be the same as the mth term if the mth term of s is 0 and different if the mth term of s is 1. It is clear that f is a bijection. [Define its inverse g by g(t) has 0 as its mth term iff the mth and m+1th terms of t are the same.] Also f(s) includes 0, 0, 1, 1 or 1, 1, 0, 0 iff s includes 0, 1, 0. Hence the number of type 1 sequences in S is the same as the number of type 2 sequences in T. The same result holds if we take T to be sequences which begin with 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa96.html">25th USAMO 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

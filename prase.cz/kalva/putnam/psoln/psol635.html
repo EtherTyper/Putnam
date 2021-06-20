@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1963/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>24th Putnam 1963</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+R is the reals. f <b>:</b> [0, &pi;] &rarr; R is continuous and &int;<sub>0</sub><sup>&pi;</sup> f(x) sin x dx = &int;<sub>0</sub><sup>&pi;</sup> f(x) cos x dx = 0. Show that f is zero for at least two points in (0, &pi;). Hence or otherwise, show that the centroid of any bounded convex open region of the plane is the midpoint of at least three distinct chords of its boundary.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+sin x &gt; 0 for all x in (0, &pi;), so if f did not change sign, then we could not have &int;<sub>0</sub><sup>&pi;</sup> f(x) sin x dx = 0. If there was only one sign change, at k say, then sin(x - k) would also have only one sign change and f(x) sin(x - k) would not change sign in the interval, so &int;<sub>0</sub><sup>&pi;</sup> f(x) sin(x - k) dx  = cos k &int;<sub>0</sub><sup>&pi;</sup> f(x) sin x dx - sin k &int;<sub>0</sub><sup>&pi;</sup> f(x) cos x dx would be non-zero. Contradiction. So f must have at least two sign changes and hence at least two zeros in the interval.
+
+<p>
+
+Take polar coordinates with the centroid as origin. Let the boundary be f(&theta;) for 0 &le; &theta; &le; &pi; and -g(&theta;) for 0 &gt; -&theta; &gt; -&pi;. 
+
+<p>
+
+Taking moments about the x-axis gives &int;<sub>0</sub><sup>&pi;</sup> f(&theta;)sin &theta; d&theta; = &int;<sub>0</sub><sup>&pi;</sup> g(&theta;) sin &theta; d&theta; = &int;<sub>0</sub><sup>&pi;</sup> h(&theta;) sin &theta; d&theta;, where h(&theta;) = g(&pi; - &theta;). So &int; (f(&theta;) - h(&theta;) ) sin &theta; d&theta; = 0. 
+
+<p>
+
+Similarly, taking moments about the y-axis gives &int; f(&theta;) cos &theta; d&theta; + &int; g(&theta;) cos &theta; d&theta; = 0 or &int; (f(&theta;) - h(&theta;) ) d&theta; = 0. So the result proved in the first part gives that f(&theta;) = g(&pi;-&theta;) for at least two values in (0, &pi;). In other words, the centroid is the midpoint of at least two chords. But we could take the x-axis to be one of these chords and then repeat the result to get two more, giving three in total.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn63.html">24th Putnam 1963</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1959/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>20th Putnam 1959</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+Prove that we can find a real polynomial p(y) such that p(x - 1/x) = x<sup>n</sup> - 1/x<sup>n</sup> (where n is a positive integer) iff n is odd.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Take n odd. For n = 1 the result is obvious. Now suppose the result is true for  odd n &le; 2m - 1. Expand (x - 1/x)<sup>2m+1</sup> by the binomial theorem. Since (2m+1)C0 = (2m+1)C(2m+1), (2m+1)C1 = (2m+1)C2m, (2m+1)C2 = (2m+1)C(2m-1), ... , (2m+1)Cm = (2m+1)C(m+1), we may group these pairs of terms together to get: (x - 1/x)<sup>2m+1</sup> = (x<sup>2m+1</sup> - x<sup>-(2m+1)</sup>) - (2m+1)C1 (x<sup>2m-1</sup> - x<sup>-(2m-1)</sup>) + ... + (-1)<sup>m</sup> (2m+1)Cm (x - 1/x). This gives the polynomial for n = 2m+1 in terms of the lower order polynomials.
+
+<p>
+
+Note that x - 1/x has the same value 3/2 for x = -1/2 and x = 2. But x<sup>2m</sup> - 1/x<sup>2m</sup> is negative for x = -1/2 and positive for x = 2, so we cannot express x<sup>2m</sup> - 1/x<sup>2m</sup> as a function of (x - 1/x), polynomial or otherwise.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn59.html">20th Putnam 1959</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

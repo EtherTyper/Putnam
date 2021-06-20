@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 54/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>14th Putnam 1954</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+A uniform rod length 2a is suspended in midair with one end resting against a smooth vertical wall at X and the other end attached by a string length 2b to a point on the wall above X. For what angles between the rod and the string is equilibrium possible?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: always 0; additionally, if b &gt; a &gt; b/2, cos<sup>-1</sup>((b<sup>2</sup> + 2 a<sup>2</sup>)/(3ab)).
+
+<p>
+
+<i>Straightforward.</i>
+
+<p>
+
+Let the other end of the rod be Y. Let the string be ZY (with Z on the wall) and M its midpoint. The line along which the rod's weight acts passes through the midpoint of the rod and hence also through M. So a necessary condition for equilibrium is that the normal force at X also passes through M, in other words that MX is normal to the wall.
+
+<p>By the cosine rule: MX<sup>2</sup> = b<sup>2</sup> + 4a<sup>2</sup> - 4ab cos &theta; (where &theta; = angle XYZ). Similarly, XZ<sup>2</sup> = 4b<sup>2</sup> + 4a<sup>2</sup> - 8ab cos &theta;. But MX<sup>2</sup> + XZ<sup>2</sup> = b<sup>2</sup>, so solving, cos &theta; = (b<sup>2</sup> + 2a<sup>2</sup>)/(3ab) (*). 
+
+<p>
+
+Hence this is also a sufficient condition for equilibrium, because the geometry is now fixed. So we can solve for the tension in terms of the weight (resolving vertically) and then for the normal force (resolving horizontally). Hence the three forces have vector sum zero and the rod is in equilibrium.
+
+<p>
+
+Returning to (*), we know that 0 &lt; a &lt; b. Put x = a/b, then cos &theta; = (1 + 2x<sup>2</sup>)/(3x). But it is easy to see that for (1 + 2x<sup>2</sup>)/(3x) &lt; 1, we require x &gt; 1/2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn54.html">14th Putnam 1954</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

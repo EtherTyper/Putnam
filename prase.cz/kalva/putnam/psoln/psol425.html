@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>5th Putnam 1942/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>5th Putnam 1942</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b>
+
+<p>
+
+C is a circle radius a whose center lies a distance b from the coplanar line L. C is rotated through &pi; about L to form a solid whose center of gravity lies on its surface. Find b/a.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+(&pi; + &radic;(&pi;<sup>2</sup>+2&pi;-4))/(2&pi;-4) = about 2.9028
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+The solid is half a torus. We can divide it into a large number of thin disks. Each disk has variable thickness, with thickness proportional to the distance from L. So we must integrate to find the distance of the centroid of the disk from L. Take the density to be kd, where d is the distance from L. 
+<p>
+<img src="diag425.jpg">
+<p>
+Take x to be distance along the line perpendicular to x, and &theta; to be the angle between the radius vector and the x-axis. We have x = a cos &theta;, so dx = - a sin &theta; d&theta;. The mass is &int;<sub>0</sub><sup>&pi;</sup> 2a sin &theta; (a sin &theta; d&theta;) k(b + a cos &theta;) = 2a<sup>2</sup>bk &int;<sub>0</sub><sup>&pi;</sup> sin<sup>2</sup>&theta; d&theta; + 2a<sup>3</sup>k &int;<sub>0</sub><sup>&pi;</sup> sin<sup>2</sup>&theta; cos &theta; d&theta; = a<sup>2</sup>bk&pi; + 0. So the mass times the centroid distance is &int;<sub>0</sub><sup>&pi;</sup> 2a<sup>2</sup>k sin<sup>2</sup>&theta; (a cos &theta; + b)<sup>2</sup> d&theta; = 2a<sup>4</sup>k &int;<sub>0</sub><sup>&pi;</sup> sin<sup>2</sup>&theta; cos<sup>2</sup>&theta; d&theta; + 4a<sup>3</sup>bk &int;<sub>0</sub><sup>&pi;</sup> sin<sup>2</sup>&theta; cos &theta; d&theta; + 2a<sup>2</sup>b<sup>2</sup>k &int;<sub>0</sub><sup>&pi;</sup> sin<sup>2</sup>&theta; d&theta; = &frac12;a<sup>4</sup>k &int;<sub>0</sub><sup>&pi;</sup> sin<sup>2</sup>2&theta; d&theta; + 0 + a<sup>2</sup>b<sup>2</sup>k&pi; = ka<sup>2</sup>&pi;(a<sup>2</sup>/4 + b<sup>2</sup>). So the centroid distance is b + a<sup>2</sup>/4b. Thus we can regard the mass as uniformly spread over a semicircle radius b + a<sup>2</sup>/4b.
+<p>
+We need another integration to find the distance of the mass of a semicircle radius r from its center. It is (1/&pi;r) &int;<sub>0</sub><sup>&pi;</sup> r<sup>2</sup> sin &theta; d&theta; = 2r/&pi;. Thus the cm of the half-torus is a distance (2/&pi;)(b + a<sup>2</sup>/4b) from L. We want it to be a distance b-a from L so that it lies on the surface. Thus (2/&pi;)(b + a<sup>2</sup>/4b) = b - a, so (2&pi;-4)b<sup>2</sup> - 2&pi;ab - a<sup>2</sup> = 0. Hence b/a = (&pi; + &radic;(&pi;<sup>2</sup>+2&pi;-4))/(2&pi;-4) = about 2.9028.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn42.html">5th Putnam 1942</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+19 January 2004
+<br>Last corrected/updated 19 Jan 04
+
+</BODY>
+
+
+
+</HTML>
+

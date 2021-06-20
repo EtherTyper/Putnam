@@ -1,0 +1,71 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1986/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1986</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b>
+
+<p>
+
+Find all functions f defined on the non-negative reals and taking non-negative real values such that: f(2) = 0, f(x) &ne; 0 for 0 &le; x &lt; 2, and f(xf(y)) f(y) = f(x + y) for all x, y.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+f(x+2) = f(xf(2)) f(2) = 0. So f(x) = 0 for all x &ge; 2.
+
+<p>
+f(y) f((2-y)f(y)) = f(2) = 0. So if y &lt; 2, then f((2-y) f(y)) = 0 and hence (2 - y) f(y) &ge; 2, or f(y) &ge; 2/(2 - y).
+
+<p>
+Suppose that for some y<sub>0</sub> we have f(y<sub>0</sub>) &gt; 2/(2 - y<sub>0</sub>), then we can find y<sub>1</sub> &gt; y<sub>0</sub> (and y<sub>1</sub> &lt; 2) so that f(y<sub>0</sub>) = 2/(2 - y<sub>1</sub>). Now let x<sub>1</sub> = 2 - y<sub>1</sub>. Then f(x<sub>1</sub>f(y<sub>0</sub>)) = f(2) = 0, so f(x<sub>1</sub> + y<sub>0</sub>) = 0. But x<sub>1</sub> + y<sub>0</sub> &lt; 2. Contradiction. So we must have f(x) = 2/(2 - x) for all x &lt; 2.
+
+<p>
+We have thus established that if a function f meets the conditions then it must be defined as above. It remains to prove that with this definition f does meet the conditions. Clearly f(2) = 0 and f(x) is non-zero for 0 &le; x &lt; 2. f(xf(y)) = f(2x/(2 - y)). If 2x/(2 - y) &ge; 2, then f(xf(y)) = 0. But it also follows that x + y &ge; 2, and so f(x + y) = 0 and hence f(xf(y)) f(y) = f(x + y) as required. If 2x/(2 - y) &lt; 2, then f(xf(y)) f(y) = 2/(2 - 2x/(2-y)) 2/(2 - y) = 2/(2 - x - y) = f(x + y). So the unique function satisfying the conditions is:
+
+<p>&nbsp; &nbsp; &nbsp; f(x) = 0 for x &ge; 2, and 2/(2 - x) for 0 &le; x &lt; 2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo86.html">27th IMO 1986</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+24 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

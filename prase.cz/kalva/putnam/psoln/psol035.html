@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 03/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>64th Putnam 2003</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b>
+
+<p>
+
+An <i>n-path</i> is a lattice path starting at (0,0) made up of n upsteps (x,y) &rarr; (x+1,y+1) and n downsteps (x,y) &rarr; (x-1,y-1). A <i>downramp</i> of length m is an upstep followed by m downsteps ending on the line y = 0. Find a bijection between the (n-1)-paths and the n-paths which have no downramps of even length.
+
+<p>
+
+&nbsp;<p>
+<b>Solution</b>
+
+<p>
+
+Let S be the set of n-1 paths and T the set of n-paths without even downramps. Define u: S &rarr; T as follows. If the path has no even downramps, then add an upstep followed by a downstep at the start of the path. Otherwise add an upstep at the start and a downstep after the last even downramp. The new path is obviously an n-path and has no downramps until what was the last even downramp, but is now odd. Hence all its downramps are odd and it belongs to T.
+<p>
+Define d: T &rarr; S as follows. Remove an upstep from the start and remove a downstep from the first downramp. The result is obviously in S. A little thought shows that ud and du are both identity maps. Hence u and d are both bijections.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn03.html">64th Putnam 2003</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+8 Dec 2003
+
+<br>Last corrected/updated 8 Dec 03
+
+</BODY>
+
+
+
+</HTML>
+

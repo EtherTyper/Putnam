@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 70/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>31st Putnam 1970</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+p(x, y) = a x<sup>2</sup> + b x y + c y<sup>2</sup> is a homogeneous real polynomial of degree 2 such that b<sup>2</sup> &lt; 4ac, and q(x, y) is a homogeneous real polynomial of degree 3. Show that we can find k &gt; 0 such that p(x, y) = q(x, y) has no roots in the disk x<sup>2</sup> + y<sup>2</sup> &lt; k except (0, 0).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The disk is a strong hint that one should use polar coordinates, so put x = r cos &theta;, y = r sin &theta;. Then we get r = p(cos &theta;, sin &theta;)/q(cos &theta;, sin &theta;). Now |cos &theta;| and |sin &theta;| &le; 1, so |q(cos &theta;, sin &theta;)| &le; h, where h is the sum of the absolute values of the coefficients of q. So we are home if we can establish some inequality |p(cos &theta;, sin &theta;)| &ge; h', because we can then take k = h'/h.
+
+<p>
+
+Without loss of generality a &gt; 0 and hence also c &gt; 0. Now p(cos &theta;, sin &theta;) = 1/2 (a + c)(cos<sup>2</sup>&theta; + sin<sup>2</sup>&theta;) + 1/2 (a - c)(cos<sup>2</sup>&theta; - sin<sup>2</sup>&theta;) + 1/2 b sin 2&theta; = 1/2 (a + c) + 1/2 (a - c) cos 2&theta; + 1/2 b sin 2&theta;. Put d = &radic;(b<sup>2</sup> + (a - c)<sup>2</sup>) and take &phi; so that cos &phi; = (a - c)/d, sin &phi; = b/d. Then 2p(cos &theta;, sin &theta;) = (a + c) + d (cos &phi; cos 2&theta; + sin &phi; sin 2&theta;) = (a + c) + d cos(&phi; - 2&theta;) &gt;= (a + c) - d.
+
+<p>
+
+But 4ac &gt; b<sup>2</sup>, so (a + c)<sup>2</sup> &gt; (a - c)<sup>2</sup> + b<sup>2</sup>, so (a + c) &gt; d, and we are done.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn70.html">31st Putnam 1970</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

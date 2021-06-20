@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>40th IMO shortlist 1999/N3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>40th IMO 1999 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N3</b><br>
+<p>
+Show that there exist two strictly increasing sequences a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ... and b<sub>1</sub>, b<sub>2</sub>, b<sub>3</sub>, ... such that a<sub>n</sub>(a<sub>n</sub> + 1) divides b<sub>n</sub><sup>2</sup> + 1 for each n.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+A little experimentation suggests that such pairs are relatively rare. The smallest b seems to be 57, with 25.26 dividing 57<sup>2</sup> + 1 (and a more extensive search than one would want to carry out by hand suggest there are no other b under 200).
+<p>
+Suppose d<sup>2</sup> divides c<sup>2</sup> + 1. Put b = c(d<sup>2</sup> + 1) + d<sup>3</sup>. Then b<sup>2</sup> + 1 = c<sup>2</sup>(d<sup>2</sup> + 1)<sup>2</sup> + 2cd<sup>3</sup>(d<sup>2</sup> + 1) + d<sup>6</sup> + 1. Since d<sup>6</sup> + 1 = (d<sup>2</sup> + 1)(d<sup>4</sup> - d<sup>2</sup> + 1), it is clear that b<sup>2</sup> + 1 is divisible by d<sup>2</sup> + 1. Since c<sup>2</sup> + 1 is divisible by d<sup>2</sup>, b<sup>2</sup> + 1 is also divisible by d<sup>2</sup>. So if we can find c and d, then we can take a = d<sup>2</sup> and b = c(d<sup>2</sup> + 1) + d<sup>3</sup>.
+<p>
+That is more promising. We can specialise down to c<sup>2</sup> + 1 = 2d<sup>2</sup>. We may remember that solutions to the Pell equation (and its variants) generate further solutions as simple linear combinations. So starting with (m, n) satisfying m<sup>2</sup> + 1 = 2n<sup>2</sup> we get M<sup>2</sup> + 1 = 2N<sup>2</sup> by taking M = 3m + 4n, N = 2m + 3n. So starting with the solution (7, 5) we get (41, 29), (239, 169), ... . That gives an increasing sequence (c, d) and hence an increasing sequence (a, b).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh99.html">40th IMO shortlist 1999</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

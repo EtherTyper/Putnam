@@ -1,0 +1,89 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1997/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 6</b>
+
+<p>
+
+For each positive integer n, let f(n) denote the number of ways of representing n as a sum of powers of 2 with non-negative integer exponents. Representations which differ only in the ordering of their summands are considered to be the same. For example, f(4) = 4, because 4 can be represented as 4, 2 + 2, 2 + 1 + 1 or 1 + 1 + 1 + 1. Prove that for any integer n &ge; 3, 2<sup>n<sup>2</sup>/4</sup> &lt; f(2<sup>n</sup>) &lt; 2<sup>n<sup>2</sup>/2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+The key is to derive a recurrence relation for f(n) [not for f(2<sup>n</sup>)]. If n is odd, then the sum must have a 1. In fact, there is a one-to-one correspondence between sums for n and sums for n-1. So:
+
+<p>
+&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; f(2n+1) = f(2n)
+
+<p>
+Now consider n even. The same argument shows that there is a one-to-one correspondence between sums for n-1 and sums for n which have a 1. Sums which do not have a 1 are in one-to-one correspondence with sums for n/2 (just halve each term). So:
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; f(2n) = f(2n - 1) + f(n) = f(2n - 2) + f(n).
+
+<p>The upper limit is now almost immediate. First, the recurrence relations show that f is monotonic increasing. Now apply the second relation repeatedly to f(2<sup>n+1)</sup> to get:
+
+<p>&nbsp; f(2<sup>n+1</sup>) = f(2<sup>n+1</sup> - 2<sup>n</sup>) + f(2<sup>n</sup> - 2<sup>n-1</sup> + 1) + ... + f(2<sup>n</sup> - 1) + f(2<sup>n</sup>) 
+
+= f(2<sup>n</sup>) + f(2<sup>n</sup> - 1 ) + ... + f(2<sup>n-1</sup> + 1) + f(2<sup>n</sup>) &nbsp; (*)
+
+<p>and hence f(2<sup>n+1</sup>) &ge; (2<sup>n-1</sup> + 1)f(2<sup>n</sup>) &nbsp; 
+
+<p>
+We can now establish the upper limit by induction. It is false for n = 1 and 2, but almost true for n = 2, in that: f(2<sup>2</sup>) = 2<sup>2<sup>2</sup>/2</sup>. Now if f(2<sup>n</sup>) &le; 2<sup>n<sup>2</sup>/2</sup>, then the inequality just established shows that f(2<sup>n+1</sup>) &lt; 2<sup>n</sup>2<sup>n<sup>2</sup>/2</sup> &lt; 2<sup>(n<sup>2</sup>+2n+1)/2</sup> = 2<sup>(n+1)<sup>2</sup>/2</sup>, so it is true for n + 1. Hence it is true for all n &gt; 2.
+
+<p>
+Applying the same idea to the lower limit does not work. We need something stronger. We may continue (*) inductively to obtain f(2<sup>n+1</sup>) = f(2<sup>n</sup>) + f(2<sup>n</sup> - 1) + ... + f(3) + f(2) + f(1) + 1. &nbsp; (**) &nbsp; &nbsp; We now use the following lemma:
+
+<p>
+&nbsp; f(1) + f(2) + ... + f(2r) &ge; 2r f(r)
+
+<p>
+We group the terms on the lhs into pairs and claim that f(1) + f(2r) &ge; f(2) + f(2r-1) &ge; f(3) + f(2r-2) &ge; ... &ge; f(r) + f(r+1). If k is even, then f(k) = f(k+1) and f(2r-k) = f(2r+1-k), so f(k) + f(2r+1-k) = f(k+1) + f(2r-k). If k is odd, then f(k+1) = f(k) + f((k+1)/2) and f(2r+1-k) = f(2r-k) + f((2r-k+1)/2), but f is monotone so f((k+1)/2) &le; f((2r+1-k)/2) and hence f(k) + f(2r+1-k) &ge; f(k+1) + f(2r-k), as required.
+
+<p>Applying the lemma to (**) gives f(2<sup>n+1)</sup> &gt; 2<sup>n+1</sup>f(2<sup>n-1</sup>). This is sufficient to prove the lower limit by induction. It is true for n = 1. Suppose it is true for n. Then f(2<sup>n+1</sup>) &gt; 2<sup>n+1</sup>2<sup>(n-1)<sup>2</sup>/4</sup> = 2<sup>(n<sup>2</sup>-2n+1+4n+4)/4</sup> &gt; 2<sup>(n+1)<sup>2</sup>/4</sup>, so it is true for n+1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo97.html">38th IMO 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Oct 1998
+<br>Last corrected/updated 21 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

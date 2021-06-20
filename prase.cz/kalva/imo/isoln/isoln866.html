@@ -1,0 +1,72 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1986/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1986</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+Given a finite set of points in the plane, each with integer coordinates, is it always possible to color the points red or white so that for any straight line L parallel to one of the coordinate axes the difference (in absolute value) between the numbers of white and red points on L is not greater than 1?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Answer: yes.
+
+<p>
+We prove the result by induction on the number n of points. It is clearly true for n = 1. Suppose it is true for all numbers less than n. Pick an arbitrary point P and color it red. Now take a point in the same row and color it white. Take a point in the same column as the new point and color it red. Continue until either you run out of eligible points or you pick a point in the same column as P. The process must terminate because there are only finitely many points. Suppose the last point picked is Q. Let S be the set of points picked.
+
+<p>
+If Q is in the same column as P, then it is colored white (because the "same row" points are all white, and the "same column" points are all red). Now every row and column contains an equal number of red points of S and of white points of S. By induction we can color the points excluding those in S, then the difference between the numbers of red and white points in each row and column will be unaffected by adding the points in S and so we will have a coloring for the whole set. This completes the induction for the case where Q is in the same column as P.
+
+<p>
+If it is not, then continue the path backwards from P. In other words, pick a point in the same column as P and color it white. Then pick a point in the same row as the new point and color it red and so on. Continue until either you run out of eligible points or you pick a point to pair with Q. If Q was picked as being in the same row as its predecessor, this means a point in the same column as Q; if Q was picked as being in the same column as its predecessor, this means a point in the same row as Q. Again the process must terminate. Suppose the last point picked is R. Let S be the set of all points picked.
+
+<p>
+If R pairs with Q, then we can complete the coloring by induction as before. Suppose S does not pair with Q. Then there is a line (meaning a row or column) containing Q and no uncolored points. There is also a line containing R and no uncolored points. These two lines have an excess of one red or one white. All other lines contain equal number of red and white points of S. Now color the points outside S by induction. This gives a coloring for the whole set, because no line with a color excess in S has any points outside S. So we have completed the induction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo86.html">27th IMO 1986</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Nov 1998
+
+</BODY>
+
+
+
+</HTML>
+

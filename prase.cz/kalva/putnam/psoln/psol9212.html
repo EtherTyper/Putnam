@@ -1,0 +1,82 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1992/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>53rd Putnam 1992</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+Let M be a set of real n x n matrices such that: (1) 1 &isin; M; (2) if A, B &isin; M, then just one of AB, - AB is in M; (3) if A, B &isin; M, then either AB = BA or AB = -BA; (4) if 1 &ne; A &isin; M, then there is at least one B &isin; M such that AB = - BA. Prove that M contains at most n<sup>2</sup> matrices.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+For example, we might take the set:
+
+<pre>
+
+I = (1  0)    A = (0  1)    B = (1  0)    C = (0 -1)
+
+    (0  1)        (1  0)        (0 -1)        (1  0)
+
+</pre>
+
+We find A<sup>2</sup> = B<sup>2</sup> = -C<sup>2</sup> = I, AB = -BA =C, AC = -CA = B, CB = -BC = A.
+
+<p>
+We show first that if A is in M, then A<sup>2</sup> = &plusmn; I. Take any B. Then BA = kAB where k<sup>2</sup> = 1, so BA<sup>2</sup> = k ABA = k<sup>2</sup> A<sup>2</sup>B = A<sup>2</sup>B. So A<sup>2</sup> commutes with every element of M. Obviously -A<sup>2</sup> does also. But by (2) one of A<sup>2</sup> and -A<sup>2</sup> must be in M and (4) then guarantees a non-commuting element unless A<sup>2</sup> = &plusmn; I.
+
+<p>
+If there are more than n<sup>2</sup> elements, then we can find a linear combination of elements which is zero: &sum; &lambda;<sub>A</sub>A = 0 (*). If we multiply on both sides by B we get &sum; &plusmn;&lambda;<sub>A</sub>A = 0. We could add this to (*) to get a linear combination with fewer terms provided BA = AB for at least one A in (*) and BA = -AB for at least one A in (*).
+
+<p>
+The only way to guarantee a + sign is if A = I. But we can do that by multiplying by A, where A appears in the combination. The A term then becomes an I term. Guaranteeing a - sign is then easy. There must be at least one other term (apart from I). Suppose it is A. Then choose B such that AB = - BA. 
+
+<p>
+So if there are more than n<sup>2</sup> terms we can find a linear relation which we can shorten without limit. Contradiction. So there are at most n<sup>2</sup> terms.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn92.html">53rd Putnam 1992</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,57 @@
+<HTML>
+<HEAD>
+<TITLE>31st IMO shortlist 1990/2 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>31st IMO 1990 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 2</b>
+<p>
+11 countries each have 3 representatives. Is it possible to find 1990 committees C<sub>1</sub>, C<sub>2</sub>, ... , C<sub>1990</sub> such that each committee has just one representative from each country, no two committees have the same members, and every two committees have at least one member in common except for the pairs (C<sub>1</sub>, C<sub>2</sub>), (C<sub>2</sub>, C<sub>3</sub>), (C<sub>3</sub>, C<sub>4</sub>), ... , (C<sub>1991</sub>, C<sub>1992</sub>), (C<sub>1992</sub>, C<sub>1</sub>)?
+<p>
+&nbsp;<p>
+<b>Answer</b>
+<p>
+Yes
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Consider the more general case of m countries and n committees. A committee can be represented as a sequence of m digits, where each digit is 1, 2, or 3 (so the kth place determines whether the member from country k is the 1st, 2nd or 3rd). No two sequences can be identical and if we arrange them in a circle, then adjacent sequences have no match, whereas other pairs match in at least one place.
+<p>
+A little experimentation suggests it is possible provided n is not too big relative to m. Assuming it is possible, there are two approaches to this type of problem. One must either find some explicit solution, often using mod. Or one must show how a solution for (m, n) gives rise to a solution for larger (m, n).
+<p>
+Suppose A<sub>1</sub>, A<sub>2</sub>, ... A<sub>n</sub> is a solution for (m, n) and k &lt;= m (so each A<sub>i</sub> is a sequence of m digits chosen from 1, 2, 3). Then consider:
+<br>A<sub>1</sub> 3
+<br>A<sub>2</sub> 1
+<br>A<sub>3</sub> 2
+<br>A<sub>4</sub> 1
+<br>A<sub>5</sub> 2
+<br>...
+<br>A<sub>k-2</sub> 1
+<br>A<sub>k-1</sub> 2
+<br>A<sub>k</sub> 3
+<br>A<sub>k-1</sub> 1
+<br>A<sub>k-2</sub> 2
+<br>...
+<br>A<sub>3</sub> 1
+<br>A<sub>2</sub> 2
+<p>
+For A<sub>2</sub> down to A<sub>k-1</sub> we alternate between 1 and 2 for the n+1th country to ensure that adjacent committees do not overlap (so depending on whether k is even or odd, we will end up with 2 (as shown) or 1 for A<sub>k-1</sub>. From the bottom A<sub>2</sub> up to A<sub>k-1</sub> we alternate between 2 and 1, so that each A<sub>i</sub> appears once with 1 and once with 2 (for 1 &lt; i &lt; k), thus ensuring no duplicate committees. For A<sub>1</sub> and A<sub>k</sub> we cannot use 1 or 2 for country n+1, so we use 3. Thus we derive a solution for (2k-2, n+1) from the solution for (m, n). (Finally, note the slight subtlety that this even works for m = k, even though in that case we do not have any overlap between A<sub>1</sub> and A<sub>k</sub>, because we get the overlap on country n+1.)
+<p>
+Note that 2<sup>10</sup> = 1024, but we do not quite double m each time, so starting from (3, 1) (with the trivial solution 1, 2, 3) looks tight. Indeed we get (4, 2), then (6, 3), so at best (6&middot;256, 11) which is not good enough). However, it is not hard to construct (6, 2): 11, 22, 31, 12, 21, 32. Now we get successively, (10, 3), (18, 4), (34, 5), (66, 6), (130, 7), (258, 8), (514, 9), (1026, 10), (1990, 11). 
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh90.html">31st IMO shortlist 1990</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+7 Aug 2003
+<br>Last updated/corrected 7 Aug 2003
+</BODY>
+
+</HTML>
+

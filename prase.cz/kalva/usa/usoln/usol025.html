@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 02/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>31st USAMO 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Show that we can link any two integers m, n greater than 2 by a chain of positive integers m = a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>k+1</sub> = n, so that the product of any two consecutive members of the chain is divisible by their sum. [For example, 7, 42, 21, 28, 70, 30, 6, 3 links 7 and 3.]
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We write a &harr; b if (a + b) divides ab. The starting point is that for n &gt; 1 we have n &harr; n(n - 1). As slight variants we also have 2n &harr; n(n - 2)  for n &gt; 2, and in any case where a &harr; b, then also ma &harr; mb (for m &gt; 0). That allows us to link n &gt; 2 and 2n, thus: n &harr; n(n - 1) &harr; n(n - 1)(n - 2) = n(n - 2) &harr; 2n.
+
+<p>
+
+To go much further we need some inspiration. Note that n(n - 3) + 2 = (n - 1)(n - 2). So 2(n - 1)(n - 2) &harr; n(n - 3)(n - 1)(n - 2). That is critical, for it is a general way of allowing us to reduce the largest factor. Thus for n &gt; 3, n &harr; n(n - 1) &harr; n(n - 1)(n - 2) &harr; n(n - 1)(n - 2)(n - 3) &harr; 2(n - 1)(n - 2) &harr; (n - 1)(n - 2) &harr; n - 1. But linking n and n-1 obviously allows us to link any two integers &gt; 3. That leaves 3 itself, but the question already shows how to link that to at least one integer &gt; 3, which is all we need.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa02.html">31st USAMO 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

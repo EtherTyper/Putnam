@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 78/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>39th Putnam 1978</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+Let A be the real n x n matrix (a<sub>ij</sub>) where a<sub>ij</sub> = a for i &lt; j, b (&ne; a) for i &gt; j, and c<sub>i</sub> for i = j. Show that det A = (b p(a) - a p(b) )/(b - a), where p(x) = &prod; (c<sub>i</sub> - x).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<pre>|c<sub>1</sub> a  a  ... a | = |a  a  a  ... a | + |c<sub>1</sub>-a 0  0  ... 0 |
+
+<br>|b  c<sub>2</sub> a  ... a |   |b  c<sub>2</sub> a  ... a |   |b    c<sub>2</sub> a  ... a |
+
+<br>|b  b  c<sub>3</sub> ... a |   |b  b  c<sub>3</sub> ... a |   |b    b  c<sub>3</sub> ... a |
+
+<br>| ...           |   | ...          |    | ...            |
+
+<br>|b  b  b  ... c<sub>n</sub>|   |b  b  b  ... c<sub>n</sub>|   |b    b  b  ... c<sub>n</sub>|
+
+</pre>
+
+To evaluate the first determinant on the right, we subtract the first column from each of the others. Then expanding by the top row we get  a D, where D has zeros below the main diagonal and hence is just the product of the elements on its diagonal. In other words, the first determinant is just a &prod;<sub>2</sub><sup>n</sup> (c<sub>i</sub> - b).
+
+<p>If we expand the second determinant by the top row we get (c<sub>1</sub> - a) det A', where A' is the (n-1) x (n-1) matrix formed by deleting the first row and column of A. So we can use induction. The result is trivial for n = 1. So assume it is true for n - 1. Then for n we have a &prod;<sub>2</sub><sup>n</sup> (c<sub>i</sub> - b) + b/(b - a) &prod;<sub>1</sub><sup>n</sup> (c<sub>i</sub> - a) - a/(b - a) (c<sub>1</sub> - a) &prod;<sub>2</sub><sup>n</sup> (c<sub>i</sub> - b). Adding the first and third terms we get: a (1 - (c<sub>1</sub> - a)/(b - a) ) &prod;<sub>2</sub><sup>n</sup> (c<sub>i</sub> - b) = - a/(b - a) &prod;<sub>1</sub><sup>n</sup> (c<sub>i</sub> - b). So the result is true for n.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn78.html">39th Putnam 1978</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

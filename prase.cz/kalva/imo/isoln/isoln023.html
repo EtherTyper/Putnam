@@ -1,0 +1,104 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 2002/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Find all pairs of integers m &gt; 2, n &gt; 2 such that there are infinitely many positive integers k for which (k<sup>n</sup> + k<sup>2</sup> - 1) divides (k<sup>m</sup> + k - 1).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: m = 5, n = 3.
+
+<p>
+
+Obviously m &gt; n. Take polynomials q(x), r(x) with integer coefficients and with degree r(x) &lt; n such that x<sup>m</sup> + x - 1 = q(x) (x<sup>n</sup> + x<sup>2</sup> - 1) + r(x). Then x<sup>n</sup> + x<sup>2</sup> - 1 divides r(x) for infinitely many positive integers x. But for sufficiently large x, x<sup>n</sup> + x<sup>2</sup> - 1 &gt; r(x) since r(x) has smaller degree. So r(x) must be zero. So x<sup>m</sup> + x - 1 factorises as q(x) (x<sup>n</sup> + x<sup>2</sup> - 1), where q(x) = x<sup>m-n</sup> + a<sub>m-n-1</sub>x<sup>m-n-1</sup> + ... + a<sub>0</sub>. 
+
+<p>
+
+<i>At this point I use an elegant approach provided by Jean-Pierre Ehrmann</i>
+
+<p>
+
+We have (x<sup>m</sup> + x - 1) = x<sup>m-n</sup>(x<sup>n</sup> + x<sup>2</sup> - 1) + (1 - x)(x<sup>m-n+1</sup> + x<sup>m-n</sup> - 1), so (x<sup>n</sup> + x<sup>2</sup> - 1) must divide (x<sup>m-n+1</sup> + x<sup>m-n</sup> - 1). So, in particular, m &ge; 2n-1. Also (x<sup>n</sup> + x<sup>2</sup> - 1) must divide (x<sup>m-n+1</sup> + x<sup>m-n</sup> - 1) - x<sup>m-2n+1</sup>(x<sup>n</sup> + x<sup>2</sup> - 1) = x<sup>m-n</sup> - x<sup>m-2n+3</sup> + x<sup>m-2n+1</sup> - 1 (*). 
+
+<p>
+
+<i>At this point there are several ways to go. The neatest is Bill Dubuque's:</i>
+
+<p>
+
+(*) can be written as x<sup>m-2n+3</sup>(x<sup>n-3</sup> - 1) + (x<sup>m-(2n-1)</sup> - 1) which is &lt; 0 for all x in (0, 1) unless n - 3 = 0 and m - (2n - 1) = 0. So unless n = 3, m = 5, it is has no roots in (0, 1). But x<sup>n</sup> + x<sup>2</sup> - 1 (which divides it) has at least one becaause it is -1 at x = 0 and +1 at x = 1. So we must have n = 3, m = 5. It is easy to check that in this case we have an identity.
+
+<p>
+
+<i>Two alternatives follow. Jean-Pierre Ehrmann continued:</i>
+
+<p>
+
+If m = 2n-1, (*) is x<sup>n-1</sup> - x<sup>2</sup>. If n = 3, this is 0 and indeed we find m = 5, n = 3 gives an identity. If n &gt; 3, then it is x<sup>2</sup>(x<sup>n-3</sup> - 1). But this has no roots in the interval (0, 1), whereas x<sup>n</sup> + x<sup>2</sup> - 1 has at least one (because it is -1 at x = 0 and +1 at x = 1), so x<sup>n</sup> + x<sup>2</sup> - 1 cannot be a factor. 
+
+<p>
+
+If m &gt; 2n-1, then (*) has four terms and factorises as (x - 1)(x<sup>m-n-1</sup> + x<sup>m-n-2</sup> + ... + x<sup>m-2n+3</sup> + x<sup>m-2n</sup> + x<sup>m-2n-1</sup> + ... + 1). Again, this has no roots in the interval (0, 1), whereas x<sup>n</sup> + x<sup>2</sup> - 1 has at least one, so x<sup>n</sup> + x<sup>2</sup> - 1 cannot be a factor.
+
+<p>
+
+<i>Fran&ccedil;ois Lo Jacomo, having got to x<sup>n</sup> + x<sup>2</sup> - 1 divides x<sup>m-n+1</sup> + x<sup>m-n</sup> - 1 and looking at the case m -n + 1 &gt; n, continues:</i>
+
+<p>
+
+x<sup>n</sup> + x<sup>2</sup> - 1 has a root r such that 0 &lt; r &lt; 1 (because it is -1 at x = 0 and +1 at x = 1). So r<sup>n</sup> = 1 - r<sup>2</sup>. It must also be a root of x<sup>m</sup> + x - 1, so 1 - r = r<sup>m</sup> &le; r<sup>2n</sup> = (1 - r<sup>2</sup>)<sup>2</sup>. Hence (1 - r<sup>2</sup>)<sup>2</sup> - (1 - r) = (1 - r) r (1 - r - r<sup>2</sup>) &ge; 0, so 1 - r - r<sup>2</sup> &ge; 0. Hence r<sup>n</sup> = 1 - r<sup>2</sup> &ge; r, which is impossible.
+
+<p>
+
+<i>Many thanks to Carlos Gustavo Moreira for patiently explaining why the brute force approach of calculating the coefficients of q(x), starting at the low end, is full of pitfalls. After several failed attempts, I have given up on it!</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo02.html">43rd IMO 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+29 Aug 2002
+
+<br>Last corrected/updated 29 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

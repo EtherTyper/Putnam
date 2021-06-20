@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1998/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1998</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+For what m, n &gt; 0 is &sum;<sub>0</sub><sup>mn-1</sup> (-1)<sup>[i/m] + [i/n]</sup> = 0?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: The highest powers of 2 dividing m and n are different.
+
+<p><i>Moderately hard.</i>
+
+<p>
+If m and n are both odd, then there are an odd number of terms, so the sum must be non-zero. If just one of m and n is odd, then m+n is odd and hence [i/m] + [i/n] has opposite parity to [(mn-1-i)/m] + [(mn-1-i)/n] = n - [i/m] -1 + m - [i/n] - 1= (m + n) + ([i/m] + [i/n]) - 2([i/m] + [i/n] + 1). So in this case the sum is zero. 
+
+<p>
+Finally, suppose m=2m' and n=2n'. Then for any i satisfying 0 &lt;= i &lt; m'n', we have [i/m'] + [i/n'] = [2i/m] + [2i/n] = [(2i+1)/m] + [(2i+1)/n]. Moreover, [(j+m'n')/m] + [(j+m'n')m] = m'+n' + [j/m] + [j/n]. So for m'+n' both even or both odd, [j/m] + [j/n] = [i/m'] + [i/n'] for j = 2i, 2i+1, m'n'+2i, m'n'+2i+1 and hence the sum for m, n has 4 times the value for m', n'. For one of m', n' even and the other odd, m'+n' is odd and hence the two terms j = 2i, 2i+1 cancel with the two terms j = m'n'+2i, m'n'+2i+1, so the sum is zero.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn98.html">Putnam 1998</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

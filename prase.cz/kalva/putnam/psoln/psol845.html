@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1984/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>45th Putnam 1984</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+V is the pyramidal region x, y, z &gt;= 0, x + y + z &lt;= 1. Evaluate &int;<sub>V</sub> x y<sup>9</sup> z<sup>8</sup> (1 - x - y - z)<sup>4</sup> dx dy dz.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 9! 8! 4! / 25! .
+
+<p>
+
+The most straightforward approach is simply to carry out the integrations. This gets slightly messy, gives no insight into what is going on, and carries the risk of error. On the other hand, it is not <i>that</i> bad and it gets the answer reliably and quickly.
+
+<p>
+
+Integrate first over x, from 0 to 1 - y - z. The indefinite integral has two terms - x(1 - x - y - z)<sup>5</sup>y<sup>9</sup>z<sup>8</sup>/5 - (1 - x - y - z)<sup>6</sup>y<sup>9</sup>z<sup>8</sup>/30. The first gives zero and the second gives y<sup>9</sup>z<sup>8</sup>(1 - y - z)<sup>6</sup>/30.
+
+<p>
+
+Now integrate over z, from 0 to 1 - y. Ignoring the constant factor y<sup>9</sup>/30, we get 7 terms z<sup>9</sup>(1 - y - z)<sup>6</sup>/9 + ... + z<sup>15</sup> (6! 8!)/15! . The first 6 integrate to zero. The last gives that the required integral I = 6! 8! /(15! 30) &int;<sub>0</sub><sup>1</sup> y<sup>9</sup>(1 - y)<sup>15</sup> dy. The integral from 0 to 1 is 9! 15! / 25! Hence the result.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn84.html">45th Putnam 1984</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

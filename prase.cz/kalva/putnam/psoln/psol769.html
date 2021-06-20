@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1976/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>37th Putnam 1976</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Let 0 &lt; &alpha; &lt; 1/4. Define the sequence p<sub>n</sub> by p<sub>0</sub> = 1, p<sub>1</sub> = 1 - &alpha;, p<sub>n+1</sub> = p<sub>n</sub> - &alpha; p<sub>n-1</sub>. Show that if each of the events A<sub>1</sub>, A<sub>2</sub>, ... , A<sub>n</sub> has probability at least 1 - &alpha;, and A<sub>i</sub> and A<sub>j</sub> are independent for | i - j | &gt; 1, then the probability of all A<sub>i</sub> occurring is at least p<sub>n</sub>. You may assume all p<sub>n</sub> are positive.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+This was a rare Putnam disaster - the question is wrong. Let q<sub>n</sub> be the probability that all of A<sub>1</sub>, ... , A<sub>n</sub> occur. The idea was that one can more or less write down that q<sub>n+1</sub> &ge; q<sub>n</sub> - &alpha; q<sub>n-1</sub> (*). The problem is then to show that it follows that q<sub>n</sub> &ge; p<sub>n</sub> (despite the awkward minus sign in (*) ). Unfortunately, (*) requires that A<sub>n+1</sub> is independent of the event (all of A<sub>1</sub>, ... , A<sub>n-1</sub> occur) and that does not follow from the fact that A<sub>n+1</sub> is independent of each of A<sub>1</sub>, ... , A<sub>n-1</sub>.
+
+<p>
+
+Let us assume first that the question was correctly worded. Let E<sub>n</sub> be the event that all of A<sub>1</sub>, A<sub>2</sub>, ... , A<sub>n</sub> occur. We write p(E) as the probability that event E occurs. We write ~E as the event (not E). We assume that E<sub>n-1</sub> and A<sub>n+1</sub> are independent. We may partition the event E<sub>n</sub> into the disjoint events E<sub>n+1</sub> and (E<sub>n</sub> & ~A<sub>n+1</sub>). So q<sub>n</sub> = q<sub>n+1</sub> + p(E<sub>n</sub> & ~A<sub>n+1</sub>). But E<sub>n-1</sub> implies E<sub>n</sub>, so p(E<sub>n-1</sub> & ~A<sub>n+1</sub>) &ge; p(E<sub>n</sub> & ~A<sub>n+1</sub>). But E<sub>n-1</sub> and A<sub>n+1</sub> are assumed to be independent, so p(E<sub>n-1</sub> & ~A<sub>n+1</sub>) = q<sub>n-1</sub> p(~A<sub>n+1</sub>) &le; &alpha; q<sub>n-1</sub>. Hence p(E<sub>n</sub> & ~A<sub>n+1</sub>) &le; &alpha; q<sub>n-1</sub>. Hence q<sub>n+1</sub> &ge; q<sub>n</sub> - &alpha; q<sub>n-1</sub>. I have spelt that out at somewhat tedious length, but one should in fact be able to write the conclusion straight down.
+
+<p>
+
+Now let us assume that q<sub>n+1</sub> = q<sub>n</sub> - &alpha; q<sub>n-1</sub> + &beta;<sub>n+1</sub>, where &beta;<sub>n+1</sub> &ge; 0. A simple induction establishes that q<sub>n</sub> = p<sub>n</sub> + p<sub>n-2</sub>&beta;<sub>1</sub> + p<sub>n-3</sub>&beta;<sub>2</sub> + ... + p<sub>0</sub>&beta;<sub>n-1</sub> + &beta;<sub>n</sub>, so q<sub>n</sub> &ge; p<sub>n</sub> as required.
+
+<p>
+
+Finally, we need to show that the conclusion can be false if we assume no more than stated in the question. Take: p(A<sub>1</sub> & A<sub>2</sub> & A<sub>3</sub> & A<sub>4</sub> & A<sub>5</sub>) = p(~A<sub>1</sub> & A<sub>2</sub> & A<sub>3</sub> & A<sub>4</sub> & A<sub>5</sub>) = p(A<sub>1</sub> & ~A<sub>2</sub> & A<sub>3</sub> & A<sub>4</sub> & A<sub>5</sub>) = p(A<sub>1</sub> & A<sub>2</sub> & ~A<sub>3</sub> & A<sub>4</sub> & A<sub>5</sub>) = p(A<sub>1</sub> & A<sub>2</sub> & A<sub>3</sub> & ~A<sub>4</sub> & A<sub>5</sub>) = p(A<sub>1</sub> & A<sub>2</sub> & A<sub>3</sub> & A<sub>4</sub> & ~A<sub>5</sub>) = 4/25, p(~A<sub>1</sub> & ~A<sub>2</sub> & ~A<sub>3</sub> & ~A<sub>4</sub> & ~A<sub>5</sub>) = 1/25.
+
+<p>
+
+We can easily check that p(A<sub>1</sub>) = p(A<sub>2</sub>) = p(A<sub>3</sub>) = p(A<sub>4</sub>) = 20/25, so we may take &alpha; = 1/5. We can also check that the prob of any pair, such as p(A<sub>1</sub> & A<sub>2</sub>) = 16/25, so an independence assumption stronger than that in the question is satisfied. But p(A<sub>1</sub> & A<sub>2</sub> & A<sub>3</sub> & A<sub>4</sub>) = 4/25 &le; p<sub>5</sub> (= 6/25 - 1/125).
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn76.html">37th Putnam 1976</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+23 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

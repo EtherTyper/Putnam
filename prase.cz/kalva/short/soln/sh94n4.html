@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1994/N4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>35th IMO 1994 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N4</b><br>
+<p>
+Define the sequences a<sub>n</sub>, b<sub>n</sub>, c<sub>n</sub> as follows. a<sub>0</sub> = k, b<sub>0</sub> = 4, c<sub>0</sub> = 1. If a<sub>n</sub> is even then a<sub>n+1</sub> = a<sub>n</sub></sub>/2, b<sub>n+1</sub> = 2b<sub>n</sub>, c<sub>n+1</sub> = c<sub>n</sub>. If a<sub>n</sub> is odd, then a<sub>n+1</sub> = a<sub>n</sub> - b<sub>n</sub>/2 - c<sub>n</sub>, b<sub>n+1</sub> = b<sub>n</sub>, c<sub>n+1</sub> = b<sub>n</sub> + c<sub>n</sub>. Find the number of positive integers k &lt; 1995 such that some a<sub>n</sub> = 0.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 31.
+<p>
+We call (y, z) a <i>vanishing pair</i> iff (1) y, z are positive integers, (2) y is a power of 2 greater than 2, (3) z &lt; y, and (4) z = 1 mod 4. We show that there is a bijection between vanishing pairs and a<sub>0</sub> such that a<sub>n-1</sub> &gt; 0, a<sub>n</sub> = 0 for some positive integer n.
+<p>
+Note that b<sub>n</sub> is always a power of 2 and is at least 4. (It starts as 4 and at each step either remains unchanged or doubles.) So c<sub>n</sub> must be 1 mod 4 (it starts as 1 and always increases by multiples of 4).
+<p>
+We cannot have both a<sub>n-1</sub> and a<sub>n</sub> odd. For if a<sub>n-1</sub> is odd, then a<sub>n</sub> = a<sub>n-1</sub> - b<sub>n-1</sub>/2 - c<sub>n-1</sub> = odd - even - odd = even. We claim that if a<sub>n</sub> is even, then b<sub>n+1</sub> &gt; c<sub>n+1</sub> and if a<sub>n</sub> is odd, then 2b<sub>n+1</sub> &gt; c<sub>n+1</sub>. We use induction. If a<sub>0</sub> is odd, then b<sub>1</sub> = 4, c<sub>1</sub> = 5 and 8 &gt; 5. If a<sub>0</sub> is even, then b<sub>1</sub> = 8, c<sub>1</sub> = 1 and 8 &gt; 1. So it is true for n = 0. Suppose it is true for n-1. If a<sub>n</sub> is even, then b<sub>n+1</sub> = 2b<sub>n</sub> &gt; c<sub>n</sub> = c<sub>n+1</sub>. If a<sub>n</sub> is odd, then a<sub>n-1</sub> is even (shown above), so 2b<sub>n+1</sub> = b<sub>n</sub> + b<sub>n</sub> &gt; b<sub>n</sub> + c<sub>n</sub> = c<sub>n+1</sub>. So it is true for n, and hence for all n.
+<p>
+So suppose a<sub>0</sub> leads to a<sub>n-1</sub> &gt; 0, a<sub>n</sub> = 0 for some n. We claim that (b<sub>n-1</sub>, c<sub>n-1</sub>) is a vanishing pair. If n = 1, then this is trivial, because the term following (3, 4, 1) is (0, 4, 5). So assume n &ge; 2. We have already established conditions (1), (2) and (4) of the definition. a<sub>n-1</sub> cannot be even, for then a<sub>n</sub> = a<sub>n-1</sub>/2 &gt; 0. So a<sub>n-1</sub> is odd. Hence a<sub>n-2</sub> is even. Hence b<sub>n-1</sub> &gt; c<sub>n-1</sub>, which establishes (3). So (b<sub>n-1</sub>, c<sub>n-1</sub>) is a vanishing pair as claimed.
+<p>
+Conversely,  suppose (y, z) is a vanishing pair. If (y, z) = (4, 1), then the corresponding x<sub>0</sub> is 3, and the term following (3, 4, 1) is (0, 4, 5). So suppose (y, z) is not (4, 1). We show that we can work backwards to get a term (x<sub>0</sub>, 4, 1). We put x = y/2 + z to give the triple (x, y, z). The previous triple must be (2x, y/2, z) = (x', y', z'). Now if y' &gt; z', then the previous triple (x", y", z") must have had x" even, otherwise we would have z' = y" + z" &gt; y" = y'. So we take x" = 2x', y" = y'/2, z" = z'. If y' &lt; z' (they cannot be equal, since one is even and the other odd), then we take x" = x' - y'/2+ z', y" = y', z" = z' - y'. Note that all terms (u, v, w) have v a power of 2 and w = 1 mod 4. Also either y or z is reduced as we go back and y is reduced unless z is larger, so we must eventually get y = 4. Then (as we go further back) we must eventually get z &lt; y and hence z = 1. x is increased at each step backwards. So we eventually get to (x<sub>0</sub>, 4, 1). 
+<p>
+For example, (128, 1) is a vanishing pair. The corresponding triple must be  (65, 128, 1). Working back, we get (130, 64, 1), (260, 32, 1), (520, 16, 1), (1040, 8, 1), (2080, 4, 1). Similarly, (64, 61) is a vanishing pair. The corresponding triple is (93, 64, 61). Working back, we get (186, 32, 61), (231, 32, 29), (462, 16, 29), (483, 16, 13), (966, 8, 13), (975, 8, 5), (1950, 4, 5), (1953, 4, 1).
+<p>
+It is easy to see that the x<sub>0</sub> corresponding to (y, z) is greater than the x<sub>0</sub> corresponding to (y', z') if y &gt; y' or if y = y' and z &gt; z'. The two examples in the previous paragraph bracket 1994, so the vanishing pairs that give x<sub>0</sub> &le; 1994 are: the 1 + 2 + 4 + 8 + 16 = 31 pairs (4, 1), (8, 1), (8, 5), (16, 1), (16, 5), (16, 9), (16, 13), (32, 1), (32, 5), ... , (32, 29), (64, 1), (64, 5), ... , (64, 61).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh94.html">35th IMO shortlist 1994</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+18 Sep 2002
+</BODY>
+</HTML>
+

@@ -1,0 +1,69 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1977/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1977</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+The function f is defined on the set of positive integers and its values are positive integers. Given that f(n+1) &gt; f(f(n)) for all n, prove that f(n) = n for all n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+The first step is to show that f(1) &lt; f(2) &lt; f(3) &lt; ... . We do this by induction on n. We take S<sub>n</sub> to be the statement that f(n) is the unique smallest element of { f(n), f(n+1), f(n+2), ... }.
+
+<p>
+For m &gt; 1, f(m) &gt; f(s) where s = f(m-1), so f(m) is not the smallest member of the set {f(1), f(2), f(3), ... }. But the set is bounded below by zero, so it must have a smallest member. Hence the unique smallest member is f(1). So S<sub>1</sub> is true.
+
+<p>
+Suppose S<sub>n</sub> is true. Take m &gt; n+1. Then m-1 &gt; n, so by S<sub>n</sub>, f(m-1) &gt; f(n). But S<sub>n</sub> also tells us that f(n) &gt; f(n-1) &gt; ... &gt; f(1), so f(n) &ge; n - 1 + f(1) &ge; n. Hence f(m-1) &ge; n+1. So f(m-1) belongs to { n+1, n+2, n+3, .. }. But we are given that f(m) &gt; f(f(m-1)), so f(m) is not the smallest element of { f(n+1), f(n+2), f(n+3), ... }. But there must be a smallest element, so f(n+1) must be the unique smallest member, which establishes S<sub>n+1</sub>. So, S<sub>n</sub> is true for all n.
+
+<p>
+So n &le; m implies f(n) &lt;= f(m). Suppose for some m, f(m) &ge; m+1, then f(f(m)) &ge; f(m+1). Contradiction. Hence f(m) &le; m for all m. But since f(1) &ge;1 and f(m) &gt; f(m-1) &gt; ... &gt; f(1), we also have f(m) &ge; m. Hence f(m) = m for all m.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo77.html">19th IMO 1977</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+6 June 2002
+
+</BODY>
+
+
+
+</HTML>
+

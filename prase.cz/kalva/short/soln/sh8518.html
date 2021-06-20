@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1985/18 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>26th IMO 1985 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 18</b><br>
+<p>
+a, b, c, ... , k are positive integers such that a divides 2<sup>b</sup> - 1, b divides 2<sup>c</sup> - 1, ... , k divides 2<sup>a</sup> - 1. Show that a = b = c = ... = k = 1.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Suppose a prime p divides 2<sup>b</sup> - 1. Then 2<sup>b</sup> = 1 mod p and (by Fermat's theorem) 2<sup>p-1</sup> = 1 mod p. Hence if d is the greatest common divisor of b and p-1, then 2<sup>d</sup> = 1 mod p. Evidently d &gt; 1 (since 2 is not 1 mod p). Since d divides p-1, we have d &lt; p. But d divides b, so there is a prime q smaller than p which divides b. 
+<p>
+But if b &gt; 1, then we may take p to be the <i>smallest</i> prime which divides 2<sup>b</sup> - 1. Then we find q &lt; p which divides b and hence 2<sup>c</sup> - 1. Continuing in this way we find a prime strictly smaller than p which divides 2<sup>b</sup> - 1. Contradiction. So b must be 1. Similarly for the other integers.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh85.html">26th IMO shortlist 1985</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+3 Oct 2002
+</BODY>
+
+</HTML>
+

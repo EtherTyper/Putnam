@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 55/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>15th Putnam 1955</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+n is a positive integer. An infinite sequence of 0s and 1s is such that it only contains n different blocks of n consecutive terms. Show that it is eventually periodic.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Hard.</i>
+
+<p>
+
+We use induction on n. It is obvious for n = 1. Suppose it is true for n. Let S be a sequence with just n + 1 different (n+1)-blocks. Consider the n-blocks formed by taking the first n elements of each (n+1)-block. These evidently form all the possible n-blocks in S. So if there are at most n of them, then we are home by induction. 
+
+<p>
+
+But if there are n + 1 of them (all distinct), then the first n elements of each (n+1)-block determine the last element. So an n-block determines the entire sequence from that point on (because having fixed the (n + 1)th element, we move the n-block along one place and hence fix the (n + 2)nd element and so on). But there are only finitely many possible n-blocks, so there are two the same (in S). That gives a period, since the elements r places after the start of each block must be the same.
+
+<p>
+
+Note that the result is the best possible in the sense that we can construct a non-periodic sequence with just n + 1 different n-blocks. Take, for example, the n-blocks to be those with no or just one 1. Then if we take 1 followed by n + 1 zeros, followed by a 1, followed by n + 2 zeros, followed by a 1, followed by n + 3 zeros and so on, we have a non-periodic sequence involving only those n + 1 n-blocks.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn55.html">15th Putnam 1955</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

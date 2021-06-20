@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE>41st IMO shortlist 2000/G5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>41st IMO 2000 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem G5</b><br>
+<p>
+ABC is an acute angled triangle. The tangent at A to the circumcircle meets the tangent at C at the point B'. BB' meets AC at E, and N is the midpoint of BE. Similarly, the tangent at B meets the tangent at C at the point A'. AA' meets BC at D, and M is the midpoint of AD. Show that &ang;ABM = &ang;BAN. If AB = 1, find BC and AC for the triangles which maximise &ang;ABM.
+<p>
+<img src="dia00g5a.bmp">
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: BC = AC = &radic;2.
+<p>
+We use the triangle ABA' to find x. Let O be the center of the circle and R its radius. Then angle OBA' = 90<sup>o</sup> and &ang;A'OB = 1/2 &ang;BOC = &ang;A, so BA' = R tan A. Also &ang;AOB = 2&ang;C, so AB = 2R sin C. &ang;A'BA = &ang;A, so &ang;A'BA = &ang;A + &ang;B. Hence &ang;AA'B = 180<sup>o</sup> - &ang;A - &ang;B - x = &ang;C - x. Now from the sine rule, AB/sin AA'B = A'B/sin x. Hence sin(&ang;C - x) = 2 sin &ang;C sin x cot &ang;A. So sin &ang;C cos x - cos &ang;C sin x = 2 sin &ang;C sin x cot &ang;A. Hence cot x = cot &ang;C + 2 cot &ang;A.
+<p>
+Applying the sine rule to BMA and BMD gives sin y/sin x = MA/MB = MD/MB = sin MBD/sin MDB = sin(B - y)/sin(B + x), or sin y sin(B + x) = sin x sin(B - y). Expanding and dividing through by sin x sin y sin B gives cot x + cot B = cot y - cot B, or cot y = 2 cot B + cot x = 2 cot A + 2 cot B + cot C. This is symmetric between A and B, so cot ABM = cot BAN. But cot is strictly decreasing over 0<sup>o</sup> to 180<sup>o</sup>, so &ang;ABM = &ang;BAN.
+<p>
+We want to maximise ABM or minimise cot ABM and hence minimise 2 cot A + 2 cot B + cot C. But 2 cot A + 2 cot B = 2 sin(A+B)/(sin A sin B) = 4 sin C/(cos(A - B) - cos(A + B) ) = 4 sin C/(cos(A - B) + cos C) &ge; 4 sin C/(1 + cos C) with equality iff A = B. Thus we must take A = B. We then want to minimise 4 sin C/(1 + cos C) + cot C = 4 (2 sin k cos k)/(2 cos<sup>2</sup>k) + (1 - tan<sup>2</sup>k)/(tan k + tan k), where k = C/2, and hence to minimise 7/2 tan k + 1/(2 tan k). That is achieved by taking tan k = 1/&radic;7 (eg complete the square), and hence sin C = sin 2k = 2 tan k/(1 + tan<sup>2</sup>k) = (&radic;7)/4. Since A = B, we have AC = BC and 1 = AB = 2 AC sin k = 2 AC 1/&radic;8. Hence AC = &radic;2.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh00.html">41st IMO shortlist 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+16 Oct 2002
+</BODY>
+
+</HTML>
+

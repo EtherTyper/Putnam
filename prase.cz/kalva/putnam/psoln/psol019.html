@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2001/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>62nd Putnam 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Let @n denote the closest integer to &radic;n. Find &sum; (2<sup>@n</sup> + 2<sup>-@n</sup>)/2<sup>n</sup>, where the sum is taken from n = 1 to n = infinity.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 3.
+
+<p>
+
+We need to find a more useful expression for @n. We have (n + 1/2)<sup>2</sup> = n<sup>2</sup> + n + 1/4, which lies between the integers n(n+1) and n(n+1)+1. Thus the 2n values @m for m = (n-1)n+1, (n-1)n+2, ... , (n-1)n+2n=n(n+1) are all n.
+
+<p>
+
+The sum is obviously absolutely convergent, so we can consider &sum; 2<sup>@n</sup>/2<sup>n</sup> and &sum; 2<sup>-@n</sup>/2<sup>n</sup> separately. The first is (2<sup>0</sup> + 2<sup>-1</sup>) + (2<sup>-1</sup> + 2<sup>-2</sup> + 2<sup>-3</sup> + 2<sup>-4</sup>) + (2<sup>-4</sup> + ... + 2<sup>-9</sup>) + ... = (1 + 1/2 + 1/4 + ... ) + (1/2 + 1/2<sup>4</sup> + 1/2<sup>9</sup> + 1/2<sup>16</sup> + ... ).
+
+<p>
+
+The second sum is (1/2<sup>2</sup> + 1/2<sup>3</sup>) + (1/2<sup>5</sup> + ... + 1/2<sup>8</sup>) + (1/2<sup>10</sup> + ... + 1/2<sup>15</sup>) + ... .
+
+<p>
+
+Now (1 + 1/2 + 1/4 + ... ) = 2, and the other two brackets together give (1/2 + 1/4 + 1/8 + ... ) = 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn01.html">62nd Putnam 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Dec 2001
+
+</BODY>
+
+
+
+</HTML>
+

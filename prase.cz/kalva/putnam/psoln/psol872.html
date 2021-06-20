@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 87/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>48th Putnam 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+An infinite sequence of decimal digits is obtained by writing the positive integers in order: 123456789101112131415161718192021 ... . Define f(n) = m if the 10<sup>n</sup> th digit forms part of an m-digit number. For example, f(1) = 2, because the 10th digit is part of 10, and f(2) = 2, because the 100th digit is part of 55. Find f(1987).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 1984.
+
+<p>
+
+<i>Easy.</i>
+
+<p>
+
+The first 9 numbers have 1 digit, the next 90 2 digits, the next 900 3 digits and so on. So the m-digit numbers and below constitute the first 9(1 + 2.10 + ... + m.10<sup>m-1</sup>) = 9(1 - (m+1) 10<sup>m</sup> + m 10<sup>m+1</sup>)/(1 - 10)<sup>2</sup> = 1/9 (1 - (m+1) 10<sup>m</sup> + m 10<sup>m+1</sup>) digits. For m = 1983 this is about 0.2 10<sup>1987</sup> and for m = 1984 about 2 10<sup>1987</sup>. So the 10<sup>1987</sup>th digit is in a 1984-digit number.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn87.html">48th Putnam 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Oct 1999
+
+</BODY>
+
+
+
+</HTML>
+

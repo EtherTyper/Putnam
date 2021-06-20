@@ -1,0 +1,43 @@
+<HTML>
+
+<HEAD>
+<TITLE>APMO 04/4 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>16th APMO 2004</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 4</b>
+<p>
+Show that [(n-1)!/(n<sup>2</sup>+n)] is even for any positive integer n.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+<i>Thanks to  Juan Ignacio Restrepo</i>
+<p>
+For n = 1, 2, 3, 4, 5 we have [(n-1)!/(n<sup>2</sup>+n)] = 0, which is even. So assume n &ge; 6.
+<p>
+If n and n+1 are composite, then they must divide (n-1)!. They are coprime, so their product must divide (n-1)!. Note that just one of n, n+1 is even. For m &ge; 6, (m-2)! is divisible by more powers of 2 than m, so (n-1)!/(n<sup>2</sup>+n) is even. It remains to consider the two cases n+1 = p, a prime, and n = p a prime.
+<p>
+If n+1 = p, then p-1 is composite, so p-1 divides (p-2)!. Let k = (p-2)!/(p-1). By Wilson's theorem we have (p-2)! = 1 mod p, so k(p-1) = 1 mod p and hence k = -1 mod p. So (k+1)/p is an integer. But k is even, so k+1 is odd and hence (k+1)/p is odd. Now [k/p] = (k+1)/p - 1, so [k/p] = [(n-1)!/(n<sup>2</sup>+n)] is even.
+<p>
+If n = p, then k = (p-1)!/(p+1) is an even integer, so k+1 is an odd integer. By Wilson's theorem, k(p+1) = -1 mod p, so (k+1)/p is an integer and hence an odd integer. Hence [(n-1)!/(n<sup>2</sup>+n)] = [k/p] = (k+1)/p - 1 is even.
+<p>
+<i>Wilson's theorem states that p is prime iff (p-1)! = -1 mod p. If p is composite, then it has a factor &le; p-1, which divides (p-1)! and so does not divide (p-1)! + 1. Hence (p-1)! &ne; -1 mod p. Now suppose p is prime. If p = 2, then (p-1)! = 1 = -1 mod 2. So assume p is odd. Note first that if a<sup>2</sup> = 1 mod p and 0 &lt; a &lt; p, then a = 1 or p-1. For p divides (a+1)(a-1) and so it divides either a+1, giving a = p-1, or it divides a-1, giving a = 1. Now for each 0 &lt; a &lt; p, there is a unique a' such that aa' = 1 mod p. We have just shown that a = a' iff a = 1 or p-1. So we can divide 2, 3, ... , p-2 into pairs with the product of each pair being 1 mod p. Hence (p-2)! = 1 mod p, as required.</i>
+<p>
+<i>On the powers of 2, note that 2, 2<sup>2</sup>, 2<sup>3</sup>, ... , 2<sup>k-1</sup> &lt; 2<sup>k</sup> and their product is 2<sup>k(k-1)/2</sup>. If 2<sup>k</sup> &lt; n &lt; 2<sup>k+1</sup>, then n is divisible by at most 2<sup>k-1</sup>. So for n &ge; 16, for example, (n-8)!/n is even. For n = 8, 9, ... , 15, (n-2)! is divisible by 2&middot;4&middot;6 and n is divisible by at most 8, so (n-2)!/n is even. Finally, we can easily check n = 6, 7.</i>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../apmo04.html">16th APMO 2004</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+27 Mar 2004
+<br>Last corrected/updated 27 Mar 04
+</BODY>
+
+</HTML>
+

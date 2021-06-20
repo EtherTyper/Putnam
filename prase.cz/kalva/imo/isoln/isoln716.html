@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1971/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1971</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+Let A = (a<sub>ij</sub>), where i, j = 1, 2, ... , n, be a square matrix with all a<sub>ij</sub> non-negative integers. For each i, j such that a<sub>ij</sub> = 0, the sum of the elements in the ith row and the jth column is at least n. Prove that the sum of all the elements in the matrix is at least n<sup>2</sup>/2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+<p>Let x be the smallest row or column sum. If x &gt;= n/2, then we are done, so assume x &lt; n/2. Suppose it is a row. (If not, interchange rows and columns.) The number of non-zero elements in the row, y, must also satisfy y &lt; n/2, since each non-zero element is at least 1. Now move across this row summing the columns. The y columns with a non-zero element have sum at least x (by the definition of x). The n - y columns with a zero have sum at least n - x. Hence the total sum is at least xy + (n - x)(n - y) = n<sup>2</sup>/2 + (n - 2x)(n - 2y)/2 &gt; n<sup>2</sup>/2.
+
+<p>The result is evidently best possible, because we can fill the matrix alternately with zeros and ones (so that a<sub>ij</sub> = 1 if i and j are both odd or both even, 0 otherwise). For n even, every row and column has n/2 1s, so the condition is certainly satisfied and the total sum is n<sup>2</sup>/2. For n odd, odd numbered rows have (n+1)/2 1s and even numbered one less. But the only zeros are in positions which have either the row or the column odd-numbered, so the sum in such cases is n as required. The total sum is n<sup>2</sup>/2 + 1/2. Alternatively, for n even, we could place n/2 down the main diagonal.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+&nbsp;<p>
+
+<a href="../imo71.html">13th IMO 1971</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+8 Oct 1998
+
+<br>Last updated/corrected 14 Mar 03
+
+</BODY>
+
+
+
+</HTML>
+

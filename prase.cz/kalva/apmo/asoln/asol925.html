@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 92/5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>4th APMO 1992</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 5</b><br>
+<p>
+a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ... a<sub>n</sub> is a sequence of non-zero integers such that the sum of any 7 consecutive terms is positive and the sum of any 11 consecutive terms is negative. What is the largest possible value for n?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 16.
+<p>
+We cannot have 17 terms, because then: 
+<pre>
+a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>11</sub> &lt; 0
+a<sub>2</sub> + a<sub>3</sub> + ... + a<sub>12</sub> &lt; 0
+a<sub>3</sub> + a<sub>4</sub> + ... + a<sub>13</sub> &lt; 0
+...
+a<sub>7</sub> + a<sub>8</sub> + ... + a<sub>17</sub> &lt; 0
+</pre>
+So if we add the inequalities we get that an expression is negative. But notice that each column is positive. Contradiction. 
+<p>
+On the other hand, a valid sequence of 16 terms is: -5, -5, 13, -5, -5, -5, 13, -5, -5, 13, -5, -5, -5, 13, -5, -5. Any run of 7 terms has two 13s and five -5s, so sums to 1. Any run of 11 terms has three 13s and eight -5s, so sums to -1.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo92.html">4th APMO 1992</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

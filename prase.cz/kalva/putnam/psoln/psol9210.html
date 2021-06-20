@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1992/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>53rd Putnam 1992</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+p(x) is a polynomial of degree &lt; 1992 such that p(0), p(1), p(-1) are all non-zero. The 1992th derivative of p(x)/(x<sup>3</sup> - x) = f(x)/g(x) for polynomials f(x) and g(x). Find the smallest possible degree of f(x).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 3984.
+
+<p>
+
+We may write p(x)/(x<sup>3</sup> - x) = q(x) + a/x + b/(x-1) + c/(x+1), where q(x) has degree less than 1992, and (since 0, 1, and -1 are not roots of p(x) ) a, b, c are all non-zero. When we differentiate 1992 times, q(x) disappears and we get a non-zero constant times (a/x<sup>1993</sup> + b/(x-1)<sup>1993</sup> + c/(x+1)<sup>1993</sup>). Hence f(x) is a multiple of a(x<sup>2</sup>-1)<sup>1993</sup> + bx<sup>1993</sup>(x+1)<sup>1993</sup> + cx<sup>1993</sup>(x-1)<sup>1993</sup>.  We can zero the highest power 2&middot;1993 = 3986 by taking a + b + c = 0. We can zero the next highest power 3985 by taking b = c. That also zeros all the other odd powers. Now the coefficient of x<sup>3984</sup> is -1992a + 1993.1992 b = 1992(1993 + 2)b which is non-zero. So the smallest possible degree of f(x) is 3984.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn92.html">53rd Putnam 1992</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

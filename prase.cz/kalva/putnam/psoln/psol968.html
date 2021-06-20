@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1996/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Let f(n) = ( (2n+1)/e )<sup>(2n+1)/2</sup>. Show that for n &gt; 0: f(n-1) &lt; 1.3.5 ... (2n-1) &lt; f(n).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Straightforward integration, with one wrinkle.</i>
+
+<p>
+We estimate the integral of ln x, which is convex and hence easy to estimate. Take the integral from 1 to 2n-1. This is less than 2(ln 3 + ln 5 + ... + ln(2n-1) ). But the integral of ln x is x ln x - x, so the integral evaluates to (2n-1) ln(2n-1) - 2n + 2. Hence (2n-1) ln(2n-1) - (2n-1) &lt; (2n-1) ln(2n-1) - 2n + 2 &lt; 2(ln 3 + ln 5 + ... + ln(2n-1)). Exponentiating gives the left hand inequality.
+
+<p>
+Similarly, the integral from 1 to 2n+1 is greater than 2(ln 3 + ln 5 + ... + ln(2n-1) ). However, this is not quite good enough, because the integral evaluates to (2n+1) ln(2n+1) - 2n, and this time the odd 1 works against us. However, we can slightly improve our estimate. Because ln 1 = 0, our estimate treated the integral from 1 to 3 as nil, so we can raise the lower end of the integration range: the integral from 3 to 2n+1 is greater than 2(ln 3 + ln 5 + ... + ln(2n-1) ). Actually, it is more convenient to take the lower bound as e &lt; 3, because then x ln x - x evaluates to 0 at the lower bound, thus getting rid of the odd 1. Exponentiating now gives the right hand inequality.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn96.html">Putnam 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

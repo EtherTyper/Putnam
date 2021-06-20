@@ -1,0 +1,83 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 40/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>3rd Putnam 1940</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+&alpha; is a fixed real number. Find all functions f: R &rarr; R (where R is the reals) which are continuous, have a continuous derivative, and satisfy &nbsp; &int;<sub>b</sub><sup>y</sup> f<sup>&alpha;</sup>(x) dx = ( &int;<sub>b</sub><sup>y</sup> f(x) dx )<sup>&alpha;</sup> for all y and some b.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Straightforward to get the basic idea, but care is needed with the details. It is quite hard to get the answer exactly right (the official solution gives a spurious solution for the case (2) - overlooking the problem with the integration limits).
+
+<p>Answer: 
+
+ <br>
+
+(1) No solutions for &alpha; = 0;
+
+<br>(2) No solutions for &alpha; &lt; 0; 
+
+<br>(3) Any continuous f with continuous derivative is a solution for &alpha; = 1;
+
+<br>(4) For &alpha; &gt; 0 and not of the form p/q, with p and q odd positive integers, f = A e<sup>kx</sup>, where A is any real, and k is the positive real value of &alpha;<sup>1/(&alpha; -1)</sup>;
+
+<br>(5) For &alpha; = p/q, with p and q odd positive integers (but not both 1), f = A e<sup>kx</sup> or A e<sup>-kx</sup>, where A is any real, and k is the positive real value of &alpha;<sup>1/(&alpha; -1)</sup>.
+
+<p>
+
+Case (3) is obvious. Case (1) is almost obvious: if &alpha; = 0, then the lhs varies with y ( = y - b), but the rhs does not ( = 1), so there are no solutions. Assume now that &alpha; is not 0 or 1.
+
+<p>
+Differentiate wrt y and put g(y) = &int;<sub>b</sub><sup>y</sup> f(x) dx. Then f = g' and we have f<sup>&alpha;</sup> = &alpha; g<sup>&alpha; -1</sup> f. So f = k g, where k = &alpha;<sup>1/(&alpha; -1)</sup>. Since f = g', we can integrate immediately to get f(x) = A e<sup>kx</sup> (*). 
+
+<p>
+However, we have to consider how many real values k can have. If &alpha; &gt; 0, then k certainly has a positive value, but we can also take the corresponding negative value if 1/(&alpha; - 1) involves an even root, in other words if &alpha; = p/q with p and q both odd. Finally, (*) is clearly necessary, but not necessarily sufficient, so we have to subsitute (*) back into the original equation. For k &gt; 0, we find the solution works provided b = -&infin;. If k &lt; 0, then it works with b = &infin;. This gives cases (4) and (5). [Note, however, that we can only allow A negative for &alpha; not of the form p/q with p and q odd, provided we are content for both sides of the original equation to have complex values (even though f is real valued).]
+
+<p>
+For &alpha; &lt; 0, all values of &alpha;<sup>1/(&alpha; -1)</sup> are complex unless &alpha; = - p/q with p an even positive integer and q an odd positive integer. If &alpha; has that form, then we may take k = - 1/|&alpha;|<sup>1/(|&alpha;|+1)</sup>. But now there is a problem with b. Taking A = 1 for simplicity, the f<sup>&alpha;</sup>(x) = e<sup>|&alpha;k|x</sup>, so the lhs = const (e<sup>|&alpha;k|y</sup> - e<sup>|&alpha;k|b</sup>) and the rhs = const /(e<sup>- |k|y</sup> - e<sup>- |k|b</sup>)<sup>|&alpha;|</sup>. The constants are the same, but we need b = -&infin; to get rid of the b term on the lhs and b = &infin; to get rid of the term on the rhs. So there are no solutions in case (2).
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn40.html">3rd Putnam 1940</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

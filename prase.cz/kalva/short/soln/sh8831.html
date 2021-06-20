@@ -1,0 +1,30 @@
+<HTML>
+<HEAD>
+<TITLE>29th IMO shortlist 1988/31 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>29th IMO 1988 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 31</b><br>
+<p>
+An even number of people have a discussion sitting at a circular table. After a break they sit down again in a different order. Show that there must be two people with the same number of people sitting between them before and after the break.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Label the people 0, 1, 2, ... , 2n-1. Suppose that before the break they are in the order 0, 1, 2, ... , 2n-1 (with 2n-1 also next to 0). Without loss of generality, we may assume that 0 sits in the same position after the break (rotating the table does not affect things). Suppose that after the break person i is in the position occupied by a<sub>i</sub> before the break. Suppose the result is false. Then we must have a<sub>i</sub> &ne; i for all i &gt; 0 (otherwise 0 and i would have the same number of people between them before and after the break).
+<p>
+Suppose first that a<sub>i</sub> - a<sub>j</sub> &ne; i - j mod 2n for all unequal i, j. Then a<sub>i</sub> - i &ne; a<sub>j</sub> - j for i and j distinct. Hence, working mod 2n, a<sub>1</sub> - 1, a<sub>2</sub> - 2, ... , a<sub>2n-1</sub> - (2n-1) is just a permutation of 1, 2, ... , 2n-1. Hence &sum; (a<sub>i</sub> - i) = &sum; i = n(2n - 1) = n mod 2n. But &sum; (a<sub>i</sub> - i) = (&sum; a<sub>i</sub>) - (&sum; i) = 0 mod 2n. Contradiction. So for some i &gt; j we must have a<sub>i</sub> - a<sub>j</sub> = i - j. But 1 &le; a<sub>i</sub>, a<sub>j</sub> &le; 2n-1, so -(2n-2) &lt; (a<sub>i</sub> - a<sub>j</sub>) &le; 2n-2. So either a<sub>i</sub> - a<sub>j</sub> = i - j, or a<sub>i</sub> - a<sub>j</sub> = i - j - 2n. But the number of people between positions i and j is i - j - 1 going one way round and 2n - (i - j) - 1 going the other way round. So in either case there are the same number of people between persons i and j before and after the break. Contradiction.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh88.html">29th IMO shortlist 1988</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+16 Dec 2002
+</BODY>
+
+</HTML>
+

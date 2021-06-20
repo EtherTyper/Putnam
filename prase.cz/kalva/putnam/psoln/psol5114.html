@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 51/B7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>11th Putnam 1951</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B7</b><br>
+
+<p>
+
+In 4-space let  S be the 3-sphere radius r: w<sup>2</sup> + x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> = r<sup>2</sup>. What is the 3-dimensional volume of S? What is the 4-dimensional volume of its interior?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 2&pi;<sup>2</sup> r<sup>3</sup>, 1/2 &pi;<sup>2</sup>r<sup>4</sup>.
+
+<p>
+
+A hyperplane perpendicular to the x-axis will cut S in a sphere. If the hyperplane is at a distance k from the origin, then the radius of the sphere will be &radic;(r<sup>2</sup> - k<sup>2</sup>). So the 4-dimensional volume = &int;<sub>-r</sub><sup>r</sup> 4&pi;/3 (r<sup>2</sup> - x<sup>2</sup>)<sup>3/2</sup> dx = 4&pi; r<sup>4</sup>/3 &int;<sub>-1</sub><sup>1</sup> (1 - t<sup>2</sup>)<sup>3/2</sup> dt.
+
+<p>
+
+Let K = (1 - t<sup>2</sup>)<sup>3/2</sup> dt. We find that A = t(1 - t<sup>2</sup>)<sup>3/2</sup> differentiates to K - 3t<sup>2</sup>(1 - t<sup>2</sup>)<sup>1/2</sup>. B = t(1 - t<sup>2</sup>)<sup>1/2</sup> differentiates to (1 - t<sup>2</sup>)<sup>1/2</sup> - t<sup>2</sup>(1 - t<sup>2</sup>)<sup>-1/2</sup>. C = sin<sup>-1</sup>t differentiates to (1 - t<sup>2</sup>)<sup>-1/2</sup>. Hence B + C differentiates to 2(1 - t<sup>2</sup>)<sup>1/2</sup>, so 2A + 3(B + C) differentiates to 8K. So &int;<sub>-1</sub><sup>1</sup> (1 - t<sup>2</sup>)<sup>3/2</sup> dt = ( terms involving powers of (1 - t<sup>2</sup>)<sup>1/2</sup>  + 3/8 sin<sup>-1</sup>t )|<sub>-1</sub><sup>1</sup> = 3 &pi; /8. Hence the 4-dimensional volume is &pi;<sup>2</sup> r<sup>4</sup>/2.
+
+<p>
+
+The volume of the 3-dimensional surface is the derivative wrt r of the 4-dimensional volume (because the 4-dimensional volume for r + &delta;r is the 4-dimensional volume for r + the 3-dimensional volume of the bounding sphere times &delta;r). Hence the 3-dimensional volume is 2 &pi;<sup>2</sup> r<sup>3</sup> .
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn51.html">11th Putnam 1951</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 50/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>10th Putnam 1950</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Let N be the set of natural numbers {1, 2, 3, ... }. Let Z be the integers. Define d <b>:</b> N &rarr; Z by d(1) = 0, d(p) = 1 for p prime, and d(mn) = m d(n) + n d(m) for any integers m, n. Determine d(n) in terms of the prime factors of n. Find all n such that d(n) = n. Define d<sub>1</sub>(m) = d(m) and d<sub>n+1</sub>(m) = d(d<sub>n</sub>(m)). Find lim<sub>n&rarr;&infin;</sub> d<sub>n</sub>(63).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+d(p<sup>a</sup>) = a p<sup>a-1</sup> by a trivial induction on a. Hence for n = p<sup>a</sup>q<sup>b</sup> ... we have d(n) = n ( a/p + b/q + ... ) by a trivial induction on the number of primes.
+
+<p>
+
+Hence d(n) = n iff a/p + b/q + ... = 1. Multiplying through by all the prime denominators gives integral terms. All but the first are clearly divisible by p, so the first must be also.  Hence a/p = 1 and b/q etc are zero. In other words, n = p<sup>p</sup> for some prime p.
+
+<p>
+
+We find d<sub>1</sub>(63) = 51, d<sub>2</sub>(63) = 20, d<sub>3</sub>(63) = 24, d<sub>4</sub>(63) = 44, d<sub>5</sub>(63) = 48. Now suppose n is divisible by 16. Then n = 2<sup>k</sup>p<sup>a</sup>q<sup>b</sup> ... , where p, q, ... are all odd and k &gt;= 4. Hence d(n) = n( 4/2 + a/p + b/q + ... ). Now all of 2n, na/p, nb/q, ... are integral and multiples of 16. So d(n) is at least twice n and a multiple of 16. So if we have d<sub>k</sub>(m) divisible by 16, then d<sub>h+k</sub>(m) &ge; 2<sup>h</sup> which diverges. Hence d<sub>k</sub>(63) tends to infinity.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn50.html">10th Putnam 1950</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

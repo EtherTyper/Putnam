@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<TITLE>32nd IMO shortlist 1991/18 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>32nd IMO 1991 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 18</b>
+<p>
+What is the largest power of 1991 which divides 1990<sup>m</sup> + 1992<sup>n</sup>, where m = 1991<sup>1992</sup> and n = 1991<sup>1990</sup>?
+<p>
+&nbsp;<p>
+<b>Answer</b>
+<p>
+1991<sup>1991</sup>
+<p>
+<b>Solution</b>
+<p>
+We show first that for odd h &gt; 1 and k &gt; 0, we have (1 + h)<sup>H</sup> = 1 + s<sub>k</sub>h<sup>k+1</sup>, where H = h<sup>k</sup> and h does not divide s<sub>k</sub> (in other words h<sup>k+1</sup> is the highest power of h dividing (1 + h)<sup>H</sup> - 1). We use induction on k.
+<p>
+For k = 1, we have (by the binomial theorem): (1 + h)<sup>h</sup> = 1 + h&middot;h + &frac12;(h-1)h<sup>3</sup> + terms in h<sup>3</sup> and higher = 1 + h<sup>2</sup>(1 + bh). So the result is true for k = 1. Suppose it is true for k.
+<p>
+Then taking H' = h<sup>k+1</sup>, we have (1 + h)<sup>H'</sup> = (1 + s<sub>k</sub>h<sup>k+1</sup>)<sup>h</sup> = 1 + h s<sub>k</sub>h<sup>k+1</sup> + &frac12;(h-1) s<sub>k</sub><sup>2</sup>h<sup>2k+3</sup> + terms higher than h<sup>k+2</sup> = 1 + h<sup>k+2</sup>(s<sub>k</sub> + hb'), so it is true for k+1, and hence for all k.
+<p>
+An exactly similar argument shows that h<sup>k+1</sup> is the highest power of h dividing (h - 1)<sup>H</sup> + 1.
+<p>
+Thus 1991<sup>1991</sup> is the highest power of 1991 dividing 1992<sup>n</sup> - 1 and 1991<sup>1993</sup> is the highest power of 1991 dividing 1990<sup>m</sup> + 1. Hence 1991<sup>1991</sup> is the highest power of 1991 dividing their sum.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh91.html">32nd IMO shortlist 1991</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+1 Jan 2003
+<br>Last corrected/updated 1 Jan 03
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>18th Putnam 1958/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>18th Putnam 1958</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+In a tournament of n players, every pair of players plays once. There are no draws. Player i wins w<sub>i</sub> games. Prove that we can find three players i, j, k such that i beats j, j beats k and k beats i iff &sum; w<sub>i</sub><sup>2</sup> &lt; (n - 1)n(2n - 1)/6.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Suppose there are no such three players. Let A be the (or one of the) top-scoring players. We claim that A has n-1 wins. Suppose not, then he is beaten by some B. Now if every player beaten by A is also beaten by B, then B would have a higher score than A, so we must be able to find C who is beaten by A, but who beats B (who beats A). But we assumed there were no such triads. So A has n-1 wins. But we can now consider the remaining players. The same argument shows that the top scoring player amongst them beat n-2 of them. He did not beat A (who beat everyone), so his score is n-2. The argument repeats to show that the scores are n-1, n-2, ... , 1, 0. The sum of the squares is thus (n-1)n(2n-1)/6.
+
+<p>
+
+Conversely, it is clear that if the scores are n-1, n-2, ... , 1, 0 then there can be no triad. For the player with n-1 beats everyone, so he cannot be part of a triad. But now the player with n-2 beats everyone else, so he cannot either and so on.
+
+<p>
+
+Thus we have shown that there is a triad iff the scores are not n-1, n-2, ... , 1, 0. It remains to show that if the scores are not n-1, n-2, ... , 1, 0, then sum of the squares is less than (n-1)n(2n-1)/6. But if the scores are not n-1, n-2, ... , 1, 0, then two players must have the same score m. Changing the scores to m-1, m+1 (by changing the result of the match between the two players) increases the sum of the squares by 2. After a finite number of repetitions we must arrive at n-1, n-2, ... , 1, 0, so the starting sum must be strictly less.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn58.html">18th Putnam 1958</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 75/1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>4th USAMO 1975</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 1</b><br>
+
+<p>
+
+Show that for any non-negative reals x, y, [5x] + [5y] &ge; [3x+y] + [x+3y]. Hence or otherwise show that (5a)! (5b)!/( a! b! (3a+b)! (a+3b)! ) is integral for any positive integers a, b.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If is obviously sufficient to prove that [5x] + [5y] &ge; [3x+y] + [x+3y] for 0 &lt; x &lt; y &lt; 1. If 2x &ge; y, then [5x] &ge; [3x+y] and [5y] &ge; [x+3y], so the result holds. So assume 2x &lt; y. It is now a question of examining a lot of cases. 
+
+<p>
+
+If y &lt; 2/5, then 3x + y &lt; 5y/2 &lt; 1, so [3x+y] = 0, and [3y+x] &lt;= [5y], so the result holds. If 2/5 &le; y &lt; 3/5 and x &lt; 1/5, then [5y] = 2, [3x+y] = 0 or 1 and [x+3y] = 1. If 2/5 &le; y &lt; 3/5 and x &ge; 1/5, the [5x]+[5y] = 3, [3x+y] = 1, [x+3y] = 1 or 2. If 3/5 &le; y &lt; 4/5, then [5y] = 3, [3x+y] = 0 or 1, [x+3y] = 2 or 3. If y &ge; 4/5 and x &lt; 1/5, then [5x] + [5y] = 4, [3x+y] = 0 or 1, [x+3y]= 2 or 3. If y &ge; 4/5 and 1/5 &le; x, then [5x] + [5y] = 5, [3x+y] = 2, [x+3y] = 2 or 3.
+
+<p>
+
+The highest power of a prime p dividing n! is [n/p] + [n/p<sup>2</sup>] + [n/p<sup>3</sup>] + ... . Thus it is sufficient to show that [5m/p] + [5n/p] &ge; [ (3m+n)/p ] + [ (m+3n)/p ], which follows immediately from the previous result, putting x = m/p, y = n/p.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa75.html">4th USAMO 1975</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Jul 2002
+
+</BODY>
+
+
+
+</HTML>
+

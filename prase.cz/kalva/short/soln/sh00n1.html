@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>41st IMO shortlist 2000/N1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>41st IMO 2000 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N1</b><br>
+<p>
+Find all positive integers n &gt; 1 such that if a and b are relatively prime then a = b mod n iff ab = 1 mod n.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 2, 3, 4, 6, 8, 12, 24.
+<p>
+Since a = b mod n, the condition is equivalent to a<sup>2</sup> = 1 mod n for all a relatively prime to n. Suppose n = &prod; p<sup>e(p)</sup>, then we claim that a<sup>2</sup> = 1 mod n for all a relatively prime to n iff a<sup>2</sup> = 1 mod p<sup>e(p)</sup> mod p<sup>e(p)</sup> for each prime factor p of n (and a relatively prime to p). The <i>if</i> part is obvious: if a is relatively prime to n, then it is relatively prime to each p<sup>e(p)</sup>, so a<sup>2</sup> = 1 mod p<sup>e(p)</sup>, so a<sup>2</sup> = 1 mod n. To prove the <i>only if</i> part,  suppose a is relatively prime to p. Let r, s, ... be the primes dividing n which do not divide a. Then a + p<sup>e(p)</sup>(rs...) is relatively prime to n. So (a + p<sup>e(p)</sup>(rs...) )<sup>2</sup> = 1 mod n. So it must also be 1 mod p<sup>e(p)</sup>. But (a + p<sup>e(p)</sup>(rs...) )<sup>2</sup> = a<sup>2</sup> mod p<sup>e(p)</sup>, so a<sup>2</sup> = 1 mod p<sup>e(p)</sup> as required.
+<p>
+It is easy to check that a<sup>2</sup> = 1 mod 8 for any odd integer a. Hence also a<sup>2</sup> = 1 mod 2 and mod 4 for any odd integer a. But 3<sup>2</sup> = 9, which is not 1 mod 2<sup>k</sup> for k &gt; 3. Similarly, it is easy to check that 1<sup>2</sup> = 2<sup>2</sup> = 1 mod 3, but 2<sup>2</sup> = 4, which is not 1 mod 3<sup>k</sup> for k &gt; 1. Finally 2<sup>2</sup> = 4, which is not 1 mod p<sup>k</sup> for p &gt; 3. So n cannot be divisible by any primes except 2 and 3, and it is not divisible by 16 or 9. On the other hand, if n = 2<sup>h</sup>3<sup>k</sup> with h = 0, 1, 2 or 3 and k = 0 or 1, then we have established that a<sup>2</sup> = 1 mod 2<sup>h</sup> for any a relatively prime to 2, and a<sup>2</sup> = 1 mod 3<sup>k</sup> for any a relatively prime to k, so that a<sup>2</sup> = 1 mod n for any a relatively prime to n.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh00.html">41st IMO shortlist 2000</a><br>
+<p>&prod; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

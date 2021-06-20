@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 89/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>50th Putnam 1989</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+Which members of the sequence 101, 10101, 1010101, ... are prime?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 101.
+
+<p>
+
+<i>Fairly easy.</i>
+
+<p>
+
+Let k<sub>n</sub> represent the member of the sequence with n 1s. It is obvious that 101 divides k<sub>2n</sub>. So we need only consider k<sub>2n+1</sub>.
+
+<p>
+
+But k<sub>2n+1</sub> = 1 + 10<sup>2</sup> + 10<sup>4</sup> + ... + 10<sup>4n</sup> = (10<sup>4n+2</sup> - 1)/99 = (10<sup>2n+1</sup> + 1)/11 (10<sup>2n+1</sup> - 1)/9. Each of these is integral: the first is 1 - 10 + 10<sup>2</sup> - ... + 10<sup>2n</sup>, the second is 11...1 (2n+1 1s).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn89.html">50th Putnam 1989</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+3 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

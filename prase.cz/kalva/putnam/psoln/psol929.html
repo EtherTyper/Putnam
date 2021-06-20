@@ -1,0 +1,82 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1992/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>53rd Putnam 1992</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Let S be the set of points (x, y) in the plane such that the sequence a<sub>n</sub> defined by a<sub>0</sub> = x, a<sub>n+1</sub> = (a<sub>n</sub><sup>2</sup> + y<sup>2</sup>)/2 converges. What is the area of S?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 4 + &pi;.
+
+<p>
+
+We claim that: 
+
+<p>(1) the sequence diverges for |y| &gt; 1; 
+
+<p>(2) the sequence diverges for |y| &lt; 1 and |x| &gt; 1 + &radic;(1-y<sup>2</sup>);
+
+<p>(3) the sequence converges for |y| &lt; 1 and |x| &lt; 1 + &radic;(1-y<sup>2</sup>).
+
+<p>It follows that the area S is the square with sides x = &plusmn;1, y = &plusmn;1 with a hemispherical cap on each of the vertical sides x = &plusmn;1, and hence that the area is 4 + &pi;.
+
+<p>
+
+Notice that a<sub>n+1</sub> - a<sub>n</sub> = ( (a<sub>n</sub> - 1)<sup>2</sup> - (1 - y<sup>2</sup> ) )/2 (*). So if |y| &gt; 1, then a<sub>n+1</sub> - a<sub>n</sub> &gt; (y<sup>2</sup> - 1)/2 &gt; 0, which establishes (1).
+
+<p>
+
+In case (2), take &epsilon; &gt; 0, such that |x| &gt; 1 + &radic;(1 - y<sup>2</sup>) + &epsilon;. Then (x - 1)<sup>2</sup> &gt; 1 - y<sup>2</sup> + &epsilon;<sup>2</sup>, so a<sub>1</sub> - x &gt; &epsilon;<sup>2</sup>/2 (using (*) ). Hence a<sub>1</sub> &gt; x &gt; 1 + &radic;(1 - y<sup>2</sup>) + &epsilon;. So by a simple induction a<sub>n+1</sub> - a<sub>n</sub> &gt; &epsilon;<sup>2</sup>/2 for all n, which establishes (2).
+
+<p>
+
+In case (3), assume first that x is positive. x &lt; 1 + &radic;(1-y<sup>2</sup>) implies that (x - 1)<sup>2</sup> &lt; 1 - y<sup>2</sup>, so by (*) a<sub>1</sub> &lt; x. So by a simple induction a<sub>n+1</sub> &lt; a<sub>n</sub> for all x. But all a<sub>n</sub> are positive, so convergence follows. In the case x negative the sequence is the same for all later terms as that started by -x, so we have convergence in this case also.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn92.html">53rd Putnam 1992</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

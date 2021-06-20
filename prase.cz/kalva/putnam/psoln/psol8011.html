@@ -1,0 +1,114 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1980/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>41st Putnam 1980</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+R<sup>0+</sup> is the non-negative reals. For &alpha; &ge; 0, C<sub>&alpha;</sub> is the set of continuous functions f <b>:</b> [0, 1] &rarr; R<sup>0+</sup> such that: (1) f is convex [ f(&lambda;x + &mu;y) &le; &lambda;f(x) + &mu;f(y) for &lambda;, &mu; &ge; 0 with &lambda; + &mu; = 1]; (2) f is increasing; (3) f(1) - 2 f(2/3) + f(1/3) &ge; &alpha; ( f(2/3) - 2 f(1/3) + f(0) ). For which &alpha; is C<sub>&alpha;</sub> is closed under pointwise multiplication?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: &alpha; &le; 1.
+
+<p>
+
+The function f(x) = x always belongs to C<sub>&alpha;</sub> because it has f(1) - 2f(2/3) + f(1/3) = f(2/3) - 2f(1/3) + f(0) = 0. So if C<sub>&alpha;</sub> is closed under pointwise multiplication, then f(x) = x<sup>2</sup> is also a member. But this requires 1 - 8/9 + 1/9 &ge; &alpha; (4/9 - 2/9 + 0) and hence &alpha; &le; 1.
+
+<p>
+
+Now if f and g are convex and increasing, then the pointwise product f*g is also convex. For if x &le; y, we have (f(y) - f(x))(g(y) - g(x)) &ge; 0 and hence &lambda;&mu;(f(x)g(y) + f(y)g(x)) &le; &lambda;&mu;(f(x)g(x) + f(y)g(y)) (*). 
+
+<p>
+
+But f*g(&lambda;x + &mu;y) = f(&lambda;x + &mu;y)g(&lambda;x + &mu;y) &le; (&lambda;f(x) + &mu;f(y) )(&lambda;g(x) + &mu;g(y) ) = &lambda;<sup>2</sup>f(x)g(x) + &lambda;&mu;(f(x)g(y) + f(y)g(x) ) + &mu;<sup>2</sup>f(y)g(y). So, using (*), we get f*g(&lambda;x + &mu;y) &le; (&lambda;<sup>2</sup> + &lambda;&mu;)f(x)g(x) + (&lambda;&mu; + &mu;<sup>2</sup>)f(y)g(y) = &lambda; f*g(x) + &mu; f*g(y).
+
+<p>
+
+So it remains to show that if &alpha; &le; 1 and f, g are in C<sub>&alpha;</sub>, then f*g satisfies condition (3). This is not easy - one has to find the right collection of inequalities using the fact that f, g are increasing, convex and satisfy (3).
+
+<p>
+
+Since f(2/3) &gt; f(1/3) and g(1) - 2g(2/3) + g(1/3) &ge; &alpha; (g(2/3) - 2g(1/3) + g(0) ), we have:
+
+<p>f(2/3) (g(1) - 2g(2/3) + g(1/3) ) &ge; &alpha; f(1/3) (g(2/3) - 2g(1/3) + g(0) ) <b>(1)</b>
+
+<p>
+
+Similarly, we have:
+
+<p>
+
+(f(1) - 2f(2/3) + f(1/3) ) g(2/3) &ge; &alpha; (f(2/3) - 2f(1/3) + f(0) ) g(1/3) <b>(2)</b>
+
+<p>
+
+Since f and g are convex, we have ( f(1) - f(2/3) ) &ge; ( f(2/3) - f(1/3) ) and ( g(1) - g(2/3) ) &ge; ( g(2/3) - g(1/3) ). So ( f(1) - f(2/3) ) ( g(1) - g(2/3) &ge; ( f(2/3) - f(1/3) ) ( g(2/3) - g(1/3) ). The rhs is non-negative and &alpha; &le; 1, so ( f(2/3) - f(1/3) ) ( g(2/3) - g(1/3) ) &ge; &alpha; ( f(2/3) - f(1/3) ) ( g(2/3) - g(1/3) ). Hence:
+
+<p>
+
+( f(1) - f(2/3) ) ( g(1) - g(2/3) &ge; &alpha; ( f(2/3) - f(1/3) ) ( g(2/3) - g(1/3) ) <b>(3)</b>
+
+<p>
+
+Similarly:
+
+<p>
+
+( f(2/3) - f(1/3) ) ( g(2/3) - g(1/3) ) &ge; &alpha; ( f(1/3) - f(0) ) ( g(1/3) - g(0) ) <b>(4)</b>
+
+<p>
+
+Adding <b>(1)</b>, <b>(2)</b>, <b>(3)</b> and <b>(4)</b> gives the required result:
+
+<p>
+
+f(1)g(1) - 2f(2/3)g(2/3) + f(0)g(0) &ge; &alpha; ( f(2/3)g(2/3) - 2f(1/3)g(1/3) + f(0)g(0) ).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn80.html">41st Putnam 1980</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+23 Jan 2001
+
+<br>Last corrected/updated 21 Nov 02
+
+</BODY>
+
+
+
+</HTML>
+

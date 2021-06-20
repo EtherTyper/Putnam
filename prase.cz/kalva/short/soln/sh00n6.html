@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>41st IMO shortlist 2000/N6 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>41st IMO 2000 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N6</b><br>
+<p>
+Show that all but finitely many positive integers can be represented as a sum of distinct squares.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+The key idea is to write 29 = 2<sup>2</sup> + 5<sup>2</sup>, 2.29 = 3<sup>2</sup> + 7<sup>2</sup>. Now given any positive integer n, write n in binary, so n is a sum of distinct powers of 2. Let r be the sum of the odd powers of 2, and s the sum of the even powers of 2. So n = r + s, and we have r = (2<sup>a</sup> + 2<sup>b</sup> + ... ), where 1 &le; a &lt; b &lt; ... . Similarly, s = (2<sup>i</sup> + 2<sup>j</sup> + ... ), where 0 &le; i &lt; j &lt; ... . 
+<p>
+Now 4.29 r = (3<sup>2</sup> + 7<sup>2</sup>) x 2r = 3<sup>2</sup>( a sum of distinct even powers of 2, all &ge; 4) + 7<sup>2</sup>( a sum of distinct even powers of 2, all &gt;= 4). Similarly, 4.29 s = (2<sup>2</sup> + 5<sup>2</sup>) x 4s = 2<sup>2</sup>( a sum of distinct even powers of 2, all &gt;= 4) + 5<sup>2</sup>( a sum of distinct even powers of 2, all &ge; 4). Thus 4.29 n = a sum of distinct even squares. For example, if n = 79, we have n = 1 + 2 + 4 + 8 + 64  = (1 + 4 + 64) + (2 + 8), so 4.49 n = (2<sup>2</sup>  + 5<sup>2</sup>)(4 + 16 + 256) + (3<sup>2</sup> + 7<sup>2</sup>)(4 + 16) = 4<sup>2</sup> + 8<sup>2</sup> + 32<sup>2</sup> + 10<sup>2</sup> + 20<sup>2</sup> + 80<sup>2</sup> + 6<sup>2</sup> + 12<sup>2</sup> + 14<sup>2</sup> + 28<sup>2</sup>.
+<p>
+We can write any integer n as 116q + r with 0 &le; r &lt; 116. Now r = 1<sup>2</sup> + (58 + 1)<sup>2</sup> + (58.2 + 1)<sup>2</sup> + (58.3 + 1)<sup>2</sup> + ... + (58(r-1) + 1)<sup>2</sup> mod 116 (because (58k + 1)<sup>2</sup> = 1 + 116k + 58<sup>2</sup>k<sup>2</sup> = 1 mod 116 and there are r squares in the sum). So provided n &gt; K = 1<sup>2</sup> + (58.1 + 1)<sup>2</sup> + ... + (58.114 + 1)<sup>2</sup>, we can write n = 1<sup>2</sup> + (58.1 + 1)<sup>2</sup> + ... + (58(r-1) + 1)<sup>2</sup> + 116k for some non-negative k. Now we are home, because the squares are all odd and distinct, whereas 116k can be written as a sum of distinct even squares.
+<p>
+Note that several small integers <i>cannot</i> be written as a sum of distinct squares. For example, 2, 3, 6, 7, 8, 11, 12, 15, 18, 19, 22, 23, 24, 27, 28, 31.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh00.html">41st IMO shortlist 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

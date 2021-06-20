@@ -1,0 +1,110 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1993/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1993</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b>
+
+<p>
+
+Does there exist a function f from the positive integers to the positive integers such that f(1) = 2, f(f(n)) = f(n) + n for all n, and f(n) &lt; f(n+1) for all n?
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+Yes: f(n) = [g*n + &frac12;], where g = (1 + &radic;5)/2 = 1.618 ... .
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+<i>This simple and elegant solution is due to Suengchur Pyun</i>
+
+<p>
+
+<p>
+
+Let g(n) = [g*n + &frac12;]. Obviously g(1) = 2. Also g(n+1) = g(n) + 1 or g(n) + 2, so certainly g(n+1) &gt; g(n).
+
+<p>
+
+Consider d(n) = g* [g*n + &frac12;] + &frac12; - ( [g*n + &frac12;] + n). We show that it is between 0 and 1. It follows immediately that g(g(n)) = g(n) + n, as required.
+
+<p>
+
+Certainly, [g*n + &frac12;] &gt; g*n - &frac12;, so d(n) &gt; 1 - g/2 &gt; 0 (the n term has coefficient g<sup>2</sup> - g - 1 which is zero). Similarly, [g*n + &frac12;] &le; g*n + &frac12;, so d(n) &le; g/2 &lt; 1, which completes the proof.
+
+<p>
+
+<p>
+
+<i>I originally put up the much clumsier result following:</i>
+
+<p>
+
+Take n = b<sub>r</sub>b<sub>r-1</sub> ... b<sub>0</sub> in the Fibonacci base. Then f(n) = b<sub>r</sub>b<sub>r-1</sub> ... b<sub>0</sub>0. This satisfies the required conditions.
+
+<p>
+Let u<sub>0</sub> = 1, u<sub>1</sub> = 2, ... , u<sub>n</sub>=u<sub>n-1</sub>+u<sub>n-2</sub>, ... be the Fibonacci numbers. We say n = b<sub>r</sub>b<sub>r-1</sub> ... b<sub>0</sub> in the Fibonacci base if b<sub>r</sub> = 1, every other b<sub>i</sub> = 0 or 1, no two adjacent b<sub>i</sub> are non-zero, and n = b<sub>r</sub>u<sub>r</sub> + ... + b<sub>0</sub>u<sub>0</sub>. For example, 28 = 1001010 because 28 = 21 + 5 + 2.
+
+<p>
+We have to show that every n has a unique expression of this type. We show first by induction that it has at least one expression of this type. Clearly that is true for n = 1. Take u<sub>r</sub> to be the largest Fibonacci number &le; n. Then by induction we have an expression for n - u<sub>r</sub>. The leading term cannot be u<sub>i</sub> for i &gt; r - 2, for then we would have n &gt;= u<sub>r</sub> + u<sub>r-1</sub> = u<sub>r+1</sub>. So adding u<sub>r</sub> to the expression for n - u<sub>r</sub> gives us an expression of the required type for n, which completes the induction. 
+
+<p>
+We show that u<sub>r</sub> + u<sub>r-2</sub> + u<sub>r-4</sub> + ... = u<sub>r+1</sub> - 1. Again we use induction. It is true for r = 1 and 2. Suppose it is true for r - 1, then u<sub>r+1</sub> + u<sub>r-1</sub> + ... = u<sub>r+2</sub> - u<sub>r</sub> + u<sub>r-1</sub> + u<sub>r-3 </sub> + ... = u<sub>r+2</sub> - u<sub>r</sub> + u<sub>r</sub> - 1 = u<sub>r+2</sub> - 1. So it is true for r + 1. Hence it is true for all r. Now we can prove that the expression for n is unique. It is for n = 1. So assume it is for all numbers &lt; n, but that the expression for n is not unique, so that we have n = u<sub>r</sub> + more terms = u<sub>s</sub> + more terms. If r = s, then the expression for n - u<sub>r</sub> is not unique. Contradiction. So suppose r &gt; s. But now the second expression is at most u<sub>s+1</sub> - 1 which is less than u<sub>r</sub>. So the expression for n must be unique and the induction is complete.
+
+<p>
+It remains to show that f satisfies the required conditions. Evidently if n = 1 = u<sub>0</sub>, then f(n) = u<sub>1</sub> = 2, as required. If n = u<sub>a<sub>1</sub></sub> + ... + u<sub>a<sub>r</sub></sub>, then f(n) = u<sub>a<sub>1</sub>+1</sub> + ... + u<sub>a<sub>r</sub>+1</sub> and f(f(n)) = u<sub>a<sub>1</sub>+2</sub> + ... + u<sub>a<sub>r</sub>+2</sub>. So f(n) + n = (u<sub>a<sub>1</sub></sub> + u<sub>a<sub>1</sub>+1</sub>) + ... + (u<sub>a<sub>r</sub></sub> + u<sub>a<sub>r</sub>+1</sub>) = f(f(n)).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo98.html">39th IMO 1998</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Jul 2001
+<br>Last corrected/updated 25 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1967/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>28th Putnam 1967</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+Let u<sub>n</sub> be the number of symmetric n x n matrices whose elements are all 0 or 1, with exactly one 1 in each row. Take u<sub>0</sub> = 1. Prove u<sub>n+1</sub> = u<sub>n</sub> + n u<sub>n-1</sub> and &sum;<sub>0</sub><sup>&infin;</sup> u<sub>n</sub> x<sup>n</sup>/n! = e<sup>f(x)</sup>, where f(x) = x + (1/2) x<sup>2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+There is an obvious bijection between (1) n x n matrices satisfying the conditions and (2) (n+1) x (n+1) matrices satisfying the conditions which have 1 at the top left. [Just delete the first row and column to get from (2) to (1) ).
+
+<p>
+
+Similarly for any i = 2, 3, ... or n+1, there is an obvious bijection between (1) (n-1) x (n-1) matrices satisfying the conditions and (2) (n+1) x (n+1) matrices satisfying the conditions which have a 1 in row 1, col i (and hence also in row i, col 1). Just delete rows 1 and i and cols 1 and i to get from (2) to (1).
+
+<p>
+
+That establishes that u<sub>n+1</sub> = u<sub>n</sub> + n u<sub>n-1</sub>. Also, we are given that u<sub>0</sub> = 1 and it is clear that u<sub>1</sub> = 1.
+
+<p>
+
+We have that e<sup>f(x)</sup> = 1 + (x + 1/2 x<sup>2</sup>) + (x + 1/2 x<sup>2</sup>)<sup>2</sup>/2! + ... which is clearly 1 + v<sub>1</sub>x/1! + v<sub>2</sub>x<sup>2</sup>/2! + ... for some v<sub>n</sub>. Differentiating, we get that (1 + x) (1 + v<sub>1</sub>x/1! + v<sub>2</sub>x<sup>2</sup>/2! + ...) = v<sub>1</sub> + v<sub>2</sub>x/1!+ v<sub>3</sub>x<sup>2</sup>/2! + ... . Hence v<sub>1</sub> = 1, v<sub>2</sub> = v<sub>1</sub> + 1, v<sub>n+1</sub> = v<sub>n</sub> + n v<sub>n-1</sub>. A trivial induction now shows that v<sub>n</sub> = u<sub>n</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn67.html">28th Putnam 1967</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

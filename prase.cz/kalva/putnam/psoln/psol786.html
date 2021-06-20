@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 78/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>39th Putnam 1978</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Given n points in the plane, prove that less than 2n<sup>3/2</sup> pairs of points are a distance 1 apart.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Label the points 1, 2, ... , n. Let n<sub>i</sub> be the number of points a distance 1 from point i. We wish to show that &sum; n<sub>i</sub> &lt; 4 n<sup>3/2</sup>. We can assume that all n<sub>i</sub> &ge; 2. [Keep removing points until those that are left have n<sub>i</sub> &ge; 2. If we exhaust the points before this happens then the number of pairs &le; n &lt; 2n<sup>3/2</sup>. Otherwise, suppose we remove k points. Then the result follows from the result for n - k points since k + 2(n - k)<sup>3/2</sup> &lt; 2n<sup>3/2</sup>.
+
+<p>
+
+The points a distance 1 from point i must all lie on C<sub>i</sub> the circle radius 1, center point i. Each pair of circles meets in 0, 1 or 2 points. So the total number of points of intersection of two circles is at most n(n - 1) (where a point of intersection arises in more than one way we count one for each way it arises). Some of these points of intersection will be members of the original set of n points. Point i has n<sub>i</sub> circles through it, so it arises as a point of intersection in 1/2 n<sub>i</sub>(n<sub>i</sub> - 1) ways. Thus all the points together give rise to &sum; 1/2 n<sub>i</sub>(n<sub>i</sub> - 1) points of intersection. Hence &sum; n<sub>i</sub>(n<sub>i</sub> - 1) &le; 2n(n - 1). Since n<sub>i</sub> &ge; 2, n<sub>i</sub> &le; 2(n<sub>i</sub> - 1), so we have that &sum; n<sub>i</sub><sup>2</sup> &le; 2 &sum; n<sub>i</sub>(n<sub>i</sub> - 1) &le; 4n(n - 1) &lt; 4n<sup>2</sup>. Now Cauchy's inequality gives that n &sum; n<sub>i</sub><sup>2</sup> &ge; (&sum; n<sub>i</sub>)<sup>2</sup>. So &sum; n<sub>i</sub> &lt; 2 n<sup>3/2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn78.html">39th Putnam 1978</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

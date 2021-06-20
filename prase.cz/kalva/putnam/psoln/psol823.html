@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1982/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>43rd Putnam 1982</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Evaluate &int;<sub>0</sub><sup>&infin;</sup> (tan<sup>-1</sup>(&pi;x) - tan<sup>-1</sup>x) / x dx.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: &pi;/2 ln &pi;.
+
+<p>
+
+&int;<sub>0</sub><sup>&infin;</sup> (tan<sup>-1</sup>(&pi;x) - tan<sup>-1</sup>x) / x dx = ln x (tan<sup>-1</sup>&pi;x - tan<sup>-1</sup>x) |<sub>0</sub><sup>&infin;</sup> - &int;<sub>0</sub><sup>&infin;</sup> ( &pi;(1 + &pi;<sup>2</sup>x<sup>2</sup>) - 1/(1 + x<sup>2</sup>) ) ln x dx.
+
+<p>
+
+Putting y = &pi;x, &int;<sub>0</sub><sup>&infin;</sup> ( &pi;(1 + &pi;<sup>2</sup>x<sup>2</sup>) dx = &int;<sub>0</sub><sup>&infin;</sup> (ln y - ln &pi;)/(1 + y<sup>2</sup>) dy. So - &int;<sub>0</sub><sup>&infin;</sup> ( &pi;(1 + &pi;<sup>2</sup>x<sup>2</sup>) - 1/(1 + x<sup>2</sup>) ) ln x dx = ln &pi; &int;<sub>0</sub><sup>&infin;</sup> dy/(1 + y<sup>2</sup>) = ln &pi; tan<sup>-1</sup>y |<sub>0</sub><sup>&infin;</sup> = &pi;/2 ln &pi;. 
+
+<p>
+
+It remains to show that the first term is zero. The Taylor series for tan<sup>-1</sup>x = x + O(x<sup>2</sup>), so the value at the lower limit is the limit as x &rarr; 0 of ( (&pi; - 1) x + O(x<sup>2</sup>) ) ln x. But x ln x &rarr; 0 as x &rarr; 0, so the lower limit gives zero.
+
+<p>
+
+We also have the expansion tan<sup>-1</sup>x = &pi;/2 - 1/x + O(1/x<sup>2</sup>). So the value at the upper limit is the limit of ( 1/x (1 - 1/&pi;) + O(1/x<sup>2</sup>) ) ln x as x &rarr; &infin;, which is zero since (ln x)/x &rarr; 0.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn82.html">43rd Putnam 1982</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,45 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1985/10 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>26th IMO 1985 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 10</b><br>
+<p>
+The polynomials p<sub>0</sub>(x, y, z), p<sub>1</sub>(x, y, z), p<sub>2</sub>(x, y, z), ... are defined by p<sub>0</sub>(x, y, z) = 1 and p<sub>n+1</sub>(x, y, z) = (x + z)(y + z) p<sub>n</sub>(x, y, z+1) - z<sup>2</sup>p<sub>n</sub>(x, y, z). Show that each polynomial is symmetric in x, y, z.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+We use induction on n. 
+<p>
+Let S<sub>n</sub> be the statement that (1) p<sub>n</sub>(x, y, z) = p<sub>n</sub>(y, x, z), (2) p<sub>n</sub>(x, y, z) = p<sub>n</sub>(z, y, x), and (3) (y+z) p<sub>n</sub>(x, y, z+1) - (x+y) p<sub>n</sub>(z, y, x+1) = (z-x) p<sub>n</sub>(x, y, z). Clearly S<sub>0</sub> is true ( (1) and (2) are trivial, and both sides of (3) are (z-x) ). So suppose S<sub>n</sub> is true.
+<p>
+(1) for n+1 follows immediately. We have p<sub>n+1</sub>(x, y, z) - p<sub>n+1</sub>(z, y, x) <br>= (x+z)(y+z) p<sub>n</sub>(x, y, z+1) - (x+z)(x+y) p<sub>n</sub>(z, y, x+1) - z<sup>2</sup> p<sub>n</sub>(x, y, z) + x<sup>2</sup> p<sub>n</sub>(z, y, x),  by the identity in the question
+<br>= (x+z) (z-x) p<sub>n</sub>(x, y, z) + (x<sup>2</sup> p<sub>n</sub>(z, y, x) - z<sup>2</sup> p<sub>n</sub>(x, y, z) ), by (3) for n 
+<br>= (x+z) (z-x) p<sub>n</sub>(x, y, z) + (x<sup>2</sup> - z<sup>2</sup>) p<sub>n</sub>(x, y, z) ), by (2) for n
+<br> = 0. So (2) holds for n+1.
+<p>
+We have (y+z) p<sub>n+1</sub> (x, y, z+1) - (x+y) p<sub>n+1</sub>(z, y, x+1) 
+<br> = (y+z) p<sub>n+1</sub>(z+1, x, y) - (x+y) p<sub>n+1</sub>(x+1, z, y), using (1) and (2) for n+1
+<br> = ( (y+z)(y'+z)(x+y) p<sub>n</sub>(z+1, x, y') - (y+z)y<sup>2</sup>p<sub>n</sub>(z+1, x, y) ) - ( (x+y)(x+y')(y+z) p<sub>n</sub>(x+1, z, y') - (x+y)y<sup>2</sup>p<sub>n</sub>(x+1, z, y), where y' = y+1 and we have used the equality in the question 
+<br> = (x+y)(y+z)( (y'+z) p<sub>n</sub>(x, y', z+1) - (x+y') p<sub>n</sub>(x+1, y', z) ) - y<sup>2</sup>( (y+z) p<sub>n</sub>(x, y, z+1) - (x+y) p<sub>n</sub>(z, y, x+1) ), using (1) and (2) for n 
+<br> = (x+y)(y+z)(z-x) p<sub>n</sub>(x, y', z) - y<sup>2</sup>(z-x) p<sub>n</sub>(x, y, z), using (3) for n
+<br> = (z-x)( (x+y)(z+y) p<sub>n</sub>(x, z, y+1) - y<sup>2</sup>p<sub>n</sub>(x, z, y) )
+<br> = (z-x) p<sub>n+1</sub>(x, z, y), using the identity in the question  
+<br> = (z-x) p<sub>n+1</sub>(x, y, z), which establishes (3) for n+1.
+<p>
+So S<sub>n</sub> is true for all n. (1) and (2) together establish that p<sub>n</sub>(x, y, z) is symmetric.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh85.html">26th IMO shortlist 1985</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+2 Oct 2002
+</BODY>
+</HTML>
+

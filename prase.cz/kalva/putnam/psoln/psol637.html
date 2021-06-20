@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1963/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>24th Putnam 1963</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+Find all integers n for which x<sup>2</sup> - x + n divides x<sup>13</sup> + x + 90.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: n = 2.
+
+<p>
+
+If n is negative or zero, then the quadratic has two real roots. But we can easily check that the other polynomial has derivative everywhere positive and hence only one real root. So n must be positive.
+
+<p>
+
+If x<sup>2</sup> - x + n divides x<sup>13</sup> + x + 90, then x<sup>13</sup> + x + 90 = p(x) (x<sup>2</sup> - x + n), where p(x) is a polynomial with integer coefficients. Putting x = 0, we see that n must divide 90. Putting x = 1, we see that it must divide 92. Hence it must divide (92 - 90) - 2. So the only possibilities are 1 and 2. Suppose n = 1. Then putting x = 2, we have that 3 divides 2<sup>13</sup> + 92. But 2<sup>odd</sup> is congruent to 2 mod 2, so 2<sup>13</sup> + 92 is congruent to 1 mod 3. So n cannot be 1.
+
+<p>
+
+To see that n = 2 is possible, we write explicitly: (x<sup>2</sup> - x + 2) (x<sup>11</sup> + x<sup>10</sup> - x<sup>9</sup> - 3 x<sup>8</sup> - x<sup>7</sup> + 5 x<sup>6</sup> + 7 x<sup>5</sup> - 3 x<sup>4</sup> - 17 x<sup>3</sup> - 11 x<sup>2</sup> + 23 x + 45) = x<sup>13</sup> + x + 90.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn63.html">24th Putnam 1963</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

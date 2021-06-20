@@ -1,0 +1,61 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1995/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+n integers totalling n - 1 are arranged in a circle. Prove that we choose one of the integers x<sub>1</sub>, so that the other integers going around the circle are, in order, x<sub>2</sub>, ... , x<sub>n</sub> and we have &sum;<sub>1</sub><sup>k</sup> x<sub>i</sub> &le; k - 1 for k = 1, 2, ... , n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let the integers be y<sub>i</sub> (starting from an arbitary position). We use the convention that subscripts are reduced mod n when necessary. Let z<sub>j</sub> = &sum;<sub>1</sub><sup>j</sup> (y<sub>i</sub> - (n-1)/n). The amount (n-1)/n is chosen so that z<sub>n</sub> = 0 and hence the sum of any group of s consecutive y<sub>i</sub>: y<sub>r+1</sub> + ... + y<sub>r+s</sub> is simply z<sub>r+s</sub> - z<sub>r</sub> + s(n-1)/n. 
+
+<p>
+Let z<sub>h</sub> be the largest z<sub>j</sub>. Take x<sub>1</sub> = z<sub>h+1</sub>. Then the sum of the first k terms is z<sub>h+k</sub> - z<sub>h</sub> + k(n-1)/n &lt;= k(n-1)/n, since z<sub>h</sub> &gt;= z<sub>h+k</sub>. Hence the sum of the first k terms is &lt; k, but it is integral, so it is &le; k-1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn95.html">Putnam 1995</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

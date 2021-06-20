@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 97/4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>9th APMO 1997</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 4</b><br>
+<p>
+P<sub>1</sub> and P<sub>3</sub> are fixed points. P<sub>2</sub> lies on the line perpendicular to P<sub>1</sub>P<sub>3</sub> through P<sub>3</sub>. The sequence P<sub>4</sub>, P<sub>5</sub>, P<sub>6</sub>, ... is defined inductively as follows: P<sub>n+1</sub> is the foot of the perpendicular from P<sub>n</sub> to P<sub>n-1</sub>P<sub>n-2</sub>. Show that the sequence converges to a point P (whose position depends on P<sub>2</sub>). What is the locus of P as P<sub>2</sub> varies?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+P<sub>n</sub>P<sub>n+1</sub>P<sub>n+2</sub> lies inside P<sub>n-1</sub>P<sub>n</sub>P<sub>n+1</sub>. So we have sequence of nested triangles whose size shrinks to zero. Each triangle is a closed set, so there is just one point P in the intersection of all the triangles and it is clear that the sequence P<sub>n</sub> converges to it.
+<p>
+Obviously all the triangles P<sub>n</sub>P<sub>n+1</sub>P<sub>n+2</sub> are similar (but not necessarily with the vertices in that order). So P must lie in the same position relative to each triangle and we must be able to obtain one triangle from another by rotation and expansion about P. In particular, P<sub>5</sub>P<sub>4</sub>P<sub>6</sub> is similar (with the vertices in that order) to P<sub>1</sub>P<sub>2</sub>P<sub>3</sub>, and P<sub>4</sub>P<sub>5</sub> is parallel to P<sub>1</sub>P<sub>2</sub>, so the rotation to get one from the other must be through &pi; and P must lie on P<sub>1</sub>P<sub>5</sub>. Similarly P<sub>3</sub>P<sub>4</sub>P<sub>5</sub> must be obtained from P<sub>1</sub>P<sub>2</sub>P<sub>3</sub> by rotation about P through &pi;/2 and expansion. But this takes P<sub>1</sub>P<sub>5</sub> into a perpendicular line through P<sub>3</sub>. Hence P<sub>1</sub>P is perpendicular to P<sub>3</sub>P. Hence P lies on the circle diameter P<sub>1</sub>P<sub>3</sub>.
+<p>
+However, not all points on this circle are points of the locus. P<sub>3</sub>P<sub>5</sub> = P<sub>3</sub>P<sub>4</sub> cos P<sub>1</sub> = P<sub>3</sub>P<sub>1</sub> sin P<sub>1</sub> cos P<sub>2</sub> = 1/2 P<sub>3</sub>P<sub>1</sub> sin 2P<sub>1</sub>, so we can obtain all values of P<sub>3</sub>P<sub>5</sub> up to P<sub>1</sub>P<sub>3</sub>/2. [Of course, P<sub>2</sub>, and hence P<sub>5</sub>, can be on either side of P<sub>3</sub>.]. Thus the locus is an arc XP<sub>3</sub>Y of the circle with XP<sub>3</sub> = YP<sub>3</sub> and &ang;XP<sub>1</sub>Y = 2 tan<sup>-1</sup>1/2. If O is the midpoint of P<sub>1</sub>P<sub>3</sub>, then O is the center of the circle and &ang;XOY = 4 tan<sup>-1</sup>1/2 (about 106<sup>o</sup>).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo97.html">9th APMO 1997</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,31 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 92/3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>4th APMO 1992</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 3</b><br>
+<p>
+Given three positive integers a, b, c, we can derive 8 numbers using one addition and one multiplication and using each number just once: a+b+c, a+bc, b+ac, c+ab, (a+b)c, (b+c)a, (c+a)b, abc. Show that if a, b, c are distinct positive integers such that n/2 &lt; a, b, c, &lt;= n, then the 8 derived numbers are all different. Show that if p is prime and n &ge; p<sup>2</sup>, then there are just d(p-1) ways of choosing two distinct numbers  b, c from {p+1, p+2, ... , n} so that the 8 numbers derived from p, b, c are <i>not</i> all distinct, where d(p-1) is the number of positive divisors of p-1.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+If 1 &lt; a &lt; b &lt; c, we have a + b + c &lt; ab + c &lt; b + ac &lt; a + bc and (b+c)a &lt; (a+c)b &lt; (a+b)c &lt; abc. We also have b + ac &lt; (a+c)b. So we just have to consider whether a + bc = (b+c)a. But if a &gt; c/2, which is certainly the case if n/2 &lt; a, b, c &le; n, then a(b + c - 1) &gt; c/2 (b + b) = bc, so a + bc &lt; a(b + c) and all 8 numbers are different.
+<p>
+The numbers are not all distinct iff  p + bc = (b + c)p. Put b = p + d. Then c = p(p-1)/d + p. Now we are assuming that b &lt; c, so p + d &lt; p(p-1)/d + p, hence d<sup>2</sup> &lt; p(p-1), so d &lt; p. But p is prime so d cannot divide p, so it must divide p-1. So we get exactly d(p-1) solutions provided that all the c &le; n. The largest c is that corresponding to d = 1 and is p(p-1) + p = p<sup>2</sup> &le; n.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo92.html">4th APMO 1992</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

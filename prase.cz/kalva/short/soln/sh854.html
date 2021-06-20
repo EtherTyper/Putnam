@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1985/4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>26th IMO 1985 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 4</b><br>
+<p>
+Show that x<sub>1</sub><sup>2</sup>/(x<sub>1</sub><sup>2</sup> + x<sub>2</sub>x<sub>3</sub>) + x<sub>2</sub><sup>2</sup>/(x<sub>2</sub><sup>2</sup> + x<sub>3</sub>x<sub>4</sub>) + ... + x<sub>n-1</sub><sup>2</sup>/(x<sub>n-1</sub><sup>2</sup> + x<sub>n</sub>x<sub>1</sub>) + x<sub>n</sub><sup>2</sup>/(x<sub>n</sub><sup>2</sup> + x<sub>1</sub>x<sub>2</sub>) &le; n-1 for all positive reals x<sub>i</sub>.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+<i>Solution by Demetres Christofides</i>
+<p>
+The inequality would not have any obvious meaning if n = 1. For n = 2 it presumably becomes: a<sup>2</sup>/(a<sup>2</sup> + ba) + b<sup>2</sup>/(b<sup>2</sup> + ab) &le; 1. But the lhs is a/(a+b) + b/(a+b) = 1, so the result is true. Assume then that n &gt; 2.
+<p>
+Put a<sub>i</sub> = x<sub>i+1</sub>x<sub>i+2</sub>/x<sub>i</sub><sup>2</sup> (using cyclic subscripts). We have to show that &sum; 1/(1 + a<sub>i</sub>) &le; n-1, or equivalently that &sum; a<sub>i</sub>/(1 + a<sub>i</sub>) &ge; 1. Also we have a<sub>1</sub>a<sub>2</sub> ... a<sub>n</sub> = 1. We may assume that a<sub>1</sub> &ge; a<sub>2</sub> &ge; ... &ge; a<sub>n</sub>.
+<p>
+f(x) = x/(1+x) is an increasing function of x and f(1) = 1/2. So if there are two or more a<sub>i</sub> &ge; 1, then &sum; a<sub>i</sub> &ge; 1. Not all the a<sub>i</sub> can be less than 1, because their product is 1, so we must have exactly one a<sub>i</sub> &ge; 1 and that must be a<sub>1</sub>. Since the others are &lt; 1 and the product is 1, we must have a<sub>1</sub> &gt; 1.
+<p>
+Now by the AM/GM inequality we have a<sub>2</sub>/(1 + a<sub>2</sub>) + ... + a<sub>n</sub>/(1 + a<sub>n</sub>) &ge; (n-1) ( &prod;<sub>2</sub><sup>n</sup> a<sub>i</sub>/(1 + a<sub>i</sub>) )<sup>1/n-1</sup>. But a<sub>2</sub>a<sub>3</sub> ... a<sub>n</sub> = 1/a<sub>1</sub> &gt; 1/(1 + a<sub>1</sub>) and (1 + a<sub>i</sub>) &lt; (1 + a<sub>1</sub>) for i = 2, 3, ... , n-1, so (n-1) ( &prod;<sub>2</sub><sup>n</sup> a<sub>i</sub>/(1 + a<sub>i</sub>) )<sup>1/n-1</sup> &gt; (n-1) 1/(1 + a<sub>n</sub>)<sup>1/n-1</sup> 1/(1 + a<sub>1</sub>). Now a<sub>n</sub> &lt; 1, so (n-1)/(1 + a<sub>n</sub>)<sup>n-1</sup> &gt; 2/2<sup>1/n-1</sup> &gt; 1. Hence a<sub>2</sub>/(1 + a<sub>2</sub>) + ... + a<sub>n</sub>/(1 + a<sub>n</sub>) &gt; 1/(1 + a<sub>1</sub>). Hence a<sub>1</sub>/(1 + a<sub>1</sub>) + ... + a<sub>n</sub>/(1 + a<sub>n</sub>) &gt; 1.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh85.html">26th IMO shortlist 1985</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Sep 2002
+</BODY>
+
+</HTML>
+

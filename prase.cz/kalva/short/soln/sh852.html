@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1985/2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>26th IMO 1985 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 2</b><br>
+<p>
+A convex quadrilateral ABCD is inscribed in a circle radius 1. Show that 0 &lt; |AB + BC + CD + DA - AC - BD| &lt; 2.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+The triangle inequality gives: AB + BC &gt; AC, BC + CD &gt; BD, CD + DA &gt; AC, DA + AB &gt; BD. Adding and dividing by 2 gives AB + BC + CD + DA - AC - BC &gt; 0, which gives the first part.
+<p>
+Let O be the center of the circle. Let angle AOB = 2a, angle BOC = 2b, angle COD = 2c, angle DOA = 2d. Then AB = 2 sin a, BC = 2 sin b, CD = 2 sin c, DA = 2 sin d, AC = 2 sin(a+b), BD = 2 sin(b+c). So it remains to show that sin a + sin b + sin c + sin d - sin(a+b) - sin(b+c) &lt; 1. We have d = 180<sup>o</sup> - (a+b+c), so this is equivalent to: sin a + sin b + sin c + sin(a+b+c) &lt; sin(a+b) + sin(b+c) + 1. We claim that the stronger inequality sin a + sin b + sin c + sin(a+b+c) &lt; sin(a+b) + sin(b+c) + sin(c+a) (*) holds.
+<p>
+We have sin b + sin c = sin( (b+c)/2 + (b-c)/2) + sin( (b+c)/2 - (b-c)/2) = 2 sin( (b+c)/2) cos( (b-c)/2), sin a + sin(a+b+c) = sin(a + (b+c)/2 - (b+c)/2) + sin(a + (b+c)/2 + (b+c)/2) = 2 sin(a + (b+c)/2) cos( (b+c)/2), sin(a+b) + sin(a+c) = sin(a + (b+c)/2 + (b-c)/2) + sin(a + (b+c)/2 - (b-c)/2) = 2 sin(a + (b+c)/2) cos( (b-c)/2), sin(b+c) = 2 sin( (b+c)/2) cos( (b+c)/2). So (*) is equivalent to: sin( (b+c)/2) cos( (b-c)/2) + sin(a + (b+c)/2) cos( (b+c)/2) &lt; sin(a + (b+c)/2) cos( (b-c)/2) + sin( (b+c)/2) cos( (b+c)/2), and hence to: (sin(a + (b+c)/2) - sin( (b+c)/2) )(cos( (b-c)/2) - cos( (b+c)/2) &gt; 0.
+<p>
+There is no loss of generality in taking a to be the smallest of a, b, c, d. So a + (b+c)/2 &le; (a+d)/2 + (b+c)/2 &lt;= 90<sup>o</sup>. But sin x is an increasing function over 0, 90<sup>o</sup>, so sin(a + (b+c)/2) - sin( (b+c)/2) &gt; 0. Since b/2 and c/2 are both positive with sum less than 90<sup>o</sup>, we have |(b-c)/2| &lt; |(b+c)/2| and hence cos( (b-c)/2) - cos( (b+c)/2) &gt; 0. So (*) is established.
+<p>
+Note that the inequalities are the best possible. If we take A, B, C, D almost coincident, then we can get AB + BC + CD + DA - AC - BD as close as we like to 0. If we take A, B, D almost coincident and AC a diameter, then we can get AB + BC + CD + DA - AC - BD as close as we like to 0 + 2 + 2 + 0 - 2 - 0 = 2.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh85.html">26th IMO shortlist 1985</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Sep 2002
+</BODY>
+
+</HTML>
+

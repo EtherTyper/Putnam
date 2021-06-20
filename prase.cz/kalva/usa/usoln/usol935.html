@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 93/5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>22nd USAMO 1993</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 5</b><br>
+
+<p>
+
+A sequence x<sub>n</sub> of positive reals satisfies x<sub>n-1</sub>x<sub>n+1</sub> &le; x<sub>n</sub><sup>2</sup>. Let a<sub>n</sub> be the average of the terms x<sub>0</sub>, x<sub>1</sub>, ... , x<sub>n</sub> and b<sub>n</sub> be the average of the terms x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub>. Show that a<sub>n</sub>b<sub>n-1</sub> &ge; a<sub>n-1</sub>b<sub>n</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Put k = x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>n-1</sub>. We have to show that (x<sub>0</sub> + k + x<sub>n</sub>)/(n+1) &nbsp; k/(n-1) &ge; (x<sub>0</sub> + k)/n &nbsp; (k + x<sub>n</sub>)/n or n<sup>2</sup>(k + x<sub>0</sub> + x<sub>n</sub>) &ge; (n<sup>2</sup> - 1)(k + x<sub>0</sub>)(k + x<sub>n</sub>). Simplifying slightly, this is equivalent to k(k + x<sub>0</sub> + x<sub>n</sub>) &ge; (n<sup>2</sup> - 1)x<sub>0</sub>x<sub>n</sub>. So it is evidently sufficient to show that k &ge; (n-1)(x<sub>0</sub>x<sub>n</sub>)<sup>1/2</sup>. [Then AM/GM gives x<sub>0</sub> + x<sub>n</sub> &ge; 2(x<sub>0</sub>x<sub>n</sub>)<sup>1/2</sup>, so (k + x<sub>0</sub> + x<sub>n</sub>) &ge; (n+1)(x<sub>0</sub>x<sub>n</sub>)<sup>1/2</sup>.]
+
+<p>
+
+We have x<sub>0</sub>/x<sub>1</sub> &le; x<sub>1</sub>/x<sub>2</sub> &le; ... &le; x<sub>n-1</sub>/x<sub>n</sub>. Hence (apparently weakening) x<sub>0</sub>x<sub>n</sub> &le; x<sub>1</sub>x<sub>n-1</sub> &le; x<sub>2</sub>x<sub>n-2</sub> &le; ... . So k = (x<sub>1</sub> + x<sub>n-1</sub>) + (x<sub>2</sub> + x<sub>n-2</sub>) + ... &ge; (n-1) (x<sub>0</sub>x<sub>n</sub>)<sup>1/2</sup>, using first AM/GM, then the relation just established.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa93.html">22nd USAMO 1993</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+23 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

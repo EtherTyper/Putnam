@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1985/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>46th Putnam 1985</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Assuming that &int;<sub>-&infin;</sub><sup>&infin;</sup> e<sup>sq(x)</sup> dx = &radic;&pi; (where sq(x) = x<sup>2</sup>), find &int;<sub>0</sub><sup>&infin;</sup> x<sup>-1/2</sup> e<sup>-1985(x + 1/x)</sup> dx.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+A little experimentation suggests that we are not going to solve the problem by substitutions like t = &radic;x. That substitution gives I = 2 &int;<sub>0</sub><sup>&infin;</sup> exp( -k(x<sup>2</sup> + 1/x<sup>2</sup>) ) dx (*).
+
+<p>
+
+Another standard approach is to introduce an additional variable y into the integrand and then to differentiate. The hope is that we can solve the resulting differential equation. We still need an initial condition, so we must choose the variable so that the integration simplifies for y = 0 (or some other suitable value).
+
+<p>
+
+Starting from (*), we put f(y) = &int;<sub>0</sub><sup>&infin;</sup> exp( -kx<sup>2</sup> - y/x<sup>2</sup>) dx. Hence f '(y) = - &int;<sub>0</sub><sup>&infin;</sup> 1/x<sup>2</sup> exp( -kx<sup>2</sup> - y/x<sup>2</sup>) dx. If we substitute s = 1/x, then we get f '(y) = - &int;<sub>0</sub><sup>&infin;</sup> exp( -k/s<sup>2</sup> - ys<sup>2</sup>) ds. Now putting s = t &radic;(k/y) gives f '(y) = - &radic;(k/y) &int;<sub>0</sub><sup>&infin;</sup> exp( -kt<sup>2</sup> - y/t<sup>2</sup>) dt = - &radic;(k/y) f(y). Integrating, we get f(y) = f(0) exp( - 2 &radic;(ky) ). But f(0) = 1/2 &radic;(&pi;/k), so I = 2f(k) = &radic;(&radic;/k) e<sup>-2k</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn85.html">46th Putnam 1985</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

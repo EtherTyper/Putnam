@@ -1,0 +1,28 @@
+<HTML>
+<HEAD>
+<TITLE>42nd IMO shortlist 2001/C6 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>42nd IMO 2001 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C6</b><br>
+<p>
+Show that there is a set P of (2n)!/(n! (n+1)!) sequences of 2n terms, half 1s and half 0s, such that any sequence of 2n terms, half 1s and half 0s, is either in P or can be derived from a member of P by <i>moving</i> one term. Moving a term means changing a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>2n</sub> to a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>i-1</sub>, a<sub>i+1</sub>, ... , a<sub>j</sub>a<sub>i</sub>a<sub>j+1</sub> ... a<sub>n</sub> for some i, j. For example, by moving the initial 0 we can change <b>0</b>110 to 1<b>0</b>10 or 11<b>0</b>0, or by moving the first 1 we can change 0<b>1</b>10 to <b>1</b>010 or 010<b>1</b>.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Given a sequence x (of length 2n), let f(x) be the sum of the positions of the 1s mod n+1. For example, x = 0110 has 1s in positions 2 and 3, so f(x) = 2 + 3 = 5 = 2 mod 3. Take P<sub>k</sub> to be all sequences with f(x) = k. Now suppose a sequence x has 0 in the first position. If we move it to just after the mth 1 to get the sequence y, then we shift each of those 1s one place to the left, so f(y) = f(x) - m mod n+1. So by taking a suitable m (between 1 and n) - or by making no move at all - we can get y into P<sub>k</sub>. Similarly, if x has 1 in the first position and we move it to just after the mth 0 to get a sequence y, then if we moved it past h 1s, each of those 1s has its position reduced by 1, but the 1 we are moving has its position increased by m+h, so f(y) = f(x) + m. So we can again get y into P<sub>k</sub>. So every sequence either belongs to P<sub>k</sub> or can be derived from a member of P<sub>k</sub> by a move. But the n+1 sets P<sub>k</sub> form a partition the (2n)!/(n! n!) possible sequences, so at least one of them has at most (2n)!/(n! (n+1)!) members. [If it has less then we can add any sequences to bring it up to (2n)!/(n! (n+1)!) members].
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh01.html">42nd IMO shortlist 2001</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+14 Oct 2002
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,71 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 2000/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+k is a positive real. N is an integer greater than 1. N points are placed on a line, not all coincident. A <i>move</i> is carried out as follows. Pick any two points A and B which are not coincident. Suppose that A lies to the right of B. Replace B by another point B' to the right of A such that AB' = k BA. For what values of k can we move the points arbitrarily far to the right by repeated moves?
+
+<p>
+
+&nbsp;<p>
+<b>Answer</b>
+<p>
+k &ge; 1/(N-1).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+<i>An elegant solution by Gerhard Woeginger is as follows:</i>
+
+<p>
+
+Suppose k &lt; 1/(N-1), so that k<sub>0</sub> = 1/k - (N - 1) &gt; 0. Let X be the sum of the distances of the points from the rightmost point. If a move does not change the rightmost point, then it reduces X. If it moves the rightmost point a distance z to the right, then it reduces X by at least z/k - (N-1)z = k<sub>0</sub> z. X cannot be reduced below nil. So the total distance moved by the rightmost point is at most X<sub>0</sub>/k<sub>0</sub>, where X<sub>0</sub> is the initial value of X.
+
+<p>Conversely, suppose k &ge; 1/(N-1), so that k<sub>1</sub> = (N-1) - 1/k &ge; 0. We always move the leftmost point. This has the effect of moving the rightmost point z &gt; 0 and increasing X by (N-1)z - z/k = k<sub>1</sub>z &ge; 0. So X is never decreased. But z &ge; k X/(N-1) &ge; k X<sub>0</sub>/(N-1) &gt; 0. So we can move the rightmost point arbitrarily far to the right (and hence all the points, since another N-1 moves will move the other points to the right of the rightmost point).
+
+<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo00.html">41st IMO 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Aug 2000
+
+<br>Last corrected/updated 24 Nov 2003
+
+</BODY>
+
+
+
+</HTML>
+

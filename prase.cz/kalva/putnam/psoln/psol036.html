@@ -1,0 +1,65 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 03/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>64th Putnam 2003</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b>
+
+<p>
+
+Is it possible to partition {0, 1, 2, 3, ... } into two parts such that n = x + y with x &ne; y has the same number of solutions in each part?
+
+<p>
+
+&nbsp;<p>
+<b>Answer</b>
+
+<p>
+
+Yes.
+<p>
+
+<b>Solution</b>
+
+<p>
+
+Put A = numbers with an odd number of binary digits, B = numbers with an even number of binary digits. Let S be the set of pairs (a,b) with a &ne; b and a, b non-negative. Define f: S &rarr; S as follows. Given (a,b) &isin; S take the first digit from the right which differs in a and b and switch it in both to give (a',b'). Evidently (a',b') &isin; S and a + b = a' + b'. Also f is its own inverse. Note that (a,b) is a pair of numbers from A iff f(a,b) is a pair of numbers from B. Thus f gives a bijection between solutions of n = x + y in A and solutions in B.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn03.html">64th Putnam 2003</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+8 Dec 2003
+
+<br>Last corrected/updated 8 Dec 03
+
+</BODY>
+
+
+
+</HTML>
+

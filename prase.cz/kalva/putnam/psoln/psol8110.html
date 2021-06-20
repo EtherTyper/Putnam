@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1981/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>42nd Putnam 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+A is a set of 5 x 7 real matrices closed under scalar multiplication and addition. It contains matrices of ranks 0, 1, 2, 4 and 5. Does it necessarily contain a matrix of rank 3?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: no.
+
+<p>
+
+The 5 x 7 is something of a red herring. Note that we would expect the answer to be no, because addition and scalar multiplication do not impose any mixing on the matrix elements.
+
+<p>
+
+Consider the 5 x 5 matrix with a in the first 4 positions on the diagonal, c is the last position, b at positions (4,5) and (5,4) and zeros elsewhere. Taking (a, b, c) = (1, 0, 1), (1, 0, 0), (0, 1, 0), (0, 0, 1), (0, 0, 0) gives matrices of rank 5, 4, 2, 1, 0 respectively. If a = 0, then all the entries in rows 1, 2 and 3 are zero, so the rank is at most 2. If a is non-zero, then there is certainly a 4 x 4 unit submatrix, so the rank is at least 4. Thus no member of the set has rank 3.
+
+<p>
+
+If we add two columns of zeros to every member of the set, then we get a counter-example for the 5 x 7 case.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn81.html">42nd Putnam 1981</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

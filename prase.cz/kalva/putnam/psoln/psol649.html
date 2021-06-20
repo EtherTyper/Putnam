@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1964/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>25th Putnam 1964</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+R is the reals. f <b>:</b> R &rarr; R is continuous and for any &alpha; &gt; 0, lim<sub>n&rarr;&infin;</sub> f(n&alpha;) = 0. Prove lim<sub>x&rarr;&infin;</sub> f(x) = 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>This is fairly hard.</i>
+
+<p>
+
+Take &epsilon; &gt; 0. Let A<sub>n</sub> = {x : |f(nx)| &le; &epsilon;}. Let B<sub>n</sub> be the intersection of all A<sub>m</sub> with m &ge; n. The function f is continuous, so each A<sub>n</sub> is closed. Hence also each B<sub>n</sub>. Now suppose we can show that an open interval (a, b) is contained in some B<sub>N</sub>. That means that for any x in (a, b) and any n &gt; N we have |f(nx)| &lt; &epsilon;. Hence |f(x)| &lt; &epsilon; for any x in (na, nb). But the intervals (na, nb) expand in size as they move to the right, so for n sufficiently large they overlap and we have that their union includes all sufficiently large x. In other words, for any sufficiently large x we have |f(x)| &lt; &epsilon;. But &epsilon; was arbitrary, so we have established that lim f(x) = 0 as x tends to infinity.
+
+<p>
+
+It remains to show that we can find such an open interval (a, b). Now we are given that for any given x, lim f(nx) = 0 (as n tends to infinity), so x belongs to some B<sub>n</sub> for n sufficiently large. In other words, the union of the B<sub>n</sub> is the entire line.
+
+<p>
+
+We now need the Baire category theorem which states that if a union of closed sets covers the line, then one of the sets contains an open interval. This is bookwork. [But straightforward. Assume none of the B<sub>n</sub> contain an open interval. Take a point not in B<sub>1</sub>. Since B<sub>1</sub> is closed we may take a closed interval C<sub>1</sub>about the point, not meeting B<sub>1</sub>. Having chosen C<sub>n</sub>, there must be a point in it not in B<sub>n+1</sub> (or B<sub>n+1</sub> would contain an open interval - the interior of C<sub>n</sub>). Hence we may take C<sub>n+1</sub>, a closed subinterval of C<sub>n</sub> which does not meet B<sub>n+1</sub>. Now C<sub>n</sub> is a nested sequence of closed intervals, so there must be a point X in all the C<sub>n</sub> But B<sub>n</sub> cover the line, so X must be in some B<sub>n</sub>. Contradiction.].
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn64.html">25th Putnam 1964</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

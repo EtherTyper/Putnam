@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 99/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>60th Putnam 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Let R be the reals. Define f <b>:</b>[0, 1) x [0, 1) &rarr; R by f(x, y) = &sum; x<sup>m</sup>y<sup>n</sup>, where the sum is taken over all pairs of positive integers (m, n) satisfying m &ge; n/2, n &ge; m/2. Find lim<sub>(x, y)&rarr;(1, 1)</sub> (1 - xy<sup>2</sup>)(1 - x<sup>2</sup>y)f(x, y).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The straight slog approach is to sum the series. This is not too bad. If m = 2r, the y terms are y<sup>r</sup>(1 + y + ... + y<sup>3r</sup>) = y<sup>r</sup>(1 - y<sup>3r+1</sup>)/(1 - y). Now summing over r we have &sum; x<sup>2r</sup>y<sup>r</sup>/(1 - y) - &sum; x<sup>2r</sup>y<sup>4r+1</sup>/(1 - y) = x<sup>2</sup>y/( (1 - x<sup>2</sup>y)(1 - y) ) - x<sup>2</sup>y<sup>5</sup>/( (1 - x<sup>2</sup>y<sup>4</sup>)(1 - y) ). We deal with odd m in the same way. Let m = 2r - 1, then the y terms are y<sup>r</sup>(1 + y + ... + y<sup>3r-2</sup>) = y<sup>r</sup>(1 - y<sup>3r-1</sup>)/(1 - y). So summing over r, we get xy/( (1 - x<sup>2</sup>y)(1 - y) ) - xy<sup>3</sup>/( (1 - x<sup>2</sup>y<sup>4</sup>)(1 - y) ). After some algebra, we get that the complete sum is xy(1 + x + y + xy - x<sup>2</sup>y<sup>2</sup>)/( (1 - x<sup>2</sup>y)(1 - xy<sup>2</sup>) ). Hence the required limit is 3.
+
+<p>
+
+A slightly more elegant approach is to note that the sum over pairs (m, n) with m &gt; n/2 is &sum; x<sup>2n+m</sup>y<sup>n</sup> where the sum is over all m, n &ge; 1. That is just x/(1 - x) x<sup>2</sup>y/(1 - x<sup>2</sup>y). Similarly, the sum over pairs (m, n) with n &gt; m/2 is y/(1 - y) xy<sup>2</sup>/(1 - xy<sup>2</sup>). Putting the three sums together gives x/(1 - x) y/(1 - y). Hence the required sum is x/(1 - x) y/(1 - y) - x/(1 - x) x<sup>2</sup>y/(1 - x<sup>2</sup>y) - y/(1 - y) xy<sup>2</sup>/(1 - xy<sup>2</sup>). Unfortunately, things deteriorate from this point on. Getting the expression into the required form xy(1 + x + y + xy - x<sup>2</sup>y<sup>2</sup>)/( (1 - x<sup>2</sup>y)(1 - xy<sup>2</sup>) ) requires, if anything, rather more slogging than the straight slog approach.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+&nbsp;<p>
+
+<a href="../putn99.html">60th Putnam 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

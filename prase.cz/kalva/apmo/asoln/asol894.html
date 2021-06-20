@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 89/4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>1st APMO 1989</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 4</b><br>
+<p>
+Show that a graph with n vertices and k edges has at least k(4k - n<sup>2</sup>)/3n triangles. 
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Label the points 1, 2, ... , n and let point i have degree d<sub>i</sub> (no. of edges). Then if i and j are joined they have at least d<sub>i</sub> + d<sub>j</sub> - 2 other edges between them, and these edges join them to n - 2 other points. So there must be at least d<sub>i</sub> + d<sub>j</sub> - n triangles which have i and j as two vertices. Hence the total number of triangles must be at least &sum;<sub>edges ij</sub> (d<sub>i</sub> + d<sub>j</sub> - n)/3. But &sum;<sub>edges ij</sub> (d<sub>i</sub> + d<sub>j</sub>) = &sum; d<sub>i</sub><sup>2</sup>, because each point i occurs in just d<sub>i</sub> terms. Thus the total number of triangles is at least (&sum; d<sub>i</sub><sup>2</sup>)/3 - nk/3. But &sum; d<sub>i</sub><sup>2</sup> &ge; (&sum; d<sub>i</sub>) <sup>2</sup>/n (a special case of Chebyshev's inequality) = 4k<sup>2</sup>/n. Hence result.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo89.html">1st APMO 1989</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

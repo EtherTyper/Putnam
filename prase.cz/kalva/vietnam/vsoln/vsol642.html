@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Vietnam 64/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>3rd VMO 1964</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b>
+
+<p>
+
+Draw the graph of the functions y = | x<sup>2</sup> - 1 | and y = x + | x<sup>2</sup> - 1 |. Find the number of roots of the equation x + | x<sup>2</sup> - 1 | = k, where k is a real constant.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+0 for k &lt; -1
+<br>1 for k = -1
+<br>2 for -1 &lt; k &lt; 1
+<br>3 for k = 1
+<br>4 for 1 &lt; k &lt; 5/4
+<br>3 for k = 5/4
+<br>2 for k &gt; 5/4
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+<img src="diag642.jpg">
+<p>
+It is clear from the graph that there are no roots for k &lt; -1, and one root for k = -1 (namely x = -1). Then for k &gt; -1 there are two roots except for a small interval [1, 1+h]. At k = 1, there are 3 roots (x = -2, 0, 1). The upper bound is at the local maximum between 0 and 1. For such x, y = x + 1 - x2 = 5/4 - (x - 1/2)2, so the local maximum is at 5/4. Thus there are 3 roots at k = 5/4 and 4 roots for k &isin; (1, 5/4).
+<p>
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../viet64.html">3rd VMO 1964</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 March 2004
+<br>Last corrected/updated 7 Mar 04
+
+</BODY>
+
+
+
+</HTML>
+

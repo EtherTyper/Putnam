@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 02/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>63rd Putnam 2002</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+The sequence u<sub>n</sub> is defined by u<sub>0</sub> = 1,  u<sub>2n</sub> = u<sub>n</sub> + u<sub>n-1</sub>, u<sub>2n+1</sub> = u<sub>n</sub>. Show that for any positive rational k we can find n such that u<sub>n</sub>/u<sub>n+1</sub> = k.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let S<sub>m</sub> be the statement that for any positive rational k = r/s with max(r, s) = m, we can find n such that u<sub>n</sub>/u<sub>n+1</sub> = k. We use induction on m. The result is obviously true for m = 1 (if m = 1, then k must be 1/1 and we can take n = 0). So suppose the result is true for m &lt; N. We now have to consider k = N/s with s &lt; N and k = s/N with s &lt; N.
+
+<p>
+
+If k = N/s, then k &gt; 1 and k - 1 = (N-s)/s. But max(N-s, s) &lt; N, so k - 1 = u<sub>n</sub>/u<sub>n+1</sub> for some n. Hence k = (u<sub>n</sub> + u<sub>n+1</sub>)/u<sub>n+1</sub> = u<sub>2n+2</sub>/u<sub>2n+3</sub>.
+
+<p>
+
+If k = s/N, then k &lt; 1 and k/(1-k) = s/(N-s). But max(s, N-s) &lt; N, so k/(1-k) = u<sub>n</sub>/u<sub>n+1</sub> for some n. Hence k = u<sub>n</sub>/(u<sub>n+1</sub> + u<sub>n</sub>) = u<sub>2n+1</sub>/u<sub>2n+2</sub>.
+
+<p>
+
+Thus the result is also true for m = N and hence for all m.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn02.html">63rd Putnam 2002</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Dec 2002
+
+</BODY>
+
+
+
+</HTML>
+

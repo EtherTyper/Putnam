@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+<TITLE>33rd IMO shortlist 1992/14 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>33rd IMO 1992 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 14</b>
+<p>
+For each positive integer n, let d(n) be the largest odd divisor of n and define f(n) to be n/2 + n/d(n) for n even and 2<sup>(n+1)/2</sup> for n odd. Define the sequence a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ... by a<sub>1</sub> = 1, a<sub>n+1</sub> = f(a<sub>n</sub>). Show that 1992 occurs in the sequence and find the first time it occurs. Does it occur more than once?
+<p>
+&nbsp;<p>
+<b>Answer</b>
+<p>
+a<sub>8250</sub> = 1992. No.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+The first few terms are 1, 2, 3, 4, 6, 5, 8, 12, 10, 7, 16, 24, 20, 14, 9, ... . Take f<sup>m</sup>(n) to mean that f is composed with itself m times. We claim that f<sup>m</sup>(2<sup>n</sup>) = (2m+1)2<sup>n-m</sup> for m &le; n. Induction on m. For m = 1 we have f(2<sup>n</sup>) = 2<sup>n</sup>/2 + 2<sup>n</sup>/1 = 3&middot;2<sup>n-1</sup>, as required. So if it is true for m, then f<sup>m+1</sup>(2<sup>n</sup>) = f((2m+1)2<sup>n-m</sup>) = (2m+1)2<sup>n-m-1</sup> + 2<sup>n-m</sup> = (2m+3)2<sup>n-(m+1)</sup>, as required. Hence it is true for all m &le; n. Also, we have f(2m+1) = 2<sup>m+1</sup>. So f<sup>m+2</sup>(2m+1) = 2m+3, and all the intervening terms are even. In fact we can write the terms as a triangle:
+<pre>1
+1&middot;2<sup>1</sup> 3&middot;1
+1&middot;2<sup>2</sup> 3&middot;2<sup>1</sup> 5&middot;1
+1&middot;2<sup>3</sup> 3&middot;2<sup>2</sup> 5&middot;2<sup>1</sup> 7&middot;1
+1&middot;2<sup>4</sup> 3&middot;2<sup>3</sup> 5&middot;2<sup>2</sup> 7&middot;2<sup>1</sup> 9&middot;1
+...
+</pre>
+It is clear that each positive integer occurs in the sequence exactly once. We have 1992 = 8&middot;249. We have a<sub>1</sub> = 1, a<sub>1+2</sub> = 3, a<sub>1+2+3</sub> = 5, ... a<sub>1+2+...+k</sub> = a<sub>k(k+1)/2</sub> = 2k-1, so 249 = a<sub>7875</sub>. That row has 125 terms. Then 2&middot;249 = a<sub>7875+125</sub>, 4&middot;249 = a<sub>7875+125+125</sub>, 8&middot;249 = a<sub>7875+125+125+125</sub> = a<sub>8250</sub>.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh92.html">33rd IMO shortlist 1992</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+25 Nov 2003
+<br>Last updated/corrected 25 Nov 2003
+</BODY>
+
+</HTML>
+

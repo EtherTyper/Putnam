@@ -1,0 +1,39 @@
+<HTML>
+
+<HEAD>
+<TITLE>APMO 04/5 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>16th APMO 2004</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 5</b>
+<p>
+Show that (x<sup>2</sup> + 2)(y<sup>2</sup> + 2)(z<sup>2</sup> + 2) &ge; 9(xy + yz + zx) for any positive reals x, y, z.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Expanding lhs we get x<sup>2</sup>y<sup>2</sup>z<sup>2</sup> + 2(x<sup>2</sup>y<sup>2</sup> + y<sup>2</sup>z<sup>2</sup> + z<sup>2</sup>x<sup>2</sup>) + 4(x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>) + 8.
+<p>
+By AM/GM we have 3(x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>) &ge; 3(xy + yz + zx) and (2x<sup>2</sup>y<sup>2</sup> + 2) + (2y<sup>2</sup>z<sup>2</sup> + 2) + (2z<sup>2</sup>x<sup>2</sup> + 2) &ge; 4(xy + yz + zx). That leaves us needing x<sup>2</sup>y<sup>2</sup>z<sup>2</sup> + x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> + 2 &ge; 2(xy + yz + zx) (*). That is hard, because it is not clear how to deal with the xyz on the lhs.
+<p>
+By AM/GM we have (a+b)(b+c)(c+a) &ge; 8abc. So if (u+v-w), (u-v+w), (-u+v+w) are all non-negative, we can put 2a = -u+v+w, 2b = u-v+w, 2c = u+v-w and get uvw &ge; (-u+v+w)(u-v+w)(u+v-w). If u, v, w are positive, then at most one of (u+v-w), (u-v+w), (-u+v+w) is negative. In that case uvw &ge; (-u+v+w)(u-v+w)(u+v-w) is trivially true. So it holds for all positive u, v, w. Expanding, we get u<sup>3</sup> + v<sup>3</sup> + w<sup>3</sup> + 3uvw &ge; uv(u+v) + vw(v+w) + wu(w+u), which is a fairly well-known inequality. Applying AM/GM to u+v etc we get, u<sup>3</sup> + v<sup>3</sup> + w<sup>3</sup> + 3uvw &ge; 2(uv)<sup>3/2</sup> + 2(vw)<sup>3/2</sup> + 2(wu)<sup>3/2</sup>. Finally, putting u = x<sup>2/3</sup>, v = y<sup>2/3</sup>, w = z<sup>2/3</sup>, we get x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> + 3(xyz)<sup>2/3</sup> &ge; 2(xy + yz + zx) (**).
+<p>
+Thus we have x<sup>2</sup>y<sup>2</sup>z<sup>2</sup> + x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup> + 2 &ge; &ge; (x<sup>2</sup> + y<sup>2</sup> + z<sup>2</sup>) + 3(xyz)<sup>2/3</sup>, by applying AM/GM to x<sup>2</sup>y<sup>2</sup>z<sup>2</sup>, 1, 1, and now (**) gives the required (*).
+<p>
+<i>Thanks to Jacob Tsimerman</i>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../apmo04.html">16th APMO 2004</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+27 Mar 2004
+<br>Last corrected/updated 27 Mar 04
+</BODY>
+
+</HTML>
+

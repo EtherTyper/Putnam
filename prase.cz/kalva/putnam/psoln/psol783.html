@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 78/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>39th Putnam 1978</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Let p(x) = 2(x<sup>6</sup> + 1) + 4(x<sup>5</sup> + x) + 3(x<sup>4</sup> + x<sup>2</sup>) + 5x<sup>3</sup>. Let a = &int;<sub>0</sub><sup>&infin;</sup> x/p(x) dx, b = &int;<sub>0</sub><sup>&infin;</sup> x<sup>2</sup>/p(x) dx, c = &int;<sub>0</sub><sup>&infin;</sup> x<sup>3</sup>/p(x) dx, d = &int;<sub>0</sub><sup>&infin;</sup> x<sup>4</sup>/p(x) dx. Which of a, b, c, d is the smallest?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: b.
+
+<p>
+
+Let a<sub>1</sub> = &int;<sub>0</sub><sup>1</sup> x/p(x) dx, a<sub>2</sub> = &int;<sub>1</sub><sup>&infin;</sup> x/p(x) dx. Similarly, b<sub>1</sub>, b<sub>2</sub>, c<sub>1</sub>, c<sub>2</sub>, d<sub>1</sub>, d<sub>2</sub>. Also define e<sub>1</sub> = &int;<sub>0</sub><sup>1</sup> 1/p(x) dx.
+
+<p>
+
+Using the subtitution y = 1/x we find that a<sub>1</sub> = c<sub>2</sub>, a<sub>2</sub> = c<sub>1</sub>, b<sub>1</sub> = b<sub>2</sub>, and e<sub>1</sub> = d<sub>2</sub>. Hence, in particular, a = a<sub>1</sub> + a<sub>2</sub> = c<sub>2</sub> + c<sub>1</sub> = c. 
+
+<p>
+
+But x - 2x<sup>2</sup> + x<sup>3</sup> = x(x - 1)<sup>2</sup> &gt; 0 on (0, 1), so a<sub>1</sub> - 2b<sub>1</sub> + c<sub>1</sub> &gt; 0. Hence a = a<sub>1</sub> + a<sub>2</sub> &gt; b<sub>1</sub> + b<sub>2</sub> = b. Hence also c &gt; b. 
+
+<p>
+
+Similarly, 1 - 2x<sup>2</sup> + x<sup>4</sup> = (x<sup>2</sup> - 1)<sup>2</sup> &gt; 0 on (0, 1). So e<sub>1</sub> - 2b<sub>1</sub> + d<sub>1</sub> &gt; 0. Hence d = d<sub>1</sub> + d<sub>2</sub> &gt; b<sub>1</sub> + b<sub>2</sub> = b. So b is the smallest.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn78.html">39th Putnam 1978</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 84/3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>13th USAMO 1984</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 3</b><br>
+
+<p>
+
+A, B, C, D, X are five points in space, such that AB, BC, CD, DA all subtend the acute angle &theta; at X. Find the maximum and minimum possible values of &ang;AXC + &ang;BXD (for all such configurations) in terms of &theta;.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: minimum 0 (see below); maximum 2 cos<sup>-1</sup>(2 cos &theta; - 1), achieved by a square pyramid.
+
+<p>
+
+If we take A, B, C, D to lie in a plane so that AC and BD meet at X with the angle AXC = &theta;, then AB, BC, CD, DA all subtend the angle &theta; at X, but AC and BD subtend the angle zero. So the minimum is 0.
+
+<p>
+
+A little playing around suggests that we should take ABCD to be a square, with X on the normal through the center, so that XABCD is a square pyramid. We calculate the result for this case. Suppose XA = XB = XC = XD = 1, &ang;AXB = &ang;BXC = &ang;CXD = &ang;DXA = &theta;. Then AB = 2 sin &theta;/2, so AC = 2&radic;2 sin &theta;/2. So sin AXC/2 = &radic;2 sin &theta;/2. Hence cos AXC = 1 - 2 sin<sup>2</sup>AXC/2 = 1 - 4 sin<sup>2</sup>&theta;/2 = 2 cos &theta; - 1. Hence &ang;AXC + &ang;BXD = 2 cos<sup>-1</sup>(2 cos &theta; - 1). We note that this increases monotonically from 0 (at &theta; = 0) to 2&pi; (at &theta; = &pi;/2). For &theta; &gt; 0, we have cos &theta; &lt; 1, hence 2 cos &theta; - 1&lt; cos &theta; and hence 2 cos<sup>-1</sup>(2 cos &theta; - 1) &gt; 2&theta;. In other words, except for &theta; = 0, we can certainly do better than 2&theta;.
+
+<p>
+
+Take vectors origin X. Write XA = <b>A</b> etc. Since we are only interested in the angles, it is convenient to take <b>a</b> to be the unit vector in the direction <b>A</b>. Then we have <b>a.b</b> = <b>b.c</b> = <b>c.d</b> = <b>d.a</b> = cos <font face="symbol">q</font>. So (<b>a</b> - <b>c</b>)<b>.</b>(<b>b</b> - <b>d</b>) = 0. So either <b>a</b> = <b>c</b>, or <b>b</b> = <b>d</b> or <b>a</b> - <b>c</b> is perpendicular to <b>b</b> - <b>d</b>. Suppose <b>a</b> = <b>c</b>. Then X lies on the line AC. In this case we certainly have AD and CD subtending the same angle at X, and AB and BC subtending the same angle at X. But &ang;AXC = 0. XABD is a tetrahedron with &ang;AXD = &ang;AXB = &theta;. &ang;BXD &le; &ang;AXB + &ang;AXD (with equality only if A, B, D, X lie in a plane). So &ang;BXD + &ang;AXC &le; 2&theta; and we have just seen that this is not maximal. Similarly if <b>b</b> = <b>d</b>. So we may assume that <b>a</b> - <b>c</b> is perpendicular to <b>b</b> - <b>d</b> and both are non-zero.
+
+<p>
+
+We also have (<b>a</b> + <b>c</b>)<b>.</b>(<b>a</b> - <b>c</b>) = a<sup>2</sup> - c<sup>2</sup> = 0 and (<b>a</b> + <b>c</b>)<b>.</b>(<b>b</b> - <b>d</b>) = 0. So <b>a</b> + <b>c</b> is normal to the plane containing <b>a</b> - <b>c</b> and <b>b</b> - <b>d</b>. Similarly, <b>b</b> + <b>d</b>. Hence <b>a</b> + <b>c</b> and <b>b</b> + <b>d</b> are multiples of each other and (<b>a</b> + <b>c</b>)<b>.</b>(<b>b</b> + <b>d</b>) = |<b>a</b> + <b>c</b>| |<b>b</b> + <b>d</b>|.  But lhs = 4 cos &theta; and rhs = (2 cos AXC/2)(2 cos BXD/2). So cos &theta; = cos AXC/2 cos BXD/2 = 1/2 cos(AXC/2 + BXD/2) + 1/2 cos(AXC/2 - BXD/2). We want to maximise AXC/2 + BXD/2 and hence to minimise cos(AXC/2 + BXD/2), so we must maximise cos(AXC/2 - BXD/2) and hence take &ang;AXC = &ang;BXD. That then gives cos(AXC/2 + BXD/2) = 2 cos &theta; - 1, so AXC + BXD = 2 cos<sup>-1</sup>(2 cos &theta; - 1). So the square pyramid is indeed maximal.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa84.html">13th USAMO 1984</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

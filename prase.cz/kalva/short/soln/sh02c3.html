@@ -1,0 +1,51 @@
+<HTML>
+
+<HEAD>
+<TITLE>43rd IMO shortlist 2002/C3 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>43rd IMO 2002 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C3</b><br>
+<p>
+A sequence of n positive integers is <i>full</i> if for eack k &gt; 1, k only occurs if k-1 occurs before the last occurrence of k. How many full sequences are there for each n?
+<p>
+&nbsp;<p>
+<b>Answer</b><br>
+<p>
+n!
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Given a full sequence A for n, there are n+1 positions to insert another integer. Call i the position immediately after the ith integer of A, and 0 the front position. Let [A, i] be the sequence by inserting k in position i, where k is the largest integer m in A if position i occurs before the first occurrence of m, or m+1 if it is after. For example, if A is 2312, then [A, 0] is 32312 and [A, 2] is 23412. Let *A* be the sequence length n-1 obtained by deleting the first occurrence of m in A. For example, *2312* = 212.
+<p>
+We claim that for any full sequence A of length n:
+<br>(1) [A, i] is full for i = 0, 1, ... , n;
+<br>(2) for given A, all of [A, 0], [A, 1], ... , [A, n] are distinct;
+<br>(3) *A* is full;
+<br>(4) *[A, i]* = A;
+<br>(5) if *A* is obtained by removing the jth element of A, then [*A*, j-1] = A.
+<p>
+(1) is immediate from the definition. For (2), consider [A, i] and [A, j] with i &lt; j. If i and j are both before the first occurrence of m, then m occurs earlier in [A, i] than in [A, j], so they are distinct. If i occurs before the first occurrence and j after, then [A, j] includes m+1 and [A, i] does not. If both occur after, then each has just one occurrence of m+1, but in different places.
+<p>
+(3) is immediate from the definition. For (4) note that if we [A, i] is obtained from A by inserting k, then the insertion is always the first occurrence of k. If k = m+1, then it is the <i>only</i> occurrence. If k = m, then by definition it is the first occurrence. Note also that the inserted k is always the largest integer in [A, i] (although maybe not its only occurrence). It follows that *[A, i]*  = A.
+<p>
+It is clear that the jth element of A corresponds to an element inserted into position j-1 in *A*. Now suppose m was the element removed in obtaining *A* from A. If m occurs in *A*, then it must occur after position j-1, because we removed the first occurrence of m. Thus the digit inserted in moving from *A* to [*A*, j-1] is m and we recover A. If m does not occur in *A*, then the largest digit in *A* must be m-1 and it must occur before position j-1, since A was full. Hence the digit inserted in moving from *A* to [*A*, j-1] is again m and we again recover A. 
+<p>
+It now follows immediately that the number of full sequences length n must be n times the number of full sequences length n-1. (Note that if A and B are distinct full sequences legth n-1, then [A, i] and [B, j] must be distinct since *[A, i]* and *[B, j]* are distinct.). There is obviously just one full sequence length 1 (namely 1). So the result follows by a trivial induction.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh02.html">43rd IMO shortlist 2002</a><br>
+<p>(C) John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+8 Aug 2003
+<br>Last corrected/updated 8 Aug 2003
+</BODY>
+
+</HTML>
+

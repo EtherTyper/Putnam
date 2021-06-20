@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 91/4 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>3rd APMO 1991</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 4</b><br>
+<p>
+A sequence of values in the range 0, 1, 2, ... , k-1 is defined as follows: a<sub>1</sub> = 1, a<sub>n</sub> = a<sub>n-1</sub> + n (mod k). For which k does the sequence assume all k possible values? 
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Let f(n) = n(n+1)/2, so a<sub>n</sub> = f(n) mod k. If k is odd, then f(n+k) = f(n) mod k, so the sequence can only assume all possible values if a<sub>1</sub>, ... , a<sub>k</sub> are all distinct. But f(k-n) = f(n) mod k, so there are at most (k+1)/2 distinct values. Thus k odd does not work.
+<p>
+If k is even, then f(n+2k) = f(n) mod k, so we need only look at the first 2k values. But f((2k-1-n) = f(n) mod k and f(2k-1) = 0 mod k, so the sequence assumes all values iff a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>k-1</sub> assume all the values 1, 2, ... , k-1.
+<p>
+Checking the first few, we find k = 2, 4, 8, 16 work and k = 6, 10, 12, 14 do not. So this suggests that k must be a power of 2. Suppose k is a power of 2. If f(r) = f(s) mod k for some 0 &lt; r, s &lt; k, then (r - s)(r + s + 1) = 0 mod k. But each factor is &lt; k, so neither can be divisible by k. Hence both must be even. But that is impossible (because their sum is 2r+1 which is odd), so each of f(1), f(2), ... , f(k-1) must be distinct residues mod k. Obviously none can be 0 mod k (since 2k cannot divide r(r+1) for 0 &lt; r &lt; k and so k cannot divide f(r) ). Thus they must include all the residues 1, 2, ... k-1. So k a power of 2 does work.
+<p>
+Now suppose h divides k and k works. If f(n) = a mod k, then f(n) = a mod h, so h must also work. Since odd numbers do not work, that implies that k cannot have any odd factors. So if k works it must be a power of 2.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo91.html">3rd APMO 1991</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

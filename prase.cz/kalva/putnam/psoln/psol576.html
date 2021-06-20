@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>17th Putnam 1957/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>17th Putnam 1957</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Define a<sub>n</sub> by a<sub>1</sub> = ln &alpha;, a<sub>2</sub> = ln(&alpha; - a<sub>1</sub>), a<sub>n+1</sub> = a<sub>n</sub> + ln(&alpha; - a<sub>n</sub>). Show that lim<sub>n&rarr;&infin;</sub> a<sub>n</sub> = &alpha; - 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Unfortunately, this does not quite work as stated. If &alpha; is too small then a<sub>2</sub> &gt; &alpha; and hence a<sub>3</sub> is undefined. The limit is just under 0.3442. So assume that &alpha; is sufficiently large that a<sub>2</sub> &lt; &alpha;.
+
+<p>
+
+For all non-zero x we have e<sup>x</sup> &gt; 1 + x. Hence for all positive x not equal to 1 we have ln x &lt; x - 1.
+
+<p>
+
+Suppose that a<sub>2</sub> = &alpha; - 1. Then a<sub>n</sub> = &alpha; - 1 for all n &gt; 2, which gives the result. So assume a<sub>2</sub> is not equal to &alpha; - 1. Then for all n &ge; 2 we have ln(&alpha; - a<sub>n</sub>) &lt; &alpha; - a<sub>n</sub> - 1, so a<sub>n+1</sub> = a<sub>n</sub> + ln(&alpha; - a<sub>n</sub>) &lt; &alpha; - 1. 
+
+<p>
+
+Also for n &gt;= 3, we have that &alpha; - a<sub>n</sub> &gt; 1, so ln(&alpha; - a<sub>n</sub>) &gt; 0, so a<sub>n+1</sub> &gt; a<sub>n</sub>. Thus for n &ge; 3, a<sub>n</sub> is a monotonic increasing sequence bounded above by &alpha; - 1. So it must converge. 
+
+<p>
+
+But a<sub>n+1</sub> - a<sub>n</sub> = ln(&alpha; - a<sub>n</sub>), so ln(&alpha; - a<sub>n</sub>) tends to 0 and hence a<sub>n</sub> tends to &alpha; - 1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn57.html">17th Putnam 1957</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

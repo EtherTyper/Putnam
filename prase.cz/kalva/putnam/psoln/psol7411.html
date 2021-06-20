@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 74/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>35th Putnam 1974</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Let f<sub>n</sub>(x) = &sum;<sub>0</sub><sup>n</sup> x<sup>i</sup>/i! . Show that f<sub>n</sub>(n) &gt; e<sup>n</sup>/2. [Assume e<sup>x</sup> - f<sub>n</sub>(x) = 1/n! &int;<sub>0</sub><sup>x</sup> (x - t)<sup>n</sup> e<sup>t</sup> dt, and &int;<sub>0</sub><sup>&infin;</sup> t<sup>n</sup> e<sup>-t</sup> dt = n! ]
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Using the two relations in the square brackets, we find almost immediately that it suffices to show that &int;<sub>0</sub><sup>n</sup> t<sup>n</sup> e<sup>-t</sup> dt &lt; &int;<sub>n</sub><sup>&infin;</sup> t<sup>n</sup> e<sup>-t</sup> dt.
+
+<p>
+
+We notice that the integrand (which we will call g(t) ) is positive for all real t and has a maximum at t = n (differentiate). It would certainly be sufficient to show that g(n + x) &gt; g(n - x) for x in the interval (0, n). This turns out to be true. Taking logs, we need to show that n ln(n + x) - x &gt; n ln(n - x) + x. Putting h(x) = n ln(n + x) - n ln(n - x) - 2x, we need to show that h(x) &gt; 0. Differentiating, h'(x) = 2x<sup>2</sup> /(n<sup>2</sup> - x<sup>2</sup>) &gt; 0 for x in (0, n). But h(0) = 0, which gives the result.
+
+<p>
+
+<i>Comment. The given facts make this a routine computation. It might have been better to delete the facts in [ ] or to require proof that lim f(n) e<sup>-n</sup> = 1/2.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2">
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn74.html">35th Putnam 1974</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+18 Aug 2001
+
+<br>Last corrected/updated 2 Dec 02
+
+</BODY>
+
+
+
+</HTML>
+

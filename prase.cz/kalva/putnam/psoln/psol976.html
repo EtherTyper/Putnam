@@ -1,0 +1,75 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1997/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1997</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Let N be a fixed positive integer. For real &alpha;, define the sequence x<sub>k</sub> by:  x<sub>0</sub> = 0, x<sub>1</sub> = 1, x<sub>k+2</sub> = (&alpha;x<sub>k+1</sub> - (N - k)x<sub>k</sub>)/(k + 1). Find the largest &alpha; such that x<sub>N+1</sub> = 0 and the resulting x<sub>k</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: &alpha; = N - 1, x<sub>k</sub> = (N-1)C(k-1) for k &le; N and 0 for k &gt; N.
+
+<p>
+<i>Easy to get the answer, harder to prove it (but straightforward provided you are familiar with generating functions).</i>
+
+<p>
+Playing around with low values of N quickly generates the binomial coefficients and the value &alpha; = N - 1. It is then straightforward to verify that these values satisfy the recurrence relation. But that still leaves open the possibility that a larger value of &alpha; might work.
+
+<p>
+So we have to use a little more machinery. Notice first that if x<sub>N+1</sub> = 0, then x<sub>N+2</sub> = 0 and hence x<sub>i</sub> = 0 for all i &gt; N. Now define the generating function f(z) = &sum;<sub>0</sub><sup>&infin;</sup> x<sub>k+1</sub>z<sup>k</sup>. We have no convergence worries, because f(z) is in fact a polynomial. We have f '(z) = &sum;<sub>0</sub><sup>&infin;</sup> (k+1)x<sub>k+2</sub>z<sup>k</sup>, zf(z) = &sum;<sub>1</sub><sup>&infin;</sup> x<sub>k</sub>z<sup>k</sup>, and z<sup>2</sup>f '(z) + zf(z) = &sum;<sub>1</sub><sup>&infin;</sup> k x<sub>k</sub>z<sup>k</sup>, and so the recurrence relation is equivalent to:
+
+<p>
+ &nbsp; &nbsp; f '(z)/f(z) = (&alpha; - (N-1)z)/(1 - z<sup>2</sup>) = (&alpha; - (N-1))/(2(1 - z)) + (&alpha; + N-1)/(2(1+z)). 
+
+<p>
+Integrating (and using x<sub>1</sub> = 0): f(z) = (1-z)<sup>(N-1-&alpha;)/2</sup>(1+z)<sup>(&alpha;+N-1)/2</sup>.
+
+<br>Now we see immediately that the largest value of &alpha; which gives a polynomial is &alpha; = N - 1. The generating function is then (1 + z)<sup>N-1</sup>, and so x<sub>k</sub> = (N-1)C(k-1).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn97.html">Putnam 1997</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

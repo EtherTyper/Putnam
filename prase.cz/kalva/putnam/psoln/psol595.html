@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1959/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>20th Putnam 1959</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+At a particular moment, A, T and B are in a vertical line, with A 50 feet above T, and T 100 feet above B. T flies in a horizontal line at a fixed speed. A flies at a fixed speed directly towards B, B flies at twice T's speed, also directly towards T. A and B reach T simultaneously. Find the distance traveled by each of A, B and T, and A's speed.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: A travels 25(3 + &radic;73)/3 = 96.2 ft, B travels 400/3 ft = 133.3 ft, T 200/3 ft = 66.7 ft, A's speed is (3 + &radic;73)/8 = 1.443 times T's speed.
+
+<p>
+
+Take the x-axis vertical and the y-axis horizontal, so that at t = 0, the target is at (0, 0) and the pursuer is at (a, 0). Assume the target (T) has speed v and the pursuer (A or B) has speed kv with k &gt; 1. At time t, the target is at (0, vt). The equations of motion are: (dx/dt)<sup>2</sup> + (dy/dt)<sup>2</sup> = kv and y' = (y - vt)/x. The first equation gives kv/(dx/dt) = -&radic;(1 + y'<sup>2</sup>) (negative because x decreases with time).
+
+<p>
+
+Differentiating the second equation gives xy'' = - v/(dx/dt). So kxy'' = &radic;(1 + y'<sup>2</sup>). Integrating, ln(y' + &radic;(1 + y'<sup>2</sup>) ) = ln x + const. At x = a, y = 0, so (x/a)<sup>1/k</sup> = y' + &radic;(1 + y'<sup>2</sup>). Hence 2y' = (x/a)<sup>1/k</sup> - (x/a)<sup>-1/k</sup>. Integrating again, 2y = a/(1+1/k) (x/a)<sup>1+1/k</sup> - a/(1-1/k) (x/a)<sup>1-1/k</sup> - a/(1+1/k) + a/(1-1/k), since y = 0 at x = a. When pursuit ends, x = 0 and hence y = ak/(k<sup>2</sup> - 1).
+
+<p>
+
+For B, k = 2, so y = 2a/3 = 200/3 ft. That is the distance travelled by T. B is travelling at twice the speed, so B travels a distance 400/3 ft. For A reaches T at the same y, hence 200/3 = 50 k/(k<sup>2</sup> - 1), so 4k<sup>2</sup> - 3k - 4 = 0, so k = (3 + &radic;73)/8.
+
+<p>
+
+<i>This looks straightforward, but it is easy to get bogged down. Switching x and y axes, for example, makes it significantly harder.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn59.html">20th Putnam 1959</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

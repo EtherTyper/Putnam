@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1963/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>24th Putnam 1963</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+M is the midpoint of a chord PQ of an ellipse. A, B, C, D are four points on the ellipse such that AC and BD intersect at M. The lines AB and PQ meet at R, and the lines CD and PQ meet at S. Show that M is also the midpoint of RS.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The key is to generalise and think of the ellipse and the line pair as conics. Take M as the origin and PQ as the x-axis. The ellipse has equation ax<sup>2</sup> + bxy + cy<sup>2</sup> + dx + ey + f = 0. If P is (k, 0), then Q must be (-k, 0), so ak<sup>2</sup> + dk + f = ak<sup>2</sup> - dk + f = 0. Hence d = 0. The line AC must have equation y = gx for some g and the line BD must have equation y = hx for some h. So the line pair AC, BD is the conic with equation (y - gx)(y - hx) = 0. The ellipse and the line pair are two distinct conics through A, B, C, D, so any conic through those four points has equation r(ax<sup>2</sup> + bxy + cy<sup>2</sup> + ey + f) + s(y - gx)(y - hx). This conic meets PQ (which is y = 0) at the points given by r(ax<sup>2</sup> + f) + sgh x<sup>2</sup>. This has no x term, so the two points of intersection are equally spaced about M. In particular, this is true for the line pair AB, CD.
+
+<p>
+
+<i>This is quite a well-known piece of bookwork (for those who know some geometry), called the Penta-Chord theorem or the Butterfly theorem. If C and C' are any two conics through four points and meet the line L in chords with the same midpoint, then any other conic through the four points meets the line L in a chord with the same midpoint.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn63.html">24th Putnam 1963</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

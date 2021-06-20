@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1989/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>50th Putnam 1989</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Show that we can find &alpha; &gt; 0 such that, given any point P inside a regular polygon with an odd number of sides which is inscribed in a circle radius 1, we can find two vertices of the polygon whose distance from P differs by less than 1/n - &alpha;/n<sup>3</sup>, where the polygon has 2n + 1 sides.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+There are 2n+1 distances, all less than 2 (the diameter of the circle), so by the usual pigeon-hole argument there must be two distances differing by less than 2/2n. This is almost strong enough and suggests that we just need to refine this argument slightly.
+
+<p>
+
+The obvious refinement is that the diameter is slightly less than 2. In fact, it is a long diagonal of the polygon, length 2 cos(&pi;/(4n+2)). So we need to show that cos(&pi;/(4n+2)) &lt; 1 - &alpha;/n<sup>2</sup> for some positive &alpha;.
+
+<p>
+
+But it is easy to show that cos x &lt; 1 - x<sup>2</sup>/8 for 0 &lt; x &lt; &pi;/2 and so the result follows.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn89.html">50th Putnam 1989</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

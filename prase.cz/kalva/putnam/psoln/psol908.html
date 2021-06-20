@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1990/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>51st Putnam 1990</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Let P<sub>n</sub>(x, z) = &prod;<sub>1</sub><sup>n</sup> (1 - z x<sup>i-1</sup>) / (z - x<sup>i</sup>). Prove that 1 + &sum;<sub>1</sub><sup>&infin;</sup> (1 + x<sup>n</sup>) P<sub>n</sub>(x, z) = 0 for |z| &gt; 1 and |x| &lt; 1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If we calculate a few partial sums, we soon find a pattern emerging. Let S<sub>n</sub> = 1 + &sum;<sub>1</sub><sup>n</sup> (1 + x<sup>i</sup>) P<sub>i</sub>(x, z). Then we find S<sub>1</sub> = (1 - zx)/(z - x), S<sub>2</sub> = S<sub>1</sub> (1 - zx<sup>2</sup>)/(z - x<sup>2</sup>), S<sub>3</sub> = S<sub>2</sub> (1 - zx<sup>3</sup>)/(z - x<sup>3</sup>), ... . The general case follows by an easy induction.
+
+<p>
+
+But |x| &lt; 1, so |1 - zx<sup>n</sup>| &rarr; 1, and |z - x<sup>n</sup>| &rarr; |z|. But |z| &gt; 1, so we can find positive k &lt; 1 such that for n sufficiently large |(1 - zx<sup>n</sup>)/(z - x<sup>n</sup>)| &lt; k. Hence S<sub>n</sub> &rarr; 0 as n tends to infinity.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn90.html">51st Putnam 1990</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

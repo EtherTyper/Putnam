@@ -1,0 +1,44 @@
+<HTML>
+<HEAD>
+<TITLE>41st IMO shortlist 2000/A3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>41st IMO 2000 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A3</b><br>
+<p>
+Find all pairs of real-valued functions f, g on the reals such that f(x + g(y) ) = x f(y) - y f(x) + g(x) for all real x, y.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: f(x) = t(x-t)/(t+1), g(x) = t(x-t) for any real t not equal to -1.
+<p>
+We show first that g(h) = 0 for some h. If f(0) = 0, then putting y = 0 the equation gives f(x + g(0) ) = g(x). Putting h = -g(0) we get g(h) = f(0) = 0. 
+<p>
+Suppose f(0) = b, which is non-zero. Let g(0) = a. Putting x = 0, the equation gives f( g(y) ) = a - by. Hence g is injective and f is surjective. Replacing x by g(x) in the equation we get: f( g(x) + g(y) ) = g(x) f(y) - y f( g(x) ) + g( g(x) ). Similarly, replacing x by g(y) and y by x in the equation, we get: f( g(x) + g(y) ) = g(y) f(x) - x f( g(y) ) + g( g(y) ). Equating, g(x) f(y) - y(a - bx) + g( g(x) ) = g(y) f(x) - x(a - by) + g( g(y) ) (*). 
+<p>
+f is surjective, so there is c such that f(c) = 0. Putting y = c in (*), we get - ac + g( g(x) ) = g(c) f(x) - ax + g( g(c) ). Putting g(c) = k and g( g(c) ) + ac = d, this becomes g( g(x) ) = k f(x) - ax + d. Substituting back into (*) we get g(x) f(y) - ay + k f(x) - ax + d = g(y) f(x) - ax + k f(y) - ay + d or g(x) f(y) + k f(x) = g(y) f(x) + k f(y). Putting y = 0, g(x) = (a - k)/b f(x) + k. We assumed that f(0) was non-zero, so c is non-zero. So, since g is injective a = g(0) is not equal to k = g(c). Hence g(x) is surjective. So there must be some h such that g(h) = 0.
+<p>
+Now put h into the given equation. We get f(x) = x f(h) - h f(x) + g(x), so g(x) = (h+1) f(x) - f(h) x (**). Substituting back into the given equation, we get f(x + g(y) ) = (h+1 - y) f(x) + ( f(y) - f(h) ) x. Putting y = h+1, f(x + g(h+1) ) = ( f(h+1) - f(h) ) x. Writing n = g(h+1), m = f(h+1) - f(h), we get f(x + n) = mx. So f(x) is linear. So (**) shows that g(x) is also linear.
+<p>
+So put f(x) = rx + s, g(x) = tx + u. The original equation now gives rx + r(ty + u) + s = x(ry + s) - y(rx + s) + tx + u, or rx + rty + (ru+s) = (s+t)x - sy + u. Equating coefficients: 
+<br>r = s + t &nbsp; (1) 
+<br>rt = -s &nbsp;	&nbsp; (2)
+<br>ru+s = u &nbsp; (3). 
+<br>We cannot have t = -1, for then r = s from (2), and so t = 0 from (1), contradiction. Substituting (2) into (1) we get r = t/(t+1). Then (2) gives s = -t<sup>2</sup>/(t+1). Then (3) gives u(1-r) = s, so u = -t<sup>2</sup>.
+<p>
+Finally, we check that this solution works. g(y) = t(y-t), so f(x + g(y) ) = t(x + ty - t<sup>2</sup> - t)/(t+1). Whilst x f(y) - y f(x) + g(x) = (y - x)t<sup>2</sup>/(t+1) + t(x-t) = t( tx + x - t<sup>2</sup> - t + ty - tx)/(t+1) = f(x + g(y) ).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh00.html">41st IMO shortlist 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+
+</HTML>
+

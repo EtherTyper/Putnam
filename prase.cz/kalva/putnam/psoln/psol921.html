@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1992/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1992</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+Let Z be the integers. Prove that if f <b>:</b> Z &rarr; Z satisifies f( f(n) ) = f( f(n+2) + 2 ) = n for all n, and f(0) = 1, then f(n) = 1 - n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Easy.</i>
+
+<p>We are given that f(0) = 1 - 0 = 1. Hence f(1) = f( f(0) ) = 0. Suppose f(r) = 1 - r for all r &le; n. Then f( -(n-2) ) = f( f(n-1) ) = n-1. Hence f(n+1) = f( n-1 + 2) = f( f(-(n-2)) + 2) = -(n-2) - 2 = 1 - (n+1). So the result is true for all positive n. Hence f(-n) = f( f(n+1) ) = n+1 = 1 - (-n), so the result is true for negative n also.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn92.html">Putnam 1992</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+24 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

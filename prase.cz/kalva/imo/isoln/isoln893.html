@@ -1,0 +1,95 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1989/A3 solution</TITLE>
+
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1989</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Let n and k be positive integers, and let S be a set of n points in the plane such that no three points of S are collinear, and for any point P of S there are at least k points of S equidistant from P. Prove that k &lt; 1/2 + &radic;(2n).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Three variants on a theme, all kindly supplied by others (I spent 2 hours failing to solve it). My favorite first.
+
+<p>&nbsp;<br>
+
+<i>By Eli Bachmutsky</i>
+
+<p>
+Consider the pairs P, {A, B}, where P, A, B are points of S, and P lies on the perpendicular bisector of AB. There are at least n k(k - 1)/2 such pairs, because for each point P, there are at least k points equidistant from P and hence at least k(k - 1)/2 pairs of points equidistant from P.
+
+<p>
+If k &ge; 1/2 + &radic;(2n), then k(k - 1) &ge; 2n - 1/4 &gt; 2(n - 1), and so there are more than n(n - 1) pairs P, {A, B}. But there are only n(n - 1)/2 possible pairs {A, B}, so for some {A<sub>0</sub>, B<sub>0</sub>} we must be able to find at least 3 points P on the perpendicular bisector of A<sub>0</sub>B<sub>0</sub>. But these points are collinear, contradicting the assumption in the question.
+
+<p>&nbsp; <br>
+
+<i>From an anonymous source</i>
+
+<p>
+
+Let the points be P<sub>1</sub>, P<sub>2</sub>, ... , P<sub>n</sub>. Let C<sub>i</sub> be a circle center P<sub>i</sub> containing at least k points of S. There are at least nk pairs (C<sub>i</sub>,P<sub>j</sub>), where P<sub>j</sub> lies on C<sub>i</sub>. Hence there must a point P lying on at least k circles. Take k such circles C<sub>&alpha;</sub>. For each such circle C<sub>&alpha;</sub>, take a subset S<sub>&alpha;</sub> comprising exactly k points of S &cap; C<sub>&alpha;</sub>.
+
+<p>
+We now count the points in &cup; S<sub>&alpha;</sub>. Apart from P, there are k-1 points in each S<sub>&alpha;</sub>. So we start with 1 + k(k-1). But this counts some points more than once. Each pair (S<sub>&alpha;</sub>, S<sub>&beta;</sub>) (with &alpha; &ne; &beta;) has at most one common point apart from P (because distinct circles have at most two common points). So we deduct 1 for each of the 1/2 k(k - 1) pairs (S<sub>&alpha;</sub>, S<sub>&beta;</sub>), giving  1 + k(k - 1) - 1/2 k(k - 1) (*). 
+
+<p>
+If Q (&ne; P) is in exactly r sets S<sub>&alpha;</sub>, then it is counted r times in the second term k(k - 1), and subtracted 1/2 r(r - 1) times in the third term. So it is counted 1/2 r(3 - r) times in all. That is correct for r = 0, 1 or 2 and too low for r &gt; 2. So (*) is &le; |&cup; S<sub>&alpha;</sub>|. Clearly |&cup; S<sub>&alpha;</sub>| &le; n, so n &ge; 1 + k(k - 1)/2 = (k - 1/2)<sup>2</sup>/2 + 7/8 &gt; (k - 1/2)<sup>2</sup>/2. Hence &radic;(2n) + 1/2 &gt; k.
+
+<p>&nbsp;<br>
+
+<i>By Thomas J&auml;ger</i>
+
+<p>
+Define P<sub>i</sub> and S<sub>i</sub> as above. Let g(i) be the number of S<sub>a</sub> containing P<sub>i</sub>, and let f(i, j) be |S<sub>i</sub> &cap; S<sub>j</sub>|. Let h(x) = x(x - 1)/2. We count the number N of pairs i, {a, b}, where point i is in S<sub>a</sub> and S<sub>b</sub>. 
+
+<p>
+Point i is in g(i) sets S<sub>j</sub>, from which we can choose S<sub>a</sub>,S<sub>b</sub> in h(g(i)) ways. Hence N = &sum; h(g(i)). But f(a, b) points are in S<sub>a</sub> and S<sub>b</sub>, so N = &sum; f(a, b). But, since distinct circles intersect in at most 2 points, f(a, b) &le; 2, so &sum; f(a, b) &le; h(n) 2. We conclude that 2 h(n) &ge; &sum; h(g(i)). 
+
+<p>
+h is a convex function, so 1/n &sum; h(g(i)) &ge; h(1/n &sum; g(i)) = n h(1/n nk) = n h(k). Hence n - 1 &ge; h(k), which gives the result, as above.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo89.html">30th IMO 1989</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+13 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

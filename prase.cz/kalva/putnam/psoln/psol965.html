@@ -1,0 +1,61 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1996/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Let p be a prime &ge; 5. Prove that p<sup>2</sup> divides &sum;<sub>0</sub><sup>[2p/3]</sup> pCr.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Straightforward, provided you work in the field mod p.</i>
+
+<p>
+Obviously each pCi is divisible by p. So we have to show that S = pC1/p + pC2/p + ... + pCk/p is divisible by p. We work in the field mod p. pCi/p = (p-1)...(p-i)/(1.2. ... i) = (-1)<sup>i-1</sup>1/i. Hence S = 1 - 1/2 + ... +/- 1/k = 1 + 1/2 + ... + 1/k - 2(1/2 + 1/4 + ... + 1/2h) = 1 + 1/2 + ... + 1/k - (1 + 1/2 + ... + 1/h) = 1 + 1/2 + ... + 1/k + (1/(p-1) + 1/(p-2) + ... + 1/(p-h) ). By considering p = 1, 2 (mod 3) separately, we can easily check that p-h = k+1 and hence S = 1 + 1/2 + ... + 1/(p-1), which is a complete set of reduced residues and hence sums to zero.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn96.html">Putnam 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

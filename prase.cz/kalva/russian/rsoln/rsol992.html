@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 99/2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 1999</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 2</b><br>
+
+<p>
+
+Each edge of a finite connected graph is colored with one of N colors in such a way that there is just one edge of each color at each point. One edge of each color but one is deleted. Show that the graph remains connected.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Induction on N. For N=2, the graph must be a cycle with edges of alternating color, so removing one edge will not disconnect it. Now assume the result is true for N.
+<p>
+Take a graph colored with N+1 colors such that there is just one edge of each color at each point. Remove all the edges of one color X. If the graph remains connected, then it still has an edge of each color at each point, so by induction if we remove an edge of each color but one, then it remains connected. Obviously, if we now put back all but one of the X-colored edges, then it remains connected. So suppose removing all the edges of color X disconnects the graph, giving components C<sub>1</sub>, C<sub>2</sub>, ... , C<sub>r</sub>. By induction removing an edge of each color but one does not disconnect any of the components. Now each component must have an even number of points (because before removing the edges, if there are k points, then there are k/2 edges of any given color). Hence if we now put back the X-colored edges, then each component has an even number of X-colored edges to the other components. So if we regard the components as points, then every point of the resulting graph has even degree. But that means that every edge must be part of a cycle, so removing a single edge cannot disconnect the graph. Hence removing a single X-colored edge must leave all the components connected together and hence leave the graph connected.
+<p>
+<i>Thanks to Vikram Nayak</i>
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus99.html">Russian 1999</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+19 January 2004
+<br>Last corrected/updated 19 Jan 04
+
+</BODY>
+
+
+
+</HTML>
+

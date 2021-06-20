@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1964/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>25th Putnam 1964</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+a<sub>n</sub> are positive integers such that &sum; 1/a<sub>n</sub> converges. b<sub>n</sub> is the number of a<sub>n</sub> which are &lt;= n. Prove lim b<sub>n</sub>/n = 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If not, then for some k &gt; 0 we can find arbitrarily large N such that b<sub>N</sub> &gt; kN. Then at least kN of the integers a<sub>1</sub>, ... , a<sub>N</sub> do not exceed N. Let S be the set of indices i from 1, 2, ... N with a<sub>i</sub> &le; N. Then since S has at least kN members, the sum over S of 1/a<sub>i</sub> is at least k. 
+
+<p>
+
+The idea is to take N' &gt; N with b<sub>N'</sub> &gt; kN' and to ensure that half the indices i with a<sub>i</sub> &le; N' were not included in S. Take S' to be these new indices. Then since S' does not overlap S, the sum over S and S' of 1/a<sub>i</sub> is at least k + k/2. We then repeat always choosing the new set of indices not to overlap any of the previous sets. So at each stage we will add k/2 to the sum of 1/a<sub>i</sub>, which must therefore diverge, establishing a contradiction.
+
+<p>
+
+We can do this by taking the successor N' to N sufficiently big. In fact, it is sufficient to take N'/2 &gt; N/k because we know that all of the previous index sets are contained in {1, 2, ... , N}, so to avoid them we do not have to drop more than N &lt; kN'/2 indices, leaving at least kN'/2 new indices. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn64.html">25th Putnam 1964</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

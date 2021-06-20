@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1993/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>54th Putnam 1993</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Let a<sub>0</sub>, a<sub>1</sub>, a<sub>2</sub>, ... be a sequence such that: a<sub>0</sub> = 2; each a<sub>n</sub> = 2 or 3; a<sub>n</sub> = the number of 3s between the nth and n+1th 2 in the sequence. So the sequence starts: 233233323332332 ... . Show that we can find &alpha; such that a<sub>n</sub> = 2 iff n = [&alpha;m] for some integer m &ge; 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let b<sub>n</sub> be the index of the nth 2, so b<sub>0</sub> = 0, b<sub>1</sub> = 3, b<sub>2</sub> = 7, b<sub>3</sub> = 11, b<sub>4</sub> = 14, ... . Then we are told that b<sub>n</sub> = (a<sub>0</sub> + 1) + (a<sub>1</sub> + 1) + ... + (a<sub>n-1</sub> + 1). Now each a<sub>i</sub> = 2 or 3, so b<sub>n</sub> = 4n - (number of b<sub>m</sub>s in 0, 1, 2, ... , n-1).
+
+<p>
+
+Suppose that b<sub>n</sub> = [n&alpha;] as claimed. Then the number of b<sub>m</sub>s in 0, 1, ... , n-1 is the number of [m&alpha;] &lt; n, which is the same as the number of (m&alpha;) &lt; n (since &alpha; is irrational). And that is just 1 + [n/&alpha;]. So we have [n&alpha;] = 4n - 1 - [n/&alpha;]. But 4n - [n/&alpha;] = [4n - n/&alpha;] + 1 (since n/&alpha; is irrational), so [n&alpha;] = [4n - n/&alpha;] = [n&beta;], where &beta; = 4 - 1/&alpha;. But this holds for all n, so we must have &beta; = &alpha;. Solving the quadratic gives &alpha; = 2 &plusmn; &radic;3. But clearly &alpha; &gt; 3, so &alpha; = 2 + &radic;3.
+
+<p>
+
+We are not done yet. All we have done is shown that <i>if</i> it is true that b<sub>n</sub> = [n&alpha;] for some &alpha;, then &alpha; must be 2 + &radic;3. But we can work the previous argument in reverse. Suppose we define d<sub>n</sub> = [n(2 + &radic;3)]. Then the argument shows that d<sub>n</sub> = 4n - (number of d<sub>m</sub>s in 0, 1, 2, ... , n-1) and that is sufficient to identify d<sub>n</sub> and b<sub>n</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn93.html">54th Putnam 1993</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

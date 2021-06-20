@@ -1,0 +1,43 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 90/3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>2nd APMO 1990</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 3</b><br>
+<p>
+A triangle ABC has base AB = 1 and the altitude from C length h. What is the maximum possible product of the three altitudes? For which triangles is it achieved?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: for h &le; 1/2, maximum product is h<sup>2</sup>, achieved by a triangle with right-angle at C; for h &gt; 1/2, the maximum product is h<sup>3</sup>/(h<sup>2</sup> + 1/4), achieved by the isosceles triangle (AC = BC).
+<p>
+<i>Solution by David Krumm</i>
+<p>
+Let AC = b, BC = a, let the altitude from A have length x and the altitude from B have length y. Then ax = by = h, so hxy = h<sup>3</sup>/ab. But h = a sin B and b/sin B = 1/sin C, so h = ab sin C and the product hxy = h<sup>2</sup> sin C.
+<p>
+The locus of possible positions for C is the line parallel to AB and a distance h from it. [Or strictly the pair of such lines.] If h &le; 1/2, then there is a point on that line with angle ACB = 90 deg, so in this case we can obtain hxy = h<sup>2</sup> by taking angle ACB = 90 deg and that is clearly the best possible.
+<p>
+If h &gt; 1/2, then there is no point on the line with angle ACB = 90 deg. Let L be the perpendicular bisector of AB and let L meet the locus at C. Then C is the point on the locus with the angle C a maximum. For if D is any other point of the line then the circumcircle of ABD also passes through the corresponding point D' on the other side of C and hence C lies inside the circumcircle. If L meets the circumcircle at C', then angle ADB = angle AC'B &gt; angle ACB. Evidently sin C = 2 sin C/2 cos C/2 = h/(h<sup>2</sup> + 1/4), so the maximum value of hxy is h<sup>3</sup>/(h<sup>2</sup> + 1/4).
+<p>
+<i>My original, less elegant, solution is as follows.</i>
+<p>
+Take AP perpendicular to AB and length h. Take Q to be on the line parallel to AB through P so that BQ is perpendicular to AB. Then C must lie on the line PQ (or on the corresponding line on the other side of AB). Let a(A) be the length of the altitude from A to BC and a(B) the length of the altitude from B to AC. If C maximises the product h a(A) a(B), then it must lie on the segment PQ, for if angle ABC is obtuse, then both a(A) and a(B) are shorter than for ABQ. Similarly if BAC is obtuse. So suppose PC = x with 0 &le; x &le; 1. Then AC = &radic;(x<sup>2</sup> + h<sup>2</sup>), so a(B) = h/&radic;(x<sup>2</sup> + h<sup>2</sup>). Similarly, a(A) = h/&radic;( (1-x)<sup>2</sup> + h<sup>2</sup>). So we wish to minimise f(x) = (x<sup>2</sup> + h<sup>2</sup>)( (1-x)<sup>2</sup> + h<sup>2</sup>) = x<sup>4</sup> - 2x<sup>3</sup> + (2h<sup>2</sup> + 1)x<sup>2</sup> - 2h<sup>2</sup>x + h<sup>4</sup> + h<sup>2</sup>. We have f '(x) = 2(2x-1)(x<sup>2</sup> - x + h<sup>2</sup>), which has roots x = 1/2, 1/2 &plusmn; &radic;(1/4 - h<sup>2</sup>).
+<p>
+Thus for h &gt;= 1/2, the minimum is at x = 1/2, in which case CA = CB. For h &lt; 1/2, the minimum is at x = 1/2 &plusmn; &radic;(1/4 - h<sup>2</sup>). But if M is the midpoint of AB and D is the point on AB with AD = 1/2 &plusmn; &radic;(1/4 - h<sup>2</sup>), then DM = &radic;(1/4 - h<sup>2</sup>). But DC = h, and angle CDM = 90, so MC = 1/2 and hence angle ACB = 90.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo90.html">2nd APMO 1990</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002 (DK's solution added 6 Jun 2002)
+</BODY>
+
+</HTML>
+

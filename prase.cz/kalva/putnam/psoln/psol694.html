@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1969/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>30th Putnam 1969</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Prove that &int;<sub>0</sub><sup>1</sup> x<sup>x</sup> dx = 1 - 1/2<sup>2</sup> + 1/3<sup>3</sup> - 1/4<sup>4</sup> + ... .
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The rhs is a series, so this suggests that we should expand the integrand as a series and integrate term by term.
+
+<p>
+
+We have that x<sup>x</sup> = e<sup>x ln x</sup>, so the obvious approach is to expand this as a series: 1 + (x ln x) + (x ln x)<sup>2</sup>/2! + ... . For this to work we need that &int;<sub>0</sub><sup>1</sup> (x ln x)<sup>n</sup> dx = n! (-1)<sup>n</sup>/(n+1)<sup>n+1</sup> (*).
+
+<p>
+
+The integral is easy to evaluate by parts. Each step reduces the exponent on the log term without affecting the exponent on the x term and the non-integral term always vanishes at both endpoints. In other words, we have &int;<sub>0</sub><sup>1</sup> x<sup>n</sup> ln<sup>m</sup>x dx = -m/(n+1) &int;<sub>0</sub><sup>1</sup> x<sup>n</sup> ln<sup>m-1</sup>x dx, which gives (*).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn69.html">30th Putnam 1969</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

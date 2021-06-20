@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1964/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1964</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>
+
+<p>
+
+<b>Problem B2</b>
+
+<p>
+
+5 points in a plane are situated so that no two of the lines joining a pair of points are coincident, parallel or perpendicular. Through each point lines are drawn perpendicular to each of the lines through two of the other 4 points. Determine the maximum number of intersections these perpendiculars can have.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+It is not hard to see that the required number is at most 315. But it is not at all obvious how you prove it actually is 315, short of calculating the 315 points intersection for a specific example.
+
+<p>Call the points A, B, C, D, E. Given one of the points, the other 4 points determine 6 lines, so there are 6 perpendiculars through the given point and hence 30 perpendiculars in all. These determine at most 30.29/2 = 435 points of intersection. But some of these necessarily coincide. There are three groups of coincidences. The first is that the 6 perpendiculars through A meet in one point (namely A), not the expected 15. So we lose 5.14 = 70 points. Second, the lines through C, D and E perpendicular to AB are all parallel, and do not give the expected 3 points of intersection, so we lose another 10.3 = 30 points. Third, the line through A perpendicular to BC is an altitude of the triangle ABC, as are the lines through B perpendicular to AC, and the through C perpendicular to AB. So we only get one point of intersection instead of three, thus losing another 10.2 = 20 points. These coincidences are clearly all distinct (the categories do not overlap), so they bring us down to a maximum of 435 - 120 =315.
+
+<p>
+
+There is no obvious reason why there should be any further coincidences. But that is not quite the same as proving that there are no more. Indeed, for particular positions of the points A, B, C, D, E we can certainly arrange for additional coincidences (the constraints given in the problem are not sufficient to prevent additional coincidences). So we have to prove that it is possible to arrange the points so that there are no additional coincidences. I cannot see how to do this, short of exhibiting a particular set of points, which would be extremely tiresome. Apparently the contestants were instructed verbally that they did not have to do it.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp; <p>
+
+<p><a href="../imo64.html">6th IMO 1964</a><br>
+
+<p>&copy;* John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Sep 1998
+
+<br>Last corrected/updated 24 Sep 2003
+
+</BODY>
+
+
+
+</HTML>
+

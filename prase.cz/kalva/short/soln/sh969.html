@@ -1,0 +1,53 @@
+<HTML>
+<HEAD>
+<TITLE>37th IMO shortlist 1996/9 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>37th IMO 1996 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 9</b><br>
+<p>
+The sequence a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ... is defined by a<sub>1</sub> = 0 and a<sub>4n</sub> = a<sub>2n</sub> + 1, a<sub>4n+1</sub> = a<sub>2n</sub> - 1, a<sub>4n+2</sub> = a<sub>2n+1</sub> - 1, a<sub>4n+3</sub> = a<sub>2n+1</sub> + 1. Find the maximum and minimum values of a<sub>n</sub> for n = 1, 2, ... , 1996 and the values of n at which they are attained. How many terms a<sub>n</sub> for n = 1, 2, ... , 1996 are 0?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: max 9, min -10, no. terms 346.
+<p>
+Calculating the first few values, we find:
+<pre>
+  n      a<sub>n</sub>
+   1     0
+  10    -1
+  11     1
+ 100     0
+ 101    -2
+ 110     0
+ 111     2
+1000     1
+1001    -1
+1010    -3
+1011    -1
+1100     1
+1101    -1
+1110     1
+1111     3
+</pre>
+If the last two digits are 00 or 11, then a<sub>n</sub> is one more than a<sub>[n/2]</sub>. If the last two digits are 01 or 10, then a<sub>n</sub> is one less than a<sub>[n/2]</sub>. Note that [n/2] is formed by deleting the last binary digit of n. So a<sub>n</sub> = (number of adjacent pairs 00 and 11) - (number of adjacent pairs 01 and 10). For example, 1100 has pairs 11, 10 and 00, so a<sub>n</sub> = 2 - 1 = 1.
+<p>
+1996 = 11111001100, so the maximum value of a<sub>n</sub> for n &le; 1996 is at n = 1111111111 = 1023 with value 9. Similarly, the minimum value is at n = 10101010101 with value -10.
+<p>
+If a<sub>n</sub> = 0, then n must have an odd number of binary digits, with the first digit 1. The only 1 digit number is n = 1. The 3 digit numbers (with a<sub>n</sub> = 0) are 110 and 100. The 5 digit numbers are 11101, 11001, 11011, 10111, 10001 and 10011. Consider the 2m+1 digit numbers. Exactly m of the digits after the initial 1 must be such that they are the same as the previous digit. Specifying those digits completely determines the number, so there are (2m)Cm such numbers (where aCb is the binomial coefficient). Thus there are 6C3 7-digit numbers, 8C4 9-digit numbers and 10C5 11-digit numbers. But the 11-digit numbers 11111100000, 11111010100, 11111010110, 11111010010, 11111011010 are greater than 1996. Hence the required number is 1 + 2 + 6 + 20 + 70 + 252 - 5 = 346.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh96.html">37th IMO shortlist 1996</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+16 Dec 2002
+</BODY>
+
+</HTML>
+

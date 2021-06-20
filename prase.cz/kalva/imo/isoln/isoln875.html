@@ -1,0 +1,66 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1987/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b>
+
+<p>
+
+Let n be an integer greater than or equal to 3. Prove that there is a set of n points in the plane such that the distance between any two points is irrational and each set of 3 points determines a non-degenerate triangle with rational area.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Let x<sub>n</sub> be the point with coordinates (n, n<sup>2</sup>) for n = 1, 2, 3, ... . We show that the distance between any two points is irrational and that the triangle determined by any 3 points has non-zero rational area.
+
+<p>
+Take n &gt; m. |x<sub>n</sub> - x<sub>m</sub>| is the hypoteneuse of a triangle with sides n - m and n<sup>2</sup> - m<sup>2</sup> = (n - m)(n + m). So |x<sub>n</sub> - x<sub>m</sub>| = (n - m)&radic;(1 + (n+m)<sup>2</sup>). Now (n + m)<sup>2</sup> &lt; (n + m)<sup>2</sup> + 1 &lt; (n + m + 1)<sup>2</sup> = (n + m)<sup>2</sup> + 1 + 2(n + m), so (n + m)<sup>2</sup> + 1 is not a perfect square. Hence its square root is irrational. [For this we may use the classical argument. Let N' be a non-square and suppose &radic;N' is rational. Since N' is a non-square we must be able to find a prime p such that p<sup>2a+1</sup> divides N' but p<sup>2a+2</sup> does not divide N' for some a &ge; 0. Define N = N'/p<sup>2a</sup>. Then &radic;N = (&radic;N')/p<sup>a</sup>, which is also rational. So we have a prime p such that p divides N, but p<sup>2</sup> does not divide N. Take &radic;N = r/s with r and s relatively prime. So s<sup>2</sup>N = r<sup>2</sup>. Now p must divide r, hence p<sup>2</sup> divides r<sup>2</sup> and so p divides s<sup>2</sup>. Hence p divides s. So r and s have a common factor. Contradiction. Hence non-squares have irrational square roots.]
+
+<p>
+Now take a &lt; b &lt; c. Let B be the point (b, a<sup>2</sup>), C the point (c, a<sup>2</sup>), and D the point (c, b<sup>2</sup>). Area x<sub>a</sub>x<sub>b</sub>x<sub>c</sub> = area x<sub>a</sub>x<sub>c</sub>C - area x<sub>a</sub>x<sub>b</sub>B - area x<sub>b</sub>x<sub>c</sub>D - area x<sub>b</sub>DCB = (c - a)(c<sup>2</sup> - a<sup>2</sup>)/2 - (b - a)(b<sup>2</sup> - a<sup>2</sup>)/2 - (c - b)(c<sup>2</sup> - b<sup>2</sup>)/2 - (c - b)(b<sup>2</sup> - a<sup>2</sup>) which is rational.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo87.html">28th IMO 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+18 Nov 1998
+
+</BODY>
+
+
+
+</HTML>
+

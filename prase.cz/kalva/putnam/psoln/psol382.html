@@ -1,0 +1,70 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>1st Putnam 1938/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>1st Putnam 1938</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+A solid has a cylindrical middle with a conical cap at each end. The height of each cap equals the length of  the middle. For a given surface area, what shape maximizes the volume?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<img src="diag38a2.bmp">
+
+<p>
+
+Let the radius be R and the height H. The area is 2&pi;RH + 2&pi;R&radic;(R<sup>2</sup>+H<sup>2</sup>). The volume is 5/3 &pi;R<sup>2</sup>H.
+
+<p>
+
+The area is fixed, so for some fixed k, we have R ( H + &radic;(R<sup>2</sup>+H<sup>2</sup>) ) = k. This gives H = (k<sup>2</sup> - R<sup>4</sup>)/(2kR). We must now choose R to maximise f(R) = R<sup>2</sup>H = R (k<sup>2</sup> - R<sup>4</sup>)/2k. Evidently the allowed range for R is from R = 0 up to &radic;k (corresponding to H = 0). But f(0) = 0 and f(&radic;k) = 0, so the maximum is at some interior point of the interval. Differentiating, we find it is at R<sub>max</sub> = (k<sup>2</sup>/5)<sup>1/4</sup>. In terms of the area A, we have A = 2&pi;k, so R<sub>max</sub> = (A/(&pi; 2&radic;5) )<sup>1/2</sup>.
+
+<p>
+
+<i>Many thanks to Philip Ascher for correcting an error in the last line!</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn38.html">1st Putnam 1938</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+<br>Last corrected/updated 22 Feb 03
+
+</BODY>
+
+
+
+</HTML>
+

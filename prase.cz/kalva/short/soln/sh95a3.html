@@ -1,0 +1,27 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1995/A3 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>36th IMO 1995 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A3</b><br>
+<p>
+n &gt; 2. x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub> are real numbers such that 2 &le; x<sub>i</sub> &lt;= 3. Show that (x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> - x<sub>3</sub><sup>2</sup>)/(x<sub>1</sub> + x<sub>2</sub> - x<sub>3</sub>) + (x<sub>2</sub><sup>2</sup> + x<sub>3</sub><sup>2</sup> - x<sub>4</sub><sup>2</sup>)/(x<sub>2</sub> + x<sub>3</sub> - x<sub>4</sub>) + ... + (x<sub>n-1</sub><sup>2</sup> + x<sub>n</sub><sup>2</sup> - x<sub>1</sub><sup>2</sup>)/(x<sub>n-1</sub> + x<sub>n</sub> - x<sub>1</sub>) + (x<sub>n</sub><sup>2</sup> + x<sub>1</sub><sup>2</sup> - x<sub>2</sub><sup>2</sup>)/(x<sub>n</sub> + x<sub>1</sub> - x<sub>2</sub>) &le; 2(x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>n</sub>) - 2n.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+The ith term on the lhs is (x<sub>i</sub><sup>2</sup> + x<sub>i+1</sub><sup>2</sup> - x<sub>i+2</sub><sup>2</sup>)/(x<sub>i</sub> + x<sub>i+1</sub> - x<sub>i+2</sub>) (with cyclic subscripts). We can write this as (x<sub>i</sub> + x<sub>i+1</sub> + x<sub>i+2</sub>) - 2x<sub>i</sub>x<sub>i+1</sub>/(x<sub>i</sub> + x<sub>i+1</sub> - x<sub>i+2</sub>). Now (x<sub>i</sub> - 2)(x<sub>i+1</sub> - 2) &ge; 0, so -2x<sub>i</sub>x<sub>i+1</sub> &le; -4(x<sub>i</sub> + x<sub>i+1</sub> - 2) = -4( (x<sub>i</sub> + x<sub>i+1</sub> - x<sub>i+2</sub>) + (x<sub>i+2</sub> - 2) ). Hence the ith term &le; (x<sub>i</sub> + x<sub>i+1</sub> + x<sub>i+2</sub>) - 4(1 + (x<sub>i+2</sub> - 2)/(x<sub>i</sub> + x<sub>i+1</sub> - x<sub>i+2</sub>) ). But the constraints on x<sub>i</sub> imply that (x<sub>i</sub> + x<sub>i+1</sub> - x<sub>i+2</sub>) and (x<sub>i+2</sub> - 2) are positive and (x<sub>i</sub> + x<sub>i+1</sub> - x<sub>i+2</sub>) &le; 4. So the ith term &lt;= (x<sub>i</sub> + x<sub>i+1</sub> + x<sub>i+2</sub>) - 4(1 + (x<sub>i+2</sub> - 2)/4) = x<sub>i</sub> + x<sub>i+1</sub> - 2. Hence lhs &le; 2s - 2n.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh95.html">36th IMO shortlist 1995</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+4 Sep 2002
+</BODY>
+</HTML>
+

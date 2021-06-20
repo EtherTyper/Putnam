@@ -1,0 +1,40 @@
+<HTML>
+<HEAD>
+<TITLE>29th IMO shortlist 1988/22 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>29th IMO 1988 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 22</b>
+<p>
+Show that there are only two values of N for which (4N+1)(x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup> + ... + x<sub>N</sub><sup>2</sup>)= 4(x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>N</sub>)<sup>2</sup> + 4N + 1 has an integer solution x<sub>i</sub>.
+<p>
+&nbsp;<p>
+<b>Answer</b>
+<p>
+N = 2 has the solution 9(1<sup>2</sup> + 2<sup>2</sup>) = 4(1 + 2)<sup>2</sup> + 9. <br>
+N = 6 has the solution 25(1<sup>2</sup> + 1<sup>2</sup> + 1<sup>2</sup> + 1<sup>2</sup> + 1<sup>2</sup> + 0<sup>2</sup>) = 4(1 + 1 + 1 + 1 + 1 + 0)<sup>2</sup> + 25.
+<p>
+<b>Solution</b>
+<p>
+Suppose every x<sub>i</sub> is 0 or 1. Suppose there are M 1s. Then we have (4N+1)M = 4M<sup>2</sup> + 4N+1, so (4N+1)(M-1) = 4M<sup>2</sup>. Since 4N+1 is odd, 4 must divide M-1. So M is odd. So 8 does not divide M-1. Since M-1 and M are coprime, no prime p &gt; 2 can divide M-1. Hence M = 5. So N = 6. That is a possible solution (as shown explicitly above).
+<p>
+If x<sub>i</sub> is a solution, then -x<sub>i</sub> is also a solution. So let us assume that &sum; x<sub>i</sub> &ge; 0. If some x<sub>i</sub> is not 0 or 1, then either some x<sub>i</sub> is negative, or some x<sub>i</sub> &gt; 1. In either case we have x<sub>i</sub><sup>2</sup> &gt; x<sub>i</sub>, so &sum; x<sub>i</sub> &lt; &sum; x<sub>i</sub><sup>2</sup>. Put X = &sum; x<sub>i</sub>. Then X + 1 &le; &sum; x<sub>i</sub><sup>2</sup> = (4/(4N+1) X<sup>2</sup> + 1, so X &ge; (4N+1)/4 and hence X &ge; N+1. 
+<p>
+By Cauchy, we have X<sup>2</sup> &le; N &sum; x<sub>i</sub><sup>2</sup> = (4N/(4N+1) X<sup>2</sup> + N, so X<sup>2</sup> &le; N(4N+1), so X &le; 2N. Hence 1 &lt; X/N &le; 2.
+<p>
+We have &sum; (x<sub>i</sub> - X/N)<sup>2</sup> = (&sum; x<sub>i</sub><sup>2</sup>) - X<sup>2</sup>/N = 1 - X<sup>2</sup>/(N(4N+1)) &lt; 1. Hence each |x<sub>i</sub> - X/N| &lt; 1. Hence 0 &lt; x<sub>i</sub> &lt; 3. But x<sub>i</sub> is an integer, so it must be 1 or 2. Suppose there are M 1s. Then there are N-M 2s and we have: 4MN - 3M - 4M<sup>2</sup> - 1 = 0. Hence M divides 1, so M = 1. Hence N = 2, and we have the other solution shown above.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh88.html">29th IMO shortlist 1988</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Dec 2002
+<br>Last corrected/updated 30 Dec 02
+</BODY>
+
+</HTML>
+

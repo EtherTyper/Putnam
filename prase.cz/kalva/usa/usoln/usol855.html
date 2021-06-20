@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 85/5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>14th USAMO 1985</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 5</b><br>
+
+<p>
+
+0 &lt; a<sub>1</sub> &le; a<sub>2</sub> &le; a<sub>3</sub> &le; ... is an unbounded sequence of integers. Let b<sub>n</sub> = m if a<sub>m</sub> is the first member of the sequence to equal or exceed n. Given that a<sub>19</sub> = 85, what is the maximum possible value of a<sub>1</sub> + a<sub>2</sub> + ... + a<sub>19</sub> + b<sub>1</sub> + b<sub>2</sub> + ... + b<sub>85</sub>?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We show that the <i>only</i> possible value of the sum is 85.20 = 1700.
+
+<p>
+
+That is certainly the value if all a<sub>i</sub> = 85, for then all b<sub>j</sub> = 1 and so the sum is 19&middot;85 + 85&middot;1 = 85&middot;20. Now consider the general case. Suppose that we increase some a<sub>i</sub> by 1 from k to k+1 (whilst preserving the property that a<sub>i</sub> is increasing, so we must have a<sub>i</sub> &lt; a<sub>i+1</sub> before the increase). The effect of the increase is to change b<sub>k+1</sub> from i+1 to i, but not to change any other b<sub>j</sub>. This is obvious if a<sub>i-1</sub> &lt; a<sub>i</sub> and a<sub>i+1</sub> &gt; a<sub>i</sub> + 1. If a<sub>i-1</sub> = a<sub>i</sub>, then before the change b<sub>k</sub> = i-1 (not i) and that is still true after the change. Equally, if a<sub>i</sub> = a<sub>i+1</sub> after the change, then it is still true that b<sub>k+1</sub> changes from i+1 to i. Thus the overall effect of the increase is not to change the sum of the a<sub>i</sub> plus the sum of the b<sub>j</sub>. But by a series of such changes we convert any initial sequence to all a<sub>i</sub> = 85. 
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa85.html">14th USAMO 1985</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

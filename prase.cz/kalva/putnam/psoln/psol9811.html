@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1998/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1998</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Let n be the decimal integer 11...1 (with 1998 digits). What is the 1000th digit after the decimal point of &radic;n?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 1.
+
+<p><i>Fairly easy.</i>
+
+<p>
+A little experimentation suggests that if n is the integer with 2m decimal digits, all of them 1, then &radic;n has m 3s, followed by a decimal point, followed by m 3s, followed by a 1, followed by some 6s. If true, that would imply that the required digit was 1.
+
+<p>
+n = (10<sup>2m</sup> - 1)/9. Let x = (10<sup>m</sup> - 10<sup>-m</sup>)/3, then x has m 3s followed by a decimal point, followed by m 3s. So we have to show that (x + 10<sup>-m-1</sup>)<sup>2</sup> &lt; n and (x + 2.10<sup>-m-1</sup>)<sup>2</sup> &gt; n. That is a straightforward computation.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn98.html">Putnam 1998</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

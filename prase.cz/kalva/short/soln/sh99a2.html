@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+<TITLE>40th IMO shortlist 1999/A2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>40th IMO 1999 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A2</b><br>
+<p>
+The numbers 1 to n<sup>2</sup> are arranged in the squares of an n x n board (1 per square). There are n<sup>2</sup> (n-1) pairs of numbers in the same row or column. For each such pair take the larger number divided by the smaller. Then take the smallest such ratio and call it the <i>minrat</i> of the arrangement. So, for example, if n<sup>2</sup> and n<sup>2</sup> - 1 were in the same row, then the minrat would be n<sup>2</sup>/(n<sup>2</sup> - 1). What is the largest possible minrat?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: (n+1)/n.
+<p>
+The subset {n<sup>2</sup>, n<sup>2</sup> - 1, ... , n<sup>2</sup> - (n-1) } has n members. If any two lie in the same row or column, then their ratio is at most n<sup>2</sup>/(n<sup>2</sup> - n + 1) &lt; (n+1)/n. So the minrat &lt; (n+1)/n. If they all lie in different rows and columns then the number n<sup>2</sup> - n must lie in the same row as one of them and the same column as another, so that gives a ratio at most (n<sup>2</sup> - 1)/(n<sup>2</sup> - n) = (n+1)/n. So in any case the minrat must be &le; (n+1)/n.
+<p>
+We now have to show that this value can be achieved. Take the number at (i, j) to be a<sub>ij</sub> = i + n(j - i - 1) for i &lt; j, and i + n(n - i + j - 1) for i &ge; j. For example, 
+<pre>
+21   1   6  11  16
+17  22   2   7  12
+13  18  23   3   8
+ 9  14  19  24   4
+ 5  10  15  20  25
+</pre>
+The numbers in the same row differ by multiples of n, so their ratio is at least n<sup>2</sup>/(n<sup>2</sup> - n) &gt; (n+1)/n. The numbers if the first column are a decreasing arithmetic progression, so the smallest ratio between the first two terms: (n<sup>2</sup> - n + 1)/(n<sup>2</sup> - 2n + 2) &ge; (n+1)/n. The numbers in the nth column are n<sup>2</sup> and an arithmetic progression n-1, 2(n-1), ... , (n-1)<sup>2</sup>, so the smallest ratio is (n-1)/(n-2) &gt; (n+1)/n. For the other columns the numbers form two arithmetic progressions, each with difference n-1 and the smallest ratio is (n<sup>2</sup>-n+j)/(n<sup>2</sup>-2n+j+1) &ge; (n+1)/n (the ratio of the number on the diagonal and the number just below it), with equality if j = n-1.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh99.html">40th IMO shortlist 1999</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+</BODY>
+</HTML>
+

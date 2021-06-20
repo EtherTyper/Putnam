@@ -1,0 +1,106 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1993/B5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>54th Putnam 1993</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B5</b><br>
+
+<p>
+
+Show that given any 4 points in the plane we can find two whose distance apart is not an odd integer.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+This is a curious question. It is easy if you happen to know the formula for the volume of a tetrahedron in terms of the lengths of its sides (which almost no one does). Otherwise it harder. Some alternative solutions are below.
+
+<p>
+
+The formula is V = 1/12 &radic;(&sum;<sub>1</sub> a<sup>2</sup>b<sup>2</sup>c<sup>2</sup> - &sum;<sub>2</sub>a<sup>2</sup>b<sup>2</sup>c<sup>2</sup> - &sum;<sub>3</sub> a<sup>4</sup>b<sup>2</sup>). Here &sum;<sub>1</sub> is taken over the 12 cases where a, b, c form an open path of length 3. &sum;<sub>2</sub> is taken over the 4 cases where a, b, c form the sides of a face. &sum;<sub>3</sub> is taken over the 6 cases where a, b are opposite sides (without a vertex in common). This is usually written as a 5 x 5 symmetric determinant D with zeros on the diagonal (the volume is 12/&radic;2 times the square root of D). If we label the vertices as 1, 2, 3, 4 so that the lengths of the sides become d<sub>ij</sub>, then the elements below the diagonal are given by D<sub>21</sub> = d<sub>21</sub><sup>2</sup>, D<sub>31</sub> = d<sub>31</sub><sup>2</sup>, D<sub>32</sub> = d<sub>32</sub><sup>2</sup>, D<sub>41</sub> = d<sub>41</sub><sup>2</sup>, D<sub>42</sub> = d<sub>42</sub><sup>2</sup>, D<sub>43</sub> = d<sub>43</sub><sup>2</sup>, and D<sub>51</sub> = D<sub>52</sub> = D<sub>53</sub> = D<sub>54</sub> = 1.
+
+<p>
+
+In either case, we use a parity argument. If all the lengths are odd integers, then their squares are all congruent to 1 mod 4. So the sum is obviously congruent to 2 mod 4 and hence non-zero. With a little more work the determinant is congruent to 4 mod 8 and hence non-zero.
+
+<p>
+
+I do not know an elegant proof of the formula for the volume of a tetrahedron. It can be derived in a straightforward way, but the algebra is fairly horrendous (and probably takes half an hour, if you are careful enough not to make any mistakes). Choose coordinates so that the points are (0, 0, 0), (a, 0, 0), (d, b, 0), (e, f, c). Take the lengths as: P from (0, 0, 0) to (a, 0, 0); Q from (0, 0, 0) to (d, b, 0); R from (a, 0, 0) to (d, b, 0); L from (0, 0, 0) to (e, f, c); M from (a, 0, 0) to (e, f, c); and N from (d, b, 0) to (e, f, c). Then the volume is 1/6 abc. We have the following equations:
+
+<br>P<sup>2</sup> = a<sup>2</sup> (1); Q<sup>2</sup> = b<sup>2</sup> + d<sup>2</sup> (2);
+
+<br>R<sup>2</sup> = (a - d)<sup>2</sup> + b<sup>2</sup> (3); L<sup>2</sup> = e<sup>2</sup> + f<sup>2</sup> + c<sup>2</sup> (4);
+
+<br>M<sup>2</sup> = (a - e)<sup>2</sup> + f<sup>2</sup> + c<sup>2</sup> (5); N<sup>2</sup> = (d - e)<sup>2</sup> + (b - f)<sup>2</sup> + c<sup>2</sup> (6).
+
+<br>(1) gives: a = P.
+
+<br>(1) + (2) - (3) gives: 2ad = P<sup>2</sup> + Q<sup>2</sup> - R<sup>2</sup>, or d = (P<sup>2</sup> + Q<sup>2</sup> - R<sup>2</sup>)/2P;
+
+<br>subs in (2) gives: b<sup>2</sup> = Q<sup>2</sup> - d<sup>2</sup> = (2P<sup>2</sup>Q<sup>2</sup> + 2Q<sup>2</sup>R<sup>2</sup> + 2R<sup>2</sup>P<sup>2</sup> - P<sup>4</sup> - Q<sup>4</sup> - R<sup>4</sup>)/4P<sup>2</sup>;
+
+<br>(1) + (4) - (5) gives: 2ae = P<sup>2</sup> + L<sup>2</sup> - M<sup>2</sup>, or e = (P<sup>2</sup> + L<sup>2</sup> - M<sup>2</sup>)/2P;
+
+<br>(2) + (4) - (6) gives: Q<sup>2</sup> + L<sup>2</sup> - N<sup>2</sup> = 2de + 2bf, so 2bf = Q<sup>2</sup> + L<sup>2</sup> - N<sup>2</sup> - (P<sup>2</sup> + Q<sup>2</sup> - R<sup>2</sup>)(P<sup>2</sup> + L<sup>2</sup> - M<sup>2</sup>)/2P<sup>2</sup>;
+
+<p>Finally, a<sup>4</sup>b<sup>2</sup>c<sup>2</sup> = a<sup>4</sup>b<sup>2</sup>(L<sup>2</sup> - e<sup>2</sup> - f<sup>2</sup>) = a<sup>2</sup>(a<sup>2</sup>b<sup>2</sup>)L<sup>2</sup> - (a<sup>2</sup>b<sup>2</sup>)(a<sup>2</sup>e<sup>2</sup>) - a<sup>4</sup>(bf)<sup>2</sup>. Substituting the results already obtained and multiplying out, gives 16a<sup>4</sup>b<sup>2</sup>c<sup>2</sup> as a sum of almost 100 terms. Most of these cancel and we are left with the result quoted.
+
+<p>
+
+<i>I subsequently discovered that there are several better ways of doing this problem. First, we can get (a variant of) the tetrahedral formula more easily using vectors.</i>
+
+<p>
+
+Take one of the points at the origin and the vectors to the other three points as <b>a</b>, <b>b</b>, <b>c</b>. The volume V = |<b>a.</b>(<b>b x c</b>)|. Expressing as a matrix and multiplying by its transpose gives V<sup>2</sup> = det X, where X is the 3 x 3 matrix with first row <b>a.a</b>, <b>a.b</b>, <b>a.c</b>, second row <b>b.a</b>, <b>b.b</b>, <b>b.c</b>, third row <b>c.a</b>, <b>c.b</b>, <b>c.c</b>. Now using 2<b>a.b</b> = a<sup>2</sup> + b<sup>2</sup> - |<b>a</b> - <b>b</b>|<sup>2</sup> etc, we get 8V<sup>2</sup> = det Y, where Y is the 3 x 3 matrix with first row 2a<sup>2</sup>, a<sup>2</sup> + b<sup>2</sup> - z<sup>2</sup>, a<sup>2</sup> - y<sup>2</sup> + c<sup>2</sup>, second row a<sup>2</sup> + b<sup>2</sup> - z<sup>2</sup>, 2b<sup>2</sup>, -x<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>, third row a<sup>2</sup> - y<sup>2</sup> + c<sup>2</sup>, -x<sup>2</sup> + b<sup>2</sup> + c<sup>2</sup>, 2c<sup>2</sup> (and x is the distance from the tip of vector <b>c</b> to the tip of vector <b>b</b> etc). Now since odd squares are 1 mod 8, we get immediately that 8V<sup>2</sup> = 4 mod 8, which is impossible.
+
+<p>
+
+There are many variants on this, some using explicitly the angles in the figure. 
+
+<p>
+
+<i>Many thanks to Ignacio Larrosa Ca&ntilde;estro for prompting me to look at this again.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn93.html">54th Putnam 1993</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+<br>Last corrected/updated 1 Mar 03
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 03/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>64th Putnam 2003</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b>
+
+<p>
+
+a, b, c, A, B, C are reals with a, A non-zero such that |ax<sup>2</sup> + bx + c| &le; |Ax<sup>2</sup> + Bx + C| for all real x. Show that |b<sup>2</sup> - 4ac| &le; |B<sup>2</sup> - 4AC|.
+
+<p>
+
+&nbsp;<p>
+<b>Solution</b>
+
+<p>
+
+Put f(x) = ax<sup>2</sup> + bx + c, F(x) = Ax<sup>2</sup> + Bx + C, D = B<sup>2</sup> - 4AC, d = b<sup>2</sup> - 4ac. wlog a, A &gt; 0. Considering large x, it is clear that a &le; A.
+<p>
+We consider separately the three cases D &gt; 0, D = 0 and D &lt; 0.
+<p>
+<u>Case 1</u>. D &gt; 0. Then F has two distinct roots &alpha;, &beta;, so F(x) = A(x-&alpha;)(x-&beta;). But then &alpha; and &beta; must also be roots of f, so f(x) = a(x-&alpha;)(x-&beta;). Hence 0 &lt; d = a<sup>2</sup>(&alpha;-&beta;)<sup>2</sup> &le; A<sup>2</sup>(&alpha;-&beta;)<sup>2</sup> = D. So |d| &le; |D|.
+<p>
+<u>Case 2</u>. D = 0. So F(&alpha;) = F'(&alpha;) = 0 for some &alpha;. Hence also f(&alpha;) = 0. But F(&alpha;+&epsilon;) = O(&epsilon<sup>2</sup>), so f(&alpha;+&epsilon;) = O(&epsilon<sup>2</sup>) also. Hence f '(&alpha;) = 0 also. So f also has a repeated root, so d = 0.
+<p>
+<u>Case 3</u>. D &lt; 0. Then F(x) = A(x + B/2A)<sup>2</sup> + C-B<sup>2</sup>/4A &gt; 0 for all x. So we have (A-a)x<sup>2</sup> + (B-b)x + (C-c) &ge; 0 for all x. If A = a, then it follows that B = b also. But now |d| = 4A|f(-B/2A)| &le; 4A|F(-B/2A)| = |D|. So assume A &gt; a. Similarly, we also have (A+a)x<sup>2</sup> + (B+b)x + (C+c) &ge; 0 for all x. Since these two quadratics are never negative we have (B-b)<sup>2</sup> &le; 4(A-a)(C-c) and (B+b)<sup>2</sup> &le; 4(A+a)(C+c). Adding, B<sup>2</sup> + b<sup>2</sup> &le; 4AC + 4ac. Hence d &le; -D = |D|. As before, taking x = -B/2A we get -d &le; 4af(-B/2A) &le; 4Af(-B/2A) &le; 4A|F(-B/2A)| = |D|.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn03.html">64th Putnam 2003</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+8 Dec 2003
+
+<br>Last corrected/updated 8 Dec 03
+
+</BODY>
+
+
+
+</HTML>
+

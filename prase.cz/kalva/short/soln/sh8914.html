@@ -1,0 +1,35 @@
+<HTML>
+<HEAD>
+<TITLE>30th IMO shortlist 1989/14 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>30th IMO 1989 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 14</b><br>
+<p>
+Given 7 points in the plane, how many segments (each joining two points) are needed so that given any three points at least two have a segment joining them?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 9.
+<p>
+9 is obviously sufficient. Take points A, B, C and P, Q, R, S with segments AB, BC, CA, and PQ, PR, PS, QR, QS, RS. If the three points are A, B, C or three of P, Q, R, S, then they are all joined. Any other three points must include either two from A, B, C (which will be joined) or two from P, Q, R, S (which will be joined).
+<p>
+Now suppose we have only 8 points. Suppose that we cannot find three points without a segment between them. If every point is joined to at least three others, then there are at least 7.3/2 segments. Contradiction. So there is a point A which is not joined to any of B, C, D, E. If two of B, C, D, E are not joined, then with A they form three points with no segments. Contradiction. So there are 6 segments between B, C, D, E. 
+<p>
+Let the remaining two points be X, Y. Two of the points A, X, Y cannot be joined (because there are only 2 segments available outside B, C, D, E). One of the points B, C, D, E cannot be joined to either of these two points (since there are at most 2 segments available), so we have three points with no segments. Contradiction.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh89.html">30th IMO shortlist 1989</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+28 Dec 2002
+<br>Last corrected/updated 28 Dec 02
+</BODY>
+
+</HTML>
+

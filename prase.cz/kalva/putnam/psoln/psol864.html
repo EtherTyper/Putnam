@@ -1,0 +1,98 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 86/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>47th Putnam 1986</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Let r(n) be the number of n x n matrices A = (a<sub>ij</sub>) such that: (1) each a<sub>ij</sub> = -1, 0, or 1; and (2) if we take any n elements a<sub>ij</sub>, no two in the same row or column, then their sum is the same. Find rational numbers a, b, c, d, u, v, w such that r(n) = a u<sup>n</sup> + b v<sup>n</sup> + c w<sup>n</sup> + d.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: r(n) = 2.3<sup>n</sup> + 4<sup>n</sup> - 4.2<sup>n</sup> + 1.
+
+<p>
+
+<i>Moderately hard.</i>
+
+<p>
+
+The key insight is that the elements in any two rows have a fixed difference between corresponding elements. In other words, if the first row is a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>n</sub>, then the ith row is a<sub>1</sub> + b, a<sub>2</sub> + b, ... , a<sub>n</sub> + b for some b (*). Indeed, a little thought shows that this is a necessary and sufficient condition for (2) to hold. Because if we have r &ne; s and c &ne; d, then given a sum involving a<sub>rc</sub> and a<sub>sd</sub>, we have another sum which is identical except that these two elements are replaced by a<sub>rd</sub> and a<sub>sc</sub>. Hence a<sub>rc</sub> - a<sub>sc</sub> = a<sub>rd</sub> - a<sub>sd</sub>. So as we vary d the difference a<sub>rd</sub> - a<sub>sd</sub> remains fixed.
+
+<p>
+
+We now examine the following disjoint cases: (A) all elements of the first row are the same; (B) both -1 and 1 appear somewhere in the first row; (C) 1 and 0, but not -1, appear in the first row; (D) -1 and 0, but not 1, appear in the first row.
+
+<p>
+
+In case (A), (*) implies that the same must be true for the other rows, and then (1) is automatically satisfied. We have 3 choices for each row, so 3<sup>n</sup> possibilities in all.
+
+<p>
+
+In case (B), the other rows must all be identical to the first, because if the difference b in (*) is non-zero then we get an element that does not satisfy (1). In other words each column has all elements the same. So we have to find the number of possibilities for the first row. The total number of possibilities is 3<sup>n</sup>. There are 2<sup>n</sup> possibilities where 1 is not present, 2<sup>n</sup> where -1 is not present, and 1 where neither 1 nor -1 is present. Hence the required number is 3<sup>n</sup> - 2.2<sup>n</sup> + 1.
+
+<p>
+
+In case (C), b  in (*) must be 0 or -1. There are 2<sup>n</sup> - 2 ways of choosing the first row so that it includes 1 or 0, but not -1. We then have 2 choices for the difference b for each of the other n-1 rows, or 2<sub>n-1</sub> difference choices in all, giving a total of 2<sup>2n-1</sup> - 2<sup>n</sup> possibilities in total. Similarly, for case (D). So in (C) and (D) together there are 4<sup>n</sup> - 2.2<sup>n</sup> possibilities.
+
+<p>
+
+Adding up, we get 4<sup>n</sup> + 2.3<sup>n</sup> - 4.2<sup>n</sup> + 1. As a check, this is correct for n = 1.
+
+<p>
+
+In a sense, everything after the first paragraph above is fairly routine (once you grasp that the small number of available values for the elements places severe restrictions on b). But <i>care</i> is needed to avoid double counting. 
+
+<p>
+
+Notice also the typical Putnam misdirection of <i>rational</i> values.
+
+<p>
+
+Finally, a formula of this type should instantly suggest recurrence relations. But I did not find that a productive approach. Does anyone else have a solution of that type?
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn86.html">47th Putnam 1986</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+2 Oct 1999
+
+</BODY>
+
+
+
+</HTML>
+

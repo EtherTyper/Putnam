@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 03/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>64th Putnam 2003</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b>
+
+<p>
+
+Do their exist polynomials a(x), b(x), c(y), d(y) such that 1 + xy + x<sup>2</sup>y<sup>2</sup> &equiv; a(x)c(y) + b(x)d(y)?
+
+<p>
+
+&nbsp;<p>
+<b>Answer</b>
+
+<p>
+
+No.
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Suppose there are such polyonomials. Write c<sub>n</sub> for c(n), d<sub>n</sub> for d(n). Then 1 = c<sub>0</sub>a(x) + d<sub>0</sub>b(x), 1 + x + x<sup>2</sup> = c<sub>1</sub>a(x) + d<sub>1</sub>b(x), 1 - x + x<sup>2</sup> = c<sub>-1</sub>a(x) + d<sub>-1</sub>b(x). So we have:
+<br>1 = c<sub>0</sub>a(x) + d<sub>0</sub>b(x)
+<br>x = (-&frac12;c<sub>0</sub>+&frac12;c<sub>1</sub>-&frac12;c<sub>-1</sub>)a(x) + (-&frac12;d<sub>0</sub>+&frac12;d<sub>1</sub>-&frac12;d<sub>-1</sub>)b(x)
+<br>x<sup>2</sup> = (-c<sub>0</sub>+&frac12;c<sub>1</sub>+&frac12;c<sub>-1</sub>)a(x) + (-d<sub>0</sub>+&frac12;d<sub>1</sub>+&frac12;d<sub>-1</sub>)b(x)
+<p>
+So we have three linearly independent elements (the polynomials 1, x, x<sup>2</sup>) in a subspace of dimension 2 (the vector space spanned by a(x) and b(x)). Contradiction.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn03.html">64th Putnam 2003</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+8 Dec 2003
+
+<br>Last corrected/updated 8 Dec 03
+
+</BODY>
+
+
+
+</HTML>
+

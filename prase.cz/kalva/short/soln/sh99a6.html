@@ -1,0 +1,48 @@
+<HTML>
+<HEAD>
+<TITLE>40th IMO shortlist 1999/A6 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>40th IMO 1999 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A6</b><br>
+<p>
+Given real numbers x<sub>1</sub> &le; x<sub>2</sub> &le; ... &le; x<sub>n</sub> (with n &gt; 2), carry out the following procedure:
+<br>(1) arrange the numbers in a circle; 
+<br>(2) delete one of the numbers; 
+<br>(3) if just two numbers are left, then take their sum. Otherwise replace each number by the sum of it and the number on its right. Go to step 2.
+<br>Show that the largest sum that can be achieved by this procedure is (n-2)C0 x<sub>2</sub> + (n-2)C0 x<sub>3</sub> + (n-2)C1 x<sub>4</sub> + (n-2)C1 x<sub>5</sub> + (n-2)C2 x<sub>6</sub> + ... + (n-2)C( [n/2]-1 ) x<sub>n</sub>, where mCk represents the binomial coefficient.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+We show first that the sum given can be achieved by starting with the order x<sub>2</sub>, x<sub>4</sub>, x<sub>6</sub>, ... , x<sub>n</sub>, ... , x<sub>7</sub>, x<sub>5</sub>, x<sub>3</sub>, x<sub>1</sub>. [So we have the even numbers in increasing order, then the odd numbers in decreasing order.] We repeatedly delete the smallest number. We use induction on n.
+<p>
+For n = 3, we delete x<sub>1</sub> and then take the sum as x<sub>2</sub> + x<sub>3</sub> = 1C0 x<sub>2</sub> + 1C0 x<sub>3</sub>, as required. Now assume the result is true for n. Take n+1 numbers. After the first iteration, we have y<sub>2</sub>, y<sub>4</sub>, ... , y<sub>n</sub>, ... , y<sub>3</sub>, y<sub>1</sub>, where y<sub>1</sub> = x<sub>2</sub> + x<sub>3</sub>, x<sub>i</sub> = x<sub>i</sub> + x<sub>i+2</sub> for i = 2, 3, ... , n-1 and x<sub>n</sub> = x<sub>n</sub> + x<sub>n+1</sub>. It is easy to check that y<sub>1</sub> &le; y<sub>2</sub> &le; ... &le; y<sub>n</sub>.
+<p>
+Hence (by induction) the sum is &sum;<sub>2</sub><sup>n</sup> (n-2)C([k/2]-1) y<sub>k</sub> = y<sub>2</sub> + y<sub>3</sub> + (&sum;<sub>4</sub><sup>n-1</sup>) + y<sub>n</sub> = x<sub>2</sub> + x<sub>3</sub> + (&sum;<sub>4</sub><sup>n-1</sup>( (n-2)C( [k/2]-1) + (n-2)C( [k/2]-2) )x<sub>k</sub> ) + ( (n-2)C( [n/2]-1) + (n-2)C( [n/2] -2) ) x<sub>n</sub> = (n-1)C0 x<sub>2</sub> + (n-1)C0 x<sub>3</sub> + (&sum;<sub>4</sub><sup>n</sup> (n-1)C( [k/2] - 1) x<sub>k</sub> ) + (n-1)C( [(n+1)/2] -1) x<sub>n+1</sub> = &sum;<sub>2</sub><sup>n+1</sup> (n-1)C( [k/2] - 1) x<sub>k</sub>, which establishes the result for n+1.
+<p>
+We define a partial order (see below) on n-tuples as follows. For any n-tuple (x<sub>1</sub>, ... , x<sub>n</sub>), let (x<sub>1</sub>', x<sub>2</sub>', ... , x<sub>n</sub>') denote the same elements arranged in increasing order. Then we define (x<sub>1</sub>, ... , x<sub>n</sub>) &le; (y<sub>1</sub>, ... , y<sub>n</sub>) to mean that x<sub>i</sub>' + x<sub>i+1</sub>' + ... + x<sub>n</sub>' &le; y<sub>i</sub>' + y<sub>i+1</sub>' + ... + y<sub>n</sub>' for i = 1, 2, ... , n.
+<p>
+We claim that if (x<sub>1</sub>, ... , x<sub>n</sub>) &le; (y<sub>1</sub>, ... , y<sub>n</sub>) and y<sub>1</sub> &le; y<sub>2</sub> &le; ... &le; y<sub>n</sub>, and (z<sub>1</sub>, ... , z<sub>n-1</sub>) is derived from (x<sub>1</sub>, ... , x<sub>n</sub>) by carrying out steps (1), (2), (3) (with no iteration, so we get a set of n-1 numbers), then (z<sub>1</sub>, ... , z<sub>n-1</sub>) &le; (y<sub>2</sub>+y<sub>3</sub>, y<sub>2</sub>+y<sub>4</sub>, y<sub>3</sub>+y<sub>5</sub>, ... , y<sub>n-2</sub>+y<sub>n</sub>, y<sub>n-1</sub>+y<sub>n</sub>). 
+<p>
+Notice that if the claim is true, then it follows immediately that the procedure described above gives the largest possible sum.
+<p>
+<p>
+<i>Partial orders</i>
+<p>
+A <i>total order</i> has similar properties to the ordinary &lt; relation. A <i>partial order</i> drops the requirement that for distinct x, y either x &lt; y or y &lt; x. The key property is <i>transitivity</i>: if x &lt; y and y &lt; z, then x &lt; z. As with the familiar &lt;, we use both &lt; and &le; (so &lt; implies not equal, whereas &le; allows equality).
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh99.html">40th IMO shortlist 1999</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+10 Oct 2002
+<br>Last corrected/updated 22 Oct 2002
+</BODY>
+
+</HTML>
+

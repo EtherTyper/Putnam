@@ -1,0 +1,41 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1997/22 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>38th IMO 1997 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 22</b>
+<p>
+Do there exist real-valued functions f and g on the reals such that f( g(x) ) = x<sup>2</sup> and g( f(x) ) = x<sup>3</sup>? Do there exist real-valued functions f and g on the reals such that f( g(x) ) = x<sup>2</sup> and g( f(x) ) = x<sup>4</sup>?
+<p>
+&nbsp;<p>
+<b>Answer</b>
+<p>
+No, yes.
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Suppose such functions exist. Note that f must be injective, for if f(a) = f(b), then a<sup>3</sup> = g(f(a)) = g(f(b)) = b<sup>3</sup>, so a = b. But we also have f(x)<sup>2</sup> = f(g(f(x))) = f(x<sup>3</sup>). Substituting x = 0, &plusmn;1 we see that f(x) = f(x)<sup>2</sup> is satisfied by x = 0, x = 1, x = -1. There are only two solutions to y = y<sup>2</sup>, namely y = 0, 1, so two of f(0), f(1), f(-1) must be equal. Contradiction.
+<p>
+Put p(x) = 2&radic;x, q(x) = x<sup>2</sup> for x &ge; 0. Then p(q(x)) = 2x, q(p(x)) = 4x. We can extend these to negative x, whilst preserving these relations by putting p(-x) = -p(x), q(-x) = -q(x).
+<p>
+Now put f(2<sup>t</sup>) = 2<sup>p(t)</sup>, g(2<sup>t</sup>) = 2<sup>q(t)</sup>. It is easy to check that f(g(2<sup>t</sup>) = f(2<sup>q(t)</sup>) = 2<sup>p(q(t))</sup> = 2<sup>2t</sup> = (2<sup>t</sup>)<sup>2</sup> and similarly g(f(2<sup>t</sup>)) = (2<sup>t</sup>)<sup>4</sup>. So f and g satisfy the required relations for positive reals. But we can now extend them by taking f(0) = g(0) = 0 and f(-x) = f(x), g(-x) = g(x).
+<p>
+<i>Thanks to Kamil Duszenko</i>
+<p>&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh97.html">38th IMO shortlist 1997</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+2 Dec 2003
+<br>Last corrected/updated 2 Dec 2003
+</BODY>
+
+
+
+</HTML>
+

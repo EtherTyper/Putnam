@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 00/18 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 18</b>
+
+<p>
+
+A perfect number is equal to the sum of all its positive divisors other than itself. Show that if a perfect number &gt; 6 is divisible by 3, then it is divisible by 9. Show that a perfect number &gt; 28 divisible by 7 must be divisible by 49.
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Suppose n is perfect and divisible by 3 but not 9. Put n = 3m. Write the sum of the positive divisors of k as s(k). Then 6m = s(n) = s(3m) = s(3)s(m) = 4s(m), so s(m) = 3m/2. Hence, in particular m is even. So it certainly has divisors 1, m, m/2 (which are all distinct for n &gt; 6, but not for n = 6, when m/2 = 1) with sum &gt; 3m/2. Contradiction.
+<p>
+Similarly, if n is divisible by 7 but not 49, but n = 7k. Then 14k = s(n) = s(7k) = s(7)s(k) = 8s(k), so s(k) = 7/4 k. Hence k must be divisible by 4, so it certainly has factors 1, k, k/2, k/4 (which are all distinct for n &gt; 28, but not for n = 28, when k/4 = 1) with sum 7k/4 + 1. Contradiction.
+<p>
+<i>Thanks to Stefanos Aretakis</i>
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus00.html">Russian 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+20 December 2003
+
+</BODY>
+
+
+
+</HTML>
+

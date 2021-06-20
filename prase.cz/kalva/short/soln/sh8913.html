@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>30th IMO shortlist 1989/13 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>30th IMO 1989 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 13</b><br>
+<p>
+The real numbers a<sub>0</sub>, a<sub>1</sub>, ... , a<sub>n</sub> satisfy a<sub>0</sub> = a<sub>n</sub> = 0, a<sub>k</sub> = c + &sum;<sub>i=k</sub><sup>n-1</sup> a<sub>i-k</sub>(a<sub>i</sub> + a<sub>i+1</sub>). Show that c &lt;= 1/(4n).
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+This is awkward, because it is not easy to get an expression for any a<sub>i</sub> in terms of c (apart from i = 0, n-1, n). The key is not to try!
+<p>
+Put s<sub>k</sub> = a<sub>0</sub> + a<sub>1</sub> + ... + a<sub>k</sub>. Then we have s<sub>n</sub> = s<sub>n-1</sub> = &sum;<sub>k=0..n-1</sub> (c + &sum;<sub>i=k..n-1</sub> a<sub>i-k</sub>(a<sub>i</sub> + a<sub>i+1</sub>) ) = nc + &sum;<sub>i=0..n-1</sub>  (a<sub>i</sub> + a<sub>i+1</sub>) &sum;<sub>k=0..i</sub> a<sub>k</sub>. (As usual, inverting the order of summation requires a little care, but is basically straightforward. Just check the low and high values.). So s<sub>n</sub> = nc + &sum;<sub>i=0..n-1</sub> (a<sub>i</sub> + a<sub>i+1</sub>) s<sub>i</sub> = (s<sub>2</sub> - s<sub>0</sub>)s<sub>1</sub> + (s<sub>3</sub> - s<sub>1</sub>)s<sub>2</sub> + (s<sub>4</sub> - s<sub>2</sub>)s<sub>3</sub> + ... + (s<sub>n</sub> - s<sub>n-2</sub>)s<sub>n-1</sub> = s<sub>n</sub>s<sub>n-1</sub> (we have s<sub>0</sub> = 0 and the other terms cancel in pairs) = s<sub>n</sub><sup>2</sup>.
+<p>
+So nc = s<sub>n</sub> - s<sub>n</sub><sup>2</sup> = &frac14; - (s<sub>n</sub> - &frac12;)<sup>2</sup> &le; &frac14;. Hence c &le; 1/4n.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh89.html">30th IMO shortlist 1989</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+28 Dec 2002
+<br>Last corrected/updated 28 Dec 02
+</BODY>
+
+</HTML>
+

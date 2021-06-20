@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1984/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>45th Putnam 1984</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+ Let S<sub>n</sub> be a set with n elements. Can we find a binary operation * on S which satisfies (1) right cancellation: a*c = b*c implies a = b (for all a, b, c), and (2) non-associativity: a * (b * c) &ne; (a * b) * c for all a, b, c? Note that we are not just requiring that * is not associative, but that it is <i>never</i> associative.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: yes.
+
+<p>
+
+Let the elements be a<sub>1</sub>, ... , a<sub>n</sub>. Define a<sub>i</sub>*b = a<sub>i+1</sub> for all b (taking a<sub>n+1</sub> to be a<sub>1</sub>). Then we certainly have right cancellation, because if a<sub>i</sub>*c = a<sub>j</sub>*c, then a<sub>i+1</sub> = a<sub>j+1</sub>, so i = j. We also have non-associativity, because a<sub>i</sub>*(b*c) = a<sub>i+1</sub>, but (a<sub>i</sub>*b)*c = a<sub>i+1</sub>*c = a<sub>i+2</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn84.html">45th Putnam 1984</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,83 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1996/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1996</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b>
+
+<p>
+
+Let ABCDEF be a convex hexagon such that AB is parallel to DE, BC is parallel to EF, and CD is parallel to FA. Let R<sub>A</sub>, R<sub>C</sub>, R<sub>E</sub> denote the circumradii of triangles FAB, BCD, DEF respectively, and let p denote the perimeter of the hexagon. Prove that:
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; R<sub>A</sub> + R<sub>C</sub> + R<sub>E</sub> &ge; p/2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+The starting point is the formula for the circumradius R of a triangle ABC: 2R = a/sin A = b/sin B = c/sin C. [Proof: the side a subtends an angle 2A at the center, so a = 2R sin A.]
+
+This gives that 2R<sub>A</sub> = BF/sin A, 2R<sub>C</sub> = BD/sin C, 2R<sub>E</sub> = FD/sin E. It is clearly not true in general that BF/sin A &gt; BA + AF, although it is true if angle FAB &ge; 120<sup>o</sup>, so we need some argument that involves the hexagon as a whole.
+
+<p>
+<img src="diag965.jpg">
+<p>
+Extend sides BC and FE and take lines perpendicular to them through A and D, thus forming a rectangle. Then BF is greater than or equal to the side through A and the side through D. We may find the length of the side through A by taking the projections of BA and AF giving AB sin B + AF sin F. Similarly the side through D is CD sin C + DE sin E. Hence:
+
+<p>&nbsp; &nbsp; 2BF &ge; AB sin B + AF sin F + CD sin C + DE sin E.
+
+&nbsp; Similarly:
+
+<p>&nbsp; &nbsp; 2BD &ge; BC sin B + CD sin D + AF sin A + EF sin E, and 
+
+<p>&nbsp; &nbsp; 2FD &ge; AB sin A + BC sin C + DE sin D + EF sin F.
+
+<p>
+Hence 2BF/sin A + 2BD/sin C + 2FD/sin E &ge; AB(sin A/sin E + sin B/sin A) + BC(sin B/sin C + sin C/sin E) + CD(sin C/sin A + sin D/sin C) + DE(sin E/sin A + sin D/sin E) + EF(sin E/sin C + sin F/sin E) + AF(sin F/sin A + sin A/sin C).
+
+<p>
+We now use the fact that opposite sides are parallel, which implies that opposite angles are equal: A = D, B = E, C = F. Each of the factors multiplying the sides in the last expression now has the form x + 1/x which has minimum value 2 when x = 1. Hence 2(BF/sin A + BD/sin C + FD/sin E) &ge; 2p and the result is proved.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo96.html">37th IMO 1996</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+22 Oct 1998
+
+<br>Last corrected 21 Aug 03
+
+</BODY>
+
+
+
+</HTML>
+

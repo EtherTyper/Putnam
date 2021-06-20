@@ -1,0 +1,68 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1988/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1988</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+A function f is defined on the positive integers by: f(1) = 1; f(3) = 3; f(2n) = f(n), f(4n + 1) = 2f(2n + 1) - f(n), and f(4n + 3) = 3f(2n + 1) - 2f(n) for all positive integers n. Determine the number of positive integers n less than or equal to 1988 for which f(n) = n.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Answer: 92.
+
+<p>f(n) is always odd. If n = b<sub>r+1</sub>b<sub>r</sub>...b<sub>2</sub>b<sub>1</sub>b<sub>0</sub> in binary and n is odd, so that b<sub>r+1</sub> = b<sub>0</sub> = 1, then f(n) = b<sub>r+1</sub>b<sub>1</sub>b<sub>2</sub>...b<sub>r</sub>b<sub>0</sub>. If n has r+2 binary digits with r &gt; 0, then there are 2<sup>[(r+1)/2]</sup> numbers with the central r digits symmetrical, so that f(n) = n (because we can choose the central digit and those lying before it arbitarily, the rest are then determined). Also there is one number with 1 digit (1) and one number with two digits (3) satisfying f(n) = 1. So we find a total of 1 + 1 + 2 + 2 + 4 + 4 + 8 + 8 + 16 + 16 = 62 numbers in the range 1 to 1023 with f(n) = n. 1988 = 11111000011. So we also have all 32 numbers in the range 1023 to 2047 except for  11111111111 and 11111011111, giving another 30, or 92 in total.
+
+<p>
+It remains to prove the assertions above. f(n) odd follows by an easy induction. Next we show that if 2<sup>m</sup> &lt; 2n+1 &lt; 2<sup>m+1</sup>, then f(2n+1) = f(n) + 2<sup>m</sup>. Again we use induction. It is true for m = 1 (f(3) = f(1) + 2). So suppose it is true for 1, 2, ... , m. Take 4n+1 so that 2<sup>m+1</sup> &lt; 4n+1 &lt; 2<sup>m+2</sup>, then f(4n+1) = 2f(2n+1) - f(n) = 2(f(n) + 2<sup>m</sup>) - f(n) = f(n) + 2<sup>m+1</sup> = f(2n) + 2<sup>m+1</sup>, so it is true for 4n+1. Similarly, if 4n+3 satisfies, 2<sup>m+1</sup> &lt; 4n+3 &lt; 2<sup>m+2</sup>, then f(4n+3) = 3f(2n+1) - 2f(n) = f(2n+1) + 2(f(n) + 2<sup>m</sup>) - 2f(n) = f(2n+1) + 2<sup>m+1</sup>, so it is true for 4n+3 and hence for m+1.
+
+<p>
+Finally, we prove the formula for f(2n+1). Let 2n+1 = b<sub>r+1</sub>b<sub>r</sub>...b<sub>2</sub>b<sub>1</sub>b<sub>0</sub> with b<sub>0</sub> = b<sub>r+1</sub> = 1. We use induction on r. So assume it is true for smaller values. Say b<sub>1</sub> = ... = b<sub>s</sub> = 0 and b<sub>s+1</sub> = 1 (we may have s = 0, so that we have simply b<sub>1</sub> = 1). Then n = b<sub>r+1</sub> ... b<sub>1</sub> and f(n) = b<sub>r+1</sub>b<sub>s+2</sub>b<sub>s+3</sub>...b<sub>r</sub>b<sub>s+1</sub> by induction. So f(n) + 2<sup>r+1</sup> = b<sub>r+1</sub>0...0b<sub>r+1</sub>b<sub>s+2</sub>...b<sub>r</sub>b<sub>s+1</sub>, where there are s zeros. But we may write this as b<sub>r+1</sub>b<sub>1</sub>...b<sub>s</sub>b<sub>s+1</sub>...b<sub>r</sub>b<sub>r+1</sub>, since b<sub>1</sub> = ... = b<sub>s</sub> = 0, and b<sub>s+1</sub> = b<sub>r+1</sub> = 1. But that is the formula for f(2n+1), so we have completed the induction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo88.html">29th IMO 1988</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+21 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

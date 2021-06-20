@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1968/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1968</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+a, b, c are real with a non-zero. x<sub>1</sub>, x<sub>2</sub>, ... , x<sub>n</sub> satisfy the n equations:
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; ax<sub>i</sub><sup>2</sup> + bx<sub>i</sub> + c = x<sub>i+1</sub>, for 1 &le; i &lt; n
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; ax<sub>n</sub><sup>2</sup> + bx<sub>n</sub> + c = x<sub>1</sub>
+
+<p>Prove that the system has zero, 1 or &gt;1 real solutions according as (b - 1)<sup>2</sup> - 4ac is &lt;0, =0 or &gt;0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Let f(x) = ax<sup>2</sup> + bx + c - x. Then f(x)/a = (x + (b-1)/2a)<sup>2</sup> + (4ac - (b-1)<sup>2</sup>)/4a<sup>2</sup>. Hence if 4ac - (b-1)<sup>2</sup> &gt; 0, then f(x) has the same sign for all x. But f(x) &gt; 0 means ax<sup>2</sup> + bx + c &gt; x, so if {x<sub>i</sub>} is a solution, then either x<sub>1</sub> &lt; x<sub>2</sub> &lt; ... &lt; x<sub>n</sub> &lt; x<sub>1</sub>, or x<sub>1</sub> &gt; x<sub>2</sub> &gt; ... &gt; x<sub>n</sub> &gt; x<sub>1</sub>. Either way we have a contradiction. So if 4ac - (b-1)<sup>2</sup> &gt; 0 there cannot be any solutions.
+
+<p>
+
+If 4ac - (b-1)<sup>2</sup> = 0, then we can argue in the same way that either x<sub>1</sub> &le; x<sub>2</sub> &le; ... &le; x<sub>n</sub> &le; x<sub>1</sub>, or x<sub>1</sub> &ge; x<sub>2</sub> &ge; ... &ge; x<sub>n</sub> &ge; x<sub>1</sub>. So we must have all x<sub>i</sub> = the single root of f(x) = 0 (which clearly is a solution).
+
+<p>
+
+If 4ac - (b-1)<sup>2</sup> &lt; 0, then f(x) = 0 has two distinct real roots y and z and so we have at least two solutions to the equations: all x<sub>i</sub> =y, and all x<sub>i</sub> = z. We may, however, have additional solutions. For example, if a = 1, b = 0, c = -1 and n is even, then we have the additional solution x<sub>1</sub> = x<sub>3</sub> = x<sub>5</sub> = ... = 0, x<sub>2</sub> = x<sub>4</sub> = ... = -1.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo68.html">10th IMO 1968</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Oct 1998
+
+<br>Last corrected/updated 4 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

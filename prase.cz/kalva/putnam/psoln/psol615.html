@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1961/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>22nd Putnam 1961</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Let X be a set of n points. Let P be a set of subsets of X, such that if A, B &isin; P, then X - A, A &cup; B, A &cap; B &isin; P. What are the possible values for the number of elements of P?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 2, 4, 8, ... , 2<sup>n</sup>.
+
+<p>
+
+Take 0 &le; r &lt; n. Let A<sub>1</sub> = {1}, A<sub>2</sub> = {2} , ... , A<sub>r</sub> = {r}, A<sub>r+1</sub> = {r+1, r+2, ... , n}. Consider the collection of all unions of sets A<sub>i</sub>. This collection has 2<sup>r+1</sup> elements and satisfies the conditions. So this shows that we can achieve the values 2, 4, 8, ... , 2<sup>n</sup>.
+
+<p>
+
+To prove the converse we use induction on n. It is obviously true for n = 1. Suppose it is true for all n &lt; N. Let X have N points and P be a set of subsets of X satisfying the condition. If |P| = 2, then there is nothing to prove. Otherwise we can find a member Y of P other than the empty set and X which has no non-trivial subsets in P. Now consider the collection Q of subsets of X - Y which are in P. It is easy to check that (1) P is just the collection of all A  and A &cap; Y, where A is in Q, so that |P| = 2|Q|, and (2) Q satisfies the conditions, so |Q| is a power of 2 by induction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn61.html">22nd Putnam 1961</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

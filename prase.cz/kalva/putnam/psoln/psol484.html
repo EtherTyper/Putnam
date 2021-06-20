@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 48/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>8th Putnam 1948</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Let D be a disk radius r. Given (x, y) &isin; D, and R &gt; 0, let a(x, y, R) be the length of the arc of the circle center (x, y), radius R, which is outside D. Evaluate lim<sub>R&rarr;0</sub> R<sup>-2</sup> &int;<sub>D</sub> a(x, y, R) dx dy.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 4&pi;r.
+
+<p>
+
+Let P be a point in the disk a distance x from its centre. Suppose that the circle centre P radius R cuts the disk perimeter at A and B. Let angle APB be 2&theta;. We have r<sup>2</sup> = x<sup>2</sup> + R<sup>2</sup> + 2xR cos &theta;. Hence the length of arc outside the disk is 2R cos<sup>-1</sup>( (r<sup>2</sup>-x<sup>2</sup>-R<sup>2</sup>)/2xR). This applies for r-R &lt;= x &lt;= r. For smaller x the small circle lies entirely in the disk. Thus we have to evaluate 1/R<sup>2</sup> &int; 2&pi; x 2R cos<sup>-1</sup>( (r<sup>2</sup>-x<sup>2</sup>-R<sup>2</sup>)/2xR) dx. Put x = r - yR, and we get 4&pi;r &int;<sub>0</sub><sup>1</sup> (1 - y R/r) cos<sup>-1</sup>( (2Rry - (y<sup>2</sup>+1)R<sup>2</sup>)/2R(r - yR) ) dy. As R tends to 0, (1 - y R/r) tends to 1 and (2Rry - (y<sup>2</sup>+1)R<sup>2</sup>)/2R(r - yR) tends to y, so we get 4&pi;r &int;<sub>0</sub><sup>1</sup> cos<sup>-1</sup>y dy = 4&pi;r (y cos<sup>-1</sup>y - &radic;(1-y<sup>2</sup>) )|<sub>0</sub><sup>1</sup> = 4&pi;r.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn48.html">8th Putnam 1948</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

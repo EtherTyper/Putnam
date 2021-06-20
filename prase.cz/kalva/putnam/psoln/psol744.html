@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 74/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>35th Putnam 1974</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Find 1/2<sup>n-1</sup> &sum;<sub>1</sub><sup>[n/2]</sup> (n - 2i) nCi, where nCi is the binomial coefficient.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: n( (n-1)C[n/2] - 1)/2<sup>n-1</sup>
+
+<p>
+
+It suffices to show that &sum;<sub>0</sub><sup>[n/2]</sup> (n - 2i) nCi = n ( (n-1)C[n/2] ).
+
+<p>
+
+We need two obvious facts: i nCi = n (n-1)C(i-1) (use factorials) and &sum;<sub>0</sub><sup>[n/2]</sup> nCi = 2<sup>n-1</sup> if n is odd, or 2<sup>n-1</sup> + 1/2 nC[n/2] if n is even (use nCr = nC(n-r) ).
+
+<p>
+
+So consider first n odd. &sum;<sub>0</sub><sup>[n/2]</sup> (n - 2i) nCi = n 2<sup>n-1</sup> - 2 &sum;<sub>0</sub><sup>[n/2]</sup> i nCi = n 2<sup>n-1</sup> - 2n &sum;<sub>1</sub><sup>[n/2]</sup> (n-1)C(i-1). Taking out the factor n we have 2<sup>n-1</sup> - 2 &sum;<sub>0</sub><sup>[n/2]-1</sup> (n-1)Ci = 2<sup>n-1</sup> - (2<sup>n-1</sup> - (n-1)C[n/2] ) = (n-1)C[n/2], as required.
+
+<p>
+
+Similarly for n even, we have &sum;<sub>0</sub><sup>[n/2]</sup> (n - 2i) nCi = n (2<sup>n-1</sup> + 1/2 nC[n/2] ) - 2n &sum;<sub>0</sub><sup>[n/2]-1</sup> (n-1)Ci = n/2 ( nC[n/2] ) = n! / ( [n/2}! ([n/2]-1)! ) = n (n-1)C[n/2], as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn74.html">35th Putnam 1974</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+18 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

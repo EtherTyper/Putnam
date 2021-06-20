@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE>37th IMO shortlist 1996/19 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>37th IMO 1996 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 19</b><br>
+<p>
+We start with the numbers a, b, c, d. We then replace them with a' = a - b, b' = b - c, c' = c - d, d' = d - a. We carry out this process 1996 times. Is it possible to end up with numbers A, B, C, D such that |BC - AD|, |AC - BD|, |AB - CD| are all primes?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: no.
+<p>
+The first 4 iterations give:
+<br>a - b &nbsp; b - c &nbsp; c - d &nbsp; d - a
+<br>a-2b+c &nbsp; b-2c+d &nbsp; c-2d+a nbsp; d-2a+b
+<br>a-3b+3c-d &nbsp; b-3c+3d-a &nbsp; c-3d+3a-b &nbsp; d-3a+3b-c
+<br>2a-4b+6c-4d &nbsp; 2b-4c+6d-4a &nbsp; 2c-4d+6a-4b &nbsp; 2d-4a+6b-4c
+<p>
+So after 4 iterations the numbers are all even. Any common factor is preserved by an iteration, so after 1996 iterations the numbers are all multiples of 2. Hence |BC - AD|, |AC - BD|, |AB - CD| are all multiples of 4, so none of them are prime.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh96.html">37th IMO shortlist 1996</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+16 Dec 2002
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1981/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>42nd Putnam 1981</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+A particle moves in a straight line inside a square side 1. It is reflected from the sides, but absorbed by the four corners. It starts from an arbitrary point P inside the square. Let c(k) be the number of possible starting directions from which it reaches a corner after traveling a distance k or less. Find the smallest constant a<sub>2</sub>, such that from some constants a<sub>1</sub> and a<sub>0</sub>, c(k) &le; a<sub>2</sub>k<sup>2</sup> + a<sub>1</sub>k + a<sub>0</sub> for all P and all k.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: &pi;.
+
+<p>
+
+By a series of reflections we can transform the path into a straight line. The particle reaches a corner iff the transformed line passes through a lattice point. So the number of directions which lead to absorption in a distance k or less is the number of lattice points in a circle radius k. At least that would be true except for the shadowing problem - the starting point may lie on a line of lattice points in which case it could never reach the ones further out. Shadowing reduces the number of lattice points in the circle that we should count, so the number of lattice points is still an upper bound.
+
+<p>
+
+Evidently what we need are some estimates for the number of lattice points in the circle. They do not need to be good estimates - we only need the highest power to be correct. We can regard each lattice point as the centre of a unit square. The resulting unit squares tile the plane. The circle radius k has area &pi;k<sup>2</sup>, so it contains around &pi;k<sup>2</sup> of the unit squares and hence around &pi;k<sup>2</sup> lattice points. However, the squares around the edge may be incomplete and the incomplete squares may or may not include their centres. The maximum distance between two points of a unit square is &radic;2, so the circle radius k + &radic;2 contains the entirety of any square which overlaps the circle radius k. Hence the number of lattice points in the circle radius k is at most &pi;(k + &radic;2)<sup>2</sup>. Thus if we take a<sub>2</sub> = &pi;, a<sub>1</sub> = 2&pi;&radic;2, a<sub>0</sub> = 2&pi;, then c(k) &le; a<sub>2</sub>k<sup>2</sup> + a<sub>1</sub>k + a<sub>0</sub> for all P and k.
+
+<p>
+
+Similarly, any unit square overlapping the circle radius k - &radic;2 is entirely contained in the circle radius k. There are at least &pi;(k - &radic;2)<sup>2</sup> such squares, so the circle radius k contains at least &pi;(k - &radic;2)<sup>2</sup> lattice points. Take a coordinate system with axes parallel to the sides of the squares. Then all lines joining lattice points have rational slope, so if we take the point P to have one coordinate rational and the other irrational, it cannot lie on any such lines. Thus for these points there is no shadowing problem and the number of directions is at least &pi;(k - &radic;2)<sup>2</sup>. This shows that &pi; is the minimal value of a<sub>2</sub> (because for any smaller value and any a<sub>1</sub>, a<sub>0</sub> we would have a<sub>2</sub>k<sup>2</sup> + a<sub>1</sub>k + a<sub>0</sub> &lt; &pi;(k - &radic;2)<sup>2</sup> for sufficiently large k).
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn81.html">42nd Putnam 1981</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

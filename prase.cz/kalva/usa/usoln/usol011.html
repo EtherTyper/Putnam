@@ -1,0 +1,114 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 01/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>30th USAMO 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+What is the smallest number of colors needed to color 8 boxes of 6 balls (one color for each ball), so that the balls in each box are all different colors and any pair of colors occurs in at most one box.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+If each color occurs only twice, then we need at least 8&middot;6/2 = 24 colors. But we can do better, so at least one color occurs more than twice.
+
+<p>
+
+If a color occurs 4 times or more, let the first 4 boxes each include it. Then those 4 boxes use 1 + 4&middot;5 = 21 colors. Now the 5th box can use at most one color from each of the first 4 boxes, so it must use another 2 colors as well. Now the 6th box can use at most one color from each of the first 5 boxes, so it must use another color as well. We are now up to 24 colors. But we can do better.
+
+<p>
+
+So assume a color occurs 3 times. Let the first 3 boxes each include it. Then those 3 boxes use 1 + 3&middot;5 = 16 colors. The 4th box can use at most one color from each of the first 3 boxes, so it needs at least another 3 colors as well. The 5th box can use at most one color from each of the first 4 boxes, so it needs at least another 2 colors as well. Similarly the 6th box needs at least 1 more color. We are now up to 22. 
+
+<p>
+
+It can be done with 23 colors, as we show later. The question therefore is whether 22 suffice. If so, then we cannot exceed the lower limits given above, so the boxes must be as shown below, where Ax denotes one of A1, A2, A3, A4, A5. Similarly Bx etc.
+
+But the three occurrences of Ex F1 must include a repetition, because there are only two Es to choose from. So 22 does not work. 
+
+<pre>
+
+ 1 A1 A2 A3 A4 A5
+
+ 1 B1 B2 B3 B4 B5
+
+ 1 C1 C2 C3 C4 C5
+
+Ax Bx Cx D1 D2 D3
+
+Ax Bx Cx Dx E1 E2
+
+Ax Bx Cx Dx Ex F1
+
+Ax Bx Cx Dx Ex F1
+
+Ax Bx Cx Dx Ex F1
+
+</pre>
+
+Finally, 23 does work:
+
+<pre>
+
+1  2  3  4  5  6
+
+1  7  8  9 10 11
+
+1 12 13 14 15 16
+
+2  7 12 17 18 19
+
+3  8 13 17 20 21
+
+4  9 14 17 21 22
+
+5 10 15 18 20 22
+
+6 11 16 19 21 23
+
+</pre>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa01.html">30th USAMO 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

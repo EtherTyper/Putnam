@@ -1,0 +1,34 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1998/N8 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>39th IMO 1998 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem N8</b><br>
+<p>
+The sequence 0 &le; a<sub>0</sub> &lt; a<sub>1</sub> &lt; a<sub>2</sub> &lt; ... is such that every non-negative integer can be uniquely expressed as a<sub>i</sub> + 2a<sub>j</sub> + 4a<sub>k</sub> (where i, j, k are not necessarily distinct). Find a<sub>1998</sub>.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: So a<sub>1998</sub> = 8<sup>10</sup> + 8<sup>9</sup> + 8<sup>8</sup> + 8<sup>7</sup> + 8<sup>6</sup> + 8<sup>3</sup> + 8<sup>2</sup> + 8 = 1227096648.
+<p>
+After a little experimentation we find that the first few terms are 0, 1, 8, 9, 64, 65. This suggests that each term is a sum of distinct powers of 8. If N is any positive integer, then N is a sum of distinct powers of 2: x = b<sub>0</sub> + b<sub>1</sub>2 + b<sub>2</sub>2<sup>2</sup> + b<sub>3</sub>2<sup>2</sup> + ... , where b<sub>i</sub> = 0 or 1. Grouping every third term, we get:  N = (b<sub>0</sub> + b<sub>3</sub>8 + b<sub>6</sub>8<sup>2</sup> + ... ) + 2(b<sub>1</sub> + b<sub>4</sub>8 + b<sub>7</sub>8<sup>2</sup> + ... ) + 4(b<sub>2</sub> + b<sub>5</sub>8 + b<sub>8</sub>8<sup>2</sup> + ... ) = a + 2b + 4c (*), where a, b, c are each sums of distinct powers of 8. But (*) is evidently unique, because we may write a, b, c as indicated as a sum of powers of 8 and then get the binary expression for N. That is unique, so (*) is unique.
+<p>
+Could there be a different sequence A<sub>n</sub> with the same property? We obviously require A<sub>0</sub> = 0, A<sub>1</sub> = 1. Suppose A<sub>n</sub> is not the same as a<sub>n</sub>. Then take m to be the first n at which they disagree. Suppose a<sub>m</sub> &lt; A<sub>m</sub>. Then a<sub>m</sub> must have an expression A<sub>i</sub> + 2A<sub>j</sub> + 4A<sub>k</sub> with i, j and k all &lt; m. But that means that a<sub>m</sub> has two different expressions using the sequence a<sub>n</sub>. Contradiction. 
+<p>
+How do we order the sums of distinct powers of 8? Suppose C = c<sub>0</sub> + c<sub>1</sub>8 + c<sub>2</sub>8<sup>2</sup> + ... + c<sub>n</sub>8<sup>n</sup>, and D = d<sub>0</sub> + d<sub>1</sub>8 + ... + d<sub>n</sub>8<sup>n</sup>, where all c<sub>i</sub> and d<sub>i</sub> are 0 or 1. Then evidently C &lt; D iff the binary number c<sub>0</sub>c<sub>1</sub> ... c<sub>n</sub> &lt; d<sub>0</sub> ... d<sub>n</sub>. So to find the (n+1)th member of the sequence a<sub>n</sub> we write n in binary and then read it back in base 8. We have 1998 = 1024 + 512 + 256 + 128 + 64 + 8 + 4 + 2. So a<sub>1998</sub> = 8<sup>10</sup> + 8<sup>9</sup> + 8<sup>8</sup> + 8<sup>7</sup> + 8<sup>6</sup> + 8<sup>3</sup> + 8<sup>2</sup> + 8 = 1227096648.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh98.html">39th IMO shortlist 1998</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Aug 2002
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 47/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>7th Putnam 1947</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+A is the matrix
+
+<pre>a  b  c
+
+d  e  f
+
+g  h  i
+
+</pre>
+
+det A = 0 and the cofactor of each element is its square (for example the cofactor of b is fg - di = b<sup>2</sup>). Show that all elements of A are zero.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+a<sup>2</sup>e<sup>2</sup> - b<sup>2</sup>d<sup>2</sup> = (ei - fh)(ai - cg) - (fg - di)(ch - bi) = (ae - bd) i<sup>2</sup> + (cd - af) hi + (bf - ce) gi = (g<sup>3</sup> + h<sup>3</sup> + i<sup>3</sup>) i = 0, since 0 = det A = g<sup>3</sup> + h<sup>3</sup> + i<sup>3</sup>. Hence ae = &plusmn;bd. Similarly cd = &plusmn;af, bf = &plusmn;ce. Multiplying the three equations together we get abcdef = - abcdef unless at least one of the equations has a plus sign. In the first case, at least one of a, b, c, d, e, f is zero. In the second case, the element corresponding to the cofactor is zero - for example ae = bd implies i<sup>2</sup> = 0 and hence i = 0. So either a member of the first two rows is zero, or a member of the last row is zero. 
+
+<p>
+
+wlog we may assume a = 0. That implies b or d = 0 also. [Note that if, for example, i was the zero element, then we would have ei = &plusmn;fh, by an argument similar to that above and hence f or h = 0). If b = 0, then since a<sup>3</sup> + b<sup>3</sup> + c<sup>3</sup> = 0, we have also c = 0. Similarly, if d = 0, then g = 0. So we now have a complete row or column zero. But now the square of any other element is a linear combination of elements in the that row or column and hence zero. Suppose, for example, a = b = c = 0. Then g<sup>2</sup> = bf - ce = 0, and similarly for the other five elements. <p>
+
+<i>Comment. This is surprisingly hard. </i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn47.html">7th Putnam 1947</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

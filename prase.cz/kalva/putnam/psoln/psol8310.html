@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1983/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>44th Putnam 1983</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Let f(n) = n + [&radic;n]. Define the sequence a<sub>i</sub> by a<sub>0</sub> = m, a<sub>n+1</sub> = f(a<sub>n</sub>). Prove that it contains at least one square.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Suppose m = n<sup>2</sup> + r, with 1 &le; r &le; n. Then [&radic;m] = n, so a<sub>1</sub> = n<sup>2</sup> + n + r. We still have [&radic;(n<sup>2</sup> + n + r)] = n (because the next square up is n<sup>2</sup> + 2n + 1), so a<sub>2</sub> = n<sup>2</sup> + 2n + r = (n + 1)<sup>2</sup> + (r - 1). Thus if r = 1, then a<sub>2</sub> is a square, and by a simple induction in the general case a<sub>2r</sub> is a square.
+
+<p>
+
+Now if n+1 &le; r &lt; 2n+1, then we still have a<sub>1</sub> = n<sup>2</sup> + n + r = (n + 1)<sup>2</sup> + (r - n - 1) and 0 &le; (r - n - 1) &lt; n. If r = 0, then we have a square. If not, then a further 2(r - n - 1) steps give a square.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn83.html">44th Putnam 1983</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

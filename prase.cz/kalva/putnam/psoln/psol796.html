@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 79/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>40th Putnam 1979</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Given n reals &alpha;<sub>i</sub> &isin; [0, 1] show that we can find &beta; &isin; [0, 1] such that &sum; 1/|&beta; - &alpha;<sub>i</sub>| &le; 8n &sum;<sub>1</sub><sup>n</sup> 1/(2i - 1).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The trick is to pick several candidates &beta;<sub>j</sub> and then to take &sum;<sub>j</sub>1/|&beta;<sub>j</sub> - &alpha;<sub>i</sub>|.
+
+<p>
+
+Divide [0, 1] into 2n equal intervals, each width 1/2n. Then at least n of them do not contain any &alpha;<sub>i</sub>. Take the &beta;<sub>j</sub> to be the midpoints of n empty subintervals. Then certainly |&beta;<sub>j</sub> - &alpha;<sub>i</sub>| &ge; 1/4n. If we fix j, then we cannot say more than that, so we get &sum;<sub>i</sub> 1/|&beta;<sub>j</sub> - &alpha;<sub>i</sub>| &le; n 4n, which is not good enough.
+
+<p>
+
+But if we fix i, then we can say more: at most two &beta;<sub>j</sub> can be at the minimum distance 1/4n, at most two more at 3/4n, at most two more at 5/4n and so on. We now sum over j. We do not know whether there are one or two &beta;<sub>j</sub> at each stage (because if &alpha;<sub>i</sub> is off-center, then fairly soon we run into the endpoint going one way, and so start getting just one &beta;<sub>j</sub>). But it is certainly conservative to assume that we have two at each stage and go on for n pairs. So summing over j gives: &sum;<sub>j</sub> 1/|&beta;<sub>j</sub> - &alpha;<sub>i</sub>| &lt; 8n &sum; 1/(2i - 1). Now summing over all a<sub>i</sub> multiplies the result by n. At least one b<sub>j</sub> must give a result that is not above average, so we can find &beta; with the sum at most 8n &sum; 1/(2i - 1).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn79.html">40th Putnam 1979</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

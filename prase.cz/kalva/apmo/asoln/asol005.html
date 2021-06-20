@@ -1,0 +1,52 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 00/5 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>12th APMO 2000</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 5</b><br>
+<p>
+Given a permutation s<sub>0</sub>, s<sub>2</sub>, ... , s<sub>n</sub> of 0, 1, 2, .... , n, we may <i>transform</i> it if we can find i, j such that s<sub>i</sub> = 0 and s<sub>j</sub> = s<sub>i-1</sub> + 1. The new permutation is obtained by transposing s<sub>i</sub> and s<sub>j</sub>. For which n can we obtain (1, 2, ... , n, 0) by repeated transformations starting with (1, n, n-1, .. , 3, 2, 0)?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Experimentation shows that we can do it for n=1 (already there), n = 2 (already there), 3, 7, 15, but not for n = 4, 5, 6, 8, 9, 10, 11, 12, 13, 14. So we conjecture that it is possible just for n = 2<sup>m</sup> - 1 and for n = 2.
+<p>
+Notice that there is at most one transformation possible. If n = 2m, then we find that after m-1 transformations we reach 
+<pre>1  n  0  n-2  n-1  n-4  n-3 ... 4  5  2  3
+</pre>and we can go no further. So n even fails for n &gt; 2.
+<p>
+If n = 15 we get successively:
+<pre> 1  15  14  13  12  11  10   9   8   7   6   5   4   3   2   0   start
+ 1   0  14  15  12  13  10  11   8   9   6   7   4   5   2   3   after 7 moves
+ 1   2   3   0  12  13  14  15   8   9  10  11   4   5   6   7   after 8 more moves
+ 1   2   3   4   5   6   7   0   8   9  10  11  12  13  14  15   after 8 more moves
+ 1   2   3   4   5   6   7   8   9  10  11  12  13  14  15   0   after 8 more moves
+</pre>
+This pattern is general. Suppose n = 2<sup>m</sup> - 1. Let P<sub>0</sub> be the starting position and P<sub>r</sub> be the position:
+<pre>
+1   2   3 ... R-1   0,   n-R+1  n-R+2  n-R+3 ... n,   n-2R+1  n-2R+2 ... n-R, ... , R  R+1 ... 2R-1 
+</pre>
+Here R denotes 2<sup>r</sup> and the commas highlight that, after the initial 1 2 ... R-1 0, we have increasing runs of R terms. If we start from P<sub>r</sub>, then the 0 is transposed successively with R, 3R, 5R, ... , n-R+1, then with R+1, 3R+1, ... , n-R+2, and so on up to 2R-1, 4R-1, ... , n. But that gives P<sub>r+1</sub>. It is also easy to check that P<sub>0</sub> leads to P<sub>1</sub> and that P<sub>m</sub> is the required finishing position. Thus the case n = 2<sup>m</sup> - 1 works.
+<p>
+Now suppose n is odd but not of the form 2<sup>m</sup> - 1. Then we can write n = (2a + 1)2<sup>b</sup> - 1 (just take 2<sup>b</sup> as the highest power of 2 dividing n + 1). We can now define P<sub>0</sub>, P<sub>1</sub>, ... , P<sub>b</sub> as before. As before we will reach P<sub>b</sub>:
+<pre>
+1 2 &frac14; B-1 0, 2aB 2aB+1&frac14; (2a+1)B-1, (2a-1)B &frac14; 2aB-1, &frac14; , 3B, 3B+1, &frac14; 4B-1, 2B, 2B+1, &frac14; , 3B-1, B, B+1, &frac14; , 2B-1 
+</pre>
+where B = 2<sup>b</sup> - 1. But then the 0 is transposed successively with B, 3B, 5B, ... , (2a-1)B, which puts it immediately to the right of (2a+1)B-1 = n, so no further transformations are possible and n = (2a+1)2<sup>b</sup> - 1 fails.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo00.html">12th APMO 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

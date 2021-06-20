@@ -1,0 +1,69 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1982/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1982</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+Let S be a square with sides length 100. Let L be a path within S which does not meet itself and which is composed of line segments A<sub>0</sub>A<sub>1</sub>, A<sub>1</sub>A<sub>2</sub>, A<sub>2</sub>A<sub>3</sub>, ... , A<sub>n-1</sub>A<sub>n</sub> with A<sub>0</sub> = A<sub>n</sub>. Suppose that for every point P on the boundary of S there is a point of L at a distance from P no greater than 1/2. Prove that there are two points X and Y of L such that the distance between X and Y is not greater than 1 and the length of the part of L which lies between X and Y is not smaller than 198.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Let the square be A'B'C'D'. The idea is to find points of L close to a particular point of A'D' but either side of an excursion to B'.
+
+<p>
+We say L approaches a point P' on the boundary of the square if there is a point P on L with PP' &le; 1/2. We say L approaches P' before Q' if there is a point P on L which is nearer to A<sub>0</sub> (the starting point of L) than any point Q with QQ' &le; 1/2.
+
+<p>
+Let A' be the first vertex of the square approached by L. L must subsequently approach both B' and D'. Suppose it approaches B' first. Let B be the first point on L with BB' &le; 1/2. We can now divide L into two parts L<sub>1</sub>, the path from A<sub>0</sub> to B, and L<sub>2</sub>, the path from B to A<sub>n</sub>.
+
+<p>
+Take X' to be the point on A'D' closest to D' which is approached by L<sub>1</sub>. Let X be the corresponding point on L<sub>1</sub>. Now every point on X'D' must be approached by L<sub>2</sub> (and X'D' is non-empty, because we know that D' is approached by L but not by L<sub>1</sub>). So by compactness X' itself must be approached by L<sub>2</sub>. Take Y to be the corresponding point on L<sub>2</sub>. XY &le; XX' + X'Y &le; 1/2 + 1/2 = 1. Also BB' &le; 1/2, so XB &ge; X'B' - XX' - BB' &ge; X'B' - 1 &ge; A'B' - 1 = 99. Similarly YB &ge; 99, so the path XY &ge; 198.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo82.html">23rd IMO 1982</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

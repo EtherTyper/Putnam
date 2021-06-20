@@ -1,0 +1,42 @@
+<HTML>
+<HEAD>
+<TITLE>30th IMO shortlist 1989/17 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>30th IMO 1989 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 17</b><br>
+<p>
+Show that the intersection of a plane and a regular tetrahedron can be an obtuse-angled triangle, but that the obtuse angle cannot exceed 120<sup>o</sup>.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+We may take one vertex of the tetrahedron to be the origin, and one edge to lie along the x-axis, another along the vector (1, &radic;3, 0) and the third along the vector (1, 1/&radic;3, &radic;(8/3) ). There is no loss of generality in assuming that one vertex of the triangle lies on each of these edges, and indeed we may take one vertex to be P = (2, 0, 0). So the others are Q = h (1, &radic;3, 0) and R = k (1, 1/&radic;3, &radic;(8/3) ) with h, k &gt; 0.
+<p>
+So PQ<sup>2</sup> = (2 - h)<sup>2</sup> + 3h<sup>2</sup> = 4 - 4h + 4h<sup>2</sup>, PR<sup>2</sup> = (2 - k)<sup>2</sup> + k<sup>2</sup>/3 + 8k<sup>2</sup>/3 = 4 - 4k + 4k<sup>2</sup>, QR<sup>2</sup> = (h - k)<sup>2</sup> + (h&radic;3 - k/&radic;3)<sup>2</sup> + 8k<sup>2</sup>/3 = 4h<sup>2</sup>/3 - 4hk + 4k<sup>2</sup>.
+<p>
+Note also that OP<sup>2</sup> = 4, OQ<sup>2</sup> = 4h<sup>2</sup>, OR<sup>2</sup> = 4k<sup>2</sup>. So if h = k = 1, then all of OP, OQ, OR, PQ, PR, QR have length 2, which proves that the vectors above were correctly chosen.
+<p>
+The cosine formula gives cos P = (PQ<sup>2</sup> + PR<sup>2</sup> - QR<sup>2</sup>)/(2 PQ.PR) = (1 - h + h<sup>2</sup> + 1 - k + k<sup>2</sup> - h<sup>2</sup> + hk - k<sup>2</sup>)/(2 &radic;(1 - h + h<sup>2</sup>)&radic;(1 - k + k<sup>2</sup> ) = (1 + (h - 1)(k - 1) )/(2 &radic;(1 - h + h<sup>2</sup>)&radic;(1 - k + k<sup>2</sup> ).
+<p>
+For an obtuse angle we require cos P &lt; 0, so one of h, k is greater than 1 and the other is less than 1. Without loss of generality h &lt; 1, k &gt; 1. Clearly, we can get cos P &lt; 0. For example, h = 1/3, k = 3 gives cos P = -1/7. 
+<p>
+(h - 1) &gt; -1, so for cos P &lt; 0 we need k &gt; 2. 
+As P increases from 90<sup>o</sup> to 180<sup>o</sup>, cos P decreases from 0 to -1, and cos 120<sup>o</sup> = -1/2, so it is sufficient to show that (h + k - hk - 2)<sup>2</sup> &lt; (1 - h + h<sup>2</sup>)(1 - k + k<sup>2</sup>) or that hk<sup>2</sup> + (h<sup>2</sup> - 5h + 3)k - 3 + 3h &gt; 0 for 0 &lt; h &lt; 1 and k &gt; 2. We can regard this as a quadratic in k. By completing the square, we see that its minimum value is when k = - (h<sup>2</sup> - 5h + 3)/2h. Certainly this is less than 2, because - (h<sup>2</sup> - 5h +3 ) &lt; 4h or h<sup>2</sup> - h + 3 &gt; 0 for 0 &lt; h &lt; 1. So the quadratic is an increasing function of k for k &gt;= 2. Hence is value for k &gt; 2 is greater than its value at k = 2 which is 4h + 2h<sup>2</sup> - 10h + 6 - 3 + 3h = 3 - 3h + 2h<sup>2</sup> &gt; 3(1 - h) &gt; 0.
+<p>
+Note that if we take h small and k large, then cos P is roughly -(k-2)/2k, so we can get close to 120<sup>o</sup>.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh89.html">30th IMO shortlist 1989</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+28 Dec 2002
+<br>Last corrected/updated 28 Dec 02
+</BODY>
+
+</HTML>
+

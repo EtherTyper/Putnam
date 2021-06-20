@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 98/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>27th USAMO 1998</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+A 98 x 98 chess board has the squares colored alternately black and white in the usual way. A move consists of selecting a rectangular subset of the squares (with boundary parallel to the sides of the board) and changing their color. What is the smallest number of moves required to make all the squares black?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 98.
+
+<p>
+
+There are 4&middot;97 adjacent pairs of squares in the border and each pair has one black and one white square. Each move can fix at most 4 pairs, so we need at least 97 moves. However, we start with two corners one color and two another, so at least one rectangle must include a corner square. But such a rectangle can only fix two pairs, so at least 98 moves are needed.
+
+<p>
+
+It is easy to see that 98 suffice:  take 49 1x98 rectangles (alternate rows), and 49 98x1 rectangles (alternate columns).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa98.html">27th USAMO 1998</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+11 May 2002
+
+</BODY>
+
+
+
+</HTML>
+

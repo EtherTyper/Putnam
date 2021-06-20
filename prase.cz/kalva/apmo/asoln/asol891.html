@@ -1,0 +1,29 @@
+<HTML>
+<HEAD>
+<TITLE>APMO 89/1 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>1st APMO 1989</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 1</b><br>
+<p>
+a<sub>i</sub> are positive reals. s = a<sub>1</sub> + ... + a<sub>n</sub>. Prove that for any integer n &gt; 1 we have (1 + a<sub>1</sub>) ... (1 + a<sub>n</sub>) &lt; 1 + s + s<sup>2</sup>/2! + ... + s<sup>n</sup>/n! .
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+We use induction on n. For n = 2 the rhs is 1 + a<sub>1</sub> + a<sub>2</sub> + a<sub>1</sub>a<sub>2</sub> + (a<sub>1</sub><sup>2</sup> + a<sub>2</sub><sup>2</sup>)/2 &gt; lhs. Assume the result is true for n. We note that, by the binomial theorem, for s and t positive we have s<sup>m+1</sup> + (m+1) t s<sup>m</sup> &lt; (s + t)<sup>m+1</sup>, and hence s<sup>m+1</sup>/(m+1)! + t s<sup>m</sup>/m! &lt; (s + t)<sup>m+1</sup>/(m+1)! . Summing from m = 1 to n+1 we get (s + t) + (s<sup>2</sup>/2! + t s/1!) + (s<sup>3</sup>/3! + t s<sup>2</sup>/2!) + ... + (s<sup>n+1</sup>/(n+1)! + t s<sup>n</sup>/n!) &lt; (s + t) + (s + t)<sup>2</sup>/2! + ... + (s + t)<sup>n+1</sup>/(n+1)! . Adding 1 to each side gives that (1 + t)(1 + s + s<sup>2</sup>/2! + ... + s<sup>n</sup>/n!) &lt; (1 + (s+t) + ... + (s+t)<sup>n+1</sup>/(n+1)! . Finally putting t = a<sub>n+1</sub> and using the the result for n gives the result for n+1.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+<p>
+&nbsp;<p>
+<a href="../apmo89.html">1st APMO 1989</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+11 Apr 2002
+</BODY>
+
+</HTML>
+

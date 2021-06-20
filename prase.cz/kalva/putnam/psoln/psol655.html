@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1965/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>26th Putnam 1965</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+How many possible bijections f on {1, 2, ... , n} are there such that for each i = 2, 3, ... , n we can find j &lt; n with f(i) - f(j) = &plusmn; 1?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 2<sup>n-1</sup>.
+
+<p>
+
+Consider the last element f(n). Suppose it is m, not 1 or n. Then the earlier elements fall into two non-empty sets A = {1, 2, ... , m-1} and B = {m+1, m+2, ... , n}. But the difference between an element of A and an element of B is at least 2. So if f(1) is in A, then the first time we get an element of B it has only elements of A preceding it. Contradiction. Similarly, if f(1) is in B.
+
+<p>
+
+So we conclude that the last element is always 1 or n. We can now prove the result by induction. Clearly given an arrangement for n we can derive one for n+1 by adding n+1 at the end. We can also derive one for n+1 by increasing each element by 1 and adding 1 at the end. Equally it is clear that all these are distinct and that there are no other arrangements for n+1 that end in 1 or n+1. So thee are twice as many arrangements for n+1 as for n.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn65.html">26th Putnam 1965</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

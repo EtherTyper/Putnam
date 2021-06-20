@@ -1,0 +1,82 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2001/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>62nd Putnam 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Points X, Y, Z lie on the sides BC, CA, AB (respectively) of the triangle ABC. AX bisects BY at K, BY bisects CZ at L, CZ bisects AX at M. Find the area of the triangle KLM as a fraction of that of ABC.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (7 - 3&radic;5)/4.
+
+<p>
+
+Use vectors. Take some origin O and let <b>A</b> be the vector OA. Similarly for the other points. We use repeatedly the fact that if the point P lies on the line QR, then for some k, <b>P</b> = k<b>Q</b> + (1 - k)<b>R</b>. 
+
+<p>
+
+For some k we have: <b>X</b> = k<b>B</b> + (1-k)<b>C</b>. Hence <b>M</b> = <b>X</b>/2 + <b>A</b>/2 = <b>A</b>/2 + k<b>B</b>/2 + (1-k)<b>C</b>/2. Now <b>Z</b> is a linear combination of <b>M</b> and <b>C</b> and also of <b>A</b> and <b>B</b>, so it must be (2<b>M</b> - (1 - k)<b>C</b>)/(1 + k) = (<b>A</b> + k<b>B</b>)/(1 + k). Hence <b>L</b> = <b>Z</b>/2 + <b>C</b>/2 = (<b>A</b> + k<b>B</b> + (1 + k)<b>C</b>)/(2 + 2k).
+
+<p>
+
+<b>Y</b> is a combination of <b>B</b> and <b>L</b> and of <b>A</b> and <b>C</b>. So it must be (<b>A</b> + (1 + k)<b>C</b>)/(2 + k). Hence <b>K</b> = <b>B</b>/2 + <b>Y</b>/2 = (<b>A</b> + (2 + k)<b>B</b> + (1 + k)<b>C</b>)/(4 + 2k). <b>X</b> is a combination of <b>A</b> and <b>K</b> and also of <b>B</b> and <b>C</b>, so it must be ( (2 + k)<b>B</b> + (1 + k)<b>C</b>)/(3 + 2k). But it is also k<b>B</b> + (1-k)<b>C</b>, so k<sup>2</sup> + k - 1 = 0, or k = (&radic;5 - 1)/2. 
+
+<p>
+
+At this point, this approach degenerates into a slog (although a straightforward one). By repeated use of the relation k<sup>2</sup> = 1 - k (and hence 1/(k+1) = k, 1/(2+k) = k<sup>2</sup>), we find that 2<b>K</b> = k<sup>2</sup><b>A</b> + <b>B</b> + k<b>C</b>, 2<b>L</b> = k<b>A</b> + k<sup>2</sup><b>B</b> + <b>C</b>, 2<b>M</b> = <b>A</b> + k<b>B</b> + k<sup>2</sup><b>C</b>.
+
+<p>
+
+Now the area of ABC is (<b>A x B</b> + <b>B x C</b> + <b>C x A</b>)/2, and the area of KLM is (<b>K x L</b> + <b>L x M</b> + <b>M x K</b>)/2.
+
+<p>
+
+Expanding the latter gives the answer.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn01.html">62nd Putnam 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Dec 2001
+
+</BODY>
+
+
+
+</HTML>
+

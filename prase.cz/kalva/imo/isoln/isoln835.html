@@ -1,0 +1,63 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1983/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1983</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b>
+
+<p>
+
+Is it possible to choose 1983 distinct positive integers, all less than or equal to 10<sup>5</sup>, no three of which are consecutive terms of an arithmetic progression?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+We may notice that an efficient way to build up a set with no APs length 3 is as follows. Having found 2<sup>n</sup> numbers in {1, 2, ... , u<sub>n</sub>} we add the same pattern starting at 2u<sub>n</sub>, thus giving 2<sup>n+1</sup> numbers in {1, 2, ... , 3u<sub>n</sub>-1}. If x is in the first part and y, z in the second part, then 2y is at least 4u<sub>n</sub>, whereas x + z is less than 4u<sub>n</sub>, so x, y, z cannot be an AP length 3. If x and y are in the first part, and z in the second part, then 2y is at most 2u<sub>n</sub>, but x + z is more than 2u<sub>n</sub>, so x, y, z cannot be an AP length 3. To start the process off, we have the 4 numbers 1, 2, 4, 5 in {1, 2, 3, 4, 5}. So u<sub>2</sub> = 5. This gives u<sub>11</sub> = 88574, in other words we can find 2048 numbers in the first 88574 with no AP length 3. 
+
+<p>
+If we are lucky, we may notice that if we reduce each number in the set we have constructed by 1 we get the numbers which have no 2 when written base 3. This provides a neater approach. Take x, y, z with no 2 when written in base 3. Then 2y has only 0s and 2s when written base 3. But x + z only has no 1s if x = z. So x, y, z cannot form an AP length 3. Also there are 2<sup>11</sup> = 2048 numbers of this type with 11 digits or less and hence &le; 11111111111<sub>3</sub> = 88573.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo83.html">24th IMO 1983</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

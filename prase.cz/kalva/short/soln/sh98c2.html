@@ -1,0 +1,80 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1998/C2 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>39th IMO 1998 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C2</b><br>
+<p>
+n is a fixed positive integer. An <i>odd n-admissible</i> sequence a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ... satisfies the following conditions: (1) a<sub>1</sub> = 1; (2) a<sub>2k</sub> = a<sub>2k-1</sub> + 2 or a<sub>2k-1</sub> + n; (3) a<sub>2k+1</sub> = 2a<sub>2k</sub> or n a<sub>2k</sub>. An <i>even n-admissible </i> sequence satisfies (1) a<sub>1</sub> = 1; (2) a<sub>2k</sub> = 2a<sub>2k-1</sub> or n a<sub>2k-1</sub>; (3) a<sub>2k+1</sub> = a<sub>2k</sub> + 2 or a<sub>2k</sub> + n. An integer m &gt; 1 is <i>n-attainable</i> if it belongs to an odd n-admissible sequence or an even n-admissible sequence. Show that for n &gt; 8 there are infinitely many positive integers which are not n-attainable. Show that all positive integers except 7 are 3-attainable.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Suppose n is even. Then the first multiplication makes the next term even and all terms thereafter are even. So in an odd n-admissible sequence all terms from a<sub>3</sub> onwards are even, and in an even n-admissible sequence all terms from a<sub>2</sub> onwards are even. Thus if n is even there are only finitely many n-attainable positive integers (so there are certainly infinitely many which are not n-attainable).
+<p>
+Suppose successive terms in an odd or even n-admissible sequence are a, b, c with b derived from a by multiplication and c derived from b by addition. There are 4 possibilities: a = 2c + 2, 2c + n, nc + 2, nc + n. In every case we have a = 2c + 2 mod n-2. So if a = -2 mod n-2, then c = -2 mod n-2. Hence b = 2c = -4 mod n-2. So if N = -2 mod n-2 is n-attainable with the last operation addition, then every member of the sequence leading to N must be -2 or -4 mod n-2. But the first member of the sequence is 1 and that is only -2 or -4 mod n-2 if n = 3, 5 or 7.
+<p>
+Now consider kn(n-2) - 2 for n and k both odd. It is not divisible by 2 or n, so the last operation must have been addition. It is also -2 mod n-2. So if it is n-attainable then n = 3, 5 or 7. Hence for n &gt; 8 and odd, it is not n-attainable for any odd k. That gives us infinitely many positive integers which are not n-attainable for n odd.
+<p>
+Take n = 3. Then the admissible sequences must start:
+<pre>
++2, x2, +2: 1, 3, 6, 8, ...
++2, x2, +3: 1, 3, 6, 9, ...
++2, x3: 1, 3, 9, ...
++3, x2: 1, 4, 8, ...
++3, x3: 1, 4, 12, ...
+x2, +2, x2: 1, 2, 4, 8, ...
+x2, +2, x3: 1, 2, 4, 12, ...
+x2, +3, x2: 1, 2, 5, 10, ...
+x2, +3, x3: 1, 2, 5, 15, ...
+x3, +2, x2: 1, 3, 5, 10, ...
+x3, +2, x3: 1, 3, 5, 15, ...
+x3, +3, x2: 1, 3, 6, 12, ...
+x3, +3, x3: 1, 3, 6, 18, ...
+</pre>
+None of these include 7, so 7 is not 3-attainable. We also note that 1, 2, 3, 4, 5, 6 are all 3-attainable.
+<p>
+We show that all other positive integers are 3-attainable by induction. We claim that for k &gt; 0:
+<br>6k+2 is 3-attainable with last operation addition
+<br>6k+3 is 3-attainable with last operation addition and with last operation multiplication
+<br>6k+4 is 3-attainable with last operation multiplication
+<br>6k+5 is 3-attainable with last operation addition
+<br>6k+6 is 3-attainable with last operation addition and with last operation multiplication
+<br>6k+7 is 3-attainalbe with last operation addition
+<p>
+For k = 1 we have:
+<pre>
+8 = (1 + 2) x 2 + 2
+9 = (1 + 2) x 2 + 3 = (1 + 2) x 3
+10 = (1x3 + 2) x 2
+11 = ((1 + 2) x 3) + 2
+12 = (1 + 3) x 3 = (1x2 + 3) x 2 + 2
+13 = (1x2 + 3) x 2 + 3  
+</pre>
+Now assume the result is true for &lt; k. We have:
+<pre>
+6k+2 = 2 + 6k
+6k+3 = 3 + 6k = 3 x (2k+1), and all of 6k'+1, 6k'+3, 6k'+5 are 3-attainable with last operation addition
+6k+4 = 2 x (3k + 2), and both of 6k'+2, 6k'+5 are 3 attainable with last operation addition
+6k+5 = 2 + 6k+3
+6k+6 = 2 + (6k+4) = 2 x (3k+3) and both of 6k'+3, 6k'+6 are attainable with last operation addition
+6k+7 = 3 + (6k+4)
+</pre>
+which establishes the result for k.
+<p>
+<i>Comment. This is tiring rather than difficult! The only remotely difficult part is seeing that terms must be -2 or -4 mod n-2 in the first half.</i>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh98.html">39th IMO shortlist 1998</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Aug 2002
+</BODY>
+
+</HTML>
+

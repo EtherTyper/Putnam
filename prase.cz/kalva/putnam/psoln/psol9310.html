@@ -1,0 +1,61 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1993/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1993</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+K(x, y), f(x) and g(x) are positive and continuous for x, y &isin; [0, 1]. &int;<sub>0</sub><sup>1</sup> f(y) K(x, y) dy = g(x) and &int;<sub>0</sub><sup>1</sup> g(y) K(x, y) dy = f(x) for all x &isin; [0, 1]. Show that f = g on [0, 1].
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Moderately easy.</i>
+
+<p>
+Let h = min { f(x)/g(x): x &isin; [0, 1] }, k = min{ g(x)/f(x): x &isin; [0, 1] }. Assume h &lt; k. Then for all x, g(x)/f(x) &ge; k &ge; h, or g(x) - h f(x) &ge; 0. Since [0, 1] is compact, the value h must be attained. So take x<sub>0</sub> such that f(x<sub>0</sub>) = h g(x<sub>0</sub>). Then we have 0 = f(x<sub>0</sub>) - h g(x<sub>0</sub>) = &int; K(x<sub>0</sub>, y) (g(y) - h f(y) ) dy. But K is positive, and g(y) - h f(y) is continuous and non-negative, so if we had g(y) - h f(y) &gt; 0 for any y, then there would be an interval on which g(y) - h f(y) &gt; 0 and the integral would be non-zero. Hence g(y) - h f(y) = 0 for all y. But now we have f(x) = &int; K(x, y) g(y) dy = &int; K(x, y) h f(y) dy = h g(x) = h<sup>2</sup> f(x). Hence h = 1, and f(x) = g(x).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn93.html">Putnam 1993</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

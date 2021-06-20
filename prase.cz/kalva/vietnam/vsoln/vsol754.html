@@ -1,0 +1,69 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Vietnam 75/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>13th VMO 1975</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b>
+
+<p>
+
+Find all terms of the arithmetic progression -1, 18, 37, 56, ... whose only digit is 5.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+
+5...5 with 18k+5 digits for k = 0, 1, 2, 3, ... 
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+The general term is 19k - 1 and this must equal 5(10<sup>n</sup> - 1)/9 for some n. Hence 5&middot;10<sup>n</sup> = 171k - 4 = -4 mod 19. So we certainly require 10<sup>n</sup> = 3 mod 19 and hence n = 5 mod 18. Conversely if n = 5 mod 18, then 10<sup>n</sup> = 3 mod 19, so 5&middot;10<sup>n</sup> = -4 mod 19, so 5&middot;10<sup>n</sup> = 19h - 4 for some h. So 5(10<sup>n</sup> - 1) = 19h - 9. Now lhs and 9 are divisible by 9, so 19h must be divisible by 9, so h must be divisible by 9. Put h = 9k and we get 19k - 1 = 5(10<sup>n</sup> - 1)/9.
+<p>
+<i>Thanks to Suat Namli</i>
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../viet75.html">13th VMO 1975</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+6 March 2004
+<br>Last corrected/updated 6 Mar 04
+
+</BODY>
+
+
+
+</HTML>
+

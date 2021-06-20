@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 51/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>11th Putnam 1951</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+A is a skew-symmetric real 4 x 4 matrix. Show that det A &ge; 0.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<i>Straightforward.</i>
+
+<p>
+
+Let A = 
+
+<pre> 0  a  b  c
+
+<br>-a  0  d  e
+
+<br>-b -d  0  f
+
+<br>-c -e -f  0
+
+</pre>
+
+Then det A = a<sup>2</sup>f<sup>2</sup> + 2acdf - 2abef + b<sup>2</sup>e<sup>2</sup> - 2bcde + c<sup>2</sup>d<sup>2</sup>.
+
+<p>At this point it is helpful to notice that a only appears with f, b with e, and c with d. So putting X = af, Y = cd, Z = be, we have that det A = X<sup>2</sup> + Y<sup>2</sup> + Z<sup>2</sup> + 2XY - 2XZ - 2YZ. This easily factorizes as (X + Y - Z)<sup>2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn51.html">11th Putnam 1951</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+24 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

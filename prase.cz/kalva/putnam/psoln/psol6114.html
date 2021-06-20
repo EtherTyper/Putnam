@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1961/B7 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>22nd Putnam 1961</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B7</b><br>
+
+<p>
+
+The sequence of non-negative reals satisfies a<sub>n+m</sub> &le; a<sub>n</sub>a<sub>m</sub> for all m, n. Show that lim a<sub>n</sub><sup>1/n</sup> exists.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+a<sub>n</sub> &le; a<sub>1</sub>a<sub>n-1</sub> &le; a<sub>1</sub><sup>2</sup>a<sub>n-2</sub> &le; ... &le; a<sub>1</sub><sup>n</sup>. So a<sub>n</sub><sup>1/n</sup> &le; a<sub>1</sub>. All a<sub>n</sub> are non-negative, so a<sub>n</sub><sup>1/n</sup> &ge; 0. Thus we have established that {a<sub>n</sub><sup>1/n</sup>} is bounded.
+
+<p>
+
+Fix n. Take any N &gt; n. Then we may write N = nq + r, with 0 &le; r &lt; n. We have a<sub>N</sub> &le; a<sub>n</sub><sup>q</sup> a<sub>r</sub> , so a<sub>N</sub><sup>1/N</sup> &le; a<sub>n</sub><sup>s</sup> a<sub>r</sub><sup>1/N</sup>, where s = q/N = (1 - r/N)/n. But (1 - r/N) tends to 1 as N tends to infinity, as does a<sub>r</sub><sup>1/N</sup>. Hence lim sup a<sub>N</sub><sup>1/N</sup> &le; a<sub>n</sub><sup>1/n</sup>. This is true for all n, so the sequence cannot have more than one limit point and hence converges.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn61.html">22nd Putnam 1961</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+15 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

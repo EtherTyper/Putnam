@@ -1,0 +1,94 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 39/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>2nd Putnam 1939</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+<i>Do either (1) or (2):</i>
+
+<p>(1) &nbsp; A circle radius r rolls around the inside of a circle radius 3r, so that a point on its circumference traces out a curvilinear triangle. Find the area inside this figure.
+
+<p>(2) &nbsp; A frictionless shell is fired from the ground with speed <i>v</i> at an unknown angle to the vertical. It hits a plane at a height <i>h</i>. Show that the gun must be sited within a radius v/g (v<sup>2</sup> - 2gh)<sup>1/2</sup> of the point directly below the point of impact.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+<p>
+(1) &nbsp; This is moderately difficult. It is not immediately obvious what coordinates to use (or at least, after meeting an integral I did not immediately recognize, I started worrying that there might be a better choice of coordinates), and it is not immediately obvious how to do the resulting integral.
+
+<p>
+Let C be the center of the large circle and let O be the initial point of contact between the two circles. Take O as the origin and OC as the x-axis, take the y-axis so that P the point of contact gets a positive y-coordinate just after rolling starts. The easiest parameter is to take angle OCP = &theta;. Then it is not hard to see that x/r = 3 - 2 cos &theta; - cos 2&theta;, y/r = 2 sin &theta; - sin 2&theta;. 
+
+<p>
+Evidently we need something like &int; y dx. We need a little care on the limits of integration. Let A, B be the other vertices of the curvilinear triangle (A corresponding to &theta; = 2&pi;/3, B to &theta; = 4&pi;/3). Let X be the point where the curve AB cuts the x-axis and Y the point where the line AB cuts the x-axis. &int;<sub>O</sub><sup>A</sup> gives the area under the curve OA, in other words the area OAX plus the area AXY. Then &int;<sub>A</sub><sup>X</sup> gives minus the area AXY (because x is decreasing, so dx is negative). &int;<sub>X</sub><sup>B</sup> gives minus area BXY (x increasing, but y negative), and &int;<sub>B</sub><sup>O</sup> gives plus area BXY plus area OBX (x decreasing and y negative). So the entire integral &int;<sub>&theta;=0</sub><sup>2&pi;</sup> gives the required area inside the curvilinear triangle OAB. In other words we need:
+
+<br> &nbsp; &nbsp; 2r<sup>2</sup> &int;<sub>&theta;=0</sub><sup>2&pi;</sup> (2 sin &theta; - sin 2&theta;)(sin &theta; + sin 2&theta;) d&theta;.
+
+<p>
+This is the point at which we are likely to get stuck. Changing variable to z = cos &theta; does not apparently help. The trick is to put things in terms of sin nx or cos nx. We may remember that sin<sup>2</sup>z = (1 - cos 2z)/2, and cos(w +/- z) = cos w cos z -/+ sin w sin z, so that sin z sin 2z = (cos z - cos 3z)/2.
+
+<p>
+Expanding the integrand gives: 2 sin<sup>2</sup>&theta; + sin &theta; sin 2&theta; - sin<sup>2</sup>2&theta;. Using the two formulae above transforms this to: 1 - cos 2&theta; + (cos &theta; - cos 3&theta;)/2 - 1/2 + 1/2 cos 4&theta;. The cos terms all integrate to zero and the constant term 1/2 integrates to &pi;, so the final answer is 2&pi;r<sup>2</sup>.
+
+<p>
+(2) &nbsp; There is a slight trap here. We may be tempted to argue that the extreme case is where the shell reaches the plane with zero vertical velocity. The horizontal velocity does not change during the trajectory, so taking u as the horizontal velocity and w as the vertical, we can write down immediately that w<sup>2</sup> = 2gh (energy) and hence the radius r = w/g (v<sup>2</sup> - 2gh)<sup>1/2</sup>, which is unfortunately wrong. Notice that it is smaller than the answer sought. The reason is that impact at zero vertical velocity is not the extreme case. We can usually do better by having the shell peak before the plane, so that it hits it on the way down - the extra time to travel horizontally outweighs the loss of horizontal velocity.
+
+<p>
+So we have to write down the equations: r = tu, h = tw - gt<sup>2</sup>/2. Squaring to eliminate u, w in favor of v, gives: 
+
+<br> &nbsp; g<sup>2</sup>t<sup>4</sup>/4 + (gh - v<sup>2</sup>)t<sup>2</sup> + (h<sup>2</sup> + r<sup>2</sup>) = 0. &nbsp;(*)
+
+<p>
+For this to have a real root we require (gh - v<sup>2</sup>)<sup>2</sup> &ge; g<sup>2</sup>(h<sup>2</sup> + r<sup>2</sup>) and hence r &le; v/g (v<sup>2</sup> - 2gh)<sup>1/2</sup>.
+
+<p>
+We are not asked to prove that the plane can be hit from anywhere within this radius, so we could stop here. But v<sup>2</sup> &ge; 2gh &gt; gh, so (*) is a quadratic of the form a z<sup>2</sup> - b z + c = 0, with a, b, c positive. Hence if r satisfies the condition, it has two <i>positive</i> roots for z and (*) has two real (positive) roots for t. Having solved for t, we can then solve for the angle (or equivalently for u, w), which shows that we can hit the plane from anywhere inside the radius.
+
+<p>
+<i>Comment. If one stuck strictly to the question, did not think too much about the physics and just banged out the equations, then (2) is easy, certainly easier than (1). But then keen students practised integration much harder in those days.]</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn39.html">2nd Putnam 1939</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

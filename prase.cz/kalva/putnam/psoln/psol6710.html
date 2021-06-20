@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1967/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>28th Putnam 1967</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+We are given a sequence a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>n</sub>. Each a<sub>i</sub> can take the values 0 or 1. Initially, all a<sub>i</sub> = 0. We now successively carry out steps 1, 2, ... , n. At step m we change the value of a<sub>i</sub> for those i which are a multiple of m. Show that after step n, a<sub>i</sub> = 1 iff i is a square. Devise a similar scheme give a<sub>i</sub> = 1 iff i is twice a square.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+a<sub>i</sub> is changed once for each divisor of i. If i is non-square then it has an even number of divisors (they come in pairs d, i/d), so a<sub>i</sub> ends as 0. If i is square it has an odd number of divisors and so a<sub>i</sub> ends as 1.
+
+<p>
+
+We change those that a multiple of 2, then those that are a multiple of 4, then those that are a multiple of 6 and so on. This only affects the even numbers and indeed a<sub>2i</sub> is changed once for each divisor of i, so the same argument as before shows that a<sub>2i</sub> ends as 1 iff i is a square. Note that a<sub>2i+1</sub> is never changed, so it remains 0.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn67.html">28th Putnam 1967</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

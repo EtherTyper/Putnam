@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1962/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>23rd Putnam 1962</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b><br>
+
+<p>
+
+Let R be the reals. Find all f <b>:</b> K &rarr; R, where K is [0, &infin;) or a finite interval [0, a), such that (1/k &int;<sub>0</sub><sup>k</sup> f(x) dx )<sup>2</sup>= f(0) f(k) for all k in K.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: for [0, &infin;) f(x) = b/(cx + 1)<sup>2</sup> with c non-negative. For [0, a), f(x) = b/(cx + 1)<sup>2</sup> with c &gt;= -1/a.
+
+<p>
+
+Put y = &int;<sub>0</sub><sup>x</sup> f(t) dt. Then the given equation becomes y<sup>2</sup>/x<sup>2</sup> = by', where b = f(0). Integrating, b/y = c + 1/x, or y = bx/(cx + 1). Differentiating gives f(x) = y' = b/(cx + 1)<sup>2</sup>.
+
+<p>
+
+f(-1/c) is undefined, so if K is the half-line, then c cannot be negative. If K is the finite interval [0, a), then we require c &ge; -1/a. Note that we can have equality because k must be strictly less than a. On the other hand, b can have any value.
+
+<p>
+
+<i>Note that if we start by differentiating, then things get somewhat messy, albeit manageable. We get: x y' = A y<sup>3/2</sup> - 2y, where A = 2/&radic; f(0). So we have to integrate 1/(A y<sup>3/2</sup> - 2y). Differentiating the obvious log(A y<sup>3/2</sup> - 2y) gives us the desired term plus 3/(2y). Thus we can integrate the equation to get: B + log x = log(A y<sup>3/2</sup> - 2y) - 3/2 log y and after some simplification and extra care with signs we recover the result above.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn62.html">23rd Putnam 1962</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

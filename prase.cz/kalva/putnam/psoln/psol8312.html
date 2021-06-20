@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1983/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>44th Putnam 1983</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+Let &alpha; be a complex (2<sup>n</sup> + 1)th root of unity. Prove that there always exist polynomials p(x), q(x) with integer coefficients, such that p(&alpha;)<sup>2</sup> + q(&alpha;)<sup>2</sup> = -1.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Note that we have &alpha; + &alpha;<sup>2</sup> + &alpha;<sup>3</sup> + ... + &alpha;<sup>N</sup> = -1 where we use N = 2<sup>n</sup> (because of the shortcomings of HTML which does not allow iterated exponents). We give an inductive procedure for constructing p<sub>n</sub>(x) and q<sub>n</sub>(x) so that p<sub>n</sub>(x)<sup>2</sup> + q<sub>n</sub>(x)<sup>2</sup> = x<sup>2</sup> + x<sup>4</sup> + x<sup>6</sup> + ... + x<sup>2N</sup>. For x = &alpha; this becomes &alpha;<sup>2</sup> + &alpha;<sup>4</sup> + ... + &alpha;<sup>N</sup> + &alpha; + &alpha;<sup>3</sup> + ... + &alpha;<sup>N-1</sup> = -1.
+
+<p>
+
+Evidently for n = 1, we may take p(x) = &alpha; and q(x) = &alpha;<sup>2</sup>. Given p<sub>n</sub>(x) and q<sub>n</sub>(x), take p<sub>n+1</sub>(x) = p<sub>n</sub>(x) + x<sup>N</sup>q<sub>n</sub>(x), q<sub>n+1</sub>(x) = q<sub>n</sub>(x) - x<sup>N</sup>p<sub>n</sub>(x). Then p<sub>n+1</sub>(x)<sup>2</sup> + q<sub>n+1</sub>(x)<sup>2</sup> = (p<sub>n</sub>(x)<sup>2</sup> + q<sub>n</sub>(x)<sup>2</sup>)(1 + x<sup>2N</sup>) = x<sup>2</sup> + x<sup>4</sup> + ... + x<sup>4N</sup> as required.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn83.html">44th Putnam 1983</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

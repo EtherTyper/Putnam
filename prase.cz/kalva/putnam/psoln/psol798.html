@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 79/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>40th Putnam 1979</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Given 0 &lt; &alpha; &lt; &beta;, find lim<sub>&lambda;&rarr;0</sub> ( &int;<sub>0</sub><sup>1</sup> (&beta;x + &alpha;(1 - x) )<sup>&lambda;</sup> dx )<sup>1/&lambda;</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: &beta;<sup>&beta;/(&beta; - &alpha;)</sup>/( e &alpha;<sup>&alpha;/(&beta; - &alpha;)</sup>)
+
+<p>
+
+Let t = &beta;x + &alpha;(1 - x). Then the integral becomes &int;<sub>&alpha;</sub><sup>&beta;</sup> t<sup>&lambda;</sup> dt/(&beta; - &alpha;) = 1/(1 + &lambda;) (&beta;<sup>&lambda;+1</sup> - a<sup>&lambda;+1</sup>)/(&beta; - &alpha;). We evaluate the limits of 1/(1 + &lambda;)<sup>&lambda;</sup> and (&beta;<sup>&lambda;+1</sup> - a<sup>&lambda;+1</sup>)<sup>&lambda;</sup>/(&beta; - &alpha;)<sup>&lambda;</sup> separately. Put k = 1/&lambda;. The first limit is lim 1/(1 + 1/k)<sup>k</sup> = 1/e. To evaluate the second, note that &beta;<sup>x</sup> = e<sup>x ln &beta;</sup> = (1 + x ln &beta; + O(x<sup>2</sup>) ), so the expression is (1 + 1/k (&beta; ln &beta; - &alpha; ln &alpha;)/(&beta; - &alpha;) + O(1/k<sup>2</sup>) )<sup>k</sup>, which tends to the limit exp( (&beta; ln &beta; - &alpha; ln &alpha;)/(&beta; - &alpha;) ) as k tends to infinity, in other words, &beta;<sup>&beta;/(&beta; - &alpha;)</sup>/ &alpha;<sup>&alpha;/(&beta; - &alpha;)</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn79.html">40th Putnam 1979</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Dec 1999
+
+</BODY>
+
+
+
+</HTML>
+

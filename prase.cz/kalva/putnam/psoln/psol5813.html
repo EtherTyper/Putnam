@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>18th Putnam 1958/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>18th Putnam 1958</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+A particle of unit mass moves in a vertical plane under the influence of constant gravitational force g and a resistive force which is in the opposite direction to its velocity and with magnitude a function of its speed. The particle starts at time t = 0 and has coordinates (x, y) at time t. Given that x = x(t) and is not constant, show that y(t) = - g x(t) &int;<sub>0</sub><sup>t</sup> ds/x'(s) + g &int;<sub>0</sub><sup>t</sup> x(s) / x'(s) ds + a x(t) + b, where a and b are constants.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We can write the equations of motion as x'' = - f(x',y') x', y'' = - f(x', y') y' - g. If x'(t) = 0 at some t, then a possible solution to the equations would be x = constant (and y found by integrating y'' = - f(0, y') y' - g). But solutions are unique, so this would be <i>the</i> solution. But we are told that x is not constant. So x'(t) is never zero.
+
+<p>
+
+We do not know anything about f, so we resolve perpendicular to it to get x'' sin &theta; - y'' cos &theta; = g cos &theta;, or x'' tan &theta; - y'' = g. But tan &theta; = dy/dx = y'/x', so x'' y'/x' - y'' = g (*).
+
+<p>
+
+Dividing by x' gives x'' y'/(x')<sup>2</sup> - y''/x' = g/x'. Integrating, y'/x' = A - g &int; dt/x'. So y' = Ax' - g x' &int; dt/x'. Integrating again, y(T) = A x + B - g &int;<sub>0</sub><sup>T</sup> x' &int;<sub>0</sub><sup>t</sup> ds/x' dt. Now we can integrate the last integral by parts: &int;<sub>0</sub><sup>T</sup> x' &int;<sub>0</sub><sup>t</sup> ds/x' dt = &int;<sub>t=0</sub><sup>T</sup> &int;<sub>0</sub><sup>t</sup> ds/x' dx = x(T) &int;<sub>0</sub><sup>T</sup> ds/x' - &int;<sub>0</sub><sup>T</sup> x/x' dt. So we get finally the expression in the question.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn58.html">18th Putnam 1958</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

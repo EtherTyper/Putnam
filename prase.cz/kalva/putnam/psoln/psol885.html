@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 88/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>49th Putnam 1988</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b><br>
+
+<p>
+
+R<sup>+</sup> denotes the positive reals. Prove that there is a unique function f : R<sup>+</sup> &rarr; R<sup>+</sup> satisfying f( f(x) ) = 6x - f(x) for all x.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: unique solution is f(x) = 2x.
+
+<p>
+
+<i>Moderately hard</i>
+
+<p>
+
+To get a handle on the problem, we try taking f(x) linear. Solving gives the solutions f(x) = -3x or f(x) = 2x, but the first is ruled out because the values must be positive. So we have to prove that f(x) = 2x is the only solution.
+
+<p>
+
+It is obviously the only polynomial solution, but we are not even given that f is continuous. In principle, it could be an entirely arbitary function. So we must somehow use the relation f( f(x) ) = 6x - f(x) directly to get a contradiction. The only obvious approach is to define a sequence x<sub>n+1</sub> = f(x<sub>n</sub>) and hope that we eventually get x<sub>n</sub> negative. A little experimentation suggests that that is true.
+
+<p>
+
+So suppose we have f(x<sub>0</sub>) = (2 - &lambda;<sub>0</sub>)x<sub>0</sub> for some x<sub>0</sub> with 0 &lt; &lambda;<sub>0</sub> &lt; 2. Then f( (2 - &lambda;<sub>0</sub>)x<sub>0</sub>) = (4 + &lambda;<sub>0</sub>)x<sub>0</sub>, and hence f( (4 + &lambda;<sub>0</sub>)x<sub>0</sub> ) = (8 - 7&lambda;<sub>0</sub>)x<sub>0</sub> = (2 - 9&lambda;<sub>0</sub>/(4 + &lambda;<sub>0</sub>) ) (4 + &lambda;<sub>0</sub>)x<sub>0</sub>. In other words, we have found x<sub>1</sub> and &lambda;<sub>1</sub> = 9&lambda;<sub>0</sub>/(4 + &lambda;<sub>0</sub>) such that f(x<sub>1</sub>) = (2 - &lambda;<sub>1</sub>)x<sub>1</sub>. But &lambda;<sub>1</sub> &gt; 3/2 &lambda;<sub>0</sub>. If &lambda;<sub>1</sub> &gt; 2, then we have a contradiction (because f(x<sub>1</sub>) &lt; 0). If not, then we can repeat to get an x<sub>2</sub> with f(x<sub>2</sub>) = (2 - &lambda;<sub>2</sub>)x<sub>2</sub> and &lambda;<sub>2</sub> &gt; 3/2 &lambda;<sub>1</sub> &gt; (3/2)<sup>2</sup> &lambda;<sub>0</sub>. And so on. So if we can find x<sub>0</sub> with f(x<sub>0</sub>) &lt; 2x<sub>0</sub> then we have a contradiction.
+
+<p>
+
+If we can find x<sub>0</sub> with f(x<sub>0</sub>) &gt; 2x<sub>0</sub>, then f(x<sub>0</sub>) = (2 + &lambda;)x<sub>0</sub> for some &lambda; &gt; 0. So f( (2 + &lambda;)x<sub>0</sub>) = (4 - &lambda;)x<sub>0</sub> &lt; 2 (2 + &lambda;)x<sub>0</sub>. In other words, we have found x<sub>1</sub> = (2 + &lambda;)x<sub>0</sub> such that f(x<sub>1</sub>) &lt; 2x<sub>1</sub> and hence have a contradiction. So we must have f(x) = 2x for all x.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn88.html">49th Putnam 1988</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+8 Oct 1999
+
+</BODY>
+
+
+
+</HTML>
+

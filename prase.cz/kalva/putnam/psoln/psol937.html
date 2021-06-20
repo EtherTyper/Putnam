@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1993/B1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1993</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B1</b><br>
+
+<p>
+
+What is the smallest integer n &gt; 0 such that for any integer m in the range 1, 2, 3, ... , 1992 we can always find an integral multiple of 1/n in the open interval (m/1993, (m + 1)/1994)?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 1993 + 1994 = 3987.
+
+<p><i>Easy.</i>
+
+<p>
+For positive a, b, a', b', with a/b &lt; a'/b', we have that a/b &lt; (a+a')/(b+b') &lt; a'/b'. So certainly m/1993 &lt; (2m+1)/3987 &lt; (m+1)/1994. The question is whether a smaller number also works.
+
+<p>
+The simplest idea is to try the extreme value m = 1992. That gives: 1992/1993 &lt; k/n &lt; 1993/1994. Subtracting from 1 gives: 1/1993 &gt; k'/n &gt; 1/1994, where k' = n - k, or 1993k' &lt; n &lt; 1994k'. That is clearly not possible for k' = 1, so the smallest possible n corresponds to k' = 2 and is 3987.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn93.html">Putnam 1993</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

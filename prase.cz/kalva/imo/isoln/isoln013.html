@@ -1,0 +1,90 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 2001/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+Integers are placed in each of the 441 cells of a 21 x 21 array. Each row and each column has at most 6 different integers in it. Prove that some integer is in at least 3 rows and at least 3 columns.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Notice first that the result is not true for a 20 x 20 array. Make 20 rectangles each 2 x 10, labelled 1, 2, ... , 20. Divide the 20 x 20 array into four quadrants (each 10 x 10). In each of the top left and bottom right quadrants, place 5 rectangles horizontally. In each of the other two quadrants, place 5 rectangles vertically. Now each row intersects 5 vertical rectangles and 1 horizontal. In other words, it contains just 6 different numbers. Similarly each column. But any given number is in either 10 rows and 2 columns or vice versa, so no number is in 3 rows and 3 columns. [None of this is necessary for the solution, but it helps to show what is going on.]
+
+<p>
+
+Returning to the 21 x 21 array, assume that an arrangement is possible with no integer in at least 3 rows and at least 3 columns. Color a cell white if its integer appears in 3 or more rows and black if its integer appears in only 1 or 2 rows. We count the white and black squares. 
+
+<p>
+
+Each row has 21 cells and at most 6 different integers. 6 x 2 &lt; 21, so every row includes an integer which appears 3 or more times and hence in at most 2 rows. Thus at most 5 different integers in the row appear in 3 or more rows. Each such integer can appear at most 2 times in the row, so there are at most 5 x 2 = 10 white cells in the row. This is true for every row, so there are at most 210 white cells in total.
+
+<p>
+
+Similarly, any given column has at most 6 different integers and hence at least one appears 3 or more times. So at most 5 different integers appear in 2 rows or less. Each such integer can occupy at most 2 cells in the column, so there are at most 5 x 2 = 10 black cells in the column. This is true for every column, so there are at most 210 black cells in total.
+
+<p>
+
+This gives a contradiction since 210 + 210 &lt; 441.
+
+<p>
+
+<i>Comment. This looks easy, but (like question 6) I found it curiously difficult (it took me well over 2 hours). For a while I could not see how to do better than a 12 x 12 array (with 2 rows of 1s, then 2 rows of 2s etc), which was disorienting. Then I got the argument almost right, but not quite right, which took more time. 
+
+<p>The original question was phrased in terms of 21 boys and 21 girls in a competition with an unknown number of problems. Each boy, girl pair solved at least one problem. Each competitor solved at most 6 problems. One had to show that some problem was solved by at least 3 boys and at least 3 girls. The recasting in the terms above is almost immediate.
+
+<p>
+
+Equally, one can easily recast the solution above into the competition format. Take any boy B<sub>0</sub>. At least one of the questions he attempts must be attempted by 3 or more girls (because he attempts at most 6 questions and there are more than 6x2 girls). Hence he attempts at most 5 questions which are only attempted by less than 3 girls. So at most 5 x 2 = 10 of the 21 pairs (B<sub>0</sub>, G) attempt a question attempted by less than 3 girls. So at most 210 of the 441 pairs pairs (B, G) attempt such a question. Similarly, at most 210 pairs (B, G) attempt a question attempted by less than 3 boys. Hence at least 21 pairs (B, G) attempt a question attempted by 3 or more girls and 3 or more boys. So there must be at least one such question.
+
+<p>
+
+Note that the arguments above generalise immediately to show that in a 4N+1 by 4N+1 array with at most N+1 different integers in each row and column, there is some integer that appears in at least 3 rows and 3 columns, but this is not true for a 4N by 4N array.</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo01.html">42nd IMO 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Aug 2001
+
+<br>Last corrected/updated 12 Aug 2001
+
+</BODY>
+
+
+
+</HTML>
+

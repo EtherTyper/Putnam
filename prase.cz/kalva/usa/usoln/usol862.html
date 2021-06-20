@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 86/2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>15th USAMO 1986</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 2</b><br>
+
+<p>
+
+Five professors attended a lecture. Each fell asleep just twice. For each pair there was a moment when both were asleep. Show that there was a moment when three of them were asleep.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+This is a slightly tricky application of the pigeonhole principle. 
+
+<p>
+
+For each pair take the first moment when they are both asleep. There are ten pairs, so ten such moments. If two coincide, then we are done because at that moment at least three professors were asleep. So suppose they are all distinct and form a set S. Each such moment must also be one of the 10 occasions when a professor falls asleep. But consider the earliest member of S. Two professors were asleep at that moment so two fell asleep at or before that moment. Thus each of the remaining 9 members of S must be one of the 8 later occasons when a professor fell asleep. So they cannot all be distinct. Contradiction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa86.html">15th USAMO 1986</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

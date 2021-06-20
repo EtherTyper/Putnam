@@ -1,0 +1,67 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 2000/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b>
+
+<p>
+
+Can we find N divisible by just 2000 different primes, so that N divides 2<sup>N</sup> + 1? [N may be divisible by a prime power.]
+
+<p>
+
+&nbsp;<p>
+<b>Answer</b>
+<p>
+Yes
+<p>
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Note that for b odd we have 2<sup>ab</sup> + 1 = (2<sup>a</sup> + 1)(2<sup>a(b-1)</sup> - 2<sup>a(b-2)</sup> + ... + 1), and so 2<sup>a</sup> + 1 is a factor of 2<sup>ab</sup> + 1. It is sufficient therefore to find m such that (1) m has only a few distinct prime factors, (2) 2<sup>m</sup> + 1 has a large number of distinct prime factors, (3) m divides 2<sup>m</sup> + 1. For then we can take k, a product of enough distinct primes dividing 2<sup>m</sup> + 1 (but not m), so that km has exactly 2000 factors. Then km still divides 2<sup>m</sup> + 1 and hence 2<sup>km</sup> + 1.
+
+<p>The simplest case is where m has only one distinct prime factor p, in other words it is a power of p. But if p is a prime, then p divides 2<sup>p</sup> - 2, so the only p for which p divides 2<sup>p</sup> + 1 is 3. So the questions are whether a<sub>h</sub> = 2<sup>m</sup> + 1 is (1) divisible by m = 3<sup>h</sup> and (2) has a large number of distinct prime factors.
+
+<p>a<sub>h+1</sub> = a<sub>h</sub>(2<sup>2m</sup> - 2<sup>m</sup> + 1), where m = 3<sup>h</sup>. But 2<sup>m</sup> = (a<sub>h</sub> - 1), so a<sub>h+1</sub> = a<sub>h</sub>(a<sub>h</sub><sup>2</sup> - 3 a<sub>h</sub> + 3). Now a<sub>1</sub> = 9, so an easy induction shows that 3<sup>h+1</sup> divides a<sub>h</sub>, which answers (1) affirmatively. Also, since a<sub>h</sub> is a factor of a<sub>h+1</sub>, any prime dividing a<sub>h</sub> also divides a<sub>h+1</sub>. Put a<sub>h</sub> = 3<sup>h+1</sup>b<sub>h</sub>. Then b<sub>h+1</sub> = b<sub>h</sub>(3<sup>2h+1</sup>b<sub>h</sub><sup>2</sup> - 3<sup>h+2</sup>b<sub>h</sub> + 1). Now (3<sup>2h+1</sup>b<sub>h</sub><sup>2</sup> - 3<sup>h+2</sup>b<sub>h</sub> + 1) &gt; 1, so it must have some prime factor p &gt; 1. But p cannot be 3 or divide b<sub>h</sub> (since (3<sup>2h+1</sup>b<sub>h</sub><sup>2</sup> - 3<sup>h+2</sup>b<sub>h</sub> + 1) is a multiple of 3b<sub>h</sub> plus 1), so b<sub>h+1</sub> has at least one prime factor p &gt; 3 which does not divide b<sub>h</sub>. So b<sub>h+1</sub> has at least h distinct prime factors greater than 3, which answers (2) affirmatively. But that is all we need.  We can take m in the first paragraph above to be 3<sup>2000</sup>: (1) m has only one distinct prime factor, (2) 2<sup>m</sup> + 1 = 3<sup>2001</sup> b<sub>2000</sub> has at least 1999 distinct prime factors other than 3, (3) m divides 2<sup>m</sup> + 1. Take k to be a product of 1999 distinct prime factors dividing b<sub>2000</sub>. Then N = km is the required number with exactly 2000 distinct prime factors which divides 2<sup>N</sup> + 1.
+
+<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo00.html">41st IMO 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Aug 2000
+
+<br>Last corrected/updated 30 Aug 2000
+
+</BODY>
+
+
+
+</HTML>
+

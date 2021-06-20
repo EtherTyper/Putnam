@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1994/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1994</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b>
+
+<p>
+
+Let S be the set of all real numbers greater than -1. Find all functions f :S&rarr;S such that f(x + f(y) + xf(y)) = y + f(x) + yf(x) for all x and y, and f(x)/x is strictly increasing on each of the intervals -1 &lt; x &lt; 0 and 0 &lt; x.
+
+<p>
+
+&nbsp;<p>
+
+<b>Answer</b>
+
+<p>
+f(x) = -x/(x+1).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+Suppose f(a) = a. Then putting x = y = a in the relation given, we get f(b) = b, where b = 2a + a<sup>2</sup>. If -1 &lt; a &lt; 0, then -1 &lt; b &lt; a. But f(a)/a = f(b)/b. Contradiction. Similarly, if a &gt; 0, then b &gt; a, but f(a)/a = f(b)/b. Contradiction. So we must have a = 0.
+
+<p>
+But putting x = y in the relation given we get f(k) = k for k = x + f(x) + xf(x). Hence for any x we have x + f(x) + xf(x) = 0 and hence f(x) = -x/(x+1).
+
+<p>
+Finally, it is straightforward to check that f(x) = -x(x+1) satisfies the two conditions.
+
+<p>
+<i>Thanks to Gerhard Woeginger for pointing out the error in the original solution and supplying this solution.</i>
+
+<p>&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo94.html">35th IMO 1994</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Oct 1998
+
+<br>Last corrected/updated 25 Aug 03
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 55/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>15th Putnam 1955</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+For what positive integers n does the polynomial p(x) &equiv; x<sup>n</sup> + (2 + x)<sup>n</sup> + (2 - x)<sup>n</sup> have a rational root.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: n = 1.
+
+<p>
+
+There are no roots at all if n is even. If n = 1, then -4 is the root. So suppose n is odd and at least 3.
+
+<p>
+
+We can use a similar argument to that showing that &radic;2 is irrational. Suppose x = r/s with r and s having no common factor is a root. Then r<sup>n</sup> + (2s + r)<sup>n</sup> + (2s - r)<sup>n</sup> = 0. The last two terms expand and add to give terms with even coefficients, so r must be even. So set r = 2t and we have t<sup>n</sup> + (s + t)<sup>n</sup> + (s - t)<sup>n</sup> = 0. The same argument shows that t must be even. But now we have t<sup>n</sup> + 2(s<sup>n</sup> + nC2 s<sup>n-2</sup> t<sup>2</sup> + ... ) = 0. Since n &ge; 3, s must be even also. Contradiction. So there are no rational roots for n odd &ge; 3.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn55.html">15th Putnam 1955</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+

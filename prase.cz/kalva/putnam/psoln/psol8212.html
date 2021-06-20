@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1982/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>43rd Putnam 1982</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+Let A(a, b, c) be the area of a triangle with sides a, b, c. Let f(a, b, c) = &radic;A(a, b, c). Prove that for any two triangles with sides a, b, c and a', b', c' we have f(a, b, c) + f(a',b',c') &le; f(a + a', b + b', c + c'). When do we have equality?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: equality iff the triangles are similar (a/a' = b/b' = c/c').
+
+<p>
+
+We prove first that for any positive reals A, B, A', B' we have &radic;(AB) + &radic;(A'B') &le; &radic;( (A + A')(B + B') ) with equality iff A/A' = B/B' . We have (&radic;(AB') - &radic;(A'B) )<sup>2</sup> &ge; 0, with equality iff A/A' = B/B' . Hence 2&radic;(ABA'B') &le; AB' + A'B. Hence (AB + A'B') + 2&radic;(ABA'B') &le; (AB + A'B') + AB' + A'B. Now the lhs is (&radic;(AB) + &radic;(A'B') )<sup>2</sup>. The rhs is (A + A')(B + B'). So taking the square root, we have &radic;(AB) + &radic;(A'B') &le; &radic;( (A + A')(B + B') ) with equality iff A/A' = B/B' .
+
+<p>
+
+Now set A = &radic;(ab), B = &radic;(cd), A' = &radic;(a'b'), B' = &radic;(c'd'). Then the relation becomes (abcd)<sup>1/4</sup> + (a'b'c'd')<sup>1/4</sup> &le; &radic;( (&radic;(ab) + &radic;(a'b') )(&radic;(cd) + &radic;(c'd') ). Applying the relation again to each of the inner parentheses on the rhs, we get (&radic;(ab) + &radic;(a'b') )(&radic;(cd) + &radic;(c'd') &le; &radic;( (a + a')(b + b')(c + c')(d + d') ). So we arrive finally at (abcd)<sup>1/4</sup> + (a'b'c'd')<sup>1/4</sup> &le; ( (a + a')(b + b')(c + c')(d + d') )<sup>1/4</sup>. We have equality iff A/A' = B/B', a/a' = b/b' and c/c' = d/d' and hence iff a/a' = b/b' = c/c' = d/d'.
+
+<p>
+
+Applying this result to Heron's formula gives the required result immediately, with equality iff a/a' = b/b' = c/c'.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn82.html">43rd Putnam 1982</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

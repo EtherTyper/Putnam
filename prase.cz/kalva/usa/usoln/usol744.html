@@ -1,0 +1,64 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 74/4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>3rd USAMO 1974</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 4</b><br>
+
+<p>
+
+A, B, C play a series of games. Each game is between two players, The next game is between the winner and the person who was not playing. The series continues until one player has won two games. He wins the series. A is the weakest player, C the strongest. Each player has a fixed probability of winning against a given opponent. A chooses who plays the first game. Show that he should choose to play himself against B.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+It must be wrong to choose B against C, for then after the first game (whatever its outcome)  A would be playing one of the other players (X), and that player would already have won a game. That is a worse position than playing that person as the first game, because if he loses the game then X has won the series, whereas if he lost to X on the first game, there is still a chance A could win the series. [If he wins the game as the second game, then he is certainly no better off than he would be after winning the match as the first game.]
+
+<p>
+
+Use XbY to denote that X beats Y. If A chooses to play B in the first game, then he wins the series if either (1) AbB, AbC, (2) AbB, CbA, BbC, AbB, or (3) BbA, CbB, AbC, AbB. If A plays C in the first game, then he wins the series if (1') AbC, AbB, (2') AbC, BbA, CbB, AbC, (3') CbA, BbC, AbB, AbC. Evidently the probability of (1) is the same as the probability of (1'). If we compare (2) and (3') they are the same except that in (2) A must beat B and in (3') A must beat C. Similarly, if we compare (3) and (2') they are the same except that in (3) A must beat B and in (2') A must beat C. We assume that, since C is a stronger player than B, A is more likely to beat B than C. Hence prob(2) &gt; prob(3') and prob(3) &gt; prob(2'). Thus A should choose to play B in the first game.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa74.html">3rd USAMO 1974</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+19 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

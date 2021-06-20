@@ -1,0 +1,85 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1989/A2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1989</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A2</b>
+
+<p>
+
+In an acute-angled triangle ABC, the internal bisector of angle A meets the circumcircle again at A<sub>1</sub>. Points B<sub>1</sub> and C<sub>1</sub> are defined similarly. Let A<sub>0</sub> be the point of intersection of the line AA<sub>1</sub> with the external bisectors of angles B and C. Points B<sub>0</sub> and C<sub>0</sub> are defined similarly. Prove that the area of the triangle A<sub>0</sub>B<sub>0</sub>C<sub>0</sub> is twice the area of the hexagon AC<sub>1</sub>BA<sub>1</sub>CB<sub>1</sub> and at least four times the area of the triangle ABC.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+<i>By Marcin Mazur, University of Illinois at Urbana-Champaign</i>
+
+<p>
+
+Let I be the point of intersection of AA<sub>0</sub>, BB<sub>0</sub>, CC<sub>0</sub> (the in-center). BIC = 180 - 1/2 ABC - 1/2 BCA = 180 - 1/2 (180 - CAB) = 90 + 1/2 CAB. Hence CA<sub>1</sub>B = 180 - CAB [BA<sub>1</sub>CA is cyclic] = 2(180 - BIC) = 2CA<sub>0</sub>B. But A<sub>1</sub>B = A<sub>1</sub>C, so A<sub>1</sub> is the center of the circumcircle of BCA<sub>0</sub>. But I lies on this circumcircle (IBA<sub>0</sub> = ICA<sub>0</sub> = 90), and hence A<sub>1</sub>A<sub>0</sub> = A<sub>1</sub>I.
+
+<p>Hence area IBA<sub>1</sub> = area A<sub>0</sub>BA<sub>1</sub> and area ICA<sub>1</sub> = area A<sub>0</sub>CA<sub>1</sub>. Hence area IBA<sub>0</sub>C = 2 area IBA<sub>1</sub>C. Similarly, area ICB<sub>0</sub>A = 2 area ICB<sub>1</sub>A and area IAC<sub>0</sub>B = 2 area IAC<sub>1</sub>B. Hence area A<sub>0</sub>B<sub>0</sub>C<sub>0</sub> = 2 area hexagon AB<sub>1</sub>CA<sub>1</sub>BC<sub>1</sub>.
+
+<p>
+<i>A neat solution for the rest is as follows by Thomas J&auml;ger</i>
+
+<p>
+Let H be the orthocentre of ABC. Let H<sub>1</sub> be the reflection of H in BC, so H<sub>1</sub> lies on the circumcircle. So area BCH = area BCH<sub>1</sub> &lt;= area BCA<sub>1</sub>. Adding to the two similar inequalities gives area ABC &lt;= area hexagon - area ABC.
+
+<p><i>Mazur's solution was as follows</i>
+
+<p>
+CAB = 180<sup>o</sup> - CA<sub>1</sub>B and A<sub>1</sub>B = A<sub>1</sub>C, so A<sub>1</sub>BC = 90<sup>o</sup> - 1/2 CA<sub>1</sub>B = 1/2 CAB. Hence the perpendicular from A<sub>1</sub> to BC has length 1/2 BC tan(CAB/2) and area CA<sub>1</sub>B = 1/4 BC<sup>2</sup> tan(CAB/2).
+
+<p>
+Put r = radius of in-circle of ABC, x = cot(CAB/2), y = cot(ABC/2), z = cot(BCA/2). Then BC = r(y + z) and area CA<sub>1</sub>B = r<sup>2</sup>(y + z)<sup>2</sup>/(4x). Also area BIC = 1/2 r BC. Similarly for the other triangles, so area ABC = area BIC + area CIA + area AIB = r<sup>2</sup>(x + y + z). We have to show that area ABC &le; area CA<sub>1</sub>B + area AB<sub>1</sub>C + area BC<sub>1</sub>A, or (x + y + z) &le; (y + z)<sup>2</sup>/(4x) + (z + x)<sup>2</sup>/(4y) + (x + y)<sup>2</sup>/(4z).
+
+<p>
+Putting s = x + y + z, this is equivalent to: 4s &le; (s - x)<sup>2</sup>/x + (s - y)<sup>2</sup>/y + (s - z)<sup>2</sup>/z, or 9s &le; s<sup>2</sup>(1/x + 1/y + 1/z), but this is just the statement that the arithmetic mean of x, y, z is not less than the harmonic mean.
+
+<p>Note in passing that the requirement for ABC to be acute is unnecessary.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo89.html">30th IMO 1989</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+9 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

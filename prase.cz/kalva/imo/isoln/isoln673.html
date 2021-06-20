@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1967/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1967</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+Let k, m, n be natural numbers such that m + k + 1 is a prime greater than n + 1. Let c<sub>s</sub> = s(s+1). Prove that:
+
+<p>&nbsp; &nbsp; &nbsp; &nbsp; (c<sub>m+1</sub> - c<sub>k</sub>)(c<sub>m+2</sub> - c<sub>k</sub>) ... (c<sub>m+n</sub> - c<sub>k</sub>)
+
+<p>is divisible by the product c<sub>1</sub>c<sub>2</sub> ... c<sub>n</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+The key is that c<sub>a</sub> - c<sub>b</sub> = (a - b)(a + b + 1). Hence the product (c<sub>m+1</sub> - c<sub>k</sub>)(c<sub>m+2</sub> - c<sub>k</sub>) ... (c<sub>m+n</sub> - c<sub>k</sub>) is the product of the n consecutive numbers (m - k + 1), ... , (m - k + n), times the product of the n consecutive numbers (m + k + 2), ... , (m + k + n + 1). The first product is just the binomial coefficient (m-k+n)Cn times n!, so it is divisible by n!. The second product is 1/(m + k + 1) x (m + k + 1)(m + k + 2) ... (m + k + n + 1) = 1/(m + k + 1) x (m+k+n+1)C(n+1) x (n+1)!. But m + k + 1 is a prime greater than n + 1, so it has no factors in common with (n+1)!, hence the second product is divisible by (n+1)!. Finally note that c<sub>1</sub>c<sub>2</sub> ... c<sub>n</sub>= n! (n+1)!.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in: &nbsp; Samuel L Greitzer, International Mathematical Olympiads 1959-1977, MAA 1978, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo67.html">9th IMO 1967</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 Oct 1998
+
+<br>Last corrected/updated 4 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

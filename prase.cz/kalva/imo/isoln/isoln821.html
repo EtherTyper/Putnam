@@ -1,0 +1,72 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>IMO 1982/A1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1982</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A1</b>
+
+<p>
+
+The function f(n) is defined on the positive integers and takes non-negative integer values. f(2) = 0, f(3) &gt; 0, f(9999) = 3333 and for all m, n:
+
+<p>&nbsp; &nbsp; &nbsp; f(m+n) - f(m) - f(n) = 0 or 1.
+
+<p>Determine f(1982).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+We show that f(n) = [n/3] for n &lt;= 9999, where [ ] denotes the integral part.
+
+<p>We show first that f(3) = 1. f(1) must be 0, otherwise f(2) - f(1) - f(1) would be negative. Hence f(3) = f(2) + f(1) + 0 or 1 = 0 or 1. But we are told f(3) &gt; 0, so f(3) = 1. It follows by induction that f(3n) &ge; n. For f(3n+3) = f(3) + f(3n) + 0 or 1 = f(3n) + 1 or 2. Moreover if we ever get f(3n) &gt; n, then the same argument shows that f(3m) &gt; m for all m &gt; n. But f(3.3333) = 3333, so f(3n) = n for all n &lt;= 3333.
+
+<p>Now f(3n+1) = f(3n) + f(1) + 0 or 1 = n or n + 1. But 3n+1 = f(9n+3) &ge; f(6n+2) + f(3n+1) &ge; 3f(3n+1), so f(3n+1) &lt; n+1. Hence f(3n+1) = n. Similarly, f(3n+2) = n. In particular f(1982) = 660.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo82.html">23rd IMO 1982</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

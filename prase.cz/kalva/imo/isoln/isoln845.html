@@ -1,0 +1,71 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1984/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1984</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b>
+
+<p>
+
+Let d be the sum of the lengths of all the diagonals of a plane convex polygon with n &gt; 3 vertices. Let p be its perimeter. Prove that:
+
+<p>&nbsp; &nbsp; n - 3 &lt; 2d/p &lt; [n/2] [(n+1)/2] - 2, where [x] denotes the greatest integer not exceeding x.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Given any diagonal AX, let B be the next vertex counterclockwise from A, and Y the next vertex counterclockwise from X. Then the diagonals AX and BY intersect at K. AK + KB &gt; AB and XK + KY &gt; XY, so AX + BY &gt; AB + XY. Keeping A fixed and summing over X gives n - 3 cases. So if we then sum over A we get every diagonal appearing four times on the lhs and every side appearing 2(n-3) times on the rhs, giving 4d &gt; 2(n-3)p.
+
+<p>
+Denote the vertices as A<sub>0</sub>, ... , A<sub>n-1</sub> and take subscripts mod n. The ends of a diagonal AX are connected by r sides and n-r sides. The idea of the upper limit is that its length is less than the sum of the shorter number of sides. Evaluating it is slightly awkward.
+
+<p>
+We consider n odd and n even separately. Let n = 2m+1. For the diagonal A<sub>i</sub>A<sub>i+r</sub> with r &le; m, we have A<sub>i</sub>A<sub>i+r</sub> &le; A<sub>i</sub>A<sub>i+2</sub> + ... + A<sub>i</sub>A<sub>i+r</sub>. Summing from r = 2 to m gives for the rhs (m-1)A<sub>i</sub>A<sub>i+1</sub> + (m-1)A<sub>i+1</sub>A<sub>i+2</sub> + (m-2)A<sub>i+2</sub>A<sub>i+3</sub> + (m-3)A<sub>i+3</sub>A<sub>i+4</sub> + ... + 1.A<sub>i+m-1</sub>A<sub>i+m</sub>. Now summing over i gives d for the lhs and p( (m-1) + (1 + 2 + ... + m-1) ) = p( (m<sup>2</sup> + m - 2)/2 ) for the rhs. So we get 2d/p &le; m<sup>2</sup> + m - 2 = [n/2] [(n+1)/2] - 2.
+
+<p>
+Let n = 2m. As before we have A<sub>i</sub>A<sub>i+r</sub> &lt;= A<sub>i</sub>A<sub>i+2</sub> + ... + A<sub>i</sub>A<sub>i+r</sub> for 2 &le; r &le; m-1. We may also take A<sub>i</sub>A<sub>i+m</sub> &le; p/2. Summing as in the even case we get 2d/p = m<sup>2</sup> - 2 = [n/2] [(n+1)/2] - 2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo84.html">25th IMO 1984</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+19 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

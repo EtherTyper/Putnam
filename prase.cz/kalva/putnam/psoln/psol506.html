@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 50/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>10th Putnam 1950</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Let f(x) = &sum;<sub>0</sub><sup>&infin;</sup> a<sub>n</sub>x<sup>n</sup> and suppose that each a<sub>n</sub> = 0 or 1. <i>Do either (1) or (2):</i>
+
+<p>(1) &nbsp; Show that if f(1/2) is rational, then f(x) has the form p(x)/q(x) for some integer polynomials p(x) and q(x).
+
+<p>(2) &nbsp; Show that if f(1/2) is not rational, then f(x) does not have the form p(x)/q(x) for any integer polynomials p(x) and q(x).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+(1)  f(1/2) is the binary expansion of some real in the closed interval [0, 1]. So if it is rational, then the binary expansion is periodic after some point. In other words, there are positive integers N and k such that a<sub>n</sub> = a<sub>n+k</sub> for n &gt; N. Hence f(x) = a<sub>0</sub> + a<sub>1</sub>x + ... + a<sub>N</sub>x<sup>N</sup> + (a<sub>N+1</sub>x<sup>N+1</sup> + ... + a<sub>N+k-1</sub>x<sup>N+k-1</sup>)(1 + x<sup>k</sup> + x<sup>2k</sup> + ... ) = a<sub>0</sub> + a<sub>1</sub>x + ... + a<sub>N</sub>x<sup>N</sup> + (a<sub>N+1</sub>x<sup>N+1</sup> + ... + a<sub>N+k-1</sub>x<sup>N+k-1</sup>)/(1 - x<sup>k</sup>). Hence we can take q(x) = 1 - x<sup>k</sup> and p(x) = (a<sub>0</sub> + a<sub>1</sub>x + ... + a<sub>N</sub>x<sup>N</sup>)(1 - x<sup>k</sup>) + (a<sub>N+1</sub>x<sup>N+1</sup> + ... + a<sub>N+k-1</sub>x<sup>N+k-1</sup>).
+
+<p>
+
+(2) is trivial. If f(x) = p(x)/q(x), then f(1/2) = p(1/2)/q(1/2) which is rational. The only slight complication is if q(1/2) = 0. But we can assume that p(x)/q(x) is in lowest terms, so if q(1/2) = 0, then p(x) is non-zero, but then p(x) = f(x) q(x). We know that f(1/2) &le; 1/2 + 1/4 + 1/8 + ... = 1, so f(1/2) q(1/2) = 0. Hence p(1/2) = 0. Contradiction.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn50.html">10th Putnam 1950</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Mar 2002
+
+</BODY>
+
+
+
+</HTML>
+

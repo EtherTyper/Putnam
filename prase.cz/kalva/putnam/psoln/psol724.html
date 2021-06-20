@@ -1,0 +1,96 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1972/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>33rd Putnam 1972</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Show that a circle inscribed in a square has a larger perimeter than any other ellipse inscribed in the square.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The first step is to show that if an ellipse touches all four sides of a square then its axes must lie along the diagonals of the square (in other words, it is symmetrically placed). 
+
+<p>
+
+Let the ellipse have centre O, semi-major axis a and semi-minor axis b. Let the line A through O contain the ellipse's major axis and the line B through O contain its minor axis. Let S be the square in which the ellipse is inscribed. Let k be the similarity operation which leaves A invariant and expands by a factor a/b perpendicular to A. (So given a general point P, with X be the foot of the perpendicular from P to A, P goes to the point P' on the ray XP such that XP'/XP = a/b.)
+
+<p>
+
+k takes the ellipse into the circle centre O, radius a. It also takes parallel lines to parallel lines and touching curves to touching curves, so it takes the square S to a parallelogram whose sides all touch the circle. But that means the parallelogram must be a rhombus (with equal sides). But a line segment making an angle &theta; to the line A is taken by k to a line segment whose length is longer by a factor &radic;(1 + ( (a/b)<sup>2</sup> - 1) sin<sup>2</sup>&theta;), which is a strictly monotonically increasing function of &theta;. Since the equal sides of the square are taken to the equal sides of the rhombus, they must make equal angles to the line A. Hence they must be at 45<sup>o</sup> to it and hence the line A must lie along a diagonal of the square.
+
+<p>
+
+The second step is to show that the ellipse with the largest perimeter is the circle. Recall that the perimeter of an ellipse is not an elementary function (it is a complete elliptical integral of the second kind). So it is not clear how to attack the problem. An analytic approach could evidently get somewhat messy. 
+
+<p>
+
+But to pursue that a little, the tangent at the point (X, Y) of the ellipse has equation xX/a<sup>2</sup> + yY/b<sup>2</sup> = 1. If this is at 45<sup>o</sup> (with X and Y both positive) then we have Xb<sup>2</sup> = Ya<sup>2</sup>. The corresponding tangent at (X, -Y) is will evidently meet it on the x-axis at the point ( &radic;(a<sup>2</sup> + b<sup>2</sup>), 0), so the side of the square has length &radic;(2a<sup>2</sup> + 2b<sup>2</sup>). 
+
+<p>
+
+The perimeter is 4a &int;<sub>0</sub><sup>&pi;/2</sup> &radic;( 1 - c cos<sup>2</sup>&theta;) d&theta;, where c = (1 - (b/a)<sup>2</sup>) (*). The easiest way to see this is to use the parametric equation of the ellipse x = a cos &theta;, y = b sin &theta;. Then if s represents arc length and ' differentiation wrt &theta;, we have s' = &radic;( (x')<sup>2</sup> + (y')<sup>2</sup>) and (*) follows almost immediately.
+
+<p>
+
+Now a/&radic;(a<sup>2</sup> + b<sup>2</sup>) = 1/&radic;(2 - c), so we have to maximise f(c) = 1/&radic;(2 - c) &int;<sub>0</sub><sup>&pi;/2</sup> &radic;( 1 - c cos<sup>2</sup>&theta;) d&theta; over the range [0, 1], with c = 0 corresponding to b = a or the circle. 
+
+<p>
+
+Putting the factor 1/&radic;(2 - c) inside the integral, the integrand becomes I(c, &theta;) = &radic;( (1 - c cos<sup>2</sup>&theta;) / (2 - c) ). We note that at &theta; = &pi;/4 this is always &radic;(1/2) irrespective of c. But for &theta; &lt; &pi;/4, the integrand is a decreasing function of c and for &theta; &gt; &pi;/4 it is an increasing function of c. So we cannot simply argue that the integrand is maximised by taking c = 0 and hence the integral also.
+
+<p>
+
+However, a slight elaboration of that argument does work. We can split the integral at &pi;/4. Then for the range &pi;/4 to &pi;/2 we can make the substituion &phi; = &pi;/2 - &theta; to get back to an integral over 0 to &pi;/4 with integrand J(c, &phi;) = &radic;( (1 - c sin<sup>2</sup>&phi;) / (2 - c) ). So now we have to maximise the integral over 0 to &pi;/4 of I(c, &theta;) + J(c, &theta;). But now it is true that c = 0 maximises the integrand at every point of the range. 
+
+<p>
+
+We just have to square twice. So I(c, &theta;) + J(c, &theta;) &le; &radic;2 is equivalent to (1 - c cos<sup>2</sup>&theta;) + (1 - c sin<sup>2</sup>&theta;) + 2 &radic;( (1 - c cos<sup>2</sup>&theta;)(1 - c sin<sup>2</sup>&theta;) ) &lt;= 2(2 - c), or &radic;( (1 - c cos<sup>2</sup>&theta;)(1 - c sin<sup>2</sup>&theta;) ) &lt;= 1 - c/2. Squaring again, that is equivalent to 1 - c + c sin<sup>2</sup>&theta; cos<sup>2</sup>&theta; &le; 1 - c + c<sup>2</sup>/4 or c<sup>2</sup>sin 2&theta; &le; c<sup>2</sup>. But the last relation is certainly true with equality iff c = 0 or &theta; = &pi;/4. Hence for the integral we have equality iff c = 0.
+
+<p>
+
+<i>Comment. This is much harder if you happen to write down the perimeter in a form that does not involve trigonometric functions. Then the range does not divide so nicely - the breakpoint is at 1/&radic;2 in the range 0 to 1. It is then not at all obvious how to get an inequality on the integral from an inequality on the integrand. I say this with some feeling, because I spent a long time stuck on this question precisely for this reason. I assumed I was expected to derive the result from some result about elliptic integrals (and did indeed prove it from considering the power series).</i>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn72.html">33rd Putnam 1972</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+27 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

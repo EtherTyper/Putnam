@@ -1,0 +1,32 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1998/C7 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>39th IMO 1998 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem C7</b><br>
+<p>
+Some cards have one side white and the other side black. A card is placed on each square of an m x n board. All cards are white side up, except for the card in the top left corner. A move is to remove any black card and to turn over any cards on squares which share an edge with the square from which the card was taken. For which m, n can one remove all the cards from the board by a sequence of moves.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: we can remove all the cards unless m, n are both even.
+<p>
+Suppose we have a row with an odd number of cards and all the cards are showing black. Then we can remove the cards in the odd-numbered columns. Each card in an even-numbered column is turned over twice so ends up black. So we can then remove the cards in the even-numbered columns. Thus if there are an odd number of columns, we remove in turn the cards in the top row. That leaves all the cards in the second row black. We can now remove them as described above. That leaves all the cards in the third row black, and so on. Similarly, if there are an odd number of rows (just interchange rows and columns). So if m and n are not both even, we can certainly remove all the cards.
+<p>
+Now suppose both m and n are even. Start with N = 0. As each card C is removed add to N the number of cards which share an edge with C and have already been removed. The first card removed contributes nothing to N. Each subsequent card starts as white, but must change to black by the time it is removed, so it must have had an odd number of neighboring cards already removed. Thus if we can remove all the cards we add an odd number of odd numbers to N, so N ends up odd. But there are n-1 pairs of squares which share an edge in each of the m rows and m-1 pairs of squares which share an edge in each of the n-1 columns, so m(n-1)+n(m-1) pairs in all, and hence an even number of pairs. But the final value of N must equal the number of pairs, because each pair contributes 1 to N when the second member of the pair is removed (and 0 when the first member of the pair is removed). So N is even. Contradiction.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh98.html">39th IMO shortlist 1998</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Aug 2002
+</BODY>
+
+</HTML>
+

@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2000/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>61st Putnam 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+f(x) is a continuous real function satisfying f(2x<sup>2</sup> - 1) = 2 x f(x). Show that f(x) is zero on the interval [-1, 1].
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Set F(t) = f(cos t)/sin t. So F(t) is defined and continuous except possibly at multiples of &pi;. Then F(t + 2&pi;) = F(t). Also F(2<sup>m</sup>t) = F(t). Hence F(1) = F(2<sup>m+1</sup>) = F(2<sup>m+1</sup> + 2n&pi;) = F(1 + n&pi;/2<sup>m</sup>) for all integers n, m. But the set {1 + n&pi;/2<sup>m</sup>} is dense in the reals, so F must be constant on each open interval (n&pi;, (n+1)&pi;).
+
+<p>
+
+But we see directly from the relation f(2x<sup>2</sup> - 1) = 2 x f(x), that f(-x) = f(x). Hence F(t + &pi;) = f(-cos t)/(- sin t) = F(t). So the constant value on each open interval is the same. In other words F is constant except at integral multiples of &pi;.
+
+<p>
+
+But F(-t) = - F(t). Hence F must be zero, except at integral multiples of &pi;. So f(x) must be zero on the interval on the open interval (-1, 1). But f is continuous, so f(1) and f(-1) are also zero. (Or, directly, from f(2x<sup>2</sup> - 1) = 2 x f(x) putting x = 0 and then x = 1).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn00.html">61st Putnam 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

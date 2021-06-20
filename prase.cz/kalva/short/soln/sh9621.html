@@ -1,0 +1,39 @@
+<HTML>
+<HEAD>
+<TITLE>IMO shortlist 1996/21 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>IMO shortlist 1996</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 21</b><br>
+<p>
+A finite sequence of integers a<sub>0</sub>, a<sub>1</sub>, ... , a<sub>n</sub> is called <i>quadratic</i> if |a<sub>1</sub> - a<sub>0</sub>| = 1<sup>2</sup>, |a<sub>2</sub> - a<sub>1</sub>| = 2<sup>2</sup>, ... , |a<sub>n</sub> - a<sub>n-1</sub>| = n<sup>2</sup>. Show that any two integers h, k can be linked by a quadratic sequence (in other words for some n we can find a quadratic sequence a<sub>i</sub> with a<sub>0</sub> = h, a<sub>n</sub> = k). Find the shortest quadratic sequence linking 0 and 1996.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+We have to show that with a suitable choice of n and the signs &plusmn; we can get &plusmn;1<sup>2</sup> &plusmn; 2<sup>2</sup> &plusmn; 3<sup>2</sup> &plusmn; ... &plusmn; n<sup>2</sup> = m for any integer m. Obviously if is sufficient to consider m non-negative.
+<p>
+n<sup>2</sup> - (n+1)<sup>2</sup> - (n+2)<sup>2</sup> + (n+3)<sup>2</sup> = 4, so we can do any m = 0 mod 4. For example, 8 = (1<sup>2</sup> - 2<sup>2</sup> - 3<sup>2</sup> + 4<sup>2</sup>) +( 5<sup>2</sup> - 6<sup>2</sup> - 7<sup>2</sup> + 8<sup>2</sup>).
+<p>
+Similarly
+<br>1 + (2<sup>2</sup> - 3<sup>2</sup> - 4<sup>2</sup> + 5<sup>2</sup>) + ... gives m = 1 mod 4
+<br>-1 - 2<sup>2</sup> - 3<sup>2</sup> + 4<sup>2</sup> + (5<sup>2</sup> - 6<sup>2</sup> - 7<sup>2</sup> + 8<sup>2</sup>) + ... gives m = 2 mod 4
+<br>-1 + 2<sup>2</sup> + (3<sup>2</sup> - 4<sup>2</sup> - 5<sup>2</sup> + 6<sup>2</sup>) + ... gives m = 3 mod 4
+<p>
+For 1996 we have 1 + 2<sup>2</sup> + 3<sup>2</sup> - 4<sup>2</sup> - 5<sup>2</sup> + 6<sup>2</sup> + 7<sup>2</sup> + 8<sup>2</sup> + 9<sup>2</sup> + 10<sup>2</sup> + 11<sup>2</sup> + 12<sup>2</sup> + 13<sup>2</sup> - 14<sup>2</sup> + 15<sup>2</sup> + 16<sup>2</sup> + 17<sup>2</sup> + 18<sup>2</sup> + 19<sup>2</sup> = 1996, giving the sequence 0, 1, 5, 14, -2, -27, 9, 58, 122, 203, 303, 424, 568, 737, 541, 766, 1022, 1311, 1635, 1996. 
+<p>
+Since 1<sup>2</sup> + 2<sup>2</sup> + ... + 17<sup>2</sup> = 1785 &lt; 1996, we need at least 19 terms. We have 1<sup>2</sup> + 2<sup>2</sup> + ... + 18<sup>2</sup> = 2109 = 1996 + 113. But any sum &plusmn;1<sup>2</sup> &plusmn; 2<sup>2</sup> &plusmn; ... &plusmn; 18<sup>2</sup> = 1<sup>2</sup> + 2<sup>2</sup> + ... + 18<sup>2</sup> - 2(a sum of squares), so it must be odd, whereas 1996 is even. Hence 20 terms is the best possible.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh99.html">37th IMO shortlist 1996</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+20 Dec 2002
+</BODY>
+
+</HTML>
+

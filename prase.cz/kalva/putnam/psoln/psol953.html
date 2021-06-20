@@ -1,0 +1,60 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1995/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Putnam 1995</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+d, e and f each have nine digits when written in base 10. Each of the nine numbers formed from d by replacing one of its digits by the corresponding digit of e is divisible by 7. Similarly, each of the nine numbers formed from e by replacing one of its digits by the corresponding digit of f is divisible by 7. Show that each of the nine differences between corresponding digits of d and f is divisible by 7.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let d = d<sub>1</sub>d<sub>2</sub>... d<sub>9</sub> and similarly for e and f. We have are given that (d + e<sub>9</sub> - d<sub>9</sub>), (d + 10e<sub>8</sub> - 10d<sub>8</sub>), ... , (d + 10<sup>8</sup>e<sub>1</sub> - 10<sup>8</sup>d<sub>1</sub>) are all multiples of 7. Adding gives that (9d + e - d) is a multiple of 7 and hence also (d + e).
+
+<p>(d + e<sub>9</sub> - d<sub>9</sub>) and (e + f<sub>9</sub> - e<sub>9</sub>) are multiples of 7. So, adding, (d + e + f<sub>9</sub> - d<sub>9</sub>) is a multiple of 7 and hence also (f<sub>9</sub> - d<sub>9</sub>). Similarly, (d + 10e<sub>8</sub> - 10d<sub>8</sub>) + (d + 10f<sub>8</sub> - 10e<sub>8</sub>) - (d + e) = 10(f<sub>8</sub> - d<sub>8</sub>) is a multiple of 7, and hence also (f<sub>8</sub> - d<sub>8</sub>). Similarly, for the other terms.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn95.html">Putnam 1995</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Dec 1998
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1969/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>30th Putnam 1969</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+The sequence a<sub>1</sub>, a<sub>2</sub>, a<sub>3</sub>, ... satisfies a<sub>1</sub>a<sub>2</sub> = 1, a<sub>2</sub>a<sub>3</sub> = 2, a<sub>3</sub>a<sub>4</sub> = 3, a<sub>4</sub>a<sub>5</sub> = 4, ... . Also, lim<sub>n&rarr;&infin;</sub>a<sub>n</sub>/a<sub>n+1</sub> = 1. Prove that a<sub>1</sub> = &radic;(2/&pi;).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Let a<sub>1</sub> = 1/k. Then we deduce successively that a<sub>2</sub> = k, a<sub>3</sub> = 2/k, a<sub>4</sub> = (3/2) k. By a trivial induction, a<sub>2n</sub> = (3.5.7 ... 2n-1)/(2.4.6 ... 2n-2) k and a<sub>2n+1</sub> = (2.4.6 ... 2n)/(3.5.7 ... 2n-1) 1/k. Hence a<sub>2n+1</sub>/a<sub>2n+2</sub> = (2/1) (2/3) (4/3) (4/5) (6/5) ... (2n/2n-1) 1/k<sup>2</sup>. We are given that this has limit 1, so (2/1) (2/3) (4/3) (4/5) (6/5) ... (2n/2n-1) has limit k<sup>2</sup>.
+
+<p>
+
+So we need to establish that (2/1) (2/3) (4/3) (4/5) (6/5) (6/7) ... (2n/2n-1) (2n)/(2n+1) ... = <font face="symbol">p</font>/2. This is the well-known Wallis product. It is usually established by proving the product representation for sin z, but that requires relatively advanced complex analysis, which is outside the Putnam syllabus, so we need a simpler approach. The following is rather unmotivated unless you have seen it before.
+
+<p>
+
+Let I<sub>n</sub> = &int;<sub>0</sub>&pi;/2</sup> sin<sup>n</sup>x dx. Integrating by parts, we have that I<sub>n</sub> = -&int; sin<sup>n-1</sup>x d(cos x) = (n-1) I<sub>n-2</sub> + (n-1) I<sub>n</sub>. Hence I<sub>n</sub> = (n-1)/n I<sub>n-2</sub>. But I<sub>0</sub> = &pi;/2, I<sub>1</sub> = 1. So we find that I<sub>2n</sub> = (1/2)(3/4)(5/6) ... (2n-1)/2n &pi;/2, I<sub>2n+1</sub> = (2/3)(4/5)(6/7) ... (2n/2n+1).
+
+<p>
+
+Now 0 &lt; sin x &lt; 1 on (0, &pi;/2), so I<sub>2n-1</sub> &lt; I<sub>2n</sub> &lt; I<sub>2n+1</sub>. Dividing by I<sub>2n+1</sub>, we get (2n+1)/2n &gt; I<sub>2n</sub>/I<sub>2n+1</sub> &gt; 1. So I<sub>2n</sub>/I<sub>2n+1</sub> tends to 1 as n tends to infinity, which estabishes the Wallis product.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn69.html">30th Putnam 1969</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+14 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

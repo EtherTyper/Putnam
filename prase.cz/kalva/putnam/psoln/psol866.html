@@ -1,0 +1,101 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 86/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>47th Putnam 1986</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Let p(x) be the real polynomial 1 + &alpha;<sub>1</sub>x<sup>m<sub>1</sub></sup> + &alpha;<sub>2</sub>x<sup>m<sub>2</sub></sup> + ... + &alpha;<sub>n</sub>x<sup>m<sub>n</sub></sup>, where 0 &lt; m<sub>1</sub> &lt; m<sub>2</sub> &lt; ... &lt; m<sub>n</sub>. For some real polynomial q(x) we have p(x) = (1 - x)<sup>n</sup>q(x). Find q(1) in terms of m<sub>1</sub>, ... , m<sub>n</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: m<sub>1</sub>m<sub>2</sub>...m<sub>n</sub>/n!
+
+<p>
+
+<i>Moderately hard, unless you are used to manipulating determinants.</i>
+
+<p>
+
+Notice that n occurs in two places: p(x) has n terms apart from 1, and it also has an n-fold root x = 1. The first key (but elementary) point is the fact that p(x) has a factor (1 - x)<sup>n</sup> iff p(1) = p'(1) = ... = p<sup>(n-1)</sup>(1) = 0. This gives us n linear equations for the n variables &alpha;<sub>i</sub>, so the &alpha;<sub>i</sub> are completely determined in terms of the m<sub>i</sub>. Moreover, differentiating p(x) one more time (n in all) gives p<sup>(n)</sup>(1) = (-1)<sup>n</sup> n! q(1). So having solved for the &alpha;<sub>i</sub> we just have to substitute them into p<sup>(n)</sup>(1) to get the answer. That is all straightforward, the only difficulty of the question is actually carrying out that programme. If you are not familiar with determinants, it can seem sufficiently intimidating to make you give up and try another approach.
+
+<p>
+
+It is convenient to have some notation for m<sub>1</sub>(m<sub>1</sub> - 1) ... (m<sub>1</sub> - r + 1). The traditional notation is Pochhammer's symbol (m<sub>1</sub>)<sub>r</sub>, but Graham et al are pushing m<sub>1</sub><sup><u>r</u></sup> (read as m<sub>1</sub> to the r falling) [see Ronald Graham, Donald Knuth, Oren Patashnik, Concrete Mathematics, 2nd Ed 1994, Addison-Wesley, ISBN 0201558025, especially section 2.6 Finite Calculus], which I also prefer. So, we have:
+
+<p>
+
+ &nbsp; &alpha;<sub>1</sub> + &alpha;<sub>2</sub> + ... + &alpha;<sub>n</sub> = -1;
+
+<br> &nbsp; m<sub>1</sub><sup><u>1</u></sup> &alpha;<sub>1</sub> + m<sub>2</sub><sup><u>1</u></sup> &alpha;<sub>2</sub> + ... + m<sub>n</sub><sup><u>1</u></sup> &alpha;<sub>n</sub> = 0;
+
+<br> &nbsp; m<sub>1</sub><sup><u>2</u></sup> &alpha;<sub>1</sub> + m<sub>2</sub><sup><u>2</u></sup> &alpha;<sub>2</sub> + ... + m<sub>n</sub><sup><u>2</u></sup> &alpha;<sub>n</sub> = 0;
+
+<br> &nbsp; <b>. . . </b>
+
+<br> &nbsp; m<sub>1</sub><sup><u>n-1</u></sup> &alpha;<sub>1</sub> + m<sub>2</sub><sup><u>n-1</u></sup> &alpha;<sub>2</sub> + ... + m<sub>n</sub><sup><u>n-1</u></sup> &alpha;<sub>n</sub> = 0;
+
+<p>
+The above n equations determine the &alpha;<sub>i</sub>, and we then substitute them into: 
+
+<p>
+ &nbsp; m<sub>1</sub><sup><u>n</u></sup> &alpha;<sub>1</sub> + m<sub>2</sub><sup><u>n</u></sup> &alpha;<sub>2</sub> + ... + m<sub>n</sub><sup><u>n</u></sup> &alpha;<sub>n</sub> = (-1)<sup>n</sup> n!  q(1); &nbsp; (*)
+
+<p>
+Let D be the n x n determinant with first row 1, 1, ... ,1; and ith row m<sub>1</sub><sup><u>i-1</u></sup>, m<sub>2</sub><sup><u>i-1</u></sup>, ... , m<sub>n</sub><sup><u>i-1</u></sup>; etc) for i &gt; 1. Let D<sub>i</sub> be the determinant derived from D by replacing the ith column by the values on the other side of the n simultaneous equations (-1 in the top row and 0s below). [Sorry, that is hard to typeset in the type of HTML that browsers currently accept]. Then we know that &alpha;<sub>i</sub> = D<sub>i</sub>/D. (**)
+
+<p>
+
+It is also convenient to define E as the determinant derived from D by replacing the first row by m<sub>1</sub><sup><u>n</u></sup>, m<sub>2</sub><sup><u>n</u></sup>, ... , m<sub>n</sub><sup><u>n</u></sup> and F as the determinant derived from D by deleting its first row and adding m<sub>1</sub><sup><u>n</u></sup>, m<sub>2</sub><sup><u>n</u></sup>, ... , m<sub>n</sub><sup><u>n</u></sup> as a new bottom row. Note that E = (-1)<sup>n-1</sup>F since it is derived from it by n-1 row transpositions.
+
+<p>
+
+Having got the solution (**) we just substitute the values into (*). But notice that because the ith column of D<sub>i</sub> is all zeros except for -1 in the first row, its value is just -D<sub>1i</sub>, where D<sub>1i</sub> is the cofactor of the (1, i) element of D [D<sub>1i</sub> is (-1)<sup>1+i</sup> times the value of the (n-1) x (n-1) determinant obtained from D by deleting the 1st row and ith column]. So the left hand side of (*) is just: -(m<sub>1</sub><sup><u>n</u></sup> D<sub>11</sub> + m<sub>2</sub><sup><u>n</u></sup> D<sub>12</sub> + ... + m<sub>n</sub><sup><u>n</u></sup> D<sub>1n</sub>) / D. But the expression in parentheses is just the expansion of the determinant E, so (remembering that E = (-1)<sup>n-1</sup> F) we get that q(1) n! = F/D.
+
+<p>m<sup><u>k</u></sup> is a polynomial in m with highest term m<sup>k</sup> and no constant term m<sup>0</sup> (unless i &gt; m, in which case it is zero). So by adding multiples of rows 2, 3, ... , (k - 1) to row k successively for k = 2, 3, ... , n we can convert D into the Vandermonde determinant V which has m<sub>i</sub><sup><u>k</u></sup> replaced by m<sub>i</sub><sup>k</sup>. Since such row operations do not change the value of a determinant, we have D = V. Similarly, F = W, the determinant derived from F by replacing m<sub>i</sub><sup><u>k</u></sup> by m<sub>i</sub><sup>k</sup>. Now observe that every element in column i of W has a factor m<sub>i</sub>. We can take out these factors to get that W = m<sub>1</sub>m<sub>2</sub> ... m<sub>n</sub> V. Hence result.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn86.html">47th Putnam 1986</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+3 Oct 1999
+
+</BODY>
+
+
+
+</HTML>
+

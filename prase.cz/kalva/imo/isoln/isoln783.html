@@ -1,0 +1,66 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1978/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1978</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b>
+
+<p>
+
+The set of all positive integers is the union of two disjoint subsets {f(1), f(2), f(3), ... }, {g(1), g(2), g(3), ... }, where f(1) &lt; f(2) &lt; f(3) &lt; ..., and g(1) &lt; g(2) &lt; g(3) &lt; ... , and g(n) = f(f(n)) + 1 for n = 1, 2, 3, ... . Determine f(240).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Let F = {f(1), f(2), f(3), ... }, G = {g(1), g(2), g(3), ... }, N<sub>n</sub> = {1, 2, 3, ... , n}. f(1) &ge; 1, so f(f(1)) &ge; 1 and hence g(1) &ge; 2. So 1 is not in G, and hence must be in F. It must be the smallest element of F and so f(1) = 1. Hence g(1) = 2. We can never have two successive integers n and n+1 in G, because if g(m) = n+1, then f(something) = n and so n is in F and G. Contradiction. In particular, 3 must be in F, and so f(2) = 3.
+
+<p>
+Suppose f(n) = k. Then g(n) = f(k) + 1. So |N<sub>f(k)+1</sub> &cap; G| = n. But |N<sub>f(k)+1</sub> &cap; F| = k, so n + k = f(k) + 1, or f(k) = n + k - 1. Hence g(n) = n + k. So n + k + 1 must be in F and hence f(k+1) = n + k + 1. This so given the value of f for n we can find it for k and k+1.
+
+<p>
+Using k+1 each time, we get, successively, f(2) = 3, f(4) = 6, f(7) = 11, f(12) = 19, f(20) = 32, f(33) = 53, f(54) = 87, f(88) = 142, f(143) = 231, f(232) = 375, which is not much help. Trying again with k, we get: f(3) = 4, f(4) = 6, f(6) = 9, f(9) = 14, f(14) = 22, f(22) = 35, f(35) = 56, f(56) = 90, f(90) = 145, f(145) = 234. Still not right, but we can try backing up slightly and using k+1: f(146) = 236. Still not right, we need to back up further: f(91) = 147, f(148) = 239, f(240) = 388.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; &nbsp; Murray S Klamkin, International Mathematical Olympiads 1978-1985, MAA 1986, and in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo78.html">20th IMO 1978</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+12 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

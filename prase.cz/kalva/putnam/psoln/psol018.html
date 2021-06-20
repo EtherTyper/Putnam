@@ -1,0 +1,78 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 2001/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>62nd Putnam 2001</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+Find all real solutions (x, y) to the simultaneous equations:
+
+<br> &nbsp; &nbsp; 1/x - 1/(2y) = 2 y<sup>4</sup> - 2 x<sup>4</sup>
+
+<br> &nbsp; &nbsp; 1/x + 1/(2y) = (3 x<sup>2</sup> + y<sup>2</sup>)(x<sup>2</sup> + 3 y<sup>2</sup>).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: There is just one solution: x = (3<sup>1/5</sup> + 1)/2, y = (3<sup>1/5</sup> - 1)/2.
+
+<p>
+
+We need to find some way of eliminating one of the variables. The rhs of both equations is homogeneous, so this suggests using the variable t = y/x. Dividing through by x<sup>4</sup>, the equations become: 1/x<sup>5</sup> - 1/(2 t x<sup>5</sup>) = 2t<sup>4</sup> - 2, 1/x<sup>5</sup> + 1/(2 t x<sup>5</sup>) = 3t<sup>4</sup> + 10t<sup>2</sup> + 3. It is now easy to eliminate x<sup>5</sup> to get a quintic in t: 2t<sup>5</sup> - 5t<sup>4</sup> + 20t<sup>3</sup> - 10t<sup>2</sup> + 10t - 1 = 0.
+
+<p>
+
+However, it is not clear that this leads anywhere, if we differentiate we find that the derivative is the sum of two squares (10(t<sup>2</sup> - t + 1)<sup>2</sup> + 30t<sup>2</sup>), so the quintic is monotonic increasing and has just one real root. But a little trial makes clear that the root is not anything particularly nice (it lies between 0 and 1, but is not 1/2).
+
+<p>
+
+The trick is to play around until you recognize the binomial coefficients for n = 5. If you multiply out the second equation and then add and subtract the two equations, you get: 2/x = x<sup>4</sup> + 10x<sup>2</sup>y<sup>2</sup> + 5y<sup>4</sup>, 1/y = 5x<sup>4</sup> + 10x<sup>2</sup>y<sup>2</sup> + y<sup>4</sup>. The 1, 5, 10 pattern should look familiar at this point. Multiply across by the x, y to get: 2 = x<sup>5</sup> + 10x<sup>3</sup>y<sup>2</sup> + 5xy<sup>4</sup>, 1 = 5x<sup>4</sup>y + 10x<sup>2</sup>y<sup>3</sup> + y<sup>5</sup>. Adding and subtracting gives: 3 = (x + y)<sup>5</sup>, 1 = (x - y)<sup>5</sup>. 
+
+<p>
+
+We want real solutions, so x + y = k, x - y = 1, where k = 3<sup>1/5</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn01.html">62nd Putnam 2001</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Dec 2001
+
+</BODY>
+
+
+
+</HTML>
+

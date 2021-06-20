@@ -1,0 +1,58 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1982/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>43rd Putnam 1982</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Given that the equations y' = -z<sup>3</sup>, z' = y<sup>3</sup> with initial conditions y(0) = 1, z(0) = 0 have the unique solution y = f(x), z = g(x) for all real x, prove f(x) and g(x) are both periodic with the same period.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We have y<sup>3</sup> y' + z<sup>3</sup> z' = 0. Integrating, y<sup>4</sup> + z<sup>4</sup> = constant. But y(0) = 1, z(0) = 0, so the constant is 1 and y<sup>4</sup> + z<sup>4</sup> = 1. So as x varies, (y, z) moves along the oval. Let s be the length of the curve from the point (y, z) = (1, 0). Then s' = &radic;( (y')<sup>2</sup> + (z')<sup>2</sup>) = &radic;(y<sup>6</sup> + z<sup>6</sup>). If |y| and |z| are both &lt;= 0.8, then |y<sup>4</sup> + z<sup>4</sup>| &lt; 0.9. Contradiction. So at least one of |y|, |z| &gt; 0.8. Hence |y<sup>6</sup> + z<sup>6</sup>| &gt; 0.8<sup>6</sup> &gt; 1/4. So s' &gt; 1/4. Let L be the perimeter of the oval. Then L is finite (for example, L is convex and lies inside the square side 2, so L &lt; 8). Hence the point (y, z) completes a circuit of the oval for some value k &lt; 4L of x. But s' depends solely on y and z. So (y(x+k), z(x+k) ) = (y(x), z(x) ).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn82.html">43rd Putnam 1982</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+16 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,33 @@
+<HTML>
+<HEAD>
+<TITLE>30th IMO shortlist 1989/23 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>30th IMO 1989 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 23</b><br>
+<p>
+155 birds sit on a circle center O. Birds at A and B are mutually visible iff &ang;AOB &le; 10<sup>o</sup>. More than one bird may sit at the same point. What is the smallest possible number of mutually visible pairs?
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Answer: 270. Take 35 equally spaced points around the circle and place 5 birds at each of 15 points and 4 birds at the other 20 points. Only birds at the same point are mutually visible, so there are 15.10 + 20.6 = 270 mutually visible pairs.
+<p>
+Suppose bird P is at A and bird Q is at B, where A and B are distinct but &ang;AOB &le; 10<sup>o</sup>. Suppose that h birds are visible from A not B, and that k birds are visible from B not A. Without loss of generality h &le; k. Now suppose all the birds at B move to A. Then the number of mutually visible pairs will not increase. By repeating this operation, we get to a configuration where two birds can see each other only if they are at the same point. Since the number of pairs has not been increased, it is sufficient to consider configurations where two birds can only see ach other if they are at the same point.
+<p>
+Thus we may take 35 positions, labeled 1, 2, 3, ... , 35 and place x<sub>i</sub> birds at position i (we allow x<sub>i</sub> to be 0). So we wish to minimise &frac12; &sum; x<sub>i</sub>(x<sub>i</sub> - 1), or equivalently &sum; x<sub>i</sub><sup>2</sup>, subject to &sum; x<sub>i</sub> = 155. Suppose two of the x<sub>i</sub> differ by more than 1,  without loss of generality x<sub>1</sub> &gt; x<sub>2</sub> + 1. Then (x<sub>1</sub><sup>2</sup> + x<sub>2</sub><sup>2</sup>) - ( (x<sub>1</sub> - 1)<sup>2</sup> + (x<sub>2</sub> + 1)<sup>2</sup>) = 2(x<sub>1</sub> - x<sub>2</sub> - 1) &gt; 0. So in a minimising set of x<sub>i</sub>, the values can differ by at most 1. Thus the minimum is attained when 20 values equal 4 and 15 values equal 5.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh89.html">30th IMO shortlist 1989</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+28 Dec 2002
+<br>Last corrected/updated 28 Dec 02
+</BODY>
+
+</HTML>
+

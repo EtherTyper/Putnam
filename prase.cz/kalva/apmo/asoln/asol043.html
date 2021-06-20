@@ -1,0 +1,37 @@
+<HTML>
+
+<HEAD>
+<TITLE>APMO 04/3 solution</TITLE>
+</HEAD>
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>16th APMO 2004</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem 3</b>
+<p>
+2004 points are in the plane, no three collinear. S is the set of lines through any two of the points. Show that the points can be colored with two colors so that any two of the points have the same color iff there are an odd number of lines in S which separate them (a line separates them if they are on opposite sides of it).
+<p>
+&nbsp;<p>
+<b>Solution</b>
+<p>
+Let us denote by d<sub>XY</sub> the number of points separating the points X and Y. If the result is true, then the coloring is effectively determined: take a point X and color it blue. Then for every other point Y, color it blue iff d<sub>XY</sub> is odd. This will work provided that given any three points A, B, C, we have d<sub>AB</sub> + d<sub>BC</sub> + d<sub>CA</sub> is odd. (For then if Y and Z are the same color, d<sub>XY</sub> and d<sub>XZ</sub> have th same parity, so d<sub>YZ</sub> is odd, which is correct. Similarly, if Y and Z are opposite colors, then d<sub>YZ</sub> is even, which is correct.)
+<p>
+<img src="http://atrey.karlin.mff.cuni.cz/~franta/kalva/apmo/asoln/diag043.jpg">
+<p>
+We are interested in lines which pass through an interior point of one or more of AB, BC, CA. Lines cannot pass through all three. If they pass through two, then they do not affect the parity of d<sub>AB</sub> + d<sub>BC</sub> + d<sub>CA</sub>. So we are interested in lines which pass through A and the (interior of) BC, and similarly for B, C. Let n<sub>1</sub>, n<sub>2</sub>, ... , n<sub>7</sub> be the number of points (excluding A, B, C) in the various regions (as shown). The number of lines through A and BC is n<sub>1</sub> + n<sub>2</sub> + n<sub>3</sub>. So  d<sub>AB</sub> + d<sub>BC</sub> + d<sub>CA</sub> = (n<sub>1</sub> + n<sub>2</sub> + n<sub>3</sub>) + (n<sub>1</sub> + n<sub>4</sub> + n<sub>5</sub>) + (n<sub>1</sub> + n<sub>6</sub> + n<sub>7</sub>) = n<sub>1</sub> + n<sub>2</sub> + n<sub>3</sub> + n<sub>4</sub> + n<sub>5</sub> + n<sub>6</sub> + n<sub>7</sub> = (2004 - 3) = 1 mod 2.
+<p>
+<i>Thanks to Dinu Razvan</i>
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../apmo04.html">16th APMO 2004</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+30 Mar 2004
+<br>Last corrected/updated 30 Mar 04
+</BODY>
+
+</HTML>
+

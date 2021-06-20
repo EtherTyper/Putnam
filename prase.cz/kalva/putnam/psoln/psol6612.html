@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1966/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>27th Putnam 1966</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+y = f(x) is a solution of y'' + e<sup>x</sup>y = 0. Prove that f(x) is bounded.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We have 2 e<sup>-x</sup> y' y'' + 2 y y' = 0. Integrating from 0 to k gives y(k)<sup>2</sup> = y(0)<sup>2</sup> - 2 &int;<sub>0</sub><sup>k</sup> e<sup>-x</sup> y' y'' dx. Integrating by parts gives 2 &int;<sub>0</sub><sup>k</sup> e<sup>-x</sup> y' y'' dx = e<sup>-x</sup> (y')<sup>2</sup>|<sub>0</sub><sup>k</sup> + &int;<sub>0</sub><sup>k</sup> (y')<sup>2</sup> e<sup>-x</sup> dx = e<sup>-k</sup>y'(k)<sup>2</sup> - y'(0)<sup>2</sup> + &int;<sub>0</sub><sup>k</sup> (y')<sup>2</sup> e<sup>-x</sup> dx = A - y'(0)<sup>2</sup>, where A &gt; 0.
+
+<p>
+
+Hence y(k)<sup>2</sup> = y(0)<sup>2</sup> + y'(0)<sup>2</sup> - A &lt; y(0)<sup>2</sup> + y'(0)<sup>2</sup>, which establishes that y is bounded.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn66.html">27th Putnam 1966</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Jan 2002
+
+</BODY>
+
+
+
+</HTML>
+

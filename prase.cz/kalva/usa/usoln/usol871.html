@@ -1,0 +1,76 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 87/1 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>16th USAMO 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 1</b><br>
+
+<p>
+
+Find all solutions to (m<sup>2</sup> + n)(m + n<sup>2</sup>) = (m - n)<sup>3</sup>, where m and n are non-zero integers.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (m, n) = (-1, -1), (8, -10), (9, -6), (9, -21).
+
+<p>
+
+If m, n &gt; 0, then lhs is certainly positive, so we must have m &gt; n to make the rhs positive. But then m<sup>2</sup> + n &gt; m<sup>2</sup> and n<sup>2</sup> + m &gt; m, so lhs &gt; m<sup>3</sup> &gt; rhs. Contradiction. So there are no solutions with m and n both positive.
+
+<p>
+
+Put M = |m|, N = |n|. Consider next m = M, n = -N. So we have (M<sup>2</sup> - N)(N<sup>2</sup> + M) = (M + N)<sup>3</sup>. Hence M<sup>2</sup>N<sup>2</sup> + M<sup>3</sup> - N<sup>3</sup> - MN = M<sup>3</sup> + 3M<sup>2</sup>N + 3MN<sup>2</sup> + N<sup>3</sup>. N is non-zero, so we can divide to get: 2N<sup>2</sup> + N(3M - M<sup>2</sup>) + 3M<sup>2</sup> + M = 0. Regarding this as a quadratic in N we solve, getting N = ( (M<sup>2</sup> - 3M) &plusmn; &radic;(M<sup>4</sup> - 6M<sup>3</sup> + 9M<sup>2</sup> - 24M<sup>2</sup> - 8M) )/4 . Thus M<sup>4</sup> - 6M<sup>3</sup> - 15M<sup>2</sup> - 8M = M(M - 1)<sup>2</sup>(M - 8) must be a square. Hence M(M - 8) must be a square. We have (M - 4)<sup>2</sup> = M(M - 8) + 16 and for M &ge; 13, we have (M - 5)<sup>2</sup> = M<sup>2</sup> - 10M + 25 &lt; M<sup>2</sup> - 8M. So we need only consider M &le; 12. But obviously we cannot have M &lt; 8, or M(M - 8) is negative. Checking the remaining values, we find M = 8 and 9 are the only solutions. They give the solutions (m, n) = (8, -10), (9, -6), (9, -21).
+
+<p>
+
+Next, consider the case m = -M, n = N. That clearly does not work. We get (M<sup>2</sup> + N)(N<sup>2</sup> - M) = - (M + N)<sup>3</sup>. So 2N<sup>2</sup> + (M<sup>2</sup> + 3M)N + 3M<sup>2</sup> - M = 0, which has no solutions because 3M<sup>2</sup> &gt; M.
+
+<p>
+
+Finally, consider the case m = -M, n = -N. Then we get (M<sup>2</sup> - N)(N<sup>2</sup> - M) = (N - M)<sup>3</sup>, so 2N<sup>2</sup> - (M<sup>2</sup> + 3M)N + (3M<sup>2</sup> - M) = 0. Solving for N, we get N = ( (M<sup>2</sup> + 3M) &plusmn; &radic;(M<sup>4</sup> + 6M<sup>3</sup> + 9M<sup>2</sup> - 24M<sup>2</sup> + 8M) )/4. So we require M(M<sup>3</sup> + 6M<sup>2</sup> - 15M + 8) = M(M + 8)(M - 1)<sup>2</sup> to be a square. Hence M(M + 8) is a square. We have (M + 4)<sup>2</sup> &gt; M(M + 8) and for M &ge; 5, we have (M + 3)<sup>2</sup> = M<sup>2</sup> + 6M + 9 &lt; M<sup>2</sup> + 8M. So we need only check M = 1, 2, 3, 4. We find M = 1 gives the only square, and that gives the solution (m, n) = (-1, -1).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa87.html">16th USAMO 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Aug 2002
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1992/A4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>53rd Putnam 1992</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A4</b><br>
+
+<p>
+
+Let R be the reals. Let f <b>:</b> R &rarr; R be an infinitely differentiable function such that f(1/n) = n<sup>2</sup>/(n<sup>2</sup>+1) for n = 1, 2, 3, ... Find the value of the derivatives of f at zero: f<sup>(k)</sup>(0) for k = 1, 2, 3, ... .
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: the odd derivatives are zero; f<sup>(2n)</sup>(0) = (-1)<sup>n</sup>.
+
+<p>
+
+Clearly one possibility is f(x) = 1/(1 + x<sup>2</sup>). This has the power series expansion 1 - x<sup>2</sup> + x<sup>4</sup> - ... , so in this case f<sup>(k)</sup>(0) = 0 for k odd and (-1)<sup>n</sup> for k = 2n.
+
+<p>
+
+Suppose g(x) is another such function. Define h by h(x) = f(x) - g(x). Then h is infinitely differentiable and zero at x = 1/1, 1/2, 1/3, ... . We show that all derivatives of h are zero at x = 0. Suppose otherwise. Take h<sup>(k)</sup>(0) as the non-zero derivative of lowest order. Then for some &epsilon; &gt; 0, h<sup>(k)</sup>(x) is non-zero for all 0 &le; x &lt; &epsilon;. Take n sufficiently large that 1/n &lt; &epsilon;. By the (nth order) mean value theorem, h(1/n) = h<sup>(k)</sup>(&epsilon;')/k! for some &epsilon;' &lt; 1/n &lt; &epsilon;. But the lhs is zero and the rhs is non-zero. Contradiction. So all the derivatives of h are zero at x = 0, and hence the derivatives of g at x = 0 are the same as those of 1/(1+x<sup>2</sup>).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn92.html">53rd Putnam 1992</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

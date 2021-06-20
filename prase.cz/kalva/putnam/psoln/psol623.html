@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1962/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>23rd Putnam 1962</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+ABC is a triangle and k &gt; 0. Take A' on BC, B' on CA, C' on AB so that AB' = k B'C, CA' = k A'B, BC' = k C'A. Let the three points of intersection of AA', BB', CC' be P, Q, R. Show that the area PQR (k<sup>2</sup> + k + 1) = area ABC (k - 1)<sup>2</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+There does not seem to be a geometric solution, so one is faced with a messy algebraic calculation. There are various ways of doing it. The worst is probably to use ordinary Cartesian coordinates. 
+
+<p>
+
+Let us use points in the Argand diagram. Take A to be the origin and C to be the real point 1+k. Take B to be z(1+k). Then B' is k and A' is zk+1 (check: ( (zk+1) - (1+k) )/( (z(1+k) - (zk+1) ) = (zk-k)/(z-1) = k). We want to find R, the intersection of AA' and BB'. It lies on AA', so it is r(zk+1) for some 0 &lt; r &lt; 1. But it lies on BB', so it is k + s(zk+z-k) for some 0 &lt; s &lt; 1. After some manipulation, we get r = (k<sup>2</sup>+k)/(k<sup>2</sup>+k+1).
+
+<p>
+
+Now take k &lt; 1. Then area ARB = (AR/AA') area AA'B = r area AA'B (this is where we need k &lt; 1, because if k &gt; 1, then the geometry changes). But area AA'B = (A'B/CB) area ABC, so area ARB = r/(1+k) area ABC = k/(k<sup>2</sup>+k+1) area ABC. Similarly, taking P as the intersection of BB' and CC' and Q as the intersection of AA' and CC', we have that area AQC = k/(k<sup>2</sup>+k+1) area ABC, and area CPB = k/(k<sup>2</sup>+k+1) area ABC. Adding we get (area ABC - area PQR), so area PQR/area ABC = 1 - 3k/(k<sup>2</sup>+k+1) = (1 - k)<sup>2</sup>/(k<sup>2</sup>+k+1). 
+
+<p>
+
+If k &gt; 1, then we get the result with 1/k replacing k, but multiplying through by k<sup>2</sup> gives the same formula.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn62.html">23rd Putnam 1962</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+5 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

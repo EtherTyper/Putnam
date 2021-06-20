@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1990/A3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>51st Putnam 1990</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A3</b><br>
+
+<p>
+
+A convex pentagon has all its vertices lattice points in the plane (and no three collinear). Prove that its area is at least 5/2.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We need Pick's theorem: given a polygon (whose sides are not self-intersecting, but which is not necessarily convex) whose vertices are lattice points, its area is A + B/2 - 1, where A is the number of interior lattice points and B is the number of lattice points on the perimeter.
+
+<p>
+
+So we have to show that a <i>convex</i> pentagon either has an interior lattice point or has at least two lattice points on its sides (apart from its vertices).
+
+<p>
+
+We can divide the coordinates into four parity classes: (odd, odd), (odd, even), (even, odd) and (even, even). At least two of the vertices must belong to the same class. But then their midpoint must be a lattice point. If the vertices are not adjacent, then the midpoint is an interior lattice point and we are done. So suppose the two vertices are A and B, adjacent and with midpoint M, also a lattice point. Let the other vertices be C, D, and E. A, C, D and E must all have different parity classes, otherwise we get another lattice point and we are done. But now M must have the same parity class as one of A, C, D and E, which gives us another lattice point.
+
+<p>
+
+Note that the result is the best possible. For example, (0, 0), (1, 0), (2, 2), (1, 2), (0, 1) has area exactly 5/2.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn90.html">51st Putnam 1990</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

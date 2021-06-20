@@ -1,0 +1,36 @@
+<HTML>
+<HEAD>
+<TITLE>41st IMO shortlist 2000/A6 solution</TITLE>
+</HEAD>
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+<h3>41st IMO 2000 shortlist</h3>
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+<b>Problem A6</b><br>
+<p>
+a<sub>0</sub> &lt; a<sub>1</sub> &lt; a<sub>2</sub> &lt; ... and 0 = b<sub>0</sub> &lt; b<sub>1</sub> &lt; b<sub>2</sub> &lt; ... are sequences of real numbers such that: (1) if a<sub>i</sub> + a<sub>j</sub> + a<sub>k</sub> = a<sub>r</sub> + a<sub>s</sub> + a<sub>t</sub>, then (i, j, k) is a permutation of (r, s, t); and (2) a positive real x can be represented as x = a<sub>j</sub> - a<sub>i</sub> iff it can be represented as b<sub>m</sub> - b<sub>n</sub>. Prove that a<sub>k</sub> =  b<sub>k</sub> for all k.
+<p>
+&nbsp;<p>
+<b>Solution</b><br>
+<p>
+Notice first that x &gt; 0 can have at most one representation as a<sub>j</sub> - a<sub>i</sub>. For if a<sub>j</sub> - a<sub>i</sub> = a<sub>m</sub> - a<sub>n</sub> (with j &gt; i and m &gt; n), then a<sub>j</sub> + a<sub>n</sub> + a<sub>0</sub> = a<sub>m</sub> + a<sub>i</sub> + a<sub>0</sub>. So either m = j and n = i or m = i and n = j. The latter is not possible since j &gt; i and m &gt; n. So the representation is unique.
+<p>
+Any b<sub>n</sub> can be written as b<sub>n</sub> - b<sub>0</sub> and hence as a<sub>i</sub> - a<sub>j</sub>. By the remark above, this representation is unique, so let us write b<sub>n</sub> = a<sub>f(n)</sub> - a<sub>g(n)</sub>. Now take m &gt; n &gt; 0. Then b<sub>m</sub> - b<sub>n</sub> must be a<sub>x</sub> - a<sub>y</sub> for some x, y. But it is also (a<sub>f(m)</sub> - a<sub>g(m)</sub>) - (a<sub>f(n)</sub> - a<sub>g(n)</sub>), so a<sub>f(m)</sub> + a<sub>g(n)</sub> + a<sub>y</sub> = a<sub>f(n)</sub> + a<sub>g(m)</sub> + a<sub>x</sub>. So the f(m), g(n), y is a permutation of f(n), g(m), x. So either f(m) = f(n), g(m) = y, g(n) = x, or g(m) = g(n), f(m) = x, f(n) = y. Hence either f(m) = f(n) and g(m) &ne; g(n), or f(m) &ne; f(n) and g(m) = g(n).
+<p>
+Now suppose for some m &gt; n &gt; 0 we have f(m) = f(n) = c. Then g(m) &ne; g(n). If for some k &gt; 0, f(k) &ne; c, then g(k) = g(m) and g(k) = g(n). Contradiction. So f(k) = c for all k &gt; 0. Hence b<sub>k</sub> = a<sub>c</sub> - a<sub>g(k)</sub>. But b<sub>k</sub> is a strictly increasing sequence, so a<sub>g(k)</sub> is a strictly decreasing sequence. But that means g(k) is a strictly decreasing sequence. That is impossible since there are only finitely many positive integers less than g(1).
+<p>
+Thus we always have f(m) &ne; f(n) for m &gt; n &gt; 0 and hence g(m) = g(n). So b<sub>n</sub> = a<sub>f(n)</sub> - a<sub>d</sub> for some d (*). Hence 0 &lt; f(1) &lt; f(2) &lt; f(3) &lt; ... .
+<p>
+For any m &gt; 0, we have a<sub>m</sub> - a<sub>0</sub> = b<sub>u</sub> - b<sub>v</sub> for some u, v. If v &gt; 0, then we can use (*) to give a<sub>m</sub> - a<sub>0</sub> = a<sub>f(u)</sub> - a<sub>f(v)</sub> with f(u) and f(v) &gt; 0. But that contradicts the uniqueness of the representation a<sub>i</sub> - a<sub>j</sub>, so we must have v = 0. Hence a<sub>m</sub> = b<sub>u</sub>. So the set {a<sub>0</sub>, a<sub>1</sub>, ... } is contained in the set {b<sub>0</sub>, b<sub>1</sub>, ... }. Also a<sub>m</sub> - a<sub>0</sub>= a<sub>f(u)</sub> - a<sub>d</sub>. Hence d = 0. So for any n &gt; 0, (*) gives b<sub>n</sub> = a<sub>f(n)</sub> and hence the set {b<sub>0</sub>, b<sub>1</sub>, ... } is contained in the set {a<sub>0</sub>, a<sub>1</sub>, ... }. So the sets are equal and hence a<sub>k</sub> = b<sub>k</sub> for all k.
+<p>
+&nbsp;<p>
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+<p>
+&nbsp;<p>
+<a href="../sh00.html">41st IMO shortlist 2000</a><br>
+<p>&copy; John Scholes<br>
+jscholes@kalva.demon.co.uk<br>
+24 Oct 2002
+</BODY>
+
+</HTML>
+

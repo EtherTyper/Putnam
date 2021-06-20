@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 86/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>47th Putnam 1986</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+For real r &gt; 0, define m(r) =min{ |r - &radic;(m<sup>2</sup>+2n<sup>2</sup>)| for m, n integers}. Prove or disprove: (1) lim<sub>r&rarr;&infin;</sub> m(r) exists; and (2) is zero.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: true, true.
+
+<p>
+
+<i>Fairly easy.</i>
+
+<p>
+
+Two heuristic arguments. First, if we think of lattice points at (m, n/&radic;2), it seems likely that large circles will pass increasingly close to lattice points. So the results look true. 
+
+<p>
+
+Second, let x<sub>m,n</sub> = &radic;(m<sup>2</sup>+2n<sup>2</sup>), and let us confine our attention to the values x<sub>m,n</sub> lying between m and m + 1. There are about &radic;m of them in a distance 1 and roughly equally spaced, so any real number between m and m+1 should lie within about 1/&radic;m of one of them.
+
+<p>
+
+In making this rigorous, the important thing is to keep it simple. We do not need a good approximation, just an adequate one. Observe first that &radic;(1 + x) &lt; 1 + x/2, so &radic;(a + x) - &radic;a &lt; x/(2 &radic;a). So given any r &gt; 0, take r &isin; (m, m+1], and the largest n st m<sup>2</sup> + 2n<sup>2</sup> &lt; r<sup>2</sup>, so that r &isin; ( &radic;(m<sup>2</sup> + 2n<sup>2</sup>), &radic;(m<sup>2</sup> + 2(n+1)<sup>2</sup>) ]. The distance of r from the nearest lattice point is certainly less than the width of this interval, d. Also 2n<sup>2</sup> &lt; 2m + 1 &lt; 8m, so n &lt; 2&radic;m. So, using our earlier observation, d &lt; (2n + 1)/&radic;(m<sup>2</sup> + 2n<sup>2</sup>) &lt; (2n + 1)/m &lt; (4&radic;m + 1)/m which tends to zero as r &rarr; &infin;.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn86.html">47th Putnam 1986</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+3 Oct 1999
+
+</BODY>
+
+
+
+</HTML>
+

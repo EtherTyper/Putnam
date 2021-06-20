@@ -1,0 +1,74 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 87/A6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>48th Putnam 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A6</b><br>
+
+<p>
+
+Define f(n) as the number of zeros in the base 3 representation of the positive integer n. For which positive real x does F(x) = x<sup>f(1)</sup>/1<sup>3</sup> + x<sup>f(2)</sup>/2<sup>3</sup> + ... + x<sup>f(n)</sup>/n<sup>3</sup> + ... converge?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: x &lt; 25.
+
+<p>
+
+<i>Moderately hard.</i>
+
+<p>
+
+To get a handle on the problem, we collect a few terms and find that F(x) = (1/1<sup>3</sup> + 1/2<sup>3</sup> + 1/4<sup>3</sup> + 1/5<sup>3</sup> + 1/7<sup>3</sup> + 1/8<sup>3</sup> + ... ) + x(1/3<sup>3</sup> + 1/6<sup>3</sup> + 1/10<sup>3</sup> + 1/11<sup>3</sup> + 1/12<sup>3</sup> + 1/15<sup>3</sup> + 1/19<sup>3</sup> + 1/20<sup>3</sup> + 1/21<sup>3</sup> + 1/24<sup>3</sup> + ... ) + x<sup>2</sup>(1/9<sup>3</sup> + 1/18<sup>3</sup> + 1/28<sup>3</sup> + 1/29<sup>3</sup> + 1/30<sup>3</sup> + 1/33<sup>3</sup> + ... ) + x<sup>3</sup>(1/27<sup>3</sup> + 1/54<sup>3</sup> + ... ) + ... . This does not obviously help.
+
+<p>
+
+Let us focus on the m-digit numbers (in base 3). There are obviously 2 possibilities for m-1 zeros (namely 10 ... 0 and 20 ... 0). For r zeros, we can place the zeros in m-1Cr ways (the leading digit must be non-zero) and then each of the remaining m-r digits can be 1 or 2, a total of 2<sup>m-r</sup> m-1Cr possibilities [aCb represents the binomial coefficient a! / ( b! a-b! ) ]. The m-digit numbers have a limited range of values, so that suggests bounds for F(x). 
+
+<p>
+
+The smallest m-digit number is 3<sup>m-1</sup> and the largest is 3<sup>m</sup> - 1. So we get a lower bound by replacing 1/n<sup>3</sup> by 1/3<sup>3m</sup> = 1/27<sup>m</sup>. In fact, the lower bound for the sum over the m-digit numbers is 1/27<sup>m</sup> (x<sup>0</sup> 2<sup>m-0</sup> m-1C0 + x<sup>1</sup> 2<sup>m-1</sup> m-1C1 + ... + x<sup>m-1</sup> 2<sup>m - (m-1)</sup> m-1Cm-1 ) = 2<sup>m</sup>/27<sup>m</sup> (1 + x/2)<sup>k-1</sup> = 2/27 ( (x + 2)/27 )<sup>k-1</sup>. Hence the lower bound for the complete sum is 2/27 ( 1 + y + y<sup>2</sup> + y<sup>3</sup> + ... ), where y = (x + 2)/27, which clearly diverges for y &ge; 1 or x &ge; 25. The upper bound is 27 times larger, since we replace 1/n<sup>3</sup> by 1/3<sup>3m-3</sup> and it converges for y &lt; 1 or x &lt; 25.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn87.html">48th Putnam 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+7 Oct 1999
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,70 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 86/B2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>47th Putnam 1986</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B2</b><br>
+
+<p>
+
+x, y, z are complex numbers satisfying x(x - 1) + 2yz = y(y - 1) + 2zx = z(z - 1) + 2xy. Prove that there are only finitely many possible values for the triple (x - y, y - z, z - x) and enumerate them.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: (0, 0, 0), (1, 0, -1), (-1, 1, 0), (0, -1, 1).
+
+<p>
+
+<i>Easy.</i>
+
+<p>
+
+Rearranging x(x - 1) + 2yz = y(y - 1) + 2zx we get (x<sup>2</sup> - y<sup>2</sup>) = (x - y) + 2z(x - y), so either x = y or (y - z) = 1 + (z - x) &nbsp; (1). Similarly, either y = z or (z - x) = 1 + (x - y) &nbsp; (2).
+
+<p>
+
+So we must look at 4 possibilities. Obviously if x = y and y = z, then the triple is (0, 0, 0). If x = y and (z - x) = 1 + (x - y), then (x - y) = 0, (z - x) = 1, (y - z) = -1, so the triple is (0, -1, 1). If (y - z) = 1 + (z - x) and y = z, then (y - z) = 0, (z - x) = -1, (x - y) = 1, so the triple is (1, 0, -1). The final case is (y - z) = 1 + (z - x) and (z - x) = 1 + (x - y), or rearranging: 1 + 2z = x + y, 1 + 2x = y + z. Subtracting: 3(z - x) = 0, so the triple is (-1, 1, 0).
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn86.html">47th Putnam 1986</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Sep 1999
+
+</BODY>
+
+
+
+</HTML>
+

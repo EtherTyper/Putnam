@@ -1,0 +1,81 @@
+<HTML>
+
+<HEAD>
+
+<TITLE>IMO 1992/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>IMO 1992</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b>
+
+<p>
+
+For each positive integer n, S(n) is defined as the greatest integer such that for every positive integer k &le; S(n), n<sup>2</sup> can be written as the sum of k positive squares. 
+
+<p>(a)&nbsp; Prove that S(n) &lt;= n<sup>2</sup> - 14 for each n &ge; 4.
+
+<br>(b)&nbsp; Find an integer n such that S(n) = n<sup>2</sup> - 14.
+
+<br>(c)&nbsp; Prove that there are infinitely many integers n such that S(n) = n<sup>2</sup> - 14.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+(a)&nbsp; Let N = n<sup>2</sup>. Suppose we could express N as a sum of N - 13 squares. Let the number of 4s be a, the number of 9s be b and so on. Then we have 13 = 3a + 8b + 15c + ... . Hence c, d, ... must all be zero. But neither 13 nor 8 is a multiple of 3, so there are no solutions. Hence S(n) &le; N - 14.
+
+<p>
+A little experimentation shows that the problem is getting started. Most squares cannot be expressed as a sum of two squares. For N = 13<sup>2</sup> = 169, we find: 169 = 9 + 4 + 4 + 152 1s, a sum of 155 = N - 14 squares. By grouping four 1s into a 4 repeatedly, we obtain all multiples of 3 plus 2 down to 41 (169 = 9 + 40 4s). Then grouping four 4s into a 16 gives us 38, 35, ... , 11 (169 = 10 16s + 9). Grouping four 16s into a 64 gives us 8 and 5. We obtain the last number congruent to 2 mod 3 by the decomposition: 169 = 12<sup>2</sup> + 5<sup>2</sup>.
+
+<p>
+For the numbers congruent to 1 mod 3, we start with N - 15 = 154 squares: 169 = 5 4s + 149 1s. Grouping as before gives us all 3m + 1 down to 7: 169 = 64 + 64 + 16 + 16 + 4 + 4 + 1. We may use 169 = 10<sup>2</sup> + 8<sup>2</sup> + 2<sup>2</sup> + 1<sup>2</sup> for 4.
+
+<p>
+For multiples of 3, we start with N - 16 = 153 squares: 169 = 9 + 9 + 151 1s. Grouping as before gives us all multiples of 3 down to 9: 169 = 64 + 64 + 16 + 9 + 9 + 4 + 1 + 1 + 1. Finally, we may take 169 = 12<sup>2</sup> + 4<sup>2</sup> + 3<sup>2</sup> for 3 and split the 4<sup>2</sup> to get 169 = 12<sup>2</sup> + 3<sup>2</sup> + 2<sup>2</sup> + 2<sup>2</sup> + 2<sup>2</sup> + 2<sup>2</sup> for 6. That completes the demonstration that we can write 13<sup>2</sup> as a sum of k positive squares for all k &lt;= S(13) = 13<sup>2</sup> - 14.
+
+<p>
+We now show how to use the expressions for 13<sup>2</sup> to derive further N. For any N, the grouping technique gives us the high k. Simply grouping 1s into 4s takes us down: from 9 + 4 + 4 + (N-17) 1s to (N-14)/4 + 6 &lt; N/2 or below; from 4 + 4 + 4 + 4 + 4 + (N-20) 1s to (N-23)/4 + 8 &lt; N/2 or below; from 9 + 9 + (N-18) 1s to (N-21)/4 + 5 &lt; N/2 or below. So we can certainly get all k in the range (N/2 to N-14) by this approach. Now suppose that we already have a complete set of expressions for N<sub>1</sub> and for N<sub>2</sub> (where we may have N<sub>1</sub> = N<sub>2</sub>). Consider N<sub>3</sub> = N<sub>1</sub>N<sub>2</sub>. Writing N<sub>3</sub> = N<sub>1</sub>( an expression for N<sub>2</sub> as a sum of k squares) gives N<sub>3</sub> as a sum of 1 thru k<sub>2</sub> squares, where k<sub>2</sub> = N<sub>2</sub> - 14 squares (since N<sub>1</sub> is a square). Now express N<sub>1</sub> as a sum of two squares: n<sub>1</sub><sup>2</sup> + n<sub>2</sub><sup>2</sup>. We have N<sub>3</sub> = n<sub>1</sub><sup>2</sup>(a sum of k<sub>2</sub> squares) + n<sub>2</sub><sup>2</sup>(a sum of k squares). This gives N<sub>3</sub> as a sum of k<sub>2</sub> + 1 thru 2k<sub>2</sub> squares. Continuing in this way gives N<sub>3</sub> as a sum of 1 thru k<sub>1</sub>k<sub>2</sub> squares. But k<sub>i</sub> = N<sub>i</sub> - 14 &gt; 2/3 N<sub>i</sub>, so k<sub>1</sub>k<sub>2</sub> &gt; N<sub>3</sub>/2. So when combined with the top down grouping we get a complete set of expressions for N<sub>3</sub>.
+
+<p>
+This shows that there are infinitely many squares N with a complete set of expressions, for example we may take N = the squares of 13, 13<sup>2</sup>, 13<sup>3</sup>, ... .
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+Solutions are also available in &nbsp; Istv&aacute;n Reiman, International Mathematical Olympiad 1959-1999, ISBN 189-8855-48-X.
+
+<p>
+
+&nbsp;<p>
+
+<a href="../imo92.html">33rd IMO 1992</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+21 Oct 1998
+
+</BODY>
+
+
+
+</HTML>
+

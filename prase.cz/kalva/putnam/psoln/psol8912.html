@@ -1,0 +1,75 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1989/B6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>50th Putnam 1989</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B6</b><br>
+
+<p>
+
+f is a continuous real-valued function on the closed interval [0, 1] such that f(1) = 0. A point (a<sub>1</sub>, a<sub>2</sub>, ... , a<sub>n</sub>) is chosen at random from the n-dimensional region 0 &lt; x<sub>1</sub> &lt; x<sub>2</sub> &lt; ... &lt; x<sub>n</sub> &lt; 1. Define a<sub>0</sub> = 0, a<sub>n+1</sub> = 1. Show that the expected value of &sum;<sub>0</sub><sup>n</sup> (a<sub>i+1</sub> - a<sub>i</sub>) f(a<sub>i+1</sub>) is &int;<sub>0</sub><sup>1</sup> f(x) p(x) dx, where p(x) is a polynomial of degree n which maps the interval [0, 1] into itself (and is independent of f). 
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+The expected value is simply &int; S dv / &int; dv, where the integral is taken over the allowed region and S is the sum given.
+
+<p>
+
+&int; dv = 1/n! [First integrate 1 from x<sub>1</sub> = 0 to x<sub>2</sub>, giving x<sub>2</sub>/1!. Then integrate that from x<sub>2</sub> = 0 to x<sub>3</sub>, giving x<sub>3</sub><sup>2</sup>/2! and so on.]
+
+<p>
+
+We now have to attack the main integral. We can take the sum outside the integral, giving a sum of n integrals. Now there at most two variables in each integral. The trick is to use a different order of integration for each integral, so that one integrates last over the variables in the integrand. Starting at the x<sub>1</sub> end gives us a factor x<sub></sub><sup>i</sup>/i! and starting at the x<sub>n</sub> end gives us a factor (1 - x)<sup>j</sup>/j!. We are then left with the a single final integration from 0 to 1 of a term like f(x) x<sup>n-i</sup>(1 - x)<sup>i</sup>/( (n - i)! i! ). 
+
+<p>
+
+At this point we switch the order of summation and integration again to get:
+
+<p>
+&int;<sub>0</sub><sup>1</sup> x<sup>n</sup>/n! + x<sup>n-1</sup>(1 - x)/( n - 1! 1! ) + x<sup>n-2</sup>(1 - x)<sup>2</sup>/( n - 2! 2! ) + ... + x (1 - x)<sup>n-1</sup>/( 1! n - 1! ) dx.
+
+<p>After dividing by the other integral (equivalent to multiplying by n!) we get an integrand which is simply (x + 1 - x)<sup>n</sup> - (1 - x)<sup>n</sup> = 1 - (1 - x)<sup>n</sup>. So we have the required result with p(x) = 1 - (1 - x)<sup>n</sup>.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn89.html">50th Putnam 1989</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+1 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

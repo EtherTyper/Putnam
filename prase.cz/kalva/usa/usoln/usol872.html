@@ -1,0 +1,95 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>USAMO 87/2 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>16th USAMO 1987</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 2</b><br>
+
+<p>
+
+The feet of the angle bisectors of the triangle ABC form a right-angled triangle. If the right-angle is at X, where AX is the bisector of angle A, find all possible values for angle A.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: 120<sup>o</sup>.
+
+<p>
+
+<i>Thanks to Richard Rusczyk for this vector solution</i>
+<p>
+Use vectors origin A. Write the vector AB as <b>B</b> etc. Using the familiar BX/CX = AB/AC etc, we have <b>Z</b> = b<b>B</b>/(a+b), <b>Y</b> = c<b>C</b>/(a+c), <b>X</b> = (b<b>B</b>+c<b>C</b>)/(b+c). Hence <b>Z</b>-<b>X</b> = b<b>B</b>(c-a)/((a+b)(b+c)) - c<b>C</b>/(b+c), <b>Y</b>-<b>X</b> = -b<b>B</b>/(b+c) + c<b>C</b>(b-a)/((a+c)(b+c)). 
+<p>
+We have (<b>Z</b>-<b>X</b>)<b>.</b>(<b>Y</b>-<b>X</b>) = 0, so after multiplying through by (a+b)(a+c)(b+c)<sup>2</sup>, we get b<sup>2</sup><b>B</b><sup>2</sup>(a<sup>2</sup>-c<sup>2</sup>) + c<sup>2</sup><b>C</b><sup>2</sup>(a<sup>2</sup>-b<sup>2</sup>) + 2bc<b>B.C</b> (a<sup>2</sup>+bc) = 0. But <b>B</b><sup>2</sup> = c<sup>2</sup>, <b>C</b><sup>2</sup> = b<sup>2</sup>, so bc(2a<sup>2</sup>-b<sup>2</sup>-c<sup>2</sup>) + 2<b>B.C</b> (a<sup>2</sup>+bc) = 0.
+<p>
+But a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup> - 2<b>B.C</b> (cosine rule), so 2a<sup>2</sup>-b<sup>2</sup>-c<sup>2</sup> = a<sup>2</sup>-2<b>B.C</b>. Hence bc(a<sup>2</sup>-2<b>B.C</b>) + 2<b>B.C</b>(a<sup>2</sup>+bc) = 0, so <b>B.C</b> = -bc/2. Hence cos A = -1/2, so &ang;A = 120<sup>o</sup>.
+<p>
+<i>One can get there by straight algebra, but my first attempt was a horrendous slog:</i>
+
+<p>
+
+Put a = BC, b = CA, c = AB as usual. We have XY<sup>2</sup> = CX<sup>2</sup> + CY<sup>2</sup> - 2 CX.CY cos C. Using the fact that CY/AY = BC/AB, we have CY = ab/(a + c). Similarly, CX = ab/(b + c). Also 2ab cos C = (a<sup>2</sup> + b<sup>2</sup> - c<sup>2</sup>). So XY<sup>2</sup> = (ab)<sup>2</sup>/(b+c)<sup>2</sup> + (ab)<sup>2</sup>/(a+c)<sup>2</sup> - ab(a<sup>2</sup> + b<sup>2</sup> - c<sup>2</sup>)/( (b+c)(a+c) ). So (a+b)<sup>2</sup>(b+c)<sup>2</sup>(c+a)<sup>2</sup> XY<sup>2</sup> = (ab)<sup>2</sup>(a+b)<sup>2</sup>(c+a)<sup>2</sup> + (ab)<sup>2</sup>(a+b)<sup>2</sup>(b+c)<sup>2</sup> - ab(a<sup>2</sup>+b<sup>2</sup>-c<sup>2</sup>)(a+b)<sup>2</sup>(b+c)(c+a) = -a<sup>6</sup>bc - a<sup>5</sup>bc<sup>2</sup> - a<sup>5</sup>b<sup>2</sup>c + 2a<sup>4</sup>b<sup>3</sup>c + a<sup>4</sup>b<sup>2</sup>c<sup>2</sup> + a<sup>4</sup>bc<sup>3</sup> + 2a<sup>3</sup>b<sup>4</sup>c + 4a<sup>3</sup>b<sup>3</sup>c<sup>2</sup> + 3a<sup>3</sup>b<sup>2</sup>c<sup>3</sup> + a<sup>3</sup>bc<sup>4</sup> - a<sup>2</sup>b<sup>5</sup>c + a<sup>2</sup>b<sup>4</sup>c<sup>2</sup> + 3a<sup>2</sup>b<sup>3</sup>c<sup>3</sup> + 2a<sup>2</sup>b<sup>2</sup>c<sup>4</sup> - ab<sup>6</sup>c - ab<sup>5</sup>c<sup>2</sup> + ab<sup>4</sup>c<sup>3</sup> + ab<sup>3</sup>c<sup>4</sup>.
+
+<p>
+
+Similarly, we get (a+b)<sup>2</sup>(b+c)<sup>2</sup>(c+a)<sup>2</sup>ZX<sup>2</sup> = (ac)<sup>2</sup>(b+c)<sup>2</sup>(c+a)<sup>2</sup> + (ac)<sup>2</sup>(a+b)<sup>2</sup>(c+a)<sup>2</sup> - ac(a<sup>2</sup>+c<sup>2</sup>-b<sup>2</sup>)(a+b)(b+c)(c+a)<sup>2</sup> = -a<sup>6</sup>bc - a<sup>5</sup>b<sup>2</sup>c - a<sup>5</sup>bc<sup>2</sup> + a<sup>4</sup>b<sup>3</sup>c + a<sup>4</sup>b<sup>2</sup>c<sup>2</sup> + 2a<sup>4</sup>bc<sup>3</sup> + a<sup>3</sup>b<sup>4</sup>c + 3a<sup>3</sup>b<sup>3</sup>c<sup>2</sup> + 4a<sup>3</sup>b<sup>2</sup>c<sup>3</sup> + 2a<sup>3</sup>bc<sup>4</sup> + 2a<sup>2</sup>b<sup>4</sup>c<sup>2</sup> + 3a<sup>2</sup>b<sup>3</sup>c<sup>3</sup> + a<sup>2</sup>b<sup>2</sup>c<sup>4</sup> - a<sup>2</sup>bc<sup>5</sup> + ab<sup>4</sup>c<sup>3</sup> + ab<sup>3</sup>c<sup>4</sup> - ab<sup>2</sup>c<sup>5</sup> - abc<sup>6</sup>.
+
+<p>
+
+Similarly, (a+b)<sup>2</sup>(b+c)<sup>2</sup>(c+a)<sup>2</sup>YZ<sup>2</sup> = (bc)<sup>2</sup>(b+c)<sup>2</sup>(c+a)<sup>2</sup> + (bc)<sup>2</sup>(a+b)<sup>2</sup>(b+c)<sup>2</sup> - bc(b<sup>2</sup>+c<sup>2</sup>-a<sup>2</sup>)(b+c)<sup>2</sup>(a+b)(c+a) = a<sup>4</sup>b<sup>3</sup>c + 2a<sup>4</sup>b<sup>2</sup>c<sup>2</sup> + a<sup>4</sup>bc<sup>3</sup> + a<sup>3</sup>b<sup>4</sup>c + 3a<sup>3</sup>b<sup>3</sup>c<sup>2</sup> + 3a<sup>3</sup>b<sup>2</sup>c<sup>3</sup> + a<sup>3</sup>bc<sup>4</sup> - a<sup>2</sup>b<sup>5</sup>c + a<sup>2</sup>b<sup>4</sup>c<sup>2</sup> + 4a<sup>2</sup>b<sup>3</sup>c<sup>3</sup> + a<sup>2</sup>b<sup>2</sup>c<sup>4</sup> - a<sup>2</sup>bc<sup>5</sup> - ab<sup>6</sup>c - ab<sup>5</sup>c<sup>2</sup> + 2ab<sup>4</sup>c<sup>3</sup> + 2ab<sup>3</sup>c<sup>4</sup> - ab<sup>2</sup>c<sup>5</sup> - abc<sup>6</sup>.
+
+<p>
+
+But YZ<sup>2</sup> - XY<sup>2</sup> - ZX<sup>2</sup> = 0. So 2a<sup>6</sup>bc + 2a<sup>5</sup>b<sup>2</sup>c + 2a<sup>5</sup>bc<sup>2</sup> - 2a<sup>4</sup>b<sup>3</sup>c - 2a<sup>4</sup>bc<sup>3</sup> - 2a<sup>3</sup>b<sup>4</sup>c - 4a<sup>3</sup>b<sup>3</sup>c<sup>2</sup> - 4a<sup>3</sup>b<sup>2</sup>c<sup>3</sup> - 2a<sup>3</sup>bc<sup>4</sup> - 2a<sup>2</sup>b<sup>4</sup>c<sup>2</sup> - 2a<sup>2</sup>b<sup>3</sup>c<sup>3</sup> - 2a<sup>2</sup>b<sup>2</sup>c<sup>4</sup> = 0.
+
+<p>
+
+Factorising, we get 2a<sup>2</sup>bc(ab + bc + ca)(a<sup>2</sup> - b<sup>2</sup> - c<sup>2</sup> - bc) = 0. Hence a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup> + bc. But a<sup>2</sup> = b<sup>2</sup> + c<sup>2</sup> - 2bc cos A. Hence cos A = -1/2, so A = 120<sup>0</sup>. Indeed we have established that this is a necessary and sufficient condition for &ang;YXZ = 90<sup>o</sup>.
+
+<p>
+
+<i>Does anyone have a geometric solution?</i>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../usa87.html">16th USAMO 1987</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+26 Aug 2002
+
+<br>Last corrected/updated 4 Feb 04
+</BODY>
+
+
+
+</HTML>
+

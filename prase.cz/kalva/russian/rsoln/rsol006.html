@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Russian 00/6 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>Russian 2000</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem 6</b>
+
+<p>
+
+We have -1 &lt; x<sub>1</sub> &lt; x<sub>2</sub> &lt; ... &lt; x<sub>n</sub> &lt; 1 and y<sub>1</sub> &lt; y<sub>2</sub> &lt; ... &lt; y<sub>n</sub> such that x<sub>1</sub> + x<sub>2</sub> + ... + x<sub>n</sub> = x<sub>1</sub><sup>13</sup> + x<sub>2</sub><sup>13</sup> + ... + x<sub>n</sub><sup>13</sup>. Show that x<sub>1</sub><sup>13</sup>y<sub>1</sub> + x<sub>2</sub><sup>13</sup>y<sub>2</sub> + ... + x<sub>n</sub><sup>13</sup>y<sub>n</sub> &lt; x<sub>1</sub>y<sub>1</sub> + ... + x<sub>n</sub>y<sub>n</sub>.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b>
+
+<p>
+
+Note that if x<sub>i</sub> &gt; 0, then x<sub>i</sub><sup>13</sup> &lt; x<sub>i</sub> and if x<sub>i</sub> &lt; 0, then x<sub>i</sub><sup>13</sup> &gt; x<sub>i</sub>. So not all the x<sub>i</sub> can be non-negative and not all can be non-positive. Hence x<sub>1</sub> &lt; 0 &lt; x<sub>n</sub>.
+<p>
+Put z<sub>i</sub> = x<sub>i</sub> - x<sub>i</sub><sup>13</sup>. Then z<sub>1</sub> &lt; z<sub>2</sub> &lt; z<sub>3</sub> &lt; ... &lt; z<sub>n</sub>. So if z<sub>i</sub> + z<sub>i+1</sub> + ... + z<sub>n</sub> &le; 0 for i &gt; 1, then z<sub>i</sub> must be negative and hence all of z<sub>1</sub>, z<sub>2</sub>, ... , z<sub>i-1</sub> must be negative and hence z<sub>1</sub> + z<sub>2</sub> + ... + z<sub>n</sub> &lt; 0. Contradiction. hence z<sub>i</sub> + z<sub>i+1</sub> + ... + z<sub>n</sub> &gt; 0 for i &gt; 1.
+<p>
+Now we have &sum; x<sub>i</sub>y<sub>i</sub> - &sum; x<sub>i</sub>y<sub>i</sub><sup>13</sup> = &sum; y<sub>i</sub>z<sub>i</sub> = y<sub>1</sub>(z<sub>1</sub> + z<sub>2</sub> + ... + z<sub>n</sub>) + (y<sub>2</sub> - y<sub>1</sub>)(z<sub>2</sub> + ... + z<sub>n</sub>) + (y<sub>3</sub> - y<sub>2</sub>)(z<sub>3</sub> + ... + z<sub>n</sub>) + ... + (y<sub>n</sub> - y<sub>n-1</sub>)z<sub>n</sub> &gt; 0.
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../rus00.html">Russian 2000</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+4 March 2004
+<br>Last corrected/updated 4 Mar 04
+
+</BODY>
+
+
+
+</HTML>
+

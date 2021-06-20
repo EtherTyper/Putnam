@@ -1,0 +1,68 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 1976/A5 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>37th Putnam 1976</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem A5</b><br>
+
+<p>
+
+Let P be a convex polygon. Let Q be the interior of P and S = P &cup; Q. Let p be the perimeter of P and A its area. Given any point (x, y) let d(x, y) be the distance from (x, y) to the nearest point of S. Find constants &alpha;, &beta;, &gamma; such that &int;<sub>U</sub> e<sup>-d(x,y)</sup> dx dy = &alpha; + &beta;p + &gamma;A, where U is the whole plane.
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: A + p + 2&pi;.
+
+<p>
+
+For any point in S we have d(x, y) = 0. Hence the integral over S is just A. The locus of points a distance z from S is a set of segments parallel to the sides of P and displaced a distance z outwards, together with a set of arcs joining them. Each arc is centered on a vertex of P and has radius z. Together the arcs can be translated to form a complete circle radius z. Thus the set of points a distance z to z + &delta;z from S is a strip of area p &delta;z + 2&pi;z &delta;z. Thus the integral outside S is just
+
+<p>
+
+&int;<sub>0</sub><sup>&infin;</sup> exp( - z) (p + 2&pi;z) dz. This evaluates easily to p + 2&pi;.
+
+<p>
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn76.html">37th Putnam 1976</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+23 Jan 2001
+
+</BODY>
+
+
+
+</HTML>
+

@@ -1,0 +1,62 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>17th Putnam 1957/B4 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>17th Putnam 1957</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B4</b><br>
+
+<p>
+
+Show that the number of ways of representing n as an ordered sum of 1s and 2s equals the number of ways of representing n + 2 as an ordered sum of integers &gt; 1. For example: 4 = 1 + 1 + 1 + 1 = 2 + 2 = 2 + 1 + 1 = 1 + 2 + 1 = 1 + 1 + 2 (5 ways) and 6 = 4 + 2 = 2 + 4 = 3 + 3 = 2 + 2 + 2 (5 ways).
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+We can establish a bijection as follows. Given a representation of n as an ordered sum of 1s and 2s, proceed as follows. Add a final 2 at the end. Now group together all summands up to and including the first 2, then all following summands up to and including the next 2, and so on. Add the members in each group. This gives us an ordered set of integers each at least 2 and summing to n+2. 
+
+<p>
+
+Conversely, given a representation of n+2, write a summand m as m-2 1s followed by a 2. This gives an ordered sum of 1s and 2s. Finally remove the final 2. This gives us a representation of n. It is clear that these two operations are inverse and hence each is a bijection.
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn57.html">17th Putnam 1957</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+25 Feb 2002
+
+</BODY>
+
+
+
+</HTML>
+

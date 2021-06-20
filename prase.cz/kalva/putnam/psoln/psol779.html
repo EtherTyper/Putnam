@@ -1,0 +1,66 @@
+<HTML>
+
+
+
+<HEAD>
+
+<TITLE>Putnam 77/B3 solution</TITLE>
+
+</HEAD>
+
+
+
+<BODY TEXT="#000000" LINK="#0000ff" VLINK="#800080" ALINK="#ff0000">
+
+<h3>38th Putnam 1977</h3>
+
+<IMG src="../../line1.gif" ALT="------"><br>&nbsp;<br>&nbsp;<br>
+
+<b>Problem B3</b><br>
+
+<p>
+
+Let S be the set of all collections of 3 (not necessarily distinct) positive irrational numbers with sum 1. If A = {x, y, z} &isin; S and x &gt; 1/2, define A' = {2x - 1, 2y, 2z}. Does repeated application of this operation necessarily give a collection with all elements &lt; 1/2?
+
+<p>
+
+&nbsp;<p>
+
+<b>Solution</b><br>
+
+<p>
+
+Answer: no.
+
+<p>
+
+Write the three numbers in binary: x = 0.x<sub>1</sub>x<sub>2</sub>x<sub>3</sub> ... , y = 0.y<sub>1</sub>y<sub>2</sub>y<sub>3</sub> ... , z = 0.z<sub>1</sub>z<sub>2</sub>z<sub>3</sub> ... , where every x<sub>i</sub>, y<sub>i</sub>, z<sub>i</sub> is 0 or 1. Then after n operations (assuming a number &gt; 1/2 at all stages) the three numbers are simply x = 0.x<sub>n+1</sub>x<sub>n+2</sub>x<sub>n+3</sub> ... , y = 0.y<sub>n+1</sub>y<sub>n+2</sub>y<sub>n+3</sub> ... , z = 0.z<sub>n+1</sub>z<sub>n+2</sub>z<sub>n+3</sub> ... . So we have to choose the x<sub>i</sub>, y<sub>i</sub>, z<sub>i</sub> so that (1) for each i, exactly one of x<sub>i</sub>, y<sub>i</sub>, z<sub>i</sub> is 1, (2) x, y, z are irrational. To achieve (2) we just have to ensure that there is no periodicity. So, for example, we could take: x<sub>i</sub> = 1 for i = 1, 4, 9, 16, ... ; y<sub>i</sub> = 1 for i = 2, 5, 10, 17, ...; z<sub>i</sub> = 1 if i is not a square or a square plus 1.
+
+<p>
+
+[If the triples are not required to be irrational, we have the even simpler solution: 1/7, 2/7, 4/7.]
+
+<p>
+
+&nbsp;<p>
+
+<IMG SRC="../../line2.gif" WIDTH=100% HEIGHT="2"><br>
+
+<p>
+
+&nbsp;<p>
+
+<a href="../putn77.html">38th Putnam 1977</a><br>
+
+<p>&copy; John Scholes<br>
+
+jscholes@kalva.demon.co.uk<br>
+
+30 Nov 1999
+
+</BODY>
+
+
+
+</HTML>
+
